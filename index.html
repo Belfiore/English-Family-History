@@ -371,6 +371,56 @@ body {
 .clue-card.camden { border-left-color: var(--gold-dark); }
 .clue-card.clergy { border-left-color: #5a3e2a; }
 .clue-card.africa { border-left-color: #1a5c2a; }
+.clue-card.gold-dark { border-left-color: var(--gold-dark); }
+
+/* ===== KEY DISCOVERIES ===== */
+.discovery-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+.discovery-card {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: 1.5rem;
+    background: var(--parchment);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 1.5rem;
+    align-items: start;
+    transition: box-shadow 0.3s;
+}
+.discovery-card:hover {
+    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+}
+.discovery-card img {
+    width: 100%;
+    border-radius: 6px;
+    border: 2px solid var(--border);
+    display: block;
+}
+.discovery-card h3 {
+    font-family: var(--font-display);
+    font-size: 1.15rem;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--gold);
+    padding-bottom: 0.4rem;
+}
+.discovery-card .discovery-era {
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    margin-bottom: 0.3rem;
+    display: block;
+}
+.discovery-card p {
+    font-size: 1.02rem;
+    line-height: 1.75;
+}
 
 .clue-photos {
     display: flex;
@@ -515,6 +565,8 @@ body {
     .clue-photos img {
         max-width: 140px;
     }
+    .discovery-card { grid-template-columns: 1fr; }
+    .discovery-card img { max-width: 200px; }
 }
 
 @media (max-width: 480px) {
@@ -675,62 +727,158 @@ body {
             <div class="clue-photos">
                 <img src="photos/cdv-mother-child-front.jpg" alt="Mother and child, Camden Town, c. 1865" data-gallery="clues" data-caption="Mother and child, Camden Town, c. 1865 &mdash; the earliest photograph in the collection">
                 <img src="photos/cdv-perriman-back-flat.jpg" alt="Back of carte de visite — J. Perriman, Camden Town" data-gallery="clues" data-caption="Reverse of carte de visite &mdash; J. Perriman's studio, Camden Town">
+                <img src="photos/cdv-perriman-back-held.jpg" alt="Back of carte de visite held in hand" data-gallery="clues" data-caption="Reverse of carte de visite held in hand &mdash; J. Perriman, Camden Town">
             </div>
             <div class="clue-text">
                 <h3>Camden Town, c. 1865</h3>
-                <p>The earliest photograph in the collection was taken at J. Perriman's studio near the Mother Red Cap pub in Camden Town. A mother and young daughter &mdash; likely an earlier Fitzmaurice generation &mdash; establish the family's North London roots.</p>
+                <p>The earliest photograph in the collection was taken at J. Perriman's studio near the Mother Red Cap pub in Camden Town. A mother and young daughter &mdash; likely an earlier FitzMaurice generation &mdash; establish the family's North London roots. The reverse of the card reads: 'Camden Town School of Photography, Commission No. 925.'</p>
             </div>
         </div>
 
         <div class="clue-card clergy">
             <div class="clue-photos">
-                <img src="photos/edward-dixon-stuart-studio.jpg" alt="Edward Dixon FitzMaurice, Stuart Studio, Knightsbridge" data-gallery="clues" data-caption="Edward Dixon FitzMaurice &mdash; Stuart Studio, Knightsbridge">
+                <img src="photos/edith-medallion-front.jpg" alt="Edith Madeleine FitzMaurice, c. 1899" data-gallery="clues" data-caption="Edith Madeleine FitzMaurice, circular medallion portrait, c. 1899">
+                <img src="photos/edith-medallion-back.jpg" alt="Reverse of Edith medallion portrait" data-gallery="clues" data-caption="Reverse of medallion &mdash; inscribed 'Edith Madeleine Fitzmaurice c.1899'">
+                <img src="photos/edith-medallion-held-garden.jpg" alt="Edith medallion held in garden" data-gallery="clues" data-caption="Edith Madeleine FitzMaurice medallion held in garden">
             </div>
             <div class="clue-text">
-                <h3>A Clergyman in Knightsbridge</h3>
-                <p>Edward Dixon Fitzmaurice, a Church of England clergyman, was photographed at the prestigious Stuart Studio on Brompton Road, Knightsbridge. His clerical collar, wire-framed spectacles, and Knightsbridge address speak to comfortable Victorian London life.</p>
+                <h3>Edith Madeleine FitzMaurice, c. 1899</h3>
+                <p>A circular medallion portrait inscribed on the reverse 'Edith Madeleine Fitzmaurice c.1899.' Edith was Reg's sister &mdash; Patricia's aunt. The photograph was found among the family collection and is one of the earliest identified portraits.</p>
+            </div>
+        </div>
+
+        <div class="clue-card clergy">
+            <div class="clue-photos">
+                <img src="photos/edward-dixon-stuart-studio.jpg" alt="Edward Dixon FitzMaurice, Stuart Studio, Knightsbridge" data-gallery="clues" data-caption="Edward Dixon FitzMaurice &mdash; Stuart Studio, 47 &amp; 49 Brompton Road, Knightsbridge">
+            </div>
+            <div class="clue-text">
+                <h3>Edward Dixon FitzMaurice</h3>
+                <p>Edward Dixon FitzMaurice, a Church of England clergyman, was photographed at the prestigious Stuart Studio, 47 &amp; 49 Brompton Road, Knightsbridge. His clerical collar, wire-framed spectacles, and Knightsbridge address speak to comfortable Victorian London life. He is Reg's father and Patricia's grandfather.</p>
+            </div>
+        </div>
+
+        <div class="clue-card camden">
+            <div class="clue-photos">
+                <img src="photos/lang-sims-woman.jpg" alt="Unidentified woman, Lang Sims studio, Brixton Road" data-gallery="clues" data-caption="Unidentified woman &mdash; Lang Sims studio, 437 Brixton Road SW and 9 Church Street, Folkestone">
+            </div>
+            <div class="clue-text">
+                <h3>Lang Sims Woman, Brixton Road</h3>
+                <p>An unidentified young woman photographed at Lang Sims studio, 437 Brixton Road SW and 9 Church Street, Folkestone. Possibly Edith or another FitzMaurice family member. The studio was active in the late Victorian and Edwardian period.</p>
+            </div>
+        </div>
+
+        <div class="clue-card camden gold-dark">
+            <div class="clue-photos">
+                <img src="photos/reg-fitzmaurice-portrait.jpg" alt="Reg FitzMaurice, formal portrait" data-gallery="clues" data-caption="Reg FitzMaurice &mdash; Patricia's father, c. 1910&ndash;1920">
+            </div>
+            <div class="clue-text">
+                <h3>Reg FitzMaurice &mdash; Patricia's Father</h3>
+                <p>Reg FitzMaurice, Patricia's father. This formal portrait shows him as a young man, c. 1910&ndash;1920, wearing a three-piece suit with a bowtie. Reg gave Patricia away at her wedding in 1950. He was living in Hayes, Middlesex at the time. His father was the clergyman Edward Dixon FitzMaurice.</p>
             </div>
         </div>
 
         <div class="clue-card africa">
             <div class="clue-photos">
-                <img src="photos/babs-and-edward-with-boys.jpg" alt="Babs and Edward with boys in South Africa" data-gallery="clues" data-caption="&ldquo;Auntie Babs&rdquo; and Edward with boys in South Africa">
+                <img src="photos/south-africa-house-and-young-man.jpg" alt="South Africa photographs" data-gallery="clues" data-caption="South Africa photographs &mdash; beach and house scenes">
+                <img src="photos/photo-backs-labeled.jpg" alt="Photo reverses with handwritten labels" data-gallery="clues" data-caption="Photo reverses &mdash; 'Reg, Bobs and their Father Edward Dixon Fitzmaurice' and 'Auntie Bobs, South Africa'">
+            </div>
+            <div class="clue-text">
+                <h3>Reg, Bobs and their Father</h3>
+                <p>The reverses of two photographs confirm key family identities. One reads 'Reg, Bobs and their Father Edward Dixon Fitzmaurice.' The other reads 'Auntie Bobs, South Africa.' These handwritten inscriptions are the primary evidence linking Reg back to Edward Dixon.</p>
+            </div>
+        </div>
+
+        <div class="clue-card africa">
+            <div class="clue-photos">
+                <img src="photos/babs-and-edward-with-boys.jpg" alt="Babs in South Africa" data-gallery="clues" data-caption="'Auntie Babs' on a verandah in South Africa">
             </div>
             <div class="clue-text">
                 <h3>Babs in South Africa</h3>
-                <p>"Auntie Babs" emigrated to South Africa, photographed on a verandah with wrought iron railings and subtropical plants typical of Cape Colony architecture. This branch of the family reached the furthest corners of the British Empire.</p>
+                <p>'Auntie Babs' emigrated to South Africa, photographed on a verandah with wrought iron railings and subtropical plants typical of Cape Colony architecture. She returned to England for Patricia's wedding in 1950. The photo reverses confirm her identity.</p>
             </div>
         </div>
 
         <div class="clue-card gaiety">
             <div class="clue-photos">
-                <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist, the Gold Girl" data-gallery="clues" data-caption="Connie Gilchrist, &ldquo;the Gold Girl&rdquo; &mdash; star of the Gaiety Theatre">
+                <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist, the Gold Girl" data-gallery="clues" data-caption="Connie Gilchrist &mdash; star of the Gaiety Theatre, painted by Whistler">
                 <img src="photos/portraits/gaiety_theatre.jpg" alt="The Gaiety Theatre, London" data-gallery="clues" data-caption="The Gaiety Theatre, London &mdash; Victorian London's most celebrated venue">
             </div>
             <div class="clue-text">
                 <h3>The Gaiety Theatre Connection</h3>
-                <p>Connie Gilchrist, wife of the 7th Earl of Orkney, was a star of the Gaiety Theatre &mdash; Victorian London's most celebrated venue. Her marriage into the Fitzmaurice peerage was a society sensation of its era.</p>
+                <p>Connie Gilchrist, wife of the 7th Earl of Orkney, was a star of the Gaiety Theatre &mdash; Victorian London's most celebrated venue. Her marriage into the FitzMaurice peerage was a society sensation of its era. She was painted by Whistler, and her portrait hangs in the Metropolitan Museum of Art.</p>
             </div>
         </div>
 
         <div class="clue-card korea">
             <div class="clue-photos">
-                <img src="photos/heraldry/orkney_arms_douglas.png" alt="Arms of the Earl of Orkney" data-gallery="clues" data-caption="Arms of the Earl of Orkney">
-                <img src="photos/korea-news-clipping.jpg" alt="Newspaper clipping about Cecil FitzMaurice" data-gallery="clues" data-caption="Newspaper clipping &mdash; Cecil &ldquo;Ginger&rdquo; FitzMaurice, the Korean War Earl">
+                <img src="photos/korea-news-clipping.jpg" alt="Newspaper clipping — Earl from Korea" data-gallery="clues" data-caption="Evening News clipping &mdash; 'Earl from Korea Left a Fortune &mdash; He Scrubbed Decks'">
+                <img src="photos/orkney-marries-clipping.jpg" alt="Newspaper clipping — Earl of Orkney Marries" data-gallery="clues" data-caption="'Earl of Orkney Marries' &mdash; Cecil married Rose Silley at St Mary's, Brixham, Devon, November 1952">
             </div>
             <div class="clue-text">
                 <h3>The Korean War Earl</h3>
-                <p>Cecil "Ginger" Fitzmaurice was an ordinary army driver who became an Earl while scrubbing mess-decks. His story &mdash; from troopship to title &mdash; was featured in the <em>Evening News</em> and carefully clipped by the family.</p>
+                <p>Two newspaper clippings kept in the family collection. The first from the Evening News: 'Earl from Korea Left a Fortune &mdash; He Scrubbed Decks.' The second: 'Earl of Orkney Marries' &mdash; Cecil married Rose Silley at St Mary's, Brixham, Devon in November 1952. These clippings prove the family knew about their connection to Cecil.</p>
             </div>
         </div>
 
         <div class="clue-card wedding-clue">
             <div class="clue-photos">
-                <img src="photos/wedding-aisle-first-photo.jpg" alt="Patricia and Ronald walking down the aisle, 1950" data-gallery="clues" data-caption="Patricia and Ronald walking down the aisle, 1950">
+                <img src="photos/IMG_8854.jpeg" alt="The photo collection spread" data-gallery="clues" data-caption="The wider collection of photographs and cabinet cards laid out together">
             </div>
             <div class="clue-text">
-                <h3>Post-War Wedding, 1950</h3>
-                <p>Patricia's navy-blue suit and dusty-pink hat reflect post-war practicality. Just five years after VE Day, with rationing still in effect, the family gathered at a Grade I listed church for a celebration of hope and renewal.</p>
+                <h3>The Photo Collection Spread</h3>
+                <p>The wider collection of photographs and cabinet cards laid out together. Additional postcards, unidentified portraits, and snapshots from across the family's history &mdash; many still waiting to be identified.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- ===== KEY DISCOVERIES ===== -->
+    <h2 class="section-header">Key Discoveries</h2>
+
+    <div class="discovery-grid">
+
+        <div class="discovery-card">
+            <img src="photos/portraits/james2.jpg" alt="King James II of Scotland" data-gallery="discoveries" data-caption="King James II of Scotland &mdash; the line traces back to him through Princess Mary Stewart">
+            <div>
+                <span class="discovery-era">1430&ndash;1460</span>
+                <h3>King James II of Scotland</h3>
+                <p>The family line traces back to King James II of Scotland, who reigned from 1437 until his death in 1460. His daughter Princess Mary Stewart married James Hamilton, 1st Lord Hamilton. From the Hamiltons came the Dukes of Hamilton, from the Dukes came the Earls of Orkney, and from the Earls came the FitzMaurice line that leads directly to Patricia. The evidence: Burke's Peerage records the Hamilton&ndash;Stewart marriage; the FitzMaurice succession to the Earldom is recorded in the London Gazette; and the family's own wedding album confirms Patricia as a FitzMaurice.</p>
+            </div>
+        </div>
+
+        <div class="discovery-card">
+            <img src="photos/portraits/lansdowne.jpg" alt="William Petty-FitzMaurice, 1st Marquess of Lansdowne" data-gallery="discoveries" data-caption="William Petty-FitzMaurice, 1st Marquess of Lansdowne &mdash; Prime Minister 1782&ndash;1783">
+            <div>
+                <span class="discovery-era">Prime Minister 1782&ndash;1783</span>
+                <h3>The Prime Minister Who Ended the American Revolution</h3>
+                <p>William Petty-FitzMaurice, 1st Marquess of Lansdowne, served as Prime Minister from 1782 to 1783 and negotiated the Treaty of Paris that ended the American Revolutionary War. He shares the FitzMaurice name through the same Anglo-Norman dynasty &mdash; 'son of Maurice,' tracing back to Maurice FitzGerald's invasion of Ireland in 1169. The Lansdowne FitzMaurices became Marquesses; the Orkney FitzMaurices became Earls. Both branches descend from the same medieval Irish-Norman stock.</p>
+            </div>
+        </div>
+
+        <div class="discovery-card">
+            <img src="photos/portraits/george_hamilton.jpg" alt="George Hamilton, 1st Earl of Orkney" data-gallery="discoveries" data-caption="George Hamilton, 1st Earl of Orkney &mdash; the first person to hold the rank of Field Marshal in British Army history">
+            <div>
+                <span class="discovery-era">1666&ndash;1737</span>
+                <h3>George Hamilton, 1st Earl of Orkney &mdash; Britain's First Field Marshal</h3>
+                <p>George Hamilton (1666&ndash;1737) was created 1st Earl of Orkney in 1696 by William III. He fought at the Battle of the Boyne and served as a general under Marlborough at Blenheim, Ramillies, Oudenarde, and Malplaquet. In 1736 he became the first person in British history to hold the rank of Field Marshal. He married Elizabeth Villiers, William III's mistress. The Earldom he created passed through the Hamilton and FitzMaurice families for three centuries.</p>
+            </div>
+        </div>
+
+        <div class="discovery-card">
+            <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist, painted by Whistler" data-gallery="discoveries" data-caption="Connie Gilchrist, painted by Whistler &mdash; her portrait hangs in the Metropolitan Museum of Art, New York">
+            <div>
+                <span class="discovery-era">1865&ndash;1946</span>
+                <h3>Connie Gilchrist &mdash; The Gaiety Girl Who Became a Countess</h3>
+                <p>Constance Gilchrist (1865&ndash;1946) was one of the most famous faces in Victorian London &mdash; a child star at the Gaiety Theatre, painted by Whistler ('The Gold Girl'), photographed by every major studio, and the subject of intense public fascination. In 1892 she married the 7th Earl of Orkney, Edmond FitzMaurice. The Duke of Beaufort gave her away. She went from actress to Countess in a single afternoon. Her portrait 'Harmony in Yellow and Gold' hangs in the Met in New York.</p>
+            </div>
+        </div>
+
+        <div class="discovery-card">
+            <img src="photos/korea-news-clipping.jpg" alt="Cecil FitzMaurice newspaper clipping" data-gallery="discoveries" data-caption="Evening News clipping: 'Earl from Korea Left a Fortune &mdash; He Scrubbed Decks'">
+            <div>
+                <span class="discovery-era">1919&ndash;1998</span>
+                <h3>Cecil O'Bryen FitzMaurice &mdash; The Last Earl</h3>
+                <p>Cecil 'Ginger' FitzMaurice (1919&ndash;1998) was an R.A.S.C. truck driver who served in North Africa, Italy, France, Germany, and Korea. He was scrubbing mess-decks as punishment on the troopship HMT Devonshire when he learned he had inherited the Earldom of Orkney and a fortune of &pound;42,893. He was Amanda's 3rd cousin once removed &mdash; connected through the 5th Earl. The newspaper clippings were kept in the family collection because Patricia's family knew Cecil was kin. He died without issue in 1998, ending the FitzMaurice chapter of the Earldom forever.</p>
             </div>
         </div>
 
@@ -782,6 +930,10 @@ function buildGallery(galleryName) {
         document.querySelectorAll('[data-gallery="clues"]').forEach(img => {
             items.push({ src: img.src, caption: img.getAttribute('data-caption') });
         });
+    } else if (galleryName === 'discoveries') {
+        document.querySelectorAll('[data-gallery="discoveries"]').forEach(img => {
+            items.push({ src: img.src, caption: img.getAttribute('data-caption') });
+        });
     }
     return items;
 }
@@ -829,6 +981,20 @@ clueImages.forEach((img, i) => {
     img.addEventListener('click', (e) => {
         e.preventDefault();
         openLightbox(buildGallery('clues'), i);
+    });
+});
+
+// Build discoveries gallery
+const discoveryImages = document.querySelectorAll('[data-gallery="discoveries"]');
+discoveryImages.forEach((img, i) => {
+    img.style.cursor = 'pointer';
+    img.addEventListener('click', (e) => {
+        e.preventDefault();
+        const items = [];
+        document.querySelectorAll('[data-gallery="discoveries"]').forEach(el => {
+            items.push({ src: el.src, caption: el.getAttribute('data-caption') });
+        });
+        openLightbox(items, i);
     });
 });
 

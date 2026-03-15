@@ -121,19 +121,20 @@ body {
     border-bottom: 2px solid var(--gold);
     margin-bottom: 3rem;
 }
+.hero-title {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--gold-dark);
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    margin-bottom: 0.6rem;
+}
 .hero-intro h1 {
     font-family: var(--font-display);
-    font-size: 2.4rem;
+    font-size: 2.2rem;
     color: var(--ink);
-    margin-bottom: 0.5rem;
-    letter-spacing: 2px;
-}
-.hero-intro .subtitle {
-    font-family: var(--font-body);
-    font-size: 1.3rem;
-    color: var(--gold-dark);
-    font-style: italic;
     margin-bottom: 2rem;
+    letter-spacing: 2px;
 }
 .intro-story {
     max-width: 750px;
@@ -214,7 +215,7 @@ body {
 
 /* ===== SECTION BODY TEXT ===== */
 .section-body {
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
 }
 .section-body p {
     font-size: 1.08rem;
@@ -222,29 +223,14 @@ body {
     margin-bottom: 1.2rem;
     color: var(--ink);
 }
-.section-body strong {
-    color: var(--ink);
-}
-
-/* ===== FEATURED IMAGE ===== */
-.featured-photo {
-    display: block;
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    margin: 1.5rem auto 2rem;
-    border-radius: 8px;
-    border: 2px solid var(--border);
-    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
-}
 
 /* ===== STORY SECTION ===== */
 .story-section {
     margin-bottom: 3rem;
 }
 .story-section p {
-    font-size: 1.08rem;
-    line-height: 1.85;
+    font-size: 1.05rem;
+    line-height: 1.8;
     margin-bottom: 1.2rem;
 }
 .story-section strong {
@@ -261,7 +247,28 @@ body {
     box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
-/* ===== WEDDING DETAILS ===== */
+/* ===== WEDDING SECTION ===== */
+.wedding-section {
+    margin-bottom: 3rem;
+}
+.wedding-text p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 1.2rem;
+}
+.wedding-text strong {
+    color: var(--ink);
+}
+.featured-photo {
+    display: block;
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    margin: 1.5rem auto 2rem;
+    border-radius: 8px;
+    border: 2px solid var(--border);
+    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+}
 .wedding-details {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -298,79 +305,101 @@ body {
     font-style: italic;
 }
 
-/* ===== CAROUSEL / GALLERY ===== */
-.carousel {
-    position: relative;
-    max-width: 700px;
-    margin: 2rem auto;
-    background: var(--ink);
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+/* ===== PHOTO GALLERY (grid thumbnails) ===== */
+.photo-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 0.8rem;
+    margin: 2rem 0;
 }
-.carousel-viewport {
-    position: relative;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    min-height: 400px;
-    cursor: pointer;
-}
-.carousel-viewport img {
-    max-width: 100%;
-    max-height: 500px;
-    object-fit: contain;
+.photo-gallery a {
     display: block;
-    margin: 0 auto;
-    transition: opacity 0.3s ease;
-}
-.carousel-btn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(26, 26, 46, 0.7);
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    width: 44px;
-    height: 44px;
-    border-radius: 50%;
-    font-size: 1.3rem;
+    overflow: hidden;
+    border-radius: 6px;
+    border: 1px solid var(--border);
+    transition: transform 0.3s, box-shadow 0.3s;
     cursor: pointer;
-    z-index: 10;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    font-family: var(--font-display);
 }
-.carousel-btn:hover {
-    background: var(--gold);
+.photo-gallery a:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+.photo-gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s;
+}
+.photo-gallery a:hover img {
+    transform: scale(1.03);
+}
+.photo-gallery .photo-label {
+    font-size: 0.8rem;
+    padding: 0.4rem 0.6rem;
+    background: var(--parchment);
     color: var(--ink);
-}
-.carousel-btn.prev { left: 12px; }
-.carousel-btn.next { right: 12px; }
-.carousel-caption {
     text-align: center;
-    padding: 0.8rem 1.5rem;
-    font-family: var(--font-body);
-    font-size: 1rem;
-    color: rgba(255,255,255,0.85);
     font-style: italic;
-    background: rgba(26, 26, 46, 0.95);
-    border-top: 1px solid rgba(255,215,0,0.2);
-}
-.carousel-counter {
-    text-align: center;
-    padding: 0.4rem 1rem 0.7rem;
-    font-family: var(--font-display);
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: var(--gold);
-    background: rgba(26, 26, 46, 0.95);
 }
 
-/* ===== LIGHTBOX ===== */
+/* ===== CLUE CARDS ===== */
+.clue-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+.clue-card {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 1.5rem;
+    background: var(--parchment);
+    border: 1px solid var(--border);
+    border-left: 4px solid var(--gold);
+    border-radius: 6px;
+    padding: 1.5rem;
+    align-items: start;
+    transition: box-shadow 0.3s;
+}
+.clue-card:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.clue-card.gaiety { border-left-color: var(--border-ww2); }
+.clue-card.korea { border-left-color: var(--border-notable); }
+.clue-card.wedding-clue { border-left-color: var(--border-photo); }
+.clue-card.camden { border-left-color: var(--gold-dark); }
+.clue-card.clergy { border-left-color: #5a3e2a; }
+.clue-card.africa { border-left-color: #1a5c2a; }
+
+.clue-photos {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.clue-photos img {
+    width: 100%;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    display: block;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.clue-photos img:hover {
+    transform: scale(1.02);
+}
+.clue-text h3 {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--ink);
+    margin-bottom: 0.5rem;
+}
+.clue-text p {
+    font-size: 1.02rem;
+    line-height: 1.7;
+}
+
+/* ===== LIGHTBOX WITH NAVIGATION ===== */
 .lightbox-overlay {
     display: none;
     position: fixed;
@@ -379,21 +408,30 @@ body {
     z-index: 1000;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
+    flex-direction: column;
 }
 .lightbox-overlay.active {
     display: flex;
 }
-.lightbox-overlay img {
+.lightbox-main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     max-width: 92vw;
-    max-height: 92vh;
+    max-height: 80vh;
+}
+.lightbox-main img {
+    max-width: 92vw;
+    max-height: 80vh;
     border-radius: 6px;
     box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+    cursor: default;
 }
 .lightbox-close {
     position: absolute;
-    top: 1.5rem;
-    right: 2rem;
+    top: 1rem;
+    right: 1.5rem;
     font-size: 2rem;
     color: #fff;
     background: none;
@@ -401,6 +439,48 @@ body {
     cursor: pointer;
     font-family: var(--font-display);
     z-index: 1001;
+}
+.lightbox-btn {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(26, 26, 46, 0.7);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    cursor: pointer;
+    z-index: 1002;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.2s;
+    font-family: var(--font-display);
+}
+.lightbox-btn:hover {
+    background: var(--gold);
+    color: var(--ink);
+}
+.lightbox-btn.prev { left: 1.5rem; }
+.lightbox-btn.next { right: 1.5rem; }
+.lightbox-caption {
+    text-align: center;
+    padding: 1rem 2rem 0;
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    color: rgba(255,255,255,0.85);
+    font-style: italic;
+    max-width: 700px;
+}
+.lightbox-counter {
+    text-align: center;
+    padding: 0.5rem;
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    letter-spacing: 2px;
+    color: var(--gold);
 }
 
 /* ===== RESPONSIVE ===== */
@@ -423,14 +503,24 @@ body {
     .hero-intro h1 { font-size: 1.7rem; }
     .cta-grid { grid-template-columns: 1fr; }
     .wedding-details { grid-template-columns: 1fr 1fr; }
-    .carousel-viewport { min-height: 280px; }
-    .carousel-viewport img { max-height: 350px; }
+    .photo-gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+    .photo-gallery img { height: 130px; }
+    .clue-card {
+        grid-template-columns: 1fr;
+    }
+    .clue-photos {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .clue-photos img {
+        max-width: 140px;
+    }
 }
 
 @media (max-width: 480px) {
     .wedding-details { grid-template-columns: 1fr; }
-    .carousel-viewport { min-height: 220px; }
-    .carousel-viewport img { max-height: 280px; }
+    .photo-gallery { grid-template-columns: 1fr 1fr; }
+    .photo-gallery img { height: 120px; }
 }
     </style>
 </head>
@@ -454,6 +544,7 @@ body {
 
     <!-- ===== HERO / INTRO ===== -->
     <div class="hero-intro">
+        <div class="hero-title">FitzMaurice &amp; Andrews</div>
         <h1>The Story Behind This</h1>
 
         <div class="intro-story">
@@ -496,179 +587,269 @@ body {
     <!-- ===== WEDDING OF PATRICIA & RONALD ===== -->
     <h2 class="section-header">The Wedding of Patricia &amp; Ronald</h2>
 
-    <img src="photos/wedding-group-closeup-print.jpg" alt="Wedding group close-up, 11th February 1950" class="featured-photo">
+    <div class="wedding-section">
+        <img src="photos/wedding-group-closeup-print.jpg" alt="Wedding group close-up, 11th February 1950" class="featured-photo">
 
-    <div class="section-body">
-        <p>I took photos of Grandma and Grandad's wedding album from 11th February 1950, St Mary's Church, Wanstead. The handwritten captions throughout confirmed names and details we wouldn't have found any other way.</p>
-    </div>
+        <div class="wedding-text">
+            <p>I took photos of Grandma and Grandad's wedding album from 11th February 1950, St Mary's Church, Wanstead. The handwritten captions throughout confirmed names and details we wouldn't have found any other way.</p>
+        </div>
 
-    <div class="wedding-details">
-        <div class="wedding-detail">
-            <div class="detail-icon">&#9962;</div>
-            <h4>Venue</h4>
-            <p>St. Mary the Virgin<br>Wanstead, London</p>
-            <span class="detail-note">Grade I Listed &bull; Built 1790</span>
+        <div class="wedding-details">
+            <div class="wedding-detail">
+                <div class="detail-icon">&#9962;</div>
+                <h4>Venue</h4>
+                <p>St. Mary the Virgin<br>Wanstead, London</p>
+                <span class="detail-note">Grade I Listed &bull; Built 1790</span>
+            </div>
+            <div class="wedding-detail">
+                <div class="detail-icon">&#128141;</div>
+                <h4>Date</h4>
+                <p>11th February 1950</p>
+                <span class="detail-note">Saturday morning</span>
+            </div>
+            <div class="wedding-detail">
+                <div class="detail-icon">&#127856;</div>
+                <h4>Reception</h4>
+                <p>Home of Mr. &amp; Mrs.<br>Jack Hinder</p>
+                <span class="detail-note">Tudor-style residence</span>
+            </div>
+            <div class="wedding-detail">
+                <div class="detail-icon">&#127801;</div>
+                <h4>Flowers</h4>
+                <p>Red rose spray<br>at the bride's shoulder</p>
+                <span class="detail-note">Boutonni&egrave;re for the groom</span>
+            </div>
         </div>
-        <div class="wedding-detail">
-            <div class="detail-icon">&#128141;</div>
-            <h4>Date</h4>
-            <p>11th February 1950</p>
-            <span class="detail-note">Saturday morning</span>
-        </div>
-        <div class="wedding-detail">
-            <div class="detail-icon">&#127856;</div>
-            <h4>Reception</h4>
-            <p>Home of Mr. &amp; Mrs.<br>Jack Hinder</p>
-            <span class="detail-note">Tudor-style residence</span>
-        </div>
-        <div class="wedding-detail">
-            <div class="detail-icon">&#127801;</div>
-            <h4>Flowers</h4>
-            <p>Red rose spray<br>at the bride's shoulder</p>
-            <span class="detail-note">Boutonni&egrave;re for the groom</span>
-        </div>
-    </div>
 
-    <!-- Wedding Photo Carousel -->
-    <div class="carousel" id="weddingCarousel">
-        <div class="carousel-viewport" id="weddingViewport">
-            <button class="carousel-btn prev" onclick="carouselPrev('wedding')">&lsaquo;</button>
-            <img id="weddingImg" src="" alt="">
-            <button class="carousel-btn next" onclick="carouselNext('wedding')">&rsaquo;</button>
+        <!-- Wedding Photo Gallery — grid thumbnails -->
+        <div class="photo-gallery" id="weddingGallery">
+            <a href="photos/wedding-album-cover-inscription.jpg" class="gallery-link" data-gallery="wedding" data-caption="Wedding album cover &mdash; handwritten inscription">
+                <img src="photos/wedding-album-cover-inscription.jpg" alt="Wedding album cover inscription">
+                <div class="photo-label">Album Cover</div>
+            </a>
+            <a href="photos/wedding-aisle-first-photo.jpg" class="gallery-link" data-gallery="wedding" data-caption="The first photograph &mdash; walking down the aisle">
+                <img src="photos/wedding-aisle-first-photo.jpg" alt="First photo — walking down the aisle">
+                <div class="photo-label">Down the Aisle</div>
+            </a>
+            <a href="photos/wedding-church-steps-couple.jpg" class="gallery-link" data-gallery="wedding" data-caption="The couple on the church steps">
+                <img src="photos/wedding-church-steps-couple.jpg" alt="The couple on the church steps">
+                <div class="photo-label">Church Steps</div>
+            </a>
+            <a href="photos/wedding-group-named-captions.jpg" class="gallery-link" data-gallery="wedding" data-caption="Group photo with handwritten names identifying guests">
+                <img src="photos/wedding-group-named-captions.jpg" alt="Group photo with named captions">
+                <div class="photo-label">Group Photo</div>
+            </a>
+            <a href="photos/wedding-group-closeup-print.jpg" class="gallery-link" data-gallery="wedding" data-caption="Group close-up print">
+                <img src="photos/wedding-group-closeup-print.jpg" alt="Close-up group print">
+                <div class="photo-label">Group Close-up</div>
+            </a>
+            <a href="photos/wedding-reception-venue-cake.jpg" class="gallery-link" data-gallery="wedding" data-caption="The reception venue and wedding cake">
+                <img src="photos/wedding-reception-venue-cake.jpg" alt="Reception venue and cake">
+                <div class="photo-label">The Cake</div>
+            </a>
+            <a href="photos/wedding-reception-toast.jpg" class="gallery-link" data-gallery="wedding" data-caption="The toast at the reception">
+                <img src="photos/wedding-reception-toast.jpg" alt="Reception toast">
+                <div class="photo-label">The Toast</div>
+            </a>
+            <a href="photos/wedding-departure-confetti.jpg" class="gallery-link" data-gallery="wedding" data-caption="Confetti send-off">
+                <img src="photos/wedding-departure-confetti.jpg" alt="Departure with confetti">
+                <div class="photo-label">Confetti Send-off</div>
+            </a>
+            <a href="photos/wedding-honeymoon-departure.jpg" class="gallery-link" data-gallery="wedding" data-caption="Honeymoon departure">
+                <img src="photos/wedding-honeymoon-departure.jpg" alt="Honeymoon departure">
+                <div class="photo-label">Honeymoon Departure</div>
+            </a>
+            <a href="photos/ruby-wedding-invitation-and-photos.jpg" class="gallery-link" data-gallery="wedding" data-caption="Ruby wedding anniversary invitation and photos, 1990">
+                <img src="photos/ruby-wedding-invitation-and-photos.jpg" alt="Ruby wedding anniversary invitation and photos">
+                <div class="photo-label">Ruby Anniversary</div>
+            </a>
         </div>
-        <div class="carousel-caption" id="weddingCaption"></div>
-        <div class="carousel-counter" id="weddingCounter"></div>
     </div>
 
     <!-- ===== CLUES FROM THE COLLECTION ===== -->
     <h2 class="section-header">Clues from the Collection</h2>
 
-    <div class="section-body">
-        <p>These are the photographs and newspaper clippings that started the search &mdash; cabinet cards, studio portraits, faded snapshots, and press cuttings found among Grandma's belongings. Each one gave up a new clue.</p>
-    </div>
+    <div class="clue-grid">
 
-    <!-- Clues Photo Carousel -->
-    <div class="carousel" id="cluesCarousel">
-        <div class="carousel-viewport" id="cluesViewport">
-            <button class="carousel-btn prev" onclick="carouselPrev('clues')">&lsaquo;</button>
-            <img id="cluesImg" src="" alt="">
-            <button class="carousel-btn next" onclick="carouselNext('clues')">&rsaquo;</button>
+        <div class="clue-card camden">
+            <div class="clue-photos">
+                <img src="photos/cdv-mother-child-front.jpg" alt="Mother and child, Camden Town, c. 1865" data-gallery="clues" data-caption="Mother and child, Camden Town, c. 1865 &mdash; the earliest photograph in the collection">
+                <img src="photos/cdv-perriman-back-flat.jpg" alt="Back of carte de visite — J. Perriman, Camden Town" data-gallery="clues" data-caption="Reverse of carte de visite &mdash; J. Perriman's studio, Camden Town">
+            </div>
+            <div class="clue-text">
+                <h3>Camden Town, c. 1865</h3>
+                <p>The earliest photograph in the collection was taken at J. Perriman's studio near the Mother Red Cap pub in Camden Town. A mother and young daughter &mdash; likely an earlier Fitzmaurice generation &mdash; establish the family's North London roots.</p>
+            </div>
         </div>
-        <div class="carousel-caption" id="cluesCaption"></div>
-        <div class="carousel-counter" id="cluesCounter"></div>
+
+        <div class="clue-card clergy">
+            <div class="clue-photos">
+                <img src="photos/edward-dixon-stuart-studio.jpg" alt="Edward Dixon FitzMaurice, Stuart Studio, Knightsbridge" data-gallery="clues" data-caption="Edward Dixon FitzMaurice &mdash; Stuart Studio, Knightsbridge">
+            </div>
+            <div class="clue-text">
+                <h3>A Clergyman in Knightsbridge</h3>
+                <p>Edward Dixon Fitzmaurice, a Church of England clergyman, was photographed at the prestigious Stuart Studio on Brompton Road, Knightsbridge. His clerical collar, wire-framed spectacles, and Knightsbridge address speak to comfortable Victorian London life.</p>
+            </div>
+        </div>
+
+        <div class="clue-card africa">
+            <div class="clue-photos">
+                <img src="photos/babs-and-edward-with-boys.jpg" alt="Babs and Edward with boys in South Africa" data-gallery="clues" data-caption="&ldquo;Auntie Babs&rdquo; and Edward with boys in South Africa">
+            </div>
+            <div class="clue-text">
+                <h3>Babs in South Africa</h3>
+                <p>"Auntie Babs" emigrated to South Africa, photographed on a verandah with wrought iron railings and subtropical plants typical of Cape Colony architecture. This branch of the family reached the furthest corners of the British Empire.</p>
+            </div>
+        </div>
+
+        <div class="clue-card gaiety">
+            <div class="clue-photos">
+                <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist, the Gold Girl" data-gallery="clues" data-caption="Connie Gilchrist, &ldquo;the Gold Girl&rdquo; &mdash; star of the Gaiety Theatre">
+                <img src="photos/portraits/gaiety_theatre.jpg" alt="The Gaiety Theatre, London" data-gallery="clues" data-caption="The Gaiety Theatre, London &mdash; Victorian London's most celebrated venue">
+            </div>
+            <div class="clue-text">
+                <h3>The Gaiety Theatre Connection</h3>
+                <p>Connie Gilchrist, wife of the 7th Earl of Orkney, was a star of the Gaiety Theatre &mdash; Victorian London's most celebrated venue. Her marriage into the Fitzmaurice peerage was a society sensation of its era.</p>
+            </div>
+        </div>
+
+        <div class="clue-card korea">
+            <div class="clue-photos">
+                <img src="photos/heraldry/orkney_arms_douglas.png" alt="Arms of the Earl of Orkney" data-gallery="clues" data-caption="Arms of the Earl of Orkney">
+                <img src="photos/korea-news-clipping.jpg" alt="Newspaper clipping about Cecil FitzMaurice" data-gallery="clues" data-caption="Newspaper clipping &mdash; Cecil &ldquo;Ginger&rdquo; FitzMaurice, the Korean War Earl">
+            </div>
+            <div class="clue-text">
+                <h3>The Korean War Earl</h3>
+                <p>Cecil "Ginger" Fitzmaurice was an ordinary army driver who became an Earl while scrubbing mess-decks. His story &mdash; from troopship to title &mdash; was featured in the <em>Evening News</em> and carefully clipped by the family.</p>
+            </div>
+        </div>
+
+        <div class="clue-card wedding-clue">
+            <div class="clue-photos">
+                <img src="photos/wedding-aisle-first-photo.jpg" alt="Patricia and Ronald walking down the aisle, 1950" data-gallery="clues" data-caption="Patricia and Ronald walking down the aisle, 1950">
+            </div>
+            <div class="clue-text">
+                <h3>Post-War Wedding, 1950</h3>
+                <p>Patricia's navy-blue suit and dusty-pink hat reflect post-war practicality. Just five years after VE Day, with rationing still in effect, the family gathered at a Grade I listed church for a celebration of hope and renewal.</p>
+            </div>
+        </div>
+
     </div>
 
 </div>
 
-<!-- Lightbox -->
+<!-- Lightbox with navigation -->
 <div class="lightbox-overlay" id="lightbox">
     <button class="lightbox-close" aria-label="Close">&times;</button>
-    <img src="" alt="Enlarged photo" id="lightboxImg">
+    <button class="lightbox-btn prev" id="lightboxPrev" aria-label="Previous">&lsaquo;</button>
+    <div class="lightbox-main">
+        <img src="" alt="" id="lightboxImg">
+    </div>
+    <button class="lightbox-btn next" id="lightboxNext" aria-label="Next">&rsaquo;</button>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
 </div>
 
 <script>
-// ===== CAROUSEL DATA =====
-const carousels = {
-    wedding: {
-        index: 0,
-        photos: [
-            { src: 'photos/wedding-album-cover-inscription.jpg', caption: 'Wedding album cover &mdash; handwritten inscription' },
-            { src: 'photos/wedding-aisle-first-photo.jpg', caption: 'The first photograph &mdash; walking down the aisle' },
-            { src: 'photos/wedding-church-steps-couple.jpg', caption: 'The couple on the church steps' },
-            { src: 'photos/wedding-group-named-captions.jpg', caption: 'Group photo with handwritten names identifying guests' },
-            { src: 'photos/wedding-group-closeup-print.jpg', caption: 'Group close-up print' },
-            { src: 'photos/wedding-reception-venue-cake.jpg', caption: 'The reception venue and wedding cake' },
-            { src: 'photos/wedding-reception-toast.jpg', caption: 'The toast at the reception' },
-            { src: 'photos/wedding-departure-confetti.jpg', caption: 'Confetti send-off' },
-            { src: 'photos/wedding-honeymoon-departure.jpg', caption: 'Honeymoon departure' },
-            { src: 'photos/ruby-wedding-invitation-and-photos.jpg', caption: 'Ruby wedding anniversary invitation and photos, 1990' }
-        ]
-    },
-    clues: {
-        index: 0,
-        photos: [
-            { src: 'photos/cdv-mother-child-front.jpg', caption: 'Mother and child, Camden Town, c. 1865 &mdash; the earliest photograph in the collection' },
-            { src: 'photos/cdv-perriman-back-flat.jpg', caption: 'Reverse of carte de visite &mdash; J. Perriman\'s studio, Camden Town' },
-            { src: 'photos/cdv-perriman-back-held.jpg', caption: 'Carte de visite reverse, held for detail' },
-            { src: 'photos/edward-dixon-stuart-studio.jpg', caption: 'Edward Dixon FitzMaurice &mdash; Stuart Studio, Knightsbridge' },
-            { src: 'photos/edith-medallion-front.jpg', caption: 'Edith\'s medallion &mdash; front' },
-            { src: 'photos/edith-medallion-back.jpg', caption: 'Edith\'s medallion &mdash; reverse' },
-            { src: 'photos/edith-medallion-held-garden.jpg', caption: 'Edith\'s medallion held in the garden' },
-            { src: 'photos/babs-and-edward-with-boys.jpg', caption: '"Auntie Babs" and Edward with boys in South Africa' },
-            { src: 'photos/south-africa-house-and-young-man.jpg', caption: 'South Africa &mdash; house and young man' },
-            { src: 'photos/lang-sims-woman.jpg', caption: 'Lang Sims woman &mdash; unidentified portrait' },
-            { src: 'photos/unknown-young-man-bowtie.jpg', caption: 'Unknown young man in bowtie' },
-            { src: 'photos/photo-backs-labeled.jpg', caption: 'Photo backs with handwritten labels' },
-            { src: 'photos/korea-news-clipping.jpg', caption: 'Newspaper clipping &mdash; Cecil "Ginger" FitzMaurice, the Korean War Earl' },
-            { src: 'photos/orkney-marries-clipping.jpg', caption: 'Press clipping &mdash; "Orkney Marries"' }
-        ]
-    }
-};
-
-function updateCarousel(name) {
-    const c = carousels[name];
-    const photo = c.photos[c.index];
-    document.getElementById(name + 'Img').src = photo.src;
-    document.getElementById(name + 'Img').alt = photo.caption.replace(/&mdash;/g, '—').replace(/&[a-z]+;/g, '');
-    document.getElementById(name + 'Caption').innerHTML = photo.caption;
-    document.getElementById(name + 'Counter').textContent = (c.index + 1) + ' / ' + c.photos.length;
-}
-
-function carouselPrev(name) {
-    const c = carousels[name];
-    c.index = (c.index - 1 + c.photos.length) % c.photos.length;
-    updateCarousel(name);
-}
-
-function carouselNext(name) {
-    const c = carousels[name];
-    c.index = (c.index + 1) % c.photos.length;
-    updateCarousel(name);
-}
-
-// Init carousels
-updateCarousel('wedding');
-updateCarousel('clues');
-
-// Click to enlarge
-document.getElementById('weddingViewport').addEventListener('click', function(e) {
-    if (e.target.tagName === 'IMG') openLightbox(carousels.wedding.photos[carousels.wedding.index].src);
-});
-document.getElementById('cluesViewport').addEventListener('click', function(e) {
-    if (e.target.tagName === 'IMG') openLightbox(carousels.clues.photos[carousels.clues.index].src);
-});
-
-// Lightbox
-const lightbox = document.getElementById('lightbox');
-const lightboxImg = document.getElementById('lightboxImg');
-
-function openLightbox(src) {
-    lightboxImg.src = src;
-    lightbox.classList.add('active');
-}
-
-lightbox.addEventListener('click', function(e) {
-    if (e.target !== lightboxImg) {
-        lightbox.classList.remove('active');
-        lightboxImg.src = '';
-    }
-});
-
-document.addEventListener('keydown', function(e) {
-    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
-        lightbox.classList.remove('active');
-        lightboxImg.src = '';
-    }
-});
-
 // Mobile nav toggle
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 if (navToggle) {
-    navToggle.addEventListener('click', function() {
+    navToggle.addEventListener('click', () => {
         navLinks.classList.toggle('open');
     });
 }
+
+// ===== GALLERY LIGHTBOX WITH NAVIGATION =====
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const lightboxCaption = document.getElementById('lightboxCaption');
+const lightboxCounter = document.getElementById('lightboxCounter');
+const lightboxPrev = document.getElementById('lightboxPrev');
+const lightboxNext = document.getElementById('lightboxNext');
+
+let currentGallery = [];
+let currentIndex = 0;
+
+// Build gallery arrays from data attributes
+function buildGallery(galleryName) {
+    const items = [];
+    if (galleryName === 'wedding') {
+        document.querySelectorAll('.gallery-link[data-gallery="wedding"]').forEach(link => {
+            items.push({ src: link.href, caption: link.getAttribute('data-caption') });
+        });
+    } else if (galleryName === 'clues') {
+        document.querySelectorAll('[data-gallery="clues"]').forEach(img => {
+            items.push({ src: img.src, caption: img.getAttribute('data-caption') });
+        });
+    }
+    return items;
+}
+
+function openLightbox(gallery, index) {
+    currentGallery = gallery;
+    currentIndex = index;
+    showCurrentImage();
+    lightbox.classList.add('active');
+}
+
+function showCurrentImage() {
+    const item = currentGallery[currentIndex];
+    lightboxImg.src = item.src;
+    lightboxCaption.innerHTML = item.caption;
+    lightboxCounter.textContent = (currentIndex + 1) + ' / ' + currentGallery.length;
+}
+
+function lightboxGoPrev() {
+    currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+    showCurrentImage();
+}
+
+function lightboxGoNext() {
+    currentIndex = (currentIndex + 1) % currentGallery.length;
+    showCurrentImage();
+}
+
+function closeLightbox() {
+    lightbox.classList.remove('active');
+    lightboxImg.src = '';
+}
+
+// Wedding gallery clicks
+document.querySelectorAll('.gallery-link[data-gallery="wedding"]').forEach((link, i) => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        openLightbox(buildGallery('wedding'), i);
+    });
+});
+
+// Clues gallery clicks
+const clueImages = document.querySelectorAll('[data-gallery="clues"]');
+clueImages.forEach((img, i) => {
+    img.addEventListener('click', (e) => {
+        e.preventDefault();
+        openLightbox(buildGallery('clues'), i);
+    });
+});
+
+// Navigation buttons
+lightboxPrev.addEventListener('click', (e) => { e.stopPropagation(); lightboxGoPrev(); });
+lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); lightboxGoNext(); });
+
+// Close on background click
+lightbox.addEventListener('click', (e) => {
+    if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+        closeLightbox();
+    }
+});
+
+// Keyboard navigation
+document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('active')) return;
+    if (e.key === 'Escape') closeLightbox();
+    if (e.key === 'ArrowLeft') lightboxGoPrev();
+    if (e.key === 'ArrowRight') lightboxGoNext();
+});
 </script>
 
 </body>

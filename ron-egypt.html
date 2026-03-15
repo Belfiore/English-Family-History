@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grandpa (Ron) WWII &mdash; FitzMaurice &amp; Andrews</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+:root {
+    --burgundy: #8B0000;
+    --burgundy-dark: #4a0000;
+    --gold: #FFD700;
+    --gold-dark: #B8860B;
+    --gold-light: #FFF3B0;
+    --cream: #FDF8F0;
+    --cream-dark: #F5EDE0;
+    --ink: #1a1a2e;
+    --ink-light: #2d2d44;
+    --parchment: #F8F1E4;
+    --sepia: #704214;
+    --shadow: rgba(0, 0, 0, 0.15);
+    --border: #d4c5a9;
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Cormorant Garamond', serif;
+    --font-accent: 'EB Garamond', serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.7;
+    min-height: 100vh;
+}
+
+/* ===== NAV ===== */
+.main-nav {
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+    border-bottom: 2px solid var(--gold);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+.nav-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.8rem 2rem;
+}
+.nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+    font-family: var(--font-display);
+    font-size: 0.8rem;
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    position: relative;
+    padding-bottom: 2px;
+}
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: var(--gold);
+    transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--gold); }
+.nav-links a.active::after { width: 100%; }
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+}
+.nav-toggle span {
+    width: 22px;
+    height: 2px;
+    background: var(--gold);
+    display: block;
+    transition: 0.3s;
+}
+
+/* ===== HERO ===== */
+.hero-image {
+    width: 100%;
+    max-height: 85vh;
+    overflow: hidden;
+    background: #111;
+    position: relative;
+}
+.hero-image img {
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+    object-position: top left;
+    display: block;
+}
+
+/* ===== PAGE LAYOUT ===== */
+.story-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ===== PROSE ===== */
+.prose {
+    padding: 3rem 0;
+}
+.prose p {
+    font-family: var(--font-body);
+    font-size: 1.25rem;
+    line-height: 1.85;
+    color: var(--ink);
+    margin-bottom: 1.8rem;
+}
+.prose p:last-child {
+    margin-bottom: 0;
+}
+.prose p.lead {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--ink);
+}
+.prose p.italic {
+    font-style: italic;
+    color: var(--sepia);
+}
+.prose blockquote {
+    font-family: var(--font-accent);
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--sepia);
+    border-left: 3px solid var(--gold-dark);
+    padding: 1rem 0 1rem 1.5rem;
+    margin: 2.5rem 0;
+    line-height: 1.8;
+}
+
+/* ===== IMAGES ===== */
+.img-full {
+    width: 100vw;
+    margin-left: calc(-50vw + 50%);
+    padding: 3rem 0;
+}
+.img-full img {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+}
+.img-full .caption {
+    max-width: 800px;
+    margin: 1rem auto 0;
+    padding: 0 2rem;
+    font-family: var(--font-accent);
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--sepia);
+    text-align: center;
+    line-height: 1.6;
+}
+
+.img-centered {
+    max-width: 700px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+.img-centered img {
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+}
+.img-centered .caption {
+    font-family: var(--font-accent);
+    font-size: 1rem;
+    font-style: italic;
+    color: var(--sepia);
+    text-align: center;
+    margin-top: 1rem;
+    line-height: 1.6;
+}
+
+.img-two-col {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+.img-two-col .col img {
+    width: 100%;
+    display: block;
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+}
+.img-two-col .col .caption {
+    font-family: var(--font-accent);
+    font-size: 0.95rem;
+    font-style: italic;
+    color: var(--sepia);
+    text-align: center;
+    margin-top: 0.8rem;
+    line-height: 1.6;
+}
+
+/* ===== SEPARATOR ===== */
+.section-break {
+    text-align: center;
+    padding: 2rem 0;
+    color: var(--gold-dark);
+    font-size: 1.5rem;
+    letter-spacing: 8px;
+    opacity: 0.5;
+}
+
+/* ===== CLOSING ===== */
+.closing-section {
+    text-align: center;
+    padding: 4rem 2rem;
+    border-top: 2px solid var(--gold);
+    margin-top: 3rem;
+}
+.closing-section img {
+    max-width: 500px;
+    width: 100%;
+    border-radius: 2px;
+    box-shadow: 0 4px 30px rgba(0,0,0,0.15);
+    margin-bottom: 1.5rem;
+}
+.closing-section .caption {
+    font-family: var(--font-accent);
+    font-size: 1.05rem;
+    font-style: italic;
+    color: var(--sepia);
+    line-height: 1.6;
+}
+.closing-section .link-bridge {
+    margin-top: 2rem;
+}
+.closing-section .link-bridge a {
+    font-family: var(--font-display);
+    font-size: 0.85rem;
+    color: var(--gold-dark);
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 1px solid var(--gold-dark);
+    padding-bottom: 2px;
+    transition: color 0.3s, border-color 0.3s;
+}
+.closing-section .link-bridge a:hover {
+    color: var(--ink);
+    border-color: var(--ink);
+}
+
+/* ===== LIGHTBOX ===== */
+.lightbox-overlay {
+    display: none;
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    cursor: zoom-out;
+}
+.lightbox-overlay.active {
+    display: flex;
+}
+.lightbox-overlay img {
+    max-width: 92vw;
+    max-height: 92vh;
+    object-fit: contain;
+    border-radius: 2px;
+    cursor: default;
+}
+.lightbox-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-size: 2rem;
+    color: white;
+    background: none;
+    border: none;
+    cursor: pointer;
+    z-index: 10000;
+    line-height: 1;
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background: rgba(26, 26, 46, 0.95);
+        padding: 1rem 2rem;
+        gap: 1rem;
+        border-bottom: 2px solid var(--gold);
+    }
+    .nav-toggle { display: flex; }
+    .hero-image img {
+        height: 50vh;
+    }
+    .prose p {
+        font-size: 1.15rem;
+    }
+    .img-two-col {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+    .story-container {
+        padding: 0 1.2rem;
+    }
+}
+    </style>
+</head>
+<body>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">FitzMaurice &amp; Andrews</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="family-tree.html">Family Tree</a>
+            <a href="family-crest.html">Family Crest</a>
+            <a href="ron-egypt.html" class="active">Grandpa (Ron) WWII</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- ===== HERO ===== -->
+<div class="hero-image">
+    <img src="photos/ron-egypt/IMG_2657.JPEG" alt="Ronald Andrews with his camera, Egypt, c. 1943">
+</div>
+
+<!-- ===== OPENING ===== -->
+<div class="story-container">
+    <div class="prose">
+        <p class="lead">By 1942, the fate of the entire war in the Middle East was being decided in the Egyptian desert. Rommel's Afrika Korps had pushed the British Eighth Army back to a line just 60 miles from Alexandria. If that line broke, the Suez Canal fell. Britain's supply route to India and the Far East was gone. The pressure on the RAF to keep aircraft flying was unlike anything the war had yet demanded.</p>
+
+        <p>Into this world, a young man from East Ham arrived.</p>
+
+        <p>Ronald Andrews &mdash; Leading Aircraftman, No. 111 Maintenance Unit, Royal Air Force &mdash; was posted to Egypt as an aircraft engine mechanic. He was in his early twenties. His parents and younger brother had been killed in the London Blitz while he was away. His brother Herbert was also serving. There was nothing to go back to in East Ham. There was only the work in front of him.</p>
+
+        <p>That work happened underground.</p>
+    </div>
+</div>
+
+<!-- ===== CAVE INTERIOR — FULL WIDTH ===== -->
+<div class="img-full">
+    <img src="photos/ron-egypt/IMG_2653.JPEG" alt="The Erection Section, No. 111 MU RAF, Tura-el-Asmant, Egypt" class="lightbox-trigger">
+    <div class="caption">The Erection Section, No. 111 MU RAF &mdash; Tura-el-Asmant, Egypt.</div>
+</div>
+
+<div class="story-container">
+    <div class="prose">
+        <p>No. 111 Maintenance Unit didn't operate from a conventional airbase. The unit worked inside a network of ancient limestone caves cut into the Mokattam hills on the southern outskirts of Cairo &mdash; the same caves quarried four thousand years earlier for the casing stones of the pyramids. The RAF had converted them into a fully functioning underground aircraft engine facility. Cool, hidden, secure. Row upon row of workbenches stretching into the dark. Engines at every stage of assembly and repair. Electric lights strung from the cave ceiling. The rough limestone walls pressing in on either side.</p>
+
+        <p>Photography inside was strictly forbidden. It was a classified security area.</p>
+
+        <p>A colleague of Ronald's &mdash; referred to throughout his album only as Johnnie &mdash; smuggled a Leica camera past the guards and documented what they were doing. Ronald kept those photographs for the rest of his life. His note in the album reads:</p>
+
+        <blockquote>&ldquo;Johnie smuggled his Leica into the Caves &lsquo;Security Area&rsquo; and took these shots of our work time.&rdquo;</blockquote>
+    </div>
+</div>
+
+<!-- ===== ENGINE WORK — TWO COLUMN ===== -->
+<div class="img-two-col">
+    <div class="col">
+        <img src="photos/ron-egypt/IMG_2652.JPEG" alt="Double Wasp radial engine assembly and Twin Wasp crankshaft measurement" class="lightbox-trigger">
+        <div class="caption">A giant 2,200 H.P. &lsquo;Double Wasp&rsquo; Radial on Assembly &mdash; and measuring the journals of a Twin Wasp crankshaft with a micrometer (to within 10,000!)</div>
+    </div>
+    <div class="col">
+        <img src="photos/ron-egypt/IMG_2653.JPEG" alt="Scarab engine and 18-cylinder radial power section" class="lightbox-trigger">
+        <div class="caption">The smallest power unit &mdash; a &lsquo;Scarab&rsquo; off an A.V.M.&rsquo;s Kite. And the largest &mdash; power section of an 18 Cyl Radial.</div>
+    </div>
+</div>
+
+<div class="story-container">
+    <div class="prose">
+        <p>The engines coming through Ronald's hands were the most powerful in Allied service. The Pratt &amp; Whitney Double Wasp &mdash; 2,200 horsepower, 18 cylinders arranged in two radial rows &mdash; powered the Hawker Tempest, the Corsair, the Hellcat. To his west, the Second Battle of El Alamein was being fought. The aircraft these engines went back into were flying close air support over the desert, attacking Rommel's supply lines, keeping the Eighth Army alive. The tolerance on a crankshaft journal was measured to within ten-thousandths of an inch. Get it wrong and a pilot died. Ronald wrote the exclamation mark himself.</p>
+
+        <p>But Ronald wasn't only a mechanic.</p>
+
+        <p>Between shifts in the engine bays, he drew. He had always drawn &mdash; and Egypt rekindled it. In whatever hours were left, he set up at a drawing board in his billet and copied portraits of the actresses he'd known from the pictures before the war. His own caption says it best:</p>
+
+        <blockquote>&ldquo;Re-kindled the urge to draw &mdash; but in the copying work &mdash; this time Deanna Durbin&hellip; search for perfection it was only.&rdquo;</blockquote>
+    </div>
+</div>
+
+<!-- ===== DRAWING — TWO COLUMN ===== -->
+<div class="img-two-col">
+    <div class="col">
+        <img src="photos/ron-egypt/IMG_2650.JPEG" alt="Ronald drawing a portrait of Deanna Durbin in his billet" class="lightbox-trigger">
+        <div class="caption">Billet, Tura-el-Asmant. Ronald working on a portrait of Deanna Durbin.</div>
+    </div>
+    <div class="col">
+        <img src="photos/ron-egypt/IMG_2651.JPEG" alt="Ronald's drawing from behind — search for perfection" class="lightbox-trigger">
+        <div class="caption">&ldquo;Search for perfection it was only.&rdquo;</div>
+    </div>
+</div>
+
+<div class="story-container">
+    <div class="prose">
+        <p>His commanding officers noticed something else. Ronald could draw, lay out a page, write. The unit had its own newspaper &mdash; the <em>Tura Times</em> &mdash; and Ronald was appointed Art Editor. The press card is still in the album, signed by the Editor and the Group Captain Commanding Officer:</p>
+
+        <blockquote>&ldquo;This is to certify that the undermentioned airman is Art Editor of the &lsquo;Tura Times&rsquo;, Unit newspaper of 111 M.U. R.A.F. It is requested that all possible help be given him in this connection. L.A.C. R. Andrews.&rdquo;</blockquote>
+    </div>
+</div>
+
+<!-- ===== PRESS CARD / VJ DAY — CENTRED ===== -->
+<div class="img-centered">
+    <img src="photos/ron-egypt/IMG_2654.JPEG" alt="Ronald's press card and VJ Day edition of the Tura Times" class="lightbox-trigger">
+    <div class="caption">Ronald's press card as Art Editor of the Tura Times &mdash; alongside the VJ Day edition, August 1945. &ldquo;Peace After Nearly Six Years &mdash; First Peace Edition.&rdquo;</div>
+</div>
+
+<div class="story-container">
+    <div class="prose">
+        <p>He was there when it ended. The VJ Day edition of the <em>Tura Times</em> sits in the album &mdash; bold type, Allied flags, the word PEACE filling the page. The war in Europe had ended in May 1945. Japan surrendered in August. Ronald almost certainly laid out the front page that told his unit the war was over. He kept a copy.</p>
+
+        <p>Outside the caves, Cairo was one of the most extraordinary cities in the world to find yourself in. Cosmopolitan, chaotic, alive. Officers and enlisted men from a dozen nations moved through its streets. The Opera Cinema blazed in neon on a downtown corner. The Nile ran through it all, and somewhere along its banks on a quiet evening, the war felt very far away.</p>
+
+        <p>Somewhere along the way Ronald bought his first camera. The album records the moment without ceremony:</p>
+
+        <blockquote>&ldquo;My first camera &mdash; Bert Spencer sold it to me.&rdquo;</blockquote>
+
+        <p>He started shooting everything.</p>
+    </div>
+</div>
+
+<!-- ===== FIRST CAMERA PAGE — FULL WIDTH ===== -->
+<div class="img-full">
+    <img src="photos/ron-egypt/IMG_2655.JPEG" alt="Ronald's first camera, Cairo exhibition photos, Moonlight on the Nile" class="lightbox-trigger">
+    <div class="caption">Cairo, c. 1943&ndash;44. Ronald with his first camera, purchased from a colleague. One of these photographs won his friend Johnnie a prize at a Cairo exhibition. Ronald's entry did not.</div>
+</div>
+
+<!-- ===== CAIRO SHOTS — TWO COLUMN ===== -->
+<div class="img-two-col">
+    <div class="col">
+        <img src="photos/ron-egypt/IMG_2657.JPEG" alt="Anglican Cathedral, Cairo" class="lightbox-trigger" style="object-fit: cover; aspect-ratio: 1;">
+        <div class="caption">Anglican Cathedral, Cairo &mdash; &ldquo;Another early shot.&rdquo;</div>
+    </div>
+    <div class="col">
+        <img src="photos/ron-egypt/IMG_2657.JPEG" alt="Cairo Opera Cinema at night" class="lightbox-trigger" style="object-fit: cover; aspect-ratio: 1;">
+        <div class="caption">Early attempt at night pictures &mdash; Cairo Opera Cinema.</div>
+    </div>
+</div>
+
+<div class="story-container">
+    <div class="prose">
+        <p class="section-break">&bull; &bull; &bull;</p>
+
+        <p>And then there was the museum.</p>
+
+        <p>The Tutankhamun treasures &mdash; discovered by Howard Carter in 1922 and considered the greatest archaeological find in history &mdash; were not on public display during the war. They had been quietly evacuated from the Egyptian Museum and moved to a secure location for safekeeping during the bombing risk.</p>
+
+        <p>That location was Tura.</p>
+
+        <p>Ronald's caves. The same limestone chambers where he measured crankshafts to ten-thousandths of an inch. The gold funeral mask of a boy-king, undisturbed for three thousand years, had been in the next chamber along.</p>
+
+        <p>When the war ended and the treasures were returned to the museum, Ronald went to see them. He wrote his own note in the album:</p>
+
+        <blockquote>&ldquo;The treasures were stored in our caves during the War and later placed on view in the Museum. They were worth the journey to see.&rdquo;</blockquote>
+    </div>
+</div>
+
+<!-- ===== TUTANKHAMUN — FULL WIDTH ===== -->
+<div class="img-full" style="padding: 4rem 0;">
+    <img src="photos/ron-egypt/IMG_2658.JPEG" alt="The Egyptian Museum, Cairo — Tutankhamun treasures" class="lightbox-trigger">
+    <div class="caption">The Egyptian Museum, Cairo, 1945. In Ronald's own words: &ldquo;The treasures were stored in our caves during the War and later placed on view in the Museum. They were worth the journey to see.&rdquo;</div>
+</div>
+
+<div class="story-container">
+    <div class="prose">
+        <p>He came home.</p>
+
+        <p>East Ham was gone &mdash; bombed out, his parents and brother killed in the Blitz while he was away. He rebuilt. He was in his mid-twenties, he had a press card, a photo album, a camera, and hands that could measure a crankshaft to within the width of a human hair.</p>
+
+        <p>On 11th February 1950, at St Mary's Church in Wanstead, he married Patricia Mary FitzMaurice. Her father Reg walked her down the aisle &mdash; the same Reg who appears in the note at the top of the very first page of this album, described as the man who was ill on the boat to Egypt, and who later died from it. Two families, running in parallel all along.</p>
+
+        <p class="italic">The wedding is in the next section.</p>
+    </div>
+</div>
+
+<!-- ===== CLOSING IMAGE ===== -->
+<div class="closing-section">
+    <img src="photos/wedding-group-closeup-print.jpg" alt="Ronald and Patricia Andrews, St Mary's Church, Wanstead, 11 February 1950" class="lightbox-trigger">
+    <div class="caption">Ronald and Patricia Andrews. St Mary's Church, Wanstead. 11 February 1950.</div>
+    <div class="link-bridge">
+        <a href="index.html#wedding">View the Wedding Album &rarr;</a>
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" aria-label="Close">&times;</button>
+    <img src="" alt="Enlarged photo" id="lightboxImg">
+</div>
+
+<script>
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+if (navToggle) {
+    navToggle.addEventListener('click', () => {
+        navLinks.classList.toggle('open');
+    });
+}
+
+// Lightbox
+const lightbox = document.getElementById('lightbox');
+const lightboxImg = document.getElementById('lightboxImg');
+const triggers = document.querySelectorAll('.lightbox-trigger');
+
+triggers.forEach(img => {
+    img.style.cursor = 'zoom-in';
+    img.addEventListener('click', () => {
+        lightboxImg.src = img.src;
+        lightboxImg.alt = img.alt;
+        lightbox.classList.add('active');
+    });
+});
+
+lightbox.addEventListener('click', (e) => {
+    if (e.target !== lightboxImg) {
+        lightbox.classList.remove('active');
+        lightboxImg.src = '';
+    }
+});
+
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && lightbox.classList.contains('active')) {
+        lightbox.classList.remove('active');
+        lightboxImg.src = '';
+    }
+});
+</script>
+
+</body>
+</html>

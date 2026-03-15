@@ -574,6 +574,31 @@ body {
     .photo-gallery { grid-template-columns: 1fr 1fr; }
     .photo-gallery img { height: 120px; }
 }
+.color-toggle-btn {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background: rgba(26, 21, 16, 0.85);
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 6px 14px;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 0.85rem;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+.color-toggle-btn:hover {
+    background: var(--gold);
+    color: var(--dark);
+}
+.clue-photos {
+    position: relative;
+}
+.color-toggle-img {
+    transition: opacity 0.5s ease;
+}
     </style>
 </head>
 <body>
@@ -820,6 +845,17 @@ body {
             </div>
         </div>
 
+        <div class="clue-card" style="border-left-color: #4a6741;">
+            <div class="clue-photos" style="position: relative;">
+                <img src="photos/andrews-family-sepia.jpg" alt="The Andrews family, c. 1930s" data-gallery="clues" data-caption="The Andrews family — Front row L-R: Herbert (older brother), Ronald, their father, younger brother. Back row: unknown woman, their mother, their father." id="andrewsFamilyImg" class="color-toggle-img">
+                <button class="color-toggle-btn" id="colorToggleBtn" onclick="toggleAndrewsColor()">Show in Colour</button>
+            </div>
+            <div class="clue-text">
+                <h3>The Andrews Family, c. 1930s</h3>
+                <p>Ronald Andrews (second from left, front row) with his family. His older brother Herbert sits to the left, their younger brother on the right. Their parents sit behind them &mdash; the older man with the flat cap is their father. The identity of the woman on the left is unknown. Both Herbert and Ronald would go on to serve in WWII, and while they were away their parents and younger brother were killed in the Blitz bombing of East Ham.</p>
+            </div>
+        </div>
+
         <div class="clue-card wedding-clue">
             <div class="clue-photos">
                 <img src="photos/IMG_8854.jpeg" alt="The photo collection spread" data-gallery="clues" data-caption="The wider collection of photographs and cabinet cards laid out together">
@@ -1016,6 +1052,23 @@ document.addEventListener('keydown', (e) => {
     if (e.key === 'ArrowLeft') lightboxGoPrev();
     if (e.key === 'ArrowRight') lightboxGoNext();
 });
+
+// Andrews family color toggle
+function toggleAndrewsColor() {
+    const img = document.getElementById('andrewsFamilyImg');
+    const btn = document.getElementById('colorToggleBtn');
+    if (img.src.includes('sepia')) {
+        img.src = 'photos/andrews-family-color.jpeg';
+        img.style.opacity = '0';
+        setTimeout(() => { img.style.opacity = '1'; }, 50);
+        btn.textContent = 'Show Original';
+    } else {
+        img.src = 'photos/andrews-family-sepia.jpg';
+        img.style.opacity = '0';
+        setTimeout(() => { img.style.opacity = '1'; }, 50);
+        btn.textContent = 'Show in Colour';
+    }
+}
 </script>
 
 </body>

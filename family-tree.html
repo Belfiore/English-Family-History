@@ -1,0 +1,3952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Tree | The FitzMaurice &amp; Andrews Heritage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <style>
+/* ============================================
+   CSS VARIABLES — matching existing site
+   ============================================ */
+:root {
+    --burgundy: #8B0000;
+    --burgundy-dark: #4a0000;
+    --gold: #FFD700;
+    --gold-dark: #B8860B;
+    --gold-light: #FFF3B0;
+    --cream: #FDF8F0;
+    --cream-dark: #F5EDE0;
+    --ink: #1a1a2e;
+    --ink-light: #2d2d44;
+    --parchment: #F8F1E4;
+    --sepia: #704214;
+    --shadow: rgba(0, 0, 0, 0.15);
+    --font-display: 'Cinzel', serif;
+    --font-body: 'Cormorant Garamond', serif;
+    --font-accent: 'EB Garamond', serif;
+
+    /* Card border colours */
+    --border-royal: #c8a97a;
+    --border-notable: #2a4a7b;
+    --border-photo: #5a3e2a;
+    --border-you: #1a5c2a;
+    --border-ww2: #8b2020;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { font-size: 16px; scroll-behavior: smooth; }
+body {
+    font-family: var(--font-body);
+    background: var(--cream);
+    color: var(--ink);
+    line-height: 1.7;
+    overflow-x: hidden;
+}
+
+/* ============================================
+   NAVIGATION
+   ============================================ */
+.main-nav {
+    position: fixed;
+    top: 0; left: 0; right: 0;
+    z-index: 1000;
+    padding: 0.5rem 0;
+    background: rgba(26, 26, 46, 0.95);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+}
+
+.nav-inner {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-logo {
+    font-family: var(--font-display);
+    font-size: 1.1rem;
+    color: var(--gold);
+    text-decoration: none;
+    letter-spacing: 0.1em;
+}
+
+.nav-links {
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-family: var(--font-display);
+    font-size: 0.75rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-links a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px; left: 0;
+    width: 0; height: 1px;
+    background: var(--gold);
+    transition: width 0.3s;
+}
+
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--gold); }
+.nav-links a.active::after { width: 100%; }
+
+.nav-toggle {
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+.nav-toggle span {
+    width: 25px; height: 2px;
+    background: var(--gold);
+    transition: all 0.3s;
+}
+
+/* ============================================
+   PAGE HEADER
+   ============================================ */
+.page-header {
+    padding: 7rem 2rem 2rem;
+    background: linear-gradient(135deg, var(--ink) 0%, var(--burgundy-dark) 100%);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.page-header::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: url("data:image/svg+xml,%3Csvg width='60' height='60' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M30 0L60 30L30 60L0 30Z' fill='none' stroke='%23FFD700' stroke-width='0.3' opacity='0.08'/%3E%3C/svg%3E");
+    opacity: 0.5;
+}
+
+.page-header-content {
+    position: relative;
+    z-index: 1;
+}
+
+.page-header .section-tag {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: var(--gold);
+    border: 1px solid var(--gold);
+    padding: 0.4rem 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.page-header h1 {
+    font-family: var(--font-display);
+    font-size: clamp(1.8rem, 4vw, 2.8rem);
+    color: white;
+    letter-spacing: 0.05em;
+    line-height: 1.3;
+    margin-bottom: 0.75rem;
+}
+
+.page-header .subtitle {
+    font-family: var(--font-accent);
+    font-size: 1.15rem;
+    color: rgba(255,255,255,0.7);
+    font-style: italic;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.header-divider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1.25rem 0;
+}
+.header-divider::before,
+.header-divider::after {
+    content: '';
+    width: 80px; height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold));
+}
+.header-divider::after {
+    background: linear-gradient(to left, transparent, var(--gold));
+}
+.divider-ornament { color: var(--gold); font-size: 1.2rem; }
+
+/* ============================================
+   MAIN TWO-COLUMN LAYOUT
+   ============================================ */
+.tree-layout {
+    display: flex;
+    height: calc(100vh - 50px);
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 50px;
+}
+
+.tree-column {
+    flex: 0 0 63%;
+    overflow-y: auto;
+    padding: 2rem 2rem 4rem 2rem;
+    scroll-behavior: smooth;
+}
+
+.bio-column {
+    flex: 0 0 37%;
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+    border-left: 1px solid rgba(139, 0, 0, 0.1);
+    background: white;
+    padding: 0;
+}
+
+/* Custom scrollbar */
+.tree-column::-webkit-scrollbar,
+.bio-column::-webkit-scrollbar {
+    width: 6px;
+}
+.tree-column::-webkit-scrollbar-track,
+.bio-column::-webkit-scrollbar-track {
+    background: transparent;
+}
+.tree-column::-webkit-scrollbar-thumb,
+.bio-column::-webkit-scrollbar-thumb {
+    background: rgba(139,0,0,0.2);
+    border-radius: 3px;
+}
+.tree-column::-webkit-scrollbar-thumb:hover,
+.bio-column::-webkit-scrollbar-thumb:hover {
+    background: rgba(139,0,0,0.4);
+}
+
+/* ============================================
+   ERA SECTIONS
+   ============================================ */
+.era-section {
+    margin-bottom: 2.5rem;
+    position: relative;
+}
+
+.era-header {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.25rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 1px solid rgba(139, 0, 0, 0.12);
+}
+
+.era-badge {
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: var(--burgundy);
+    white-space: nowrap;
+    background: rgba(139,0,0,0.06);
+    padding: 0.35rem 0.9rem;
+    border-radius: 3px;
+    border: 1px solid rgba(139,0,0,0.12);
+}
+
+.era-title {
+    font-family: var(--font-display);
+    font-size: 0.95rem;
+    color: var(--ink);
+    letter-spacing: 0.05em;
+}
+
+.era-date {
+    font-family: var(--font-accent);
+    font-size: 0.85rem;
+    color: var(--gold-dark);
+    font-style: italic;
+    margin-left: auto;
+    white-space: nowrap;
+}
+
+/* ============================================
+   PERSON ROW LAYOUTS
+   ============================================ */
+.person-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 0.75rem;
+    position: relative;
+}
+
+.person-row.couple {
+    justify-content: center;
+    align-items: center;
+}
+
+.marriage-symbol {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.25rem;
+    color: var(--burgundy);
+    opacity: 0.5;
+    font-size: 1.3rem;
+    align-self: center;
+}
+
+.dashed-connector {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 0.25rem;
+    align-self: center;
+}
+
+.dashed-connector .dash-line {
+    width: 40px;
+    border-top: 2px dashed rgba(139,0,0,0.3);
+}
+
+.dashed-connector .dash-label {
+    font-family: var(--font-accent);
+    font-size: 0.65rem;
+    color: var(--sepia);
+    font-style: italic;
+    white-space: nowrap;
+    margin-top: 2px;
+}
+
+/* Descent arrow between rows */
+.descent-arrow {
+    display: flex;
+    justify-content: center;
+    padding: 0.25rem 0;
+    color: var(--burgundy);
+    opacity: 0.3;
+    font-size: 1.1rem;
+}
+
+/* ============================================
+   PERSON CARD
+   ============================================ */
+.person-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0.6rem 0.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.25s ease;
+    position: relative;
+    min-width: 110px;
+    max-width: 145px;
+    border: 1px solid transparent;
+    background: rgba(255,255,255,0.6);
+}
+
+.person-card:hover {
+    background: rgba(139, 0, 0, 0.04);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.person-card.selected {
+    background: rgba(139, 0, 0, 0.06);
+    border-color: var(--burgundy);
+    box-shadow: 0 4px 20px rgba(139,0,0,0.12);
+}
+
+/* Left border by type */
+.person-card[data-type="royal"] { border-left: 3px solid var(--border-royal); }
+.person-card[data-type="notable"] { border-left: 3px solid var(--border-notable); }
+.person-card[data-type="photo"] { border-left: 3px solid var(--border-photo); }
+.person-card[data-type="you"] { border-left: 3px solid var(--border-you); }
+.person-card[data-type="ww2"] { border-left: 3px solid var(--border-ww2); }
+
+.person-avatar-ring {
+    width: 54px; height: 54px;
+    border-radius: 50%;
+    border: 2px solid rgba(139,0,0,0.15);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.35rem;
+    transition: border-color 0.3s;
+}
+
+.person-card:hover .person-avatar-ring,
+.person-card.selected .person-avatar-ring {
+    border-color: var(--burgundy);
+}
+
+.person-card[data-type="royal"] .person-avatar-ring {
+    border-color: var(--border-royal);
+}
+
+.person-avatar-inner {
+    width: 46px; height: 46px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.person-avatar-inner.male { background: linear-gradient(135deg, #e8e0d8, #d4c8b8); }
+.person-avatar-inner.female { background: linear-gradient(135deg, #f0e0e8, #e4d0d8); }
+.person-avatar-inner.group { background: linear-gradient(135deg, #e0e0e8, #d0d0d8); }
+
+.person-card-name {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    color: var(--ink);
+    text-align: center;
+    line-height: 1.3;
+    margin-bottom: 0.15rem;
+}
+
+.person-card-dates {
+    font-family: var(--font-accent);
+    font-size: 0.72rem;
+    color: var(--sepia);
+    font-style: italic;
+    opacity: 0.7;
+    text-align: center;
+}
+
+.person-card-role {
+    font-family: var(--font-display);
+    font-size: 0.5rem;
+    color: var(--gold-dark);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-top: 0.15rem;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* Photo indicator dot */
+.has-photos-dot {
+    position: absolute;
+    top: 6px; right: 6px;
+    width: 7px; height: 7px;
+    border-radius: 50%;
+    background: var(--border-photo);
+    box-shadow: 0 0 4px rgba(90,62,42,0.4);
+}
+
+/* ============================================
+   SPECIAL NOTES IN TREE
+   ============================================ */
+.tree-note {
+    text-align: center;
+    padding: 0.5rem 1rem;
+    margin: 0.25rem auto 0.75rem;
+    max-width: 500px;
+}
+
+.tree-note.dashed {
+    border: 1px dashed rgba(139,0,0,0.2);
+    border-radius: 8px;
+    background: rgba(255,255,255,0.5);
+}
+
+.tree-note p {
+    font-family: var(--font-accent);
+    font-size: 0.85rem;
+    color: var(--sepia);
+    font-style: italic;
+    line-height: 1.5;
+}
+
+.tree-note .note-icon {
+    font-size: 0.9rem;
+    margin-right: 0.3rem;
+}
+
+.tree-note.blitz {
+    border-color: rgba(139,32,32,0.3);
+    background: rgba(139,32,32,0.03);
+}
+
+.tree-note.blitz p {
+    color: #8b2020;
+}
+
+.tree-note.sidebar-link {
+    cursor: pointer;
+    transition: all 0.25s;
+}
+
+.tree-note.sidebar-link:hover {
+    background: rgba(139,0,0,0.05);
+    border-color: var(--burgundy);
+}
+
+/* ============================================
+   COUPLE HIGHLIGHT (Patricia & Ronald)
+   ============================================ */
+.couple-highlight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 1rem;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8), rgba(253,248,240,0.8));
+    border: 2px solid var(--gold);
+    border-radius: 14px;
+    box-shadow: 0 6px 30px rgba(139, 0, 0, 0.08);
+    margin: 0.5rem auto;
+    max-width: 360px;
+}
+
+.couple-highlight .wedding-icon {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.couple-highlight .wedding-date {
+    font-family: var(--font-display);
+    font-size: 0.55rem;
+    color: var(--gold-dark);
+    letter-spacing: 0.1em;
+}
+
+/* ============================================
+   BIO PANEL (right column)
+   ============================================ */
+.bio-empty {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    padding: 3rem;
+    text-align: center;
+}
+
+.bio-empty-icon {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    opacity: 0.3;
+}
+
+.bio-empty h3 {
+    font-family: var(--font-display);
+    font-size: 1rem;
+    color: var(--ink);
+    letter-spacing: 0.05em;
+    margin-bottom: 0.5rem;
+}
+
+.bio-empty p {
+    font-family: var(--font-accent);
+    font-size: 0.95rem;
+    color: var(--sepia);
+    font-style: italic;
+    max-width: 250px;
+}
+
+/* Bio content when a person is selected */
+.bio-content {
+    padding: 1.75rem;
+}
+
+.bio-header {
+    margin-bottom: 1.25rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid rgba(139,0,0,0.08);
+}
+
+.bio-header h2 {
+    font-family: var(--font-display);
+    font-size: 1.2rem;
+    color: var(--burgundy);
+    letter-spacing: 0.03em;
+    line-height: 1.3;
+    margin-bottom: 0.35rem;
+}
+
+.bio-header .bio-role {
+    font-family: var(--font-accent);
+    font-size: 0.95rem;
+    color: var(--gold-dark);
+    font-style: italic;
+}
+
+.bio-header .bio-dates {
+    font-family: var(--font-accent);
+    font-size: 0.88rem;
+    color: var(--sepia);
+    margin-top: 0.25rem;
+}
+
+/* Badges */
+.bio-badges {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.35rem;
+    margin-bottom: 1.25rem;
+}
+
+.bio-badge {
+    display: inline-block;
+    font-family: var(--font-display);
+    font-size: 0.55rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    white-space: nowrap;
+}
+
+.bio-badge.royal { background: #f5efe6; color: #7b5e3a; }
+.bio-badge.famous { background: #edf2fa; color: #2a4a7b; }
+.bio-badge.photo { background: #f5ede4; color: #5a3e2a; }
+.bio-badge.you { background: #eaf3de; color: #1a5c2a; }
+.bio-badge.danger { background: #fcebeb; color: #8b2020; }
+.bio-badge.military { background: #fff9ea; color: #7a5a00; }
+.bio-badge.neutral { background: #f5efe6; color: #9b8570; }
+
+/* Photos in bio panel */
+.bio-photos {
+    margin-bottom: 1.25rem;
+}
+
+.bio-photos-label {
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--sepia);
+    margin-bottom: 0.5rem;
+    opacity: 0.6;
+}
+
+.bio-photo-row {
+    display: flex;
+    gap: 0.5rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.bio-photo-row::-webkit-scrollbar {
+    height: 4px;
+}
+.bio-photo-row::-webkit-scrollbar-thumb {
+    background: rgba(139,0,0,0.15);
+    border-radius: 2px;
+}
+
+.bio-photo-thumb {
+    flex-shrink: 0;
+    width: 100px;
+    height: 80px;
+    border-radius: 6px;
+    overflow: hidden;
+    cursor: pointer;
+    border: 1px solid rgba(139,0,0,0.1);
+    transition: all 0.25s;
+}
+
+.bio-photo-thumb:hover {
+    border-color: var(--burgundy);
+    box-shadow: 0 3px 12px rgba(0,0,0,0.15);
+    transform: translateY(-2px);
+}
+
+.bio-photo-thumb img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Bio text sections */
+.bio-section {
+    margin-bottom: 1rem;
+}
+
+.bio-section-label {
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--burgundy);
+    margin-bottom: 0.35rem;
+    opacity: 0.7;
+}
+
+.bio-section p {
+    font-family: var(--font-body);
+    font-size: 0.95rem;
+    color: var(--sepia);
+    line-height: 1.7;
+}
+
+.bio-section p.connection {
+    font-family: var(--font-accent);
+    font-style: italic;
+    color: var(--gold-dark);
+}
+
+.bio-section p.notable {
+    font-size: 0.88rem;
+    opacity: 0.8;
+}
+
+/* Sources links */
+.bio-sources {
+    margin-top: 1.25rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(139,0,0,0.08);
+}
+
+.bio-sources-label {
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--burgundy);
+    margin-bottom: 0.4rem;
+    opacity: 0.7;
+}
+
+.bio-sources a {
+    display: block;
+    font-family: var(--font-accent);
+    font-size: 0.82rem;
+    color: var(--burgundy);
+    text-decoration: none;
+    padding: 0.2rem 0;
+    transition: color 0.2s;
+}
+
+.bio-sources a:hover {
+    color: var(--gold-dark);
+    text-decoration: underline;
+}
+
+.bio-sources a::before {
+    content: '\2192  ';
+    opacity: 0.5;
+}
+
+/* ============================================
+   LIGHTBOX
+   ============================================ */
+.lightbox-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.92);
+    z-index: 3000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s;
+    flex-direction: column;
+}
+
+.lightbox-overlay.active {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 1.5rem; right: 1.5rem;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2.2rem;
+    cursor: pointer;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+    z-index: 3001;
+    line-height: 1;
+}
+
+.lightbox-close:hover { opacity: 1; }
+
+.lightbox-image-wrap {
+    max-width: 90vw;
+    max-height: 80vh;
+    position: relative;
+}
+
+.lightbox-image-wrap img {
+    max-width: 90vw;
+    max-height: 80vh;
+    object-fit: contain;
+    border-radius: 4px;
+    box-shadow: 0 10px 60px rgba(0,0,0,0.5);
+}
+
+.lightbox-caption {
+    font-family: var(--font-accent);
+    font-size: 0.95rem;
+    color: rgba(255,255,255,0.8);
+    text-align: center;
+    max-width: 700px;
+    margin-top: 1rem;
+    font-style: italic;
+    line-height: 1.5;
+    padding: 0 1rem;
+}
+
+.lightbox-nav {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: white;
+    font-size: 1.5rem;
+    width: 44px; height: 44px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.25s;
+    z-index: 3001;
+}
+
+.lightbox-nav:hover {
+    background: rgba(255,255,255,0.2);
+    border-color: rgba(255,255,255,0.4);
+}
+
+.lightbox-prev { left: 1.5rem; }
+.lightbox-next { right: 1.5rem; }
+
+.lightbox-counter {
+    font-family: var(--font-display);
+    font-size: 0.65rem;
+    letter-spacing: 0.15em;
+    color: rgba(255,255,255,0.5);
+    margin-top: 0.75rem;
+}
+
+/* ============================================
+   PERSPECTIVE SELECTOR ("Who Are You?")
+   ============================================ */
+.perspective-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    margin-bottom: 1rem;
+    background: linear-gradient(135deg, rgba(253,248,240,0.9), rgba(255,255,255,0.8));
+    border: 1px solid rgba(200,169,122,0.3);
+    border-radius: 10px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.04);
+}
+
+.perspective-label {
+    font-family: var(--font-display);
+    font-size: 0.6rem;
+    letter-spacing: 0.15em;
+    text-transform: uppercase;
+    color: var(--gold-dark);
+    white-space: nowrap;
+}
+
+.perspective-select {
+    flex: 1;
+    font-family: var(--font-accent);
+    font-size: 0.9rem;
+    color: var(--ink);
+    background: white;
+    border: 1px solid rgba(200,169,122,0.4);
+    border-radius: 6px;
+    padding: 0.4rem 0.6rem;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.25s;
+    -webkit-appearance: none;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%23B8860B'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 0.5rem center;
+    padding-right: 1.8rem;
+}
+
+.perspective-select:focus,
+.perspective-select:hover {
+    border-color: var(--gold-dark);
+    box-shadow: 0 0 0 2px rgba(200,169,122,0.15);
+}
+
+/* Historical portrait in bio panel */
+.bio-portrait {
+    margin-bottom: 1.25rem;
+    text-align: center;
+}
+
+.bio-portrait img {
+    max-width: 100%;
+    max-height: 280px;
+    object-fit: contain;
+    border-radius: 8px;
+    border: 1px solid rgba(139,0,0,0.1);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.bio-portrait-caption {
+    font-family: var(--font-accent);
+    font-size: 0.75rem;
+    color: var(--sepia);
+    font-style: italic;
+    margin-top: 0.4rem;
+    opacity: 0.7;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 900px) {
+    .tree-layout {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .tree-column {
+        flex: none;
+        overflow-y: visible;
+        max-height: none;
+        height: auto;
+    }
+
+    .bio-column {
+        flex: none;
+        position: relative;
+        height: auto;
+        max-height: 80vh;
+        overflow-y: auto;
+        border-left: none;
+        border-top: 2px solid var(--gold);
+    }
+
+    .bio-empty {
+        height: auto;
+        min-height: 200px;
+    }
+
+    .person-card {
+        min-width: 90px;
+        max-width: 120px;
+    }
+
+    .person-card-name { font-size: 0.58rem; }
+    .person-avatar-ring { width: 44px; height: 44px; }
+    .person-avatar-inner { width: 38px; height: 38px; font-size: 1.1rem; }
+}
+
+@media (max-width: 768px) {
+    .nav-links { display: none; }
+    .nav-toggle { display: flex; }
+    .nav-links.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%; left: 0; right: 0;
+        background: rgba(26, 26, 46, 0.98);
+        padding: 1rem 2rem 2rem;
+        gap: 1rem;
+    }
+
+    .person-card {
+        min-width: 80px;
+        max-width: 100px;
+        padding: 0.4rem;
+    }
+
+    .couple-highlight {
+        flex-wrap: wrap;
+        max-width: 100%;
+    }
+}
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">FitzMaurice &amp; Andrews</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="family-tree.html" class="active">Family Tree</a>
+            <a href="family-crest.html">Family Crest</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<!-- Main Layout -->
+<div class="tree-layout">
+
+    <!-- LEFT COLUMN: Tree -->
+    <div class="tree-column" id="treeColumn">
+        <!-- Perspective Selector -->
+        <div class="perspective-bar">
+            <span class="perspective-label">👁 Who Are You?</span>
+            <select class="perspective-select" id="perspectiveSelect">
+                <option value="sebastian">Sebastian Belfiore</option>
+                <option value="alex">Alex Belfiore</option>
+                <option value="amanda">Amanda Andrews Belfiore</option>
+                <option value="venetia">Venetia Andrews Austin</option>
+                <option value="gary">Gary Austin</option>
+                <option value="max">Max Austin</option>
+                <option value="ben">Ben Austin</option>
+                <option value="valeria">Valeria Belfiore</option>
+                <option value="lauren">Lauren Belfiore</option>
+            </select>
+        </div>
+        <!-- Tree populated by JavaScript below selector -->
+    </div>
+
+    <!-- RIGHT COLUMN: Bio Panel -->
+    <div class="bio-column" id="bioColumn">
+        <div class="bio-empty" id="bioEmpty">
+            <div class="bio-empty-icon">&#9830;</div>
+            <h3>Select a Person</h3>
+            <p>Click any name in the tree to view their biography and photographs.</p>
+        </div>
+        <div class="bio-content" id="bioContent" style="display:none;"></div>
+    </div>
+
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">&times;</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev">&#8249;</button>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext">&#8250;</button>
+    <div class="lightbox-image-wrap">
+        <img id="lightboxImg" src="" alt="">
+    </div>
+    <div class="lightbox-caption" id="lightboxCaption"></div>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+</div>
+
+
+<script>
+// ============================================
+// PHOTO DATA
+// ============================================
+const PHOTO_PATH = 'photos/';
+
+const PHOTOS = {
+  edward_dixon: [
+    { file: 'edward-dixon-stuart-studio.jpg',
+      caption: 'Edward Dixon FitzMaurice \u2014 Stuart Studio, 47 & 49 Brompton Road, Knightsbridge, c.1895' },
+    { file: 'babs-and-edward-with-boys.jpg',
+      caption: 'Edward Dixon with sons Reg & Bob on a pebbly beach (right photo), c.1905\u20131910' },
+    { file: 'photo-backs-labeled.jpg',
+      caption: 'Photo inscribed on reverse: "Reg, Bob and their Father Edward Dixon Fitzmaurice"' }
+  ],
+  edith: [
+    { file: 'edith-medallion-front.jpg',
+      caption: 'Edith Madeleine FitzMaurice \u2014 circular medallion portrait, c.1899' },
+    { file: 'edith-medallion-back.jpg',
+      caption: 'Reverse of medallion \u2014 handwritten inscription: "Edith Madeleine Fitzmaurice, c.1899"' },
+    { file: 'edith-medallion-held-garden.jpg',
+      caption: 'The medallion portrait, photographed in a garden setting' },
+    { file: 'lang-sims-woman.jpg',
+      caption: 'Probable portrait of Edith \u2014 Lang Sims Studio, 437 Brixton Road SW / Folkestone, Kent' }
+  ],
+  babs: [
+    { file: 'babs-and-edward-with-boys.jpg',
+      caption: 'Auntie Babs on a verandah in South Africa (left photo), c.1905\u20131915' },
+    { file: 'photo-backs-labeled.jpg',
+      caption: 'Reverse inscribed: "Auntie Babs / South Africa"' },
+    { file: 'wedding-group-named-captions.jpg',
+      caption: 'Auntie Babs named in the wedding group (1950) \u2014 confirming she was in England for the wedding' }
+  ],
+  reg: [
+    { file: 'babs-and-edward-with-boys.jpg',
+      caption: 'Reg as a boy with his father Edward Dixon and brother Bob \u2014 pebbly beach, c.1905' },
+    { file: 'photo-backs-labeled.jpg',
+      caption: 'Photo inscribed: "Reg, Bob and their Father Edward Dixon Fitzmaurice"' },
+    { file: 'unknown-young-man-bowtie.jpg',
+      caption: 'Possible portrait of Reg FitzMaurice as a young man, c.1910\u20131920 (unconfirmed)' },
+    { file: 'south-africa-house-and-young-man.jpg',
+      caption: 'Possible portrait of Reg FitzMaurice as a young man (unconfirmed)' }
+  ],
+  bob: [
+    { file: 'babs-and-edward-with-boys.jpg',
+      caption: 'Bob as a boy with father Edward Dixon and brother Reg (right photo)' },
+    { file: 'photo-backs-labeled.jpg',
+      caption: 'Photo inscribed: "Reg, Bob and their Father Edward Dixon Fitzmaurice"' }
+  ],
+  cdv_ancestors: [
+    { file: 'cdv-mother-child-front.jpg',
+      caption: 'Unknown FitzMaurice ancestors \u2014 mother and child, J. Perriman Studio, Camden Town, c.1865\u20131878' },
+    { file: 'cdv-perriman-back-flat.jpg',
+      caption: 'Reverse: J. Perriman, Camden Town School of Photography, Commission No. 925' },
+    { file: 'cdv-perriman-back-held.jpg',
+      caption: 'Reverse (held): J. Perriman stamp \u2014 "Side of the Mother Red Cap", Camden Town' }
+  ],
+  patricia: [
+    { file: 'wedding-album-cover-inscription.jpg',
+      caption: 'Wedding album inscription \u2014 confirms Patricia Mary FitzMaurice, daughter of Mr. R. FitzMaurice of Hayes, Middlesex. Married 11 February 1950, St Mary\'s Church, Wanstead' },
+    { file: 'wedding-aisle-first-photo.jpg',
+      caption: 'Mr. and Mrs. Ronald Andrews \u2014 first photograph, walking down the aisle, 11 February 1950' },
+    { file: 'wedding-church-steps-couple.jpg',
+      caption: 'Patricia and her father Reg outside St Mary\'s Wanstead (left); close-up of the happy couple (right)' },
+    { file: 'wedding-group-named-captions.jpg',
+      caption: 'Wedding group on church steps \u2014 names handwritten below including Auntie Babs, Uncle Leslie, and family' },
+    { file: 'wedding-group-closeup-print.jpg',
+      caption: 'Wedding group portrait \u2014 St Mary\'s Church, Wanstead, February 1950' },
+    { file: 'wedding-reception-venue-cake.jpg',
+      caption: 'Reception at the Andrews family home in Wanstead; the ceremonial cake cutting' },
+    { file: 'wedding-reception-toast.jpg',
+      caption: 'Wedding reception \u2014 "To the Bride and Groom, God bless them. The Toast was drunk in Sherry."' },
+    { file: 'wedding-departure-confetti.jpg',
+      caption: 'The couple departing with confetti' },
+    { file: 'wedding-honeymoon-departure.jpg',
+      caption: 'Off to Waterloo Station \u2014 and a Bournemouth honeymoon' },
+    { file: 'ruby-wedding-invitation-and-photos.jpg',
+      caption: 'Ruby Wedding anniversary invitation (The French Horn, Sonning, Saturday 10th March) with two wedding group photos' }
+  ],
+  cecilchain: [
+    { file: 'korea-news-clipping.jpg',
+      caption: 'Evening News, 1951: "Earl from Korea Left a Fortune \u2014 He Scrubbed Decks." Cecil O\'Bryen FitzMaurice becomes 8th Earl of Orkney' },
+    { file: 'orkney-marries-clipping.jpg',
+      caption: 'Evening News, November 1952: "Earl of Orkney Marries" \u2014 Cecil marries Rose Silley at St Mary\'s, Brixham, Devon' }
+  ]
+};
+
+// ============================================
+// PEOPLE DATA
+// ============================================
+const PEOPLE = {
+  james2: {
+    name: "King James II of Scotland",
+    dates: "1430 \u2013 1460",
+    role: "King of Scots",
+    type: "royal",
+    emoji: "\ud83d\udc51",
+    gender: "male",
+    badges: [
+      { text: "\u2654 King of Scots", style: "royal" },
+      { text: "House of Stewart", style: "royal" }
+    ],
+    about: "The sixth monarch of the House of Stewart, James II ruled Scotland from age six. Known for a distinctive red birthmark, he was killed at the Siege of Roxburgh Castle when a cannon exploded beside him \u2014 he was just 29. His fascination with artillery, the 'new technology' of his era, cost him his life.",
+    connection: "Your earliest confirmed ancestor in this tree. His daughter Princess Mary Stewart married James Hamilton \u2014 and that single union planted the seed that would become the FitzMaurice family's noble lineage.",
+    notable: "Approximately 15 generations separate Sebastian Belfiore from this king.",
+    photoKey: null
+  },
+
+  mary_stewart: {
+    name: "Princess Mary Stewart",
+    dates: "c.1433 \u2013 1465",
+    role: "Daughter of King James II",
+    type: "royal",
+    emoji: "\ud83d\udc78",
+    gender: "female",
+    badges: [{ text: "\u2654 Scottish Princess", style: "royal" }],
+    about: "Daughter of King James II of Scotland. Her marriage to James Hamilton, 1st Lord Hamilton, was the pivotal union that carried royal Stewart blood into the Hamilton noble house \u2014 and ultimately into the FitzMaurice family.",
+    connection: "The bridge between Scottish royalty and the FitzMaurice ancestry. Everything in this tree flows from this marriage.",
+    notable: "Royal princesses of this era were powerful political instruments \u2014 her marriage to Hamilton dramatically elevated that family's standing in Scotland.",
+    photoKey: null
+  },
+
+  hamilton_lord: {
+    name: "James Hamilton, 1st Lord Hamilton",
+    dates: "c.1415 \u2013 1479",
+    role: "Scottish nobleman",
+    type: "royal",
+    emoji: "\u2694\ufe0f",
+    gender: "male",
+    badges: [{ text: "1st Lord Hamilton", style: "royal" }],
+    about: "A powerful Scottish nobleman. By marrying Princess Mary Stewart, daughter of King James II, he secured a permanent place for the Hamilton family at the heart of Scottish aristocratic life \u2014 and a claim of royal descent that would endure for centuries.",
+    connection: "His marriage to Princess Mary gave all his descendants royal blood. That lineage runs directly to Sebastian Belfiore.",
+    notable: "The Hamilton family seat was Hamilton Palace \u2014 one of the largest private houses ever built in Britain, demolished in 1921 because coal mining had undermined its foundations.",
+    photoKey: null
+  },
+
+  arran: {
+    name: "James Hamilton, 1st Earl of Arran",
+    dates: "c.1477 \u2013 1529",
+    role: "Regent of Scotland",
+    type: "royal",
+    emoji: "\ud83c\udfdb\ufe0f",
+    gender: "male",
+    badges: [
+      { text: "1st Earl of Arran", style: "royal" },
+      { text: "Regent of Scotland", style: "royal" }
+    ],
+    about: "Grandson of Princess Mary Stewart. One of the most powerful men in Scotland \u2014 briefly considered as a potential husband for Margaret Tudor, Henry VIII's sister. As Regent he wielded enormous influence over the Scottish crown.",
+    connection: "A key step in the Hamilton ancestry \u2014 carrying royal Stewart blood forward toward the Dukedom of Hamilton and ultimately the Earldom of Orkney.",
+    notable: "The Hamiltons always positioned themselves near the crown without quite grasping it \u2014 a defining characteristic of Scottish noble politics for two centuries.",
+    photoKey: null
+  },
+
+  hamilton_succession: {
+    name: "Hamilton Succession",
+    dates: "c.1530 \u2013 1630",
+    role: "Four generations of Scottish nobility",
+    type: "neutral",
+    emoji: "\ud83d\udcdc",
+    gender: "male",
+    badges: [{ text: "Abridged", style: "neutral" }],
+    about: "Across four generations, the Hamilton family became one of Scotland's most powerful dynasties \u2014 holding the Dukedom of Hamilton and the office of Hereditary Keepers of Holyroodhouse, the monarch's official Scottish residence, a title still held today.",
+    connection: "This era culminated in Anne Hamilton, 3rd Duchess of Hamilton, whose son George became the 1st Earl of Orkney \u2014 the title whose FitzMaurice inheritors connect to the Belfiore family.",
+    notable: "James Hamilton, 2nd Earl of Arran (c.1519\u20131575) served as Regent during the infant Mary Queen of Scots' childhood. The Hamiltons were always one heartbeat from the throne.",
+    photoKey: null
+  },
+
+  anne_hamilton: {
+    name: "Anne Hamilton, 3rd Duchess of Hamilton",
+    dates: "1631 \u2013 1716",
+    role: "Duchess of Hamilton in her own right",
+    type: "royal",
+    emoji: "\ud83d\udc51",
+    gender: "female",
+    badges: [
+      { text: "3rd Duchess of Hamilton", style: "royal" },
+      { text: "Hereditary Keeper of Holyroodhouse", style: "royal" }
+    ],
+    about: "One of Scotland's most formidable aristocratic women of the 17th century. She held the Dukedom in her own right after her family's male line was disrupted by the Civil War. She lived to 85, surviving the Restoration, the Glorious Revolution, and the Act of Union.",
+    connection: "Her son George Hamilton (by William Douglas, 1st Earl of Selkirk) became the 1st Earl of Orkney \u2014 the title whose FitzMaurice inheritors connect to the present-day family.",
+    notable: "The Hamiltons' position as Hereditary Keepers of Holyroodhouse continues to this day \u2014 the current Duke of Hamilton still holds this ancient royal office.",
+    photoKey: null
+  },
+
+  george_hamilton: {
+    name: "George Hamilton, 1st Earl of Orkney",
+    dates: "1666 \u2013 1737",
+    role: "Britain's first ever Field Marshal",
+    type: "notable",
+    emoji: "\u2694\ufe0f",
+    gender: "male",
+    badges: [
+      { text: "\u2605 First Field Marshal in British history", style: "famous" },
+      { text: "Hero of Blenheim 1704", style: "military" },
+      { text: "Ramillies 1706", style: "military" },
+      { text: "Oudenarde 1708", style: "military" },
+      { text: "Malplaquet 1709", style: "military" },
+      { text: "Governor of Virginia 1710\u20131737", style: "military" },
+      { text: "Owner of Cliveden House", style: "famous" }
+    ],
+    about: "One of the most decorated soldiers in British history. Born at Hamilton Palace \u2014 once the largest private residence in Britain \u2014 he fought under the Duke of Marlborough at all the great battles of the War of the Spanish Succession: Blenheim (1704), Ramillies (1706), Oudenarde (1708), and Malplaquet (1709). In 1736 he became the very first officer in British Army history promoted to Field Marshal. He was Governor of Virginia for 27 years, though he famously never once set foot in the colony. He owned Cliveden in Buckinghamshire \u2014 the same house where the Profumo Affair would unfold 226 years later in 1963.",
+    connection: "The founding figure of the Orkney Earldom. His descendants eventually brought the title to the FitzMaurice family. Direct ancestor of Sebastian Belfiore via his daughter Anne.",
+    notable: "His marble bust by the sculptor John Michael Rysbrack, in the form of a Roman centurion, is now in the Victoria & Albert Museum in London. Hamilton Palace, where he was born, was demolished in 1921 because coal mining had undermined its foundations \u2014 it was once considered one of the grandest private houses in all of Europe.",
+    photoKey: null
+  },
+
+  elizabeth_villiers: {
+    name: "Elizabeth Villiers, Countess of Orkney",
+    dates: "c.1657 \u2013 1733",
+    role: "Former mistress of King William III",
+    type: "notable",
+    emoji: "\ud83d\udc51",
+    gender: "female",
+    badges: [
+      { text: "\u2605 Famous court figure", style: "famous" },
+      { text: "Mistress of King William III", style: "royal" }
+    ],
+    about: "One of the most influential women at the court of King William III. When Queen Mary II died in 1694, William arranged Elizabeth's marriage to George Hamilton \u2014 partly to manage the implications of their long-running affair.",
+    connection: "As wife of the 1st Earl of Orkney, she is a direct ancestor. Her eldest daughter Anne inherited the Earldom \u2014 the link that begins the chain to the FitzMaurice family.",
+    notable: "William III gave Elizabeth vast Irish estates as part of their arrangement \u2014 a fortune that funded the Orkney family for generations.",
+    photoKey: null
+  },
+
+  anne_obrien: {
+    name: "Anne O'Brien, 2nd Countess of Orkney",
+    dates: "d. 1756",
+    role: "Countess of Orkney in her own right",
+    type: "royal",
+    emoji: "\ud83d\udc51",
+    gender: "female",
+    badges: [
+      { text: "2nd Countess of Orkney", style: "royal" },
+      { text: "Inherited title suo jure", style: "royal" }
+    ],
+    about: "Eldest daughter of the 1st Earl and Elizabeth Villiers. She inherited the Earldom as the eldest child \u2014 possible because the original 1696 grant used the phrase 'heirs whatsoever of the body', allowing female succession.",
+    connection: "Through her marriage to William O'Brien, 4th Earl of Inchiquin, the title eventually reached the FitzMaurice family. Without her, the Earldom would have died with her father.",
+    notable: "The specific legal wording 'heirs whatsoever of the body' in the 1696 peerage grant is the reason the Earldom exists in this family's history at all.",
+    photoKey: null
+  },
+
+  obrien_fitzmaurice_succession: {
+    name: "O'Brien \u2192 FitzMaurice succession",
+    dates: "c.1756 \u2013 1831",
+    role: "Title passed via two Mary O'Brien Countesses",
+    type: "neutral",
+    emoji: "\ud83d\udcdc",
+    gender: "male",
+    badges: [{ text: "Female succession line", style: "neutral" }],
+    about: "The Earldom passed through two generations of O'Brien Countesses before reaching the FitzMaurice family when the 4th Countess married Thomas FitzMaurice \u2014 a descendant of John Petty, 1st Earl of Shelburne.",
+    connection: "The moment the FitzMaurice name enters the Orkney story. Through Thomas's family, a remarkable political connection also enters the tree: his great-uncle was the British Prime Minister who ended the American Revolutionary War.",
+    notable: "The name FitzMaurice is Norman-French in origin, meaning 'son of Maurice'. The family held vast estates in County Kerry and County Laois in Ireland.",
+    photoKey: null
+  },
+
+  earl5: {
+    name: "Thomas FitzMaurice, 5th Earl of Orkney",
+    dates: "1803 \u2013 1877",
+    role: "Scottish Representative Peer, 1833\u20131871",
+    type: "royal",
+    emoji: "\ud83c\udfdb\ufe0f",
+    gender: "male",
+    badges: [
+      { text: "5th Earl of Orkney", style: "royal" },
+      { text: "Scottish Representative Peer", style: "royal" },
+      { text: "First FitzMaurice Earl", style: "royal" }
+    ],
+    about: "The first FitzMaurice to hold the Orkney title, inheriting it through the O'Brien female line. He served as a Scottish Representative Peer in the House of Lords for nearly 40 years (1833\u20131871). He came from the Petty-FitzMaurice family of County Kerry, Ireland \u2014 the same Norman-French dynasty whose name means 'son of Maurice' and who held vast estates in County Kerry and County Laois. His great-uncle was William Petty-FitzMaurice, 1st Marquess of Lansdowne \u2014 the British Prime Minister who ended the American Revolutionary War.",
+    connection: "The key 19th-century ancestor from whom the entire Victorian FitzMaurice family descends \u2014 including the 7th Earl and almost certainly the direct ancestor Edward Dixon FitzMaurice.",
+    notable: "He is buried at Latteragh graveyard in County Tipperary, Ireland \u2014 reflecting the family's deep Anglo-Irish roots. The FitzMaurice name is Norman-French in origin, from the medieval Lords of Kerry.",
+    photoKey: null
+  },
+
+  lansdowne: {
+    name: "William Petty-FitzMaurice, 1st Marquess of Lansdowne",
+    dates: "1737 \u2013 1805",
+    role: "British Prime Minister, 1782\u201383",
+    type: "notable",
+    emoji: "\ud83c\udfdb\ufe0f",
+    gender: "male",
+    badges: [
+      { text: "\u2605 British Prime Minister", style: "famous" },
+      { text: "Ended American Revolutionary War", style: "famous" },
+      { text: "2nd Earl of Shelburne", style: "royal" }
+    ],
+    about: "Also known as the 2nd Earl of Shelburne. As Prime Minister under George III, he was the architect of the 1783 Treaty of Paris that formally ended the American Revolutionary War and recognised the United States as an independent nation. A liberal Whig and close friend of philosopher Jeremy Bentham, he was one of the most intellectually sophisticated politicians of his age. He was from the Petty-FitzMaurice family of County Kerry, Ireland \u2014 the same FitzMaurice dynasty from which the Earls of Orkney descend.",
+    connection: "Great-uncle of Thomas FitzMaurice, 5th Earl of Orkney \u2014 connecting the family tree to one of the most consequential decisions in world history: American independence.",
+    notable: "Bowood House in Wiltshire, his magnificent country seat, still stands today as one of England's great stately homes. He was created 1st Marquess of Lansdowne in 1784.",
+    photoKey: null
+  },
+
+  henry_warrender: {
+    name: "Hon. Henry Warrender FitzMaurice",
+    dates: "1828 \u2013 1875",
+    role: "Son of the 5th Earl of Orkney",
+    type: "royal",
+    emoji: "\u2694\ufe0f",
+    gender: "male",
+    badges: [{ text: "Son of 5th Earl", style: "royal" }],
+    about: "The second son of Thomas FitzMaurice, 5th Earl of Orkney. He died in 1875, predeceasing his father by two years. He almost certainly fathered both Edmond Walter (7th Earl) and Edward Dixon FitzMaurice, the clergyman.",
+    connection: "The probable great-great-great-grandfather of Patricia FitzMaurice Andrews \u2014 a key generational link between the Earldom and the direct line. Crockford's Clerical Directory on Ancestry.co.uk should confirm this.",
+    notable: "Because Henry died before his father the 5th Earl, he never held the title. His son Edmond inherited directly from the 5th Earl.",
+    photoKey: null
+  },
+
+  edmond7: {
+    name: "Edmond Walter Leighton FitzMaurice, 7th Earl of Orkney",
+    dates: "1867 \u2013 1951",
+    role: "7th Earl of Orkney; 'Lordy' of Stewkley",
+    type: "royal",
+    emoji: "\ud83d\udc51",
+    gender: "male",
+    badges: [
+      { text: "7th Earl of Orkney", style: "royal" },
+      { text: "m. Connie Gilchrist", style: "famous" },
+      { text: "Residence: The Tythe House, Stewkley", style: "neutral" }
+    ],
+    about: "Full name: Edmond Walter Leighton FitzMaurice. Inherited the Earldom aged 16 when his childless uncle the 6th Earl died. Known affectionately as 'Lordy' in Stewkley, Buckinghamshire \u2014 he was Chairman of the Parish Council, built the village hall, dedicated the war memorial, and rebuilt The Tythe House, Leighton Buzzard. In 1892 he married Connie Gilchrist, the famous Gaiety Theatre actress, in what was considered a scandalous match \u2014 and they were largely excluded from upper-class London society as a result. They didn't seem to mind. Their only child, Lady Mary Constance Hamilton, married but died without issue, so there are no living descendants through this line.",
+    connection: "Almost certainly a brother of Edward Dixon FitzMaurice \u2014 both likely sons of Henry Warrender FitzMaurice. This makes the 7th Earl your probable great-great-granduncle, and Connie Gilchrist your probable great-great-grandaunt by marriage.",
+    notable: "The 'probable' caveat still applies. The brotherhood of Edmond Walter and Edward Dixon is the key unconfirmed link. Crockford's Clerical Directory (available on Ancestry.co.uk) would settle it \u2014 if it lists Edward Dixon as a son of Henry Warrender FitzMaurice, the relationship becomes confirmed family history.",
+    photoKey: null
+  },
+
+  connie: {
+    name: "Connie Gilchrist, Countess of Orkney",
+    dates: "1865 \u2013 1946",
+    role: "'The Original Gaiety Girl'",
+    type: "notable",
+    emoji: "\ud83c\udfad",
+    gender: "female",
+    badges: [
+      { text: "\u2605 Victorian celebrity", style: "famous" },
+      { text: "Painted by Whistler \u2014 now in the Met NY", style: "famous" },
+      { text: "Painted by Lord Leighton \u2014 Guildhall Art Gallery", style: "famous" },
+      { text: "Admired by Lewis Carroll", style: "famous" },
+      { text: "Countess of Orkney", style: "royal" }
+    ],
+    about: "One of the most remarkable women in Victorian England. Born in the slums of Agar Town (behind King's Cross Station) to an engine-smith father, she was discovered at age 6 by the painter Frederic, Lord Leighton \u2014 President of the Royal Academy. His painting 'The Music Lesson', for which she modelled, hangs today in the Guildhall Art Gallery, London. James McNeill Whistler painted her in 'Harmony in Yellow and Gold: The Gold Girl' \u2014 now one of the treasures of the Metropolitan Museum of Art in New York. At just 12 years old she became the original 'Gaiety Girl' at John Hollingshead's Gaiety Theatre on the Strand, famous for her skipping-rope dance that captivated all of London. Lewis Carroll (author of Alice in Wonderland) was an admirer. The 8th Duke of Beaufort effectively adopted her and gave her away at her 1892 wedding to Edmond Walter FitzMaurice, the 7th Earl of Orkney. Their only child, Lady Mary Constance, married but died without issue \u2014 so there are no living descendants through Connie and the 7th Earl.",
+    connection: "Connie married the 7th Earl of Orkney (Edmond Walter FitzMaurice), who was almost certainly a brother of your great-great-grandfather Edward Dixon FitzMaurice. That makes Edmond Walter your probable great-great-granduncle, and Connie Gilchrist your probable great-great-grandaunt by marriage. The newspaper clippings in the family collection were kept because the family knew the Countess was kin.",
+    notable: "She and the Earl were largely excluded from upper-class London society \u2014 an actress-countess was considered scandalous \u2014 but they happily settled into village life at The Tythe House, Stewkley, Buckinghamshire, where the Earl was known simply as 'Lordy'. They enjoyed 54 years of marriage. Connie died in 1946; the Earl followed in 1951 aged 84.",
+    photoKey: null
+  },
+
+  edward_dixon: {
+    name: "Edward Dixon FitzMaurice",
+    dates: "c.1850 \u2013 unknown",
+    role: "Church of England Clergyman",
+    type: "photo",
+    emoji: "\u271d\ufe0f",
+    gender: "male",
+    badges: [
+      { text: "Photograph exists", style: "photo" },
+      { text: "Direct ancestor", style: "you" },
+      { text: "Probable son of Henry Warrender", style: "neutral" },
+      { text: "Active c.1890\u20131910", style: "neutral" }
+    ],
+    about: "A Church of England clergyman, likely active between 1890 and 1910. Photographed at the Stuart Studio, 47 & 49 Brompton Road, Knightsbridge \u2014 a prestigious West London address. He appears in a formal cabinet card portrait wearing a clerical collar and round wire-frame spectacles. He also appears informally with his sons Reg and Bob on a pebbly beach, still in clerical collar. His South London connections (Lang Sims studio, Brixton Road; family living in Hayes, Middlesex) suggest a West/South London ministry. His known children are Edith Madeleine, Reg, Bob, and possibly Babs.",
+    connection: "Sebastian's great-great-grandfather. Almost certainly a son of Henry Warrender FitzMaurice \u2014 making him a probable brother of the 7th Earl of Orkney. If confirmed, this makes Sebastian's direct line a branch of the same family that produced the Earls of Orkney.",
+    notable: "Crockford's Clerical Directory, published annually for Church of England clergy and available on Ancestry.co.uk, should contain his entry confirming his parish, parentage, and dates of service. This is the single most important record for confirming the family connection.",
+    photoKey: 'edward_dixon'
+  },
+
+  edith: {
+    name: "Edith Madeleine FitzMaurice",
+    dates: "c.1875 \u2013 unknown",
+    role: "Daughter of Edward Dixon FitzMaurice",
+    type: "photo",
+    emoji: "\ud83c\udf39",
+    gender: "female",
+    badges: [
+      { text: "Photograph exists", style: "photo" },
+      { text: "Circular medallion portrait, c.1899", style: "photo" }
+    ],
+    about: "The most visually documented family member. She appears in the extraordinary circular medallion photograph (c.1899) in formal Victorian dress with a large floral bouquet \u2014 suggesting a coming-out, engagement, or special occasion. She may also be the subject of the Lang Sims cabinet card portrait based on physical similarity.",
+    connection: "Great-grandfather Reg's sister. Her formal portrait is the anchor item of the entire photo collection \u2014 the piece on which every identification depends.",
+    notable: "Marriage registers under 'FitzMaurice' in the 1895\u20131910 window would be the starting point to trace her after a possible name change through marriage.",
+    photoKey: 'edith'
+  },
+
+  babs: {
+    name: "'Babs' FitzMaurice",
+    dates: "c.1895 \u2013 unknown",
+    role: "Emigrated to South Africa; attended 1950 wedding",
+    type: "photo",
+    emoji: "\ud83c\udf0d",
+    gender: "female",
+    badges: [
+      { text: "Photograph exists", style: "photo" },
+      { text: "South Africa branch", style: "neutral" },
+      { text: "At Patricia's 1950 wedding", style: "photo" }
+    ],
+    about: "Known as 'Auntie Babs'. She emigrated to South Africa, almost certainly during the Edwardian era. Her photograph \u2014 on a colonial verandah with wrought-iron railings \u2014 is consistent with Cape Colony or Natal architecture. Crucially, she is named in the guest list captions of Patricia's 1950 wedding, confirming she was alive and in England in February 1950.",
+    connection: "Great-grandfather Reg's sister. Her South African descendants, if any, are an untraced branch of the FitzMaurice family.",
+    notable: "Her full first name remains unknown \u2014 it is the key to any archival search. South African census records from 1904 and 1911, combined with passenger ship lists, could help identify her.",
+    photoKey: 'babs'
+  },
+
+  bob: {
+    name: "Bob FitzMaurice",
+    dates: "c.1900 \u2013 unknown",
+    role: "Son of Edward Dixon FitzMaurice",
+    type: "photo",
+    emoji: "\ud83d\udc64",
+    gender: "male",
+    badges: [{ text: "Photograph exists", style: "photo" }],
+    about: "Bob appears as a young boy in the beach photograph alongside his brother Reg and their father Edward Dixon. The pebbly beach and large white building in the background suggest a British seaside holiday \u2014 possibly Kent or Sussex.",
+    connection: "Great-grandfather Reg's brother.",
+    notable: "His descendants, if any, are currently untraced.",
+    photoKey: 'bob'
+  },
+
+  reg: {
+    name: "Reg FitzMaurice",
+    dates: "c.1897 \u2013 after 1950",
+    role: "Sebastian's great-grandfather; Hayes, Middlesex",
+    type: "photo",
+    emoji: "\ud83d\udc64",
+    gender: "male",
+    badges: [
+      { text: "Photograph exists", style: "photo" },
+      { text: "Direct ancestor", style: "you" }
+    ],
+    about: "Reg FitzMaurice is confirmed as the son of Edward Dixon FitzMaurice, named on the reverse of the beach photograph. The 1950 wedding album confirms he was alive in February 1950 and living in Hayes, Middlesex. He gave his daughter Patricia away at her wedding. His wife \u2014 Patricia's mother \u2014 had already died before 1950.",
+    connection: "Sebastian's great-grandfather. His daughter Patricia Mary FitzMaurice married Ronald Andrews on 11 February 1950 at St Mary's Church, Wanstead.",
+    notable: "His sister Babs emigrated to South Africa but returned to England for Patricia's wedding in 1950. His sister Edith Madeleine features in the c.1899 medallion portrait.",
+    photoKey: 'reg'
+  },
+
+  cecilchain: {
+    name: "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney",
+    dates: "1919 \u2013 1998",
+    role: "8th & last FitzMaurice Earl \u2014 WWII & Korea veteran",
+    type: "royal",
+    emoji: "\u2694\ufe0f",
+    gender: "male",
+    badges: [
+      { text: "8th Earl of Orkney", style: "royal" },
+      { text: "Last FitzMaurice Earl", style: "royal" },
+      { text: "WWII veteran \u2014 N. Africa, Italy, France, Germany", style: "military" },
+      { text: "Korean War 1950\u201351", style: "military" },
+      { text: "Newspaper clippings in collection", style: "photo" }
+    ],
+    about: "Born 1919, Cecil served as an R.A.S.C. (Royal Army Service Corps) driver. He fought in North Africa, Italy, France and Germany during WWII, then served in Korea 1950\u201351. On 29 September 1951, he returned to Britain aboard the troopship HMT Devonshire to inherit his title as 8th Earl of Orkney, following the death of his distant cousin the 7th Earl. Known as 'Ginger' in the Army, he was famously late returning to his troopship at Colombo and had to scrub mess-decks as punishment. His elder brother Douglas was killed in WWII. His mother was Mrs. Dorothy Wiggins (possibly born FitzMaurice) of Horsham, Sussex. The Evening News called him a 'rags to riches Earl' \u2014 he had at one point worked in a garage. He inherited an estate of \u00a342,893 (equivalent to approximately \u00a31.5\u20132 million today). He married Rose Silley at St Mary's Church, Brixham, Devon in November 1952. He died without issue in 1998 \u2014 the last FitzMaurice to hold the Earldom of Orkney. The family motto 'Through Courage' could not be more fitting: Cecil literally came through two wars to inherit a 300-year-old title.",
+    connection: "Cecil is Amanda's 3rd cousin once removed. Working through the confirmed tree: Amanda \u2192 Patricia \u2192 Reg \u2192 Edward Dixon \u2192 Henry Warrender FitzMaurice \u2192 Thomas FitzMaurice, 5th Earl of Orkney. Cecil \u2192 Douglas Frederick Harold \u2192 Douglas Commerell Menzies \u2192 Frederick O'Brien FitzMaurice RN \u2192 Thomas FitzMaurice, 5th Earl of Orkney. Henry Warrender and Frederick O'Brien were brothers \u2014 both sons of the 5th Earl. That makes Edward Dixon and Cecil's grandfather Douglas Commerell 1st cousins; Reg and Cecil's father Douglas Frederick 2nd cousins; Patricia and Cecil 3rd cousins; and Amanda and Cecil 3rd cousins once removed. The newspaper clippings about Cecil were kept in the family collection because Patricia's family knew he was kin \u2014 a FitzMaurice cousin who had unexpectedly become an Earl.",
+    notable: "Cecil's death in 1998 ended the FitzMaurice Earldom of Orkney. The title had been created in 1696 for George Hamilton, Britain's first Field Marshal. It passed through the O'Brien and FitzMaurice families for three centuries before dying with Cecil. Everyone in the family came to this story through Patricia and Ronald \u2014 it was Patricia who carried the FitzMaurice name and lineage into the modern family.",
+    photoKey: 'cecilchain'
+  },
+
+  ronald_parents: {
+    name: "Mr. & Mrs. H. G. Andrews",
+    dates: "c.1890 \u2013 c.1940\u201344",
+    role: "Ronald's parents \u2014 killed in the Blitz, East Ham",
+    type: "ww2",
+    emoji: "\ud83d\udda4",
+    gender: "male",
+    badges: [
+      { text: "Killed \u2014 WWII Blitz", style: "danger" },
+      { text: "East Ham, London", style: "neutral" }
+    ],
+    about: "Confirmed as 'the late Mr. and Mrs. H. G. Andrews of East Ham, London' in Patricia's 1950 wedding album inscription. They were killed alongside their youngest son Sidney in a German Blitz air raid on their East Ham home. East Ham was one of the worst-hit areas in London because of its proximity to the Royal Docks \u2014 a primary German target. Between 1940 and 1944, the Newham Archives record 194 raids, 3,201 incidents and 925 dead across West Ham and East Ham combined. Both surviving sons \u2014 Ronald (serving with the RAF in Egypt) and Herbert (also in the forces) \u2014 were away when the bombing happened.",
+    connection: "Sebastian's great-grandparents on the Andrews side. The father's initials H.G. Andrews are confirmed from the wedding album.",
+    notable: "The CWGC Civilian War Dead Roll of Honour (cwgc.org) contains nearly 67,000 civilian casualties from enemy action, searchable by name and address. Searching 'Andrews' in the East Ham area should recover their full names and the date of the bombing.",
+    photoKey: null
+  },
+
+  ronald: {
+    name: "Ronald Andrews",
+    dates: "c.1920 \u2013 unknown",
+    role: "m. Patricia FitzMaurice, 11 Feb 1950",
+    type: "photo",
+    emoji: "\ud83d\udc64",
+    gender: "male",
+    badges: [
+      { text: "Wedding album survives", style: "photo" },
+      { text: "Built planes for RAF in Egypt", style: "military" },
+      { text: "Direct ancestor", style: "you" }
+    ],
+    about: "Ronald Andrews married Patricia Mary FitzMaurice at St Mary's Church, Wanstead on Saturday 11 February 1950. During WWII, Ronald served in Egypt building aircraft for the RAF \u2014 likely at one of the major Maintenance Units such as No. 103 MU at RAF Aboukir near Alexandria, No. 109 MU at Helwan near Cairo, or the remarkable No. 111 MU at Tura-el-Asmant, which operated inside ancient limestone caves in the Mokattam hills south of Cairo \u2014 the same caves quarried for the casing stones of the pyramids. These units assembled, repaired and prepared fighter aircraft for the Desert Air Force. While Ronald was in Egypt and his brother Herbert also serving, their parents (Mr. and Mrs. H. G. Andrews) and their younger brother Sidney were killed in a German Blitz bombing of their East Ham home. East Ham was one of the worst-hit areas in London due to its proximity to the Royal Docks. Between 1940 and 1944, 925 civilians were killed across East Ham and West Ham alone.",
+    connection: "Sebastian's grandfather. Everyone in the family knew Patricia and Ronald well \u2014 they are the living link between the modern family and the extraordinary FitzMaurice heritage.",
+    notable: "The CWGC Civilian War Dead Roll of Honour (cwgc.org) contains nearly 67,000 names and is searchable by address \u2014 an East Ham search under 'Andrews' may recover the full names of Ronald's parents. Ronald's RAF service records can be requested via the Ministry of Defence.",
+    photoKey: 'patricia'
+  },
+
+  herbert: {
+    name: "Herbert Andrews",
+    dates: "c.1918 \u2013 unknown",
+    role: "Ronald's brother; WWII veteran",
+    type: "ww2",
+    emoji: "\u2694\ufe0f",
+    gender: "male",
+    badges: [
+      { text: "WWII veteran", style: "military" },
+      { text: "Ronald's brother", style: "neutral" }
+    ],
+    about: "Herbert Andrews was Ronald's elder brother. Like Ronald, Herbert served during WWII \u2014 meaning both brothers were away from East Ham when their parents and younger brother were killed in the Blitz. Neither son was home when the bombing happened. Herbert survived the war but has since passed away.",
+    connection: "Sebastian's granduncle.",
+    notable: "Herbert's military service records are held by the Ministry of Defence. As next of kin or descendants, Amanda or Venetia can apply for his records via gov.uk/get-copy-military-service-records.",
+    photoKey: null
+  },
+
+  unnamed_brother: {
+    name: "Sidney Andrews",
+    dates: "c.1922 \u2013 c.1940\u201344",
+    role: "Ronald's younger brother \u2014 killed in the Blitz",
+    type: "ww2",
+    emoji: "\ud83d\udda4",
+    gender: "male",
+    badges: [
+      { text: "Killed \u2014 WWII Blitz", style: "danger" },
+      { text: "East Ham, London", style: "neutral" }
+    ],
+    about: "Sidney Andrews was Ronald's younger brother. He was killed in the Blitz bombing that also killed both of Ronald's parents at their East Ham home. Sidney was the only sibling still at home \u2014 both Ronald (serving with the RAF in Egypt) and Herbert (also in the forces) were away when the bombing happened. East Ham's proximity to the Royal Docks made it one of London's most heavily bombed areas.",
+    connection: "Sebastian's granduncle, killed during the WWII Blitz alongside his parents.",
+    notable: "The CWGC Civilian War Dead Roll of Honour at cwgc.org should contain Sidney's full record. The National Archives also hold HO 396 civilian casualty records.",
+    photoKey: null
+  },
+
+  patricia: {
+    name: "Patricia Mary FitzMaurice Andrews",
+    dates: "c.1920 \u2013 unknown",
+    role: "Sebastian's grandmother",
+    type: "photo",
+    emoji: "\ud83d\udc90",
+    gender: "female",
+    badges: [
+      { text: "Wedding album survives", style: "photo" },
+      { text: "Sebastian's grandmother", style: "you" },
+      { text: "Ruby Wedding at The French Horn, Sonning", style: "photo" }
+    ],
+    about: "Patricia Mary FitzMaurice married Ronald Andrews on Saturday 11 February 1950 at St Mary's Church, Wanstead. Her father, Reg FitzMaurice, gave her away. Her mother had already died before the wedding. The couple's Ruby Wedding (40th anniversary, c.1990) was celebrated at The French Horn, Sonning-on-Thames, Berkshire. Everyone in the family knew Patricia and Ronald well \u2014 they are the grandparents through whom this entire extraordinary ancestry became a living family story rather than dry genealogy.",
+    connection: "Sebastian's grandmother. Patricia is the key figure in this entire tree \u2014 she is the bridge between the modern family and the FitzMaurice noble lineage. Daughter of Reg FitzMaurice of Hayes, Middlesex, granddaughter of the clergyman Edward Dixon FitzMaurice. Through Patricia, the family carries direct descent from the Scottish kings, the Earls of Orkney, and the same dynasty that produced a British Prime Minister. Every historical figure in this tree connects to the present day through her.",
+    notable: "The full wedding album survives with calligraphed captions \u2014 one of the most complete records in the entire collection. Her father Reg is confirmed alive and resident in Hayes, Middlesex in 1950.",
+    photoKey: 'patricia'
+  },
+
+  amanda: {
+    name: "Amanda Andrews Belfiore",
+    dates: "c.1948 \u2013",
+    role: "Sebastian's mother",
+    type: "you",
+    emoji: "\ud83d\udc69",
+    gender: "female",
+    badges: [{ text: "Sebastian's mother", style: "you" }],
+    about: "Amanda Andrews married Robert Belfiore. She is the daughter of Patricia FitzMaurice Andrews and Ronald Andrews \u2014 carrying direct FitzMaurice noble lineage. She has one sister, Venetia, who married Gary Austin. Amanda was the custodian of this remarkable photograph and document collection.",
+    connection: "Sebastian's mother. Through her the bloodlines run from King James II of Scotland, through the Hamilton Dukes, through Britain's first Field Marshal, through a Prime Minister's great-nephew, and into the present day.",
+    notable: "Amanda kept and preserved the entire collection \u2014 the photographs, the wedding album, the newspaper clippings. Without her, this entire story would have been lost.",
+    photoKey: null
+  },
+
+  robert: {
+    name: "Robert Belfiore",
+    dates: "",
+    role: "Sebastian's father",
+    type: "neutral",
+    emoji: "\ud83d\udc68",
+    gender: "male",
+    badges: [],
+    about: "Robert Belfiore married Amanda Andrews. The Belfiore surname is of Italian origin \u2014 the name means 'beautiful flower' and is associated with central and northern Italy. The Italian branch of the family is not mapped in this tree.",
+    connection: "Sebastian's father.",
+    notable: "",
+    photoKey: null
+  },
+
+  venetia: {
+    name: "Venetia Andrews Austin",
+    dates: "c.1950 \u2013",
+    role: "Amanda's sister",
+    type: "neutral",
+    emoji: "\ud83d\udc69",
+    gender: "female",
+    badges: [{ text: "Sebastian's aunt", style: "neutral" }],
+    about: "Venetia Andrews is Amanda's sister. She married Gary Austin and they have two sons, Max and Ben.",
+    connection: "Sebastian's aunt.",
+    notable: "The Austin family name appeared on the Ruby Wedding anniversary invitation alongside the Belfiores.",
+    photoKey: null
+  },
+
+  gary: {
+    name: "Gary Austin",
+    dates: "",
+    role: "m. Venetia Andrews",
+    type: "neutral",
+    emoji: "\ud83d\udc68",
+    gender: "male",
+    badges: [],
+    about: "Married to Venetia Andrews. Father of Max and Ben Austin.",
+    connection: "Sebastian's uncle by marriage.",
+    notable: "",
+    photoKey: null
+  },
+
+  sebastian: {
+    name: "Sebastian Belfiore",
+    dates: "b. 1989",
+    role: "You",
+    type: "you",
+    emoji: "\u2605",
+    gender: "male",
+    badges: [
+      { text: "\u2605 You", style: "you" },
+      { text: "~15 generations from James II", style: "you" },
+      { text: "Direct FitzMaurice descent", style: "you" }
+    ],
+    about: "Sebastian is approximately 15 generations removed from King James II of Scotland, and the direct descendant of Edward Dixon FitzMaurice \u2014 the Victorian clergyman photographed at the Stuart Studio in Knightsbridge. His grandmother Patricia Mary FitzMaurice Andrews was born a FitzMaurice, connecting him to one of Scotland's most storied earldoms.",
+    connection: "The bloodlines run from Scottish kings, through Britain's first Field Marshal, through a Prime Minister, through a Victorian actress-Countess whose portrait hangs in the Met in New York \u2014 to the present day.",
+    notable: "The newspaper clippings about the Earl of Orkney were kept in this collection because Cecil was a kinsman \u2014 and the family knew it.",
+    photoKey: null
+  },
+
+  alex: {
+    name: "Alex Belfiore",
+    dates: "",
+    role: "Son of Amanda & Robert",
+    type: "neutral",
+    emoji: "\ud83d\udc64",
+    gender: "male",
+    badges: [{ text: "Sebastian's brother", style: "neutral" }],
+    about: "Son of Amanda Andrews Belfiore and Robert Belfiore. Sebastian's brother.",
+    connection: "Sebastian's brother.",
+    notable: "",
+    photoKey: null
+  },
+
+  valeria: {
+    name: "Valeria Belfiore",
+    dates: "",
+    role: "m. Sebastian Belfiore",
+    type: "neutral",
+    emoji: "\ud83d\udc69",
+    gender: "female",
+    badges: [],
+    about: "Married to Sebastian Belfiore. Mother of Enzo Belfiore.",
+    connection: "Sebastian's wife.",
+    notable: "",
+    photoKey: null
+  },
+
+  lauren: {
+    name: "Lauren Belfiore",
+    dates: "",
+    role: "m. Alex Belfiore",
+    type: "neutral",
+    emoji: "\ud83d\udc69",
+    gender: "female",
+    badges: [],
+    about: "Married to Alex Belfiore. Mother of Violet Belfiore.",
+    connection: "Alex's wife.",
+    notable: "",
+    photoKey: null
+  },
+
+  enzo: {
+    name: "Enzo Belfiore",
+    dates: "",
+    role: "Son of Sebastian & Valeria",
+    type: "you",
+    emoji: "\ud83d\udc76",
+    gender: "male",
+    badges: [
+      { text: "~16 generations from James II", style: "you" },
+      { text: "Direct FitzMaurice descent", style: "you" }
+    ],
+    about: "Son of Sebastian Belfiore and Valeria Belfiore. Approximately 16 generations removed from King James II of Scotland.",
+    connection: "The latest generation carrying the FitzMaurice bloodline forward.",
+    notable: "",
+    photoKey: null
+  },
+
+  violet: {
+    name: "Violet Belfiore",
+    dates: "",
+    role: "Daughter of Alex & Lauren",
+    type: "neutral",
+    emoji: "\ud83d\udc67",
+    gender: "female",
+    badges: [
+      { text: "~16 generations from James II", style: "neutral" },
+      { text: "Direct FitzMaurice descent", style: "neutral" }
+    ],
+    about: "Daughter of Alex Belfiore and Lauren Belfiore. Approximately 16 generations removed from King James II of Scotland.",
+    connection: "The latest generation carrying the FitzMaurice bloodline forward.",
+    notable: "",
+    photoKey: null
+  },
+
+  max: {
+    name: "Max Austin",
+    dates: "",
+    role: "Son of Venetia & Gary",
+    type: "neutral",
+    emoji: "\ud83d\udc64",
+    gender: "male",
+    badges: [{ text: "Sebastian's cousin", style: "neutral" }],
+    about: "Son of Venetia Andrews Austin and Gary Austin.",
+    connection: "Sebastian's cousin.",
+    notable: "",
+    photoKey: null
+  },
+
+  ben: {
+    name: "Ben Austin",
+    dates: "",
+    role: "Son of Venetia & Gary",
+    type: "neutral",
+    emoji: "\ud83d\udc64",
+    gender: "male",
+    badges: [{ text: "Sebastian's cousin", style: "neutral" }],
+    about: "Son of Venetia Andrews Austin and Gary Austin.",
+    connection: "Sebastian's cousin.",
+    notable: "",
+    photoKey: null
+  },
+
+  cdv_ancestors: {
+    name: "Unknown FitzMaurice Ancestors",
+    dates: "c.1865 \u2013 1878",
+    role: "Carte de Visite \u2014 Camden Town, London",
+    type: "photo",
+    emoji: "\ud83d\udcf7",
+    gender: "female",
+    badges: [
+      { text: "Photograph exists", style: "photo" },
+      { text: "Earliest family photograph", style: "photo" },
+      { text: "Camden Town, London", style: "neutral" }
+    ],
+    about: "The earliest photograph in the entire collection. A carte de visite (CDV) showing a woman aged 30\u201345 with a young girl aged 3\u20136, taken at J. Perriman's Camden Town School of Photography, 3 Greenland Place, London. The reverse is stamped with Perriman's commission number 925 and the address 'Side of the Mother Red Cap', Camden Town. Based on the studio's operating dates, the photograph was taken between 1865 and 1878.",
+    connection: "Almost certainly an earlier generation of the FitzMaurice family \u2014 possibly the mother and sister (or wife and daughter) of Edward Dixon FitzMaurice. They represent the deepest photographic layer of the family's London history.",
+    notable: "Camden Town census records from 1871 and 1881, cross-referenced with the surname FitzMaurice, could identify these subjects. The Perriman studio was active at this address from the mid-1860s to the late 1870s.",
+    photoKey: 'cdv_ancestors'
+  }
+};
+
+const RELATIONSHIPS = {
+  "sebastian": {
+    "james2": {
+      "role": "Your ancestor ~15 generations removed",
+      "connection": "King James II of Scotland is your ancestor approximately 15 generations back. His daughter Princess Mary Stewart married James Hamilton — and that single union is the beginning of the chain that leads to you."
+    },
+    "mary_stewart": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "Princess Mary Stewart is your ancestor approximately 14 generations back. Her marriage to James Hamilton carried royal Stewart blood into the Hamilton family — and ultimately to you."
+    },
+    "hamilton_lord": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your ancestor approximately 14 generations back. By marrying Princess Mary Stewart, he gave all his descendants a claim of royal descent — including you."
+    },
+    "arran": {
+      "role": "Your ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your ancestor approximately 13 generations back, carrying royal Stewart blood forward in the Hamilton succession."
+    },
+    "hamilton_succession": {
+      "role": "Your ancestors ~9–12 generations removed",
+      "connection": "These four generations of Hamilton nobility are your ancestors, carrying the royal bloodline forward toward the Earldom of Orkney."
+    },
+    "anne_hamilton": {
+      "role": "Your ancestor ~9 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your ancestor approximately 9 generations back. Her son George became the 1st Earl of Orkney — the title whose FitzMaurice inheritors connect directly to you."
+    },
+    "george_hamilton": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney, is your ancestor approximately 8 generations back. Britain's first ever Field Marshal — and the man whose Earldom eventually passed to the FitzMaurice family and, through them, to your bloodline."
+    },
+    "elizabeth_villiers": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "Elizabeth Villiers is your ancestor approximately 8 generations back, as wife of the 1st Earl of Orkney. Her daughter Anne inherited the Earldom — beginning the chain that leads to you."
+    },
+    "anne_obrien": {
+      "role": "Your ancestor ~7 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your ancestor approximately 7 generations back. Her inheritance of the Earldom kept the title alive and eventually brought it to the FitzMaurice family."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your ancestral line ~6 generations removed",
+      "connection": "This succession line — from O'Brien to FitzMaurice — is the moment the FitzMaurice name entered your family's story, approximately 6 generations back."
+    },
+    "earl5": {
+      "role": "Your ancestor ~5 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your ancestor approximately 5 generations back — the first FitzMaurice to hold the Orkney title, and the common ancestor of the entire Victorian FitzMaurice family."
+    },
+    "lansdowne": {
+      "role": "Your ancestor's great-uncle (~5 gen removed)",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your 5x great-grandfather the 5th Earl of Orkney — connecting your family tree to the man who ended the American Revolutionary War."
+    },
+    "henry_warrender": {
+      "role": "Your probable ancestor ~4 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your ancestor approximately 4 generations back — the probable father of both the 7th Earl and your great-great-grandfather Edward Dixon FitzMaurice."
+    },
+    "edmond7": {
+      "role": "Your probable great-great-granduncle",
+      "connection": "The 7th Earl of Orkney was almost certainly a first cousin of your great-great-grandfather Edward Dixon FitzMaurice — making him your probable great-great-granduncle by connection."
+    },
+    "connie": {
+      "role": "Your probable great-great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, was married to your probable great-great-granduncle — making her your probable great-great-grandaunt by marriage. Her portrait hangs in the Met in New York."
+    },
+    "edward_dixon": {
+      "role": "Your great-great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your great-great-grandfather — the clergyman photographed at the Stuart Studio in Knightsbridge, whose children include your great-grandfather Reg."
+    },
+    "edith": {
+      "role": "Your great-great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice was your great-great-grandfather Edward Dixon's daughter — making her your great-great-grandaunt. Her medallion portrait, c.1899, is the anchor item of the entire collection."
+    },
+    "babs": {
+      "role": "Your great-great-grandaunt",
+      "connection": "Babs was your great-great-grandfather Edward Dixon's daughter — making her your great-great-grandaunt. She emigrated to South Africa but returned to England to attend your grandparents' wedding in 1950."
+    },
+    "bob": {
+      "role": "Your great-great-granduncle",
+      "connection": "Bob FitzMaurice was your great-great-grandfather Edward Dixon's son — making him your great-great-granduncle. He appears as a boy in the beach photograph."
+    },
+    "reg": {
+      "role": "Your great-grandfather",
+      "connection": "Reg FitzMaurice is your great-grandfather. He lived in Hayes, Middlesex, and gave his daughter Patricia away at her wedding on 11 February 1950 at St Mary's Church, Wanstead."
+    },
+    "cecilchain": {
+      "role": "Your mother's 3rd cousin once removed",
+      "connection": "Cecil is your mother Amanda's 3rd cousin once removed. Both descend from Thomas FitzMaurice, 5th Earl of Orkney: your line goes 5th Earl → Henry Warrender → Edward Dixon → Reg → Patricia → Amanda → you. Cecil's line goes 5th Earl → Frederick O'Brien RN → Douglas Commerell Menzies → Douglas Frederick Harold → Cecil. Henry Warrender and Frederick O'Brien were brothers — sons of the 5th Earl. Your family kept newspaper clippings about Cecil because they knew he was kin — a FitzMaurice cousin who became an Earl while serving in Korea."
+    },
+    "ronald_parents": {
+      "role": "Your great-grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham, London, are your great-grandparents on the Andrews side. They were killed alongside your grandfather Ronald's younger brother Sidney in the WWII Blitz."
+    },
+    "ronald": {
+      "role": "Your grandfather",
+      "connection": "Ronald Andrews is your grandfather. He married your grandmother Patricia Mary FitzMaurice on 11 February 1950 at St Mary's Church, Wanstead. During WWII he served in Egypt building aircraft for the RAF."
+    },
+    "herbert": {
+      "role": "Your granduncle",
+      "connection": "Herbert Andrews was your grandfather Ronald's brother — making him your granduncle. He also served during WWII."
+    },
+    "unnamed_brother": {
+      "role": "Your granduncle (killed in Blitz)",
+      "connection": "Sidney Andrews — your grandfather Ronald's younger brother and your granduncle — was killed in the WWII Blitz alongside your great-grandparents at their East Ham home."
+    },
+    "patricia": {
+      "role": "Your grandmother",
+      "connection": "Patricia Mary FitzMaurice Andrews is your grandmother — the key figure who connects you to the entire FitzMaurice noble lineage. Everyone in the family knew her and Ronald well. Her full wedding album survives."
+    },
+    "amanda": {
+      "role": "Your mother",
+      "connection": "Amanda Andrews Belfiore is your mother. Through her you carry direct FitzMaurice noble lineage running from King James II of Scotland to the present day."
+    },
+    "robert": {
+      "role": "Your father",
+      "connection": "Robert Belfiore is your father."
+    },
+    "venetia": {
+      "role": "Your aunt",
+      "connection": "Venetia Andrews Austin is your mother Amanda's sister — your aunt."
+    },
+    "gary": {
+      "role": "Your uncle by marriage",
+      "connection": "Gary Austin is married to your aunt Venetia — your uncle by marriage."
+    },
+    "max": {
+      "role": "Your cousin",
+      "connection": "Max Austin is your aunt Venetia and uncle Gary's son — your first cousin."
+    },
+    "ben": {
+      "role": "Your cousin",
+      "connection": "Ben Austin is your aunt Venetia and uncle Gary's son — your first cousin."
+    },
+    "alex": {
+      "role": "Your brother",
+      "connection": "Alex Belfiore is your brother."
+    },
+    "sebastian": {
+      "role": "This is you",
+      "connection": "You are Sebastian Belfiore. This entire tree traces your ancestry from King James II of Scotland to the present day."
+    },
+    "valeria": {
+      "role": "Your wife",
+      "connection": "Valeria Belfiore is your wife."
+    },
+    "lauren": {
+      "role": "Your sister-in-law",
+      "connection": "Lauren Belfiore is your brother Alex's wife — your sister-in-law."
+    },
+    "enzo": {
+      "role": "Your son",
+      "connection": "Enzo Belfiore is your son."
+    },
+    "violet": {
+      "role": "Your niece",
+      "connection": "Violet Belfiore is your brother Alex's daughter — your niece."
+    }
+  },
+  "alex": {
+    "james2": {
+      "role": "Your ancestor ~15 generations removed",
+      "connection": "King James II of Scotland is your ancestor approximately 15 generations back, through your mother Amanda's FitzMaurice line."
+    },
+    "mary_stewart": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "Princess Mary Stewart is your ancestor approximately 14 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your ancestor approximately 14 generations back."
+    },
+    "arran": {
+      "role": "Your ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your ancestor approximately 13 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your ancestors ~9–12 generations removed",
+      "connection": "These four generations of Hamilton nobility are your ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your ancestor ~9 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your ancestor approximately 9 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your ancestor approximately 8 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "Elizabeth Villiers is your ancestor approximately 8 generations back, as wife of the 1st Earl of Orkney."
+    },
+    "anne_obrien": {
+      "role": "Your ancestor ~7 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your ancestor approximately 7 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your ancestral line ~6 generations removed",
+      "connection": "This is the succession line where the FitzMaurice name entered your ancestry, approximately 6 generations back."
+    },
+    "earl5": {
+      "role": "Your ancestor ~5 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your ancestor approximately 5 generations back."
+    },
+    "lansdowne": {
+      "role": "Your ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your 5x great-grandfather the 5th Earl — connecting your family to the end of the American Revolutionary War."
+    },
+    "henry_warrender": {
+      "role": "Your probable ancestor ~4 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your ancestor approximately 4 generations back."
+    },
+    "edmond7": {
+      "role": "Your probable great-great-granduncle",
+      "connection": "The 7th Earl was almost certainly a first cousin of your great-great-grandfather Edward Dixon — your probable great-great-granduncle."
+    },
+    "connie": {
+      "role": "Your probable great-great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, was married to your probable great-great-granduncle the 7th Earl. Her portrait is in the Met in New York."
+    },
+    "edward_dixon": {
+      "role": "Your great-great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your great-great-grandfather — the Victorian clergyman whose family connects you to the Orkney Earldom."
+    },
+    "edith": {
+      "role": "Your great-great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice was your great-great-grandfather Edward Dixon's daughter — your great-great-grandaunt."
+    },
+    "babs": {
+      "role": "Your great-great-grandaunt",
+      "connection": "Babs was your great-great-grandfather Edward Dixon's daughter — your great-great-grandaunt, who emigrated to South Africa."
+    },
+    "bob": {
+      "role": "Your great-great-granduncle",
+      "connection": "Bob FitzMaurice was your great-great-grandfather Edward Dixon's son — your great-great-granduncle."
+    },
+    "reg": {
+      "role": "Your great-grandfather",
+      "connection": "Reg FitzMaurice is your great-grandfather. He lived in Hayes, Middlesex and gave his daughter Patricia away at her wedding in 1950."
+    },
+    "cecilchain": {
+      "role": "Your collateral relative (distant FitzMaurice)",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, was a collateral FitzMaurice relative known to your family."
+    },
+    "ronald_parents": {
+      "role": "Your great-grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham were your great-grandparents on the Andrews side, killed in the WWII Blitz."
+    },
+    "ronald": {
+      "role": "Your grandfather",
+      "connection": "Ronald Andrews is your grandfather, who married Patricia FitzMaurice on 11 February 1950."
+    },
+    "herbert": {
+      "role": "Your granduncle",
+      "connection": "Herbert Andrews was your grandfather Ronald's brother — your granduncle."
+    },
+    "unnamed_brother": {
+      "role": "Your granduncle (killed in Blitz)",
+      "connection": "Sidney Andrews — Ronald's younger brother — your granduncle — killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Your grandmother",
+      "connection": "Patricia Mary FitzMaurice Andrews is your grandmother."
+    },
+    "amanda": {
+      "role": "Your mother",
+      "connection": "Amanda Andrews Belfiore is your mother."
+    },
+    "robert": {
+      "role": "Your father",
+      "connection": "Robert Belfiore is your father."
+    },
+    "venetia": {
+      "role": "Your aunt",
+      "connection": "Venetia Andrews Austin is your mother Amanda's sister — your aunt."
+    },
+    "gary": {
+      "role": "Your uncle by marriage",
+      "connection": "Gary Austin married your aunt Venetia — your uncle by marriage."
+    },
+    "max": {
+      "role": "Your cousin",
+      "connection": "Max Austin is your aunt Venetia and uncle Gary's son — your first cousin."
+    },
+    "ben": {
+      "role": "Your cousin",
+      "connection": "Ben Austin is your aunt Venetia and uncle Gary's son — your first cousin."
+    },
+    "sebastian": {
+      "role": "Your brother",
+      "connection": "Sebastian Belfiore is your brother."
+    },
+    "alex": {
+      "role": "This is you",
+      "connection": "You are Alex Belfiore. This tree traces your ancestry from King James II of Scotland to the present day."
+    },
+    "valeria": {
+      "role": "Your sister-in-law",
+      "connection": "Valeria Belfiore is your brother Sebastian's wife — your sister-in-law."
+    },
+    "lauren": {
+      "role": "Your wife",
+      "connection": "Lauren Belfiore is your wife."
+    },
+    "enzo": {
+      "role": "Your nephew",
+      "connection": "Enzo Belfiore is your brother Sebastian's son — your nephew."
+    },
+    "violet": {
+      "role": "Your daughter",
+      "connection": "Violet Belfiore is your daughter."
+    }
+  },
+  "amanda": {
+    "james2": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "King James II of Scotland is your ancestor approximately 14 generations back, through your FitzMaurice lineage."
+    },
+    "mary_stewart": {
+      "role": "Your ancestor ~13 generations removed",
+      "connection": "Princess Mary Stewart is your ancestor approximately 13 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your ancestor approximately 13 generations back."
+    },
+    "arran": {
+      "role": "Your ancestor ~12 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your ancestor approximately 12 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your ancestors ~8–11 generations removed",
+      "connection": "These four generations of Hamilton nobility are your direct ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your ancestor approximately 8 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your ancestor ~7 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your ancestor approximately 7 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your ancestor ~7 generations removed",
+      "connection": "Elizabeth Villiers is your ancestor approximately 7 generations back, as wife of the 1st Earl of Orkney."
+    },
+    "anne_obrien": {
+      "role": "Your ancestor ~6 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your ancestor approximately 6 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your ancestral line ~5 generations removed",
+      "connection": "This is where the FitzMaurice name entered your ancestry, approximately 5 generations back."
+    },
+    "earl5": {
+      "role": "Your ancestor ~4 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your ancestor approximately 4 generations back."
+    },
+    "lansdowne": {
+      "role": "Your ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your 4x great-grandfather — the PM who ended the American Revolutionary War is in your family tree."
+    },
+    "henry_warrender": {
+      "role": "Your probable ancestor ~3 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your ancestor approximately 3 generations back."
+    },
+    "edmond7": {
+      "role": "Your probable great-granduncle",
+      "connection": "The 7th Earl was almost certainly a first cousin of your great-grandfather Edward Dixon — your probable great-granduncle, married to the famous Connie Gilchrist."
+    },
+    "connie": {
+      "role": "Your probable great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, was married to your probable great-granduncle the 7th Earl. Her portrait hangs in the Metropolitan Museum of Art."
+    },
+    "edward_dixon": {
+      "role": "Your great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your great-grandfather — the Victorian clergyman whose photographs are among the most treasured items in this collection."
+    },
+    "edith": {
+      "role": "Your great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice was your great-grandfather Edward Dixon's daughter — your great-grandaunt, immortalised in the c.1899 medallion portrait."
+    },
+    "babs": {
+      "role": "Your great-grandaunt",
+      "connection": "Babs was your great-grandfather Edward Dixon's daughter — your great-grandaunt, who emigrated to South Africa and returned to England for your parents' wedding in 1950."
+    },
+    "bob": {
+      "role": "Your great-granduncle",
+      "connection": "Bob FitzMaurice was your great-grandfather Edward Dixon's son — your great-granduncle."
+    },
+    "reg": {
+      "role": "Your grandfather",
+      "connection": "Reg FitzMaurice is your grandfather. He lived in Hayes, Middlesex, and gave your mother Patricia away at her wedding on 11 February 1950."
+    },
+    "cecilchain": {
+      "role": "Your collateral relative (distant FitzMaurice)",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, was a collateral FitzMaurice relative — your family kept newspaper clippings about him because of this kinship."
+    },
+    "ronald_parents": {
+      "role": "Your grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham were your grandparents on the Andrews side — killed in the WWII Blitz before you were born."
+    },
+    "ronald": {
+      "role": "Your father",
+      "connection": "Ronald Andrews is your father. He married your mother Patricia Mary FitzMaurice on 11 February 1950 at St Mary's Church, Wanstead."
+    },
+    "herbert": {
+      "role": "Your uncle",
+      "connection": "Herbert Andrews was your father Ronald's brother — your uncle."
+    },
+    "unnamed_brother": {
+      "role": "Your uncle (killed in Blitz)",
+      "connection": "Sidney Andrews — Ronald's younger brother — your uncle — was killed in the WWII Blitz alongside your grandparents."
+    },
+    "patricia": {
+      "role": "Your mother",
+      "connection": "Patricia Mary FitzMaurice Andrews is your mother. Through her you carry direct FitzMaurice noble lineage."
+    },
+    "robert": {
+      "role": "Your husband",
+      "connection": "Robert Belfiore is your husband."
+    },
+    "venetia": {
+      "role": "Your sister",
+      "connection": "Venetia Andrews Austin is your sister."
+    },
+    "gary": {
+      "role": "Your brother-in-law",
+      "connection": "Gary Austin married your sister Venetia — your brother-in-law."
+    },
+    "max": {
+      "role": "Your nephew",
+      "connection": "Max Austin is your sister Venetia's son — your nephew."
+    },
+    "ben": {
+      "role": "Your nephew",
+      "connection": "Ben Austin is your sister Venetia's son — your nephew."
+    },
+    "sebastian": {
+      "role": "Your son",
+      "connection": "Sebastian Belfiore is your son."
+    },
+    "alex": {
+      "role": "Your son",
+      "connection": "Alex Belfiore is your son."
+    },
+    "amanda": {
+      "role": "This is you",
+      "connection": "You are Amanda Andrews Belfiore. You are the custodian of this collection — without you, this entire story would have been lost."
+    },
+    "valeria": {
+      "role": "Your daughter-in-law",
+      "connection": "Valeria Belfiore is your son Sebastian's wife — your daughter-in-law."
+    },
+    "lauren": {
+      "role": "Your daughter-in-law",
+      "connection": "Lauren Belfiore is your son Alex's wife — your daughter-in-law."
+    },
+    "enzo": {
+      "role": "Your grandson",
+      "connection": "Enzo Belfiore is your grandson — Sebastian and Valeria's son."
+    },
+    "violet": {
+      "role": "Your granddaughter",
+      "connection": "Violet Belfiore is your granddaughter — Alex and Lauren's daughter."
+    }
+  },
+  "robert": {
+    "james2": {
+      "role": "Your wife's ancestor ~14 generations removed",
+      "connection": "King James II of Scotland is your wife Amanda's ancestor approximately 14 generations back, through her FitzMaurice lineage."
+    },
+    "mary_stewart": {
+      "role": "Your wife's ancestor ~13 generations removed",
+      "connection": "Princess Mary Stewart is your wife Amanda's ancestor approximately 13 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your wife's ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your wife's ancestor approximately 13 generations back."
+    },
+    "arran": {
+      "role": "Your wife's ancestor ~12 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your wife's ancestor approximately 12 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your wife's ancestors ~8–11 generations removed",
+      "connection": "These four generations of Hamilton nobility are your wife Amanda's ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your wife's ancestor ~8 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your wife's ancestor approximately 8 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your wife's ancestor ~7 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your wife's ancestor approximately 7 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your wife's ancestor ~7 generations removed",
+      "connection": "Elizabeth Villiers is your wife's ancestor approximately 7 generations back."
+    },
+    "anne_obrien": {
+      "role": "Your wife's ancestor ~6 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your wife's ancestor approximately 6 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your wife's ancestral line",
+      "connection": "This is where the FitzMaurice name entered your wife Amanda's ancestry."
+    },
+    "earl5": {
+      "role": "Your wife's ancestor ~4 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your wife's ancestor approximately 4 generations back."
+    },
+    "lansdowne": {
+      "role": "Your wife's ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your wife's 4x great-grandfather."
+    },
+    "henry_warrender": {
+      "role": "Your wife's probable ancestor ~3 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your wife's ancestor approximately 3 generations back."
+    },
+    "edmond7": {
+      "role": "Your wife's probable great-granduncle",
+      "connection": "The 7th Earl was almost certainly your wife's great-granduncle — making him your great-granduncle by marriage."
+    },
+    "connie": {
+      "role": "Your wife's probable great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, is your wife's probable great-grandaunt by marriage."
+    },
+    "edward_dixon": {
+      "role": "Your wife's great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your wife Amanda's great-grandfather — your great-grandfather-in-law."
+    },
+    "edith": {
+      "role": "Your wife's great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice is your wife Amanda's great-grandaunt."
+    },
+    "babs": {
+      "role": "Your wife's great-grandaunt",
+      "connection": "Babs is your wife Amanda's great-grandaunt — who emigrated to South Africa."
+    },
+    "bob": {
+      "role": "Your wife's great-granduncle",
+      "connection": "Bob FitzMaurice is your wife Amanda's great-granduncle."
+    },
+    "reg": {
+      "role": "Your wife's grandfather",
+      "connection": "Reg FitzMaurice is your wife Amanda's grandfather — your grandfather-in-law."
+    },
+    "cecilchain": {
+      "role": "Your wife's collateral relative",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, is a collateral FitzMaurice relative of your wife."
+    },
+    "ronald_parents": {
+      "role": "Your wife's grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham are your wife Amanda's grandparents on the Andrews side."
+    },
+    "ronald": {
+      "role": "Your father-in-law",
+      "connection": "Ronald Andrews is your father-in-law."
+    },
+    "herbert": {
+      "role": "Your wife's uncle",
+      "connection": "Herbert Andrews is your wife Amanda's uncle."
+    },
+    "unnamed_brother": {
+      "role": "Your wife's uncle (killed in Blitz)",
+      "connection": "Sidney Andrews — Ronald's younger brother is your wife's uncle, killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Your mother-in-law",
+      "connection": "Patricia Mary FitzMaurice Andrews is your mother-in-law."
+    },
+    "amanda": {
+      "role": "Your wife",
+      "connection": "Amanda Andrews Belfiore is your wife."
+    },
+    "venetia": {
+      "role": "Your sister-in-law",
+      "connection": "Venetia Andrews Austin is your wife Amanda's sister — your sister-in-law."
+    },
+    "gary": {
+      "role": "Your brother-in-law's husband",
+      "connection": "Gary Austin married your sister-in-law Venetia."
+    },
+    "max": {
+      "role": "Your nephew",
+      "connection": "Max Austin is your sister-in-law Venetia's son — your nephew."
+    },
+    "ben": {
+      "role": "Your nephew",
+      "connection": "Ben Austin is your sister-in-law Venetia's son — your nephew."
+    },
+    "sebastian": {
+      "role": "Your son",
+      "connection": "Sebastian Belfiore is your son."
+    },
+    "alex": {
+      "role": "Your son",
+      "connection": "Alex Belfiore is your son."
+    },
+    "robert": {
+      "role": "This is you",
+      "connection": "You are Robert Belfiore. Your sons Sebastian and Alex carry this remarkable FitzMaurice and Hamilton lineage through their mother Amanda."
+    },
+    "valeria": {
+      "role": "Your daughter-in-law",
+      "connection": "Valeria Belfiore is your son Sebastian's wife — your daughter-in-law."
+    },
+    "lauren": {
+      "role": "Your daughter-in-law",
+      "connection": "Lauren Belfiore is your son Alex's wife — your daughter-in-law."
+    },
+    "enzo": {
+      "role": "Your grandson",
+      "connection": "Enzo Belfiore is your grandson — Sebastian and Valeria's son."
+    },
+    "violet": {
+      "role": "Your granddaughter",
+      "connection": "Violet Belfiore is your granddaughter — Alex and Lauren's daughter."
+    }
+  },
+  "venetia": {
+    "james2": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "King James II of Scotland is your ancestor approximately 14 generations back, through your FitzMaurice lineage via your mother Patricia."
+    },
+    "mary_stewart": {
+      "role": "Your ancestor ~13 generations removed",
+      "connection": "Princess Mary Stewart is your ancestor approximately 13 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your ancestor approximately 13 generations back."
+    },
+    "arran": {
+      "role": "Your ancestor ~12 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your ancestor approximately 12 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your ancestors ~8–11 generations removed",
+      "connection": "These four generations of Hamilton nobility are your direct ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your ancestor approximately 8 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your ancestor ~7 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your ancestor approximately 7 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your ancestor ~7 generations removed",
+      "connection": "Elizabeth Villiers is your ancestor approximately 7 generations back."
+    },
+    "anne_obrien": {
+      "role": "Your ancestor ~6 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your ancestor approximately 6 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your ancestral line ~5 generations removed",
+      "connection": "This is where the FitzMaurice name entered your ancestry, approximately 5 generations back."
+    },
+    "earl5": {
+      "role": "Your ancestor ~4 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your ancestor approximately 4 generations back."
+    },
+    "lansdowne": {
+      "role": "Your ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your 4x great-grandfather — connecting you to the end of the American Revolutionary War."
+    },
+    "henry_warrender": {
+      "role": "Your probable ancestor ~3 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your ancestor approximately 3 generations back."
+    },
+    "edmond7": {
+      "role": "Your probable great-granduncle",
+      "connection": "The 7th Earl was almost certainly a first cousin of your great-grandfather Edward Dixon — your probable great-granduncle."
+    },
+    "connie": {
+      "role": "Your probable great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, is your probable great-grandaunt by marriage — her portrait hangs in the Metropolitan Museum of Art."
+    },
+    "edward_dixon": {
+      "role": "Your great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your great-grandfather — the Victorian clergyman in the photographs."
+    },
+    "edith": {
+      "role": "Your great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice was your great-grandfather Edward Dixon's daughter — your great-grandaunt."
+    },
+    "babs": {
+      "role": "Your great-grandaunt",
+      "connection": "Babs was your great-grandfather Edward Dixon's daughter — your great-grandaunt, who emigrated to South Africa and came back to England for your parents' wedding in 1950."
+    },
+    "bob": {
+      "role": "Your great-granduncle",
+      "connection": "Bob FitzMaurice was your great-grandfather Edward Dixon's son — your great-granduncle."
+    },
+    "reg": {
+      "role": "Your grandfather",
+      "connection": "Reg FitzMaurice is your grandfather. He lived in Hayes, Middlesex, and gave your mother Patricia away at her wedding."
+    },
+    "cecilchain": {
+      "role": "Your collateral relative (distant FitzMaurice)",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, is a collateral FitzMaurice relative known to your family."
+    },
+    "ronald_parents": {
+      "role": "Your grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham were your grandparents on the Andrews side, killed in the WWII Blitz."
+    },
+    "ronald": {
+      "role": "Your father",
+      "connection": "Ronald Andrews is your father."
+    },
+    "herbert": {
+      "role": "Your uncle",
+      "connection": "Herbert Andrews was your father Ronald's brother — your uncle."
+    },
+    "unnamed_brother": {
+      "role": "Your uncle (killed in Blitz)",
+      "connection": "Sidney Andrews — Ronald's younger brother — your uncle — killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Your mother",
+      "connection": "Patricia Mary FitzMaurice Andrews is your mother. Through her you carry direct FitzMaurice noble lineage."
+    },
+    "amanda": {
+      "role": "Your sister",
+      "connection": "Amanda Andrews Belfiore is your sister."
+    },
+    "robert": {
+      "role": "Your brother-in-law",
+      "connection": "Robert Belfiore married your sister Amanda — your brother-in-law."
+    },
+    "gary": {
+      "role": "Your husband",
+      "connection": "Gary Austin is your husband."
+    },
+    "max": {
+      "role": "Your son",
+      "connection": "Max Austin is your son."
+    },
+    "ben": {
+      "role": "Your son",
+      "connection": "Ben Austin is your son."
+    },
+    "sebastian": {
+      "role": "Your nephew",
+      "connection": "Sebastian Belfiore is your sister Amanda's son — your nephew."
+    },
+    "alex": {
+      "role": "Your nephew",
+      "connection": "Alex Belfiore is your sister Amanda's son — your nephew."
+    },
+    "venetia": {
+      "role": "This is you",
+      "connection": "You are Venetia Andrews Austin. Like your sister Amanda, you carry direct FitzMaurice noble lineage from King James II of Scotland through your mother Patricia."
+    },
+    "valeria": {
+      "role": "Your nephew's wife",
+      "connection": "Valeria Belfiore is your nephew Sebastian's wife."
+    },
+    "lauren": {
+      "role": "Your nephew's wife",
+      "connection": "Lauren Belfiore is your nephew Alex's wife."
+    },
+    "enzo": {
+      "role": "Your grandnephew",
+      "connection": "Enzo Belfiore is your nephew Sebastian's son — your grandnephew."
+    },
+    "violet": {
+      "role": "Your grandniece",
+      "connection": "Violet Belfiore is your nephew Alex's daughter — your grandniece."
+    }
+  },
+  "gary": {
+    "james2": {
+      "role": "Your wife's ancestor ~14 generations removed",
+      "connection": "King James II of Scotland is your wife Venetia's ancestor approximately 14 generations back."
+    },
+    "mary_stewart": {
+      "role": "Your wife's ancestor ~13 generations removed",
+      "connection": "Princess Mary Stewart is your wife Venetia's ancestor approximately 13 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your wife's ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your wife's ancestor approximately 13 generations back."
+    },
+    "arran": {
+      "role": "Your wife's ancestor ~12 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your wife's ancestor approximately 12 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your wife's ancestors ~8–11 generations removed",
+      "connection": "These four generations of Hamilton nobility are your wife Venetia's ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your wife's ancestor ~8 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your wife's ancestor approximately 8 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your wife's ancestor ~7 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your wife's ancestor approximately 7 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your wife's ancestor ~7 generations removed",
+      "connection": "Elizabeth Villiers is your wife's ancestor approximately 7 generations back."
+    },
+    "anne_obrien": {
+      "role": "Your wife's ancestor ~6 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your wife's ancestor approximately 6 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your wife's ancestral line",
+      "connection": "This is where the FitzMaurice name entered your wife Venetia's ancestry."
+    },
+    "earl5": {
+      "role": "Your wife's ancestor ~4 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your wife's ancestor approximately 4 generations back."
+    },
+    "lansdowne": {
+      "role": "Your wife's ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your wife's 4x great-grandfather."
+    },
+    "henry_warrender": {
+      "role": "Your wife's probable ancestor ~3 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your wife's ancestor approximately 3 generations back."
+    },
+    "edmond7": {
+      "role": "Your wife's probable great-granduncle",
+      "connection": "The 7th Earl was your wife's probable great-granduncle — making him your great-granduncle by marriage."
+    },
+    "connie": {
+      "role": "Your wife's probable great-grandaunt by marriage",
+      "connection": "Connie Gilchrist is your wife's probable great-grandaunt by marriage."
+    },
+    "edward_dixon": {
+      "role": "Your wife's great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your wife Venetia's great-grandfather — your great-grandfather-in-law."
+    },
+    "edith": {
+      "role": "Your wife's great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice is your wife Venetia's great-grandaunt."
+    },
+    "babs": {
+      "role": "Your wife's great-grandaunt",
+      "connection": "Babs is your wife Venetia's great-grandaunt — who emigrated to South Africa."
+    },
+    "bob": {
+      "role": "Your wife's great-granduncle",
+      "connection": "Bob FitzMaurice is your wife Venetia's great-granduncle."
+    },
+    "reg": {
+      "role": "Your wife's grandfather",
+      "connection": "Reg FitzMaurice is your wife Venetia's grandfather — your grandfather-in-law."
+    },
+    "cecilchain": {
+      "role": "Your wife's collateral relative",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, is a collateral relative of your wife."
+    },
+    "ronald_parents": {
+      "role": "Your wife's grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham are your wife Venetia's grandparents."
+    },
+    "ronald": {
+      "role": "Your father-in-law",
+      "connection": "Ronald Andrews is your father-in-law."
+    },
+    "herbert": {
+      "role": "Your wife's uncle",
+      "connection": "Herbert Andrews is your wife Venetia's uncle."
+    },
+    "unnamed_brother": {
+      "role": "Your wife's uncle (killed in Blitz)",
+      "connection": "Sidney Andrews — Ronald's younger brother is your wife's uncle, killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Your mother-in-law",
+      "connection": "Patricia Mary FitzMaurice Andrews is your mother-in-law."
+    },
+    "amanda": {
+      "role": "Your sister-in-law",
+      "connection": "Amanda Andrews Belfiore is your wife Venetia's sister — your sister-in-law."
+    },
+    "robert": {
+      "role": "Your sister-in-law's husband",
+      "connection": "Robert Belfiore married your sister-in-law Amanda."
+    },
+    "venetia": {
+      "role": "Your wife",
+      "connection": "Venetia Andrews Austin is your wife."
+    },
+    "max": {
+      "role": "Your son",
+      "connection": "Max Austin is your son."
+    },
+    "ben": {
+      "role": "Your son",
+      "connection": "Ben Austin is your son."
+    },
+    "sebastian": {
+      "role": "Your nephew",
+      "connection": "Sebastian Belfiore is your sister-in-law Amanda's son — your nephew."
+    },
+    "alex": {
+      "role": "Your nephew",
+      "connection": "Alex Belfiore is your sister-in-law Amanda's son — your nephew."
+    },
+    "gary": {
+      "role": "This is you",
+      "connection": "You are Gary Austin. Through your wife Venetia, your sons Max and Ben carry this remarkable FitzMaurice and Hamilton lineage."
+    },
+    "valeria": {
+      "role": "Your nephew's wife",
+      "connection": "Valeria Belfiore is your nephew Sebastian's wife."
+    },
+    "lauren": {
+      "role": "Your nephew's wife",
+      "connection": "Lauren Belfiore is your nephew Alex's wife."
+    },
+    "enzo": {
+      "role": "Your grandnephew",
+      "connection": "Enzo Belfiore is your nephew Sebastian's son — your grandnephew."
+    },
+    "violet": {
+      "role": "Your grandniece",
+      "connection": "Violet Belfiore is your nephew Alex's daughter — your grandniece."
+    }
+  },
+  "max": {
+    "james2": {
+      "role": "Your ancestor ~15 generations removed",
+      "connection": "King James II of Scotland is your ancestor approximately 15 generations back, through your mother Venetia's FitzMaurice lineage."
+    },
+    "mary_stewart": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "Princess Mary Stewart is your ancestor approximately 14 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your ancestor approximately 14 generations back."
+    },
+    "arran": {
+      "role": "Your ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your ancestor approximately 13 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your ancestors ~9–12 generations removed",
+      "connection": "These four generations of Hamilton nobility are your ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your ancestor ~9 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your ancestor approximately 9 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your ancestor approximately 8 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "Elizabeth Villiers is your ancestor approximately 8 generations back."
+    },
+    "anne_obrien": {
+      "role": "Your ancestor ~7 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your ancestor approximately 7 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your ancestral line ~6 generations removed",
+      "connection": "This is where the FitzMaurice name entered your ancestry, approximately 6 generations back."
+    },
+    "earl5": {
+      "role": "Your ancestor ~5 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your ancestor approximately 5 generations back."
+    },
+    "lansdowne": {
+      "role": "Your ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your 5x great-grandfather — the PM who ended the American Revolutionary War is in your family tree."
+    },
+    "henry_warrender": {
+      "role": "Your probable ancestor ~4 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your ancestor approximately 4 generations back."
+    },
+    "edmond7": {
+      "role": "Your probable great-great-granduncle",
+      "connection": "The 7th Earl was almost certainly a first cousin of your great-great-grandfather Edward Dixon — your probable great-great-granduncle."
+    },
+    "connie": {
+      "role": "Your probable great-great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, is your probable great-great-grandaunt by marriage. Her portrait is in the Metropolitan Museum of Art, New York."
+    },
+    "edward_dixon": {
+      "role": "Your great-great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your great-great-grandfather through your mother Venetia's line."
+    },
+    "edith": {
+      "role": "Your great-great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice was your great-great-grandfather Edward Dixon's daughter — your great-great-grandaunt."
+    },
+    "babs": {
+      "role": "Your great-great-grandaunt",
+      "connection": "Babs was your great-great-grandfather Edward Dixon's daughter — your great-great-grandaunt, who emigrated to South Africa."
+    },
+    "bob": {
+      "role": "Your great-great-granduncle",
+      "connection": "Bob FitzMaurice was your great-great-grandfather Edward Dixon's son — your great-great-granduncle."
+    },
+    "reg": {
+      "role": "Your great-grandfather",
+      "connection": "Reg FitzMaurice is your great-grandfather, through your mother Venetia. He lived in Hayes, Middlesex."
+    },
+    "cecilchain": {
+      "role": "Your collateral relative (distant FitzMaurice)",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, was a collateral FitzMaurice relative of your family."
+    },
+    "ronald_parents": {
+      "role": "Your great-grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham were your great-grandparents on the Andrews side, killed in the WWII Blitz."
+    },
+    "ronald": {
+      "role": "Your grandfather",
+      "connection": "Ronald Andrews is your grandfather, through your mother Venetia."
+    },
+    "herbert": {
+      "role": "Your granduncle",
+      "connection": "Herbert Andrews was your grandfather Ronald's brother — your granduncle."
+    },
+    "unnamed_brother": {
+      "role": "Your granduncle (killed in Blitz)",
+      "connection": "Sidney Andrews — Ronald's younger brother — your granduncle — killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Your grandmother",
+      "connection": "Patricia Mary FitzMaurice Andrews is your grandmother, through your mother Venetia."
+    },
+    "amanda": {
+      "role": "Your aunt",
+      "connection": "Amanda Andrews Belfiore is your mother Venetia's sister — your aunt."
+    },
+    "robert": {
+      "role": "Your uncle by marriage",
+      "connection": "Robert Belfiore married your aunt Amanda — your uncle by marriage."
+    },
+    "venetia": {
+      "role": "Your mother",
+      "connection": "Venetia Andrews Austin is your mother."
+    },
+    "gary": {
+      "role": "Your father",
+      "connection": "Gary Austin is your father."
+    },
+    "sebastian": {
+      "role": "Your cousin",
+      "connection": "Sebastian Belfiore is your aunt Amanda's son — your first cousin."
+    },
+    "alex": {
+      "role": "Your cousin",
+      "connection": "Alex Belfiore is your aunt Amanda's son — your first cousin."
+    },
+    "ben": {
+      "role": "Your brother",
+      "connection": "Ben Austin is your brother."
+    },
+    "max": {
+      "role": "This is you",
+      "connection": "You are Max Austin. Through your mother Venetia, you carry direct FitzMaurice noble lineage running from King James II of Scotland."
+    },
+    "valeria": {
+      "role": "Your cousin's wife",
+      "connection": "Valeria Belfiore is your cousin Sebastian's wife."
+    },
+    "lauren": {
+      "role": "Your cousin's wife",
+      "connection": "Lauren Belfiore is your cousin Alex's wife."
+    },
+    "enzo": {
+      "role": "Your first cousin once removed",
+      "connection": "Enzo Belfiore is your cousin Sebastian's son — your first cousin once removed."
+    },
+    "violet": {
+      "role": "Your first cousin once removed",
+      "connection": "Violet Belfiore is your cousin Alex's daughter — your first cousin once removed."
+    }
+  },
+  "ben": {
+    "james2": {
+      "role": "Your ancestor ~15 generations removed",
+      "connection": "King James II of Scotland is your ancestor approximately 15 generations back, through your mother Venetia's FitzMaurice lineage."
+    },
+    "mary_stewart": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "Princess Mary Stewart is your ancestor approximately 14 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your ancestor ~14 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your ancestor approximately 14 generations back."
+    },
+    "arran": {
+      "role": "Your ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your ancestor approximately 13 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your ancestors ~9–12 generations removed",
+      "connection": "These four generations of Hamilton nobility are your ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your ancestor ~9 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your ancestor approximately 9 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your ancestor approximately 8 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your ancestor ~8 generations removed",
+      "connection": "Elizabeth Villiers is your ancestor approximately 8 generations back."
+    },
+    "anne_obrien": {
+      "role": "Your ancestor ~7 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your ancestor approximately 7 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your ancestral line ~6 generations removed",
+      "connection": "This is where the FitzMaurice name entered your ancestry, approximately 6 generations back."
+    },
+    "earl5": {
+      "role": "Your ancestor ~5 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your ancestor approximately 5 generations back."
+    },
+    "lansdowne": {
+      "role": "Your ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your 5x great-grandfather — the PM who ended the American Revolutionary War."
+    },
+    "henry_warrender": {
+      "role": "Your probable ancestor ~4 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your ancestor approximately 4 generations back."
+    },
+    "edmond7": {
+      "role": "Your probable great-great-granduncle",
+      "connection": "The 7th Earl was almost certainly a first cousin of your great-great-grandfather Edward Dixon — your probable great-great-granduncle."
+    },
+    "connie": {
+      "role": "Your probable great-great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, is your probable great-great-grandaunt by marriage."
+    },
+    "edward_dixon": {
+      "role": "Your great-great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your great-great-grandfather through your mother Venetia's line."
+    },
+    "edith": {
+      "role": "Your great-great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice was your great-great-grandfather Edward Dixon's daughter — your great-great-grandaunt."
+    },
+    "babs": {
+      "role": "Your great-great-grandaunt",
+      "connection": "Babs was your great-great-grandfather Edward Dixon's daughter — your great-great-grandaunt."
+    },
+    "bob": {
+      "role": "Your great-great-granduncle",
+      "connection": "Bob FitzMaurice was your great-great-grandfather Edward Dixon's son — your great-great-granduncle."
+    },
+    "reg": {
+      "role": "Your great-grandfather",
+      "connection": "Reg FitzMaurice is your great-grandfather, through your mother Venetia."
+    },
+    "cecilchain": {
+      "role": "Your collateral relative (distant FitzMaurice)",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, was a collateral FitzMaurice relative of your family."
+    },
+    "ronald_parents": {
+      "role": "Your great-grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham were your great-grandparents on the Andrews side, killed in the WWII Blitz."
+    },
+    "ronald": {
+      "role": "Your grandfather",
+      "connection": "Ronald Andrews is your grandfather, through your mother Venetia."
+    },
+    "herbert": {
+      "role": "Your granduncle",
+      "connection": "Herbert Andrews was your grandfather Ronald's brother — your granduncle."
+    },
+    "unnamed_brother": {
+      "role": "Your granduncle (killed in Blitz)",
+      "connection": "Sidney Andrews — Ronald's younger brother — your granduncle — killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Your grandmother",
+      "connection": "Patricia Mary FitzMaurice Andrews is your grandmother, through your mother Venetia."
+    },
+    "amanda": {
+      "role": "Your aunt",
+      "connection": "Amanda Andrews Belfiore is your mother Venetia's sister — your aunt."
+    },
+    "robert": {
+      "role": "Your uncle by marriage",
+      "connection": "Robert Belfiore married your aunt Amanda — your uncle by marriage."
+    },
+    "venetia": {
+      "role": "Your mother",
+      "connection": "Venetia Andrews Austin is your mother."
+    },
+    "gary": {
+      "role": "Your father",
+      "connection": "Gary Austin is your father."
+    },
+    "sebastian": {
+      "role": "Your cousin",
+      "connection": "Sebastian Belfiore is your aunt Amanda's son — your first cousin."
+    },
+    "alex": {
+      "role": "Your cousin",
+      "connection": "Alex Belfiore is your aunt Amanda's son — your first cousin."
+    },
+    "max": {
+      "role": "Your brother",
+      "connection": "Max Austin is your brother."
+    },
+    "ben": {
+      "role": "This is you",
+      "connection": "You are Ben Austin. Through your mother Venetia, you carry direct FitzMaurice noble lineage running from King James II of Scotland."
+    },
+    "valeria": {
+      "role": "Your cousin's wife",
+      "connection": "Valeria Belfiore is your cousin Sebastian's wife."
+    },
+    "lauren": {
+      "role": "Your cousin's wife",
+      "connection": "Lauren Belfiore is your cousin Alex's wife."
+    },
+    "enzo": {
+      "role": "Your first cousin once removed",
+      "connection": "Enzo Belfiore is your cousin Sebastian's son — your first cousin once removed."
+    },
+    "violet": {
+      "role": "Your first cousin once removed",
+      "connection": "Violet Belfiore is your cousin Alex's daughter — your first cousin once removed."
+    }
+  },
+  "valeria": {
+    "james2": {
+      "role": "Your husband's ancestor ~15 generations removed",
+      "connection": "King James II of Scotland is your husband Sebastian's ancestor approximately 15 generations back."
+    },
+    "mary_stewart": {
+      "role": "Your husband's ancestor ~14 generations removed",
+      "connection": "Princess Mary Stewart is your husband Sebastian's ancestor approximately 14 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your husband's ancestor ~14 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your husband's ancestor approximately 14 generations back."
+    },
+    "arran": {
+      "role": "Your husband's ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your husband's ancestor approximately 13 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your husband's ancestors ~9–12 generations removed",
+      "connection": "These four generations of Hamilton nobility are your husband Sebastian's ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your husband's ancestor ~9 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your husband's ancestor approximately 9 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your husband's ancestor ~8 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your husband's ancestor approximately 8 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your husband's ancestor ~8 generations removed",
+      "connection": "Elizabeth Villiers is your husband's ancestor approximately 8 generations back."
+    },
+    "anne_obrien": {
+      "role": "Your husband's ancestor ~7 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your husband's ancestor approximately 7 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your husband's ancestral line ~6 generations removed",
+      "connection": "This is where the FitzMaurice name entered your husband Sebastian's ancestry."
+    },
+    "earl5": {
+      "role": "Your husband's ancestor ~5 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your husband's ancestor approximately 5 generations back."
+    },
+    "lansdowne": {
+      "role": "Your husband's ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your husband's 5x great-grandfather the 5th Earl."
+    },
+    "henry_warrender": {
+      "role": "Your husband's probable ancestor ~4 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your husband's ancestor approximately 4 generations back."
+    },
+    "edmond7": {
+      "role": "Your husband's probable great-great-granduncle",
+      "connection": "The 7th Earl was almost certainly your husband's great-great-granduncle."
+    },
+    "connie": {
+      "role": "Your husband's probable great-great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, is your husband's probable great-great-grandaunt by marriage."
+    },
+    "edward_dixon": {
+      "role": "Your husband's great-great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your husband Sebastian's great-great-grandfather — your great-great-grandfather-in-law."
+    },
+    "edith": {
+      "role": "Your husband's great-great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice is your husband Sebastian's great-great-grandaunt."
+    },
+    "babs": {
+      "role": "Your husband's great-great-grandaunt",
+      "connection": "Babs is your husband Sebastian's great-great-grandaunt — who emigrated to South Africa."
+    },
+    "bob": {
+      "role": "Your husband's great-great-granduncle",
+      "connection": "Bob FitzMaurice is your husband Sebastian's great-great-granduncle."
+    },
+    "reg": {
+      "role": "Your husband's great-grandfather / Your grandfather-in-law",
+      "connection": "Reg FitzMaurice is your husband Sebastian's great-grandfather — your grandfather-in-law."
+    },
+    "cecilchain": {
+      "role": "Your husband's collateral relative",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, is a collateral FitzMaurice relative of your husband."
+    },
+    "ronald_parents": {
+      "role": "Your husband's great-grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham are your husband Sebastian's great-grandparents on the Andrews side."
+    },
+    "ronald": {
+      "role": "Your husband's grandfather / Your grandfather-in-law",
+      "connection": "Ronald Andrews is your husband's grandfather — your grandfather-in-law."
+    },
+    "herbert": {
+      "role": "Your husband's granduncle",
+      "connection": "Herbert Andrews is your husband Sebastian's granduncle."
+    },
+    "unnamed_brother": {
+      "role": "Your husband's granduncle (killed in Blitz)",
+      "connection": "Sidney Andrews — your husband's granduncle — killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Your husband's grandmother / Your grandmother-in-law",
+      "connection": "Patricia Mary FitzMaurice Andrews is your husband's grandmother — your grandmother-in-law."
+    },
+    "amanda": {
+      "role": "Your mother-in-law",
+      "connection": "Amanda Andrews Belfiore is your mother-in-law."
+    },
+    "robert": {
+      "role": "Your father-in-law",
+      "connection": "Robert Belfiore is your father-in-law."
+    },
+    "venetia": {
+      "role": "Your husband's aunt",
+      "connection": "Venetia Andrews Austin is your husband Sebastian's aunt."
+    },
+    "gary": {
+      "role": "Your husband's uncle by marriage",
+      "connection": "Gary Austin is your husband Sebastian's uncle by marriage."
+    },
+    "max": {
+      "role": "Your husband's cousin",
+      "connection": "Max Austin is your husband Sebastian's cousin."
+    },
+    "ben": {
+      "role": "Your husband's cousin",
+      "connection": "Ben Austin is your husband Sebastian's cousin."
+    },
+    "sebastian": {
+      "role": "Your husband",
+      "connection": "Sebastian Belfiore is your husband."
+    },
+    "alex": {
+      "role": "Your brother-in-law",
+      "connection": "Alex Belfiore is your husband Sebastian's brother — your brother-in-law."
+    },
+    "valeria": {
+      "role": "This is you",
+      "connection": "You are Valeria Belfiore. Through your husband Sebastian, you are connected to the FitzMaurice and Hamilton lineage tracing back to King James II of Scotland."
+    },
+    "lauren": {
+      "role": "Your sister-in-law",
+      "connection": "Lauren Belfiore is your brother-in-law Alex's wife — your sister-in-law."
+    },
+    "enzo": {
+      "role": "Your son",
+      "connection": "Enzo Belfiore is your son."
+    },
+    "violet": {
+      "role": "Your niece",
+      "connection": "Violet Belfiore is your brother-in-law Alex's daughter — your niece."
+    }
+  },
+  "lauren": {
+    "james2": {
+      "role": "Your husband's ancestor ~15 generations removed",
+      "connection": "King James II of Scotland is your husband Alex's ancestor approximately 15 generations back."
+    },
+    "mary_stewart": {
+      "role": "Your husband's ancestor ~14 generations removed",
+      "connection": "Princess Mary Stewart is your husband Alex's ancestor approximately 14 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Your husband's ancestor ~14 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your husband's ancestor approximately 14 generations back."
+    },
+    "arran": {
+      "role": "Your husband's ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your husband's ancestor approximately 13 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Your husband's ancestors ~9–12 generations removed",
+      "connection": "These four generations of Hamilton nobility are your husband Alex's ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Your husband's ancestor ~9 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your husband's ancestor approximately 9 generations back."
+    },
+    "george_hamilton": {
+      "role": "Your husband's ancestor ~8 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your husband's ancestor approximately 8 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Your husband's ancestor ~8 generations removed",
+      "connection": "Elizabeth Villiers is your husband's ancestor approximately 8 generations back."
+    },
+    "anne_obrien": {
+      "role": "Your husband's ancestor ~7 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your husband's ancestor approximately 7 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Your husband's ancestral line ~6 generations removed",
+      "connection": "This is where the FitzMaurice name entered your husband Alex's ancestry."
+    },
+    "earl5": {
+      "role": "Your husband's ancestor ~5 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your husband's ancestor approximately 5 generations back."
+    },
+    "lansdowne": {
+      "role": "Your husband's ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your husband's 5x great-grandfather the 5th Earl."
+    },
+    "henry_warrender": {
+      "role": "Your husband's probable ancestor ~4 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your husband's ancestor approximately 4 generations back."
+    },
+    "edmond7": {
+      "role": "Your husband's probable great-great-granduncle",
+      "connection": "The 7th Earl was almost certainly your husband's great-great-granduncle."
+    },
+    "connie": {
+      "role": "Your husband's probable great-great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, is your husband's probable great-great-grandaunt by marriage."
+    },
+    "edward_dixon": {
+      "role": "Your husband's great-great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your husband Alex's great-great-grandfather — your great-great-grandfather-in-law."
+    },
+    "edith": {
+      "role": "Your husband's great-great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice is your husband Alex's great-great-grandaunt."
+    },
+    "babs": {
+      "role": "Your husband's great-great-grandaunt",
+      "connection": "Babs is your husband Alex's great-great-grandaunt — who emigrated to South Africa."
+    },
+    "bob": {
+      "role": "Your husband's great-great-granduncle",
+      "connection": "Bob FitzMaurice is your husband Alex's great-great-granduncle."
+    },
+    "reg": {
+      "role": "Your husband's great-grandfather / Your grandfather-in-law",
+      "connection": "Reg FitzMaurice is your husband Alex's great-grandfather — your grandfather-in-law."
+    },
+    "cecilchain": {
+      "role": "Your husband's collateral relative",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, is a collateral FitzMaurice relative of your husband."
+    },
+    "ronald_parents": {
+      "role": "Your husband's great-grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham are your husband Alex's great-grandparents on the Andrews side."
+    },
+    "ronald": {
+      "role": "Your husband's grandfather / Your grandfather-in-law",
+      "connection": "Ronald Andrews is your husband's grandfather — your grandfather-in-law."
+    },
+    "herbert": {
+      "role": "Your husband's granduncle",
+      "connection": "Herbert Andrews is your husband Alex's granduncle."
+    },
+    "unnamed_brother": {
+      "role": "Your husband's granduncle (killed in Blitz)",
+      "connection": "Sidney Andrews — your husband's granduncle — killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Your husband's grandmother / Your grandmother-in-law",
+      "connection": "Patricia Mary FitzMaurice Andrews is your husband's grandmother — your grandmother-in-law."
+    },
+    "amanda": {
+      "role": "Your mother-in-law",
+      "connection": "Amanda Andrews Belfiore is your mother-in-law."
+    },
+    "robert": {
+      "role": "Your father-in-law",
+      "connection": "Robert Belfiore is your father-in-law."
+    },
+    "venetia": {
+      "role": "Your husband's aunt",
+      "connection": "Venetia Andrews Austin is your husband Alex's aunt."
+    },
+    "gary": {
+      "role": "Your husband's uncle by marriage",
+      "connection": "Gary Austin is your husband Alex's uncle by marriage."
+    },
+    "max": {
+      "role": "Your husband's cousin",
+      "connection": "Max Austin is your husband Alex's cousin."
+    },
+    "ben": {
+      "role": "Your husband's cousin",
+      "connection": "Ben Austin is your husband Alex's cousin."
+    },
+    "sebastian": {
+      "role": "Your brother-in-law",
+      "connection": "Sebastian Belfiore is your husband Alex's brother — your brother-in-law."
+    },
+    "alex": {
+      "role": "Your husband",
+      "connection": "Alex Belfiore is your husband."
+    },
+    "valeria": {
+      "role": "Your sister-in-law",
+      "connection": "Valeria Belfiore is your brother-in-law Sebastian's wife — your sister-in-law."
+    },
+    "lauren": {
+      "role": "This is you",
+      "connection": "You are Lauren Belfiore. Through your husband Alex, you are connected to the FitzMaurice and Hamilton lineage tracing back to King James II of Scotland."
+    },
+    "enzo": {
+      "role": "Your nephew",
+      "connection": "Enzo Belfiore is your brother-in-law Sebastian's son — your nephew."
+    },
+    "violet": {
+      "role": "Your daughter",
+      "connection": "Violet Belfiore is your daughter."
+    }
+  }
+};
+// ============================================
+// HISTORICAL PORTRAITS (Wikipedia / Public Domain)
+// ============================================
+const HISTORICAL_PORTRAITS = {
+  james2: [
+    { url: "photos/portraits/james2.jpg", caption: "King James II of Scotland — from a 15th-century manuscript by Jörg von Ehingen" },
+    { url: "photos/portraits/james2_painted.jpg", caption: "King James II of Scotland — later painted portrait, after the 15th-century original" }
+  ],
+  mary_stewart: [
+    { url: "photos/portraits/mary_of_guelders.jpg", caption: "Mary of Guelders, Queen consort of James II — Princess Mary Stewart's mother. No confirmed portrait of Mary Stewart herself survives." }
+  ],
+  hamilton_lord: [
+    { url: "photos/portraits/hamilton_palace.jpg", caption: "Hamilton Palace, South Lanarkshire — seat of the Hamilton dynasty founded by James, 1st Lord Hamilton through his marriage to Princess Mary Stewart" }
+  ],
+  hamilton_succession: [
+    { url: "photos/portraits/hamilton_duke_vandyck.jpg", caption: "James Hamilton, 1st Duke of Hamilton — by Sir Anthony van Dyck, c.1640" },
+    { url: "photos/portraits/hamilton_duke_mytens.jpg", caption: "James Hamilton, 1st Duke of Hamilton — by Daniel Mytens. The Duke was executed for his loyalty to King Charles I." },
+    { url: "photos/portraits/hamilton_palace.jpg", caption: "Hamilton Palace — the largest non-royal residence in Britain, seat of the Dukes of Hamilton" }
+  ],
+  anne_hamilton: [
+    { url: "photos/portraits/anne_hamilton.jpg", caption: "Anne Hamilton, 3rd Duchess of Hamilton — one of 17th-century Scotland's most formidable aristocratic women" }
+  ],
+  george_hamilton: [
+    { url: "photos/portraits/george_hamilton.jpg", caption: "George Hamilton, 1st Earl of Orkney — Britain's first ever Field Marshal, hero of Blenheim" },
+    { url: "photos/portraits/george_hamilton_orkney_painting.jpg", caption: "George Hamilton, 1st Earl of Orkney — portrait by Martin Maingaud" },
+    { url: "photos/portraits/george_hamilton_orkney_bust.jpg", caption: "Bust of George Hamilton, 1st Earl of Orkney — by John Michael Rysbrack" },
+    { url: "photos/portraits/battle_blenheim.jpg", caption: "The Battle of Blenheim, 1704 — where George Hamilton fought under the Duke of Marlborough" },
+    { url: "photos/portraits/cliveden_house.jpg", caption: "Cliveden House, Buckinghamshire — George Hamilton's country estate, later a famous political salon" }
+  ],
+  elizabeth_villiers: [
+    { url: "photos/portraits/elizabeth_villiers.jpg", caption: "Elizabeth Villiers, Countess of Orkney — former mistress of King William III, one of the most politically astute women of her era" },
+    { url: "photos/portraits/cliveden_house.jpg", caption: "Cliveden House — where Elizabeth Villiers and George Hamilton lived after their marriage" }
+  ],
+  earl5: [
+    { url: "photos/portraits/5th_earl_orkney.jpg", caption: "Thomas John Hamilton FitzMaurice, 5th Earl of Orkney — the first FitzMaurice to hold the Earldom, linking the Lansdowne line to the Orkney title" }
+  ],
+  lansdowne: [
+    { url: "photos/portraits/lansdowne.jpg", caption: "William Petty-FitzMaurice, 1st Marquess of Lansdowne — the Prime Minister who ended the American Revolutionary War, by Jean-Laurent Mosnier" },
+    { url: "photos/portraits/bowood_house.jpg", caption: "Bowood House, Wiltshire — the Lansdowne family seat where the Treaty of Paris was partly negotiated" }
+  ],
+  viscount_kirkwall: [
+    { url: "photos/portraits/viscount_kirkwall.jpg", caption: "George FitzMaurice, Viscount Kirkwall — Captain, 71st Highlanders. Son of the 5th Earl of Orkney." }
+  ],
+  connie: [
+    { url: "photos/portraits/connie_gilchrist.jpg", caption: "'Harmony in Yellow and Gold: The Gold Girl — Connie Gilchrist' by James McNeill Whistler (Metropolitan Museum of Art, New York)" },
+    { url: "photos/portraits/connie_elliott_fry.jpg", caption: "Connie Gilchrist — studio photograph by Elliott & Fry, c.1870s" },
+    { url: "photos/portraits/connie_stereoscopic.jpg", caption: "Connie Gilchrist — photograph by London Stereoscopic Company, 19th century" },
+    { url: "photos/portraits/connie_nadar.jpg", caption: "Connie Gilchrist — photographed by Nadar's studio" },
+    { url: "photos/portraits/connie_skipping.jpg", caption: "Connie Gilchrist skipping — one of her most famous poses as a child performer" },
+    { url: "photos/portraits/leighton_music_lesson.jpg", caption: "'The Music Lesson' (1877) by Frederic Leighton — young Connie Gilchrist was the model for this painting" },
+    { url: "photos/portraits/gaiety_theatre.jpg", caption: "The Gaiety Theatre, London — where Connie became 'The Original Gaiety Girl' at age 12" }
+  ],
+  edmond7: [
+    { url: "photos/portraits/connie_edmond_wing_lodge.png", caption: "Connie Gilchrist and Edmond Walter FitzMaurice, 7th Earl of Orkney — at Wing Lodge, their country home" },
+    { url: "photos/portraits/connie_countess_portrait.jpg", caption: "Connie Gilchrist as Countess of Orkney — from 'Good Old Gaiety' (1903), showing her transformation from stage star to Countess" }
+  ],
+  cecilchain: [
+    { url: "photos/heraldry/orkney_arms_cecil.svg", caption: "Coat of Arms of Cecil O'Bryen FitzMaurice, 8th Earl of Orkney — motto: 'Through Courage'. Every quarter tells a chapter of the family story." },
+    { url: "photos/heraldry/orkney_arms_douglas.png", caption: "Arms of the Earl of Orkney — from the Douglas History heraldic archive" },
+    { url: "photos/heraldry/7th_earl_crest.png", caption: "Crest of the 7th Earl of Orkney — Edmond Walter FitzMaurice, Cecil's predecessor" }
+  ]
+};
+
+// ============================================
+// SOURCES / FURTHER READING
+// ============================================
+const SOURCES = {
+  james2: [
+    { text: "King James II of Scotland — Wikipedia", url: "https://en.wikipedia.org/wiki/James_II_of_Scotland" },
+    { text: "House of Stewart — Wikipedia", url: "https://en.wikipedia.org/wiki/House_of_Stuart" },
+    { text: "Siege of Roxburgh Castle — Wikipedia", url: "https://en.wikipedia.org/wiki/Siege_of_Roxburgh_(1460)" },
+    { text: "National Records of Scotland — Royal House of Stewart", url: "https://www.nrscotland.gov.uk" },
+    { text: "Historic Environment Scotland — Roxburgh Castle", url: "https://www.historicenvironment.scot" }
+  ],
+  mary_stewart: [
+    { text: "Mary Stewart, Princess of Scotland — Wikipedia", url: "https://en.wikipedia.org/wiki/Mary_Stewart,_Countess_of_Arran" },
+    { text: "Mary of Guelders — Wikipedia", url: "https://en.wikipedia.org/wiki/Mary_of_Guelders" },
+    { text: "Oxford Dictionary of National Biography — Stewart family", url: "https://www.oxforddnb.com" }
+  ],
+  hamilton_lord: [
+    { text: "James Hamilton, 1st Lord Hamilton — Wikipedia", url: "https://en.wikipedia.org/wiki/James_Hamilton,_1st_Lord_Hamilton" },
+    { text: "Hamilton family history — Electric Scotland", url: "https://www.electricscotland.com/webclans/htol/hamilto2.html" }
+  ],
+  arran: [
+    { text: "James Hamilton, 1st Earl of Arran — Wikipedia", url: "https://en.wikipedia.org/wiki/James_Hamilton,_1st_Earl_of_Arran" },
+    { text: "Peerage of Scotland — Arran", url: "https://en.wikipedia.org/wiki/Earl_of_Arran" }
+  ],
+  hamilton_succession: [
+    { text: "James Hamilton, 1st Duke of Hamilton — Wikipedia", url: "https://en.wikipedia.org/wiki/James_Hamilton,_1st_Duke_of_Hamilton" },
+    { text: "Hamilton Palace — Wikipedia", url: "https://en.wikipedia.org/wiki/Hamilton_Palace" },
+    { text: "Hereditary Keeper of Holyroodhouse — Wikipedia", url: "https://en.wikipedia.org/wiki/Hereditary_Keeper_of_the_Palace_of_Holyroodhouse" },
+    { text: "National Galleries of Scotland — Hamilton portraits", url: "https://www.nationalgalleries.org" },
+    { text: "Daniel Mytens — Wikipedia", url: "https://en.wikipedia.org/wiki/Daniel_Mytens" }
+  ],
+  anne_hamilton: [
+    { text: "Anne Hamilton, 3rd Duchess of Hamilton — Wikipedia", url: "https://en.wikipedia.org/wiki/Anne_Hamilton,_3rd_Duchess_of_Hamilton" },
+    { text: "National Records of Scotland — Hamilton papers", url: "https://www.nrscotland.gov.uk" }
+  ],
+  george_hamilton: [
+    { text: "George Hamilton, 1st Earl of Orkney — Wikipedia", url: "https://en.wikipedia.org/wiki/George_Hamilton,_1st_Earl_of_Orkney" },
+    { text: "Battle of Blenheim — Wikipedia", url: "https://en.wikipedia.org/wiki/Battle_of_Blenheim" },
+    { text: "Cliveden House — National Trust", url: "https://www.nationaltrust.org.uk/visit/oxfordshire-buckinghamshire-berkshire/cliveden" },
+    { text: "Field Marshal (UK) — Wikipedia", url: "https://en.wikipedia.org/wiki/Field_marshal_(United_Kingdom)" },
+    { text: "Victoria and Albert Museum — Rysbrack sculpture", url: "https://www.vam.ac.uk" },
+    { text: "National Army Museum — British Field Marshals", url: "https://www.nam.ac.uk" }
+  ],
+  elizabeth_villiers: [
+    { text: "Elizabeth Villiers — Wikipedia", url: "https://en.wikipedia.org/wiki/Elizabeth_Villiers" },
+    { text: "King William III — Wikipedia", url: "https://en.wikipedia.org/wiki/William_III_of_England" },
+    { text: "History of Parliament — Villiers family", url: "https://www.historyofparliamentonline.org" }
+  ],
+  anne_obrien: [
+    { text: "Earldom of Orkney — Wikipedia", url: "https://en.wikipedia.org/wiki/Earl_of_Orkney" },
+    { text: "Burke's Peerage — O'Brien and Orkney", url: "https://www.burkespeerage.com" }
+  ],
+  earl5: [
+    { text: "Earldom of Orkney — Wikipedia", url: "https://en.wikipedia.org/wiki/Earl_of_Orkney" },
+    { text: "Petty-FitzMaurice family — Wikipedia", url: "https://en.wikipedia.org/wiki/Marquess_of_Lansdowne" },
+    { text: "Burke's Peerage — Orkney Earldom", url: "https://www.burkespeerage.com" },
+    { text: "Debrett's — FitzMaurice family", url: "https://www.debretts.com" }
+  ],
+  lansdowne: [
+    { text: "William Petty, 2nd Earl of Shelburne — Wikipedia", url: "https://en.wikipedia.org/wiki/William_Petty,_2nd_Earl_of_Shelburne" },
+    { text: "Treaty of Paris (1783) — Wikipedia", url: "https://en.wikipedia.org/wiki/Treaty_of_Paris_(1783)" },
+    { text: "Bowood House — official site", url: "https://www.bowood.org" },
+    { text: "Bowood House — Wikipedia", url: "https://en.wikipedia.org/wiki/Bowood_House" },
+    { text: "History of Parliament — Shelburne", url: "https://www.historyofparliamentonline.org" },
+    { text: "Downing Street — UK Government history", url: "https://www.gov.uk/government/history/past-prime-ministers/henry-petty-fitzmaurice-3rd-marquess-of-lansdowne" }
+  ],
+  connie: [
+    { text: "Connie Gilchrist — Wikipedia", url: "https://en.wikipedia.org/wiki/Connie_Gilchrist" },
+    { text: "Gaiety Theatre, London — Wikipedia", url: "https://en.wikipedia.org/wiki/Gaiety_Theatre,_London" },
+    { text: "'Harmony in Yellow and Gold' — Metropolitan Museum of Art", url: "https://www.metmuseum.org/art/collection/search/12127" },
+    { text: "Frederic Leighton — Royal Academy of Arts", url: "https://www.royalacademy.org.uk/art-artists/name/frederic-lord-leighton-pra" },
+    { text: "James McNeill Whistler — Tate Gallery", url: "https://www.tate.org.uk/art/artists/james-abbott-mcneill-whistler-583" },
+    { text: "Leighton House Museum — RBKC", url: "https://www.rbkc.gov.uk/museums/leighton-house-museum" },
+    { text: "Victorian stage history — V&A Theatre Collection", url: "https://www.vam.ac.uk/collections/theatre-performance" }
+  ],
+  edmond7: [
+    { text: "Earldom of Orkney — Wikipedia", url: "https://en.wikipedia.org/wiki/Earl_of_Orkney" },
+    { text: "Stewkley village — Wikipedia", url: "https://en.wikipedia.org/wiki/Stewkley" },
+    { text: "Burke's Peerage — Orkney", url: "https://www.burkespeerage.com" }
+  ],
+  edward_dixon: [
+    { text: "Crockford's Clerical Directory — Ancestry.co.uk", url: "https://www.ancestry.co.uk" },
+    { text: "Stuart Studio, Knightsbridge — historical London photography", url: "https://en.wikipedia.org/wiki/Knightsbridge" },
+    { text: "England & Wales Census records — FindMyPast", url: "https://www.findmypast.co.uk" },
+    { text: "Church of England clergy records — The Clergy Database", url: "https://theclergydatabase.org.uk" }
+  ],
+  cecilchain: [
+    { text: "Earldom of Orkney — Wikipedia", url: "https://en.wikipedia.org/wiki/Earl_of_Orkney" },
+    { text: "Korean War — Wikipedia", url: "https://en.wikipedia.org/wiki/Korean_War" },
+    { text: "Royal Army Service Corps — Wikipedia", url: "https://en.wikipedia.org/wiki/Royal_Army_Service_Corps" },
+    { text: "London Gazette — Earldom succession notices", url: "https://www.thegazette.co.uk" }
+  ],
+  herbert: [
+    { text: "CWGC — Herbert Andrews", url: "https://www.cwgc.org" },
+    { text: "The National Archives — WWII service records", url: "https://www.nationalarchives.gov.uk" }
+  ],
+  unnamed_brother: [
+    { text: "CWGC Civilian War Dead Roll of Honour", url: "https://www.cwgc.org" },
+    { text: "Newham Archives — East Ham bombing records", url: "https://www.newham.gov.uk/libraries-arts-culture/newham-archives" },
+    { text: "National Archives — HO 396 civilian casualty records", url: "https://www.nationalarchives.gov.uk" }
+  ],
+  ronald: [
+    { text: "RAF in Egypt WWII — Maintenance Units", url: "https://en.wikipedia.org/wiki/Royal_Air_Force_in_the_Middle_East" },
+    { text: "CWGC Civilian War Dead Roll of Honour", url: "https://www.cwgc.org/find-records/find-war-dead/search-results/?CemeteryExact=false&War=2&CivilianDeath=true" },
+    { text: "Ministry of Defence — service records", url: "https://www.gov.uk/get-copy-military-service-records" },
+    { text: "RAF Museum — Desert Air Force history", url: "https://www.rafmuseum.org.uk" },
+    { text: "No. 103 MU RAF Aboukir — Wikipedia", url: "https://en.wikipedia.org/wiki/RAF_Aboukir" }
+  ],
+  ronald_parents: [
+    { text: "The Blitz — Wikipedia", url: "https://en.wikipedia.org/wiki/The_Blitz" },
+    { text: "CWGC Civilian War Dead", url: "https://www.cwgc.org" },
+    { text: "Newham Archives (East Ham records)", url: "https://www.newham.gov.uk/libraries-arts-culture/newham-archives" },
+    { text: "Bombing of East Ham — Imperial War Museum", url: "https://www.iwm.org.uk" },
+    { text: "Bomb Sight — mapping the Blitz", url: "https://bombsight.org" }
+  ],
+  patricia: [
+    { text: "St Mary's Church, Wanstead — Wikipedia", url: "https://en.wikipedia.org/wiki/St_Mary_the_Virgin,_Wanstead" },
+    { text: "The French Horn, Sonning — historic hotel", url: "https://en.wikipedia.org/wiki/Sonning" },
+    { text: "England & Wales Marriage Records — GRO", url: "https://www.gro.gov.uk" }
+  ],
+  cdv_ancestors: [
+    { text: "Carte de visite photography — Wikipedia", url: "https://en.wikipedia.org/wiki/Carte_de_visite" },
+    { text: "Camden Town history — Wikipedia", url: "https://en.wikipedia.org/wiki/Camden_Town" }
+  ]
+};
+
+// ============================================
+// PERSPECTIVE SELECTOR
+// ============================================
+let currentViewer = 'sebastian';
+
+// ============================================
+// BUILD THE TREE (left column)
+// ============================================
+function buildTree() {
+  const col = document.getElementById('treeColumn');
+  // Preserve the perspective bar, remove only tree content
+  const perspectiveBar = col.querySelector('.perspective-bar');
+  col.innerHTML = '';
+  if (perspectiveBar) col.appendChild(perspectiveBar);
+
+  const eras = [
+    {
+      title: 'Scottish Royal Line',
+      date: 'c. 1430',
+      rows: [
+        { type: 'people', ids: ['james2'] },
+        { type: 'arrow' },
+        { type: 'people', ids: ['mary_stewart', 'hamilton_lord'] },
+        { type: 'arrow' },
+        { type: 'people', ids: ['arran'] }
+      ]
+    },
+    {
+      title: 'Hamilton Nobility',
+      date: 'c. 1530\u20131630',
+      rows: [
+        { type: 'people', ids: ['hamilton_succession'] },
+        { type: 'arrow' },
+        { type: 'people', ids: ['anne_hamilton'] }
+      ]
+    },
+    {
+      title: 'The Orkney Earldom',
+      date: '1666',
+      rows: [
+        { type: 'couple', ids: ['george_hamilton', 'elizabeth_villiers'] },
+        { type: 'arrow' },
+        { type: 'people', ids: ['anne_obrien'] },
+        { type: 'arrow' },
+        { type: 'people', ids: ['obrien_fitzmaurice_succession'] }
+      ]
+    },
+    {
+      title: 'FitzMaurice Earls of Orkney',
+      date: 'c. 1800',
+      rows: [
+        { type: 'people', ids: ['earl5', 'lansdowne'] },
+        { type: 'note', style: 'dashed', html: 'Thomas FitzMaurice (5th Earl) and the Marquess of Lansdowne (Prime Minister) were from the same Petty-FitzMaurice family of County Kerry' },
+        { type: 'arrow' },
+        { type: 'people', ids: ['henry_warrender'] }
+      ]
+    },
+    {
+      title: 'Victorian FitzMaurices',
+      date: 'c. 1865\u20131900',
+      rows: [
+        { type: 'people', ids: ['cdv_ancestors'] },
+        { type: 'note', style: 'dashed', html: 'Earliest family photograph \u2014 unknown FitzMaurice woman and child, Camden Town, c.1865\u20131878' },
+        { type: 'arrow' },
+        { type: 'dashed-couple', ids: ['edward_dixon', 'edmond7', 'connie'] },
+        { type: 'note', style: '', html: 'Edward Dixon and Edmond Walter (7th Earl) \u2014 probable brothers, both likely sons of Henry Warrender FitzMaurice. Relationship unconfirmed.' },
+        { type: 'arrow' },
+        { type: 'people', ids: ['reg', 'babs', 'bob', 'edith'] },
+        { type: 'note', style: '', html: 'Children of Edward Dixon FitzMaurice' }
+      ]
+    },
+    {
+      title: 'The Last FitzMaurice Earl',
+      date: '1919\u20131998',
+      rows: [
+        { type: 'people', ids: ['cecilchain'] },
+        { type: 'note', style: 'blitz', html: 'Cecil inherited the Earldom in 1951 while serving as a truck driver in Korea. His elder brother Douglas was killed in WWII. The last FitzMaurice Earl of Orkney \u2014 died 1998 without issue.' }
+      ]
+    },
+    {
+      title: 'Andrews Generation',
+      date: 'c. 1915\u20131950',
+      rows: [
+        { type: 'people', ids: ['ronald_parents'] },
+        { type: 'arrow' },
+        { type: 'people', ids: ['ronald', 'herbert', 'unnamed_brother'] },
+        { type: 'note', style: 'blitz', html: 'Ronald\'s parents and his younger brother Sidney were killed in the WWII Blitz \u2014 East Ham, London' },
+        { type: 'arrow' },
+        { type: 'wedding-couple', ids: ['patricia', 'ronald'] }
+      ]
+    },
+    {
+      title: 'Your Parents\' Generation',
+      date: '',
+      rows: [
+        { type: 'couple', ids: ['amanda', 'robert'] },
+        { type: 'couple', ids: ['venetia', 'gary'], label: '' }
+      ]
+    },
+    {
+      title: 'Your Generation',
+      date: '',
+      rows: [
+        { type: 'couple', ids: ['sebastian', 'valeria'] },
+        { type: 'couple', ids: ['alex', 'lauren'] },
+        { type: 'people', ids: ['max', 'ben'] }
+      ]
+    },
+    {
+      title: 'The Next Generation',
+      date: '',
+      rows: [
+        { type: 'people', ids: ['enzo', 'violet'] }
+      ]
+    }
+  ];
+
+  eras.forEach(era => {
+    const section = document.createElement('div');
+    section.className = 'era-section';
+
+    // Era header
+    const header = document.createElement('div');
+    header.className = 'era-header';
+    header.innerHTML = `
+      <span class="era-badge">${(era.title === 'Your Generation' || era.title === 'The Next Generation') ? '\u2605' : '\u25c6'}</span>
+      <span class="era-title">${era.title}</span>
+      ${era.date ? '<span class="era-date">' + era.date + '</span>' : ''}
+    `;
+    section.appendChild(header);
+
+    // Rows
+    era.rows.forEach(row => {
+      if (row.type === 'arrow') {
+        const arrow = document.createElement('div');
+        arrow.className = 'descent-arrow';
+        arrow.textContent = '\u25bc';
+        section.appendChild(arrow);
+      }
+      else if (row.type === 'note') {
+        const note = document.createElement('div');
+        note.className = 'tree-note ' + (row.style || '');
+        note.innerHTML = '<p>' + row.html + '</p>';
+        if (row.clickId) {
+          note.addEventListener('click', () => selectPerson(row.clickId));
+        }
+        section.appendChild(note);
+      }
+      else if (row.type === 'people') {
+        const rowEl = document.createElement('div');
+        rowEl.className = 'person-row';
+        row.ids.forEach(id => rowEl.appendChild(createCard(id)));
+        section.appendChild(rowEl);
+      }
+      else if (row.type === 'couple') {
+        const rowEl = document.createElement('div');
+        rowEl.className = 'person-row couple';
+        rowEl.appendChild(createCard(row.ids[0]));
+        const sym = document.createElement('div');
+        sym.className = 'marriage-symbol';
+        sym.innerHTML = '\u2014';
+        rowEl.appendChild(sym);
+        rowEl.appendChild(createCard(row.ids[1]));
+        section.appendChild(rowEl);
+      }
+      else if (row.type === 'dashed-couple') {
+        // edward_dixon - - - edmond7 --- connie
+        const rowEl = document.createElement('div');
+        rowEl.className = 'person-row couple';
+        rowEl.appendChild(createCard(row.ids[0]));
+        const dash = document.createElement('div');
+        dash.className = 'dashed-connector';
+        dash.innerHTML = '<div class="dash-line"></div><div class="dash-label">probable cousins</div>';
+        rowEl.appendChild(dash);
+        rowEl.appendChild(createCard(row.ids[1]));
+        const sym = document.createElement('div');
+        sym.className = 'marriage-symbol';
+        sym.innerHTML = '\u2014';
+        rowEl.appendChild(sym);
+        rowEl.appendChild(createCard(row.ids[2]));
+        section.appendChild(rowEl);
+      }
+      else if (row.type === 'wedding-couple') {
+        const wrap = document.createElement('div');
+        wrap.className = 'couple-highlight';
+        wrap.appendChild(createCard(row.ids[0]));
+        const icon = document.createElement('div');
+        icon.className = 'wedding-icon';
+        icon.innerHTML = '\ud83d\udc8d<div class="wedding-date">11 Feb 1950</div>';
+        wrap.appendChild(icon);
+        wrap.appendChild(createCard(row.ids[1]));
+        section.appendChild(wrap);
+      }
+    });
+
+    col.appendChild(section);
+  });
+}
+
+function createCard(id) {
+  const p = PEOPLE[id];
+  if (!p) return document.createElement('div');
+
+  const card = document.createElement('div');
+  card.className = 'person-card';
+  card.dataset.type = p.type;
+  card.dataset.id = id;
+
+  // Check for photos
+  const photos = getPhotosForPerson(id);
+  const hasPhotos = photos && photos.length > 0;
+
+  card.innerHTML = `
+    ${hasPhotos ? '<div class="has-photos-dot"></div>' : ''}
+    <div class="person-avatar-ring">
+      <div class="person-avatar-inner ${p.gender}">${p.emoji}</div>
+    </div>
+    <div class="person-card-name">${p.name}</div>
+    ${p.dates ? '<div class="person-card-dates">' + p.dates + '</div>' : ''}
+    ${p.role && p.type !== 'neutral' ? '<div class="person-card-role">' + truncRole(p.role) + '</div>' : ''}
+  `;
+
+  card.addEventListener('click', () => selectPerson(id));
+  return card;
+}
+
+function truncRole(role) {
+  if (role.length > 40) return role.substring(0, 38) + '\u2026';
+  return role;
+}
+
+function getPhotosForPerson(id) {
+  const p = PEOPLE[id];
+  if (!p || !p.photoKey) return [];
+  return PHOTOS[p.photoKey] || [];
+}
+
+// ============================================
+// BIO PANEL
+// ============================================
+let currentPerson = null;
+
+function selectPerson(id) {
+  const p = PEOPLE[id];
+  if (!p) return;
+
+  currentPerson = id;
+
+  // Update card selection
+  document.querySelectorAll('.person-card').forEach(c => c.classList.remove('selected'));
+  document.querySelectorAll(`.person-card[data-id="${id}"]`).forEach(c => c.classList.add('selected'));
+
+  const empty = document.getElementById('bioEmpty');
+  const content = document.getElementById('bioContent');
+  empty.style.display = 'none';
+  content.style.display = 'block';
+
+  const photos = getPhotosForPerson(id);
+
+  // Get perspective-aware role and connection text
+  const viewerData = RELATIONSHIPS[currentViewer];
+  const rel = viewerData ? viewerData[id] : null;
+  const roleText = rel ? rel.role : p.role;
+  const connectionText = rel ? rel.connection : p.connection;
+
+  let photosHtml = '';
+  if (photos.length > 0) {
+    photosHtml = `
+      <div class="bio-photos">
+        <div class="bio-photos-label">Photographs</div>
+        <div class="bio-photo-row">
+          ${photos.map((ph, i) => `
+            <div class="bio-photo-thumb" data-person="${id}" data-index="${i}">
+              <img src="${PHOTO_PATH}${ph.file}" alt="${ph.caption}" loading="lazy">
+            </div>
+          `).join('')}
+        </div>
+      </div>
+    `;
+  }
+
+  // Historical portraits for figures without family photos
+  let portraitHtml = '';
+  if (photos.length === 0 && HISTORICAL_PORTRAITS[id]) {
+    const portraits = HISTORICAL_PORTRAITS[id];
+    portraitHtml = portraits.map(portrait => `
+      <div class="bio-portrait">
+        <img src="${portrait.url}" alt="${portrait.caption}" loading="lazy">
+        <div class="bio-portrait-caption">${portrait.caption}</div>
+      </div>
+    `).join('');
+  }
+
+  let badgesHtml = '';
+  if (p.badges && p.badges.length > 0) {
+    badgesHtml = `
+      <div class="bio-badges">
+        ${p.badges.map(b => `<span class="bio-badge ${b.style}">${b.text}</span>`).join('')}
+      </div>
+    `;
+  }
+
+  content.innerHTML = `
+    <div class="bio-header">
+      <h2>${p.name}</h2>
+      <div class="bio-role">${roleText}</div>
+      ${p.dates ? '<div class="bio-dates">' + p.dates + '</div>' : ''}
+    </div>
+    ${badgesHtml}
+    ${portraitHtml}
+    ${photosHtml}
+    <div class="bio-section">
+      <div class="bio-section-label">About</div>
+      <p>${p.about}</p>
+    </div>
+    <div class="bio-section">
+      <div class="bio-section-label">Connection to You</div>
+      <p class="connection">${connectionText}</p>
+    </div>
+    ${p.notable ? `
+    <div class="bio-section">
+      <div class="bio-section-label">Research Note</div>
+      <p class="notable">${p.notable}</p>
+    </div>
+    ` : ''}
+    ${SOURCES[id] ? `
+    <div class="bio-sources">
+      <div class="bio-sources-label">Read More / Sources</div>
+      ${SOURCES[id].map(s => `<a href="${s.url}" target="_blank" rel="noopener">${s.text}</a>`).join('')}
+    </div>
+    ` : ''}
+  `;
+
+  // Attach lightbox listeners to photo thumbs
+  content.querySelectorAll('.bio-photo-thumb').forEach(thumb => {
+    thumb.addEventListener('click', () => {
+      const personId = thumb.dataset.person;
+      const index = parseInt(thumb.dataset.index, 10);
+      openLightbox(personId, index);
+    });
+  });
+
+  // Scroll bio column to top
+  document.getElementById('bioColumn').scrollTop = 0;
+}
+
+// ============================================
+// LIGHTBOX
+// ============================================
+let lightboxPhotos = [];
+let lightboxIndex = 0;
+
+function openLightbox(personId, index) {
+  lightboxPhotos = getPhotosForPerson(personId);
+  lightboxIndex = index;
+  renderLightbox();
+  document.getElementById('lightbox').classList.add('active');
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLightbox() {
+  document.getElementById('lightbox').classList.remove('active');
+  document.body.style.overflow = '';
+}
+
+function renderLightbox() {
+  if (!lightboxPhotos.length) return;
+  const photo = lightboxPhotos[lightboxIndex];
+  document.getElementById('lightboxImg').src = PHOTO_PATH + photo.file;
+  document.getElementById('lightboxImg').alt = photo.caption;
+  document.getElementById('lightboxCaption').textContent = photo.caption;
+  document.getElementById('lightboxCounter').textContent =
+    lightboxPhotos.length > 1 ? (lightboxIndex + 1) + ' / ' + lightboxPhotos.length : '';
+
+  document.getElementById('lightboxPrev').style.display = lightboxPhotos.length > 1 ? 'flex' : 'none';
+  document.getElementById('lightboxNext').style.display = lightboxPhotos.length > 1 ? 'flex' : 'none';
+}
+
+document.getElementById('lightboxClose').addEventListener('click', closeLightbox);
+document.getElementById('lightboxPrev').addEventListener('click', (e) => {
+  e.stopPropagation();
+  lightboxIndex = (lightboxIndex - 1 + lightboxPhotos.length) % lightboxPhotos.length;
+  renderLightbox();
+});
+document.getElementById('lightboxNext').addEventListener('click', (e) => {
+  e.stopPropagation();
+  lightboxIndex = (lightboxIndex + 1) % lightboxPhotos.length;
+  renderLightbox();
+});
+document.getElementById('lightbox').addEventListener('click', (e) => {
+  if (e.target === document.getElementById('lightbox')) closeLightbox();
+});
+document.addEventListener('keydown', (e) => {
+  if (!document.getElementById('lightbox').classList.contains('active')) return;
+  if (e.key === 'Escape') closeLightbox();
+  if (e.key === 'ArrowLeft') {
+    lightboxIndex = (lightboxIndex - 1 + lightboxPhotos.length) % lightboxPhotos.length;
+    renderLightbox();
+  }
+  if (e.key === 'ArrowRight') {
+    lightboxIndex = (lightboxIndex + 1) % lightboxPhotos.length;
+    renderLightbox();
+  }
+});
+
+// ============================================
+// MOBILE NAV
+// ============================================
+document.getElementById('navToggle').addEventListener('click', () => {
+  document.getElementById('navLinks').classList.toggle('open');
+});
+
+// ============================================
+// INIT
+// ============================================
+buildTree();
+
+// Perspective selector event
+document.getElementById('perspectiveSelect').addEventListener('change', function() {
+  currentViewer = this.value;
+  buildTree();
+  if (currentPerson) {
+    selectPerson(currentPerson);
+  }
+});
+</script>
+</body>
+</html>

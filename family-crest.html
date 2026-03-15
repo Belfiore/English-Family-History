@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family Crest | The FitzMaurice &amp; Andrews Heritage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <style>
+:root {
+  --bg: #FDF8F0;
+  --text: #2c2416;
+  --gold: #FFD700;
+  --gold-dark: #B8860B;
+  --dark: #1a1a2e;
+  --royal: #FFD700;
+  --navy: #2a4a7b;
+  --brown: #5a3e2a;
+  --red: #8b2020;
+  --burgundy: #8B0000;
+  --cream: #F8F1E4;
+  --border: #d4c5a9;
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  min-height: 100vh;
+}
+
+/* ===== NAV ===== */
+.main-nav {
+  background: rgba(26, 26, 46, 0.95);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+  border-bottom: 2px solid var(--gold);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+.nav-inner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.8rem 2rem;
+}
+.nav-logo {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: var(--gold);
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.nav-links { display: flex; gap: 2rem; }
+.nav-links a {
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  position: relative;
+  padding-bottom: 2px;
+}
+.nav-links a::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background: var(--gold);
+  transition: width 0.3s ease;
+}
+.nav-links a:hover { color: var(--gold); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--gold); }
+.nav-links a.active::after { width: 100%; }
+.nav-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+.nav-toggle span {
+  width: 22px;
+  height: 2px;
+  background: var(--gold);
+  display: block;
+  transition: 0.3s;
+}
+
+/* ===== PAGE LAYOUT ===== */
+.page-container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 2rem 4rem;
+}
+
+/* ===== HERO — COAT OF ARMS ===== */
+.crest-hero {
+  text-align: center;
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 3rem;
+}
+.crest-hero img {
+  max-width: 420px;
+  width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 4px 20px rgba(0,0,0,0.15));
+}
+.crest-hero h1 {
+  font-family: 'Cinzel', serif;
+  font-size: 2.4rem;
+  color: var(--dark);
+  margin-bottom: 0.3rem;
+  letter-spacing: 2px;
+}
+.crest-hero .subtitle {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.3rem;
+  color: var(--gold-dark);
+  font-style: italic;
+  margin-bottom: 0.5rem;
+}
+.crest-hero .motto {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  color: var(--red);
+  letter-spacing: 3px;
+  margin-top: 1rem;
+  text-transform: uppercase;
+}
+.crest-hero .blazon {
+  font-family: 'EB Garamond', serif;
+  font-size: 0.95rem;
+  color: #666;
+  max-width: 700px;
+  margin: 1.5rem auto 0;
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* ===== INTRO ===== */
+.intro-text {
+  font-size: 1.15rem;
+  line-height: 1.8;
+  color: var(--text);
+  margin-bottom: 3rem;
+  text-align: center;
+  max-width: 750px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.intro-text strong {
+  color: var(--dark);
+}
+
+/* ===== SECTION HEADERS ===== */
+.section-header {
+  font-family: 'Cinzel', serif;
+  font-size: 1.6rem;
+  color: var(--dark);
+  margin: 3rem 0 1.5rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--gold);
+  letter-spacing: 1px;
+}
+.section-subheader {
+  font-family: 'Cinzel', serif;
+  font-size: 1.15rem;
+  color: var(--navy);
+  margin: 2rem 0 0.8rem;
+}
+
+/* ===== BREAKDOWN CARDS ===== */
+.breakdown-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin: 2rem 0 3rem;
+}
+.element-card {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-left: 4px solid var(--gold);
+  border-radius: 6px;
+  padding: 1.5rem 1.8rem;
+  transition: box-shadow 0.3s;
+}
+.element-card:hover {
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+.element-card.shield { border-left-color: var(--red); }
+.element-card.crest-card { border-left-color: var(--brown); }
+.element-card.supporter { border-left-color: var(--navy); }
+.element-card.motto-card { border-left-color: var(--gold-dark); }
+.element-card .card-label {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: var(--gold-dark);
+  margin-bottom: 0.3rem;
+}
+.element-card h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.15rem;
+  color: var(--dark);
+  margin-bottom: 0.8rem;
+}
+.element-card p {
+  font-size: 1.05rem;
+  line-height: 1.7;
+}
+.element-card .family-link {
+  display: inline-block;
+  margin-top: 0.8rem;
+  font-family: 'Cinzel', serif;
+  font-size: 0.8rem;
+  color: var(--navy);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1px solid var(--navy);
+  padding-bottom: 1px;
+}
+
+/* ===== TIMELINE ===== */
+.timeline {
+  position: relative;
+  margin: 2rem 0 3rem;
+  padding-left: 40px;
+}
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 16px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--gold), var(--red), var(--navy), var(--brown), var(--gold));
+}
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+  padding: 1.5rem;
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  transition: box-shadow 0.3s;
+}
+.timeline-item:hover {
+  box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -32px;
+  top: 1.8rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--gold);
+  border: 2px solid var(--cream);
+  z-index: 1;
+}
+.timeline-item.royal::before { background: var(--gold); }
+.timeline-item.hamilton::before { background: var(--red); }
+.timeline-item.obrien::before { background: var(--navy); }
+.timeline-item.fitzmaurice::before { background: var(--brown); }
+.timeline-item.modern::before { background: #1a5c2a; }
+
+.timeline-date {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  color: var(--gold-dark);
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.2rem;
+}
+.timeline-title {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: var(--dark);
+  margin-bottom: 0.6rem;
+}
+.timeline-body {
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.timeline-crest {
+  margin-top: 1rem;
+  text-align: center;
+}
+.timeline-crest img {
+  max-width: 200px;
+  height: auto;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+  background: #fff;
+  padding: 8px;
+}
+.timeline-crest .crest-caption {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.4rem;
+}
+.timeline-person {
+  display: inline-block;
+  background: var(--dark);
+  color: var(--gold);
+  font-family: 'Cinzel', serif;
+  font-size: 0.7rem;
+  padding: 2px 10px;
+  border-radius: 3px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-top: 0.8rem;
+}
+
+/* ===== CECIL SECTION ===== */
+.cecil-section {
+  background: var(--cream);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 2rem;
+  margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 2rem;
+  align-items: start;
+}
+.cecil-photo img {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+}
+.cecil-photo .photo-caption {
+  font-size: 0.85rem;
+  color: #888;
+  font-style: italic;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+.cecil-text h3 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.3rem;
+  color: var(--dark);
+  margin-bottom: 0.3rem;
+}
+.cecil-text .cecil-role {
+  font-style: italic;
+  color: var(--gold-dark);
+  margin-bottom: 1rem;
+  font-size: 1.05rem;
+}
+.cecil-text p {
+  font-size: 1.02rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+
+/* ===== MEANING TABLE ===== */
+.meaning-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5rem 0 2rem;
+  font-size: 1rem;
+}
+.meaning-table th {
+  font-family: 'Cinzel', serif;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  color: var(--gold-dark);
+  text-align: left;
+  padding: 0.7rem 1rem;
+  border-bottom: 2px solid var(--gold);
+  background: var(--cream);
+}
+.meaning-table td {
+  padding: 0.7rem 1rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+.meaning-table tr:last-child td { border-bottom: none; }
+.meaning-table .element-name {
+  font-family: 'Cinzel', serif;
+  font-weight: 600;
+  color: var(--dark);
+  white-space: nowrap;
+}
+
+/* ===== SOURCES ===== */
+.sources-section {
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--border);
+}
+.sources-section h2 {
+  font-family: 'Cinzel', serif;
+  font-size: 1.1rem;
+  color: var(--gold-dark);
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+.sources-section a {
+  display: block;
+  font-size: 0.95rem;
+  color: var(--navy);
+  text-decoration: none;
+  margin-bottom: 0.4rem;
+  transition: color 0.2s;
+}
+.sources-section a::before {
+  content: '\2192  ';
+  color: var(--gold-dark);
+}
+.sources-section a:hover {
+  color: var(--red);
+}
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 768px) {
+  .nav-links { display: none; }
+  .nav-toggle { display: flex; }
+  .nav-links.open {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background: rgba(26, 26, 46, 0.95);
+    padding: 1rem 2rem;
+    gap: 1rem;
+    border-bottom: 2px solid var(--gold);
+  }
+  .page-container { padding: 1.5rem 1rem 3rem; }
+  .crest-hero h1 { font-size: 1.7rem; }
+  .crest-hero img { max-width: 300px; }
+  .cecil-section {
+    grid-template-columns: 1fr;
+  }
+  .cecil-photo img { max-width: 280px; margin: 0 auto; display: block; }
+  .timeline { padding-left: 30px; }
+  .meaning-table { font-size: 0.9rem; }
+  .meaning-table td, .meaning-table th { padding: 0.5rem 0.6rem; }
+}
+    </style>
+</head>
+<body>
+
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">FitzMaurice &amp; Andrews</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="family-tree.html">Family Tree</a>
+            <a href="family-crest.html" class="active">Family Crest</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<div class="page-container">
+
+    <!-- ===== HERO: THE COAT OF ARMS ===== -->
+    <div class="crest-hero">
+        <img src="photos/heraldry/orkney_arms_cecil.svg" alt="Coat of Arms of the FitzMaurice Earls of Orkney">
+        <h1>The FitzMaurice Coat of Arms</h1>
+        <div class="subtitle">Earls of Orkney &mdash; Created 1696</div>
+        <div class="motto">&ldquo;Through Courage&rdquo;</div>
+        <p class="blazon">
+            <strong>Blazon:</strong> Quarterly: 1st and 4th grandquarters, Argent on a Saltire Gules a Lymphad sails furled Or a Chief Ermine (FitzMaurice); 2nd grandquarter, quarterly: 1st and 4th, Gules three Cinquefoils Ermine (Hamilton); 2nd, Argent a Lymphad sails furled Sable (Arran); 3rd, Argent a Heart Gules imperially crowned Or on a Chief Azure three Mullets of the first (Douglas); over all at the fess point an Escallop Or for difference; 3rd grandquarter, quarterly: 1st and 4th, Gules three Lions passant guardant per pale Or and Argent (O'Brien); 2nd, Argent three Piles meeting in the point issuing from the chief Gules; 3rd, Argent a Pheon Azure.
+        </p>
+    </div>
+
+    <!-- ===== INTRO ===== -->
+    <p class="intro-text">
+        This is <strong>your family's coat of arms</strong>. Every quarter of the shield, every supporter flanking it, every element of the crest above it tells a chapter of the story that runs from a Scottish king in the 1400s to a soldier stepping off a troopship in 1951. A quartered shield in heraldry is a visual family tree &mdash; each section represents a different noble bloodline united through centuries of marriage and inheritance. This page breaks down exactly what each element means and how it connects to <strong>you</strong>.
+    </p>
+
+    <!-- ===== BREAKDOWN OF THE ARMS ===== -->
+    <h2 class="section-header">What the Arms Mean</h2>
+
+    <div class="breakdown-grid">
+
+        <!-- THE SHIELD -->
+        <div class="element-card shield">
+            <div class="card-label">The Shield &mdash; 1st &amp; 4th Quarters</div>
+            <h3>The Red Saltire on Ermine &mdash; FitzMaurice</h3>
+            <p>The dominant quarters of the shield: <em>Ermine, a saltire gules</em>. The white background spotted with black ermine tails is one of heraldry's most prestigious backgrounds, associated with royalty and high nobility. The red diagonal cross is the FitzMaurice family's own mark. <strong>This is your family's quarter</strong> &mdash; directly connected to Edward Dixon, Reg, Patricia, and Amanda. The lymphad (ancient galley ship) laid over the saltire represents the Earldom of Orkney itself.</p>
+            <span class="family-link">Your direct bloodline &mdash; Reg, Edward Dixon, Patricia, Amanda</span>
+        </div>
+
+        <div class="element-card shield">
+            <div class="card-label">The Shield &mdash; 2nd Quarter</div>
+            <h3>Hamilton Arms &mdash; Cinquefoils, Ship, Heart &amp; Stars</h3>
+            <p>This complex quarter carries the arms of the House of Hamilton. The three cinquefoils on ermine are the Hamilton family charge, tracing back to James Hamilton, 1st Lord Hamilton, who married Princess Mary Stewart &mdash; daughter of King James II of Scotland. The black lymphad represents the ancient Earldom of Arran. The crowned heart on blue with three stars is the Douglas arms, representing the marriage of Anne Hamilton, 3rd Duchess of Hamilton, to Lord William Douglas. The escallop (scallop shell) at the centre is the cadency mark of Lord George Hamilton, 1st Earl of Orkney &mdash; fifth son of the Duchess, and Britain's first ever Field Marshal.</p>
+            <span class="family-link">Your line back to King James II of Scotland</span>
+        </div>
+
+        <div class="element-card shield">
+            <div class="card-label">The Shield &mdash; 3rd Quarter</div>
+            <h3>O'Brien / Inchiquin Arms &mdash; Three Lions</h3>
+            <p>Three lions passant guardant in gold and silver on red &mdash; the arms of the O'Brien family, Barons of Inchiquin. This ancient Irish noble line entered the Orkney story when Mary O'Brien, Countess of Orkney, married into the family. Through her, the Earldom eventually passed from the Hamilton bloodline to the FitzMaurice family via the succession through the 5th Earl. The piles (red wedges) and pheon (arrowhead) in the sub-quarters represent additional O'Brien and related Irish lineages.</p>
+            <span class="family-link">The Irish bridge between Hamilton and FitzMaurice</span>
+        </div>
+
+        <!-- CREST -->
+        <div class="element-card crest-card">
+            <div class="card-label">Above the Shield &mdash; The Crest</div>
+            <h3>The Oak, the Saw &amp; the Sagittarius</h3>
+            <p>Two crests sit above the coronet of an Earl. The <strong>oak tree penetrated by a frame-saw</strong> is one of the most distinctive crests in Scottish heraldry &mdash; it belongs to the House of Hamilton. Legend holds that a Hamilton ancestor rescued a Scottish king from ambush by hiding him in a hay cart, sawing through a log to make room. The grateful king rewarded the family with the single-word motto <em>"Through"</em> &mdash; meaning <em>"I came through danger for you."</em> The <strong>Sagittarius</strong> (mounted archer) to the left is the FitzMaurice / Petty-Lansdowne crest, representing the warrior-scholar tradition of the Kerry FitzMaurices. Together, these two crests above the shield unite the Hamilton and FitzMaurice family traditions.</p>
+            <span class="family-link">Hamilton rescue legend + FitzMaurice warrior tradition</span>
+        </div>
+
+        <!-- SUPPORTERS -->
+        <div class="element-card supporter">
+            <div class="card-label">Flanking the Shield &mdash; Supporters</div>
+            <h3>The White Antelope &amp; the Brown Stag</h3>
+            <p>On the left: a <strong>white antelope</strong> with golden horns, ducally gorged (wearing a coronet collar) and chained in gold. This is a classic Hamilton supporter &mdash; the gold chain signifies nobility in service to the Crown. On the right: a <strong>brown stag</strong> with gold antlers, also gorged and chained. This is associated with the FitzMaurice / Petty-Lansdowne line &mdash; the stag symbolises wisdom, nobility, and one who will not fight unless provoked. Both supporters are charged on the shoulder with a cinquefoil ermine, tying them back to the Hamilton origin. The two animals standing either side of the shield represent the two great family lines &mdash; Hamilton and FitzMaurice &mdash; holding up the Earldom between them.</p>
+            <span class="family-link">Hamilton (left) and FitzMaurice (right) united</span>
+        </div>
+
+        <!-- MOTTO -->
+        <div class="element-card motto-card">
+            <div class="card-label">The Motto</div>
+            <h3>&ldquo;Through Courage&rdquo;</h3>
+            <p>The motto combines the ancient Hamilton word <em>"Through"</em> &mdash; from the saw-and-oak rescue legend &mdash; with <em>"Courage"</em>, the FitzMaurice addition. It is both a remembrance and a command: <em>we came through, and we did it with courage.</em> Cecil O'Bryen FitzMaurice, the 8th and last Earl, literally lived this motto &mdash; he came through North Africa, Italy, France, Germany and Korea, two full wars, before returning home to inherit a 300-year-old title. The motto banner flies above the entire composition, crowning every element below.</p>
+            <span class="family-link">300 years of family spirit &mdash; from a rescued king to a soldier in Korea</span>
+        </div>
+
+    </div>
+
+    <!-- ===== SUMMARY TABLE ===== -->
+    <h2 class="section-header">Your Family in the Arms</h2>
+
+    <table class="meaning-table">
+        <thead>
+            <tr>
+                <th>Element</th>
+                <th>Represents</th>
+                <th>Your Connection</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="element-name">Red saltire on ermine</td>
+                <td>FitzMaurice family</td>
+                <td>Your direct bloodline &mdash; Reg, Edward Dixon, Patricia, Amanda</td>
+            </tr>
+            <tr>
+                <td class="element-name">Ship on the saltire</td>
+                <td>Earldom of Orkney</td>
+                <td>The title your family held for generations</td>
+            </tr>
+            <tr>
+                <td class="element-name">Cinquefoils &amp; ship (2nd quarter)</td>
+                <td>House of Hamilton &amp; Arran</td>
+                <td>Your line back through Princess Mary Stewart to King James II</td>
+            </tr>
+            <tr>
+                <td class="element-name">Crowned heart &amp; stars</td>
+                <td>House of Douglas</td>
+                <td>Anne Hamilton's marriage to Lord William Douglas</td>
+            </tr>
+            <tr>
+                <td class="element-name">Gold escallop</td>
+                <td>Lord George Hamilton, 1st Earl</td>
+                <td>Britain's first Field Marshal &mdash; founder of your Earldom</td>
+            </tr>
+            <tr>
+                <td class="element-name">Three lions (3rd quarter)</td>
+                <td>O'Brien / Inchiquin</td>
+                <td>The Irish noble line bridging Hamilton to FitzMaurice</td>
+            </tr>
+            <tr>
+                <td class="element-name">Oak tree with saw</td>
+                <td>Hamilton crest</td>
+                <td>The ancient rescue of a Scottish king</td>
+            </tr>
+            <tr>
+                <td class="element-name">Sagittarius</td>
+                <td>FitzMaurice / Lansdowne crest</td>
+                <td>The Kerry FitzMaurice warrior-scholar tradition</td>
+            </tr>
+            <tr>
+                <td class="element-name">White antelope</td>
+                <td>Hamilton supporter</td>
+                <td>The Scottish royal line &mdash; nobility in service</td>
+            </tr>
+            <tr>
+                <td class="element-name">Brown stag</td>
+                <td>FitzMaurice supporter</td>
+                <td>Wisdom, and one who will not fight unless provoked</td>
+            </tr>
+            <tr>
+                <td class="element-name">&ldquo;Through Courage&rdquo;</td>
+                <td>Combined motto</td>
+                <td>300 years of family spirit &mdash; Hamilton rescue + FitzMaurice courage</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <!-- ===== HERALDIC TIMELINE ===== -->
+    <h2 class="section-header">A Heraldic Journey &mdash; How the Arms Were Built</h2>
+    <p style="font-size: 1.05rem; margin-bottom: 2rem;">Each generation added a layer. The coat of arms of the FitzMaurice Earls of Orkney didn't appear all at once &mdash; it was assembled over five centuries as families married, inherited titles, and merged their heraldic identities. Here is the story of how each element entered the arms.</p>
+
+    <div class="timeline">
+
+        <div class="timeline-item royal">
+            <div class="timeline-date">c. 1430 &mdash; The Royal Foundation</div>
+            <div class="timeline-title">The Royal Arms of Scotland &mdash; House of Stewart</div>
+            <div class="timeline-body">
+                It begins with a king. James II of Scotland bore the Royal Arms: <em>Or, a lion rampant within a double tressure flory counter-flory Gules</em> &mdash; the red lion on gold that still represents Scotland today. His daughter Princess Mary Stewart married James Hamilton, 1st Lord Hamilton, in 1474. That single union planted the royal blood that would flow through every generation of this family tree.
+            </div>
+            <div class="timeline-crest">
+                <img src="photos/heraldry/scotland_arms.svg" alt="Royal Arms of Scotland">
+                <div class="crest-caption">Royal Arms of Scotland &mdash; the lion rampant</div>
+            </div>
+            <div class="timeline-person">King James II &bull; Princess Mary Stewart</div>
+        </div>
+
+        <div class="timeline-item hamilton">
+            <div class="timeline-date">1474 &mdash; The Hamilton Marriage</div>
+            <div class="timeline-title">Hamilton Arms &mdash; Cinquefoils on Ermine</div>
+            <div class="timeline-body">
+                When James Hamilton married Princess Mary Stewart, the Hamilton family rose from landed gentry to the highest ranks of Scottish nobility. Their arms &mdash; <em>Gules, three cinquefoils Ermine</em> &mdash; would become one of the most powerful heraldic devices in Scotland. The three five-petalled flowers on their field of royal ermine became the foundation of the 2nd quarter of the Orkney arms. Through succeeding generations, the Hamiltons would become Earls of Arran, Dukes of Hamilton, and Hereditary Keepers of the Palace of Holyroodhouse.
+            </div>
+            <div class="timeline-crest">
+                <img src="photos/heraldry/hamilton_arms.svg" alt="Hamilton Arms">
+                <div class="crest-caption">Arms of the Duke of Hamilton &mdash; cinquefoils, lymphad, Douglas heart</div>
+            </div>
+            <div class="timeline-person">James Hamilton, 1st Lord Hamilton</div>
+        </div>
+
+        <div class="timeline-item hamilton">
+            <div class="timeline-date">1643 &mdash; The Douglas Alliance</div>
+            <div class="timeline-title">Douglas Arms Enter &mdash; The Crowned Heart</div>
+            <div class="timeline-body">
+                Anne Hamilton, 3rd Duchess of Hamilton in her own right, married Lord William Douglas. The Douglas arms &mdash; a crowned heart on blue with three stars &mdash; commemorate Sir James Douglas, who carried the heart of Robert the Bruce towards the Holy Land. This marriage brought the Douglas heraldic identity into the Hamilton composition. Their fifth son would become the 1st Earl of Orkney.
+            </div>
+            <div class="timeline-person">Anne Hamilton, 3rd Duchess &bull; Lord William Douglas</div>
+        </div>
+
+        <div class="timeline-item royal">
+            <div class="timeline-date">1696 &mdash; The Earldom Created</div>
+            <div class="timeline-title">George Hamilton &mdash; 1st Earl of Orkney</div>
+            <div class="timeline-body">
+                George Hamilton, fifth son of the Duchess Anne, became Britain's first ever Field Marshal and a hero of the Battle of Blenheim. In 1696, King William III created him Earl of Orkney. His arms combined the Hamilton quarters with a gold escallop shell as a cadency mark &mdash; identifying him as a younger son. He married Elizabeth Villiers, the king's former mistress, and their estate at Cliveden House became one of England's great political salons. The ship (<em>lymphad</em>) that appears throughout the arms represents the ancient Norse Earldom of Orkney itself &mdash; the seafaring origins of the title.
+            </div>
+            <div class="timeline-crest" style="display: flex; gap: 1.5rem; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+                <div>
+                    <img src="photos/heraldry/george_hamilton_arms.svg" alt="Arms of George Hamilton, 1st Earl of Orkney" style="max-width: 140px;">
+                    <div class="crest-caption">Arms of the 1st Earl of Orkney</div>
+                </div>
+                <div>
+                    <img src="photos/portraits/george_hamilton_orkney_painting.jpg" alt="George Hamilton, 1st Earl of Orkney" style="max-width: 160px; border-radius: 50%;">
+                    <div class="crest-caption">George Hamilton, 1st Earl</div>
+                </div>
+            </div>
+            <div class="timeline-person">George Hamilton, 1st Earl of Orkney</div>
+        </div>
+
+        <div class="timeline-item obrien">
+            <div class="timeline-date">c. 1756 &mdash; The Irish Succession</div>
+            <div class="timeline-title">O'Brien Arms Enter &mdash; Three Lions</div>
+            <div class="timeline-body">
+                When the male Hamilton line of the Orkney Earldom ended, the title passed through Anne O'Brien, 2nd Countess of Orkney (in her own right). The O'Brien family were Barons of Inchiquin &mdash; one of the great Gaelic Irish dynasties, claiming descent from Brian Boru, High King of Ireland. Their three lions passant guardant in gold and silver entered the 3rd quarter of the Orkney arms, along with the red piles and blue pheon representing related Irish lineages. This Irish chapter bridges the gap between the Hamilton founders and the FitzMaurice inheritors.
+            </div>
+            <div class="timeline-crest">
+                <img src="photos/heraldry/obrien_arms.svg" alt="O'Brien Arms">
+                <div class="crest-caption">Arms of O'Brien, Baron Inchiquin &mdash; the Irish noble line</div>
+            </div>
+            <div class="timeline-person">Anne O'Brien, 2nd Countess of Orkney</div>
+        </div>
+
+        <div class="timeline-item fitzmaurice">
+            <div class="timeline-date">1826 &mdash; The FitzMaurice Earldom</div>
+            <div class="timeline-title">FitzMaurice Arms Take the Dominant Position</div>
+            <div class="timeline-body">
+                Thomas John Hamilton FitzMaurice became the 5th Earl of Orkney &mdash; the first FitzMaurice to hold the title. The FitzMaurice arms (<em>Ermine, a saltire gules</em>) now took the prestigious 1st and 4th quarters of the shield. The Petty-FitzMaurice family were already one of Ireland's most distinguished lines: the Marquesses of Lansdowne, whose ancestor had been Prime Minister and ended the American Revolutionary War. The Sagittarius crest and stag supporter entered the composition alongside the Hamilton elements. <strong>This is your direct family line</strong> &mdash; the 5th Earl is the ancestor shared by both Patricia's branch and Cecil's branch.
+            </div>
+            <div class="timeline-crest" style="display: flex; gap: 1.5rem; justify-content: center; align-items: flex-start; flex-wrap: wrap;">
+                <div>
+                    <img src="photos/heraldry/lansdowne_arms.svg" alt="Lansdowne Arms" style="max-width: 140px;">
+                    <div class="crest-caption">Arms of the Marquess of Lansdowne</div>
+                </div>
+                <div>
+                    <img src="photos/portraits/5th_earl_orkney.jpg" alt="Thomas FitzMaurice, 5th Earl of Orkney" style="max-width: 160px; border-radius: 50%;">
+                    <div class="crest-caption">Thomas FitzMaurice, 5th Earl</div>
+                </div>
+            </div>
+            <div class="timeline-person">Thomas FitzMaurice, 5th Earl &bull; Your ancestor ~5 generations back</div>
+        </div>
+
+        <div class="timeline-item fitzmaurice">
+            <div class="timeline-date">1892 &mdash; A Gaiety Girl Becomes a Countess</div>
+            <div class="timeline-title">Connie Gilchrist &amp; the 7th Earl</div>
+            <div class="timeline-body">
+                Edmond Walter Leighton FitzMaurice, the 7th Earl, married Connie Gilchrist &mdash; the celebrated Victorian child performer painted by Whistler and Leighton, whose portrait now hangs in the Metropolitan Museum of Art in New York. The Duke of Beaufort gave her away. It was a sensation: the original Gaiety Girl becoming a Countess. Their only child, Lady Mary Constance, married but died without issue. When the 7th Earl died in 1951, the Earldom passed to his distant cousin Cecil. The 7th Earl was almost certainly a brother of your great-great-grandfather Edward Dixon FitzMaurice &mdash; both probable sons of Henry Warrender FitzMaurice.
+            </div>
+            <div class="timeline-crest">
+                <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist by Whistler" style="max-width: 160px;">
+                <div class="crest-caption">'The Gold Girl' by Whistler &mdash; Met Museum, NY</div>
+            </div>
+            <div class="timeline-person">Edmond Walter, 7th Earl &bull; Connie Gilchrist, Countess of Orkney</div>
+        </div>
+
+        <div class="timeline-item modern">
+            <div class="timeline-date">29 September 1951 &mdash; The Last Earl</div>
+            <div class="timeline-title">Cecil O'Bryen FitzMaurice &mdash; 8th Earl of Orkney</div>
+            <div class="timeline-body">
+                An Army truck driver known as 'Ginger' stepped off the troopship HMT Devonshire at a British port, having served in Korea, to discover he had inherited a 300-year-old Earldom. Cecil O'Bryen FitzMaurice was your mother Amanda's 3rd cousin once removed. Both he and Amanda descend from the 5th Earl: Amanda through Henry Warrender's branch (Edward Dixon &rarr; Reg &rarr; Patricia &rarr; Amanda), Cecil through Frederick O'Brien's branch. He carried the full coat of arms on this page as the last FitzMaurice Earl. He died without issue in 1998. The family motto <em>"Through Courage"</em> could not be more fitting.
+            </div>
+            <div class="timeline-person">Cecil O'Bryen FitzMaurice, 8th &amp; last Earl of Orkney</div>
+        </div>
+
+    </div>
+
+    <!-- ===== CECIL PHOTO SECTION ===== -->
+    <div class="cecil-section">
+        <div class="cecil-photo">
+            <img src="photos/heraldry/orkney_arms_douglas.png" alt="Arms of the Earl of Orkney" style="margin-bottom: 1rem;">
+            <div class="photo-caption">Arms of the Earl of Orkney &mdash; Douglas History archive</div>
+            <img src="photos/heraldry/7th_earl_crest.png" alt="7th Earl of Orkney Crest" style="margin-top: 1rem;">
+            <div class="photo-caption">Crest of the 7th Earl of Orkney</div>
+        </div>
+        <div class="cecil-text">
+            <h3>The Man Who Carried the Arms</h3>
+            <div class="cecil-role">Cecil O'Bryen FitzMaurice &mdash; 8th &amp; last FitzMaurice Earl of Orkney (1919&ndash;1998)</div>
+            <p>Born in 1919, Cecil served as an R.A.S.C. driver through WWII &mdash; North Africa, Italy, France, and Germany &mdash; then was sent to Korea. While serving there, the 7th Earl died and Cecil unexpectedly inherited the title. The <em>Evening News</em> called him a "rags to riches Earl" &mdash; he had worked in a garage before the war. He inherited an estate of &pound;42,893 (approximately &pound;1.5&ndash;2 million today).</p>
+            <p>He married Rose Silley at St Mary's Church, Brixham, Devon in November 1952. He died without issue in 1998 &mdash; and with him died the FitzMaurice Earldom of Orkney. The title passed to Oliver Peter St John as the 9th Earl, ending the FitzMaurice chapter of the arms entirely.</p>
+            <p><strong>Cecil is Amanda's 3rd cousin once removed.</strong> Both descend from the 5th Earl: Amanda through Henry Warrender &rarr; Edward Dixon &rarr; Reg &rarr; Patricia; Cecil through Frederick O'Brien RN &rarr; Douglas Commerell Menzies &rarr; Douglas Frederick Harold. Henry Warrender and Frederick O'Brien were brothers &mdash; sons of the 5th Earl.</p>
+        </div>
+    </div>
+
+    <!-- ===== SOURCES ===== -->
+    <div class="sources-section">
+        <h2>Read More / Sources</h2>
+        <a href="https://www.douglashistory.co.uk/history/heraldry/earl_of_orkney.htm" target="_blank" rel="noopener">Earl of Orkney Heraldry &mdash; Douglas History</a>
+        <a href="https://en.wikipedia.org/wiki/Earl_of_Orkney" target="_blank" rel="noopener">Earldom of Orkney &mdash; Wikipedia</a>
+        <a href="https://en.wikipedia.org/wiki/George_Hamilton,_1st_Earl_of_Orkney" target="_blank" rel="noopener">George Hamilton, 1st Earl of Orkney &mdash; Wikipedia</a>
+        <a href="https://en.wikipedia.org/wiki/Anne_Hamilton,_3rd_Duchess_of_Hamilton" target="_blank" rel="noopener">Anne Hamilton, 3rd Duchess of Hamilton &mdash; Wikipedia</a>
+        <a href="https://en.wikipedia.org/wiki/James_Hamilton,_1st_Lord_Hamilton" target="_blank" rel="noopener">James Hamilton, 1st Lord Hamilton &mdash; Wikipedia</a>
+        <a href="https://en.wikipedia.org/wiki/Connie_Gilchrist" target="_blank" rel="noopener">Connie Gilchrist, Countess of Orkney &mdash; Wikipedia</a>
+        <a href="https://www.metmuseum.org/art/collection/search/12127" target="_blank" rel="noopener">'Harmony in Yellow and Gold' &mdash; Metropolitan Museum of Art</a>
+        <a href="https://en.wikipedia.org/wiki/William_Petty,_2nd_Earl_of_Shelburne" target="_blank" rel="noopener">Marquess of Lansdowne (Prime Minister) &mdash; Wikipedia</a>
+        <a href="https://www.burkespeerage.com" target="_blank" rel="noopener">Burke's Peerage &mdash; Orkney Earldom</a>
+        <a href="https://www.debretts.com" target="_blank" rel="noopener">Debrett's &mdash; FitzMaurice family</a>
+        <a href="https://en.wikipedia.org/wiki/Korean_War" target="_blank" rel="noopener">Korean War &mdash; Wikipedia</a>
+        <a href="https://en.wikipedia.org/wiki/Royal_Army_Service_Corps" target="_blank" rel="noopener">Royal Army Service Corps &mdash; Wikipedia</a>
+        <a href="https://www.thegazette.co.uk" target="_blank" rel="noopener">London Gazette &mdash; Earldom succession notices</a>
+        <a href="https://www.nationaltrust.org.uk/visit/oxfordshire-buckinghamshire-berkshire/cliveden" target="_blank" rel="noopener">Cliveden House &mdash; National Trust</a>
+        <a href="family-tree.html" target="_blank">View the full Family Tree &rarr;</a>
+    </div>
+
+</div>
+
+<script>
+// Mobile nav toggle
+const navToggle = document.getElementById('navToggle');
+const navLinks = document.getElementById('navLinks');
+if (navToggle) {
+  navToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('open');
+  });
+}
+</script>
+
+</body>
+</html>

@@ -156,50 +156,49 @@ body {
     margin-top: 0.5rem;
 }
 
-/* ===== CTA BUTTONS ===== */
-.cta-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 1.5rem;
-    margin: 2.5rem 0 3rem;
-    max-width: 750px;
-    margin-left: auto;
-    margin-right: auto;
-}
-.cta-card {
+/* ===== PAGE LIST ===== */
+.page-list {
     display: flex;
     flex-direction: column;
+    gap: 0;
+    margin-bottom: 3rem;
+}
+.page-link {
+    display: flex;
     align-items: center;
-    justify-content: center;
+    padding: 1.5rem 0;
     text-decoration: none;
-    background: var(--ink);
-    color: var(--gold);
-    border: 2px solid var(--gold);
-    border-radius: 8px;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    transition: all 0.3s ease;
+    border-bottom: 1px solid var(--border);
+    transition: all 0.2s ease;
 }
-.cta-card:hover {
-    background: var(--gold);
-    color: var(--ink);
-    transform: translateY(-3px);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+.page-link:first-child {
+    border-top: 1px solid var(--border);
 }
-.cta-card .cta-icon {
-    font-size: 2rem;
-    margin-bottom: 0.8rem;
+.page-link:hover {
+    padding-left: 0.5rem;
 }
-.cta-card h3 {
+.page-link-title {
     font-family: var(--font-display);
     font-size: 1.1rem;
-    letter-spacing: 1.5px;
-    margin-bottom: 0.4rem;
+    color: var(--ink);
+    letter-spacing: 1px;
+    min-width: 220px;
+    flex-shrink: 0;
 }
-.cta-card p {
-    font-size: 0.95rem;
-    opacity: 0.85;
-    line-height: 1.4;
+.page-link-desc {
+    font-family: var(--font-body);
+    font-size: 1.05rem;
+    color: var(--sepia);
+    flex: 1;
+    padding: 0 1.5rem;
+}
+.page-link-arrow {
+    font-size: 1.3rem;
+    color: var(--gold-dark);
+    flex-shrink: 0;
+}
+.page-link:hover .page-link-title {
+    color: var(--gold-dark);
 }
 
 /* ===== SECTION HEADERS ===== */
@@ -551,8 +550,17 @@ body {
     }
     .page-container { padding: 1.5rem 1rem 3rem; }
     .hero-intro h1 { font-size: 1.7rem; }
-    .cta-grid { grid-template-columns: 1fr; }
-    .wedding-details { grid-template-columns: 1fr 1fr; }
+    .page-link {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.3rem;
+    }
+    .page-link-desc {
+        padding: 0;
+    }
+    .page-link-arrow {
+        display: none;
+    }
     .photo-gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
     .photo-gallery img { height: 130px; }
     .clue-card {
@@ -611,6 +619,7 @@ body {
             <a href="family-tree.html">Family Tree</a>
             <a href="family-crest.html">Family Crest</a>
             <a href="ron-egypt.html">Grandpa (Ron) WWII</a>
+            <a href="wedding.html">Pat + Ron Wedding</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
             <span></span><span></span><span></span>
@@ -636,117 +645,38 @@ body {
         </div>
     </div>
 
-    <!-- ===== CTA BUTTONS ===== -->
-    <div class="cta-grid">
-        <a href="family-tree.html" class="cta-card">
-            <div class="cta-icon">&#128466;</div>
-            <h3>Explore the Family Tree</h3>
-            <p>Interactive family tree &mdash; click on anyone and read who they were.</p>
+    <!-- ===== PAGES ===== -->
+    <h2 class="section-header">Explore</h2>
+
+    <div class="page-list">
+        <a href="family-tree.html" class="page-link">
+            <span class="page-link-title">The Family Tree</span>
+            <span class="page-link-desc">Interactive family tree — click on anyone to read who they were and how they connect to you.</span>
+            <span class="page-link-arrow">&rarr;</span>
         </a>
-        <a href="family-crest.html" class="cta-card">
-            <div class="cta-icon">&#9884;</div>
-            <h3>The Family Crest</h3>
-            <p>The FitzMaurice Earls of Orkney coat of arms &mdash; every quarter explained.</p>
+        <a href="family-crest.html" class="page-link">
+            <span class="page-link-title">The Family Crest</span>
+            <span class="page-link-desc">The FitzMaurice Earls of Orkney coat of arms — every quarter of the shield explained.</span>
+            <span class="page-link-arrow">&rarr;</span>
         </a>
-    </div>
-
-    <!-- ===== THE FAMILY TREE ===== -->
-    <h2 class="section-header">The Family Tree</h2>
-    <div class="section-body">
-        <p>There are two dedicated pages. The first is an interactive family tree &mdash; click on anyone and read who they were and how they connect to you. The second is about the family crest, which belongs to the FitzMaurice Earls of Orkney. Every quarter of that shield represents a different branch of the family including our direct line &mdash; British Prime Ministers, the first Field Marshal in British Army history, a Victorian actress whose portrait hangs in the Met in New York.</p>
-    </div>
-
-    <!-- ===== THE FAMILY CREST ===== -->
-    <h2 class="section-header">The Family Crest</h2>
-    <div class="section-body">
-        <p>The coat of arms carried by the FitzMaurice Earls of Orkney is a quartered shield &mdash; each section representing a different noble bloodline united through marriage and inheritance over centuries. The red diagonal cross on ermine is the FitzMaurice family's own mark, our direct bloodline. The ship on blue represents the ancient Earldom of Orkney, tracing back to the Norse jarls. The Hamilton lions connect the line to the Dukes of Hamilton and, through them, to Princess Mary Stewart, daughter of King James II of Scotland. Above the shield, the oak tree with a saw through its trunk is the Hamilton crest &mdash; the blade inscribed with the word "Through", a motto earned when a Hamilton ancestor rescued a Scottish king from ambush. The motto reads "Through Courage."</p>
-    </div>
-
-    <!-- ===== WEDDING OF PATRICIA & RONALD ===== -->
-    <h2 class="section-header">The Wedding of Patricia &amp; Ronald</h2>
-
-    <div class="wedding-section">
-        <img src="photos/wedding-group-closeup-print.jpg" alt="Wedding group close-up, 11th February 1950" class="featured-photo">
-
-        <div class="wedding-text">
-            <p>I took photos of Grandma and Grandad's wedding album from 11th February 1950, St Mary's Church, Wanstead. The handwritten captions throughout confirmed names and details we wouldn't have found any other way.</p>
-            <p>Among the guests was Sandra, whose presence carried particular weight &mdash; it was her parents who had introduced Ronald and Patricia in the first place.</p>
-        </div>
-
-        <div class="wedding-details">
-            <div class="wedding-detail">
-                <div class="detail-icon">&#9962;</div>
-                <h4>Venue</h4>
-                <p>St. Mary the Virgin<br>Wanstead, London</p>
-                <span class="detail-note">Grade I Listed &bull; Built 1790</span>
-            </div>
-            <div class="wedding-detail">
-                <div class="detail-icon">&#128141;</div>
-                <h4>Date</h4>
-                <p>11th February 1950</p>
-                <span class="detail-note">Saturday morning</span>
-            </div>
-            <div class="wedding-detail">
-                <div class="detail-icon">&#127856;</div>
-                <h4>Reception</h4>
-                <p>Home of Mr. &amp; Mrs.<br>Jack Hinder</p>
-                <span class="detail-note">Tudor-style residence</span>
-            </div>
-            <div class="wedding-detail">
-                <div class="detail-icon">&#127801;</div>
-                <h4>Flowers</h4>
-                <p>Red rose spray<br>at the bride's shoulder</p>
-                <span class="detail-note">Boutonni&egrave;re for the groom</span>
-            </div>
-        </div>
-
-        <!-- Wedding Photo Gallery — grid thumbnails -->
-        <div class="photo-gallery" id="weddingGallery">
-            <a href="photos/wedding-album-cover-inscription.jpg" class="gallery-link" data-gallery="wedding" data-caption="Wedding album cover &mdash; handwritten inscription">
-                <img src="photos/wedding-album-cover-inscription.jpg" alt="Wedding album cover inscription">
-                <div class="photo-label">Album Cover</div>
-            </a>
-            <a href="photos/wedding-aisle-first-photo.jpg" class="gallery-link" data-gallery="wedding" data-caption="The first photograph &mdash; walking down the aisle">
-                <img src="photos/wedding-aisle-first-photo.jpg" alt="First photo — walking down the aisle">
-                <div class="photo-label">Down the Aisle</div>
-            </a>
-            <a href="photos/wedding-church-steps-couple.jpg" class="gallery-link" data-gallery="wedding" data-caption="The couple on the church steps">
-                <img src="photos/wedding-church-steps-couple.jpg" alt="The couple on the church steps">
-                <div class="photo-label">Church Steps</div>
-            </a>
-            <a href="photos/wedding-group-named-captions.jpg" class="gallery-link" data-gallery="wedding" data-caption="Group photo with handwritten names identifying guests">
-                <img src="photos/wedding-group-named-captions.jpg" alt="Group photo with named captions">
-                <div class="photo-label">Group Photo</div>
-            </a>
-            <a href="photos/wedding-group-closeup-print.jpg" class="gallery-link" data-gallery="wedding" data-caption="Group close-up print">
-                <img src="photos/wedding-group-closeup-print.jpg" alt="Close-up group print">
-                <div class="photo-label">Group Close-up</div>
-            </a>
-            <a href="photos/wedding-reception-venue-cake.jpg" class="gallery-link" data-gallery="wedding" data-caption="The reception venue and wedding cake">
-                <img src="photos/wedding-reception-venue-cake.jpg" alt="Reception venue and cake">
-                <div class="photo-label">The Cake</div>
-            </a>
-            <a href="photos/wedding-reception-toast.jpg" class="gallery-link" data-gallery="wedding" data-caption="The toast at the reception">
-                <img src="photos/wedding-reception-toast.jpg" alt="Reception toast">
-                <div class="photo-label">The Toast</div>
-            </a>
-            <a href="photos/wedding-departure-confetti.jpg" class="gallery-link" data-gallery="wedding" data-caption="Confetti send-off">
-                <img src="photos/wedding-departure-confetti.jpg" alt="Departure with confetti">
-                <div class="photo-label">Confetti Send-off</div>
-            </a>
-            <a href="photos/wedding-honeymoon-departure.jpg" class="gallery-link" data-gallery="wedding" data-caption="Honeymoon departure">
-                <img src="photos/wedding-honeymoon-departure.jpg" alt="Honeymoon departure">
-                <div class="photo-label">Honeymoon Departure</div>
-            </a>
-            <a href="photos/ruby-wedding-invitation-and-photos.jpg" class="gallery-link" data-gallery="wedding" data-caption="Ruby wedding anniversary invitation and photos, 1990">
-                <img src="photos/ruby-wedding-invitation-and-photos.jpg" alt="Ruby wedding anniversary invitation and photos">
-                <div class="photo-label">Ruby Anniversary</div>
-            </a>
-        </div>
+        <a href="ron-egypt.html" class="page-link">
+            <span class="page-link-title">Grandpa (Ron) WWII</span>
+            <span class="page-link-desc">Ronald Andrews in Egypt — RAF engine mechanic, cave workshops, the Tura Times, and Tutankhamun's gold.</span>
+            <span class="page-link-arrow">&rarr;</span>
+        </a>
+        <a href="wedding.html" class="page-link">
+            <span class="page-link-title">Pat + Ron Wedding</span>
+            <span class="page-link-desc">The wedding album from 11th February 1950, St Mary's Church, Wanstead.</span>
+            <span class="page-link-arrow">&rarr;</span>
+        </a>
     </div>
 
     <!-- ===== CLUES FROM THE COLLECTION ===== -->
     <h2 class="section-header">Clues from the Collection</h2>
+
+    <div class="section-body" style="margin-bottom: 1.5rem;">
+        <p>These are the original photographs taken from the gathering after Grandma's funeral — the images that started the entire research. Studio names on the backs of cards, handwriting on the reverses, newspaper clippings. Each one gave up a little more information.</p>
+    </div>
 
     <div class="clue-grid">
 
@@ -960,11 +890,7 @@ let currentIndex = 0;
 // Build gallery arrays from data attributes
 function buildGallery(galleryName) {
     const items = [];
-    if (galleryName === 'wedding') {
-        document.querySelectorAll('.gallery-link[data-gallery="wedding"]').forEach(link => {
-            items.push({ src: link.href, caption: link.getAttribute('data-caption') });
-        });
-    } else if (galleryName === 'clues') {
+    if (galleryName === 'clues') {
         document.querySelectorAll('[data-gallery="clues"]').forEach(img => {
             items.push({ src: img.src, caption: img.getAttribute('data-caption') });
         });
@@ -1004,14 +930,6 @@ function closeLightbox() {
     lightbox.classList.remove('active');
     lightboxImg.src = '';
 }
-
-// Wedding gallery clicks
-document.querySelectorAll('.gallery-link[data-gallery="wedding"]').forEach((link, i) => {
-    link.addEventListener('click', (e) => {
-        e.preventDefault();
-        openLightbox(buildGallery('wedding'), i);
-    });
-});
 
 // Clues gallery clicks
 const clueImages = document.querySelectorAll('[data-gallery="clues"]');

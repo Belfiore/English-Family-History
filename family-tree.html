@@ -945,18 +945,68 @@ body {
     }
 
     .bio-column {
-        flex: none;
-        position: relative;
-        height: auto;
-        max-height: 80vh;
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 85vw;
+        max-width: 420px;
+        height: 100vh;
+        height: 100dvh;
         overflow-y: auto;
-        border-left: none;
-        border-top: 2px solid var(--gold);
+        border-left: 2px solid var(--gold);
+        background: white;
+        z-index: 1000;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        box-shadow: -4px 0 20px rgba(0,0,0,0.3);
+    }
+
+    .bio-column.drawer-open {
+        transform: translateX(0);
+    }
+
+    .bio-drawer-overlay {
+        display: none;
+        position: fixed;
+        top: 0; left: 0; right: 0; bottom: 0;
+        background: rgba(0,0,0,0.5);
+        z-index: 999;
+    }
+
+    .bio-drawer-overlay.active {
+        display: block;
+    }
+
+    .bio-drawer-close {
+        display: flex;
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        width: 100%;
+        justify-content: flex-end;
+        padding: 0.6rem 0.8rem;
+        background: var(--dark, #1a1510);
+        border-bottom: 1px solid var(--gold, #c8a97a);
+    }
+
+    .bio-drawer-close button {
+        background: none;
+        border: 1px solid var(--gold, #c8a97a);
+        color: var(--gold, #c8a97a);
+        font-size: 1.1rem;
+        padding: 0.3rem 0.8rem;
+        cursor: pointer;
+        font-family: 'Cormorant Garabold', serif;
+        border-radius: 3px;
+    }
+
+    .bio-drawer-close button:hover {
+        background: var(--gold, #c8a97a);
+        color: var(--dark, #1a1510);
     }
 
     .bio-empty {
-        height: auto;
-        min-height: 200px;
+        display: none !important;
     }
 
     .person-card {
@@ -967,6 +1017,12 @@ body {
     .person-card-name { font-size: 0.58rem; }
     .person-avatar-ring { width: 44px; height: 44px; }
     .person-avatar-inner { width: 38px; height: 38px; font-size: 1.1rem; }
+}
+
+/* Desktop: hide drawer-only elements */
+@media (min-width: 901px) {
+    .bio-drawer-overlay { display: none !important; }
+    .bio-drawer-close { display: none !important; }
 }
 
 @media (max-width: 768px) {
@@ -1038,7 +1094,9 @@ body {
     </div>
 
     <!-- RIGHT COLUMN: Bio Panel -->
+    <div class="bio-drawer-overlay" id="bioDrawerOverlay"></div>
     <div class="bio-column" id="bioColumn">
+        <div class="bio-drawer-close" id="bioDrawerClose"><button>&times; Close</button></div>
         <div class="bio-empty" id="bioEmpty">
             <div class="bio-empty-icon">&#9830;</div>
             <h3>Select a Person</h3>
@@ -3882,7 +3940,23 @@ function selectPerson(id) {
 
   // Scroll bio column to top
   document.getElementById('bioColumn').scrollTop = 0;
+
+  // Mobile drawer: open
+  if (window.innerWidth <= 900) {
+    document.getElementById('bioColumn').classList.add('drawer-open');
+    document.getElementById('bioDrawerOverlay').classList.add('active');
+    document.body.style.overflow = 'hidden';
+  }
 }
+
+// Mobile drawer: close
+function closeDrawer() {
+  document.getElementById('bioColumn').classList.remove('drawer-open');
+  document.getElementById('bioDrawerOverlay').classList.remove('active');
+  document.body.style.overflow = '';
+}
+document.getElementById('bioDrawerClose').addEventListener('click', closeDrawer);
+document.getElementById('bioDrawerOverlay').addEventListener('click', closeDrawer);
 
 // ============================================
 // LIGHTBOX

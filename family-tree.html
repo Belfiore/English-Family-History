@@ -1088,6 +1088,8 @@ body {
                 <option value="ben">Ben Austin</option>
                 <option value="valeria">Valeria Belfiore</option>
                 <option value="lauren">Lauren Belfiore</option>
+                <option value="lizzie">Lizzie Eley</option>
+                <option value="mollie">Mollie Wells</option>
             </select>
         </div>
         <!-- Tree populated by JavaScript below selector -->
@@ -1820,7 +1822,7 @@ const PEOPLE = {
     emoji: "\ud83d\udc64",
     gender: "male",
     badges: [{ text: "Sebastian's cousin", style: "neutral" }],
-    about: "Son of Venetia Andrews Austin and Gary Austin.",
+    about: "Son of Venetia Andrews Austin and Gary Austin. Partner of Lizzie Eley.",
     connection: "Sebastian's cousin.",
     notable: "",
     photoKey: null
@@ -1834,8 +1836,36 @@ const PEOPLE = {
     emoji: "\ud83d\udc64",
     gender: "male",
     badges: [{ text: "Sebastian's cousin", style: "neutral" }],
-    about: "Son of Venetia Andrews Austin and Gary Austin.",
+    about: "Son of Venetia Andrews Austin and Gary Austin. Partner of Mollie Wells.",
     connection: "Sebastian's cousin.",
+    notable: "",
+    photoKey: null
+  },
+
+  lizzie: {
+    name: "Lizzie Eley",
+    dates: "",
+    role: "Max Austin's partner",
+    type: "neutral",
+    emoji: "\ud83d\udc64",
+    gender: "female",
+    badges: [{ text: "Max's partner", style: "neutral" }],
+    about: "Lizzie Eley is Max Austin's partner.",
+    connection: "Partner of Max Austin, grandson of Ronald and Patricia Andrews.",
+    notable: "",
+    photoKey: null
+  },
+
+  mollie: {
+    name: "Mollie Wells",
+    dates: "",
+    role: "Ben Austin's partner",
+    type: "neutral",
+    emoji: "\ud83d\udc64",
+    gender: "female",
+    badges: [{ text: "Ben's partner", style: "neutral" }],
+    about: "Mollie Wells is Ben Austin's partner.",
+    connection: "Partner of Ben Austin, grandson of Ronald and Patricia Andrews.",
     notable: "",
     photoKey: null
   },
@@ -1988,6 +2018,14 @@ const RELATIONSHIPS = {
     "ben": {
       "role": "Your cousin",
       "connection": "Ben Austin is your aunt Venetia and uncle Gary's son — your first cousin."
+    },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your cousin Max's partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your cousin Ben's partner."
     },
     "alex": {
       "role": "Your brother",
@@ -2143,6 +2181,14 @@ const RELATIONSHIPS = {
       "role": "Your cousin",
       "connection": "Ben Austin is your aunt Venetia and uncle Gary's son — your first cousin."
     },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your cousin Max's partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your cousin Ben's partner."
+    },
     "sebastian": {
       "role": "Your brother",
       "connection": "Sebastian Belfiore is your brother."
@@ -2292,6 +2338,14 @@ const RELATIONSHIPS = {
     "ben": {
       "role": "Your nephew",
       "connection": "Ben Austin is your sister Venetia's son — your nephew."
+    },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your nephew Max's partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your nephew Ben's partner."
     },
     "sebastian": {
       "role": "Your son",
@@ -2447,6 +2501,14 @@ const RELATIONSHIPS = {
       "role": "Your nephew",
       "connection": "Ben Austin is your sister-in-law Venetia's son — your nephew."
     },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your nephew Max's partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your nephew Ben's partner."
+    },
     "sebastian": {
       "role": "Your son",
       "connection": "Sebastian Belfiore is your son."
@@ -2601,6 +2663,14 @@ const RELATIONSHIPS = {
       "role": "Your son",
       "connection": "Ben Austin is your son."
     },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your son Max's partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your son Ben's partner."
+    },
     "sebastian": {
       "role": "Your nephew",
       "connection": "Sebastian Belfiore is your sister Amanda's son — your nephew."
@@ -2754,6 +2824,14 @@ const RELATIONSHIPS = {
     "ben": {
       "role": "Your son",
       "connection": "Ben Austin is your son."
+    },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your son Max's partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your son Ben's partner."
     },
     "sebastian": {
       "role": "Your nephew",
@@ -2917,6 +2995,14 @@ const RELATIONSHIPS = {
       "role": "Your brother",
       "connection": "Ben Austin is your brother."
     },
+    "lizzie": {
+      "role": "Your partner",
+      "connection": "Lizzie Eley is your partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your brother Ben's partner."
+    },
     "max": {
       "role": "This is you",
       "connection": "You are Max Austin. Through your mother Venetia, you carry direct FitzMaurice noble lineage running from King James II of Scotland."
@@ -3071,6 +3157,14 @@ const RELATIONSHIPS = {
       "role": "Your brother",
       "connection": "Max Austin is your brother."
     },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your brother Max's partner."
+    },
+    "mollie": {
+      "role": "Your partner",
+      "connection": "Mollie Wells is your partner."
+    },
     "ben": {
       "role": "This is you",
       "connection": "You are Ben Austin. Through your mother Venetia, you carry direct FitzMaurice noble lineage running from King James II of Scotland."
@@ -3220,6 +3314,14 @@ const RELATIONSHIPS = {
     "ben": {
       "role": "Your husband's cousin",
       "connection": "Ben Austin is your husband Sebastian's cousin."
+    },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your husband's cousin Max's partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your husband's cousin Ben's partner."
     },
     "sebastian": {
       "role": "Your husband",
@@ -3375,6 +3477,14 @@ const RELATIONSHIPS = {
       "role": "Your husband's cousin",
       "connection": "Ben Austin is your husband Alex's cousin."
     },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is your husband's cousin Max's partner."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is your husband's cousin Ben's partner."
+    },
     "sebastian": {
       "role": "Your brother-in-law",
       "connection": "Sebastian Belfiore is your husband Alex's brother — your brother-in-law."
@@ -3398,6 +3508,330 @@ const RELATIONSHIPS = {
     "violet": {
       "role": "Your daughter",
       "connection": "Violet Belfiore is your daughter."
+    }
+  },
+  "lizzie": {
+    "james2": {
+      "role": "Max's ancestor ~15 generations removed",
+      "connection": "King James II of Scotland is your partner Max's ancestor approximately 15 generations back."
+    },
+    "mary_stewart": {
+      "role": "Max's ancestor ~14 generations removed",
+      "connection": "Princess Mary Stewart is your partner Max's ancestor approximately 14 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Max's ancestor ~14 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your partner Max's ancestor approximately 14 generations back."
+    },
+    "arran": {
+      "role": "Max's ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your partner Max's ancestor approximately 13 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Max's ancestors ~9–12 generations removed",
+      "connection": "These four generations of Hamilton nobility are your partner Max's ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Max's ancestor ~9 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your partner Max's ancestor approximately 9 generations back."
+    },
+    "george_hamilton": {
+      "role": "Max's ancestor ~8 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your partner Max's ancestor approximately 8 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Max's ancestor ~8 generations removed",
+      "connection": "Elizabeth Villiers is your partner Max's ancestor approximately 8 generations back."
+    },
+    "anne_obrien": {
+      "role": "Max's ancestor ~7 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your partner Max's ancestor approximately 7 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Max's ancestral line ~6 generations removed",
+      "connection": "This is where the FitzMaurice name entered your partner Max's ancestry, approximately 6 generations back."
+    },
+    "earl5": {
+      "role": "Max's ancestor ~5 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your partner Max's ancestor approximately 5 generations back."
+    },
+    "lansdowne": {
+      "role": "Max's ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your partner Max's 5x great-grandfather the 5th Earl."
+    },
+    "henry_warrender": {
+      "role": "Max's probable ancestor ~4 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your partner Max's ancestor approximately 4 generations back."
+    },
+    "edmond7": {
+      "role": "Max's probable great-great-granduncle",
+      "connection": "The 7th Earl was almost certainly your partner Max's great-great-granduncle."
+    },
+    "connie": {
+      "role": "Max's probable great-great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, is your partner Max's probable great-great-grandaunt by marriage."
+    },
+    "edward_dixon": {
+      "role": "Max's great-great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your partner Max's great-great-grandfather."
+    },
+    "edith": {
+      "role": "Max's great-great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice is your partner Max's great-great-grandaunt."
+    },
+    "babs": {
+      "role": "Max's great-great-grandaunt",
+      "connection": "Babs is your partner Max's great-great-grandaunt — who emigrated to South Africa."
+    },
+    "bob": {
+      "role": "Max's great-great-granduncle",
+      "connection": "Bob FitzMaurice is your partner Max's great-great-granduncle."
+    },
+    "reg": {
+      "role": "Max's great-grandfather",
+      "connection": "Reg FitzMaurice is your partner Max's great-grandfather."
+    },
+    "cecilchain": {
+      "role": "Max's collateral relative",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, is a collateral FitzMaurice relative of your partner Max's family."
+    },
+    "ronald_parents": {
+      "role": "Max's great-grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham are your partner Max's great-grandparents on the Andrews side."
+    },
+    "ronald": {
+      "role": "Max's grandfather",
+      "connection": "Ronald Andrews is your partner Max's grandfather."
+    },
+    "herbert": {
+      "role": "Max's granduncle",
+      "connection": "Herbert Andrews is your partner Max's granduncle."
+    },
+    "unnamed_brother": {
+      "role": "Max's granduncle (killed in Blitz)",
+      "connection": "Sidney Andrews — your partner Max's granduncle — killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Max's grandmother",
+      "connection": "Patricia Mary FitzMaurice Andrews is your partner Max's grandmother."
+    },
+    "amanda": {
+      "role": "Max's aunt",
+      "connection": "Amanda Andrews Belfiore is your partner Max's aunt."
+    },
+    "robert": {
+      "role": "Max's uncle by marriage",
+      "connection": "Robert Belfiore is your partner Max's uncle by marriage."
+    },
+    "venetia": {
+      "role": "Max's mother",
+      "connection": "Venetia Andrews Austin is your partner Max's mother."
+    },
+    "gary": {
+      "role": "Max's father",
+      "connection": "Gary Austin is your partner Max's father."
+    },
+    "max": {
+      "role": "Your partner",
+      "connection": "Max Austin is your partner."
+    },
+    "ben": {
+      "role": "Max's brother",
+      "connection": "Ben Austin is your partner Max's brother."
+    },
+    "mollie": {
+      "role": "Ben's partner",
+      "connection": "Mollie Wells is Max's brother Ben's partner."
+    },
+    "sebastian": {
+      "role": "Max's cousin",
+      "connection": "Sebastian Belfiore is your partner Max's cousin."
+    },
+    "alex": {
+      "role": "Max's cousin",
+      "connection": "Alex Belfiore is your partner Max's cousin."
+    },
+    "lizzie": {
+      "role": "This is you",
+      "connection": "You are Lizzie Eley. Through your partner Max Austin, you are connected to the FitzMaurice and Hamilton lineage tracing back to King James II of Scotland."
+    },
+    "valeria": {
+      "role": "Max's cousin's wife",
+      "connection": "Valeria Belfiore is your partner Max's cousin Sebastian's wife."
+    },
+    "lauren": {
+      "role": "Max's cousin's wife",
+      "connection": "Lauren Belfiore is your partner Max's cousin Alex's wife."
+    },
+    "enzo": {
+      "role": "Max's first cousin once removed",
+      "connection": "Enzo Belfiore is your partner Max's cousin Sebastian's son."
+    },
+    "violet": {
+      "role": "Max's first cousin once removed",
+      "connection": "Violet Belfiore is your partner Max's cousin Alex's daughter."
+    }
+  },
+  "mollie": {
+    "james2": {
+      "role": "Ben's ancestor ~15 generations removed",
+      "connection": "King James II of Scotland is your partner Ben's ancestor approximately 15 generations back."
+    },
+    "mary_stewart": {
+      "role": "Ben's ancestor ~14 generations removed",
+      "connection": "Princess Mary Stewart is your partner Ben's ancestor approximately 14 generations back."
+    },
+    "hamilton_lord": {
+      "role": "Ben's ancestor ~14 generations removed",
+      "connection": "James Hamilton, 1st Lord Hamilton, is your partner Ben's ancestor approximately 14 generations back."
+    },
+    "arran": {
+      "role": "Ben's ancestor ~13 generations removed",
+      "connection": "James Hamilton, 1st Earl of Arran, is your partner Ben's ancestor approximately 13 generations back."
+    },
+    "hamilton_succession": {
+      "role": "Ben's ancestors ~9–12 generations removed",
+      "connection": "These four generations of Hamilton nobility are your partner Ben's ancestors."
+    },
+    "anne_hamilton": {
+      "role": "Ben's ancestor ~9 generations removed",
+      "connection": "Anne Hamilton, 3rd Duchess of Hamilton, is your partner Ben's ancestor approximately 9 generations back."
+    },
+    "george_hamilton": {
+      "role": "Ben's ancestor ~8 generations removed",
+      "connection": "George Hamilton, 1st Earl of Orkney — Britain's first Field Marshal — is your partner Ben's ancestor approximately 8 generations back."
+    },
+    "elizabeth_villiers": {
+      "role": "Ben's ancestor ~8 generations removed",
+      "connection": "Elizabeth Villiers is your partner Ben's ancestor approximately 8 generations back."
+    },
+    "anne_obrien": {
+      "role": "Ben's ancestor ~7 generations removed",
+      "connection": "Anne O'Brien, 2nd Countess of Orkney, is your partner Ben's ancestor approximately 7 generations back."
+    },
+    "obrien_fitzmaurice_succession": {
+      "role": "Ben's ancestral line ~6 generations removed",
+      "connection": "This is where the FitzMaurice name entered your partner Ben's ancestry, approximately 6 generations back."
+    },
+    "earl5": {
+      "role": "Ben's ancestor ~5 generations removed",
+      "connection": "Thomas FitzMaurice, 5th Earl of Orkney, is your partner Ben's ancestor approximately 5 generations back."
+    },
+    "lansdowne": {
+      "role": "Ben's ancestor's great-uncle",
+      "connection": "The Marquess of Lansdowne was the great-uncle of your partner Ben's 5x great-grandfather the 5th Earl."
+    },
+    "henry_warrender": {
+      "role": "Ben's probable ancestor ~4 generations removed",
+      "connection": "Henry Warrender FitzMaurice is almost certainly your partner Ben's ancestor approximately 4 generations back."
+    },
+    "edmond7": {
+      "role": "Ben's probable great-great-granduncle",
+      "connection": "The 7th Earl was almost certainly your partner Ben's great-great-granduncle."
+    },
+    "connie": {
+      "role": "Ben's probable great-great-grandaunt by marriage",
+      "connection": "Connie Gilchrist, Countess of Orkney, is your partner Ben's probable great-great-grandaunt by marriage."
+    },
+    "edward_dixon": {
+      "role": "Ben's great-great-grandfather",
+      "connection": "Edward Dixon FitzMaurice is your partner Ben's great-great-grandfather."
+    },
+    "edith": {
+      "role": "Ben's great-great-grandaunt",
+      "connection": "Edith Madeleine FitzMaurice is your partner Ben's great-great-grandaunt."
+    },
+    "babs": {
+      "role": "Ben's great-great-grandaunt",
+      "connection": "Babs is your partner Ben's great-great-grandaunt — who emigrated to South Africa."
+    },
+    "bob": {
+      "role": "Ben's great-great-granduncle",
+      "connection": "Bob FitzMaurice is your partner Ben's great-great-granduncle."
+    },
+    "reg": {
+      "role": "Ben's great-grandfather",
+      "connection": "Reg FitzMaurice is your partner Ben's great-grandfather."
+    },
+    "cecilchain": {
+      "role": "Ben's collateral relative",
+      "connection": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, is a collateral FitzMaurice relative of your partner Ben's family."
+    },
+    "ronald_parents": {
+      "role": "Ben's great-grandparents (Andrews side)",
+      "connection": "Mr. & Mrs. H. G. Andrews of East Ham are your partner Ben's great-grandparents on the Andrews side."
+    },
+    "ronald": {
+      "role": "Ben's grandfather",
+      "connection": "Ronald Andrews is your partner Ben's grandfather."
+    },
+    "herbert": {
+      "role": "Ben's granduncle",
+      "connection": "Herbert Andrews is your partner Ben's granduncle."
+    },
+    "unnamed_brother": {
+      "role": "Ben's granduncle (killed in Blitz)",
+      "connection": "Sidney Andrews — your partner Ben's granduncle — killed in the WWII Blitz."
+    },
+    "patricia": {
+      "role": "Ben's grandmother",
+      "connection": "Patricia Mary FitzMaurice Andrews is your partner Ben's grandmother."
+    },
+    "amanda": {
+      "role": "Ben's aunt",
+      "connection": "Amanda Andrews Belfiore is your partner Ben's aunt."
+    },
+    "robert": {
+      "role": "Ben's uncle by marriage",
+      "connection": "Robert Belfiore is your partner Ben's uncle by marriage."
+    },
+    "venetia": {
+      "role": "Ben's mother",
+      "connection": "Venetia Andrews Austin is your partner Ben's mother."
+    },
+    "gary": {
+      "role": "Ben's father",
+      "connection": "Gary Austin is your partner Ben's father."
+    },
+    "max": {
+      "role": "Ben's brother",
+      "connection": "Max Austin is your partner Ben's brother."
+    },
+    "ben": {
+      "role": "Your partner",
+      "connection": "Ben Austin is your partner."
+    },
+    "lizzie": {
+      "role": "Max's partner",
+      "connection": "Lizzie Eley is Ben's brother Max's partner."
+    },
+    "sebastian": {
+      "role": "Ben's cousin",
+      "connection": "Sebastian Belfiore is your partner Ben's cousin."
+    },
+    "alex": {
+      "role": "Ben's cousin",
+      "connection": "Alex Belfiore is your partner Ben's cousin."
+    },
+    "mollie": {
+      "role": "This is you",
+      "connection": "You are Mollie Wells. Through your partner Ben Austin, you are connected to the FitzMaurice and Hamilton lineage tracing back to King James II of Scotland."
+    },
+    "valeria": {
+      "role": "Ben's cousin's wife",
+      "connection": "Valeria Belfiore is your partner Ben's cousin Sebastian's wife."
+    },
+    "lauren": {
+      "role": "Ben's cousin's wife",
+      "connection": "Lauren Belfiore is your partner Ben's cousin Alex's wife."
+    },
+    "enzo": {
+      "role": "Ben's first cousin once removed",
+      "connection": "Enzo Belfiore is your partner Ben's cousin Sebastian's son."
+    },
+    "violet": {
+      "role": "Ben's first cousin once removed",
+      "connection": "Violet Belfiore is your partner Ben's cousin Alex's daughter."
     }
   }
 };
@@ -3701,7 +4135,8 @@ function buildTree() {
       rows: [
         { type: 'couple', ids: ['sebastian', 'valeria'] },
         { type: 'couple', ids: ['alex', 'lauren'] },
-        { type: 'people', ids: ['max', 'ben'] }
+        { type: 'couple', ids: ['max', 'lizzie'] },
+        { type: 'couple', ids: ['ben', 'mollie'] }
       ]
     },
     {

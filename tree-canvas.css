@@ -805,3 +805,8 @@ body.canvas-body.lb-open { overflow: hidden; }
 .region-sub { font-family: var(--font-accent); font-style: italic; font-size: 13px; fill: var(--pc-muted); }
 .pill--partner text { font-family: var(--font-display); font-size: 12px; }
 .pf-story blockquote { margin: 0 0 1.05em; padding: 0.2em 0 0.2em 1em; border-left: 3px solid var(--pc-gold-soft); font-style: italic; color: var(--pc-ink-2); }
+
+/* A parent link the family tells but the records dispute (Henry Warrender to Edward Dixon) */
+.ln.ln--disputed { stroke: var(--pc-accent); stroke-dasharray: 7 5; }
+.link-flag { font-family: var(--font-accent); font-style: italic; font-size: 13px; fill: var(--pc-accent); paint-order: stroke; stroke: var(--pc-bg); stroke-width: 4px; stroke-linejoin: round; pointer-events: none; }
+.lg-line--disputed { border-top: 2px dashed var(--pc-accent); }

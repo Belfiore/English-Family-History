@@ -140,21 +140,14 @@
    }
   ],
   "rootOrder": [
-   "edward-dixon-fitzmaurice",
-   "mr-hg-andrews",
    "james-ii",
-   "john-petty-shelburne"
+   "john-petty-shelburne",
+   "mr-hg-andrews"
   ],
   "kinAnchor": "edward-dixon-fitzmaurice",
   "kinLabel": "FitzMaurice kin · relationship unproven",
-  "regions": [
-   {
-    "id": "orkney",
-    "label": "The Hamiltons and the Earls of Orkney",
-    "sub": "No proven link to this family"
-   }
-  ],
-  "regionKicker": "Earls of Orkney (link unproven)",
+  "regions": [],
+  "regionKicker": "Earls of Orkney · link to the family disputed",
   "initialView": {
    "ids": [
     "patricia-andrews",
@@ -202,8 +195,8 @@
    ],
    "immigration": null,
    "cardPlace": null,
-   "summary": "Named on the back of a beach snapshot as the father of Reg and Bob, and seen there in a clerical collar. A Knightsbridge cabinet card probably shows him too. The claim that he was a son of the Earls of Orkney's family does not survive the records.",
-   "story": "A snapshot in the family collection shows a man in a clerical collar and a boater, sitting on a shingle beach with two small boys. The label on the back reads \"Reg, Bob and their Father Edward Dixon Fitzmaurice\".[^photo-labels][^beach-snapshots] It is the only record in the collection that names him.\n\nA cabinet card by the Stuart studio at 47 and 49 Brompton Road, Knightsbridge, shows a clergyman in round wire spectacles. It carries no name, but the face matches the man on the beach, and it is taken here to be Edward Dixon. The 2026 photo analysis dated the card's style to about 1890 to 1910.[^stuart-card][^genealogy-report]\n\n## The Orkney question\n\nEarlier versions of this site said Edward Dixon was almost certainly a son of the Hon. Henry Warrender FitzMaurice. That would make him a brother of the 7th Earl of Orkney and would connect this family to the Earls of Orkney, the Dukes of Hamilton and King James II of Scotland.[^site-earlier]\n\nThe records found for this revision do not support it. Henry Warrender married Sarah Jane Roose in 1861, and the peerage lists their children as Henry George Hamilton, Edmond Walter, Isabella Emily and Alexander.[^peerage-henry-warrender] In April 1890 a royal warrant printed in the London Gazette gave the rank of an earl's children to the brother and sister of the new 7th Earl. It names only two, Alexander Edmond Fitzmaurice and Isabella Emily Garrett.[^gazette-1890] Any older legitimate son would have inherited the earldom himself. The 2026 photo analysis dated the beach snapshot to about 1905 to 1920 from its format and the clothing, so Edward Dixon was almost certainly alive in 1890 too.[^genealogy-report] If he had been a legitimate son of Henry Warrender, he would have been named in the warrant, and if he was older than Edmond he would have inherited the earldom himself in 1889. He was therefore not a legitimate son of Henry Warrender.\n\nThat does not rule out some other connection to the wider FitzMaurice family, but none has been found. On this tree the Orkney line sits in its own frame, with no line drawn to Edward Dixon.\n\n## Still to find\n\nHis birth, ordination and parishes should appear in Crockford's Clerical Directory and in the censuses from 1881 to 1911. Earlier pages gave his birth as about 1850, and the handoff brief as about 1843, both without a source. The 2026 photo analysis put his age in the cabinet card at about 30 to 45.[^site-earlier][^handoff-brief][^genealogy-report]",
+   "summary": "Named on the back of a beach snapshot as the father of Reg and Bob, and seen there in a clerical collar. A Knightsbridge cabinet card probably shows him too. The family links him to the Earls of Orkney as a son of Henry Warrender FitzMaurice; the records dispute it.",
+   "story": "A snapshot in the family collection shows a man in a clerical collar and a boater, sitting on a shingle beach with two small boys. The label on the back reads \"Reg, Bob and their Father Edward Dixon Fitzmaurice\".[^photo-labels][^beach-snapshots] It is the only record in the collection that names him.\n\nA cabinet card by the Stuart studio at 47 and 49 Brompton Road, Knightsbridge, shows a clergyman in round wire spectacles. It carries no name, but the face matches the man on the beach, and it is taken here to be Edward Dixon. The 2026 photo analysis dated the card's style to about 1890 to 1910.[^stuart-card][^genealogy-report]\n\n## The Orkney question\n\nEarlier versions of this site said Edward Dixon was almost certainly a son of the Hon. Henry Warrender FitzMaurice. That would make him a brother of the 7th Earl of Orkney and would connect this family to the Earls of Orkney, the Dukes of Hamilton and King James II of Scotland.[^site-earlier]\n\nThe records found for this revision do not support it. Henry Warrender married Sarah Jane Roose in 1861, and the peerage lists their children as Henry George Hamilton, Edmond Walter, Isabella Emily and Alexander.[^peerage-henry-warrender] In April 1890 a royal warrant printed in the London Gazette gave the rank of an earl's children to the brother and sister of the new 7th Earl. It names only two, Alexander Edmond Fitzmaurice and Isabella Emily Garrett.[^gazette-1890] Any older legitimate son would have inherited the earldom himself. The 2026 photo analysis dated the beach snapshot to about 1905 to 1920 from its format and the clothing, so Edward Dixon was almost certainly alive in 1890 too.[^genealogy-report] If he had been a legitimate son of Henry Warrender, he would have been named in the warrant, and if he was older than Edmond he would have inherited the earldom himself in 1889. He was therefore not a legitimate son of Henry Warrender.\n\nThat does not rule out some other connection to the wider FitzMaurice family, but none has been found. This tree still draws the line from Henry Warrender to Edward Dixon, as the family has always told it, so that the Orkney relationships can be followed. The line is dashed and marked as disputed, and every relationship that runs through it says so.\n\n## Still to find\n\nHis birth, ordination and parishes should appear in Crockford's Clerical Directory and in the censuses from 1881 to 1911. Earlier pages gave his birth as about 1850, and the handoff brief as about 1843, both without a source. The 2026 photo analysis put his age in the cabinet card at about 30 to 45.[^site-earlier][^handoff-brief][^genealogy-report]",
    "timeline": [
     {
      "date": "1890",
@@ -251,7 +244,7 @@
     },
     {
      "label": "Son of Henry Warrender FitzMaurice?",
-     "value": "Claimed on earlier pages. Contradicted by the 1890 London Gazette warrant, which names only two surviving siblings of the 7th Earl.",
+     "value": "Family tradition and earlier pages say so, and the tree draws the link as disputed. The 1890 London Gazette warrant names only two surviving siblings of the 7th Earl, and he is not one of them.",
      "sourceIds": [
       "site-earlier",
       "gazette-1890"
@@ -327,9 +320,15 @@
     {
      "title": "Clues from the collection (home page)",
      "url": "index.html"
+    },
+    {
+     "title": "The family crest page",
+     "url": "family-crest.html"
     }
    ],
-   "parents": [],
+   "parents": [
+    "henry-warrender"
+   ],
    "children": [
     "bob-fitzmaurice",
     "babs-fitzmaurice",
@@ -340,7 +339,9 @@
    "photo": "photos/thumbs/avatar-edward-dixon.jpg",
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "parentLinkConfidence": "unverified",
+   "parentLinkNote": "The 1890 London Gazette names only two surviving siblings of the 7th Earl, and Edward Dixon is not one of them.",
+   "order": 2
   },
   {
    "id": "edith-madeleine-fitzmaurice",
@@ -2924,7 +2925,7 @@
    "immigration": null,
    "cardPlace": "Scotland",
    "summary": "King of Scots from the age of six, after the murder of his father in 1437. He was killed when one of his own cannon exploded at the siege of Roxburgh in 1460.",
-   "story": "James II became King of Scots in 1437, at the age of six, after his father James I was murdered. He was known as \"Fiery Face\" for a red birthmark on one side of his face.[^wiki-james-ii]\n\nHe married Mary of Guelders in 1449. In August 1460 he was besieging Roxburgh Castle, then held by the English, when one of his cannon exploded beside him and killed him. He was 29.[^wiki-james-ii]\n\nHis daughter Mary Stewart married into the Hamilton family, and through her the Hamiltons came close to the Scottish throne.[^wiki-mary-stewart]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "James II became King of Scots in 1437, at the age of six, after his father James I was murdered. He was known as \"Fiery Face\" for a red birthmark on one side of his face.[^wiki-james-ii]\n\nHe married Mary of Guelders in 1449. In August 1460 he was besieging Roxburgh Castle, then held by the English, when one of his cannon exploded beside him and killed him. He was 29.[^wiki-james-ii]\n\nHis daughter Mary Stewart married into the Hamilton family, and through her the Hamiltons came close to the Scottish throne.[^wiki-mary-stewart]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1430-10-16",
@@ -3049,7 +3050,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Daughter of James II. After a first marriage to Thomas Boyd was annulled, she married James, 1st Lord Hamilton, in 1474. Her son became the first Hamilton Earl of Arran.",
-   "story": "Mary Stewart was the elder daughter of King James II and Mary of Guelders. By 1467 she had been married to Thomas Boyd, who was made Earl of Arran. His family fell from power and the marriage was annulled.[^wiki-mary-stewart]\n\nIn 1474 she married James, 1st Lord Hamilton, who was almost forty years older than her. A papal dispensation for the marriage followed in 1476.[^wiki-mary-stewart] Their son James became the 1st Earl of Arran.[^wiki-arran-1][^aah-hamilton] Earlier pages called that son her grandson, which is wrong, and gave her dates as about 1433 to 1465, which are also wrong.[^site-earlier]\n\nNo portrait of her is known. The portrait shown with her father is of her mother, Mary of Guelders.[^site-earlier]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Mary Stewart was the elder daughter of King James II and Mary of Guelders. By 1467 she had been married to Thomas Boyd, who was made Earl of Arran. His family fell from power and the marriage was annulled.[^wiki-mary-stewart]\n\nIn 1474 she married James, 1st Lord Hamilton, who was almost forty years older than her. A papal dispensation for the marriage followed in 1476.[^wiki-mary-stewart] Their son James became the 1st Earl of Arran.[^wiki-arran-1][^aah-hamilton] Earlier pages called that son her grandson, which is wrong, and gave her dates as about 1433 to 1465, which are also wrong.[^site-earlier]\n\nNo portrait of her is known. The portrait shown with her father is of her mother, Mary of Guelders.[^site-earlier]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1453-05-13",
@@ -3173,7 +3174,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Scottish lord who married the king's daughter Mary Stewart in 1474, when she was about 21 and he was almost forty years older.",
-   "story": "James Hamilton, 1st Lord Hamilton, married Mary Stewart, daughter of King James II, in 1474. He was almost forty years older than his bride.[^wiki-mary-stewart] He died in 1479. Their son James became the 1st Earl of Arran.[^wiki-arran-1]\n\nThe Hamilton family seat was later Hamilton Palace in Lanarkshire, which earlier pages show with him.[^site-earlier]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "James Hamilton, 1st Lord Hamilton, married Mary Stewart, daughter of King James II, in 1474. He was almost forty years older than his bride.[^wiki-mary-stewart] He died in 1479. Their son James became the 1st Earl of Arran.[^wiki-arran-1]\n\nThe Hamilton family seat was later Hamilton Palace in Lanarkshire, which earlier pages show with him.[^site-earlier]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1474",
@@ -3275,7 +3276,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of Mary Stewart and Lord Hamilton, made Earl of Arran. Earlier pages called him Mary's grandson and said he was Regent; both are wrong.",
-   "story": "James Hamilton was the son of Mary Stewart and James, 1st Lord Hamilton, and so a grandson of King James II. He was made Earl of Arran.[^wiki-arran-1][^aah-hamilton]\n\nHe married first Elizabeth Home, in about 1490, and then Janet Bethune in 1516. His son by Janet became the 2nd Earl of Arran and Duke of Châtellerault.[^wiki-arran-1][^wiki-chatellerault]\n\nEarlier pages called him Mary's grandson and said he was Regent of Scotland. He was her son, and it was his son, not he, who became Regent.[^site-earlier][^wiki-chatellerault]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "James Hamilton was the son of Mary Stewart and James, 1st Lord Hamilton, and so a grandson of King James II. He was made Earl of Arran.[^wiki-arran-1][^aah-hamilton]\n\nHe married first Elizabeth Home, in about 1490, and then Janet Bethune in 1516. His son by Janet became the 2nd Earl of Arran and Duke of Châtellerault.[^wiki-arran-1][^wiki-chatellerault]\n\nEarlier pages called him Mary's grandson and said he was Regent of Scotland. He was her son, and it was his son, not he, who became Regent.[^site-earlier][^wiki-chatellerault]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1490",
@@ -3385,7 +3386,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Regent of Scotland for the young Mary, Queen of Scots, from 1543 to 1554, and made Duke of Châtellerault in France in 1549.",
-   "story": "James Hamilton, 2nd Earl of Arran, was the son of the 1st Earl and Janet Bethune. As the nearest adult heir to the throne, he governed Scotland as Regent for the infant Mary, Queen of Scots, from 1543 to 1554.[^wiki-chatellerault]\n\nIn February 1549 the French king made him Duke of Châtellerault. He died in January 1575. His third son John became the 1st Marquess of Hamilton.[^wiki-chatellerault][^wiki-marquess-1]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "James Hamilton, 2nd Earl of Arran, was the son of the 1st Earl and Janet Bethune. As the nearest adult heir to the throne, he governed Scotland as Regent for the infant Mary, Queen of Scots, from 1543 to 1554.[^wiki-chatellerault]\n\nIn February 1549 the French king made him Duke of Châtellerault. He died in January 1575. His third son John became the 1st Marquess of Hamilton.[^wiki-chatellerault][^wiki-marquess-1]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1543",
@@ -3486,7 +3487,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "The third son of the Duke of Châtellerault, and the first Marquess of Hamilton.",
-   "story": "John Hamilton was the third son of the Duke of Châtellerault. He became head of the Hamilton family and was made the 1st Marquess of Hamilton. He died in April 1604.[^wiki-marquess-1] His son James succeeded him.[^wiki-marquess-2]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "John Hamilton was the third son of the Duke of Châtellerault. He became head of the Hamilton family and was made the 1st Marquess of Hamilton. He died in April 1604.[^wiki-marquess-1] His son James succeeded him.[^wiki-marquess-2]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1604-04-26",
@@ -3557,7 +3558,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of the 1st Marquess. He married Ann Cunningham in 1603 and died in 1625, aged about 35.",
-   "story": "James Hamilton, 2nd Marquess of Hamilton, was the son of the 1st Marquess. He married Ann Cunningham in 1603 and died in March 1625.[^wiki-marquess-2][^tt-marquess-2] His son James became the 1st Duke of Hamilton.[^wiki-marquess-2]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "James Hamilton, 2nd Marquess of Hamilton, was the son of the 1st Marquess. He married Ann Cunningham in 1603 and died in March 1625.[^wiki-marquess-2][^tt-marquess-2] His son James became the 1st Duke of Hamilton.[^wiki-marquess-2]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1603",
@@ -3639,7 +3640,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of the 2nd Marquess and a leading Royalist under Charles I. He married Mary Feilding in 1622 and was executed in 1649. His daughter Anne inherited the dukedom.",
-   "story": "James Hamilton was born at Hamilton Palace in June 1606, the son of the 2nd Marquess, and married Mary Feilding in 1622.[^wiki-marquess-2] He was made Duke of Hamilton and was one of Charles I's leading supporters in Scotland. Earlier pages say he was executed for that loyalty in 1649.[^site-earlier]\n\nHis daughter Anne later inherited the dukedom in her own right.[^wiki-anne-duchess]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "James Hamilton was born at Hamilton Palace in June 1606, the son of the 2nd Marquess, and married Mary Feilding in 1622.[^wiki-marquess-2] He was made Duke of Hamilton and was one of Charles I's leading supporters in Scotland. Earlier pages say he was executed for that loyalty in 1649.[^site-earlier]\n\nHis daughter Anne later inherited the dukedom in her own right.[^wiki-anne-duchess]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1606-06-19",
@@ -3758,7 +3759,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Daughter of the 1st Duke, Duchess of Hamilton in her own right. She married William Douglas in 1656, and their son George became the 1st Earl of Orkney.",
-   "story": "Anne Hamilton was the daughter of the 1st Duke of Hamilton and inherited the dukedom in her own right.[^wiki-anne-duchess][^nts-anne] On 29 April 1656 she married William Douglas, Earl of Selkirk, who was made Duke of Hamilton for life in 1660.[^wiki-anne-duchess][^wiki-william-duke]\n\nTheir sons included Lord George Hamilton, who became the 1st Earl of Orkney.[^wiki-george-orkney] The family crest page dates her marriage to 1643; the correct year is 1656.[^site-earlier][^wiki-anne-duchess] She died in October 1716, aged 84.[^wiki-anne-duchess]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Anne Hamilton was the daughter of the 1st Duke of Hamilton and inherited the dukedom in her own right.[^wiki-anne-duchess][^nts-anne] On 29 April 1656 she married William Douglas, Earl of Selkirk, who was made Duke of Hamilton for life in 1660.[^wiki-anne-duchess][^wiki-william-duke]\n\nTheir sons included Lord George Hamilton, who became the 1st Earl of Orkney.[^wiki-george-orkney] The family crest page dates her marriage to 1643; the correct year is 1656.[^site-earlier][^wiki-anne-duchess] She died in October 1716, aged 84.[^wiki-anne-duchess]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1632-01-06",
@@ -3894,7 +3895,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Earl of Selkirk, who married Anne, Duchess of Hamilton, in 1656 and was made Duke of Hamilton for life in 1660.",
-   "story": "William Douglas, Earl of Selkirk, married Anne, Duchess of Hamilton, on 29 April 1656. In 1660 he was made Duke of Hamilton for his lifetime.[^wiki-william-duke][^wiki-anne-duchess] He died in April 1694. Their son George became the 1st Earl of Orkney.[^wiki-george-orkney]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "William Douglas, Earl of Selkirk, married Anne, Duchess of Hamilton, on 29 April 1656. In 1660 he was made Duke of Hamilton for his lifetime.[^wiki-william-duke][^wiki-anne-duchess] He died in April 1694. Their son George became the 1st Earl of Orkney.[^wiki-george-orkney]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1656-04-29",
@@ -4026,7 +4027,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "A son of Anne, Duchess of Hamilton. A career soldier, he was made Earl of Orkney in 1696 and in 1736 became the first Field Marshal in the British Army.",
-   "story": "Lord George Hamilton was a son of Anne, Duchess of Hamilton, and William Douglas, and was baptised in February 1666.[^wiki-george-orkney] He was a soldier for most of his life and served under the Duke of Marlborough; earlier pages show him with the Battle of Blenheim of 1704.[^wiki-george-orkney][^site-earlier]\n\nOn 25 November 1695 he married Elizabeth Villiers, and on 3 January 1696 he was made Earl of Orkney.[^wiki-george-orkney] He bought Cliveden in Buckinghamshire and lived there and at Taplow.[^wiki-george-orkney] He was appointed Governor of Virginia but never went there. In 1736 he became the first officer in the British Army to hold the rank of Field Marshal, and he died in January 1737.[^wiki-george-orkney]\n\nHe had daughters but no son. The earldom could pass to a daughter, and his eldest, Anne, became the 2nd Countess.[^wiki-george-orkney][^wiki-anne-countess]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Lord George Hamilton was a son of Anne, Duchess of Hamilton, and William Douglas, and was baptised in February 1666.[^wiki-george-orkney] He was a soldier for most of his life and served under the Duke of Marlborough; earlier pages show him with the Battle of Blenheim of 1704.[^wiki-george-orkney][^site-earlier]\n\nOn 25 November 1695 he married Elizabeth Villiers, and on 3 January 1696 he was made Earl of Orkney.[^wiki-george-orkney] He bought Cliveden in Buckinghamshire and lived there and at Taplow.[^wiki-george-orkney] He was appointed Governor of Virginia but never went there. In 1736 he became the first officer in the British Army to hold the rank of Field Marshal, and he died in January 1737.[^wiki-george-orkney]\n\nHe had daughters but no son. The earldom could pass to a daughter, and his eldest, Anne, became the 2nd Countess.[^wiki-george-orkney][^wiki-anne-countess]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1666-02-09",
@@ -4208,7 +4209,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Formerly the mistress of King William III. She married George Hamilton in 1695, weeks before he was made Earl of Orkney.",
-   "story": "Elizabeth Villiers was for some years the mistress of King William III. On 25 November 1695 she married Lord George Hamilton, who was made Earl of Orkney a few weeks later.[^ur-elizabeth][^wiki-george-orkney] She died in April 1733. Their daughter Anne became the 2nd Countess of Orkney.[^wiki-anne-countess]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Elizabeth Villiers was for some years the mistress of King William III. On 25 November 1695 she married Lord George Hamilton, who was made Earl of Orkney a few weeks later.[^ur-elizabeth][^wiki-george-orkney] She died in April 1733. Their daughter Anne became the 2nd Countess of Orkney.[^wiki-anne-countess]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1695-11-25",
@@ -4325,7 +4326,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Eldest daughter of the 1st Earl, who inherited the earldom in her own right. She married William O'Brien, 4th Earl of Inchiquin, in 1720.",
-   "story": "Anne Hamilton was the eldest daughter of George Hamilton, 1st Earl of Orkney, and Elizabeth Villiers, and inherited the earldom on her father's death in 1737.[^wiki-anne-countess] On 29 March 1720 she married her cousin William O'Brien, 4th Earl of Inchiquin.[^wiki-anne-countess][^wiki-inchiquin] She died in December 1756 and was succeeded by her daughter Mary.[^wiki-mary-3rd]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Anne Hamilton was the eldest daughter of George Hamilton, 1st Earl of Orkney, and Elizabeth Villiers, and inherited the earldom on her father's death in 1737.[^wiki-anne-countess] On 29 March 1720 she married her cousin William O'Brien, 4th Earl of Inchiquin.[^wiki-anne-countess][^wiki-inchiquin] She died in December 1756 and was succeeded by her daughter Mary.[^wiki-mary-3rd]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1720-03-29",
@@ -4430,7 +4431,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Irish peer who married Anne, later 2nd Countess of Orkney, in 1720.",
-   "story": "William O'Brien, 4th Earl of Inchiquin, was an Irish peer. He married Anne Hamilton, later 2nd Countess of Orkney, on 29 March 1720. He died in 1777.[^wiki-inchiquin][^wiki-anne-countess]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "William O'Brien, 4th Earl of Inchiquin, was an Irish peer. He married Anne Hamilton, later 2nd Countess of Orkney, on 29 March 1720. He died in 1777.[^wiki-inchiquin][^wiki-anne-countess]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1720-03-29",
@@ -4523,7 +4524,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Daughter of the 2nd Countess. She was deaf, and married her cousin Murrough O'Brien in 1753, the vows being exchanged by signs.",
-   "story": "Mary O'Brien was the daughter of Anne, 2nd Countess of Orkney, and William O'Brien, 4th Earl of Inchiquin, and succeeded her mother in 1756. She was deaf. In 1753 she married her cousin Murrough O'Brien, later Marquess of Thomond, and the marriage vows were exchanged by signs.[^wiki-mary-3rd]\n\nShe died on 10 May 1791, though some accounts give 1790. Her daughter Mary succeeded her.[^wiki-mary-3rd][^wiki-kirkwall]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Mary O'Brien was the daughter of Anne, 2nd Countess of Orkney, and William O'Brien, 4th Earl of Inchiquin, and succeeded her mother in 1756. She was deaf. In 1753 she married her cousin Murrough O'Brien, later Marquess of Thomond, and the marriage vows were exchanged by signs.[^wiki-mary-3rd]\n\nShe died on 10 May 1791, though some accounts give 1790. Her daughter Mary succeeded her.[^wiki-mary-3rd][^wiki-kirkwall]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1753",
@@ -4622,7 +4623,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Born John FitzMaurice, he took the name Petty and became Earl of Shelburne. His sons were the future Prime Minister, Lord Shelburne, and Thomas FitzMaurice.",
-   "story": "John Petty was born John FitzMaurice in 1706, a younger son of the Earl of Kerry. He took the surname Petty on inheriting the estates of his uncle, and was made Earl of Shelburne. He died in May 1761.[^wiki-shelburne-1]\n\nHis elder son William became Prime Minister and Marquess of Lansdowne. His younger son Thomas kept the name FitzMaurice and married Mary O'Brien, later 4th Countess of Orkney, which is how the Earls of Orkney came to be FitzMaurices.[^wiki-shelburne-1][^wiki-thomas-mp][^wiki-mary-4th]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "John Petty was born John FitzMaurice in 1706, a younger son of the Earl of Kerry. He took the surname Petty on inheriting the estates of his uncle, and was made Earl of Shelburne. He died in May 1761.[^wiki-shelburne-1]\n\nHis elder son William became Prime Minister and Marquess of Lansdowne. His younger son Thomas kept the name FitzMaurice and married Mary O'Brien, later 4th Countess of Orkney, which is how the Earls of Orkney came to be FitzMaurices.[^wiki-shelburne-1][^wiki-thomas-mp][^wiki-mary-4th]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1706",
@@ -4708,7 +4709,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Daughter of the 3rd Countess. She married Thomas FitzMaurice in 1777, and the earldom passed through their son to the FitzMaurices.",
-   "story": "Mary O'Brien was the daughter of Mary, 3rd Countess of Orkney, and Murrough O'Brien. On 21 December 1777 she married Thomas FitzMaurice, younger brother of the future Prime Minister Lord Shelburne.[^wiki-mary-4th][^wiki-thomas-mp]\n\nShe became Countess of Orkney in 1791. Their only son, John, Viscount Kirkwall, died in 1820, before her, so when she died in December 1831 the earldom passed to her grandson Thomas.[^wiki-mary-4th][^wiki-kirkwall][^wiki-5th-earl]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Mary O'Brien was the daughter of Mary, 3rd Countess of Orkney, and Murrough O'Brien. On 21 December 1777 she married Thomas FitzMaurice, younger brother of the future Prime Minister Lord Shelburne.[^wiki-mary-4th][^wiki-thomas-mp]\n\nShe became Countess of Orkney in 1791. Their only son, John, Viscount Kirkwall, died in 1820, before her, so when she died in December 1831 the earldom passed to her grandson Thomas.[^wiki-mary-4th][^wiki-kirkwall][^wiki-5th-earl]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1755-09-04",
@@ -4832,7 +4833,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Younger son of the 1st Earl of Shelburne and brother of the Prime Minister. He married Mary O'Brien, later 4th Countess of Orkney, in 1777.",
-   "story": "Thomas FitzMaurice was the younger son of John Petty, 1st Earl of Shelburne, and brother of William, Lord Shelburne, the Prime Minister. He sat in the House of Commons.[^wiki-thomas-mp]\n\nHe married Mary O'Brien on 21 December 1777. She became Countess of Orkney in 1791, and their son John took the title Viscount Kirkwall. Thomas died in October 1793.[^wiki-thomas-mp][^wiki-mary-4th][^wiki-kirkwall]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Thomas FitzMaurice was the younger son of John Petty, 1st Earl of Shelburne, and brother of William, Lord Shelburne, the Prime Minister. He sat in the House of Commons.[^wiki-thomas-mp]\n\nHe married Mary O'Brien on 21 December 1777. She became Countess of Orkney in 1791, and their son John took the title Viscount Kirkwall. Thomas died in October 1793.[^wiki-thomas-mp][^wiki-mary-4th][^wiki-kirkwall]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1742-07",
@@ -4973,7 +4974,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Elder son of the 1st Earl of Shelburne and brother of Thomas FitzMaurice. As Lord Shelburne he was Prime Minister in 1782 and 1783, when peace with America was negotiated.",
-   "story": "William Petty, 2nd Earl of Shelburne, was the elder son of John Petty, 1st Earl of Shelburne, and brother of Thomas FitzMaurice.[^wiki-lansdowne] He was Prime Minister from July 1782 to April 1783, while the peace that ended the American War of Independence was negotiated.[^wiki-lansdowne][^britannica-lansdowne] In 1784 he was made Marquess of Lansdowne. He died in May 1805.[^wiki-lansdowne]\n\nHe is shown here because he was the brother of Thomas FitzMaurice, whose descendants became the Earls of Orkney.[^wiki-thomas-mp]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "William Petty, 2nd Earl of Shelburne, was the elder son of John Petty, 1st Earl of Shelburne, and brother of Thomas FitzMaurice.[^wiki-lansdowne] He was Prime Minister from July 1782 to April 1783, while the peace that ended the American War of Independence was negotiated.[^wiki-lansdowne][^britannica-lansdowne] In 1784 he was made Marquess of Lansdowne. He died in May 1805.[^wiki-lansdowne]\n\nHe is shown here because he was the brother of Thomas FitzMaurice, whose descendants became the Earls of Orkney.[^wiki-thomas-mp]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1782-07",
@@ -5102,7 +5103,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Only son of Mary, 4th Countess, and Thomas FitzMaurice. He took the title Viscount Kirkwall in 1791 and died in 1820, before his mother.",
-   "story": "John FitzMaurice was the son of Thomas FitzMaurice and Mary O'Brien. When his mother became Countess of Orkney in 1791 he took the courtesy title Viscount Kirkwall. He was a Member of Parliament.[^wiki-kirkwall]\n\nHe died in November 1820, eleven years before his mother, so he never became Earl. His son Thomas succeeded her as the 5th Earl.[^wiki-kirkwall][^wiki-5th-earl] The photograph of an officer on horseback captioned \"Viscount Kirkwall\" on earlier pages shows a later holder of the same title, George, the future 6th Earl, in the Crimea in 1855.[^site-earlier]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "John FitzMaurice was the son of Thomas FitzMaurice and Mary O'Brien. When his mother became Countess of Orkney in 1791 he took the courtesy title Viscount Kirkwall. He was a Member of Parliament.[^wiki-kirkwall]\n\nHe died in November 1820, eleven years before his mother, so he never became Earl. His son Thomas succeeded her as the 5th Earl.[^wiki-kirkwall][^wiki-5th-earl] The photograph of an officer on horseback captioned \"Viscount Kirkwall\" on earlier pages shows a later holder of the same title, George, the future 6th Earl, in the Crimea in 1855.[^site-earlier]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1778-10-09",
@@ -5193,7 +5194,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Grandson of the 4th Countess, he became Earl in 1831. He married Charlotte Irby in 1826; their sons included the 6th Earl, Henry Warrender and Frederick O'Bryen.",
-   "story": "Thomas FitzMaurice was the son of John, Viscount Kirkwall, and Anna Maria Blaquiere. He succeeded his grandmother as 5th Earl of Orkney in 1831.[^wiki-5th-earl] He sat in the House of Lords as a Scottish representative peer from 1833 to 1874.[^wiki-5th-earl]\n\nIn 1826 he married Charlotte Irby. Among their eight children were George, later the 6th Earl, Henry Warrender FitzMaurice and Frederick O'Bryen FitzMaurice.[^wiki-5th-earl][^peerage-henry-warrender][^peerage-frederick] He died in May 1877.[^wiki-5th-earl]\n\nThe family crest page says he became Earl in 1826, which was the year of his marriage, and an earlier page ends his time as a representative peer in 1871.[^site-earlier]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Thomas FitzMaurice was the son of John, Viscount Kirkwall, and Anna Maria Blaquiere. He succeeded his grandmother as 5th Earl of Orkney in 1831.[^wiki-5th-earl] He sat in the House of Lords as a Scottish representative peer from 1833 to 1874.[^wiki-5th-earl]\n\nIn 1826 he married Charlotte Irby. Among their eight children were George, later the 6th Earl, Henry Warrender FitzMaurice and Frederick O'Bryen FitzMaurice.[^wiki-5th-earl][^peerage-henry-warrender][^peerage-frederick] He died in May 1877.[^wiki-5th-earl]\n\nThe family crest page says he became Earl in 1826, which was the year of his marriage, and an earlier page ends his time as a representative peer in 1871.[^site-earlier]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1803-08-08",
@@ -5323,7 +5324,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Eldest son of the 5th Earl. As Viscount Kirkwall he served in the Crimea with the 71st Highlanders. He had no children, and the title passed to his nephew Edmond.",
-   "story": "George FitzMaurice was the eldest son of the 5th Earl and was styled Viscount Kirkwall until he succeeded his father in 1877. He was a soldier.[^wiki-6th-earl] The photograph of an officer on horseback shown here is captioned on earlier pages as Viscount Kirkwall, Captain, 71st Highlanders; that fits George, who served in the Crimea, rather than the earlier Viscount Kirkwall of 1778 to 1820.[^site-earlier][^wiki-6th-earl]\n\nHe had no children. When he died in October 1889 the earldom passed to his nephew Edmond, son of his brother Henry Warrender.[^wiki-6th-earl][^gazette-1890]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "George FitzMaurice was the eldest son of the 5th Earl and was styled Viscount Kirkwall until he succeeded his father in 1877. He was a soldier.[^wiki-6th-earl] The photograph of an officer on horseback shown here is captioned on earlier pages as Viscount Kirkwall, Captain, 71st Highlanders; that fits George, who served in the Crimea, rather than the earlier Viscount Kirkwall of 1778 to 1820.[^site-earlier][^wiki-6th-earl]\n\nHe had no children. When he died in October 1889 the earldom passed to his nephew Edmond, son of his brother Henry Warrender.[^wiki-6th-earl][^gazette-1890]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1827-05-06",
@@ -5430,8 +5431,8 @@
    "occupations": [],
    "immigration": null,
    "cardPlace": null,
-   "summary": "A younger son of the 5th Earl. He married Sarah Jane Roose in 1861. Earlier pages made him Edward Dixon's father; the records name four children, and Edward Dixon is not one of them.",
-   "story": "Henry Warrender FitzMaurice was a younger son of the 5th Earl of Orkney. He married Sarah Jane Roose on 5 September 1861 and died in January 1875, two years before his father.[^peerage-henry-warrender][^wiki-5th-earl]\n\nThe peerage records list four children: Henry George Hamilton (1863 to 1888), Edmond Walter (1867 to 1951), Isabella Emily (about 1868 to 1928) and Alexander (1874 to 1922).[^peerage-henry-warrender] In 1890, after Edmond became the 7th Earl, a royal warrant gave the rank of an earl's children to his surviving brother and sister, Alexander Edmond and Isabella Emily.[^gazette-1890]\n\nEarlier versions of this site said Henry Warrender was almost certainly the father of Edward Dixon FitzMaurice. He does not appear in any of these records, so that link is not shown.[^site-earlier][^gazette-1890]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "summary": "A younger son of the 5th Earl. He married Sarah Jane Roose in 1861. The family names him as Edward Dixon's father; the records name four children, and Edward Dixon is not one of them.",
+   "story": "Henry Warrender FitzMaurice was a younger son of the 5th Earl of Orkney. He married Sarah Jane Roose on 5 September 1861 and died in January 1875, two years before his father.[^peerage-henry-warrender][^wiki-5th-earl]\n\nThe peerage records list four children: Henry George Hamilton (1863 to 1888), Edmond Walter (1867 to 1951), Isabella Emily (about 1868 to 1928) and Alexander (1874 to 1922).[^peerage-henry-warrender] In 1890, after Edmond became the 7th Earl, a royal warrant gave the rank of an earl's children to his surviving brother and sister, Alexander Edmond and Isabella Emily.[^gazette-1890]\n\nEarlier versions of this site said Henry Warrender was almost certainly the father of Edward Dixon FitzMaurice. Edward Dixon does not appear in any of these records, so the tree draws that link as disputed.[^site-earlier][^gazette-1890]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1828-07-07",
@@ -5485,7 +5486,7 @@
     },
     {
      "label": "Father of Edward Dixon FitzMaurice?",
-     "value": "Claimed on earlier pages; not supported by the records",
+     "value": "Family tradition and earlier pages; disputed by the 1890 London Gazette. Drawn on the tree as a disputed link.",
      "sourceIds": [
       "site-earlier",
       "gazette-1890"
@@ -5505,7 +5506,8 @@
     "earl-5"
    ],
    "children": [
-    "edmond-7th"
+    "edmond-7th",
+    "edward-dixon-fitzmaurice"
    ],
    "spouses": [],
    "isDirectLine": false,
@@ -5560,7 +5562,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "A younger son of the 5th Earl and a naval commander. His great-grandson Cecil became the 8th Earl in 1951.",
-   "story": "Frederick O'Bryen FitzMaurice was a younger son of the 5th Earl of Orkney and a commander in the Royal Navy. He died in October 1867.[^peerage-frederick] His son Douglas Commerel Menzies FitzMaurice was the grandfather of Cecil, who became the 8th Earl in 1951.[^peerage-frederick][^peerage-cecil]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Frederick O'Bryen FitzMaurice was a younger son of the 5th Earl of Orkney and a commander in the Royal Navy. He died in October 1867.[^peerage-frederick] His son Douglas Commerel Menzies FitzMaurice was the grandfather of Cecil, who became the 8th Earl in 1951.[^peerage-frederick][^peerage-cecil]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1830-04-23",
@@ -5651,7 +5653,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of Henry Warrender. He succeeded his uncle as Earl in 1889, aged 22, and in 1892 married the Gaiety star Connie Gilchrist. Their only child died before him, and the title passed to a distant cousin.",
-   "story": "Edmond Walter FitzMaurice was the son of Henry Warrender FitzMaurice and Sarah Jane Roose. He succeeded his uncle George as 7th Earl of Orkney in October 1889, aged 22.[^peerage-henry-warrender][^wiki-6th-earl] In April 1890 a royal warrant gave his surviving brother and sister the rank of an earl's children; it names no other siblings.[^gazette-1890]\n\nOn 19 July 1892 he married Connie Gilchrist, a former child performer of the Gaiety Theatre.[^wiki-connie] The Evening News of 1951 describes him as of The Tythe House, Stewkley, near Leighton Buzzard, a Deputy Lieutenant for Buckinghamshire and a former Master of the Whaddon Chase Foxhounds.[^korea-clipping]\n\nTheir only child, Lady Mary Constance Hamilton FitzMaurice, was born in 1903. She married, had no children, and died in October 1950, ten months before her father.[^peerage-henry-warrender][^wiki-connie] When Edmond died in August 1951 he left the residue of his estate of £42,893 to Cecil FitzMaurice, who also inherited the earldom. The paper called Edmond Cecil's great-uncle; by the peerage records he was Cecil's first cousin twice removed.[^korea-clipping][^press-1951][^peerage-cecil]\n\nEarlier pages give his name as \"Edmond Walter Leighton FitzMaurice\" and say he inherited at 16. \"Leighton\" comes from the Leighton Buzzard address, and he was 22.[^site-earlier][^korea-clipping]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Edmond Walter FitzMaurice was the son of Henry Warrender FitzMaurice and Sarah Jane Roose. He succeeded his uncle George as 7th Earl of Orkney in October 1889, aged 22.[^peerage-henry-warrender][^wiki-6th-earl] In April 1890 a royal warrant gave his surviving brother and sister the rank of an earl's children; it names no other siblings.[^gazette-1890]\n\nOn 19 July 1892 he married Connie Gilchrist, a former child performer of the Gaiety Theatre.[^wiki-connie] The Evening News of 1951 describes him as of The Tythe House, Stewkley, near Leighton Buzzard, a Deputy Lieutenant for Buckinghamshire and a former Master of the Whaddon Chase Foxhounds.[^korea-clipping]\n\nTheir only child, Lady Mary Constance Hamilton FitzMaurice, was born in 1903. She married, had no children, and died in October 1950, ten months before her father.[^peerage-henry-warrender][^wiki-connie] When Edmond died in August 1951 he left the residue of his estate of £42,893 to Cecil FitzMaurice, who also inherited the earldom. The paper called Edmond Cecil's great-uncle; by the peerage records he was Cecil's first cousin twice removed.[^korea-clipping][^press-1951][^peerage-cecil]\n\nEarlier pages give his name as \"Edmond Walter Leighton FitzMaurice\" and say he inherited at 16. \"Leighton\" comes from the Leighton Buzzard address, and he was 22.[^site-earlier][^korea-clipping]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1867-05-24",
@@ -5827,7 +5829,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Child model for Whistler and Leighton and a star of the Gaiety Theatre, she married Edmond, 7th Earl of Orkney, in 1892.",
-   "story": "Connie Gilchrist was born in January 1865. As a child she modelled for painters: Whistler painted her as \"The Gold Girl\", posed as she appeared on the Gaiety Theatre stage in her skipping-rope dance, and she was the girl in Frederic Leighton's \"The Music Lesson\".[^wiki-connie][^met-gold-girl] She performed at the Gaiety and became known as \"the original Gaiety Girl\".[^wiki-connie]\n\nShe had left the stage by July 1892, when she married Edmond FitzMaurice, 7th Earl of Orkney.[^wiki-connie] They were married for 54 years. She died in May 1946.[^wiki-connie][^korea-clipping] The 1951 newspaper report gives her age at death as 73; from her date of birth she was 81.[^korea-clipping][^wiki-connie]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Connie Gilchrist was born in January 1865. As a child she modelled for painters: Whistler painted her as \"The Gold Girl\", posed as she appeared on the Gaiety Theatre stage in her skipping-rope dance, and she was the girl in Frederic Leighton's \"The Music Lesson\".[^wiki-connie][^met-gold-girl] She performed at the Gaiety and became known as \"the original Gaiety Girl\".[^wiki-connie]\n\nShe had left the stage by July 1892, when she married Edmond FitzMaurice, 7th Earl of Orkney.[^wiki-connie] They were married for 54 years. She died in May 1946.[^wiki-connie][^korea-clipping] The 1951 newspaper report gives her age at death as 73; from her date of birth she was 81.[^korea-clipping][^wiki-connie]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1865-01-23",
@@ -6027,7 +6029,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "The only child of Edmond, 7th Earl of Orkney, and Connie Gilchrist. She had no children and died ten months before her father.",
-   "story": "Lady Mary Constance Hamilton FitzMaurice was the only child of Edmond, 7th Earl of Orkney, and Connie Gilchrist. She was born in February 1903.[^peerage-henry-warrender] She married and became Lady Mary Gosling, but had no children.[^wiki-connie]\n\nShe died on 6 October 1950, ten months before her father. The earldom could pass to a daughter, so had she outlived him she would probably have inherited it.[^wiki-earl-of-orkney] Instead it went to Cecil FitzMaurice, a distant cousin.[^peerage-henry-warrender][^peerage-cecil]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Lady Mary Constance Hamilton FitzMaurice was the only child of Edmond, 7th Earl of Orkney, and Connie Gilchrist. She was born in February 1903.[^peerage-henry-warrender] She married and became Lady Mary Gosling, but had no children.[^wiki-connie]\n\nShe died on 6 October 1950, ten months before her father. The earldom could pass to a daughter, so had she outlived him she would probably have inherited it.[^wiki-earl-of-orkney] Instead it went to Cecil FitzMaurice, a distant cousin.[^peerage-henry-warrender][^peerage-cecil]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1903-02-26",
@@ -6098,7 +6100,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of Frederick O'Bryen FitzMaurice and grandfather of Cecil, 8th Earl. He married Esther Davies in 1889.",
-   "story": "Douglas Commerel Menzies FitzMaurice was the son of Frederick O'Bryen FitzMaurice. He married Esther Davies on 7 September 1889. Their son Douglas Frederick Harold was the father of Cecil, the 8th Earl.[^peerage-frederick][^peerage-cecil]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Douglas Commerel Menzies FitzMaurice was the son of Frederick O'Bryen FitzMaurice. He married Esther Davies on 7 September 1889. Their son Douglas Frederick Harold was the father of Cecil, the 8th Earl.[^peerage-frederick][^peerage-cecil]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1861-12-07",
@@ -6178,7 +6180,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Father of Douglas Hubert and of Cecil, the 8th Earl. He married Dorothy Dickie in 1916 and died in 1937.",
-   "story": "Douglas Frederick Harold FitzMaurice was the son of Douglas Commerel Menzies FitzMaurice. He married Dorothy Jeanette Dickie on 17 February 1916. Their sons were Douglas Hubert, born that May, and Cecil, born in 1919. He died in May 1937.[^peerage-frederick][^peerage-cecil]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Douglas Frederick Harold FitzMaurice was the son of Douglas Commerel Menzies FitzMaurice. He married Dorothy Jeanette Dickie on 17 February 1916. Their sons were Douglas Hubert, born that May, and Cecil, born in 1919. He died in May 1937.[^peerage-frederick][^peerage-cecil]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1890-08-26",
@@ -6291,7 +6293,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Mother of Douglas Hubert and Cecil. She married Douglas Frederick Harold FitzMaurice in 1916; by 1951 she was Mrs Wiggins, of Itchingfield in Sussex.",
-   "story": "Dorothy Jeanette Dickie married Douglas Frederick Harold FitzMaurice on 17 February 1916, and was the mother of Douglas Hubert and Cecil.[^peerage-frederick] By 1951 she had remarried. The Evening News reported that year that Cecil, back from Korea, was living with his mother, Mrs Dorothy Wiggins, at Lantern Hatch, Itchingfield, near Horsham.[^korea-clipping]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Dorothy Jeanette Dickie married Douglas Frederick Harold FitzMaurice on 17 February 1916, and was the mother of Douglas Hubert and Cecil.[^peerage-frederick] By 1951 she had remarried. The Evening News reported that year that Cecil, back from Korea, was living with his mother, Mrs Dorothy Wiggins, at Lantern Hatch, Itchingfield, near Horsham.[^korea-clipping]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1916-02-17",
@@ -6383,7 +6385,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Cecil's elder brother, killed in action in November 1942.",
-   "story": "Douglas Hubert FitzMaurice was the elder son of Douglas Frederick Harold FitzMaurice and Dorothy Dickie. He was killed in action on 27 November 1942.[^peerage-frederick]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Douglas Hubert FitzMaurice was the elder son of Douglas Frederick Harold FitzMaurice and Dorothy Dickie. He was killed in action on 27 November 1942.[^peerage-frederick]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1916-05-29",
@@ -6506,7 +6508,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "A distant cousin of the 7th Earl, he inherited the earldom in 1951 while serving as an Army driver in Korea. He married Rose Silley at Brixham in 1953.",
-   "story": "Cecil O'Bryen FitzMaurice was the younger son of Douglas Frederick Harold FitzMaurice and Dorothy Dickie. He joined the Royal Army Service Corps in 1939 and served in North Africa, Italy, France and Germany, and then in Korea.[^wiki-cecil][^peerage-cecil]\n\nHe became the 8th Earl of Orkney on 21 August 1951 while serving as a driver in Korea. Newspapers called him \"the Earl from Korea\".[^press-1951][^korea-clipping] The Evening News reported that his Army friends knew him as \"Ginger\", that the 7th Earl had left him the residue of an estate of £42,893, and that on the voyage home he was given four days' confinement to barracks and set to scrub the mess decks for coming back late to the ship at Colombo.[^korea-clipping] The paper called the 7th Earl his great-uncle; he was in fact a much more distant cousin.[^korea-clipping][^peerage-cecil]\n\nOn 27 November 1953 he married Rose Katherine Durk Silley at St Mary's, Brixham. The Evening News said she helped her mother run a 60-bedroom hotel in the town, and that the Earl had once worked in a garage.[^marries-clipping][^peerage-cecil] Rose died in 1995. Cecil died in February 1998 with no children, and the earldom passed to a distant cousin, Peter St John.[^wiki-cecil][^wiki-earl-of-orkney]\n\nEarlier pages give the year of his marriage as 1952. The peerage records give 1953.[^site-earlier][^peerage-cecil]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Cecil O'Bryen FitzMaurice was the younger son of Douglas Frederick Harold FitzMaurice and Dorothy Dickie. He joined the Royal Army Service Corps in 1939 and served in North Africa, Italy, France and Germany, and then in Korea.[^wiki-cecil][^peerage-cecil]\n\nHe became the 8th Earl of Orkney on 21 August 1951 while serving as a driver in Korea. Newspapers called him \"the Earl from Korea\".[^press-1951][^korea-clipping] The Evening News reported that his Army friends knew him as \"Ginger\", that the 7th Earl had left him the residue of an estate of £42,893, and that on the voyage home he was given four days' confinement to barracks and set to scrub the mess decks for coming back late to the ship at Colombo.[^korea-clipping] The paper called the 7th Earl his great-uncle; he was in fact a much more distant cousin.[^korea-clipping][^peerage-cecil]\n\nOn 27 November 1953 he married Rose Katherine Durk Silley at St Mary's, Brixham. The Evening News said she helped her mother run a 60-bedroom hotel in the town, and that the Earl had once worked in a garage.[^marries-clipping][^peerage-cecil] Rose died in 1995. Cecil died in February 1998 with no children, and the earldom passed to a distant cousin, Peter St John.[^wiki-cecil][^wiki-earl-of-orkney]\n\nEarlier pages give the year of his marriage as 1952. The peerage records give 1953.[^site-earlier][^peerage-cecil]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1919-07-03",
@@ -6693,7 +6695,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Married Cecil, 8th Earl of Orkney, at St Mary's, Brixham, in November 1953. She had helped her mother run a hotel in the town.",
-   "story": "Rose Katherine Durk Silley married Cecil, 8th Earl of Orkney, at St Mary's, Brixham, on 27 November 1953.[^peerage-cecil][^marries-clipping] The Evening News described her as 34 and said she helped her mother run a 60-bedroom hotel at Brixham.[^marries-clipping] She died in July 1995.[^peerage-cecil]\n\n## Link to this family\n\nEarlier versions of this site traced Sebastian's line to this person through Edward Dixon FitzMaurice. That link is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). This person is shown in a separate frame for that reason.[^gazette-1890][^site-earlier]",
+   "story": "Rose Katherine Durk Silley married Cecil, 8th Earl of Orkney, at St Mary's, Brixham, on 27 November 1953.[^peerage-cecil][^marries-clipping] The Evening News described her as 34 and said she helped her mother run a 60-bedroom hotel at Brixham.[^marries-clipping] She died in July 1995.[^peerage-cecil]\n\n## Link to this family\n\nThe family traces Sebastian's line to this person through Edward Dixon FitzMaurice, as a son of Henry Warrender FitzMaurice. That step is not proven, and the 1890 London Gazette record speaks against it (see Edward Dixon FitzMaurice). The tree draws it as a dashed line marked disputed, and the relationship finder flags any relationship that runs through it.[^gazette-1890][^site-earlier]",
    "timeline": [
     {
      "date": "1953-11-27",

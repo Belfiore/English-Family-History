@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="tree-canvas.css?v=1">
+    <link rel="stylesheet" href="tree-canvas.css?v=2">
 </head>
 <body class="canvas-body">
 <a class="skip-link" href="#treeHelp">Skip to the family tree</a>
@@ -95,7 +95,7 @@
                 <li><span class="lg-pill">m. 1950</span>Marriage, with year if known</li>
                 <li><span class="lg-pill">&amp;</span>Partners</li>
                 <li><span class="lg-card lg-card--uncertain"></span>Identity or name uncertain</li>
-                <li><span class="lg-card lg-card--frame"></span>Group whose link to the family is unproven</li>
+                <li><span class="lg-line lg-line--disputed"></span>Disputed link: told by the family, but a record speaks against it</li>
             </ul>
             <h3>What each card holds</h3>
             <ul class="lg-icons">
@@ -161,7 +161,7 @@
     <div class="lb-strip" id="lbStrip"></div>
 </div>
 
-<script src="tree-canvas.js?v=1"></script>
+<script src="tree-canvas.js?v=2"></script>
 <script>
     (function () {
         var t = document.getElementById('navToggle'), l = document.getElementById('navLinks');

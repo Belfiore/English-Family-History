@@ -1,0 +1,444 @@
+{
+ "sources": [
+  {
+   "id": "album-1950",
+   "title": "Wedding album: 'A pictorial record of the Wedding of Patricia Mary ... to Ronald', February 1950",
+   "type": "photograph album",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "date": "1950-02-11",
+   "file": "photos/wedding-album-cover-inscription.jpg",
+   "note": "Ten spreads photographed, with handwritten captions. Read for this revision from the photographs of each spread."
+  },
+  {
+   "id": "ruby-invitation",
+   "title": "Ruby wedding anniversary invitation: dinner at The French Horn, Sonning, 'Saturday 10th March'",
+   "type": "invitation",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "date": "1990-03-10",
+   "file": "photos/ruby-wedding-invitation-and-photos.jpg",
+   "note": "The card gives no year. 10 March fell on a Saturday in 1990, forty years after the wedding, so 1990 is the probable year. Shown with two prints of the 1950 group photograph."
+  },
+  {
+   "id": "photo-labels",
+   "title": "Handwritten labels on the backs of two snapshots",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/photo-backs-labeled.jpg",
+   "note": "One reads 'Auntie Babs / South Africa'. The other reads 'Reg, Bob and their Father / Edward Dixon / Fitzmaurice'. Who wrote them, and when, is not known."
+  },
+  {
+   "id": "beach-snapshots",
+   "title": "Two snapshots: a girl on a verandah, and a clergyman with two boys on a shingle beach",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/babs-and-edward-with-boys.jpg",
+   "note": "Undated. The girl's photograph has 'Eil' written on the front, the rest lost at the edge."
+  },
+  {
+   "id": "stuart-card",
+   "title": "Cabinet card portrait of a clergyman, by Stuart, 47 and 49 Brompton Road, Knightsbridge",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/edward-dixon-stuart-studio.jpg",
+   "note": "No name on the card. Identified as Edward Dixon FitzMaurice by his likeness to the man in the labelled beach snapshot."
+  },
+  {
+   "id": "edith-medallion",
+   "title": "Circular portrait of a young woman, inscribed on the back 'Edith Madeleine Fitzmaurice c.1899'",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/edith-medallion-back.jpg",
+   "note": "The 'c.' suggests the date was added later by someone estimating it."
+  },
+  {
+   "id": "lang-sims-card",
+   "title": "Cabinet card portrait of a standing woman, by Lang Sims, 437 Brixton Road SW and 9 Church Street, Folkestone",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/lang-sims-woman.jpg",
+   "note": "Unlabelled."
+  },
+  {
+   "id": "perriman-cdv",
+   "title": "Carte de visite of a woman and a young girl, by J. Perriman, Camden Town School of Photography, No. 925",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/cdv-perriman-back-flat.jpg",
+   "note": "Unlabelled. The studio stamp gives 3 Greenland Place, 'Side of the Mother Red Cap', Camden Town."
+  },
+  {
+   "id": "young-man-portrait",
+   "title": "Studio portrait of a young man in a bow tie",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/reg-fitzmaurice-portrait.jpg",
+   "note": "Unlabelled. The same image is saved as reg-fitzmaurice-portrait.jpg, unknown-young-man-bowtie.jpg and IMG_8845.jpeg."
+  },
+  {
+   "id": "sa-snapshots",
+   "title": "Two snapshots: a house with a verandah in a garden, and a young man in a dark suit",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/south-africa-house-and-young-man.jpg",
+   "note": "Unlabelled."
+  },
+  {
+   "id": "korea-clipping",
+   "title": "'Earl from Korea left a fortune: he scrubbed decks', Evening News",
+   "type": "newspaper",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "date": "1951",
+   "file": "photos/korea-news-clipping.jpg",
+   "note": "Handwritten '1951' on the cutting. Transcribed for this revision."
+  },
+  {
+   "id": "marries-clipping",
+   "title": "'Earl of Orkney marries', Evening News",
+   "type": "newspaper",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "date": "1953-11-27",
+   "file": "photos/orkney-marries-clipping.jpg",
+   "note": "The handwritten date reads 'Nov 27'; the year is torn off. The ages in the text (both 34) fit 1953, the year the peerage gives."
+  },
+  {
+   "id": "andrews-family-photo",
+   "title": "Group photograph of the Andrews family, outdoors in front of a striped awning",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/andrews-family-sepia.jpg",
+   "note": "Undated and unlabelled. A colourised copy is saved as andrews-family-color.jpeg. Who is who comes from the family, via earlier versions of this site."
+  },
+  {
+   "id": "ron-workshop",
+   "title": "Ronald Andrews at an engine on a workbench, overalls marked '3ERS' (colourised copy)",
+   "type": "photograph",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "file": "photos/ronald-andrews-workshop.jpeg",
+   "note": "A colourised version of a black and white photograph; the original is not in the repository."
+  },
+  {
+   "id": "ron-album",
+   "title": "Ronald Andrews's wartime photograph album, Egypt, with his own captions",
+   "type": "photograph album",
+   "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
+   "date": "1945",
+   "file": "photos/ron-egypt/IMG_2654.JPEG",
+   "note": "Eight pages photographed (IMG_2650 to IMG_2658). Captions transcribed for this revision. The album pages are undated; the latest item is the Tura Times 'First Peace Edition'."
+  },
+  {
+   "id": "devonshire-photo",
+   "title": "Press photograph: Cecil FitzMaurice on the quayside beside the troopship Devonshire",
+   "type": "photograph",
+   "repository": "Saved from a stock photograph site (Alamy watermark visible)",
+   "file": "photos/portraits/cecil_devonshire.jpg",
+   "note": "Earlier versions of this site date it 29 September 1951. That date is not on the image."
+  },
+  {
+   "id": "stuart-postcard",
+   "title": "Coloured postcard view of Brompton Road, Knightsbridge",
+   "type": "photograph",
+   "repository": "Saved from a website for an earlier version of this site; origin not recorded",
+   "file": "photos/stuart-brothers-studio.jpg"
+  },
+  {
+   "id": "portrait-files",
+   "title": "Portraits and views of historical figures and places used on earlier versions of this site",
+   "type": "photograph",
+   "repository": "photos/portraits/ in this repository; where each image came from is not recorded"
+  },
+  {
+   "id": "family-account",
+   "title": "Family account given by Sebastian Belfiore, with answers from his mother Amanda",
+   "type": "family tradition",
+   "repository": "Conversations while building this site, 2026",
+   "date": "2026",
+   "note": "Includes: Reg was Amanda's grandfather, Bob his brother, and Babs 'my auntie'; Ronald, Patricia and Herbert have all died; Patricia was born in Windsor, lost her mother young and was evacuated in the war; Reg died of an illness linked to smoking; Ron and Pat met through Sandra's parents."
+  },
+  {
+   "id": "site-earlier",
+   "title": "Earlier versions of this site (the first family tree page, the home page, the family crest page and Ron's page)",
+   "type": "research notes",
+   "repository": "This repository: family-tree-classic.html, index.html, family-crest.html, ron-egypt.html",
+   "note": "Claims taken from here have no source recorded and are marked unverified."
+  },
+  {
+   "id": "genealogy-report",
+   "title": "The Fitzmaurice Family: Genealogy and Historical Photo Analysis",
+   "type": "research report",
+   "repository": "fitzmaurice_family_genealogy_report (1).pdf in this repository",
+   "date": "2026-03-15",
+   "file": "fitzmaurice_family_genealogy_report (1).pdf",
+   "note": "A photo analysis of twelve items, with dating by style."
+  },
+  {
+   "id": "handoff-brief",
+   "title": "FitzMaurice and Andrews Family Tree: Claude Code handoff brief v2",
+   "type": "research notes",
+   "repository": "claude_code_handoff_brief_v2.md in this repository",
+   "file": "claude_code_handoff_brief_v2.md"
+  },
+  {
+   "id": "gazette-1890",
+   "title": "London Gazette, issue 26051, page 2823: warrant of precedence for the brother and sister of Edmond Walter, Earl of Orkney",
+   "type": "government record",
+   "repository": "The Gazette",
+   "date": "1890-04-23",
+   "url": "https://www.thegazette.co.uk/London/issue/26051/page/2823/data.pdf",
+   "note": "Names Edmond Walter as the eldest surviving son and heir of Henry Warrender Fitzmaurice, and names only Alexander Edmond Fitzmaurice and Isabella Emily Garrett as his brother and sister."
+  },
+  {
+   "id": "wiki-earl-of-orkney",
+   "title": "Earl of Orkney",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Earl_of_Orkney"
+  },
+  {
+   "id": "wiki-5th-earl",
+   "title": "Thomas FitzMaurice, 5th Earl of Orkney",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Thomas_FitzMaurice,_5th_Earl_of_Orkney"
+  },
+  {
+   "id": "wiki-6th-earl",
+   "title": "George FitzMaurice, 6th Earl of Orkney",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/George_FitzMaurice,_6th_Earl_of_Orkney"
+  },
+  {
+   "id": "peerage-henry-warrender",
+   "title": "Hon. Henry Warrender FitzMaurice and family (person pages 38533 to 38540)",
+   "type": "online index",
+   "repository": "thepeerage.com",
+   "url": "https://www.thepeerage.com/p3854.htm"
+  },
+  {
+   "id": "peerage-frederick",
+   "title": "Cdr Hon. Frederick O'Bryen FitzMaurice and descendants (person pages 38543 onwards)",
+   "type": "online index",
+   "repository": "thepeerage.com",
+   "url": "https://www.thepeerage.com/p3855.htm"
+  },
+  {
+   "id": "peerage-cecil",
+   "title": "Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, and Rose Silley",
+   "type": "online index",
+   "repository": "thepeerage.com",
+   "url": "https://www.thepeerage.com/p3856.htm"
+  },
+  {
+   "id": "wiki-cecil",
+   "title": "Cecil FitzMaurice, 8th Earl of Orkney",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Cecil_FitzMaurice,_8th_Earl_of_Orkney"
+  },
+  {
+   "id": "parliament-cecil",
+   "title": "Earl of Orkney (Cecil O'Bryen Fitz-Maurice): House of Lords membership",
+   "type": "web",
+   "repository": "UK Parliament",
+   "url": "https://members.parliament.uk/member/2856"
+  },
+  {
+   "id": "press-1951",
+   "title": "'A soldier-peer in Korea', The Press (Christchurch), 3 September 1951, page 3",
+   "type": "newspaper",
+   "repository": "Papers Past, National Library of New Zealand",
+   "date": "1951-09-03",
+   "url": "https://paperspast.natlib.govt.nz/newspapers/CHP19510903.2.28"
+  },
+  {
+   "id": "wiki-connie",
+   "title": "Constance FitzMaurice, Countess of Orkney (Connie Gilchrist)",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Constance_FitzMaurice,_Countess_of_Orkney"
+  },
+  {
+   "id": "met-gold-girl",
+   "title": "Harmony in Yellow and Gold: The Gold Girl, Connie Gilchrist, by James McNeill Whistler",
+   "type": "web",
+   "repository": "The Metropolitan Museum of Art",
+   "url": "https://www.metmuseum.org/art/collection/search/12127",
+   "note": "Cited on earlier versions of this site; not re-read for this revision."
+  },
+  {
+   "id": "wiki-james-ii",
+   "title": "James II of Scotland",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/James_II_of_Scotland"
+  },
+  {
+   "id": "wiki-mary-stewart",
+   "title": "Mary Stewart, Countess of Arran",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mary_Stewart,_Countess_of_Arran"
+  },
+  {
+   "id": "aah-hamilton",
+   "title": "James Hamilton, 1st Earl of Arran (1475 to 1529): family events",
+   "type": "web",
+   "repository": "All About History",
+   "url": "https://www.allabouthistory.co.uk/History/Scotland/Person/James-Hamilton-1st-Earl-Arran-1475-1529.html"
+  },
+  {
+   "id": "wiki-arran-1",
+   "title": "James Hamilton, 1st Earl of Arran",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/James_Hamilton,_1st_Earl_of_Arran"
+  },
+  {
+   "id": "wiki-chatellerault",
+   "title": "James Hamilton, Duke of Châtellerault",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/James_Hamilton,_Duke_of_Ch%C3%A2tellerault"
+  },
+  {
+   "id": "wiki-marquess-1",
+   "title": "John Hamilton, 1st Marquess of Hamilton",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/John_Hamilton,_1st_Marquess_of_Hamilton"
+  },
+  {
+   "id": "wiki-marquess-2",
+   "title": "James Hamilton, 2nd Marquess of Hamilton",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/James_Hamilton,_2nd_Marquess_of_Hamilton"
+  },
+  {
+   "id": "tt-marquess-2",
+   "title": "James Hamilton, 2nd Marquess of Hamilton (1589 to 1625): family events",
+   "type": "web",
+   "repository": "Twenty Trees",
+   "url": "https://twentytrees.co.uk/HISTORY/Scotland/Person/James-Hamilton-2nd-Marquess-Hamilton-1589-1625.html"
+  },
+  {
+   "id": "wiki-anne-duchess",
+   "title": "Anne Hamilton, 3rd Duchess of Hamilton",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Anne_Hamilton,_3rd_Duchess_of_Hamilton"
+  },
+  {
+   "id": "nts-anne",
+   "title": "Anne, 3rd Duchess of Hamilton (1631 to 1716)",
+   "type": "web",
+   "repository": "National Trust for Scotland",
+   "url": "https://nts.org.uk/stories/anne-3rd-duchess-of-hamilton-1631-1716"
+  },
+  {
+   "id": "wiki-william-duke",
+   "title": "William Hamilton, Duke of Hamilton (born William Douglas)",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/William_Hamilton,_Duke_of_Hamilton"
+  },
+  {
+   "id": "wiki-george-orkney",
+   "title": "George Hamilton, 1st Earl of Orkney",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/George_Hamilton,_1st_Earl_of_Orkney"
+  },
+  {
+   "id": "ur-elizabeth",
+   "title": "Elizabeth Hamilton, Countess of Orkney, mistress of King William III of England",
+   "type": "web",
+   "repository": "Unofficial Royalty",
+   "url": "https://unofficialroyalty.com/elizabeth-hamilton-countess-of-orkney-mistress-of-king-william-iii-of-england"
+  },
+  {
+   "id": "wiki-anne-countess",
+   "title": "Anne O'Brien, 2nd Countess of Orkney",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Anne_O%27Brien,_2nd_Countess_of_Orkney"
+  },
+  {
+   "id": "wiki-inchiquin",
+   "title": "William O'Brien, 4th Earl of Inchiquin",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/William_O%27Brien,_4th_Earl_of_Inchiquin"
+  },
+  {
+   "id": "wiki-mary-3rd",
+   "title": "Mary O'Brien, 3rd Countess of Orkney",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mary_O%27Brien,_3rd_Countess_of_Orkney"
+  },
+  {
+   "id": "wiki-mary-4th",
+   "title": "Mary FitzMaurice, 4th Countess of Orkney",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Mary_FitzMaurice,_4th_Countess_of_Orkney"
+  },
+  {
+   "id": "wiki-thomas-mp",
+   "title": "Thomas Fitzmaurice (MP)",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/Thomas_Fitzmaurice_(MP)"
+  },
+  {
+   "id": "wiki-kirkwall",
+   "title": "John FitzMaurice, Viscount Kirkwall",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/John_FitzMaurice,_Viscount_Kirkwall"
+  },
+  {
+   "id": "wiki-shelburne-1",
+   "title": "John Petty, 1st Earl of Shelburne",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/John_Petty,_1st_Earl_of_Shelburne"
+  },
+  {
+   "id": "wiki-lansdowne",
+   "title": "William Petty, 2nd Earl of Shelburne (1st Marquess of Lansdowne)",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/William_Petty,_2nd_Earl_of_Shelburne"
+  },
+  {
+   "id": "britannica-lansdowne",
+   "title": "William Petty-Fitzmaurice, 1st marquess of Lansdowne",
+   "type": "web",
+   "repository": "Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/print/article/329994"
+  },
+  {
+   "id": "wiki-raf-tura",
+   "title": "RAF Tura",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/RAF_Tura"
+  },
+  {
+   "id": "ctx-blitz",
+   "title": "Black Saturday: the first day of the Blitz",
+   "type": "context",
+   "repository": "London Museum",
+   "url": "https://www.londonmuseum.org.uk/collections/london-stories/black-saturday-first-day-blitz/"
+  },
+  {
+   "id": "ctx-pied-piper",
+   "title": "The Blitz (including Operation Pied Piper)",
+   "type": "context",
+   "repository": "Encyclopaedia Britannica",
+   "url": "https://www.britannica.com/event/the-Blitz"
+  }
+ ]
+}

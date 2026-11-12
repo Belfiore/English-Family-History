@@ -7,7 +7,8 @@
  * unsourced unless labelled unverified or family tradition; no em dashes; living people
  * show no dates or places; the withheld family name appears nowhere; no card text
  * overflows at 1440, 1024 and 390 px; no page errors; every connector starts and ends on
- * the right card and never crosses another card; every file path and every #/person/
+ * the right card and never crosses another card; the one disputed parent link is drawn and labelled;
+ * every file path and every #/person/
  * route resolves; the lightbox; search across name variants; the pinned story button,
  * expanding in place, arrows and previous/next; the relationship finder, including a
  * real drag; text and line contrast; and every internal link on every page.
@@ -172,11 +173,14 @@ const ok = (m) => console.log('  ok   ' + m);
                 t.D.people.forEach(p => {
                     const r = rects[p.id];
                     const inside = frames.some(f => { const fx = +f.getAttribute('x'), fy = +f.getAttribute('y'), fw = +f.getAttribute('width'), fh = +f.getAttribute('height'); return r.x >= fx && r.y >= fy && r.x + r.w <= fx + fw && r.y + r.h <= fy + fh; });
-                    if (!!p.region !== inside) out.push(`${p.id} is ${inside ? 'inside' : 'outside'} the Orkney frame`);
+                    if (frames.length && !!p.region !== inside) out.push(`${p.id} is ${inside ? 'inside' : 'outside'} the Orkney frame`);
                 });
+                // the disputed link is drawn, dashed, and labelled on the canvas
+                const disputed = document.querySelectorAll('#links path.ln--disputed').length, flags = Array.from(document.querySelectorAll('#links text.link-flag')).map(t => t.textContent);
+                if (disputed !== 1 || flags.length !== 1 || flags[0] !== 'Disputed link') out.push(`expected one labelled disputed link, found ${disputed} lines and ${flags.length} labels`);
                 return { out, n, frames: frames.length };
             });
-            if (conn.out.length) conn.out.forEach(o => fail('connector: ' + o)); else ok(`all ${conn.n} connectors attach to the right cards and cross no card; the Orkney group sits in its own frame`);
+            if (conn.out.length) conn.out.forEach(o => fail('connector: ' + o)); else ok(`all ${conn.n} connectors attach to the right cards and cross no card; the disputed Henry Warrender to Edward Dixon link is drawn dashed and labelled`);
 
             const missing = await page.evaluate(async (list) => {
                 const out = [];
@@ -234,9 +238,12 @@ const ok = (m) => console.log('  ok   ' + m);
                     ['robert-belfiore', 'patricia-andrews', 'mother-in-law'], ['max-austin', 'lizzie-eley', 'partner'],
                     ['cecil-8th', 'edmond-7th', '1st cousin twice removed'], ['sebastian-belfiore', 'alex-belfiore', 'brother'],
                     ['venetia-austin', 'amanda-belfiore', 'sister'], ['reg-fitzmaurice', 'mrs-r-fitzmaurice', 'wife'],
-                    ['kirkwall', 'lansdowne', 'uncle'], ['george-orkney', 'james-ii', '6× great-grandfather']];
+                    ['kirkwall', 'lansdowne', 'uncle'], ['george-orkney', 'james-ii', '6× great-grandfather'],
+                    ['sebastian-belfiore', 'james-ii', '17× great-grandfather'], ['sebastian-belfiore', 'henry-warrender', '3× great-grandfather'],
+                    ['patricia-andrews', 'edmond-7th', 'great-uncle'], ['patricia-andrews', 'cecil-8th', '3rd cousin'], ['amanda-belfiore', 'cecil-8th', '3rd cousin once removed']];
                 want.forEach(([a, b, l]) => { const g = r(a, b); if (g !== l) out.push(`${a} -> ${b}: "${g}", expected "${l}"`); });
-                if (t.relInfo('sebastian-belfiore', 'james-ii').kind !== 'none') out.push('James II should have no recorded link to Sebastian');
+                ['james-ii', 'edmond-7th', 'cecil-8th', 'henry-warrender'].forEach(id => { const notes = t.relNotes(t.relPath('sebastian-belfiore', id), t.relInfo('sebastian-belfiore', id)).join(' '); if (!/is disputed\. The 1890 London Gazette/.test(notes)) out.push(`Sebastian -> ${id}: the disputed link is not flagged (${notes})`); });
+                if (t.relNotes(t.relPath('sebastian-belfiore', 'patricia-andrews'), t.relInfo('sebastian-belfiore', 'patricia-andrews')).some(n => /disputed/.test(n))) out.push('Sebastian -> Patricia should not mention the disputed link');
                 if (t.relInfo('sebastian-belfiore', 'edith-madeleine-fitzmaurice').kind !== 'none') out.push('Edith should have no recorded link to Sebastian');
                 let n = 0;
                 t.D.people.forEach(a => t.D.people.forEach(b => { if (a.id === b.id) return; const i = t.relInfo(a.id, b.id); n++; if (i.kind !== 'none' && !i.label) out.push(`${a.id} -> ${b.id}: no label`); if (i.kind !== 'none' && !t.relPath(a.id, b.id)) out.push(`${a.id} -> ${b.id}: no path`); }));

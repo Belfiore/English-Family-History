@@ -37,7 +37,7 @@ Gaps in the inputs:
 
 Living people are shown with name and relationship only. For them the table says only whether the old tree showed a birth year, without repeating it. None is shown on the new canvas.
 
-"Where" is the part of the canvas the person sits in. **Family** is Sebastian's proven family. **Kin frame** is the dashed group beside Edward Dixon FitzMaurice for people whose place in the family is not known. **Orkney frame** is the separate framed group for the Hamiltons and the Earls of Orkney, which has no proven link to the family (see B1).
+"Where" is the part of the canvas the person sits in. **Family** is Sebastian's proven family. **Kin frame** is the dashed group beside Edward Dixon FitzMaurice for people whose place in the family is not known. **Orkney line** marks the Hamiltons and the Earls of Orkney, who connect to the family only through the disputed step from Henry Warrender to Edward Dixon (see B1). In the first version they were drawn in a separate frame; they are now joined to the tree by a dashed line marked "Disputed link".
 
 | Person | id | Where | Old tree (family-tree-classic.html) | Named on pages | Now shown | Sources cited | Media | Confidence | Profile |
 |---|---|---|---|---|---|---|---|---|---|
@@ -68,39 +68,39 @@ Living people are shown with name and relationship only. For them the table says
 | Mollie Wells | mollie-wells | family | no dates | classic | living (dates withheld) | 1 | 0 | confirmed | thin |
 | Enzo Belfiore | enzo-belfiore | family | no dates | classic | living (dates withheld) | 1 | 0 | confirmed | thin |
 | Violet Belfiore | violet-belfiore | family | no dates | classic | living (dates withheld) | 1 | 0 | confirmed | thin |
-| James II of Scotland | james-ii | Orkney frame | 1430 to 1460 | index, crest, classic | 1430 to 1460 | 4 | 3 | confirmed | moderate |
-| Mary Stewart | mary-stewart | Orkney frame | c.1433 to 1465 | index, crest, classic | 1453 to 1488 | 5 | 1 | confirmed | moderate |
-| James, 1st Lord Hamilton | james-hamilton-1st-lord | Orkney frame | c.1415 to 1479 | index, crest, classic | ~1415 to 1479 | 4 | 1 | confirmed | moderate |
-| James Hamilton, 1st Earl of Arran | arran-1 | Orkney frame | c.1477 to 1529 | index, crest, classic | ~1475 to 1529 | 5 | 0 | confirmed | moderate |
-| James Hamilton, Duke of Châtellerault | chatellerault | Orkney frame | c.1415 to 1479 | index, crest, classic | ~1516 to 1575 | 4 | 0 | confirmed | moderate |
-| John Hamilton, 1st Marquess of Hamilton | marquess-1 | Orkney frame | not on old tree | crest, classic | ~1540 to 1604 | 4 | 0 | confirmed | thin |
-| James Hamilton, 2nd Marquess of Hamilton | marquess-2 | Orkney frame | c.1415 to 1479 | index, crest, classic | 1589 to 1625 | 4 | 0 | confirmed | thin |
-| James Hamilton, 1st Duke of Hamilton | duke-1 | Orkney frame | c.1415 to 1479 | index, crest, classic | 1606 to 1649 | 4 | 3 | confirmed | moderate |
-| Anne, 3rd Duchess of Hamilton | anne-duchess | Orkney frame | 1631 to 1716 | crest, classic | 1632 to 1716 | 6 | 1 | confirmed | moderate |
-| William Douglas, Duke of Hamilton | william-douglas | Orkney frame | not on old tree | crest, classic | 1634 to 1694 | 5 | 0 | confirmed | moderate |
-| George Hamilton, 1st Earl of Orkney | george-orkney | Orkney frame | 1666 to 1737 | index, crest, classic | 1666 to 1737 | 4 | 5 | confirmed | moderate |
-| Elizabeth Villiers, Countess of Orkney | elizabeth-villiers | Orkney frame | c.1657 to 1733 | index, crest, classic | ~1657 to 1733 | 5 | 2 | confirmed | moderate |
-| Anne O'Brien, 2nd Countess of Orkney | anne-countess | Orkney frame | d. 1756 | crest, classic | 1696 to 1756 | 5 | 0 | confirmed | moderate |
-| William O'Brien, 4th Earl of Inchiquin | william-obrien-inchiquin | Orkney frame | not on old tree | classic | ~1700 to 1777 | 4 | 0 | confirmed | thin |
-| Mary O'Brien, 3rd Countess of Orkney | mary-3rd | Orkney frame | not on old tree | crest, classic | ~1721 to 1791 | 4 | 0 | confirmed | moderate |
-| John Petty, 1st Earl of Shelburne | john-petty-shelburne | Orkney frame | not on old tree | classic | 1706 to 1761 | 5 | 0 | confirmed | moderate |
-| Mary FitzMaurice, 4th Countess of Orkney | mary-4th | Orkney frame | not on old tree | ron-egypt, classic | 1755 to 1831 | 6 | 0 | confirmed | moderate |
-| Thomas FitzMaurice | thomas-fitzmaurice-mp | Orkney frame | 1803 to 1877 | crest, classic | 1742 to 1793 | 5 | 0 | confirmed | moderate |
-| William Petty, Lord Shelburne | lansdowne | Orkney frame | 1737 to 1805 | index, classic | 1737 to 1805 | 5 | 2 | confirmed | moderate |
-| John FitzMaurice, Viscount Kirkwall | kirkwall | Orkney frame | not on old tree | none | 1778 to 1820 | 4 | 0 | confirmed | moderate |
-| Thomas FitzMaurice, 5th Earl of Orkney | earl-5 | Orkney frame | 1803 to 1877 | crest, classic | 1803 to 1877 | 5 | 1 | confirmed | moderate |
-| George FitzMaurice, 6th Earl of Orkney | george-6th | Orkney frame | not on old tree | classic | 1827 to 1889 | 3 | 1 | confirmed | moderate |
-| Henry Warrender FitzMaurice | henry-warrender | Orkney frame | 1828 to 1875 | index, crest, classic | 1828 to 1875 | 4 | 0 | confirmed | moderate |
-| Frederick O'Bryen FitzMaurice | frederick-obryen | Orkney frame | not on old tree | none | 1830 to 1867 | 4 | 0 | confirmed | moderate |
-| Edmond FitzMaurice, 7th Earl of Orkney | edmond-7th | Orkney frame | 1867 to 1951 | index | 1867 to 1951 | 8 | 3 | confirmed | full |
-| Connie Gilchrist, Countess of Orkney | connie | Orkney frame | 1865 to 1946 | index, crest, classic | 1865 to 1946 | 5 | 9 | confirmed | moderate |
-| Lady Mary Gosling | lady-mary-fitzmaurice | Orkney frame | not on old tree | none | 1903 to 1950 | 6 | 0 | confirmed | moderate |
-| Douglas Commerel Menzies FitzMaurice | douglas-commerel-menzies | Orkney frame | not on old tree | none | 1861 to ? | 4 | 0 | confirmed | thin |
-| Douglas Frederick Harold FitzMaurice | douglas-frederick-harold | Orkney frame | not on old tree | none | 1890 to 1937 | 4 | 0 | confirmed | moderate |
-| Dorothy FitzMaurice | dorothy-dickie | Orkney frame | not on old tree | none | ? to ? | 4 | 0 | confirmed | moderate |
-| Douglas Hubert FitzMaurice | douglas-hubert | Orkney frame | not on old tree | none | 1916 to 1942 | 3 | 0 | confirmed | thin |
-| Cecil FitzMaurice, 8th Earl of Orkney | cecil-8th | Orkney frame | 1919 to 1998 | none | 1919 to 1998 | 9 | 3 | confirmed | full |
-| Rose FitzMaurice, Countess of Orkney | rose-silley | Orkney frame | not on old tree | none | ? to 1995 | 4 | 1 | confirmed | moderate |
+| James II of Scotland | james-ii | Orkney line | 1430 to 1460 | index, crest, classic | 1430 to 1460 | 4 | 3 | confirmed | moderate |
+| Mary Stewart | mary-stewart | Orkney line | c.1433 to 1465 | index, crest, classic | 1453 to 1488 | 5 | 1 | confirmed | moderate |
+| James, 1st Lord Hamilton | james-hamilton-1st-lord | Orkney line | c.1415 to 1479 | index, crest, classic | ~1415 to 1479 | 4 | 1 | confirmed | moderate |
+| James Hamilton, 1st Earl of Arran | arran-1 | Orkney line | c.1477 to 1529 | index, crest, classic | ~1475 to 1529 | 5 | 0 | confirmed | moderate |
+| James Hamilton, Duke of Châtellerault | chatellerault | Orkney line | inside the "Hamilton Succession" group card (c.1530 to 1630) | index, crest, classic | ~1516 to 1575 | 4 | 0 | confirmed | moderate |
+| John Hamilton, 1st Marquess of Hamilton | marquess-1 | Orkney line | inside the "Hamilton Succession" group card (c.1530 to 1630) | crest, classic | ~1540 to 1604 | 4 | 0 | confirmed | moderate |
+| James Hamilton, 2nd Marquess of Hamilton | marquess-2 | Orkney line | inside the "Hamilton Succession" group card (c.1530 to 1630) | index, crest, classic | 1589 to 1625 | 4 | 0 | confirmed | moderate |
+| James Hamilton, 1st Duke of Hamilton | duke-1 | Orkney line | inside the "Hamilton Succession" group card (c.1530 to 1630) | index, crest, classic | 1606 to 1649 | 4 | 3 | confirmed | moderate |
+| Anne, 3rd Duchess of Hamilton | anne-duchess | Orkney line | 1631 to 1716 | crest, classic | 1632 to 1716 | 6 | 1 | confirmed | moderate |
+| William Douglas, Duke of Hamilton | william-douglas | Orkney line | not on old tree | crest, classic | 1634 to 1694 | 5 | 0 | confirmed | moderate |
+| George Hamilton, 1st Earl of Orkney | george-orkney | Orkney line | 1666 to 1737 | index, crest, classic | 1666 to 1737 | 4 | 5 | confirmed | moderate |
+| Elizabeth Villiers, Countess of Orkney | elizabeth-villiers | Orkney line | c.1657 to 1733 | index, crest, classic | ~1657 to 1733 | 5 | 2 | confirmed | moderate |
+| Anne O'Brien, 2nd Countess of Orkney | anne-countess | Orkney line | d. 1756 | crest, classic | 1696 to 1756 | 5 | 0 | confirmed | moderate |
+| William O'Brien, 4th Earl of Inchiquin | william-obrien-inchiquin | Orkney line | not on old tree | classic | ~1700 to 1777 | 4 | 0 | confirmed | moderate |
+| Mary O'Brien, 3rd Countess of Orkney | mary-3rd | Orkney line | inside the "O'Brien to FitzMaurice succession" group card (c.1756 to 1831) | crest, classic | ~1721 to 1791 | 4 | 0 | confirmed | moderate |
+| John Petty, 1st Earl of Shelburne | john-petty-shelburne | Orkney line | not on old tree | classic | 1706 to 1761 | 5 | 0 | confirmed | moderate |
+| Mary FitzMaurice, 4th Countess of Orkney | mary-4th | Orkney line | inside the "O'Brien to FitzMaurice succession" group card (c.1756 to 1831) | ron-egypt, classic | 1755 to 1831 | 6 | 0 | confirmed | moderate |
+| Thomas FitzMaurice | thomas-fitzmaurice-mp | Orkney line | inside the "O'Brien to FitzMaurice succession" group card (c.1756 to 1831) | crest, classic | 1742 to 1793 | 5 | 0 | confirmed | moderate |
+| William Petty, Lord Shelburne | lansdowne | Orkney line | 1737 to 1805 | index, classic | 1737 to 1805 | 5 | 2 | confirmed | moderate |
+| John FitzMaurice, Viscount Kirkwall | kirkwall | Orkney line | inside the "O'Brien to FitzMaurice succession" group card (c.1756 to 1831) | none | 1778 to 1820 | 4 | 0 | confirmed | moderate |
+| Thomas FitzMaurice, 5th Earl of Orkney | earl-5 | Orkney line | 1803 to 1877 | crest, classic | 1803 to 1877 | 5 | 1 | confirmed | moderate |
+| George FitzMaurice, 6th Earl of Orkney | george-6th | Orkney line | not on old tree | classic | 1827 to 1889 | 3 | 1 | confirmed | moderate |
+| Henry Warrender FitzMaurice | henry-warrender | Orkney line | 1828 to 1875 | index, crest, classic | 1828 to 1875 | 4 | 0 | confirmed | moderate |
+| Frederick O'Bryen FitzMaurice | frederick-obryen | Orkney line | not on old tree | none | 1830 to 1867 | 4 | 0 | confirmed | moderate |
+| Edmond FitzMaurice, 7th Earl of Orkney | edmond-7th | Orkney line | 1867 to 1951 | index | 1867 to 1951 | 8 | 3 | confirmed | full |
+| Connie Gilchrist, Countess of Orkney | connie | Orkney line | 1865 to 1946 | index, crest, classic | 1865 to 1946 | 5 | 9 | confirmed | moderate |
+| Lady Mary Gosling | lady-mary-fitzmaurice | Orkney line | not on old tree | none | 1903 to 1950 | 6 | 0 | confirmed | moderate |
+| Douglas Commerel Menzies FitzMaurice | douglas-commerel-menzies | Orkney line | not on old tree | none | 1861 to ? | 4 | 0 | confirmed | moderate |
+| Douglas Frederick Harold FitzMaurice | douglas-frederick-harold | Orkney line | not on old tree | none | 1890 to 1937 | 4 | 0 | confirmed | moderate |
+| Dorothy FitzMaurice | dorothy-dickie | Orkney line | not on old tree | none | ? to ? | 4 | 0 | confirmed | moderate |
+| Douglas Hubert FitzMaurice | douglas-hubert | Orkney line | not on old tree | none | 1916 to 1942 | 3 | 0 | confirmed | moderate |
+| Cecil FitzMaurice, 8th Earl of Orkney | cecil-8th | Orkney line | 1919 to 1998 | none | 1919 to 1998 | 9 | 3 | confirmed | full |
+| Rose FitzMaurice, Countess of Orkney | rose-silley | Orkney line | not on old tree | none | ? to 1995 | 4 | 1 | confirmed | moderate |
 
 ### Media and who it is attached to
 
@@ -200,9 +200,9 @@ The records found for this revision contradict it:
 - On 23 April 1890 the London Gazette (issue 26051, page 2823) printed a royal warrant giving the rank of an earl's children to the brother and sister of Edmond Walter, Earl of Orkney. It names only Alexander Edmond Fitzmaurice and Isabella Emily, wife of John Burnham Garrett, and calls Edmond the "eldest surviving son and heir". (`gazette-1890`)
 - Edward Dixon was alive after 1890: the beach snapshot shows him with Reg and Bob as small boys, and the 2026 photo analysis dates it to about 1905 to 1920. Had he been a legitimate son of Henry Warrender, the warrant would have named him, and if older than Edmond he would have been Earl himself.
 
-**Recommendation:** treat the Orkney link as unproven. The new canvas shows the Hamiltons and the Earls of Orkney in their own frame, labelled "No proven link to this family", with no line drawn to Edward Dixon, so the relationship finder reports no recorded connection between Sebastian and James II. Update notes were added beside the claim on the home page and the crest page. **Confidence: high** that Edward Dixon was not a legitimate son of Henry Warrender. A connection to some other branch of the FitzMaurice family, or an illegitimate one, is not ruled out; nothing for or against it has been found. The quickest test is Edward Dixon's own birth or baptism record and his entry in Crockford's Clerical Directory, which gives the year and place of birth.
+**Recommendation:** treat the Orkney link as unproven. The first version of the canvas showed the Orkney line in a separate frame with no line to the family. At Seb's request (12 November 2026) the link is now drawn: Henry Warrender FitzMaurice is shown as Edward Dixon's father, with a dashed line labelled "Disputed link" on the canvas, an "unverified" link in the data, and a note in the relationship finder on every relationship that runs through it (for example, James II is Sebastian's 17× great-grandfather, flagged as disputed). The rest of Sebastian's direct line keeps the stronger styling; the Orkney ancestors above the disputed step do not. Update notes were added beside the claim on the home page and the crest page. **Confidence: high** that Edward Dixon was not a legitimate son of Henry Warrender. A connection to some other branch of the FitzMaurice family, or an illegitimate one, is not ruled out; nothing for or against it has been found. The quickest test is Edward Dixon's own birth or baptism record and his entry in Crockford's Clerical Directory, which gives the year and place of birth.
 
-Everything on the earlier pages that rests on this link is affected: "Cecil is Amanda's 3rd cousin once removed", "Your ancestor about 5 generations back" (the 5th Earl), "Sebastian is approximately 15 generations removed from King James II", and the classic tree's relationship captions for every Orkney person.
+Everything on the earlier pages that rests on this link depends on the disputed step: "Cecil is Amanda's 3rd cousin once removed" (the canvas agrees, if the link holds), "Your ancestor about 5 generations back" (the 5th Earl is six generations back from Sebastian, if the link holds), "Sebastian is approximately 15 generations removed from King James II" (19, if the link holds), and the classic tree's relationship captions for every Orkney person.
 
 ### People and identity
 
@@ -292,7 +292,8 @@ These profiles are short because almost nothing is recorded, not because sources
 - `family-tree.html` is now the interactive canvas, ported from the Belfiore & Circelli site with the same layout, connectors, panel, profile, lightbox and relationship finder. Only the design (the FitzMaurice & Andrews burgundy, navy, cream and gold, with Cinzel, Cormorant Garamond and EB Garamond) and the data changed.
 - Additions needed for this family, all driven by `people.json` so the behaviour stays the same elsewhere:
   - `layoutJoin`: a person with parents on the tree drawn beside a spouse who also has parents on the tree (Ron beside Pat; Thomas FitzMaurice MP beside Mary, 4th Countess), with a connector from his own parents.
-  - `meta.regions`: the framed Orkney group, drawn as a labelled dashed frame.
+  - `meta.regions`: an optional labelled frame around a group of people. It was used for the Orkney line in the first version and is now empty.
+  - `parentLinkNote`: a parent link that the family tells but a record disputes. It is drawn dashed in burgundy with a "Disputed link" label, and the relationship finder explains the dispute on any relationship that runs through it. Only Edward Dixon's link to Henry Warrender uses it.
   - `meta.rootOrder`, `meta.kinAnchor`, `meta.kinLabel`, `meta.initialView`, `meta.directLineLabel`, `meta.familyLabel` and `meta.regionKicker`, for labels that were hard-coded for the Italian family.
   - Partners (Lizzie Eley, Mollie Wells) are shown with an "&" marker and described as partners in the relationship finder.
   - Short names in the relationship finder no longer turn "Mr H. G. Andrews" into "Mr", and drop trailing commas ("Anne," became "Anne").
@@ -342,19 +343,19 @@ Each is marked "Update, November 2026" and styled as a note, so the original tex
 - the withheld family name appears in no text file on the site except the handoff brief (C);
 - no card text overflows at 1440, 1024 and 390 pixels wide;
 - no page errors at any width;
-- all 56 connectors start and end on the right cards and cross no card; every child has exactly one incoming line, starting at a parent; every Orkney person sits inside the frame and no one else does;
+- all connectors start and end on the right cards and cross no card; every child has exactly one incoming line, starting at a parent; exactly one disputed link is drawn, dashed and labelled;
 - all 149 image and data paths resolve, and all 60 `#/person/` routes open the right profile, with alt text on every image and every footnote target present;
 - the lightbox opens the album's dedication page with its transcription beside it;
 - search finds people by name variants ("Herb.", "Ginger", "Fitzmaurice", "Seb");
 - the "Read full story" button stays visible at the bottom of the panel, expands the panel in place (to over 70 per cent of the screen on desktop, full screen on phones), and the profile has every section; left and right arrows move in reading order, up goes to a parent and down to a child, previous and next show names, and Esc steps back to the summary and then closes;
-- relationship labels for sixteen test pairs (for example Sebastian to Reg, great-grandfather; Sebastian to Bob, great-great-uncle; Cecil to Edmond, 1st cousin twice removed; Sebastian to James II, no recorded link), and every one of the 3,540 ordered pairs resolves to a label and a path;
+- relationship labels for twenty test pairs (for example Sebastian to Reg, great-grandfather; Sebastian to Bob, great-great-uncle; Cecil to Edmond, 1st cousin twice removed; Sebastian to James II, 17× great-grandfather; Patricia to Cecil, 3rd cousin), every relationship through the disputed step says it is disputed and why, and every one of the 3,540 ordered pairs resolves to a label and a path;
 - a real mouse drag from Sebastian's dot onto Robert shows the live label and line and then "Robert Belfiore is Sebastian's father."; R, then an arrow, then Enter, does the same from the keyboard;
 - contrast, measured on the rendered page: 417 text elements meet WCAG AA (4.5 to 1, or 3 to 1 for large text), and every connector meets 3 to 1 against the canvas (the lightest, the marriage bar, is 3.5 to 1; ordinary lines are 4.0 to 1; the direct line is 8.9 to 1);
 - every internal link on all six pages resolves.
 
 ## F. Decisions for Seb
 
-1. **The Orkney line.** It is now shown in its own frame, marked as having no proven link. Options: keep it like that; take it off the canvas until a link is found; or keep it but also take it off the home page's "Key Discoveries". The home page and crest page still tell the story as if the link were real, with update notes beside it. Recommendation: keep it framed on the canvas, and rewrite the home page and crest page introductions once you have decided.
+1. **The Orkney line.** Decided on 12 November 2026: draw the link, marked as disputed. Still open: the home page and crest page tell the story as if the link were proven, with update notes beside it. Do you want their introductions reworded to match the canvas?
 2. **The bow tie portrait.** Is it Reg? If anyone can confirm it, the profile can say so; if not, the caption on the home page should probably change.
 3. **Babs.** She is shown as Reg's sister (Sebastian's great-great-aunt), as earlier pages had her. Amanda calls her "my auntie", which families often used for a great-aunt. Is that right, and does anyone know her real first name?
 4. **Edith Madeleine.** Does anyone know whether she was Reg's sister, Edward Dixon's sister, or someone else?

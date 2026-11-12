@@ -95,7 +95,7 @@
          'relLayer', 'relGlow', 'relLine', 'relStart', 'relRing', 'relEnd', 'relGrad', 'relBubble', 'relPop', 'drPrev', 'drNext', 'drPrevName', 'drNextName', 'drPos', 'drExpand', 'drRead', 'drReadTxt', 'drEscTxt',
          'lightbox', 'lbImg', 'lbStage', 'lbSide', 'lbStrip', 'lbTitle', 'lbIn', 'lbOut', 'lbReset', 'lbOpen', 'lbClose'].forEach(function (k) { el[k] = $(k); });
         el.app = $('app');
-        Promise.all([fetch('data/people.json').then(function (r) { return r.json(); }), fetch('data/sources.json').then(function (r) { return r.json(); })])
+        Promise.all([fetch('data/people.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }), fetch('data/sources.json', { cache: 'no-cache' }).then(function (r) { return r.json(); })])
             .then(function (res) { init(res[0], res[1]); })
             .catch(function (e) {
                 el.viewport.innerHTML = '<p class="tc-noscript">The family data could not be loaded (' + esc(e.message) + '). The <a href="family-tree.html">list view</a> still works.</p>';
@@ -430,8 +430,12 @@
                         var my = cp.y + BAR_Y, ex = cp.stackCol ? cp.x : cp.x + CW;
                         d = 'M' + x0 + ' ' + y0 + 'V' + busY + 'H' + u.spineX + 'V' + my + 'H' + ex;
                     }
-                    var path = svg('path', { d: d, class: 'ln' + (direct ? ' ln--direct' : '') + (dashed ? ' ln--dashed' : '') }, direct ? gDirect : gBack);
+                    var path = svg('path', { d: d, class: 'ln' + (direct ? ' ln--direct' : '') + (dashed ? ' ln--dashed' : '') + (c.parentLinkNote ? ' ln--disputed' : '') }, direct ? gDirect : gBack);
                     pathEls.push({ el: path, union: u, child: c.id });
+                    if (c.parentLinkNote) {
+                        var flag = svg('text', { x: cx + 8, y: busY + (cp.y - busY) / 2 + 4, class: 'link-flag' }, gBack);
+                        flag.textContent = 'Disputed link';
+                    }
                 });
             });
         });
@@ -1065,7 +1069,8 @@
         for (var i = 1; i < path.length; i++) {
             var u = D.byId[path[i - 1].id], v = D.byId[path[i].id], t = path[i].type;
             var child = t === 'parent' ? u : t === 'child' ? v : null;
-            if (child && child.parentLinkConfidence && child.parentLinkConfidence !== 'confirmed') notes.push(child.displayName + "'s link to " + (child === u ? v : u).displayName + ' is ' + child.parentLinkConfidence + '.');
+            if (child && child.parentLinkNote) notes.push(child.displayName + "'s link to " + (child === u ? v : u).displayName + ' is disputed. ' + child.parentLinkNote);
+            else if (child && child.parentLinkConfidence && child.parentLinkConfidence !== 'confirmed') notes.push(child.displayName + "'s link to " + (child === u ? v : u).displayName + ' is ' + child.parentLinkConfidence + '.');
         }
         path.slice(1, -1).forEach(function (s) {
             var p = D.byId[s.id];
@@ -1860,5 +1865,5 @@
     }
 
     // expose for tests
-    window.__tree = { L: L, D: D, S: S, R: R, select: select, centerOn: centerOn, fitView: fitView, relInfo: relInfo, relPath: relPath, showRelation: showRelation, CW: CW, CH: CH };
+    window.__tree = { L: L, D: D, S: S, R: R, select: select, centerOn: centerOn, fitView: fitView, relInfo: relInfo, relPath: relPath, relNotes: relNotes, showRelation: showRelation, CW: CW, CH: CH };
 })();

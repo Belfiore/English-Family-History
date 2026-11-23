@@ -891,6 +891,54 @@
    "repository": "https://www.findagrave.com/memorial/214209661",
    "date": "1928-06-07",
    "note": "Gives born 21 October 1872 and died 7 June 1928, Chingford Mount Cemetery. A member photograph of the stone is not republished. The death date is probable."
+  },
+  {
+   "id": "ww1-andrews-file",
+   "title": "WW1 service file, Henry George Andrews, 220072",
+   "type": "military record",
+   "repository": "The National Archives WO 363. Image: Ancestry.com, British Army WW1 service records.",
+   "date": "1915-12-07",
+   "note": "18 pages. Attested 7 December 1915, mobilised 6 November 1916, K Company Army Service Corps, France 9 January 1917 to 6 November 1919, Crystal Palace 5 November 1919, Class Z reserve 3 December 1919. Ministry of Pensions request August 1920. No wound and no pension on the surviving pages. Next of kin Rosina at 23 Sutton Court Road, Plaistow."
+  },
+  {
+   "id": "marriage-index-1863-andrews-field",
+   "title": "GRO marriage index, George Andrews and Alice Field, late 1863",
+   "type": "civil registration",
+   "repository": "GRO marriage index, October to December 1863, Luton, volume 3b, page 1000. Image: Ancestry.com.",
+   "date": "1863",
+   "note": "The only two names on that page of the register."
+  },
+  {
+   "id": "census-1901-ham-farm",
+   "title": "1901 census, Ham Farm, Aldenham",
+   "type": "census",
+   "repository": "TNA RG13 piece 1314 folio 26 page 16, schedule 103. Image: Ancestry.com.",
+   "date": "1901",
+   "note": "Henry and Mary Stacey at Ham Farm, with sons Henry A, Arthur J and Herbert M, daughter Louisa and Arthur E Robinson, and George Hitch."
+  },
+  {
+   "id": "census-1891-high-cross",
+   "title": "1891 census, High Cross, Aldenham",
+   "type": "census",
+   "repository": "TNA RG12 piece 1117 folio 6 page 6, schedule 37. Image: Ancestry.com.",
+   "date": "1891",
+   "note": "George and Alice Andrews with Albert, Rose and Lilie. Kemprow is the next house."
+  },
+  {
+   "id": "census-1901-fanny-boldmere",
+   "title": "1901 census, Fanny M Fitzmaurice, Chester Road, Boldmere",
+   "type": "census",
+   "repository": "TNA RG13 piece 2891 folio 53 page 23, schedule 155. Image: Ancestry.com.",
+   "date": "1901",
+   "note": "Widow, living on her own means, with son Arthur P, granddaughter Mary K Hendrick, and two servants. Died later at The Nest, Chester Road, Erdington."
+  },
+  {
+   "id": "census-1911-caroline-spencer",
+   "title": "1911 census, Caroline Spencer, 6 Cathles Road, Balham Hill",
+   "type": "census",
+   "repository": "TNA RG14 piece 2305, Wandsworth, Streatham, ED 20. Image: Ancestry.com.",
+   "date": "1911",
+   "note": "Probably Edith's mother: widow, 67, born Islington, lodging house keeper, with niece May Cobon. The page does not name Edith."
   }
  ]
 }

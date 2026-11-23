@@ -833,7 +833,7 @@
    "title": "Family testimony, Patricia and Ronald Andrews",
    "type": "family testimony",
    "repository": "Family papers, 2026.",
-   "note": "Patricia Mary FitzMaurice was probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. She has died; the year is not recorded. Ronald Andrews was probably born in the summer of 1921 in the West Ham district and probably died in 2009. No addresses.",
+   "note": "Patricia Mary FitzMaurice was probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. Pat died in 2020 (family). Ronald Andrews was probably born in the summer of 1921 in the West Ham district and he died in 2010 (family). Pat and Ron are buried together in Crowthorne (family). The family confirms Auntie Babs was Eileen Sybil FitzMaurice. No addresses.",
    "date": "2026-11-23"
   },
   {
@@ -963,6 +963,31 @@
    "repository": "The National Archives BT26. Image: Ancestry.com, UK and Ireland Incoming Passenger Lists; image 138 of 190.",
    "date": "1925-03-14",
    "note": "Banon Reg. Fitzmaurice, 20, salesman, 7 North St., Clapham Common. Left Saint John on 6 March. Country of last residence written as ditto, meaning Canada, after about three weeks."
+  },
+  {
+   "id": "family-bob-south-africa",
+   "title": "Family belief, Bob FitzMaurice in South Africa",
+   "type": "family testimony",
+   "repository": "Family papers, 2026.",
+   "date": "2026-11-23",
+   "note": "The family believes Bob stayed in South Africa. No South African record of his later life has been found yet. The only entries under his name in the South African archives catalogue are two undated Cape Supreme Court civil cases he brought against a Raymond William Wilson."
+  },
+  {
+   "id": "family-arthur-cousins-1912",
+   "title": "Family statement, Arthur Edward Cousins",
+   "type": "family testimony",
+   "repository": "Family papers, 2026.",
+   "date": "2026-11-23",
+   "note": "The family has it written down that Arthur Edward Cousins died in 1912, drowned in the Victoria Docks. No inquest report has been found yet."
+  },
+  {
+   "id": "freebmd-arthur-cousins-1912",
+   "title": "FreeBMD death index, Arthur E Cousins, March quarter 1912",
+   "type": "civil registration",
+   "repository": "FreeBMD, www.freebmd.org.uk. Search Deaths, Cousins, Arthur.",
+   "date": "1912",
+   "file": "images/records/1912-q1-arthur-e-cousins-death-index-west-ham-4a-136-freebmd.jpg",
+   "note": "Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March quarter 1912. The age fits Arthur Edward, baptised in 1872. Probably him."
   }
  ]
 }

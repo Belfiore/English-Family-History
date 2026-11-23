@@ -81,7 +81,7 @@ const personData = {
         name: "Auntie Babs",
         subtitle: "Family Member",
         tags: ["Aunt", "Wedding Guest"],
-        description: `Auntie Babs was probably Pat's aunt Eileen Sybil FitzMaurice, Reg's sister. Uncle Leslie beside her was probably her husband, Leslie Hugh Simmons.`
+        description: `Auntie Babs was Pat's aunt Eileen Sybil FitzMaurice (confirmed by the family), Reg's sister. Uncle Leslie beside her was probably her husband, Leslie Hugh Simmons.`
     },
     auntie_may: {
         name: "Auntie May",
@@ -182,9 +182,9 @@ const personData = {
     },
     auntie_babs_sa: {
         name: '"Babs" ,  Auntie Babs',
-        subtitle: "Probably Eileen Sybil",
+        subtitle: "Eileen Sybil FitzMaurice",
         tags: ["South Africa", "Eileen", "Family"],
-        description: `A snapshot of a girl on a verandah is labelled Auntie Babs, South Africa, and the letters Eil are on the front. She was probably Eileen Sybil FitzMaurice. She probably sailed to Cape Town with her mother and brothers in August 1916, aged 8.`
+        description: `A snapshot of a girl on a verandah is labelled Auntie Babs, South Africa, and the letters Eil are on the front. The family confirms she was Eileen Sybil FitzMaurice. She probably sailed to Cape Town with her mother and brothers in August 1916, aged 8.`
     },
     reg: {
         name: "Reg Fitzmaurice",

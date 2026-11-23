@@ -1375,7 +1375,7 @@
    "immigration": null,
    "cardPlace": "Lambeth, then Whitstable",
    "summary": "Reg's brother, called Bob on the family photograph. Probably Edward Robert FitzMaurice, born in the Lambeth district in the spring of 1901.",
-   "story": "The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice.[^photo-labels] Bob is probably Edward Robert Fitzmaurice, mother's maiden name Spencer, registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503.[^gro-indexes] In 1911 he is Edward Robert, aged 9, at school, with his parents at Whitstable.[^census-1911-whitstable] No marriage or death has been tied to him.\n\nHe was probably the boy of 15 who sailed to Cape Town with his mother in August 1916. No later record of him has been found in England. He may have stayed in South Africa.[^passenger-1916-llanstephan]",
+   "story": "The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice.[^photo-labels] Bob is probably Edward Robert Fitzmaurice, mother's maiden name Spencer, registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503.[^gro-indexes] In 1911 he is Edward Robert, aged 9, at school, with his parents at Whitstable.[^census-1911-whitstable] No marriage or death has been tied to him.\n\nHe was probably the boy of 15 who sailed to Cape Town with his mother in August 1916. No later record of him has been found in England.[^passenger-1916-llanstephan] The family believes Bob stayed in South Africa. No South African record of his later life has been found yet; the only entries under his name in the South African archives catalogue are two undated Cape Supreme Court civil cases he brought against a Raymond William Wilson.[^family-bob-south-africa]",
    "timeline": [
     {
      "date": "1901",
@@ -2142,14 +2142,14 @@
     "note": "Family testimony. No home address is published."
    },
    "death": {
-    "date": "2009",
-    "display": "probably 2009",
+    "date": "2010",
+    "display": "2010 (family)",
     "place": null,
     "sourceIds": [
      "family-testimony"
     ],
-    "confidence": "probable",
-    "note": "Family testimony. The day and the place are not published."
+    "confidence": "family tradition",
+    "note": "Family testimony. Pat died in 2020 (family). Pat and Ron are buried together in Crowthorne (family)."
    },
    "residences": [],
    "occupations": [
@@ -2166,8 +2166,8 @@
    ],
    "immigration": null,
    "cardPlace": null,
-   "summary": "Son of Henry George Andrews and Rosina Maud Cousins. Probably born in the summer of 1921 in the West Ham district. He married Patricia Mary FitzMaurice on 11 February 1950. Leading Aircraftman with No. 111 Maintenance Unit at Tura, and art editor of the Tura Times in 1945. He probably died in 2009. Father of Amanda and Venetia.",
-   "story": "Ronald Andrews was probably born in the summer of 1921 in the West Ham district, son of Henry George Andrews and Rosina Maud Cousins, and brother of Herbert William and Sidney George.[^family-testimony] He married Patricia Mary FitzMaurice at St Mary's, Wanstead, on 11 February 1950.[^album-1950] He is the father of Amanda and Venetia.\n\nHis wartime photograph album has its own page. The press card names him Leading Aircraftman R. Andrews, art editor of the Tura Times, the newspaper of No. 111 Maintenance Unit, in 1945.[^ron-album] He probably died in 2009.[^family-testimony] No home address is published.",
+   "summary": "Son of Henry George Andrews and Rosina Maud Cousins. Probably born in the summer of 1921 in the West Ham district. He married Patricia Mary FitzMaurice on 11 February 1950. Leading Aircraftman with No. 111 Maintenance Unit at Tura, and art editor of the Tura Times in 1945. He died in 2010 (family). Father of Amanda and Venetia.",
+   "story": "Ronald Andrews was probably born in the summer of 1921 in the West Ham district, son of Henry George Andrews and Rosina Maud Cousins, and brother of Herbert William and Sidney George.[^family-testimony] He married Patricia Mary FitzMaurice at St Mary's, Wanstead, on 11 February 1950.[^album-1950] He is the father of Amanda and Venetia.\n\nHis wartime photograph album has its own page. The press card names him Leading Aircraftman R. Andrews, art editor of the Tura Times, the newspaper of No. 111 Maintenance Unit, in 1945.[^ron-album] He died in 2010 (family).[^family-testimony] Pat died in 2020 (family). Pat and Ron are buried together in Crowthorne (family). No home address is published.",
    "timeline": [],
    "facts": [],
    "media": [
@@ -2389,21 +2389,21 @@
     "note": "The family remembers Windsor. That is not the registered birthplace. No home address is published."
    },
    "death": {
-    "date": null,
-    "display": "has died; the year is not recorded",
+    "date": "2020",
+    "display": "2020 (family)",
     "place": null,
     "sourceIds": [
      "family-testimony"
     ],
-    "confidence": "probable",
-    "note": "She has died. The year is not on a record used here."
+    "confidence": "family tradition",
+    "note": "Pat died in 2020 (family). Pat and Ron are buried together in Crowthorne (family)."
    },
    "residences": [],
    "occupations": [],
    "immigration": null,
    "cardPlace": null,
-   "summary": "Patricia Mary FitzMaurice, daughter of Baron Reginald FitzMaurice and Lilian Maud Mary Bennett. Probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. She married Ronald Andrews on 11 February 1950. She has died. The year is not recorded. Mother of Amanda and Venetia.",
-   "story": "Patricia Mary Andrews, nee FitzMaurice, was the daughter of Baron Reginald FitzMaurice and Lilian Maud Mary Bennett. She was probably born in the Hammersmith district in early 1929. The family remembers Windsor. That memory is not the registered birthplace.[^family-testimony] She married Ronald Andrews at St Mary's, Wanstead, on 11 February 1950.[^album-1950] She is the mother of Amanda and Venetia.\n\nShe has died. The year is not recorded. Among her papers were two Evening News cuttings about Cecil FitzMaurice, later Earl of Orkney. No home address is published.",
+   "summary": "Patricia Mary FitzMaurice, daughter of Baron Reginald FitzMaurice and Lilian Maud Mary Bennett. Probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. She married Ronald Andrews on 11 February 1950. Pat died in 2020 (family). Pat and Ron are buried together in Crowthorne (family). Mother of Amanda and Venetia.",
+   "story": "Patricia Mary Andrews, nee FitzMaurice, was the daughter of Baron Reginald FitzMaurice and Lilian Maud Mary Bennett. She was probably born in the Hammersmith district in early 1929. The family remembers Windsor. That memory is not the registered birthplace.[^family-testimony] She married Ronald Andrews at St Mary's, Wanstead, on 11 February 1950.[^album-1950] She is the mother of Amanda and Venetia.\n\nPat died in 2020 (family). Pat and Ron are buried together in Crowthorne (family).[^family-testimony] Among her papers were two Evening News cuttings about Cecil FitzMaurice, later Earl of Orkney. No home address is published.",
    "timeline": [],
    "facts": [],
    "media": [
@@ -8672,7 +8672,7 @@
   {
    "id": "eileen-sybil-fitzmaurice",
    "displayName": "Eileen Sybil FitzMaurice",
-   "disambiguator": "called Auntie Babs (probably); Reg's sister",
+   "disambiguator": "called Auntie Babs (confirmed by the family); Reg's sister",
    "givenNames": "Eileen Sybil",
    "surname": "FitzMaurice",
    "sex": "F",
@@ -8760,19 +8760,20 @@
    "occupations": [],
    "immigration": null,
    "cardPlace": "Whitstable, then South Africa",
-   "summary": "Reg's younger sister, probably the girl the family called Auntie Babs. Born late 1907 in the Blean district of Kent, daughter of Edward Dixon and Edith Madeline. She probably sailed to Cape Town in 1916, married Leslie Hugh Simmons at Staines in the summer of 1936, and probably died at Canterbury in early 1996.",
-   "story": "The youngest of Edward Dixon and Edith's children, Eileen was 3 at Whitstable in 1911.[^census-1911-whitstable] She was probably the girl of 8 who sailed to Cape Town with her mother and brothers in August 1916.[^passenger-1916-llanstephan] A snapshot of a girl on a verandah is labelled on the back Auntie Babs, South Africa, and the letters Eil are scratched into the front. She was probably that girl.[^photo-labels] [^beach-snapshots]\n\nShe married Leslie Hugh Simmons, secretary of the Corinth Hockey Club, at Staines in the summer of 1936. The local paper called her the daughter of the late Mr Edward Dixon Fitzmaurice, formerly of Cape Town.[^news-1936-simmons] In 1939 the couple lived at Hayes, close to her brother Reg. Leslie was a rate fixer and motion study engineer.[^register-1939] As Auntie Babs she was at Pat's wedding in 1950, with Uncle Leslie beside her.[^album-1950]\n\nIn 1984 she married Ralph Hallawell in Kent, and she probably died at Canterbury in early 1996, aged 88.[^gro-indexes]",
+   "summary": "Reg's younger sister, called Auntie Babs (confirmed by the family). Born late 1907 in the Blean district of Kent, daughter of Edward Dixon and Edith Madeline. She probably sailed to Cape Town in 1916, married Leslie Hugh Simmons at Staines in the summer of 1936, and probably died at Canterbury in early 1996.",
+   "story": "The youngest of Edward Dixon and Edith's children, Eileen was 3 at Whitstable in 1911.[^census-1911-whitstable] She was probably the girl of 8 who sailed to Cape Town with her mother and brothers in August 1916.[^passenger-1916-llanstephan] A snapshot of a girl on a verandah is labelled on the back Auntie Babs, South Africa, and the letters Eil are scratched into the front. The family confirms she was that girl.[^photo-labels] [^beach-snapshots]\n\nShe married Leslie Hugh Simmons, secretary of the Corinth Hockey Club, at Staines in the summer of 1936. The local paper called her the daughter of the late Mr Edward Dixon Fitzmaurice, formerly of Cape Town.[^news-1936-simmons] In 1939 the couple lived at Hayes, close to her brother Reg. Leslie was a rate fixer and motion study engineer.[^register-1939] As Auntie Babs she was at Pat's wedding in 1950, with Uncle Leslie beside her.[^album-1950]\n\nIn 1984 she married Ralph Hallawell in Kent, and she probably died at Canterbury in early 1996, aged 88.[^gro-indexes]",
    "timeline": [],
    "facts": [
     {
      "label": "Called Auntie Babs",
-     "value": "Probably the girl labelled Auntie Babs, South Africa, and the Auntie Babs at Pat and Ron's wedding. Uncle Leslie beside her was probably her husband, Leslie Hugh Simmons.",
+     "value": "The family confirms she was the girl labelled Auntie Babs, South Africa, and the Auntie Babs at Pat and Ron's wedding. Uncle Leslie beside her was probably her husband, Leslie Hugh Simmons.",
      "sourceIds": [
       "photo-labels",
       "album-1950",
-      "news-1936-simmons"
+      "news-1936-simmons",
+      "family-testimony"
      ],
-     "confidence": "probable"
+     "confidence": "family tradition"
     }
    ],
    "media": [
@@ -11267,13 +11268,23 @@
     "dateQualifier": "about",
     "note": "GRO December quarter 1871, Mile End Old Town, mother Gall."
    },
-   "death": null,
+   "death": {
+    "date": "1912",
+    "display": "probably early 1912, West Ham, aged 40",
+    "place": "West Ham",
+    "sourceIds": [
+     "freebmd-arthur-cousins-1912"
+    ],
+    "confidence": "probable",
+    "dateQualifier": "about",
+    "note": "FreeBMD death index, Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March 1912. Probably him."
+   },
    "residences": [],
    "occupations": [],
    "immigration": null,
    "cardPlace": "West Ham",
-   "summary": "Rosina's eldest brother. Born in late 1871. Baptised in January 1872 at St Peter, London Docks, mother Ann.",
-   "story": "Arthur Edward Cousins, mother's maiden name Gall, was registered in the Mile End Old Town district in the December quarter of 1871.[^gro-cousins-gall] He was baptised on 9 January 1872 at St Peter, London Docks, Stepney. His mother is named as Ann.[^census-cousins]",
+   "summary": "Rosina's eldest brother. Born in late 1871. Baptised in January 1872 at St Peter, London Docks, mother Ann. The death index for early 1912, aged 40, is probably his. The family has it written down that he drowned in the Victoria Docks (family statement).",
+   "story": "Arthur Edward Cousins, mother's maiden name Gall, was registered in the Mile End Old Town district in the December quarter of 1871.[^gro-cousins-gall] He was baptised on 9 January 1872 at St Peter, London Docks, Stepney. His mother is named as Ann.[^census-cousins] The family has it written down that he died in 1912, drowned in the Victoria Docks (family statement).[^family-arthur-cousins-1912] The death index has Arthur E Cousins, aged 40, registered in the West Ham district in early 1912 (January to March quarter), volume 4a, page 136, which fits his age and the docks; probably him.[^freebmd-arthur-cousins-1912] No inquest report has been found yet.",
    "timeline": [],
    "facts": [],
    "media": [],

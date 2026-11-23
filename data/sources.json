@@ -833,7 +833,7 @@
    "title": "Family testimony, Patricia and Ronald Andrews",
    "type": "family testimony",
    "repository": "Family papers, 2026.",
-   "note": "Patricia Mary FitzMaurice was probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. Pat died in 2020 (family). Ronald Andrews was probably born in the summer of 1921 in the West Ham district and he died in 2010 (family). Pat and Ron are buried together in Crowthorne (family). The family confirms Auntie Babs was Eileen Sybil FitzMaurice. No addresses.",
+   "note": "Patricia Mary FitzMaurice was probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. Pat died in 2020 (family). Ronald Andrews was probably born in the summer of 1921 in the West Ham district and he died in 2010 (family). Pat and Ron are buried together in the churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire (family). The family confirms Auntie Babs was Eileen Sybil FitzMaurice. No addresses.",
    "date": "2026-11-23"
   },
   {
@@ -988,6 +988,14 @@
    "date": "1912",
    "file": "images/records/1912-q1-arthur-e-cousins-death-index-west-ham-4a-136-freebmd.jpg",
    "note": "Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March quarter 1912. The age fits Arthur Edward, baptised in 1872. Probably him."
+  },
+  {
+   "id": "st-john-crowthorne-churchyard",
+   "title": "St John the Baptist, Crowthorne, the churchyard",
+   "type": "church",
+   "repository": "St John the Baptist Parish Church, Crowthorne. https://stjohnscrowthorne.co.uk/the-churchyard/",
+   "date": "2026-11-23",
+   "note": "The parish churchyard is at Waterloo Road, Crowthorne, Berkshire. The family states that Ronald and Patricia Andrews are buried there together. The burial itself is family testimony."
   }
  ]
 }

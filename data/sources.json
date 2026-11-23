@@ -988,6 +988,31 @@
    "date": "1912",
    "file": "images/records/1912-q1-arthur-e-cousins-death-index-west-ham-4a-136-freebmd.jpg",
    "note": "Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March quarter 1912. The age fits Arthur Edward, baptised in 1872. Probably him."
+  },
+  {
+   "id": "census-1861-elm-terrace",
+   "title": "1861 census, 2 Elm Terrace, Wandsworth Road",
+   "type": "census",
+   "repository": "The National Archives RG9 piece 371 folio 2, ED 04, schedule 36. Image: Ancestry.com, 1861 England Census.",
+   "date": "1861-04-07",
+   "file": "images/records/1861-turner-falcke-household-battersea-elm-terrace.jpg",
+   "note": "The Turner and Falcke household at 2 Elm Terrace, Wandsworth Road. Published on the Falcke page. Added here so the address directory can cite the census rather than the 1861 marriage."
+  },
+  {
+   "id": "osm-nominatim-2026",
+   "title": "OpenStreetMap Nominatim place search, 23 November 2026",
+   "type": "map",
+   "repository": "OpenStreetMap, nominatim.openstreetmap.org",
+   "date": "2026-11-23",
+   "note": "Used only to place a historic address or a named building on the modern map. Not a source for any family fact."
+  },
+  {
+   "id": "parish-chelsea-falcke-baptisms",
+   "title": "Baptisms of Falcke children, St Luke, Chelsea, 1818 to 1822",
+   "type": "parish register",
+   "repository": "London Church of England Births and Baptisms, St Luke Chelsea. Image: Ancestry.com.",
+   "date": "1818-11-01",
+   "note": "Eliza Caroline (1818) and Henrietta and Jane (1822), children of Wilhelm Gottlob and Elizabeth Falcke of Queen Street, potter. Published on the Falcke page."
   }
  ]
 }

@@ -3,36 +3,36 @@
   "startedFrom": "c8caf1b433acce5be7338533f966281ed12afbee",
   "date": "2026-11-23",
   "counts": {
-   "places": 166,
-   "events": 280,
+   "places": 173,
+   "events": 289,
    "byKind": {
-    "home": 40,
+    "home": 44,
     "military site": 5,
-    "church": 19,
-    "town": 52,
+    "church": 20,
+    "town": 53,
     "workplace": 8,
     "registration district": 18,
     "venue": 4,
     "cemetery": 1,
     "port": 5,
     "hospital": 1,
-    "parish": 4,
+    "parish": 5,
     "country": 2,
     "farm": 2,
     "studio": 4,
     "county": 1
    },
    "byPrecision": {
-    "address": 38,
+    "address": 42,
     "street": 8,
-    "town": 60,
-    "building": 35,
+    "town": 61,
+    "building": 36,
     "registration district": 18,
-    "parish": 4,
+    "parish": 5,
     "country": 2,
     "county": 1
    },
-   "published": 166,
+   "published": 173,
    "newNeedsReview": 0
   }
  },
@@ -3176,6 +3176,30 @@
      ],
      "confidence": "confirmed",
      "familyStatement": false
+    },
+    {
+     "type": "sailed",
+     "personIds": [
+      "edith-madeleine-fitzmaurice",
+      "reg-fitzmaurice",
+      "eileen-sybil-fitzmaurice"
+     ],
+     "date": "Bendigo called at Cape Town on the way to London, arriving 28 December 1923",
+     "dateStart": "1923-12-28",
+     "dateEnd": "1923-12-28",
+     "datePrecision": "day",
+     "factRef": "",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1923-12-28-bendigo-london-arrival-edith-baron-eileen-fitzmaurice-140a-clapham-road.jpg"
+     ],
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "familyStatement": false
     }
    ],
    "status": "published",
@@ -6311,6 +6335,30 @@
      ],
      "confidence": "probable",
      "familyStatement": false
+    },
+    {
+     "type": "sailed",
+     "personIds": [
+      "edith-madeleine-fitzmaurice",
+      "reg-fitzmaurice",
+      "eileen-sybil-fitzmaurice"
+     ],
+     "date": "28 December 1923, Bendigo, from Cape Town and Durban",
+     "dateStart": "1923-12-28",
+     "dateEnd": "1923-12-28",
+     "datePrecision": "day",
+     "factRef": "",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1923-12-28-bendigo-london-arrival-edith-baron-eileen-fitzmaurice-140a-clapham-road.jpg"
+     ],
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false
     }
    ],
    "status": "published",
@@ -6583,7 +6631,7 @@
      "personIds": [
       "bob-fitzmaurice"
      ],
-     "date": "The family believes Bob stayed in South Africa",
+     "date": "The family believed Bob stayed in South Africa, and the records now show that he did",
      "dateStart": "1916-08-16",
      "dateEnd": null,
      "datePrecision": "unknown",
@@ -9607,6 +9655,330 @@
    ],
    "status": "published",
    "noProvenLink": true
+  },
+  {
+   "id": "st-georges-cathedral-cape-town",
+   "name": "St George's Cathedral, Cape Town",
+   "historicName": "St George's Cathedral, Cape Town",
+   "variants": [],
+   "kind": "church",
+   "address": "Wale Street, Cape Town",
+   "modernAddress": "",
+   "precision": "building",
+   "lat": -33.924867,
+   "lng": 18.41942,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. St George's Cathedral, Wale Street, Cape Town.",
+   "uncertaintyMetres": 80,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
+   "significance": "Bob married Eileen Alice Yallop here on 30 October 1925.",
+   "events": [
+    {
+     "type": "married",
+     "personIds": [
+      "bob-fitzmaurice",
+      "eileen-alice-yallop"
+     ],
+     "date": "30 October 1925",
+     "dateStart": "1925-10-30",
+     "dateEnd": "1925-10-30",
+     "datePrecision": "day",
+     "factRef": "bob-fitzmaurice.spouses[0]",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1925-10-30-marriage-edward-robert-fitzmaurice-eileen-alice-yallop-st-georges-cathedral-cape-town.jpg"
+     ],
+     "sourceIds": [
+      "marriage-1925-bob-yallop"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false
+  },
+  {
+   "id": "auleta-three-anchor-bay",
+   "name": "Auleta, Three Anchor Bay",
+   "historicName": "Auleta, Three Anchor Bay",
+   "variants": [
+    "Three Anchor Bay",
+    "Three Anchor Bay, Cape Town"
+   ],
+   "kind": "home",
+   "address": "Auleta, Three Anchor Bay, Cape Town",
+   "modernAddress": "",
+   "precision": "address",
+   "lat": -33.909167,
+   "lng": 18.395556,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Three Anchor Bay, Cape Town. The house named Auleta was not found, so the point is the bay.",
+   "uncertaintyMetres": 2000,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
+   "significance": "Bob, a tramway engineer, lived at Auleta, Three Anchor Bay, when he married in 1925.",
+   "events": [
+    {
+     "type": "lived",
+     "personIds": [
+      "bob-fitzmaurice"
+     ],
+     "date": "1925",
+     "dateStart": "1925-10-30",
+     "dateEnd": "1925-10-30",
+     "datePrecision": "day",
+     "factRef": "bob-fitzmaurice.residences[0]",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1925-10-30-marriage-edward-robert-fitzmaurice-eileen-alice-yallop-st-georges-cathedral-cape-town.jpg"
+     ],
+     "sourceIds": [
+      "marriage-1925-bob-yallop"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false
+  },
+  {
+   "id": "7-bertram-road-sea-point",
+   "name": "7 Bertram Road, Sea Point",
+   "historicName": "7 Bertram Rd, Sea Point",
+   "variants": [
+    "Sea Point, Cape Town"
+   ],
+   "kind": "home",
+   "address": "7 Bertram Road, Sea Point, Cape Town",
+   "modernAddress": "",
+   "precision": "address",
+   "lat": -33.914501,
+   "lng": 18.393255,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Bertram Road, Sea Point. The house number 7 was not matched, so the point is the street.",
+   "uncertaintyMetres": 200,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
+   "significance": "Eileen Alice Yallop lived at 7 Bertram Road, Sea Point, when she married Bob in 1925.",
+   "events": [
+    {
+     "type": "lived",
+     "personIds": [
+      "eileen-alice-yallop"
+     ],
+     "date": "1925",
+     "dateStart": "1925-10-30",
+     "dateEnd": "1925-10-30",
+     "datePrecision": "day",
+     "factRef": "eileen-alice-yallop.residences[0]",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1925-10-30-marriage-edward-robert-fitzmaurice-eileen-alice-yallop-st-georges-cathedral-cape-town.jpg"
+     ],
+     "sourceIds": [
+      "marriage-1925-bob-yallop"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false
+  },
+  {
+   "id": "woodstock-parish-cape-town",
+   "name": "Woodstock parish, Cape Town",
+   "historicName": "parish of Woodstock, Division of the Cape",
+   "variants": [
+    "Woodstock"
+   ],
+   "kind": "parish",
+   "address": "Woodstock, Cape Town",
+   "modernAddress": "",
+   "precision": "parish",
+   "lat": -33.930556,
+   "lng": 18.447222,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Woodstock, Cape Town.",
+   "uncertaintyMetres": 2000,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
+   "significance": "Edward Scott FitzMaurice was baptised in the parish of Woodstock on 25 July 1926.",
+   "events": [
+    {
+     "type": "baptised",
+     "personIds": [
+      "edward-scott-fitzmaurice"
+     ],
+     "date": "25 July 1926",
+     "dateStart": "1926-07-25",
+     "dateEnd": "1926-07-25",
+     "datePrecision": "day",
+     "factRef": "edward-scott-fitzmaurice.birth",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1926-07-25-baptism-edward-scott-fitzmaurice-woodstock-entry-1565-row.jpg"
+     ],
+     "sourceIds": [
+      "baptism-1926-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false
+  },
+  {
+   "id": "17-berkley-street-gardens",
+   "name": "17 Berkley Street, Gardens",
+   "historicName": "17 Berkley St, Gardens, Cape Town",
+   "variants": [
+    "Gardens, Cape Town"
+   ],
+   "kind": "home",
+   "address": "17 Berkley Street, Gardens, Cape Town",
+   "modernAddress": "",
+   "precision": "address",
+   "lat": null,
+   "lng": null,
+   "coordinateMethod": "Not placed: OpenStreetMap Nominatim returned no result for Berkley Street or Berkeley Street, Gardens, Cape Town.",
+   "uncertaintyMetres": null,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
+   "significance": "Bob, Eileen Alice and Edward Scott lived at 17 Berkley Street, Gardens, in 1926. The house number may be 14.",
+   "events": [
+    {
+     "type": "lived",
+     "personIds": [
+      "bob-fitzmaurice",
+      "eileen-alice-yallop",
+      "edward-scott-fitzmaurice"
+     ],
+     "date": "1926. The house number may be 14.",
+     "dateStart": "1926-07-25",
+     "dateEnd": "1926-07-25",
+     "datePrecision": "day",
+     "factRef": "bob-fitzmaurice.residences[1]",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1926-07-25-baptism-edward-scott-fitzmaurice-woodstock-entry-1565-row.jpg"
+     ],
+     "sourceIds": [
+      "baptism-1926-edward-scott"
+     ],
+     "confidence": "probable",
+     "familyStatement": false
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false
+  },
+  {
+   "id": "port-elizabeth",
+   "name": "Port Elizabeth",
+   "historicName": "Port Elizabeth",
+   "variants": [
+    "Gqeberha"
+   ],
+   "kind": "town",
+   "address": "Port Elizabeth, South Africa",
+   "modernAddress": "Gqeberha, Eastern Cape, South Africa. Source: osm-nominatim-2026.",
+   "precision": "town",
+   "lat": -33.96186,
+   "lng": 25.618673,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. The modern name on the map is Gqeberha. The 1981 index says Port Elizabeth.",
+   "uncertaintyMetres": 4000,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
+   "significance": "Bob died at Port Elizabeth on 7 May 1981. The death was registered at Cape Town on 27 May.",
+   "events": [
+    {
+     "type": "died",
+     "personIds": [
+      "bob-fitzmaurice"
+     ],
+     "date": "7 May 1981",
+     "dateStart": "1981-05-07",
+     "dateEnd": "1981-05-07",
+     "datePrecision": "day",
+     "factRef": "bob-fitzmaurice.death",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1981-edward-robert-fitzmaurice-western-cape-deceased-estate-index.jpg"
+     ],
+     "sourceIds": [
+      "estate-1981-bob"
+     ],
+     "confidence": "probable",
+     "familyStatement": false
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false
+  },
+  {
+   "id": "140a-clapham-road",
+   "name": "140A Clapham Road, London",
+   "historicName": "140A Clapham Rd, London S.W.",
+   "variants": [],
+   "kind": "home",
+   "address": "140A Clapham Road, London S.W.",
+   "modernAddress": "",
+   "precision": "address",
+   "lat": 51.478982,
+   "lng": -0.115447,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Clapham Road, London. The house number 140A was not matched, and the number on the list is hard to read, so the point is the street.",
+   "uncertaintyMetres": 200,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
+   "significance": "Edith, Reg and Eileen gave 140A Clapham Road as their address when they landed from the Bendigo on 28 December 1923. The number is hard to read.",
+   "events": [
+    {
+     "type": "lived",
+     "personIds": [
+      "edith-madeleine-fitzmaurice",
+      "reg-fitzmaurice",
+      "eileen-sybil-fitzmaurice"
+     ],
+     "date": "28 December 1923. The number is hard to read.",
+     "dateStart": "1923-12-28",
+     "dateEnd": "1923-12-28",
+     "datePrecision": "day",
+     "factRef": "",
+     "pages": [
+      "reg-sisters.html"
+     ],
+     "recordCrops": [
+      "1923-12-28-bendigo-london-arrival-edith-baron-eileen-fitzmaurice-140a-clapham-road.jpg"
+     ],
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "familyStatement": false
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false
   }
  ]
 }

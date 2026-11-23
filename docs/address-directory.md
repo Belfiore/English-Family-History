@@ -1,39 +1,39 @@
 # Address directory
 
-Started from commit c8caf1b433acce5be7338533f966281ed12afbee on 23 November 2026, then brought up to date with the approved street readings and the Crowthorne churchyard. Living people are left out. The Earls of Orkney and the Hamiltons are in their own section.
+Started from commit c8caf1b433acce5be7338533f966281ed12afbee on 23 November 2026, and brought up to date with Bob's South African records. Living people are left out, including Lawrence John and Derek Anthony. The Earls of Orkney and the Hamiltons are in their own section.
 
 ## 1. Summary
 
-Places: 166. Events: 280. Already published: 166. New, needs review: 0.
+Places: 173. Events: 289. Already published: 173. New, needs review: 0.
 
 | Kind | Places |
 | --- | --- |
 | cemetery | 1 |
-| church | 19 |
+| church | 20 |
 | country | 2 |
 | county | 1 |
 | farm | 2 |
-| home | 40 |
+| home | 44 |
 | hospital | 1 |
 | military site | 5 |
-| parish | 4 |
+| parish | 5 |
 | port | 5 |
 | registration district | 18 |
 | studio | 4 |
-| town | 52 |
+| town | 53 |
 | venue | 4 |
 | workplace | 8 |
 
 | Precision | Places |
 | --- | --- |
-| address | 38 |
-| building | 35 |
+| address | 42 |
+| building | 36 |
 | country | 2 |
 | county | 1 |
-| parish | 4 |
+| parish | 5 |
 | registration district | 18 |
 | street | 8 |
-| town | 60 |
+| town | 61 |
 
 Coordinates come from OpenStreetMap Nominatim where a result matched the place. A missing point is left empty on purpose. Whether a building still stands was not checked, so stands today is unknown except where a note says otherwise.
 
@@ -106,6 +106,8 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1921, night work | Plymouth Road, Canning Town | worked | Herbert Andrews | probable | census-andrews-stacey | unknown |
 | 15 October 1923 | 14 Waterloo Road, Whitstable | lived | Edward Dixon FitzMaurice | confirmed | passenger-1923-armadale | unknown |
 | 1923 to 1925 | Southampton | sailed | Edward Dixon FitzMaurice, Edith Madeline FitzMaurice, Baron Reginald FitzMaurice | confirmed | passenger-1923-armadale, passenger-1923-arundel, passenger-1925-marburn, passenger-1925-edith | unknown |
+| 28 December 1923, Bendigo, from Cape Town and Durban | Port of London | sailed | Edith Madeline FitzMaurice, Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice | confirmed | passenger-1923-bendigo | unknown |
+| 28 December 1923. The number is hard to read. | 140A Clapham Road, London | lived | Edith Madeline FitzMaurice, Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice | probable | passenger-1923-bendigo | unknown |
 | 1925 to 1926 | 26 Turret Grove, Clapham | lived | Baron Reginald FitzMaurice | probable | electoral-fitzmaurice | unknown |
 | 7 February 1925 | 7 North Lane, Clapham Common | lived | Baron Reginald FitzMaurice | probable | passenger-1925-montrose-out | unknown |
 | 7 February 1925, Montrose, to Saint John | Liverpool | sailed | Baron Reginald FitzMaurice | probable | passenger-1925-montrose-out | unknown |
@@ -113,8 +115,12 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 15 February 1925 to 6 March 1925 | Saint John, New Brunswick | sailed | Baron Reginald FitzMaurice | probable | passenger-1925-montrose-in, passenger-1925-marburn | unknown |
 | 15 February 1925, stated destination | Y.M.C.A., Saint John | sailed | Baron Reginald FitzMaurice | probable | passenger-1925-montrose-in | unknown |
 | 14 March 1925 | 7 North Street, Clapham Common | lived | Baron Reginald FitzMaurice | probable | passenger-1925-marburn | unknown |
+| 30 October 1925 | St George's Cathedral, Cape Town | married | Edward Robert FitzMaurice, Eileen Alice Yallop | confirmed | marriage-1925-bob-yallop | unknown |
+| 1925 | Auleta, Three Anchor Bay | lived | Edward Robert FitzMaurice | confirmed | marriage-1925-bob-yallop | unknown |
+| 1925 | 7 Bertram Road, Sea Point | lived | Eileen Alice Yallop | confirmed | marriage-1925-bob-yallop | unknown |
 | 24 November 1925 | 55 Seymour Street, Higher Tranmere | lived | Edith Madeline FitzMaurice | probable | passenger-1925-edith | unknown |
 | 24 November 1925, from Durban on the Saxon | Durban | sailed | Edith Madeline FitzMaurice | probable | passenger-1925-edith | unknown |
+| 1926. The house number may be 14. | 17 Berkley Street, Gardens | lived | Edward Robert FitzMaurice, Eileen Alice Yallop, Edward Scott FitzMaurice | probable | baptism-1926-edward-scott | unknown |
 | 1928-06-07 | Chingford Mount Cemetery | buried | Edward Dixon FitzMaurice | probable | findagrave-214209661, burial-chingford-1928 | unknown |
 | 1931 to 1933 | 34 Blythe Road, Hammersmith | lived | Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice | probable | electoral-fitzmaurice | unknown |
 | 1936 to 1937 | 113 Bourne Avenue, Harlington | lived | Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice | probable | electoral-fitzmaurice | unknown |
@@ -192,6 +198,9 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1911 | Clifton Ville, Westgate Terrace, Whitstable | lived | probable |
 | 1916 | Port of London | sailed | probable |
 | 1923 to 1925 | Southampton | sailed | confirmed |
+| Bendigo called at Cape Town on the way to London, arriving 28 December 1923 | Cape Town | sailed | probable |
+| 28 December 1923, Bendigo, from Cape Town and Durban | Port of London | sailed | confirmed |
+| 28 December 1923. The number is hard to read. | 140A Clapham Road, London | lived | probable |
 | 1925 to 1926 | 26 Turret Grove, Clapham | lived | probable |
 | 7 February 1925 | 7 North Lane, Clapham Common | lived | probable |
 | 7 February 1925, Montrose, to Saint John | Liverpool | sailed | probable |
@@ -252,6 +261,9 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | about 1916 to 1925 | South Africa | lived | probable |
 | 1916 | Port of London | sailed | probable |
 | 1923 to 1925 | Southampton | sailed | confirmed |
+| Bendigo called at Cape Town on the way to London, arriving 28 December 1923 | Cape Town | sailed | probable |
+| 28 December 1923, Bendigo, from Cape Town and Durban | Port of London | sailed | confirmed |
+| 28 December 1923. The number is hard to read. | 140A Clapham Road, London | lived | probable |
 | 24 November 1925 | 55 Seymour Street, Higher Tranmere | lived | probable |
 | 24 November 1925, from Durban on the Saxon | Durban | sailed | probable |
 | early 1929, Bridge district, Kent, aged 61 | Bridge registration district | died | probable |
@@ -299,8 +311,27 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | spring 1901, Lambeth district | Lambeth registration district | born | probable |
 | 1911 | Clifton Ville, Westgate Terrace, Whitstable | lived | probable |
 | 1916 | Port of London | sailed | probable |
-| The family believes Bob stayed in South Africa | South Africa | lived | family tradition |
+| The family believed Bob stayed in South Africa, and the records now show that he did | South Africa | lived | family tradition |
+| 30 October 1925 | St George's Cathedral, Cape Town | married | confirmed |
+| 1925 | Auleta, Three Anchor Bay | lived | confirmed |
+| 1926. The house number may be 14. | 17 Berkley Street, Gardens | lived | probable |
+| 7 May 1981 | Port Elizabeth | died | probable |
 | undated | Cape Supreme Court | civil case | family tradition |
+
+### Edward Scott FitzMaurice
+
+| Date | Place | What happened | Confidence |
+| --- | --- | --- | --- |
+| 25 July 1926 | Woodstock parish, Cape Town | baptised | confirmed |
+| 1926. The house number may be 14. | 17 Berkley Street, Gardens | lived | probable |
+
+### Eileen Alice Yallop
+
+| Date | Place | What happened | Confidence |
+| --- | --- | --- | --- |
+| 30 October 1925 | St George's Cathedral, Cape Town | married | confirmed |
+| 1925 | 7 Bertram Road, Sea Point | lived | confirmed |
+| 1926. The house number may be 14. | 17 Berkley Street, Gardens | lived | probable |
 
 ### Eileen Sybil FitzMaurice
 
@@ -311,6 +342,9 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1911 | Clifton Ville, Westgate Terrace, Whitstable | lived | probable |
 | about 1916 to the 1920s | South Africa | lived | probable |
 | 1916 | Port of London | sailed | probable |
+| Bendigo called at Cape Town on the way to London, arriving 28 December 1923 | Cape Town | sailed | probable |
+| 28 December 1923, Bendigo, from Cape Town and Durban | Port of London | sailed | confirmed |
+| 28 December 1923. The number is hard to read. | 140A Clapham Road, London | lived | probable |
 | 1931 to 1933 | 34 Blythe Road, Hammersmith | lived | probable |
 | 1936 to 1937 | 113 Bourne Avenue, Harlington | lived | probable |
 | summer 1936 | Staines | married | confirmed |
@@ -791,9 +825,14 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | Date | Place | Who |
 | --- | --- | --- |
 | 4 November 1838 | Aldenham parish church | Mary Stacey |
+| 1888-05-17 | Bushey | Herbert Andrews, Lucy Andrews |
 | 2010 (family) | St John the Baptist Parish Church, Crowthorne | Ronald Andrews |
 | 2020 (family) | St John the Baptist Parish Church, Crowthorne | Patricia Andrews |
 | 16 March 1834 | Denham parish church | Henry Stacey |
+| probably 1940 | East Ham registration district | Herbert William Andrews |
+| probably late 1927 | Hammersmith registration district | Baron Reginald FitzMaurice, Lilian FitzMaurice |
+|  | Kent | Eileen Sybil FitzMaurice |
+| 1858-06-05 | Leavesden | Henry Stacey, Mary Stacey |
 | 5 June 1858 | Leavesden parish church | Henry Stacey, Mary Stacey |
 | 9 June 1889 | St Albans Abbey | Henry George Andrews |
 | 1915-04-18 | St Andrew's, Plaistow | Henry George Andrews, Rosina Maud Andrews |
@@ -809,6 +848,10 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1897-08-02 | St Matthew's, Brixton | Edward Dixon FitzMaurice, Edith Madeline FitzMaurice |
 | 9 January 1872 | St Peter, London Docks | Arthur E. Cousins |
 | 1871-01-15 | St Philip's, Stepney | William Cousins, Annie Cousins |
+| summer 1936 | Staines | Eileen Sybil FitzMaurice, Leslie Hugh Simmons |
+| probably 1882 | Stoke Damerel registration district | Charles Bennett, Annie Bennett |
+| 30 October 1925 | St George's Cathedral, Cape Town | Edward Robert FitzMaurice, Eileen Alice Yallop |
+| 25 July 1926 | Woodstock parish, Cape Town | Edward Scott FitzMaurice |
 
 ### Cemeteries and burials
 
@@ -851,6 +894,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | probably 1900, West Ham district, aged 53 | West Ham registration district | Annie Cousins |
 | probably early 1912, West Ham, aged 40 | West Ham registration district | Arthur E. Cousins |
 | probably early 1915, West Ham, aged 37 | West Ham registration district | Amelia Cousins |
+| 7 May 1981 | Port Elizabeth | Edward Robert FitzMaurice |
 
 ### Homes
 
@@ -889,6 +933,10 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1881 | Mead Cottage, Bushey | Henry Stacey, Mary Stacey |
 | 1818 to 1822 | Queen Street, Chelsea | William G. Falcke, Elizabeth Falcke |
 | 1881 | Sutton Road, Aston Manor | Robert W. FitzMaurice, Edward Dixon FitzMaurice |
+| 1925 | Auleta, Three Anchor Bay | Edward Robert FitzMaurice |
+| 1925 | 7 Bertram Road, Sea Point | Eileen Alice Yallop |
+| 1926. The house number may be 14. | 17 Berkley Street, Gardens | Edward Robert FitzMaurice, Eileen Alice Yallop, Edward Scott FitzMaurice |
+| 28 December 1923. The number is hard to read. | 140A Clapham Road, London | Edith Madeline FitzMaurice, Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice |
 
 ### Workplaces and studios
 
@@ -924,9 +972,11 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | Date | Place | Who |
 | --- | --- | --- |
 | 15 February 1925 | 7 North Side, Clapham | Baron Reginald FitzMaurice |
+| Bendigo called at Cape Town on the way to London, arriving 28 December 1923 | Cape Town | Edith Madeline FitzMaurice, Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice |
 | 24 November 1925, from Durban on the Saxon | Durban | Edith Madeline FitzMaurice |
 | 7 February 1925, Montrose, to Saint John | Liverpool | Baron Reginald FitzMaurice |
 | 1916 | Port of London | Edward Dixon FitzMaurice, Edith Madeline FitzMaurice, Edward Robert FitzMaurice, Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice |
+| 28 December 1923, Bendigo, from Cape Town and Durban | Port of London | Edith Madeline FitzMaurice, Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice |
 | 15 February 1925 to 6 March 1925 | Saint John, New Brunswick | Baron Reginald FitzMaurice |
 | 1923 to 1925 | Southampton | Edward Dixon FitzMaurice, Edith Madeline FitzMaurice, Baron Reginald FitzMaurice |
 | 15 February 1925, stated destination | Y.M.C.A., Saint John | Baron Reginald FitzMaurice |
@@ -938,15 +988,22 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | Cape Supreme Court | outside England | civil case undated | Edward Robert FitzMaurice |
 | Cape Town | outside England | lived 1916 to about 1923 | Edward Dixon FitzMaurice |
 | Cape Town | outside England | worked 1923 | Edward Dixon FitzMaurice |
+| Cape Town | outside England | sailed Bendigo called at Cape Town on the way to London, arriving 28 December 1923 | Edith Madeline FitzMaurice, Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice |
 | Durban | outside England | sailed 24 November 1925, from Durban on the Saxon | Edith Madeline FitzMaurice |
 | France, Expeditionary Force | outside England | served 9 January 1917 to 6 November 1919 | Henry George Andrews |
 | Saint John, New Brunswick | outside England | sailed 15 February 1925 to 6 March 1925 | Baron Reginald FitzMaurice |
 | South Africa | outside England | worked 1916 | Edward Dixon FitzMaurice |
 | South Africa | outside England | lived about 1916 to 1925 | Edith Madeline FitzMaurice |
 | South Africa | outside England | lived about 1916 to the 1920s | Eileen Sybil FitzMaurice |
-| South Africa | outside England | lived The family believes Bob stayed in South Africa | Edward Robert FitzMaurice |
+| South Africa | outside England | lived The family believed Bob stayed in South Africa, and the records now show that he did | Edward Robert FitzMaurice |
 | Tura | outside England | served 1945 | Ronald Andrews |
 | Y.M.C.A., Saint John | outside England | sailed 15 February 1925, stated destination | Baron Reginald FitzMaurice |
+| St George's Cathedral, Cape Town | outside England | married 30 October 1925 | Edward Robert FitzMaurice, Eileen Alice Yallop |
+| Auleta, Three Anchor Bay | outside England | lived 1925 | Edward Robert FitzMaurice |
+| 7 Bertram Road, Sea Point | outside England | lived 1925 | Eileen Alice Yallop |
+| Woodstock parish, Cape Town | outside England | baptised 25 July 1926 | Edward Scott FitzMaurice |
+| 17 Berkley Street, Gardens | outside England | lived 1926. The house number may be 14. | Edward Robert FitzMaurice, Eileen Alice Yallop, Edward Scott FitzMaurice |
+| Port Elizabeth | outside England | died 7 May 1981 | Edward Robert FitzMaurice |
 
 ## 6. The Hamiltons and the Earls of Orkney (no proven link)
 
@@ -968,7 +1025,7 @@ These places belong only to the separate Orkney group. They are not mixed into t
 
 ## 7. New, needs review
 
-None. The owner approved the four crop readings on 23 November 2026, and they are now published.
+None. The owner approved the earlier crop readings, and Bob's new records are published with the pages.
 
 ## 8. Gaps and open questions
 
@@ -995,20 +1052,23 @@ None. The owner approved the four crop readings on 23 November 2026, and they ar
 21. Elizabeth Cousins: spouses[0] has no place. Left out of the map because the record used here gives no place.
 22. John Gall: death has no place; occupations[0] has no place. Left out of the map because the record used here gives no place.
 23. Amelia Cousins: occupations[0] has no place. Left out of the map because the record used here gives no place.
-24. The 1851 Bolingbroke Gardens crop may also read Pottery Lane on the next line. That second line is not entered.
-25. The 1939 Register crops for Herbert Andrews senior and for May Cousins do not show the street in the view on the site. The address column is cut off or absent.
-26. Lilian Bennett's 1921 crop does not show the house address at Hampton Hill. It does show her work at the Claims Record Office, Kew.
-27. The 1911 Bodmin crop of Charles Bennett, as filed, does not show the street. The 1901 census gives 1 Honey Street.
-28. Pat's birth is registered in the Hammersmith district. The family remembers Windsor (family). Windsor is the memory, not the record.
-29. E. Fitzmaurice of 7 North Side, Clapham, is the nearest relative on the Canadian list and is not identified. The directory does not call this person Reg's mother.
-30. The 1949 to 1965 Nestles Avenue registers are held back. 42 Nestles Avenue is entered only from the published 1938 register and from Reg's residence to 1977. No one shown only by name and relationship is named there.
-31. Herbert William's exact birth day is held back. His entry stays at 1916.
-32. Pat's Evening News cuttings are held back and are not used.
-33. The passport note Melbourne 8/11/24 is held back and is not used.
-34. No inquest report for Arthur Edward Cousins is published. The Victoria Docks drowning is a family statement. The death index, aged 40, West Ham, early 1912, is probably him.
-35. Bob: the family believes he stayed in South Africa. No street is known. The only catalogue entries are two undated Cape Supreme Court cases against Raymond William Wilson.
-36. A later marriage in Kent, and Herbert Andrews's 1940 marriage registered in the East Ham district, name a living person. The place is kept and the living person is not named.
-37. Many births and deaths are known only as a registration district. The district is not treated as a town.
-38. OpenStreetMap was used only to drop a point on the map. It was not used to decide whether a house still stands, or whether a street has been renamed. modernAddress is empty, and stands today is unknown.
-39. John FitzMaurice's birthplace and his death have not been found. A possible 1806 St Philip baptism for Eliza Taylor is held back because the entry is not legible.
-40. These published streets still have no confident map point: 10 Riles Road, 3 and 5 Young Street, 33 New Street, 57 Rutland Street, 7 North Lane, Bolingbroke Gardens, Ham Farm, Clifton Ville, Sutton Road in Aston, and St Peter, London Docks.
+24. Edward Scott FitzMaurice: the death field has no place. He died on 9 August 1935, aged 9. The place of death is not stated.
+25. The 1851 Bolingbroke Gardens crop may also read Pottery Lane on the next line. That second line is not entered.
+26. The 1939 Register crops for Herbert Andrews senior and for May Cousins do not show the street in the view on the site.
+27. Lilian Bennett's 1921 crop does not show the house address at Hampton Hill.
+28. 17 Berkley Street, Gardens, could not be placed. The house number may be 14, and the street spelling may differ from the modern map.
+29. A Cape Times list of August 1923 has a Miss E. S. Fitzmaurice and an E. M. Fitzmaurice leaving Cape Town on the Bendigo, probably Eileen and her mother, but the dates do not match the 28 December landing. The question is still open.
+30. Pat's birth is registered in the Hammersmith district. The family remembers Windsor (family). Windsor is the memory, not the record.
+31. E. Fitzmaurice of 7 North Side, Clapham, is not identified and is not called Reg's mother.
+32. The 1949 to 1965 Nestles Avenue registers are held back.
+33. Herbert William's exact birth day is held back. His entry stays at 1916.
+34. Pat's Evening News cuttings are held back and are not used.
+35. The passport note Melbourne 8/11/24 is held back and is not used.
+36. Lawrence John and Derek Anthony may be living. They are not given a place.
+37. No inquest report for Arthur Edward Cousins is published.
+38. Two undated Cape Supreme Court civil cases against Raymond William Wilson are probably Bob's. They have no date and no street.
+39. A later marriage in Kent, and Herbert Andrews's 1940 marriage registered in the East Ham district, name a living person. The place is kept and the living person is not named.
+40. Many births and deaths are known only as a registration district. The district is not treated as a town.
+41. OpenStreetMap was used only to drop a point on the map. modernAddress is empty except for Port Elizabeth, whose modern name is Gqeberha. Stands today is unknown.
+42. John FitzMaurice's birthplace and his death have not been found. A possible 1806 St Philip baptism for Eliza Taylor is held back because the entry is not legible.
+43. These published streets still have no confident map point: 10 Riles Road, 3 and 5 Young Street, 33 New Street, 57 Rutland Street, 7 North Lane, Bolingbroke Gardens, Ham Farm, Clifton Ville, Sutton Road in Aston, St Peter, London Docks, and 17 Berkley Street, Gardens.

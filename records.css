@@ -8,6 +8,33 @@
     padding: 0.45rem 0.45rem 0.55rem;
 }
 .record img { width: 100%; height: auto; display: block; background: #fff; }
+.record-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    clear: both;
+    margin: 0.4rem 0 1rem;
+}
+.record-grid .record { float: none; width: 100%; margin: 0; }
+@media (min-width: 860px) {
+    .record-grid { grid-template-columns: 1fr 1fr; }
+}
+.whats-new {
+    background: #F8F1E4;
+    border: 1px solid #d4c5a9;
+    border-left: 4px solid #8B0000;
+    padding: 1rem 1.25rem 0.4rem;
+    margin: 1.4rem 0 1.8rem;
+}
+.whats-new h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    color: #8B0000;
+    margin: 0 0 0.45rem;
+}
+.whats-new ul { margin: 0 0 0.6rem; padding-left: 1.2rem; }
+.whats-new li { margin: 0.2rem 0; }
+.whats-new a { color: #704214; }
 .record-text {
     font-family: 'EB Garamond', serif;
     font-size: 0.98rem;
@@ -55,6 +82,8 @@
     max-width: 70ch;
     text-align: center;
 }
+.record figcaption, .record figcaption a { overflow-wrap: anywhere; }
 @media (max-width: 860px) {
-    .record { float: none; width: 100%; margin: 0 0 1rem; }
+    .record, .record-grid .record { float: none; width: 100%; max-width: 100%; margin: 0 0 1rem; }
+    .record img { max-width: 100%; height: auto; }
 }

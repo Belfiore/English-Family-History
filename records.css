@@ -8,6 +8,13 @@
     padding: 0.45rem 0.45rem 0.55rem;
 }
 .record img { width: 100%; height: auto; display: block; background: #fff; }
+.record-text {
+    font-family: 'EB Garamond', serif;
+    font-size: 0.98rem;
+    line-height: 1.35;
+    margin: 0;
+    padding: 0.35rem 0.2rem 0.2rem;
+}
 .record figcaption {
     font-family: 'EB Garamond', serif;
     font-size: 0.95rem;

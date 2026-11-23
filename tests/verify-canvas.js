@@ -302,7 +302,7 @@ const ok = (m) => console.log('  ok   ' + m);
             if (up !== 'edward-dixon-fitzmaurice') errsP.push(`up arrow went to ${up}, expected Edward Dixon FitzMaurice`);
             await page.keyboard.press('ArrowDown'); await page.waitForTimeout(250);
             const down = await page.evaluate(() => window.__tree.S.drawerFor);
-            if (!['bob-fitzmaurice', 'babs-fitzmaurice', 'reg-fitzmaurice'].includes(down)) errsP.push(`down arrow went to ${down}, expected a child of Edward Dixon`);
+            if (!['bob-fitzmaurice', 'eileen-sybil-fitzmaurice', 'reg-fitzmaurice', 'edith-marjorie-fitzmaurice'].includes(down)) errsP.push(`down arrow went to ${down}, expected a child of Edward Dixon`);
             const still = await page.evaluate(() => document.getElementById('drawer').classList.contains('is-expanded'));
             if (!still) errsP.push('panel collapsed while moving between people');
             await page.keyboard.press('Escape'); await page.waitForTimeout(200);

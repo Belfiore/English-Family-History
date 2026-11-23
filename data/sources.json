@@ -28,19 +28,19 @@
   },
   {
    "id": "beach-snapshots",
-   "title": "Two snapshots: a girl on a verandah, and a clergyman with two boys on a shingle beach",
+   "title": "Two snapshots: a girl on a verandah, and Edward Dixon with two boys on a shingle beach",
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/babs-and-edward-with-boys.jpg",
-   "note": "Undated. The girl's photograph has 'Eil' written on the front, the rest lost at the edge."
+   "note": "The girl's photograph, with the letters Eil scratched on the front, is the one labelled Auntie Babs, South Africa on its back. The beach card is the one labelled Reg, Bob and their father. The beach snapshot was probably taken about 1908 to 1910 on the Kent coast. The white collar is not evidence that Edward was a clergyman."
   },
   {
    "id": "stuart-card",
-   "title": "Cabinet card portrait of a clergyman, by Stuart, 47 and 49 Brompton Road, Knightsbridge",
+   "title": "Cabinet card by Stuart, 47 and 49 Brompton Road, Knightsbridge: probably Edward Dixon",
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/edward-dixon-stuart-studio.jpg",
-   "note": "No name on the card. Identified as Edward Dixon FitzMaurice by his likeness to the man in the labelled beach snapshot."
+   "note": "No name on the card. Probably Edward Dixon, by his likeness to the labelled beach photo. The studio address is the printed imprint, not a family address."
   },
   {
    "id": "edith-medallion",
@@ -835,6 +835,62 @@
    "repository": "Family papers, 2026.",
    "note": "Patricia Mary FitzMaurice was probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. She has died; the year is not recorded. Ronald Andrews was probably born in the summer of 1921 in the West Ham district and probably died in 2009. No addresses.",
    "date": "2026-11-23"
+  },
+  {
+   "id": "news-1936-simmons",
+   "title": "Corinth Club Wedding, Buckinghamshire Advertiser, 4 September 1936",
+   "type": "newspaper",
+   "repository": "Buckinghamshire Advertiser, 4 September 1936, via a clipping shared on Ancestry.com. The blue boxes on the clipping are search highlights, not part of the paper.",
+   "date": "1936-09-04",
+   "note": "Leslie Hugh Simmons, secretary of the Corinth Hockey Club, married Miss Eileen Sybil Fitzmaurice at Staines. She is called the daughter of the late Mr Edward Dixon Fitzmaurice, formerly of Cape Town."
+  },
+  {
+   "id": "passenger-1916-balmoral",
+   "title": "Outward passenger list, Balmoral Castle, 29 March 1916",
+   "type": "passenger list",
+   "repository": "The National Archives BT27/876. Image: Ancestry.com, UK and Ireland Outward Passenger Lists.",
+   "date": "1916-03-29",
+   "note": "Mr E.D. Fitzmaurice, engineer, 43, London to South Africa, intending to live there."
+  },
+  {
+   "id": "passenger-1916-llanstephan",
+   "title": "Outward passenger list, Llanstephan Castle, 16 August 1916",
+   "type": "passenger list",
+   "repository": "The National Archives BT27. Image: Ancestry.com, UK and Ireland Outward Passenger Lists.",
+   "date": "1916-08-16",
+   "note": "A FitzMaurice party with no first names: Mrs, 43; two boys of 15 and 12; a girl of 8. London to Cape Town. The ages fit Edith, Bob, Reg and Eileen."
+  },
+  {
+   "id": "passenger-1923-armadale",
+   "title": "Incoming passenger list, Armadale Castle, 15 October 1923",
+   "type": "passenger list",
+   "repository": "The National Archives BT26/752. Image: Ancestry.com, UK Incoming Passenger Lists.",
+   "date": "1923-10-15",
+   "note": "Edward Fitzmaurice, 50, civil engineer, lands at Southampton from South Africa, bound for Whitstable. The street is not published."
+  },
+  {
+   "id": "passenger-1923-arundel",
+   "title": "Outward passenger list, Arundel Castle, 21 December 1923",
+   "type": "passenger list",
+   "repository": "The National Archives BT27. Image: Ancestry.com, UK and Ireland Outward Passenger Lists.",
+   "date": "1923-12-21",
+   "note": "Mr E.D. Fitzmaurice, engineer, sails from Southampton for Cape Town."
+  },
+  {
+   "id": "passenger-1925-edith",
+   "title": "Incoming passenger list, Edith FitzMaurice, November 1925",
+   "type": "passenger list",
+   "repository": "The National Archives BT26. Image: Ancestry.com, UK Incoming Passenger Lists.",
+   "date": "1925-11-24",
+   "note": "Edith came home from South Africa in November 1925, aged 53 by her own account, giving Birkenhead as her destination. No street is published."
+  },
+  {
+   "id": "findagrave-214209661",
+   "title": "Find a Grave memorial 214209661, Edward Dixon FitzMaurice",
+   "type": "gravestone transcription",
+   "repository": "https://www.findagrave.com/memorial/214209661",
+   "date": "1928-06-07",
+   "note": "Gives born 21 October 1872 and died 7 June 1928, Chingford Mount Cemetery. A member photograph of the stone is not republished. The death date is probable."
   }
  ]
 }

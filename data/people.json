@@ -204,14 +204,15 @@
     "note": "St Margaret, Ward End, entry 339. The register says born 21 October 1872 and names both parents."
    },
    "death": {
-    "date": "1928",
-    "display": "1928, West Ham district, aged 56",
-    "place": "West Ham",
+    "date": "1928-06-07",
+    "display": "7 June 1928, probably aged 55",
+    "place": "Chingford Mount Cemetery",
     "sourceIds": [
+     "findagrave-214209661",
      "burial-chingford-1928"
     ],
-    "confidence": "confirmed",
-    "note": "Registered in the June quarter of 1928. Probably buried at Chingford Mount Cemetery on 13 June 1928."
+    "confidence": "probable",
+    "note": "The gravestone and Find a Grave memorial 214209661 give 7 June 1928. The burial register gives 13 June 1928, aged 56. The birth date makes the age 55."
    },
    "residences": [
     {
@@ -251,11 +252,22 @@
      "confidence": "probable"
     },
     {
-     "place": "West Ham",
+     "place": "South Africa (Cape Town)",
      "address": null,
-     "years": "1928",
+     "years": "1916 to about 1923",
      "sourceIds": [
-      "burial-chingford-1928"
+      "passenger-1916-balmoral",
+      "passenger-1923-armadale",
+      "passenger-1923-arundel"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "place": "Whitstable",
+     "address": null,
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-armadale"
      ],
      "confidence": "confirmed"
     }
@@ -300,12 +312,42 @@
       "census-1911-whitstable"
      ],
      "confidence": "probable"
+    },
+    {
+     "title": "Engineer",
+     "employer": null,
+     "place": "South Africa",
+     "years": "1916",
+     "sourceIds": [
+      "passenger-1916-balmoral"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "title": "Civil engineer",
+     "employer": null,
+     "place": "Whitstable",
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-armadale"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "title": "Engineer",
+     "employer": null,
+     "place": "Cape Town",
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-arundel"
+     ],
+     "confidence": "confirmed"
     }
    ],
    "immigration": null,
-   "cardPlace": "Aston, then Whitstable",
-   "summary": "Born 21 October 1872 and baptised at Ward End, Aston, on 19 June 1873, son of William and Fanny Mary Fitzmaurice. A civil engineer. He married Edith Madeline Spencer at St Matthew's, Brixton, on 2 August 1897, when he was a professional singer. He died in the West Ham district in 1928, aged 56. He was not a son of the Earls of Orkney.",
-   "story": "Edward Dixon FitzMaurice was born on 21 October 1872 and baptised on 19 June 1873 at St Margaret's, Ward End, Aston. The register names his parents as William and Fanny Mary Fitzmaurice, of Ward End, and his father as a surveyor and contractor.[^parish-wardend-1873] His own marriage register names that father as Robert William Fitzmaurice, a contractor.[^parish-brixton-1897] The birth index gives his mother's maiden name as Falcke.[^gro-indexes] In 1881 he is the boy written as Ernest Dixon, aged 8, born at Little Bromwich, in the household of Robert William FitzMaurice and Fanny Mary at Aston Manor.[^census-1881-aston]\n\nIn 1891 he was an apprentice civil engineer in Brighton, born at Ward End.[^census-1891-brighton] On 2 August 1897, aged 25 and a professional singer, he married Edith Madeline Spencer at St Matthew's, Brixton, by banns.[^parish-brixton-1897] He was probably a civil mechanical engineer in Brixton in 1901.[^census-1901-brixton] In 1911 he was a civil engineer at Whitstable, with Edith and three children.[^census-1911-whitstable]\n\nHe died in the West Ham district in the second quarter of 1928, aged 56, and he was probably buried at Chingford Mount Cemetery on 13 June 1928. No will has been found.[^burial-chingford-1928]\n\nA family photograph shows him in what may be a clerical collar. No church record has been found, and every census and the marriage register give him as an engineer or a singer. The idea that he was a clergyman is an unproven family tradition.\n\nHe was not a son of the Hon. Henry Warrender FitzMaurice. The London Gazette of 23 April 1890 names the 7th Earl of Orkney's surviving brother and sister, and Edward is not among them.[^gazette-1890]",
+   "cardPlace": "Aston, Cape Town, Whitstable",
+   "summary": "Born 21 October 1872 and baptised at Ward End, Aston, on 19 June 1873, son of William and Fanny Mary Fitzmaurice. An engineer all his working life. He married Edith Madeline Spencer at St Matthew's, Brixton, on 2 August 1897. He lived in Cape Town from 1916 to about 1923. He died on 7 June 1928, probably aged 55, and was buried at Chingford Mount. He was not a son of the Earls of Orkney.",
+   "story": "Edward Dixon FitzMaurice was born on 21 October 1872 and baptised on 19 June 1873 at St Margaret's, Ward End, Aston. The register names his parents as William and Fanny Mary Fitzmaurice, of Ward End, and his father as a surveyor and contractor.[^parish-wardend-1873] His own marriage register names that father as Robert William Fitzmaurice, a contractor.[^parish-brixton-1897] The birth index gives his mother's maiden name as Falcke.[^gro-indexes] In 1881 he is the boy written as Ernest Dixon, aged 8, born at Little Bromwich, in the household of Robert William FitzMaurice and Fanny Mary at Aston Manor.[^census-1881-aston]\n\nIn 1891 he was an apprentice civil engineer in Brighton, born at Ward End.[^census-1891-brighton] On 2 August 1897, aged 25 and a professional singer, he married Edith Madeline Spencer at St Matthew's, Brixton, by banns.[^parish-brixton-1897] He was probably a civil mechanical engineer in Brixton in 1901.[^census-1901-brixton] In 1911 he was a civil engineer at Whitstable, with Edith and three children.[^census-1911-whitstable]\n\nIn the middle of the First World War, by then a civil engineer of about 43, he sailed from London for South Africa on the Balmoral Castle on 29 March 1916, meaning to settle there.[^passenger-1916-balmoral] Five months later Edith probably followed on the Llanstephan Castle with Bob, Reg and Eileen.[^passenger-1916-llanstephan] He came back to England in October 1923, giving Whitstable as his address, and sailed for Cape Town again that December.[^passenger-1923-armadale] [^passenger-1923-arundel] Edith came home in November 1925.[^passenger-1925-edith]\n\nHe died on 7 June 1928, probably aged 55, and was buried at Chingford Mount Cemetery.[^findagrave-214209661] [^burial-chingford-1928] When Eileen married in 1936, the paper remembered him as formerly of Cape Town.[^news-1936-simmons]\n\nEdward was an engineer all his working life: an apprentice civil engineer in 1891, a civil engineer in 1901 and 1911, and an engineer on every passenger list from 1916 to 1923. The white collar in the beach photo is not a sign that he was a clergyman.[^beach-snapshots]\n\nHe was not a son of the Hon. Henry Warrender FitzMaurice. The London Gazette of 23 April 1890 names the 7th Earl of Orkney's surviving brother and sister, and Edward is not among them.[^gazette-1890]",
    "timeline": [
     {
      "date": "1872-10-21",
@@ -348,27 +390,48 @@
      "confidence": "probable"
     },
     {
-     "date": "1928",
-     "label": "1928",
-     "event": "Dies in the West Ham district, aged 56. Probably buried at Chingford Mount on 13 June.",
+     "date": "1916-03-29",
+     "label": "29 Mar 1916",
+     "event": "Sails for South Africa on the Balmoral Castle, an engineer of 43, meaning to settle there.",
      "sourceIds": [
-      "burial-chingford-1928"
+      "passenger-1916-balmoral"
      ],
      "kind": "life",
      "confidence": "confirmed"
+    },
+    {
+     "date": "1923-10-15",
+     "label": "15 Oct 1923",
+     "event": "Lands at Southampton from South Africa, a civil engineer of 50, bound for Whitstable, then sails for Cape Town again in December.",
+     "sourceIds": [
+      "passenger-1923-armadale",
+      "passenger-1923-arundel"
+     ],
+     "kind": "life",
+     "confidence": "confirmed"
+    },
+    {
+     "date": "1928-06-07",
+     "label": "7 June 1928",
+     "event": "Dies, probably aged 55, and is buried at Chingford Mount.",
+     "sourceIds": [
+      "findagrave-214209661",
+      "burial-chingford-1928"
+     ],
+     "kind": "life",
+     "confidence": "probable"
     }
    ],
    "facts": [
     {
-     "label": "Clerical collar",
-     "value": "A family photograph shows a collar that looks clerical. The records from 1891 to 1911 show a civil engineer, and in 1897 a professional singer. The clergyman story is an unproven family tradition.",
+     "label": "An engineer, not a clergyman",
+     "value": "Edward was an engineer all his working life. The white collar in the beach photo, probably taken about 1908 to 1910, is not a sign that he was a clergyman.",
      "sourceIds": [
       "beach-snapshots",
-      "census-1891-brighton",
-      "parish-brixton-1897",
-      "census-1911-whitstable"
+      "census-1911-whitstable",
+      "passenger-1916-balmoral"
      ],
-     "confidence": "family tradition"
+     "confidence": "confirmed"
     },
     {
      "label": "Not a son of the Earls of Orkney",
@@ -384,10 +447,10 @@
      "id": "beach-snapshots",
      "file": "photos/babs-and-edward-with-boys.jpg",
      "thumb": "photos/thumbs/babs-and-edward-with-boys.jpg",
-     "caption": "Left: a girl on a verandah, \"Eil...\" written on the front. Right: a clergyman with two boys on a shingle beach",
+     "caption": "Left: a girl on a verandah, \"Eil...\" written on the front. Right: Edward Dixon with two boys on a shingle beach",
      "type": "photo",
      "sourceId": "beach-snapshots",
-     "alt": "Two snapshots: a girl in a white dress and dark tie on a verandah, and a man in a clerical collar and boater seated on a beach with two small boys",
+     "alt": "Two snapshots: a girl in a white dress and dark tie on a verandah, and a man in a white collar and boater seated on a beach with two small boys",
      "summary": "The labels on the backs (see the next item) name the girl as Auntie Babs, South Africa, and the beach group as Reg, Bob and their father Edward Dixon Fitzmaurice. The letters 'Eil' on the front of the girl's photograph may be the start of her own first name."
     },
     {
@@ -404,10 +467,10 @@
      "id": "stuart-card",
      "file": "photos/edward-dixon-stuart-studio.jpg",
      "thumb": "photos/thumbs/edward-dixon-stuart-studio.jpg",
-     "caption": "Cabinet card of a clergyman by Stuart, 47 and 49 Brompton Road, Knightsbridge: probably Edward Dixon FitzMaurice",
+     "caption": "Cabinet card by Stuart, probably Edward Dixon FitzMaurice, 47 and 49 Brompton Road, Knightsbridge: probably Edward Dixon FitzMaurice",
      "type": "photo",
      "sourceId": "stuart-card",
-     "alt": "Studio portrait of a man with dark hair, round wire spectacles and a clerical collar, mounted on a card stamped Stuart, Brompton Road, Knightsbridge",
+     "alt": "Studio portrait of a man with dark hair, round wire spectacles and a white collar, mounted on a card stamped Stuart, Brompton Road, Knightsbridge",
      "summary": "The card is not named. The face matches the man in the labelled beach snapshot, so it is taken to be Edward Dixon FitzMaurice. The 2026 photo analysis dated the style to about 1890 to 1910."
     },
     {
@@ -448,8 +511,7 @@
     "edith-marjorie-fitzmaurice",
     "bob-fitzmaurice",
     "reg-fitzmaurice",
-    "eileen-sybil-fitzmaurice",
-    "babs-fitzmaurice"
+    "eileen-sybil-fitzmaurice"
    ],
    "spouses": [
     {
@@ -539,6 +601,16 @@
       "census-1911-whitstable"
      ],
      "confidence": "probable"
+    },
+    {
+     "place": "South Africa",
+     "address": null,
+     "years": "about 1916 to 1925",
+     "sourceIds": [
+      "passenger-1916-llanstephan",
+      "passenger-1925-edith"
+     ],
+     "confidence": "probable"
     }
    ],
    "occupations": [
@@ -555,8 +627,8 @@
    ],
    "immigration": null,
    "cardPlace": "Islington, then Whitstable",
-   "summary": "Reg's mother, not his sister. Edith Madeline Spencer married Edward Dixon FitzMaurice on 2 August 1897. She was probably born about 1866 to 1869 in Islington. She probably died in the Bridge district of Kent in early 1929, aged 61.",
-   "story": "The medallion portrait inscribed Edith Madeleine Fitzmaurice, about 1899, is Edith Madeline Spencer, Edward Dixon's wife and Reg's mother. Earlier pages that called her Reg's sister were wrong.[^edith-medallion] [^parish-brixton-1897]\n\nShe was probably born about 1866 to 1869 in Islington. In 1891 she was 22, a governess, born in Islington, living with her widowed mother Caroline.[^census-1891-spencer] Her death in 1929, aged 61, fits that birth. At the wedding she was recorded as 24, and in 1911 as 38 and born at St Anne, Soho. Those later ages are the odd ones out. Her birth registration has not been found. A birth of Edith Maria Spencer at Islington in 1866 belongs to a different family and is not hers.[^census-1891-spencer] [^gro-edith-death] [^census-1911-whitstable]\n\nOn 2 August 1897 she married Edward at St Matthew's, Brixton. Her father, Charles Spencer, a builder and contractor, was already dead. Caroline Spencer was a witness.[^parish-brixton-1897] In 1911, at Whitstable, she and Edward had had four children, of whom three were living. The child who had died was Edith Marjorie.[^census-1911-whitstable] She probably died in the March quarter of 1929 in the Bridge district of Kent, aged 61.[^gro-edith-death]",
+   "summary": "Reg's mother, not his sister. Edith Madeline Spencer married Edward Dixon FitzMaurice on 2 August 1897. She was probably born about 1866 to 1869 in Islington. She probably died in the Bridge district of Kent in early 1929, aged 61. She was probably in South Africa from about 1916 to 1925.",
+   "story": "The medallion portrait inscribed Edith Madeleine Fitzmaurice, about 1899, is Edith Madeline Spencer, Edward Dixon's wife and Reg's mother. Earlier pages that called her Reg's sister were wrong.[^edith-medallion] [^parish-brixton-1897]\n\nShe was probably born about 1866 to 1869 in Islington. In 1891 she was 22, a governess, born in Islington, living with her widowed mother Caroline.[^census-1891-spencer] Her death in 1929, aged 61, fits that birth. At the wedding she was recorded as 24, and in 1911 as 38 and born at St Anne, Soho. Those later ages are the odd ones out. Her birth registration has not been found. A birth of Edith Maria Spencer at Islington in 1866 belongs to a different family and is not hers.[^census-1891-spencer] [^gro-edith-death] [^census-1911-whitstable]\n\nOn 2 August 1897 she married Edward at St Matthew's, Brixton. Her father, Charles Spencer, a builder and contractor, was already dead. Caroline Spencer was a witness.[^parish-brixton-1897] In 1911, at Whitstable, she and Edward had had four children, of whom three were living. The child who had died was Edith Marjorie.[^census-1911-whitstable] She probably died in the March quarter of 1929 in the Bridge district of Kent, aged 61.[^gro-edith-death]\n\nShe probably went out to Cape Town in August 1916 with Bob, Reg and Eileen, and came back to England from South Africa in November 1925, aged 53 by her own account, giving Birkenhead as her destination.[^passenger-1916-llanstephan] [^passenger-1925-edith]",
    "timeline": [
     {
      "date": "1891",
@@ -898,7 +970,7 @@
    "immigration": null,
    "cardPlace": "Hayes, Middlesex",
    "summary": "Pat's father. Baron is his forename, not a title. Probably born on 26 May 1904 in the Wandsworth district, son of Edward Dixon and Edith Madeline. He probably married Lilian Maud Mary Bennett in late 1927. He died on 31 March 1977.",
-   "story": "Reg was Baron Reginald FitzMaurice. Baron is a forename, not a title. He was probably born on 26 May 1904 in the Wandsworth district. The birth index names his mother as Spenser, a spelling of Spencer, volume 1d, page 670.[^gro-indexes] [^probate-reg-1977] In 1911 he is Baron Reginald, aged 6, at school, in Edward Dixon and Edith Madeline's household at Whitstable.[^census-1911-whitstable]\n\nHe probably married Lilian Maud Mary Bennett in the December quarter of 1927, in the Hammersmith district, volume 1a, page 661.[^gro-marriage-1927] Electoral registers place him in Wandsworth in 1925 and 1926, Hammersmith from 1931 to 1933, the Spelthorne district from 1934 to 1937, and Hayes from 1938 until about 1972.[^electoral-fitzmaurice] On 11 February 1950 he gave his daughter Patricia away at St Mary's, Wanstead. The album calls him Mr R. Fitzmaurice of Hayes.[^album-1950]\n\nHe died on 31 March 1977. The death was registered at Hillingdon, and the probate calendar places him at Hayes. The estate was 24,427 pounds.[^probate-reg-1977] A cause of death remembered in the family is not on the certificate we have, so it is not stated here. A studio portrait of a young man in a bow tie has no name on it, and it is not identified as Reg.",
+   "story": "Reg was Baron Reginald FitzMaurice. Baron is a forename, not a title. He was probably born on 26 May 1904 in the Wandsworth district. The birth index names his mother as Spenser, a spelling of Spencer, volume 1d, page 670.[^gro-indexes] [^probate-reg-1977] In 1911 he is Baron Reginald, aged 6, at school, in Edward Dixon and Edith Madeline's household at Whitstable.[^census-1911-whitstable]\n\nHe probably married Lilian Maud Mary Bennett in the December quarter of 1927, in the Hammersmith district, volume 1a, page 661.[^gro-marriage-1927] Electoral registers place him in Wandsworth in 1925 and 1926, Hammersmith from 1931 to 1933, the Spelthorne district from 1934 to 1937, and Hayes from 1938 until about 1972.[^electoral-fitzmaurice] On 11 February 1950 he gave his daughter Patricia away at St Mary's, Wanstead. The album calls him Mr R. Fitzmaurice of Hayes.[^album-1950]\n\nHe died on 31 March 1977. The death was registered at Hillingdon, and the probate calendar places him at Hayes. The estate was 24,427 pounds.[^probate-reg-1977] A cause of death remembered in the family is not on the certificate we have, so it is not stated here. A studio portrait of a young man in a bow tie has no name on it, and it is not identified as Reg.\n\nHe was probably the boy of 12 on the same voyage to Cape Town in August 1916.[^passenger-1916-llanstephan]",
    "timeline": [
     {
      "date": "1904-05-26",
@@ -997,10 +1069,10 @@
      "id": "beach-snapshots",
      "file": "photos/babs-and-edward-with-boys.jpg",
      "thumb": "photos/thumbs/babs-and-edward-with-boys.jpg",
-     "caption": "Left: a girl on a verandah, \"Eil...\" written on the front. Right: a clergyman with two boys on a shingle beach",
+     "caption": "Left: a girl on a verandah, \"Eil...\" written on the front. Right: Edward Dixon with two boys on a shingle beach",
      "type": "photo",
      "sourceId": "beach-snapshots",
-     "alt": "Two snapshots: a girl in a white dress and dark tie on a verandah, and a man in a clerical collar and boater seated on a beach with two small boys",
+     "alt": "Two snapshots: a girl in a white dress and dark tie on a verandah, and a man in a white collar and boater seated on a beach with two small boys",
      "summary": "The labels on the backs (see the next item) name the girl as Auntie Babs, South Africa, and the beach group as Reg, Bob and their father Edward Dixon Fitzmaurice. The letters 'Eil' on the front of the girl's photograph may be the start of her own first name."
     },
     {
@@ -1303,7 +1375,7 @@
    "immigration": null,
    "cardPlace": "Lambeth, then Whitstable",
    "summary": "Reg's brother, called Bob on the family photograph. Probably Edward Robert FitzMaurice, born in the Lambeth district in the spring of 1901.",
-   "story": "The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice.[^photo-labels] Bob is probably Edward Robert Fitzmaurice, mother's maiden name Spencer, registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503.[^gro-indexes] In 1911 he is Edward Robert, aged 9, at school, with his parents at Whitstable.[^census-1911-whitstable] No marriage or death has been tied to him.",
+   "story": "The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice.[^photo-labels] Bob is probably Edward Robert Fitzmaurice, mother's maiden name Spencer, registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503.[^gro-indexes] In 1911 he is Edward Robert, aged 9, at school, with his parents at Whitstable.[^census-1911-whitstable] No marriage or death has been tied to him.\n\nHe was probably the boy of 15 who sailed to Cape Town with his mother in August 1916. No later record of him has been found in England. He may have stayed in South Africa.[^passenger-1916-llanstephan]",
    "timeline": [
     {
      "date": "1901",
@@ -1332,10 +1404,10 @@
      "id": "beach-snapshots",
      "file": "photos/babs-and-edward-with-boys.jpg",
      "thumb": "photos/thumbs/babs-and-edward-with-boys.jpg",
-     "caption": "Left: a girl on a verandah, \"Eil...\" written on the front. Right: a clergyman with two boys on a shingle beach",
+     "caption": "Left: a girl on a verandah, \"Eil...\" written on the front. Right: Edward Dixon with two boys on a shingle beach",
      "type": "photo",
      "sourceId": "beach-snapshots",
-     "alt": "Two snapshots: a girl in a white dress and dark tie on a verandah, and a man in a clerical collar and boater seated on a beach with two small boys",
+     "alt": "Two snapshots: a girl in a white dress and dark tie on a verandah, and a man in a white collar and boater seated on a beach with two small boys",
      "summary": "The labels on the backs (see the next item) name the girl as Auntie Babs, South Africa, and the beach group as Reg, Bob and their father Edward Dixon Fitzmaurice. The letters 'Eil' on the front of the girl's photograph may be the start of her own first name."
     },
     {
@@ -1373,120 +1445,6 @@
    "isLiving": false,
    "parentLinkConfidence": "probable",
    "order": 2
-  },
-  {
-   "id": "babs-fitzmaurice",
-   "displayName": "Auntie Babs",
-   "disambiguator": "daughter of Edward Dixon FitzMaurice (family knowledge)",
-   "givenNames": "Babs",
-   "surname": "",
-   "sex": "F",
-   "generation": 16,
-   "nameVariants": [
-    {
-     "name": "Auntie Babs",
-     "sourceIds": [
-      "photo-labels",
-      "album-1950"
-     ]
-    }
-   ],
-   "confidence": "family tradition",
-   "birth": null,
-   "death": null,
-   "residences": [
-    {
-     "place": "South Africa",
-     "address": null,
-     "years": null,
-     "sourceIds": [
-      "photo-labels"
-     ],
-     "confidence": "confirmed"
-    }
-   ],
-   "occupations": [],
-   "immigration": null,
-   "cardPlace": "South Africa",
-   "summary": "Daughter of Edward Dixon FitzMaurice (family knowledge), and Reg's sister. Her mother is not stated. Edith Madeline is only probable, because no birth year is known. Her real name is unproved. Possibly Eileen Sybil. A photograph is labelled Auntie Babs, South Africa.",
-   "story": "The family knows Auntie Babs as a daughter of Edward Dixon FitzMaurice, and as Reg's sister.[^family-testimony] Her mother is not stated. Her birth year is unknown, so Edith Madeline is only probable as her mother, and she is not named on this card.\n\nHer real name is still unproved. A snapshot is labelled Auntie Babs, South Africa, and the front of the photograph begins with the letters Eil.[^photo-labels] [^beach-snapshots] That makes Eileen Sybil FitzMaurice a possible match. It is not proved, so the two stay separate, with no line drawn between them. The 1950 wedding album, written from Pat and Ron's point of view, names Auntie Babs among the guests.[^album-1950]",
-   "timeline": [],
-   "facts": [
-    {
-     "label": "Possibly Eileen Sybil",
-     "value": "The name on the photograph begins Eil. A match with Eileen Sybil is not proved. The South Africa label is kept. No birth year is known.",
-     "sourceIds": [
-      "photo-labels",
-      "album-1950"
-     ],
-     "confidence": "family tradition"
-    }
-   ],
-   "media": [
-    {
-     "id": "beach-snapshots",
-     "file": "photos/babs-and-edward-with-boys.jpg",
-     "thumb": "photos/thumbs/babs-and-edward-with-boys.jpg",
-     "caption": "Left: a girl on a verandah, \"Eil...\" written on the front. Right: a clergyman with two boys on a shingle beach",
-     "type": "photo",
-     "sourceId": "beach-snapshots",
-     "alt": "Two snapshots: a girl in a white dress and dark tie on a verandah, and a man in a clerical collar and boater seated on a beach with two small boys",
-     "summary": "The labels on the backs (see the next item) name the girl as Auntie Babs, South Africa, and the beach group as Reg, Bob and their father Edward Dixon Fitzmaurice. The letters 'Eil' on the front of the girl's photograph may be the start of her own first name."
-    },
-    {
-     "id": "photo-labels",
-     "file": "photos/photo-backs-labeled.jpg",
-     "thumb": "photos/thumbs/photo-backs-labeled.jpg",
-     "caption": "The backs of two snapshots: \"Auntie Babs, South Africa\" and \"Reg, Bob and their Father Edward Dixon Fitzmaurice\"",
-     "type": "document",
-     "sourceId": "photo-labels",
-     "alt": "The backs of two old photographs laid side by side, each with a pencilled label",
-     "transcription": "[Left card]\nAuntie Babs\nSouth Africa\n\n[Right card]\nReg, Bob and\ntheir Father\nEdward Dixon\nFitzmaurice"
-    },
-    {
-     "id": "album-guests",
-     "file": "photos/wedding-group-named-captions.jpg",
-     "thumb": "photos/thumbs/wedding-group-named-captions.jpg",
-     "caption": "Wedding album: the guests on the church steps, twice, with every name written underneath",
-     "type": "photo",
-     "sourceId": "album-1950",
-     "alt": "Album spread with two group photographs of the wedding party on church steps and handwritten names below each",
-     "transcription": "[Heading]\nTwo similar pictures of the Guests ... but with a subtle difference.\n\n[Left photograph, \"Photo by Andrews\"]\nAuntie Babs, Uncle Leslie, Peggy, June, Father, Elizabeth (behind Pat), Renie, Daisy, Auntie May, Irene, Laurie (Best Man), Ron, Pat, Sandra.\n\n[Right photograph, \"Photo by Laurie\"]\nAuntie Babs, Uncle Leslie, Peggy, June, Father, Elizabeth, Renie, Daisy, Auntie May, Irene, Herb., Ron, Pat, Sandra.\n\nThe 'subtle difference' is the photographer: Laurie is in the first picture and Herb in the second."
-    },
-    {
-     "id": "sa-snapshots",
-     "file": "photos/south-africa-house-and-young-man.jpg",
-     "thumb": "photos/thumbs/south-africa-house-and-young-man.jpg",
-     "caption": "A house with a verandah in a garden, and a young man in a dark suit. Both unlabelled",
-     "type": "photo",
-     "sourceId": "sa-snapshots",
-     "alt": "Two snapshots on a table: a single-storey house with a verandah behind a garden, and a full-length photograph of a young man in a suit"
-    }
-   ],
-   "openQuestions": [
-    {
-     "question": "Was Auntie Babs the same person as Eileen Sybil FitzMaurice?",
-     "record": "A labelled photograph, or a passenger list, once a married name is known."
-    }
-   ],
-   "relatedPages": [
-    {
-     "title": "Reg's brother and sisters",
-     "url": "reg-sisters.html"
-    }
-   ],
-   "parents": [
-    "edward-dixon-fitzmaurice"
-   ],
-   "children": [],
-   "spouses": [],
-   "isDirectLine": false,
-   "photo": null,
-   "portrait": null,
-   "isLiving": false,
-   "parentLinkConfidence": "family tradition",
-   "nameUncertain": true,
-   "order": 5
   },
   {
    "id": "mr-hg-andrews",
@@ -8714,34 +8672,150 @@
   {
    "id": "eileen-sybil-fitzmaurice",
    "displayName": "Eileen Sybil FitzMaurice",
-   "disambiguator": "Reg's younger sister",
+   "disambiguator": "called Auntie Babs (probably); Reg's sister",
    "givenNames": "Eileen Sybil",
    "surname": "FitzMaurice",
    "sex": "F",
    "generation": 16,
-   "nameVariants": [],
-   "confidence": "probable",
+   "nameVariants": [
+    {
+     "name": "Auntie Babs",
+     "sourceIds": [
+      "photo-labels",
+      "album-1950"
+     ],
+     "note": "the name on the South Africa snapshot and in the 1950 album"
+    },
+    {
+     "name": "Eileen Sybel",
+     "sourceIds": [
+      "census-1911-whitstable"
+     ],
+     "note": "the spelling in the 1911 census index"
+    }
+   ],
+   "confidence": "confirmed",
    "birth": {
     "date": "1907",
     "display": "late 1907, Blean district, Kent",
     "place": "Blean, Kent",
     "sourceIds": [
      "gro-indexes",
-     "census-1911-whitstable"
+     "census-1911-whitstable",
+     "news-1936-simmons"
     ],
-    "confidence": "probable",
+    "confidence": "confirmed",
     "dateQualifier": "about"
    },
-   "death": null,
-   "residences": [],
+   "death": {
+    "date": "1996",
+    "display": "probably early 1996, Canterbury, aged 88",
+    "place": "Canterbury",
+    "sourceIds": [
+     "gro-indexes"
+    ],
+    "confidence": "probable",
+    "dateQualifier": "about",
+    "note": "Death index, Eileen Sybil Hallawell, March quarter 1996, Canterbury. The recorded birth day does not match the 1939 Register."
+   },
+   "residences": [
+    {
+     "place": "Whitstable",
+     "address": null,
+     "years": "1911",
+     "sourceIds": [
+      "census-1911-whitstable"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "place": "South Africa",
+     "address": null,
+     "years": "about 1916 to the 1920s",
+     "sourceIds": [
+      "passenger-1916-llanstephan",
+      "photo-labels"
+     ],
+     "confidence": "probable"
+    },
+    {
+     "place": "Hayes",
+     "address": null,
+     "years": "1939",
+     "sourceIds": [
+      "register-1939"
+     ],
+     "confidence": "probable"
+    },
+    {
+     "place": "Kent",
+     "address": null,
+     "years": "later life",
+     "sourceIds": [
+      "gro-indexes"
+     ],
+     "confidence": "probable"
+    }
+   ],
    "occupations": [],
    "immigration": null,
-   "cardPlace": "Whitstable",
-   "summary": "Reg's younger sister. Probably born in late 1907 in the Blean district of Kent. She was 3, and with her parents at Whitstable, in 1911. Possibly Auntie Babs. That is not proved.",
-   "story": "Eileen Sybil Fitzmaurice, mother's maiden name Spencer, was registered in the Blean district in the December quarter of 1907, volume 2a, page 933.[^gro-indexes] In 1911 she is Eileen, aged 3, daughter of Edward Dixon and Edith Madeline at Whitstable.[^census-1911-whitstable] The family had four children. Edith Marjorie had died. The three who grew up were Edward Robert, Baron Reginald and Eileen.\n\nA family photograph labelled Auntie Babs, South Africa, has a name beginning Eil on the front. Eileen is one possible reading. It is not proved, and Auntie Babs is kept as her own card. No line is drawn between them.",
+   "cardPlace": "Whitstable, then South Africa",
+   "summary": "Reg's younger sister, probably the girl the family called Auntie Babs. Born late 1907 in the Blean district of Kent, daughter of Edward Dixon and Edith Madeline. She probably sailed to Cape Town in 1916, married Leslie Hugh Simmons at Staines in the summer of 1936, and probably died at Canterbury in early 1996.",
+   "story": "The youngest of Edward Dixon and Edith's children, Eileen was 3 at Whitstable in 1911.[^census-1911-whitstable] She was probably the girl of 8 who sailed to Cape Town with her mother and brothers in August 1916.[^passenger-1916-llanstephan] A snapshot of a girl on a verandah is labelled on the back Auntie Babs, South Africa, and the letters Eil are scratched into the front. She was probably that girl.[^photo-labels] [^beach-snapshots]\n\nShe married Leslie Hugh Simmons, secretary of the Corinth Hockey Club, at Staines in the summer of 1936. The local paper called her the daughter of the late Mr Edward Dixon Fitzmaurice, formerly of Cape Town.[^news-1936-simmons] In 1939 the couple lived at Hayes, close to her brother Reg. Leslie was a rate fixer and motion study engineer.[^register-1939] As Auntie Babs she was at Pat's wedding in 1950, with Uncle Leslie beside her.[^album-1950]\n\nIn 1984 she married Ralph Hallawell in Kent, and she probably died at Canterbury in early 1996, aged 88.[^gro-indexes]",
    "timeline": [],
-   "facts": [],
-   "media": [],
+   "facts": [
+    {
+     "label": "Called Auntie Babs",
+     "value": "Probably the girl labelled Auntie Babs, South Africa, and the Auntie Babs at Pat and Ron's wedding. Uncle Leslie beside her was probably her husband, Leslie Hugh Simmons.",
+     "sourceIds": [
+      "photo-labels",
+      "album-1950",
+      "news-1936-simmons"
+     ],
+     "confidence": "probable"
+    }
+   ],
+   "media": [
+    {
+     "id": "beach-snapshots",
+     "file": "photos/babs-and-edward-with-boys.jpg",
+     "thumb": "photos/thumbs/babs-and-edward-with-boys.jpg",
+     "caption": "Left: a girl on a verandah, \"Eil...\" written on the front. Right: Edward Dixon with two boys on a shingle beach",
+     "type": "photo",
+     "sourceId": "beach-snapshots",
+     "alt": "Two snapshots: a girl in a white dress and dark tie on a verandah, and a man in a white collar and boater seated on a beach with two small boys",
+     "summary": "The labels on the backs (see the next item) name the girl as Auntie Babs, South Africa, and the beach group as Reg, Bob and their father Edward Dixon Fitzmaurice. The letters 'Eil' on the front of the girl's photograph may be the start of her own first name."
+    },
+    {
+     "id": "photo-labels",
+     "file": "photos/photo-backs-labeled.jpg",
+     "thumb": "photos/thumbs/photo-backs-labeled.jpg",
+     "caption": "The backs of two snapshots: \"Auntie Babs, South Africa\" and \"Reg, Bob and their Father Edward Dixon Fitzmaurice\"",
+     "type": "document",
+     "sourceId": "photo-labels",
+     "alt": "The backs of two old photographs laid side by side, each with a pencilled label",
+     "transcription": "[Left card]\nAuntie Babs\nSouth Africa\n\n[Right card]\nReg, Bob and\ntheir Father\nEdward Dixon\nFitzmaurice"
+    },
+    {
+     "id": "album-guests",
+     "file": "photos/wedding-group-named-captions.jpg",
+     "thumb": "photos/thumbs/wedding-group-named-captions.jpg",
+     "caption": "Wedding album: the guests on the church steps, twice, with every name written underneath",
+     "type": "photo",
+     "sourceId": "album-1950",
+     "alt": "Album spread with two group photographs of the wedding party on church steps and handwritten names below each",
+     "transcription": "[Heading]\nTwo similar pictures of the Guests ... but with a subtle difference.\n\n[Left photograph, \"Photo by Andrews\"]\nAuntie Babs, Uncle Leslie, Peggy, June, Father, Elizabeth (behind Pat), Renie, Daisy, Auntie May, Irene, Laurie (Best Man), Ron, Pat, Sandra.\n\n[Right photograph, \"Photo by Laurie\"]\nAuntie Babs, Uncle Leslie, Peggy, June, Father, Elizabeth, Renie, Daisy, Auntie May, Irene, Herb., Ron, Pat, Sandra.\n\nThe 'subtle difference' is the photographer: Laurie is in the first picture and Herb in the second."
+    },
+    {
+     "id": "sa-snapshots",
+     "file": "photos/south-africa-house-and-young-man.jpg",
+     "thumb": "photos/thumbs/south-africa-house-and-young-man.jpg",
+     "caption": "A house with a verandah in a garden, and a young man in a dark suit. Both unlabelled",
+     "type": "photo",
+     "sourceId": "sa-snapshots",
+     "alt": "Two snapshots on a table: a single-storey house with a verandah behind a garden, and a full-length photograph of a young man in a suit"
+    }
+   ],
    "openQuestions": [],
    "relatedPages": [
     {
@@ -8754,13 +8828,187 @@
     "edith-madeleine-fitzmaurice"
    ],
    "children": [],
-   "spouses": [],
+   "spouses": [
+    {
+     "id": "leslie-hugh-simmons",
+     "order": 1,
+     "marriageDate": "1936",
+     "marriageDisplay": "summer 1936",
+     "place": "Staines",
+     "sourceIds": [
+      "news-1936-simmons"
+     ],
+     "confidence": "confirmed",
+     "note": null
+    },
+    {
+     "id": "ralph-hallawell",
+     "order": 2,
+     "marriageDate": null,
+     "marriageDisplay": null,
+     "place": "Kent",
+     "sourceIds": [
+      "gro-indexes"
+     ],
+     "confidence": "probable",
+     "note": "Married in 1984. The year is given on Eileen's story. Ralph may still be living, so his card has no dates."
+    }
+   ],
    "isDirectLine": false,
    "photo": null,
    "portrait": null,
    "isLiving": false,
    "order": 4,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "confirmed",
+   "nameUncertain": false
+  },
+  {
+   "id": "leslie-hugh-simmons",
+   "displayName": "Leslie Hugh Simmons",
+   "disambiguator": "Uncle Leslie (probably); husband of Eileen",
+   "givenNames": "Leslie Hugh",
+   "surname": "Simmons",
+   "sex": "M",
+   "generation": 16,
+   "nameVariants": [
+    {
+     "name": "Uncle Leslie",
+     "sourceIds": [
+      "album-1950"
+     ],
+     "note": "probably this Leslie"
+    }
+   ],
+   "confidence": "confirmed",
+   "birth": {
+    "date": "1905-04-10",
+    "display": "probably 10 April 1905",
+    "place": null,
+    "sourceIds": [
+     "register-1939"
+    ],
+    "confidence": "probable",
+    "note": "1939 Register. No death date is published."
+   },
+   "death": null,
+   "residences": [
+    {
+     "place": "Staines",
+     "address": null,
+     "years": "1936",
+     "sourceIds": [
+      "news-1936-simmons"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "place": "Hayes",
+     "address": null,
+     "years": "1939",
+     "sourceIds": [
+      "register-1939"
+     ],
+     "confidence": "probable"
+    }
+   ],
+   "occupations": [
+    {
+     "title": "Rate fixer and motion study engineer",
+     "employer": null,
+     "place": "Hayes",
+     "years": "1939",
+     "sourceIds": [
+      "register-1939"
+     ],
+     "confidence": "probable"
+    }
+   ],
+   "immigration": null,
+   "cardPlace": "Staines, then Hayes",
+   "summary": "Husband of Eileen Sybil FitzMaurice, and probably the Uncle Leslie of the 1950 wedding. Secretary of the Corinth Hockey Club. They married at Staines in the summer of 1936.",
+   "story": "Leslie Hugh Simmons married Eileen Sybil FitzMaurice at Staines in the summer of 1936. Both were members of the Corinth Hockey Club, and he was its secretary.[^news-1936-simmons] He was probably born on 10 April 1905. In 1939 he was a rate fixer and motion study engineer, living at Hayes with Eileen.[^register-1939] He is probably the Uncle Leslie who stood beside Auntie Babs at Pat and Ron's wedding in 1950.[^album-1950] No death record is given here.",
+   "timeline": [],
+   "facts": [],
+   "media": [],
+   "openQuestions": [],
+   "relatedPages": [
+    {
+     "title": "Reg's brother and sisters",
+     "url": "reg-sisters.html"
+    }
+   ],
+   "parents": [],
+   "children": [],
+   "spouses": [
+    {
+     "id": "eileen-sybil-fitzmaurice",
+     "order": 1,
+     "marriageDate": "1936",
+     "marriageDisplay": "summer 1936",
+     "place": "Staines",
+     "sourceIds": [
+      "news-1936-simmons"
+     ],
+     "confidence": "confirmed",
+     "note": null
+    }
+   ],
+   "isDirectLine": false,
+   "photo": null,
+   "portrait": null,
+   "isLiving": false,
+   "order": 1,
+   "parentLinkConfidence": "confirmed",
+   "nameUncertain": false,
+   "layoutJoin": "eileen-sybil-fitzmaurice"
+  },
+  {
+   "id": "ralph-hallawell",
+   "displayName": "Ralph Hallawell",
+   "disambiguator": "Eileen's second husband",
+   "givenNames": "Ralph",
+   "surname": "Hallawell",
+   "sex": "M",
+   "generation": 16,
+   "nameVariants": [],
+   "confidence": "probable",
+   "birth": null,
+   "death": null,
+   "residences": [],
+   "occupations": [],
+   "immigration": null,
+   "cardPlace": null,
+   "summary": "Eileen's second husband.",
+   "story": "Ralph is Eileen's second husband. Nothing further is published about him.",
+   "timeline": [],
+   "facts": [],
+   "media": [],
+   "openQuestions": [],
+   "relatedPages": [],
+   "parents": [],
+   "children": [],
+   "spouses": [
+    {
+     "id": "eileen-sybil-fitzmaurice",
+     "order": 1,
+     "marriageDate": null,
+     "marriageDisplay": null,
+     "place": "Kent",
+     "sourceIds": [
+      "gro-indexes"
+     ],
+     "confidence": "probable",
+     "note": null
+    }
+   ],
+   "isDirectLine": false,
+   "photo": null,
+   "portrait": null,
+   "isLiving": true,
+   "order": 2,
+   "parentLinkConfidence": "confirmed",
+   "nameUncertain": false,
+   "layoutJoin": "eileen-sybil-fitzmaurice"
   },
   {
    "id": "charles-bennett",

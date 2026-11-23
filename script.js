@@ -81,7 +81,7 @@ const personData = {
         name: "Auntie Babs",
         subtitle: "Family Member",
         tags: ["Aunt", "Wedding Guest"],
-        description: `Auntie Babs is named in the group photographs on the church steps. The family knows her as a daughter of Edward Dixon FitzMaurice, and as Reg's sister. Her mother is not named. Her real name is unproved, and she is possibly Eileen Sybil.`
+        description: `Auntie Babs was probably Pat's aunt Eileen Sybil FitzMaurice, Reg's sister. Uncle Leslie beside her was probably her husband, Leslie Hugh Simmons.`
     },
     auntie_may: {
         name: "Auntie May",
@@ -170,9 +170,9 @@ const personData = {
     },
     edward_dixon: {
         name: "Edward Dixon Fitzmaurice",
-        subtitle: "Church of England Clergyman",
-        tags: ["Clergyman", "Knightsbridge", "Victorian"],
-        description: `Edward Dixon Fitzmaurice was born at Aston in 1872. He was an apprentice civil engineer in 1891, a professional singer at his marriage in 1897, and a civil engineer in 1901 and 1911. A family photograph shows what may be a clerical collar. That is an unproven tradition. He died in the West Ham district in 1928. He was not a son of the Earls of Orkney.`
+        subtitle: "Civil engineer",
+        tags: ["Engineer", "Knightsbridge", "Victorian"],
+        description: `Edward Dixon Fitzmaurice was born at Aston in 1872. He was an engineer all his working life: an apprentice civil engineer in 1891, a professional singer at his marriage in 1897, and a civil engineer in 1901 and 1911, and an engineer on the passenger lists from 1916 to 1923. The white collar in the beach photo is not a sign that he was a clergyman. He died on 7 June 1928, probably aged 55. He was not a son of the Earls of Orkney.`
     },
     edith: {
         name: "Edith Madeleine Fitzmaurice",
@@ -182,9 +182,9 @@ const personData = {
     },
     auntie_babs_sa: {
         name: '"Babs" ,  Auntie Babs',
-        subtitle: "South Africa label",
-        tags: ["South Africa", "Edwardian", "Family"],
-        description: `A snapshot is labelled Auntie Babs, South Africa. The family knows her as a daughter of Edward Dixon FitzMaurice. Her mother is not named, because no birth year is known. Her real name is unproved. She is possibly Eileen Sybil, and the two are kept apart. She is also named at the 1950 wedding.`
+        subtitle: "Probably Eileen Sybil",
+        tags: ["South Africa", "Eileen", "Family"],
+        description: `A snapshot of a girl on a verandah is labelled Auntie Babs, South Africa, and the letters Eil are on the front. She was probably Eileen Sybil FitzMaurice. She probably sailed to Cape Town with her mother and brothers in August 1916, aged 8.`
     },
     reg: {
         name: "Reg Fitzmaurice",
@@ -226,7 +226,7 @@ const personData = {
         name: "Mrs. Dorothy Wiggins",
         subtitle: "Mother of the 8th Earl of Orkney",
         tags: ["Horsham", "Sussex", "Mother"],
-        description: `Mrs. Dorothy Wiggins was the mother of Cecil O'Bryen Fitzmaurice, the 8th Earl of Orkney. She lived at Lantern Hatch, Itchingfield, near Horsham, Sussex. Her surname "Wiggins" indicates she either remarried after a Fitzmaurice husband, or married into the Fitzmaurice family. Her connection confirms the generational link between the Victorian Fitzmaurice clergyman (Edward Dixon) and the Orkney peerage branch.`
+        description: `Mrs. Dorothy Wiggins was the mother of Cecil O'Bryen Fitzmaurice, the 8th Earl of Orkney. She lived at Itchingfield, near Horsham, Sussex. That does not make Edward Dixon, a civil engineer, a member of the Orkney family.`
     }
 };
 

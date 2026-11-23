@@ -4,16 +4,16 @@
   "date": "2026-11-23",
   "counts": {
    "places": 166,
-   "events": 279,
+   "events": 280,
    "byKind": {
     "home": 40,
     "military site": 5,
-    "church": 18,
+    "church": 19,
     "town": 52,
     "workplace": 8,
     "registration district": 18,
     "venue": 4,
-    "cemetery": 2,
+    "cemetery": 1,
     "port": 5,
     "hospital": 1,
     "parish": 4,
@@ -25,22 +25,22 @@
    "byPrecision": {
     "address": 38,
     "street": 8,
-    "town": 61,
-    "building": 34,
+    "town": 60,
+    "building": 35,
     "registration district": 18,
     "parish": 4,
     "country": 2,
     "county": 1
    },
-   "published": 162,
-   "newNeedsReview": 4
+   "published": 166,
+   "newNeedsReview": 0
   }
  },
  "places": [
   {
    "id": "1-honey-street-bodmin",
    "name": "1 Honey Street, Bodmin",
-   "historicName": "1 Honey Street, as read",
+   "historicName": "1 Honey Street, Bodmin",
    "variants": [],
    "kind": "home",
    "address": "1 Honey Street, Bodmin",
@@ -53,7 +53,7 @@
    "inEngland": true,
    "standsToday": "unknown",
    "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
-   "significance": "1 Honey Street, Bodmin is on the site for Charles Bennett, Annie Bennett: lived 1901, as read.",
+   "significance": "1 Honey Street, Bodmin is published on the site. The owner approved this reading on 23 November 2026.",
    "events": [
     {
      "type": "lived",
@@ -61,7 +61,7 @@
       "charles-bennett",
       "annie-bennett"
      ],
-     "date": "1901, as read",
+     "date": "1901",
      "dateStart": "1901-03-31",
      "dateEnd": "1901-03-31",
      "datePrecision": "day",
@@ -79,7 +79,7 @@
      "familyStatement": false
     }
    ],
-   "status": "new, needs review",
+   "status": "published",
    "noProvenLink": false
   },
   {
@@ -309,7 +309,7 @@
   {
    "id": "15-mornington-place",
    "name": "15 Mornington Place, St Pancras",
-   "historicName": "15 Mornington Place, as read",
+   "historicName": "15 Mornington Place, St Pancras",
    "variants": [],
    "kind": "home",
    "address": "15 Mornington Place, St Pancras",
@@ -322,7 +322,7 @@
    "inEngland": true,
    "standsToday": "unknown",
    "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
-   "significance": "15 Mornington Place, St Pancras is on the site for Edith Madeline FitzMaurice, Caroline Spencer: lived 1891, as read.",
+   "significance": "15 Mornington Place, St Pancras is published on the site. The owner approved this reading on 23 November 2026. The house number may read 15b.",
    "events": [
     {
      "type": "lived",
@@ -330,7 +330,7 @@
       "edith-madeleine-fitzmaurice",
       "caroline-spencer"
      ],
-     "date": "1891, as read",
+     "date": "1891. The house number may read 15b.",
      "dateStart": "1891-04-05",
      "dateEnd": "1891-04-05",
      "datePrecision": "day",
@@ -348,7 +348,7 @@
      "familyStatement": false
     }
    ],
-   "status": "new, needs review",
+   "status": "published",
    "noProvenLink": false
   },
   {
@@ -496,7 +496,7 @@
   {
    "id": "25-compton-avenue",
    "name": "25 Compton Avenue, Brighton",
-   "historicName": "25 Compton Avenue, as read",
+   "historicName": "25 Compton Avenue, Brighton",
    "variants": [],
    "kind": "home",
    "address": "25 Compton Avenue, Brighton",
@@ -509,14 +509,14 @@
    "inEngland": true,
    "standsToday": "unknown",
    "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
-   "significance": "25 Compton Avenue, Brighton is on the site for Edward Dixon FitzMaurice: lived 1891, schedule 206, lodger, as read.",
+   "significance": "25 Compton Avenue, Brighton is published on the site. The owner approved this reading on 23 November 2026.",
    "events": [
     {
      "type": "lived",
      "personIds": [
       "edward-dixon-fitzmaurice"
      ],
-     "date": "1891, schedule 206, lodger, as read",
+     "date": "1891, schedule 206, lodger",
      "dateStart": "1891-04-05",
      "dateEnd": "1891-04-05",
      "datePrecision": "day",
@@ -534,7 +534,7 @@
      "familyStatement": false
     }
    ],
-   "status": "new, needs review",
+   "status": "published",
    "noProvenLink": false
   },
   {
@@ -3488,41 +3488,68 @@
    "noProvenLink": false
   },
   {
-   "id": "crowthorne",
-   "name": "Crowthorne",
-   "historicName": "Crowthorne",
-   "variants": [],
-   "kind": "cemetery",
-   "address": "Crowthorne",
+   "id": "st-john-the-baptist-crowthorne",
+   "name": "St John the Baptist Parish Church, Crowthorne",
+   "historicName": "St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire",
+   "variants": [
+    "Crowthorne"
+   ],
+   "kind": "church",
+   "address": "Waterloo Road, Crowthorne, Berkshire",
    "modernAddress": "",
-   "precision": "town",
-   "lat": 51.369098,
-   "lng": -0.792863,
-   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Crowthorne, England",
-   "uncertaintyMetres": 2000,
+   "precision": "building",
+   "lat": 51.368234,
+   "lng": -0.797879,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. The point is St John the Baptist, which OpenStreetMap places on Church Street, Crowthorne. The church's own page gives Waterloo Road.",
+   "uncertaintyMetres": 80,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
-   "significance": "Crowthorne is on the site for Patricia Andrews, Ronald Andrews: buried buried together (family).",
+   "standsTodaySource": "The church's page describes the churchyard. Whether every memorial still stands was not checked. Source st-john-crowthorne-churchyard.",
+   "significance": "Ronald and Patricia Andrews are buried together in this churchyard (family). The owner named the church on 23 November 2026.",
    "events": [
     {
      "type": "buried",
      "personIds": [
-      "patricia-andrews",
       "ronald-andrews"
      ],
-     "date": "buried together (family)",
-     "dateStart": null,
-     "dateEnd": null,
-     "datePrecision": "unknown",
+     "date": "2010 (family)",
+     "dateStart": "2010-01-01",
+     "dateEnd": "2010-12-31",
+     "datePrecision": "year",
      "factRef": "ronald-andrews.death",
      "pages": [
       "ron-egypt.html",
-      "wedding.html"
+      "wedding.html",
+      "branches.html",
+      "sources.html"
      ],
      "recordCrops": [],
      "sourceIds": [
-      "family-testimony"
+      "family-testimony",
+      "st-john-crowthorne-churchyard"
+     ],
+     "confidence": "family tradition",
+     "familyStatement": true
+    },
+    {
+     "type": "buried",
+     "personIds": [
+      "patricia-andrews"
+     ],
+     "date": "2020 (family)",
+     "dateStart": "2020-01-01",
+     "dateEnd": "2020-12-31",
+     "datePrecision": "year",
+     "factRef": "patricia-andrews.death",
+     "pages": [
+      "wedding.html",
+      "branches.html",
+      "sources.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "family-testimony",
+      "st-john-crowthorne-churchyard"
      ],
      "confidence": "family tradition",
      "familyStatement": true
@@ -6111,7 +6138,7 @@
   {
    "id": "plymouth-road-canning-town",
    "name": "Plymouth Road, Canning Town",
-   "historicName": "Plymouth Road, Canning Town, as read",
+   "historicName": "Plymouth Road, Canning Town",
    "variants": [],
    "kind": "workplace",
    "address": "Plymouth Road, Canning Town",
@@ -6124,14 +6151,14 @@
    "inEngland": true,
    "standsToday": "unknown",
    "standsTodaySource": "Not checked. The directory does not assume a building still stands.",
-   "significance": "Plymouth Road, Canning Town is on the site for Herbert Andrews: worked 1921, night baker, workplace as read.",
+   "significance": "Plymouth Road, Canning Town is published on the site. The owner approved this reading on 23 November 2026. The firm's name on the crop was not clear enough to enter.",
    "events": [
     {
      "type": "worked",
      "personIds": [
       "herbert-andrews-sr"
      ],
-     "date": "1921, night baker, workplace as read",
+     "date": "1921, night work",
      "dateStart": "1921-06-19",
      "dateEnd": "1921-06-19",
      "datePrecision": "day",
@@ -6149,7 +6176,7 @@
      "familyStatement": false
     }
    ],
-   "status": "new, needs review",
+   "status": "published",
    "noProvenLink": false
   },
   {

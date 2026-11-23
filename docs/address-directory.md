@@ -1,15 +1,15 @@
 # Address directory
 
-Started from commit c8caf1b433acce5be7338533f966281ed12afbee on 23 November 2026. This is a directory of places already on the site, plus four street readings taken from record crops and marked new, needs review. Living people are left out. The Earls of Orkney and the Hamiltons are in their own section.
+Started from commit c8caf1b433acce5be7338533f966281ed12afbee on 23 November 2026, then brought up to date with the approved street readings and the Crowthorne churchyard. Living people are left out. The Earls of Orkney and the Hamiltons are in their own section.
 
 ## 1. Summary
 
-Places: 166. Events: 279. Already published: 162. New, needs review: 4.
+Places: 166. Events: 280. Already published: 166. New, needs review: 0.
 
 | Kind | Places |
 | --- | --- |
-| cemetery | 2 |
-| church | 18 |
+| cemetery | 1 |
+| church | 19 |
 | country | 2 |
 | county | 1 |
 | farm | 2 |
@@ -27,19 +27,19 @@ Places: 166. Events: 279. Already published: 162. New, needs review: 4.
 | Precision | Places |
 | --- | --- |
 | address | 38 |
-| building | 34 |
+| building | 35 |
 | country | 2 |
 | county | 1 |
 | parish | 4 |
 | registration district | 18 |
 | street | 8 |
-| town | 61 |
+| town | 60 |
 
-Coordinates come from OpenStreetMap Nominatim where the result matched the name. A missing point is left empty on purpose. Whether a building still stands was not checked, so stands today is unknown throughout.
+Coordinates come from OpenStreetMap Nominatim where a result matched the place. A missing point is left empty on purpose. Whether a building still stands was not checked, so stands today is unknown except where a note says otherwise.
 
 ## 2. Addresses of significance
 
-Date order. This table keeps street addresses, buildings, churches, cemeteries, studios, workplaces, military sites, ports and the new crop readings. Registration districts and plain towns are in the person section.
+Date order. This table keeps street addresses, buildings, churches, cemeteries, studios, workplaces, military sites and ports. Registration districts and plain towns are in the person section.
 
 | Date | Place | What happened | Who | Confidence | Source | Stands today |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -73,13 +73,13 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 9 June 1889 | St Albans Abbey | baptised | Henry George Andrews | confirmed | parish-st-albans-1889 | unknown |
 | about 1899 | Lang Sims studio, Brixton Road | photographed | Edith Madeline FitzMaurice | probable | lang-sims-card | unknown |
 | about 1899 | Lang Sims studio, Folkestone | photographed | Edith Madeline FitzMaurice | probable | lang-sims-card | unknown |
-| 1891, as read | 15 Mornington Place, St Pancras | lived | Edith Madeline FitzMaurice, Caroline Spencer | probable | census-1891-spencer | unknown |
-| 1891, schedule 206, lodger, as read | 25 Compton Avenue, Brighton | lived | Edward Dixon FitzMaurice | probable | census-1891-brighton | unknown |
+| 1891. The house number may read 15b. | 15 Mornington Place, St Pancras | lived | Edith Madeline FitzMaurice, Caroline Spencer | probable | census-1891-spencer | unknown |
+| 1891, schedule 206, lodger | 25 Compton Avenue, Brighton | lived | Edward Dixon FitzMaurice | probable | census-1891-brighton | unknown |
 | 1891 | 92 Harper Road, West Ham | lived | William Cousins, Annie Cousins | probable | census-cousins | unknown |
 | 1891 | High Cross, Aldenham | lived | George Andrews, Alice Andrews | probable | census-1891-high-cross, census-andrews-stacey | unknown |
 | 10 May 1895 | 16 York Road, Edgbaston | died | Robert W. FitzMaurice | confirmed | probate-robert-1895 | unknown |
 | 1897-08-02 | St Matthew's, Brixton | married | Edward Dixon FitzMaurice, Edith Madeline FitzMaurice | confirmed | parish-brixton-1897 | unknown |
-| 1901, as read | 1 Honey Street, Bodmin | lived | Charles Bennett, Annie Bennett | probable | census-bennett | unknown |
+| 1901 | 1 Honey Street, Bodmin | lived | Charles Bennett, Annie Bennett | probable | census-bennett | unknown |
 | 1901 | 13 Gladding Road, Manor Park | lived | Rosina Maud Andrews | probable | census-cousins | unknown |
 | 1901 | 3 Young Street, Canning Town | lived | William Cousins | probable | census-cousins | unknown |
 | 1901 | 5 Young Street, Canning Town | lived | Robert H. Cousins | probable | census-cousins | unknown |
@@ -103,7 +103,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1921 | Royal Albert Docks | worked | Henry George Andrews | probable | census-cousins | unknown |
 | 1921 | Claims Record Office, Kew | worked | Lilian FitzMaurice | probable | census-1921-lilian | unknown |
 | 1921 | East Ham Isolation Hospital | worked | May F. Cousins | probable | census-1921-may | unknown |
-| 1921, night baker, workplace as read | Plymouth Road, Canning Town | worked | Herbert Andrews | probable | census-andrews-stacey | unknown |
+| 1921, night work | Plymouth Road, Canning Town | worked | Herbert Andrews | probable | census-andrews-stacey | unknown |
 | 15 October 1923 | 14 Waterloo Road, Whitstable | lived | Edward Dixon FitzMaurice | confirmed | passenger-1923-armadale | unknown |
 | 1923 to 1925 | Southampton | sailed | Edward Dixon FitzMaurice, Edith Madeline FitzMaurice, Baron Reginald FitzMaurice | confirmed | passenger-1923-armadale, passenger-1923-arundel, passenger-1925-marburn, passenger-1925-edith | unknown |
 | 1925 to 1926 | 26 Turret Grove, Clapham | lived | Baron Reginald FitzMaurice | probable | electoral-fitzmaurice | unknown |
@@ -124,8 +124,9 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1945 | Tura | served | Ronald Andrews | confirmed | ron-album | unknown |
 | 1948 | 48 Oxford Road South, Gunnersbury | lived | May F. Cousins | probable | electoral-may | unknown |
 | 1950-02-11 | St Mary's Church, Wanstead | married | Ronald Andrews, Patricia Andrews | confirmed | album-1950 | unknown |
+| 2010 (family) | St John the Baptist Parish Church, Crowthorne | buried | Ronald Andrews | family tradition (family) | family-testimony, st-john-crowthorne-churchyard | unknown |
+| 2020 (family) | St John the Baptist Parish Church, Crowthorne | buried | Patricia Andrews | family tradition (family) | family-testimony, st-john-crowthorne-churchyard | unknown |
 | undated | Cape Supreme Court | civil case | Edward Robert FitzMaurice | family tradition (family) | family-bob-south-africa | unknown |
-| buried together (family) | Crowthorne | buried | Patricia Andrews, Ronald Andrews | family tradition (family) | family-testimony | unknown |
 
 ## 3. By person
 
@@ -150,7 +151,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | --- | --- | --- | --- |
 | early 1864, St Columb district | St Columb registration district | born | probable |
 | probably 1882 | Stoke Damerel registration district | married | probable |
-| 1901, as read | 1 Honey Street, Bodmin | lived | probable |
+| 1901 | 1 Honey Street, Bodmin | lived | probable |
 | 1911 | Bodmin | worked | probable |
 | spring 1912, Bodmin, aged 48 | Bodmin | died | probable |
 
@@ -212,7 +213,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | Date | Place | What happened | Confidence |
 | --- | --- | --- | --- |
 | about 1843 to 1849, Islington | Islington | born | probable |
-| 1891, as read | 15 Mornington Place, St Pancras | lived | probable |
+| 1891. The house number may read 15b. | 15 Mornington Place, St Pancras | lived | probable |
 | 1911 | 6 Cathles Road, Balham Hill | lived | probable |
 
 ### Charles Bennett
@@ -224,7 +225,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1891 to 1925 | Bodmin | lived | probable |
 | 1891 | Bodmin | worked | probable |
 | 1901 | Bodmin | worked | probable |
-| 1901, as read | 1 Honey Street, Bodmin | lived | probable |
+| 1901 | 1 Honey Street, Bodmin | lived | probable |
 | 1911 | Bodmin | worked | probable |
 | 1925-12-05 | Bodmin | died | probable |
 
@@ -243,7 +244,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | about 1899 | Lang Sims studio, Folkestone | photographed | probable |
 | 1891 | Islington and St Pancras | lived | probable |
 | 1891 | St Pancras | worked | probable |
-| 1891, as read | 15 Mornington Place, St Pancras | lived | probable |
+| 1891. The house number may read 15b. | 15 Mornington Place, St Pancras | lived | probable |
 | 1897 | Brixton | lived | confirmed |
 | 1897-08-02 | St Matthew's, Brixton | married | confirmed |
 | 1911 | Whitstable | lived | probable |
@@ -273,7 +274,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | about 1895 | Stuart studio, Brompton Road | photographed | probable |
 | 1891 | Brighton | lived | probable |
 | 1891 | Brighton | worked | probable |
-| 1891, schedule 206, lodger, as read | 25 Compton Avenue, Brighton | lived | probable |
+| 1891, schedule 206, lodger | 25 Compton Avenue, Brighton | lived | probable |
 | 1897 | Brixton | lived | confirmed |
 | 1897 | Brixton | worked | confirmed |
 | 1897-08-02 | St Matthew's, Brixton | married | confirmed |
@@ -512,7 +513,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | 1901 | 94 Bury Road, Hemel Hempstead | lived | probable |
 | 1911 to 1921 | Canning Town and Plaistow | lived | probable |
 | 1911 | 40 Fisher Street, Canning Town | lived | probable |
-| 1921, night baker, workplace as read | Plymouth Road, Canning Town | worked | probable |
+| 1921, night work | Plymouth Road, Canning Town | worked | probable |
 | 1939 | West Ham registration district | lived | probable |
 | 1939 | West Ham registration district | worked | probable |
 | probably early 1951, Essex South Western district, aged 84 | Essex South Western registration district | died | probable |
@@ -654,7 +655,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | --- | --- | --- | --- |
 | probably early 1929, Hammersmith district | Hammersmith registration district | born | probable |
 | 1950-02-11 | St Mary's Church, Wanstead | married | confirmed |
-| buried together (family) | Crowthorne | buried | family tradition |
+| 2020 (family) | St John the Baptist Parish Church, Crowthorne | buried | family tradition |
 | the family remembers Windsor, which is not the registered birthplace | Windsor | born | family tradition |
 
 ### Reginald Bennett
@@ -701,7 +702,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | probably summer 1921, West Ham | West Ham registration district | born | probable |
 | 1945 | Tura | served | confirmed |
 | 1950-02-11 | St Mary's Church, Wanstead | married | confirmed |
-| buried together (family) | Crowthorne | buried | family tradition |
+| 2010 (family) | St John the Baptist Parish Church, Crowthorne | buried | family tradition |
 
 ### Rosina Maud Andrews
 
@@ -790,6 +791,8 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | Date | Place | Who |
 | --- | --- | --- |
 | 4 November 1838 | Aldenham parish church | Mary Stacey |
+| 2010 (family) | St John the Baptist Parish Church, Crowthorne | Ronald Andrews |
+| 2020 (family) | St John the Baptist Parish Church, Crowthorne | Patricia Andrews |
 | 16 March 1834 | Denham parish church | Henry Stacey |
 | 5 June 1858 | Leavesden parish church | Henry Stacey, Mary Stacey |
 | 9 June 1889 | St Albans Abbey | Henry George Andrews |
@@ -812,7 +815,8 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | Date | Place | Who |
 | --- | --- | --- |
 | 1928-06-07 | Chingford Mount Cemetery | Edward Dixon FitzMaurice |
-| buried together (family) | Crowthorne | Patricia Andrews, Ronald Andrews |
+| 2010 (family) | St John the Baptist Parish Church, Crowthorne | Ronald Andrews |
+| 2020 (family) | St John the Baptist Parish Church, Crowthorne | Patricia Andrews |
 
 ### Deaths
 
@@ -852,16 +856,16 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 
 | Date | Place | Who |
 | --- | --- | --- |
-| 1901, as read | 1 Honey Street, Bodmin | Charles Bennett, Annie Bennett |
+| 1901 | 1 Honey Street, Bodmin | Charles Bennett, Annie Bennett |
 | 1911 | 10 Riles Road, Plaistow | Herbert C. Cousins |
 | 1936 to 1937 | 113 Bourne Avenue, Harlington | Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice |
 | 1881 | 118 Keeton Road, Bermondsey | William Cousins, Annie Cousins, Arthur E. Cousins |
 | 1901 | 13 Gladding Road, Manor Park | Rosina Maud Andrews |
 | 15 October 1923 | 14 Waterloo Road, Whitstable | Edward Dixon FitzMaurice |
-| 1891, as read | 15 Mornington Place, St Pancras | Edith Madeline FitzMaurice, Caroline Spencer |
+| 1891. The house number may read 15b. | 15 Mornington Place, St Pancras | Edith Madeline FitzMaurice, Caroline Spencer |
 | 1861 | 2 Elm Terrace, Wandsworth Road | Fanny Mary Falcke |
 | 1911 to 19 April 1941 | 23 Sutton Court Road, Plaistow | William Cousins, Amelia Cousins, Henry George Andrews, Rosina Maud Andrews, Sidney George Andrews |
-| 1891, schedule 206, lodger, as read | 25 Compton Avenue, Brighton | Edward Dixon FitzMaurice |
+| 1891, schedule 206, lodger | 25 Compton Avenue, Brighton | Edward Dixon FitzMaurice |
 | 1925 to 1926 | 26 Turret Grove, Clapham | Baron Reginald FitzMaurice |
 | 1901 | 3 Young Street, Canning Town | William Cousins |
 | 9 January 1872 | 33 New Street, London Docks | Arthur E. Cousins |
@@ -897,7 +901,7 @@ Date order. This table keeps street addresses, buildings, churches, cemeteries, 
 | between 1865 and 1878 | J. Perriman, Camden Town School of Photography | (no person named) |
 | about 1899 | Lang Sims studio, Brixton Road | Edith Madeline FitzMaurice |
 | about 1899 | Lang Sims studio, Folkestone | Edith Madeline FitzMaurice |
-| 1921, night baker, workplace as read | Plymouth Road, Canning Town | Herbert Andrews |
+| 1921, night work | Plymouth Road, Canning Town | Herbert Andrews |
 | 1921 | Royal Albert Docks | Henry George Andrews |
 | 1939 | Royal filling factory, Woolwich | Henry George Andrews, Herbert William Andrews |
 | about 1895 | Stuart studio, Brompton Road | Edward Dixon FitzMaurice |
@@ -964,19 +968,14 @@ These places belong only to the separate Orkney group. They are not mixed into t
 
 ## 7. New, needs review
 
-Each of these is a reading from a record crop. The page that carries the crop does not write the street out.
-
-- 1 Honey Street, Bodmin: lived for Charles Bennett, Annie Bennett, 1901, as read. Crop: 1901-charles-bennett-household-bodmin.jpg. Source: census-bennett.
-- 15 Mornington Place, St Pancras: lived for Edith Madeline FitzMaurice, Caroline Spencer, 1891, as read. Crop: 1891-caroline-spencer-household-p2-edith.jpg. Source: census-1891-spencer.
-- 25 Compton Avenue, Brighton: lived for Edward Dixon FitzMaurice, 1891, schedule 206, lodger, as read. Crop: 1891-edward-dixon-fitzmaurice-brighton-lodger.jpg. Source: census-1891-brighton.
-- Plymouth Road, Canning Town: worked for Herbert Andrews, 1921, night baker, workplace as read. Crop: 1921-herbert-andrews-household-canning-town.jpg. Source: census-andrews-stacey.
+None. The owner approved the four crop readings on 23 November 2026, and they are now published.
 
 ## 8. Gaps and open questions
 
 1. Rosina Maud Andrews: occupations[0] has no place. Left out of the map because the record used here gives no place.
 2. Sidney George Andrews: occupations[0] has no place. Left out of the map because the record used here gives no place.
-3. Ronald Andrews: death has no place. Left out of the map because the record used here gives no place.
-4. Patricia Andrews: death has no place. Left out of the map because the record used here gives no place.
+3. Ronald Andrews: the death field has no registration place. The burial is the churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne (family).
+4. Patricia Andrews: the death field has no registration place. The burial is the churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne (family).
 5. William G. Falcke: birth has no place. Left out of the map because the record used here gives no place.
 6. Robert W. FitzMaurice: occupations[0] has no place. Left out of the map because the record used here gives no place.
 7. John Rupert FitzMaurice: occupations[0] has no place. Left out of the map because the record used here gives no place.
@@ -991,29 +990,25 @@ Each of these is a reading from a record crop. The page that carries the crop do
 16. Henry Stacey: occupations[0] has no place. Left out of the map because the record used here gives no place.
 17. George Andrews: occupations[0] has no place; spouses[0] has no place. Left out of the map because the record used here gives no place.
 18. Alice Andrews: spouses[0] has no place. Left out of the map because the record used here gives no place.
-19. Herbert Andrews: occupations[1] has no place. Left out of the map because the record used here gives no place.
+19. Herbert Andrews: occupations[1] has no place string in people.json. The published 1921 workplace is a bakery in Plymouth Road, Canning Town.
 20. William Cousins: occupations[2] has no place; spouses[0] has no place. Left out of the map because the record used here gives no place.
 21. Elizabeth Cousins: spouses[0] has no place. Left out of the map because the record used here gives no place.
 22. John Gall: death has no place; occupations[0] has no place. Left out of the map because the record used here gives no place.
 23. Amelia Cousins: occupations[0] has no place. Left out of the map because the record used here gives no place.
-24. The 1891 Brighton crop seems to read 25 Compton Avenue, schedule 206, with Edward Dixon as a lodger. The Falcke page says only that he was a lodger in Brighton. The house number needs a second look.
-25. The 1891 St Pancras crop seems to read 15 Mornington Place for Caroline Spencer and Edith. The number may be 15b. The page says only St Pancras.
-26. The 1901 Bodmin crop seems to read 1 Honey Street for Charles Bennett. The Bennett page does not give the street.
-27. The 1921 Canning Town crop seems to give Herbert Andrews senior's night work on Plymouth Road. The firm's name is hard to read, so it is not entered. The page says only a Canning Town bakery.
-28. The 1851 Bolingbroke Gardens crop may also read Pottery Lane on the next line. That second line is not entered.
-29. The 1939 Register crops for Herbert Andrews senior and for May Cousins do not show the street in the view on the site. The address column is cut off or absent.
-30. Lilian Bennett's 1921 crop does not show the house address at Hampton Hill. It does show her work at the Claims Record Office, Kew.
-31. The 1911 Bodmin crop of Charles Bennett, as filed, does not show the street.
-32. Pat's birth is registered in the Hammersmith district. The family remembers Windsor (family). Windsor is the memory, not the record.
-33. Pat died in 2020 (family) and Ron died in 2010 (family). They are buried together in Crowthorne (family). No churchyard, no grave number and no home address is published for either of them.
-34. E. Fitzmaurice of 7 North Side, Clapham, is the nearest relative on the Canadian list and is not identified. The directory does not call this person Reg's mother.
-35. The 1949 to 1965 Nestles Avenue registers are held back. 42 Nestles Avenue is entered only from the published 1938 register and from Reg's residence to 1977. No one shown only by name and relationship is named there.
-36. Herbert William's exact birth day is held back. His entry stays at 1916.
-37. Pat's Evening News cuttings are held back and are not used.
-38. The passport note Melbourne 8/11/24 is held back and is not used.
-39. No inquest report for Arthur Edward Cousins is published. The Victoria Docks drowning is a family statement. The death index, aged 40, West Ham, early 1912, is probably him.
-40. Bob: the family believes he stayed in South Africa. No street is known. The only catalogue entries are two undated Cape Supreme Court cases against Raymond William Wilson.
-41. A later marriage in Kent, and Herbert Andrews's 1940 marriage registered in the East Ham district, name a living person. The place is kept and the living person is not named.
-42. Many births and deaths are known only as a registration district. The district is not treated as a town.
-43. OpenStreetMap was used only to drop a point on the map. It was not used to decide whether a house still stands, or whether a street has been renamed. modernAddress is empty, and stands today is unknown.
-44. John FitzMaurice's birthplace and his death have not been found. A possible 1806 St Philip baptism for Eliza Taylor is held back because the entry is not legible.
+24. The 1851 Bolingbroke Gardens crop may also read Pottery Lane on the next line. That second line is not entered.
+25. The 1939 Register crops for Herbert Andrews senior and for May Cousins do not show the street in the view on the site. The address column is cut off or absent.
+26. Lilian Bennett's 1921 crop does not show the house address at Hampton Hill. It does show her work at the Claims Record Office, Kew.
+27. The 1911 Bodmin crop of Charles Bennett, as filed, does not show the street. The 1901 census gives 1 Honey Street.
+28. Pat's birth is registered in the Hammersmith district. The family remembers Windsor (family). Windsor is the memory, not the record.
+29. E. Fitzmaurice of 7 North Side, Clapham, is the nearest relative on the Canadian list and is not identified. The directory does not call this person Reg's mother.
+30. The 1949 to 1965 Nestles Avenue registers are held back. 42 Nestles Avenue is entered only from the published 1938 register and from Reg's residence to 1977. No one shown only by name and relationship is named there.
+31. Herbert William's exact birth day is held back. His entry stays at 1916.
+32. Pat's Evening News cuttings are held back and are not used.
+33. The passport note Melbourne 8/11/24 is held back and is not used.
+34. No inquest report for Arthur Edward Cousins is published. The Victoria Docks drowning is a family statement. The death index, aged 40, West Ham, early 1912, is probably him.
+35. Bob: the family believes he stayed in South Africa. No street is known. The only catalogue entries are two undated Cape Supreme Court cases against Raymond William Wilson.
+36. A later marriage in Kent, and Herbert Andrews's 1940 marriage registered in the East Ham district, name a living person. The place is kept and the living person is not named.
+37. Many births and deaths are known only as a registration district. The district is not treated as a town.
+38. OpenStreetMap was used only to drop a point on the map. It was not used to decide whether a house still stands, or whether a street has been renamed. modernAddress is empty, and stands today is unknown.
+39. John FitzMaurice's birthplace and his death have not been found. A possible 1806 St Philip baptism for Eliza Taylor is held back because the entry is not legible.
+40. These published streets still have no confident map point: 10 Riles Road, 3 and 5 Young Street, 33 New Street, 57 Rutland Street, 7 North Lane, Bolingbroke Gardens, Ham Farm, Clifton Ville, Sutton Road in Aston, and St Peter, London Docks.

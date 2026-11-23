@@ -882,7 +882,7 @@
    "type": "passenger list",
    "repository": "The National Archives BT26. Image: Ancestry.com, UK Incoming Passenger Lists.",
    "date": "1925-11-24",
-   "note": "Edith came home from South Africa in November 1925, aged 53 by her own account, giving Birkenhead as her destination. No street is published."
+   "note": "Edith came home from South Africa in November 1925 on the Saxon, from Durban to Southampton, aged 53 by her own account. Proposed address as the site reads it: 55 Seymour Street, Higher Tranmere, Birkenhead. Update, November 2026: the old note said no street was published; the Reg's brother and sisters page now publishes this address."
   },
   {
    "id": "findagrave-214209661",
@@ -1021,6 +1021,126 @@
    "repository": "St John the Baptist Parish Church, Crowthorne. https://stjohnscrowthorne.co.uk/the-churchyard/",
    "date": "2026-11-23",
    "note": "The parish churchyard is at Waterloo Road, Crowthorne, Berkshire. The family states that Ronald and Patricia Andrews are buried there together. The burial itself is family testimony."
+  },
+  {
+   "id": "loc-nhle",
+   "title": "National Heritage List for England (Historic England list entries)",
+   "type": "map",
+   "repository": "Historic England, historicengland.org.uk/listing/the-list",
+   "date": "2026-11-23",
+   "note": "Used only to locate churches and to say whether a listed building still stands: St Andrew, Plaistow (1080967); St Margaret, Ward End (1220802); All Saints, Leavesden (1175616); St Augustine with St Philip, Stepney Way (1065066). Not a source for any family fact."
+  },
+  {
+   "id": "loc-survey-of-london-st-philip",
+   "title": "Survey of London: St Philip's Church Library and the Royal London Museum",
+   "type": "web",
+   "repository": "Survey of London (UCL)",
+   "url": "https://surveyoflondon.org/map/feature/1063/detail/",
+   "date": "2026-11-23",
+   "note": "The present church was built in 1888 to 1892 by Arthur Cawston on the site of the chapel of 1818 to 1821, and is now the Whitechapel Library. Used for the map's 'what stands today' note only."
+  },
+  {
+   "id": "loc-wiki-st-andrew-plaistow",
+   "title": "St Andrew's Church, Plaistow",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/St_Andrew%27s_Church,_Plaistow",
+   "date": "2026-11-23",
+   "note": "James Brooks's church of 1868 to 1870, damaged in the Blitz and repaired; no longer an Anglican church and now offices. Used for the map's 'what stands today' note only."
+  },
+  {
+   "id": "loc-wiki-st-margaret-ward-end",
+   "title": "St Margaret's Church, Ward End",
+   "type": "web",
+   "repository": "Wikipedia",
+   "url": "https://en.wikipedia.org/wiki/St_Margaret%27s_Church,_Ward_End",
+   "date": "2026-11-23",
+   "note": "The church of 1834 on a medieval site, closed in 2005 and restored as a community centre. Used for the map only."
+  },
+  {
+   "id": "loc-lost-hospitals-east-ham",
+   "title": "Lost Hospitals of London: East Ham Isolation Hospital",
+   "type": "web",
+   "repository": "Lost Hospitals of London",
+   "url": "https://ezitis.myzen.co.uk/easthamisolation.html",
+   "date": "2026-11-23",
+   "note": "From 1902 at the end of Roman Road, south of The Greenway; permanent buildings 1907 to 1909; the site is now a primary and a secondary school. Used for the map only."
+  },
+  {
+   "id": "loc-ukbmd-districts",
+   "title": "UKBMD registration district tables",
+   "type": "web",
+   "repository": "UKBMD, ukbmd.org.uk/reg",
+   "url": "https://www.ukbmd.org.uk/reg/districts/essex%20south%20western.html",
+   "date": "2026-11-23",
+   "note": "Which places each registration district covered, used to draw districts as approximate areas. Essex South Western (1935 to 1965) covered Cann Hall, Leyton, Walthamstow, Wanstead and Woodford."
+  },
+  {
+   "id": "loc-canning-town-directories",
+   "title": "Canning Town street directories, 1896 and 1902 (transcribed)",
+   "type": "directory",
+   "repository": "pubwiki.co.uk, Post Office and Kelly's directories for Canning Town",
+   "url": "https://pubwiki.co.uk/CanningTown/CanningTown1902/CanningTown-VictoriaDockRoad.shtml",
+   "date": "2026-11-23",
+   "note": "Both directories place Young Street off Victoria Dock Road between Nos. 242 and 243, just before Custom House station. Used to place Young Street on the map."
+  },
+  {
+   "id": "loc-london-streets-1938",
+   "title": "Every street in the London postal area, 1938",
+   "type": "directory",
+   "repository": "maps.thehunthouse.com",
+   "url": "https://www.maps.thehunthouse.com/Streets/1938R.htm",
+   "date": "2026-11-23",
+   "note": "Lists Riles Road E13. Used only to confirm the street existed; where it ran has not been found."
+  },
+  {
+   "id": "loc-hilfield-estate-1906",
+   "title": "The Hilfield Park estate between Aldenham and Watford, sale particulars, 28 June 1906",
+   "type": "map",
+   "repository": "Historic England Archive, SC00489",
+   "url": "https://historicengland.org.uk/images-books/photos/volume/SC00489",
+   "date": "2026-11-23",
+   "note": "Lists Ham Farm, Aldenham, among the estate's farms between Aldenham and Watford. Used to place Ham Farm approximately."
+  },
+  {
+   "id": "loc-wiki-churches",
+   "title": "Wikipedia articles on the family's churches",
+   "type": "web",
+   "repository": "Wikipedia",
+   "date": "2026-11-23",
+   "note": "Used for the map's 'what stands today' notes only: Chelsea Old Church (the old parish church of St Luke, bombed in 1941 and rebuilt), St Martin in the Bull Ring (rebuilt 1873 to 1875), St Mary Matfelon, Whitechapel (destroyed in 1940, now Altab Ali Park), The Crystal Palace (destroyed by fire in 1936), St Albans Cathedral, St Mary's Battersea, St John-at-Hackney, St Dunstan's Stepney, St Mary's Wanstead, St Matthew's Brixton, St Peter's London Docks and the Tower of London, all still standing."
+  },
+  {
+   "id": "parish-battersea-falcke-baptisms",
+   "title": "Baptisms of the Falcke children, St Mary, Battersea, 1820 to 1837",
+   "type": "parish register",
+   "repository": "St Mary, Battersea. Image: Ancestry.com, London Church of England Births and Baptisms.",
+   "date": "1820-08-08",
+   "note": "Henrietta (8 August 1820, entry 765), William Gottlob (17 September 1824, entry 1255), Emma (22 October 1826, entry 1517), Charlotte (28 September 1828, entry 1798), Elizabeth (4 July 1830, entry 2059), Frederick Henry (9 September 1832, entry 2380), Emily Catherine (9 November 1834, entry 318) and Mary Fanny (29 January 1837). Published with their images on the Falcke page; gathered here as one source for the map."
+  },
+  {
+   "id": "parish-battersea-falcke-marriages",
+   "title": "Marriages of the Falcke daughters, St Mary, Battersea, 1840 to 1858",
+   "type": "parish register",
+   "repository": "St Mary, Battersea. Image: Ancestry.com, London Church of England Marriages and Banns 1754 to 1941.",
+   "date": "1840-08-26",
+   "note": "Henrietta and Whitford Henry Nichols (26 August 1840, entry 137); Eliza Caroline and Samuel Knight (4 September 1845, entry 394); Charlotte and James Cooper (19 October 1850, entry 192); Jane and John Peacock Turner (2 October 1858), with R. W. Fitzmaurice and Fanny Mary Falcke among the witnesses. Published with their images on the Falcke page; gathered here as one source for the map."
+  },
+  {
+   "id": "census-1861-marylebone-rwf",
+   "title": "1861 census, St Marylebone, schedule 78: Robert W. Fitzmaurice",
+   "type": "census",
+   "repository": "The National Archives RG9. Image: Ancestry.com, 1861 England Census.",
+   "date": "1861-04-07",
+   "note": "Robert W. Fitzmaurice, visitor, unmarried, 29, engineer and contractor, in a lodging house. Birthplace written as Norfolk. Published on the Falcke page."
+  },
+  {
+   "id": "census-walter-aldenham",
+   "title": "Censuses for the Walter family at Aldenham, 1841 to 1861",
+   "type": "census",
+   "repository": "The National Archives HO107 and RG9. Image: Ancestry.com.",
+   "date": "1841-06-06",
+   "note": "1841, Letchmore Heath: Robert Walters, 32, agricultural labourer, and Mary with their children. 1851, High Cross: Robert Walter, 42, with Mary and the children. 1861, Letchmore Heath (schedule 67, indexed as Waller): Robert Walter, 52, carrier, with Mary, 53, and children. Published on the Andrews, Stacey and Walter page."
   }
  ]
 }

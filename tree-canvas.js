@@ -1601,6 +1601,7 @@
         if (!p.isLiving) {
             if (p.birth) life += '<dt>Born</dt><dd>' + esc(p.birth.display) + (p.birth.place ? ', ' + esc(p.birth.place) : '') + (p.birth.alternates ? ' <span class="note">(or ' + esc(p.birth.alternates.map(function (a) { return a.display; }).join(', ')) + ')</span>' : '') + '</dd>';
             if (p.death) life += '<dt>Died</dt><dd>' + esc(p.death.display) + (p.death.place ? ', ' + esc(p.death.place) : '') + '</dd>';
+            if (p.burial) life += '<dt>Buried</dt><dd>' + esc(p.burial.display) + '</dd>';
             if (p.immigration && p.immigration.ship) life += '<dt>Arrived</dt><dd>' + esc(p.immigration.ship) + ', ' + esc(fmtDate(p.immigration.date)) + '</dd>';
             var places = uniq((p.residences || []).map(function (r) { return r.place; }));
             if (places.length) life += '<dt>Lived</dt><dd>' + esc(places.join('; ')) + '</dd>';
@@ -1659,7 +1660,8 @@
         function add(id) { if (id && !seen[id] && D.sources[id]) { seen[id] = true; order.push(id); } }
         (p.story || '').replace(/\[\^([a-z0-9\-]+)\]/g, function (_, id) { add(id); return ''; });
         function addAll(a) { (a || []).forEach(add); }
-        ['birth', 'death'].forEach(function (k) { if (p[k]) { addAll(p[k].sourceIds); (p[k].alternates || []).forEach(function (x) { addAll(x.sourceIds); }); } });
+        ['birth', 'death', 'burial'].forEach(function (k) { if (p[k]) { addAll(p[k].sourceIds); (p[k].alternates || []).forEach(function (x) { addAll(x.sourceIds); }); } });
+        (p.voyages || []).forEach(function (v) { addAll(v.sourceIds); });
         if (p.immigration) addAll(p.immigration.sourceIds);
         (p.residences || []).forEach(function (r) { addAll(r.sourceIds); });
         (p.occupations || []).forEach(function (r) { addAll(r.sourceIds); });
@@ -1718,6 +1720,7 @@
         if (!p.isLiving) {
             if (p.birth) dates += '<div><span>Born</span>' + esc(p.birth.display) + (p.birth.alternates ? ' or ' + esc(p.birth.alternates.map(function (a) { return a.display; }).join(', ')) : '') + (p.birth.place ? '<small>' + esc(p.birth.place) + '</small>' : '') + '</div>';
             if (p.death) dates += '<div><span>Died</span>' + esc(p.death.display) + (p.death.place ? '<small>' + esc(p.death.place) + '</small>' : '') + '</div>';
+            if (p.burial) dates += '<div><span>Buried</span>' + esc(p.burial.display) + '</div>';
             if (p.immigration && p.immigration.ship) dates += '<div><span>Arrived</span>' + esc(p.immigration.ship) + ', ' + esc(fmtDate(p.immigration.date)) + '</div>';
         }
         var badges = (p.isDirectLine ? '<span class="badge badge--direct">' + esc(directLabel()) + '</span>' : '') +
@@ -1738,6 +1741,8 @@
                 (p.birth.alternates || []).forEach(function (a) { row('Born (other record)', esc(a.display), a.sourceIds, 'confirmed', a.note ? 'As recorded on the ' + a.note : null); });
             }
             if (p.death) row('Died', esc(p.death.display) + (p.death.place ? ', ' + esc(p.death.place) : ''), p.death.sourceIds, p.death.confidence, p.death.note);
+            if (p.burial) row('Buried', esc(p.burial.display), p.burial.sourceIds, p.burial.confidence, p.burial.note);
+            (p.voyages || []).forEach(function (v) { row('Voyage', esc(v.display), v.sourceIds, v.confidence, v.note); });
             if (p.immigration) {
                 var im = p.immigration;
                 row('Immigration', esc([im.ship, im.date ? fmtDate(im.date) : null, im.port, im.age ? 'age ' + im.age : null].filter(Boolean).join(', ') || 'Not yet found'), im.sourceIds, im.confidence, im.note);

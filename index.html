@@ -1,368 +1,368 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The FitzMaurice &amp; Andrews Family Heritage</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-    <style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>The FitzMaurice &amp; Andrews Family Heritage</title>
+ <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+ <style>
 :root {
-    --burgundy: #8B0000;
-    --burgundy-dark: #4a0000;
-    --gold: #FFD700;
-    --gold-dark: #B8860B;
-    --gold-light: #FFF3B0;
-    --cream: #FDF8F0;
-    --cream-dark: #F5EDE0;
-    --ink: #1a1a2e;
-    --ink-light: #2d2d44;
-    --parchment: #F8F1E4;
-    --sepia: #704214;
-    --shadow: rgba(0, 0, 0, 0.15);
-    --border-royal: #c8a97a;
-    --border-notable: #2a4a7b;
-    --border-photo: #5a3e2a;
-    --border-you: #1a5c2a;
-    --border-ww2: #8b2020;
-    --border: #d4c5a9;
-    --font-display: 'Cinzel', serif;
-    --font-body: 'Cormorant Garamond', serif;
-    --font-accent: 'EB Garamond', serif;
+ --burgundy: #8B0000;
+ --burgundy-dark: #4a0000;
+ --gold: #FFD700;
+ --gold-dark: #B8860B;
+ --gold-light: #FFF3B0;
+ --cream: #FDF8F0;
+ --cream-dark: #F5EDE0;
+ --ink: #1a1a2e;
+ --ink-light: #2d2d44;
+ --parchment: #F8F1E4;
+ --sepia: #704214;
+ --shadow: rgba(0, 0, 0, 0.15);
+ --border-royal: #c8a97a;
+ --border-notable: #2a4a7b;
+ --border-photo: #5a3e2a;
+ --border-you: #1a5c2a;
+ --border-ww2: #8b2020;
+ --border: #d4c5a9;
+ --font-display: 'Cinzel', serif;
+ --font-body: 'Cormorant Garamond', serif;
+ --font-accent: 'EB Garamond', serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
-    font-family: var(--font-body);
-    background: var(--cream);
-    color: var(--ink);
-    line-height: 1.7;
-    min-height: 100vh;
+ font-family: var(--font-body);
+ background: var(--cream);
+ color: var(--ink);
+ line-height: 1.7;
+ min-height: 100vh;
 }
 
 /* ===== NAV ===== */
 .main-nav {
-    background: rgba(26, 26, 46, 0.95);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 2px 30px rgba(0,0,0,0.3);
-    border-bottom: 2px solid var(--gold);
-    position: sticky;
-    top: 0;
-    z-index: 100;
+ background: rgba(26, 26, 46, 0.95);
+ backdrop-filter: blur(20px);
+ box-shadow: 0 2px 30px rgba(0,0,0,0.3);
+ border-bottom: 2px solid var(--gold);
+ position: sticky;
+ top: 0;
+ z-index: 100;
 }
 .nav-inner {
-    max-width: 1400px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0.8rem 2rem;
+ max-width: 1400px;
+ margin: 0 auto;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ padding: 0.8rem 2rem;
 }
 .nav-logo {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    color: var(--gold);
-    text-decoration: none;
-    letter-spacing: 2px;
+ font-family: var(--font-display);
+ font-size: 1.1rem;
+ color: var(--gold);
+ text-decoration: none;
+ letter-spacing: 2px;
 }
-.nav-links { display: flex; gap: 2rem; }
+.nav-links { display: flex; flex-wrap: wrap; gap: 0.35rem 1rem; justify-content: flex-end; }
 .nav-links a {
-    font-family: var(--font-display);
-    font-size: 0.8rem;
-    color: rgba(255, 255, 255, 0.8);
-    text-decoration: none;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    position: relative;
-    padding-bottom: 2px;
+ font-family: var(--font-display);
+ font-size: 0.8rem;
+ color: rgba(255, 255, 255, 0.8);
+ text-decoration: none;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ position: relative;
+ padding-bottom: 2px;
 }
 .nav-links a::after {
-    content: '';
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 1px;
-    background: var(--gold);
-    transition: width 0.3s ease;
+ content: '';
+ position: absolute;
+ bottom: -2px;
+ left: 0;
+ width: 0;
+ height: 1px;
+ background: var(--gold);
+ transition: width 0.3s ease;
 }
 .nav-links a:hover { color: var(--gold); }
 .nav-links a:hover::after { width: 100%; }
 .nav-links a.active { color: var(--gold); }
 .nav-links a.active::after { width: 100%; }
 .nav-toggle {
-    display: none;
-    flex-direction: column;
-    gap: 5px;
-    background: none;
-    border: none;
-    cursor: pointer;
-    padding: 4px;
+ display: none;
+ flex-direction: column;
+ gap: 5px;
+ background: none;
+ border: none;
+ cursor: pointer;
+ padding: 4px;
 }
 .nav-toggle span {
-    width: 22px;
-    height: 2px;
-    background: var(--gold);
-    display: block;
-    transition: 0.3s;
+ width: 22px;
+ height: 2px;
+ background: var(--gold);
+ display: block;
+ transition: 0.3s;
 }
 
 /* ===== PAGE LAYOUT ===== */
 .page-container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 2rem 2rem 4rem;
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 2rem 2rem 4rem;
 }
 
 /* ===== HERO / INTRO ===== */
 .hero-intro {
-    text-align: center;
-    padding: 3rem 0 2rem;
-    border-bottom: 2px solid var(--gold);
-    margin-bottom: 3rem;
+ text-align: center;
+ padding: 3rem 0 2rem;
+ border-bottom: 2px solid var(--gold);
+ margin-bottom: 3rem;
 }
 .hero-title {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    color: var(--gold-dark);
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    margin-bottom: 0.6rem;
+ font-family: var(--font-display);
+ font-size: 1.1rem;
+ color: var(--gold-dark);
+ letter-spacing: 3px;
+ text-transform: uppercase;
+ margin-bottom: 0.6rem;
 }
 .hero-intro h1 {
-    font-family: var(--font-display);
-    font-size: 2.2rem;
-    color: var(--ink);
-    margin-bottom: 2rem;
-    letter-spacing: 2px;
+ font-family: var(--font-display);
+ font-size: 2.2rem;
+ color: var(--ink);
+ margin-bottom: 2rem;
+ letter-spacing: 2px;
 }
 .intro-story {
-    max-width: 750px;
-    margin: 0 auto;
-    text-align: left;
+ max-width: 750px;
+ margin: 0 auto;
+ text-align: left;
 }
 .intro-story p {
-    font-size: 1.15rem;
-    line-height: 1.8;
-    margin-bottom: 1.2rem;
-    color: var(--ink);
+ font-size: 1.15rem;
+ line-height: 1.8;
+ margin-bottom: 1.2rem;
+ color: var(--ink);
 }
 .intro-note {
-    font-size: 0.95rem !important;
-    color: var(--sepia) !important;
-    font-style: italic;
-    border-left: 3px solid var(--gold);
-    padding-left: 1rem;
-    margin-top: 0.5rem;
+ font-size: 0.95rem !important;
+ color: var(--sepia) !important;
+ font-style: italic;
+ border-left: 3px solid var(--gold);
+ padding-left: 1rem;
+ margin-top: 0.5rem;
 }
 
 /* ===== PAGE LIST ===== */
 .page-list {
-    display: flex;
-    flex-direction: column;
-    gap: 0;
-    margin-bottom: 3rem;
+ display: flex;
+ flex-direction: column;
+ gap: 0;
+ margin-bottom: 3rem;
 }
 .page-link {
-    display: flex;
-    align-items: center;
-    padding: 1.5rem 0;
-    text-decoration: none;
-    border-bottom: 1px solid var(--border);
-    transition: all 0.2s ease;
+ display: flex;
+ align-items: center;
+ padding: 1.5rem 0;
+ text-decoration: none;
+ border-bottom: 1px solid var(--border);
+ transition: all 0.2s ease;
 }
 .page-link:first-child {
-    border-top: 1px solid var(--border);
+ border-top: 1px solid var(--border);
 }
 .page-link:hover {
-    padding-left: 0.5rem;
+ padding-left: 0.5rem;
 }
 .page-link-title {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    color: var(--ink);
-    letter-spacing: 1px;
-    min-width: 220px;
-    flex-shrink: 0;
+ font-family: var(--font-display);
+ font-size: 1.1rem;
+ color: var(--ink);
+ letter-spacing: 1px;
+ min-width: 220px;
+ flex-shrink: 0;
 }
 .page-link-desc {
-    font-family: var(--font-body);
-    font-size: 1.05rem;
-    color: var(--sepia);
-    flex: 1;
-    padding: 0 1.5rem;
+ font-family: var(--font-body);
+ font-size: 1.05rem;
+ color: var(--sepia);
+ flex: 1;
+ padding: 0 1.5rem;
 }
 .page-link-arrow {
-    font-size: 1.3rem;
-    color: var(--gold-dark);
-    flex-shrink: 0;
+ font-size: 1.3rem;
+ color: var(--gold-dark);
+ flex-shrink: 0;
 }
 .page-link:hover .page-link-title {
-    color: var(--gold-dark);
+ color: var(--gold-dark);
 }
 
 /* ===== SECTION HEADERS ===== */
 .section-header {
-    font-family: var(--font-display);
-    font-size: 1.6rem;
-    color: var(--ink);
-    margin: 3rem 0 1.5rem;
-    padding-bottom: 0.5rem;
-    border-bottom: 2px solid var(--gold);
-    letter-spacing: 1px;
+ font-family: var(--font-display);
+ font-size: 1.6rem;
+ color: var(--ink);
+ margin: 3rem 0 1.5rem;
+ padding-bottom: 0.5rem;
+ border-bottom: 2px solid var(--gold);
+ letter-spacing: 1px;
 }
 
 /* ===== SECTION BODY TEXT ===== */
 .section-body {
-    margin-bottom: 1.5rem;
+ margin-bottom: 1.5rem;
 }
 .section-body p {
-    font-size: 1.08rem;
-    line-height: 1.85;
-    margin-bottom: 1.2rem;
-    color: var(--ink);
+ font-size: 1.08rem;
+ line-height: 1.85;
+ margin-bottom: 1.2rem;
+ color: var(--ink);
 }
 
 /* ===== STORY SECTION ===== */
 .story-section {
-    margin-bottom: 3rem;
+ margin-bottom: 3rem;
 }
 .story-section p {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    margin-bottom: 1.2rem;
+ font-size: 1.05rem;
+ line-height: 1.8;
+ margin-bottom: 1.2rem;
 }
 .story-section strong {
-    color: var(--ink);
+ color: var(--ink);
 }
 .story-map {
-    display: block;
-    max-width: 500px;
-    width: 100%;
-    height: auto;
-    margin: 2rem auto;
-    border-radius: 8px;
-    border: 1px solid var(--border);
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+ display: block;
+ max-width: 500px;
+ width: 100%;
+ height: auto;
+ margin: 2rem auto;
+ border-radius: 8px;
+ border: 1px solid var(--border);
+ box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 
 /* ===== WEDDING SECTION ===== */
 .wedding-section {
-    margin-bottom: 3rem;
+ margin-bottom: 3rem;
 }
 .wedding-text p {
-    font-size: 1.05rem;
-    line-height: 1.8;
-    margin-bottom: 1.2rem;
+ font-size: 1.05rem;
+ line-height: 1.8;
+ margin-bottom: 1.2rem;
 }
 .wedding-text strong {
-    color: var(--ink);
+ color: var(--ink);
 }
 .featured-photo {
-    display: block;
-    max-width: 600px;
-    width: 100%;
-    height: auto;
-    margin: 1.5rem auto 2rem;
-    border-radius: 8px;
-    border: 2px solid var(--border);
-    box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+ display: block;
+ max-width: 600px;
+ width: 100%;
+ height: auto;
+ margin: 1.5rem auto 2rem;
+ border-radius: 8px;
+ border: 2px solid var(--border);
+ box-shadow: 0 6px 24px rgba(0,0,0,0.12);
 }
 .wedding-details {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 1rem;
-    margin: 2rem 0;
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 1rem;
+ margin: 2rem 0;
 }
 .wedding-detail {
-    background: var(--parchment);
-    border: 1px solid var(--border);
-    border-radius: 6px;
-    padding: 1rem;
-    text-align: center;
+ background: var(--parchment);
+ border: 1px solid var(--border);
+ border-radius: 6px;
+ padding: 1rem;
+ text-align: center;
 }
 .wedding-detail .detail-icon {
-    font-size: 1.5rem;
-    margin-bottom: 0.3rem;
+ font-size: 1.5rem;
+ margin-bottom: 0.3rem;
 }
 .wedding-detail h4 {
-    font-family: var(--font-display);
-    font-size: 0.75rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: var(--gold-dark);
-    margin-bottom: 0.3rem;
+ font-family: var(--font-display);
+ font-size: 0.75rem;
+ letter-spacing: 1.5px;
+ text-transform: uppercase;
+ color: var(--gold-dark);
+ margin-bottom: 0.3rem;
 }
 .wedding-detail p {
-    font-size: 0.9rem;
-    line-height: 1.4;
-    margin-bottom: 0;
+ font-size: 0.9rem;
+ line-height: 1.4;
+ margin-bottom: 0;
 }
 .wedding-detail .detail-note {
-    font-size: 0.8rem;
-    color: #888;
-    font-style: italic;
+ font-size: 0.8rem;
+ color: #888;
+ font-style: italic;
 }
 
 /* ===== PHOTO GALLERY (grid thumbnails) ===== */
 .photo-gallery {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 0.8rem;
-    margin: 2rem 0;
+ display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+ gap: 0.8rem;
+ margin: 2rem 0;
 }
 .photo-gallery a {
-    display: block;
-    overflow: hidden;
-    border-radius: 6px;
-    border: 1px solid var(--border);
-    transition: transform 0.3s, box-shadow 0.3s;
-    cursor: pointer;
+ display: block;
+ overflow: hidden;
+ border-radius: 6px;
+ border: 1px solid var(--border);
+ transition: transform 0.3s, box-shadow 0.3s;
+ cursor: pointer;
 }
 .photo-gallery a:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+ transform: translateY(-2px);
+ box-shadow: 0 6px 20px rgba(0,0,0,0.12);
 }
 .photo-gallery img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s;
+ width: 100%;
+ height: 180px;
+ object-fit: cover;
+ display: block;
+ transition: transform 0.3s;
 }
 .photo-gallery a:hover img {
-    transform: scale(1.03);
+ transform: scale(1.03);
 }
 .photo-gallery .photo-label {
-    font-size: 0.8rem;
-    padding: 0.4rem 0.6rem;
-    background: var(--parchment);
-    color: var(--ink);
-    text-align: center;
-    font-style: italic;
+ font-size: 0.8rem;
+ padding: 0.4rem 0.6rem;
+ background: var(--parchment);
+ color: var(--ink);
+ text-align: center;
+ font-style: italic;
 }
 
 /* ===== CLUE CARDS ===== */
 .clue-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1.5rem;
-    margin: 2rem 0;
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 1.5rem;
+ margin: 2rem 0;
 }
 .clue-card {
-    display: grid;
-    grid-template-columns: 180px 1fr;
-    gap: 1.5rem;
-    background: var(--parchment);
-    border: 1px solid var(--border);
-    border-left: 4px solid var(--gold);
-    border-radius: 6px;
-    padding: 1.5rem;
-    align-items: start;
-    transition: box-shadow 0.3s;
+ display: grid;
+ grid-template-columns: 180px 1fr;
+ gap: 1.5rem;
+ background: var(--parchment);
+ border: 1px solid var(--border);
+ border-left: 4px solid var(--gold);
+ border-radius: 6px;
+ padding: 1.5rem;
+ align-items: start;
+ transition: box-shadow 0.3s;
 }
 .clue-card:hover {
-    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+ box-shadow: 0 4px 16px rgba(0,0,0,0.08);
 }
 .clue-card.gaiety { border-left-color: var(--border-ww2); }
 .clue-card.korea { border-left-color: var(--border-notable); }
@@ -374,240 +374,240 @@ body {
 
 /* ===== KEY DISCOVERIES ===== */
 .discovery-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin: 2rem 0;
+ display: grid;
+ grid-template-columns: 1fr;
+ gap: 2rem;
+ margin: 2rem 0;
 }
 .discovery-card {
-    display: grid;
-    grid-template-columns: 200px 1fr;
-    gap: 1.5rem;
-    background: var(--parchment);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 1.5rem;
-    align-items: start;
-    transition: box-shadow 0.3s;
+ display: grid;
+ grid-template-columns: 200px 1fr;
+ gap: 1.5rem;
+ background: var(--parchment);
+ border: 1px solid var(--border);
+ border-radius: 8px;
+ padding: 1.5rem;
+ align-items: start;
+ transition: box-shadow 0.3s;
 }
 .discovery-card:hover {
-    box-shadow: 0 6px 24px rgba(0,0,0,0.1);
+ box-shadow: 0 6px 24px rgba(0,0,0,0.1);
 }
 .discovery-card img {
-    width: 100%;
-    border-radius: 6px;
-    border: 2px solid var(--border);
-    display: block;
+ width: 100%;
+ border-radius: 6px;
+ border: 2px solid var(--border);
+ display: block;
 }
 .discovery-card h3 {
-    font-family: var(--font-display);
-    font-size: 1.15rem;
-    color: var(--ink);
-    margin-bottom: 0.5rem;
-    border-bottom: 1px solid var(--gold);
-    padding-bottom: 0.4rem;
+ font-family: var(--font-display);
+ font-size: 1.15rem;
+ color: var(--ink);
+ margin-bottom: 0.5rem;
+ border-bottom: 1px solid var(--gold);
+ padding-bottom: 0.4rem;
 }
 .discovery-card .discovery-era {
-    font-family: var(--font-display);
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--gold-dark);
-    margin-bottom: 0.3rem;
-    display: block;
+ font-family: var(--font-display);
+ font-size: 0.7rem;
+ letter-spacing: 2px;
+ text-transform: uppercase;
+ color: var(--gold-dark);
+ margin-bottom: 0.3rem;
+ display: block;
 }
 .discovery-card p {
-    font-size: 1.02rem;
-    line-height: 1.75;
+ font-size: 1.02rem;
+ line-height: 1.75;
 }
 
 .clue-photos {
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
+ display: flex;
+ flex-direction: column;
+ gap: 0.5rem;
 }
 .clue-photos img {
-    width: 100%;
-    border-radius: 4px;
-    border: 1px solid var(--border);
-    display: block;
-    cursor: pointer;
-    transition: transform 0.2s;
+ width: 100%;
+ border-radius: 4px;
+ border: 1px solid var(--border);
+ display: block;
+ cursor: pointer;
+ transition: transform 0.2s;
 }
 .clue-photos img:hover {
-    transform: scale(1.02);
+ transform: scale(1.02);
 }
 .clue-text h3 {
-    font-family: var(--font-display);
-    font-size: 1.1rem;
-    color: var(--ink);
-    margin-bottom: 0.5rem;
+ font-family: var(--font-display);
+ font-size: 1.1rem;
+ color: var(--ink);
+ margin-bottom: 0.5rem;
 }
 .clue-text p {
-    font-size: 1.02rem;
-    line-height: 1.7;
+ font-size: 1.02rem;
+ line-height: 1.7;
 }
 
 /* ===== LIGHTBOX WITH NAVIGATION ===== */
 .lightbox-overlay {
-    display: none;
-    position: fixed;
-    inset: 0;
-    background: rgba(0,0,0,0.92);
-    z-index: 1000;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+ display: none;
+ position: fixed;
+ inset: 0;
+ background: rgba(0,0,0,0.92);
+ z-index: 1000;
+ align-items: center;
+ justify-content: center;
+ flex-direction: column;
 }
 .lightbox-overlay.active {
-    display: flex;
+ display: flex;
 }
 .lightbox-main {
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 92vw;
-    max-height: 80vh;
+ position: relative;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ max-width: 92vw;
+ max-height: 80vh;
 }
 .lightbox-main img {
-    max-width: 92vw;
-    max-height: 80vh;
-    border-radius: 6px;
-    box-shadow: 0 8px 40px rgba(0,0,0,0.5);
-    cursor: default;
+ max-width: 92vw;
+ max-height: 80vh;
+ border-radius: 6px;
+ box-shadow: 0 8px 40px rgba(0,0,0,0.5);
+ cursor: default;
 }
 .lightbox-close {
-    position: absolute;
-    top: 1rem;
-    right: 1.5rem;
-    font-size: 2rem;
-    color: #fff;
-    background: none;
-    border: none;
-    cursor: pointer;
-    font-family: var(--font-display);
-    z-index: 1001;
+ position: absolute;
+ top: 1rem;
+ right: 1.5rem;
+ font-size: 2rem;
+ color: #fff;
+ background: none;
+ border: none;
+ cursor: pointer;
+ font-family: var(--font-display);
+ z-index: 1001;
 }
 .lightbox-btn {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(26, 26, 46, 0.7);
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    width: 48px;
-    height: 48px;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    cursor: pointer;
-    z-index: 1002;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-    font-family: var(--font-display);
+ position: fixed;
+ top: 50%;
+ transform: translateY(-50%);
+ background: rgba(26, 26, 46, 0.7);
+ color: var(--gold);
+ border: 1px solid var(--gold);
+ width: 48px;
+ height: 48px;
+ border-radius: 50%;
+ font-size: 1.5rem;
+ cursor: pointer;
+ z-index: 1002;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ transition: all 0.2s;
+ font-family: var(--font-display);
 }
 .lightbox-btn:hover {
-    background: var(--gold);
-    color: var(--ink);
+ background: var(--gold);
+ color: var(--ink);
 }
 .lightbox-btn.prev { left: 1.5rem; }
 .lightbox-btn.next { right: 1.5rem; }
 .lightbox-caption {
-    text-align: center;
-    padding: 1rem 2rem 0;
-    font-family: var(--font-body);
-    font-size: 1.05rem;
-    color: rgba(255,255,255,0.85);
-    font-style: italic;
-    max-width: 700px;
+ text-align: center;
+ padding: 1rem 2rem 0;
+ font-family: var(--font-body);
+ font-size: 1.05rem;
+ color: rgba(255,255,255,0.85);
+ font-style: italic;
+ max-width: 700px;
 }
 .lightbox-counter {
-    text-align: center;
-    padding: 0.5rem;
-    font-family: var(--font-display);
-    font-size: 0.7rem;
-    letter-spacing: 2px;
-    color: var(--gold);
+ text-align: center;
+ padding: 0.5rem;
+ font-family: var(--font-display);
+ font-size: 0.7rem;
+ letter-spacing: 2px;
+ color: var(--gold);
 }
 
 /* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
-    .nav-links { display: none; }
-    .nav-toggle { display: flex; }
-    .nav-links.open {
-        display: flex;
-        flex-direction: column;
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        background: rgba(26, 26, 46, 0.95);
-        padding: 1rem 2rem;
-        gap: 1rem;
-        border-bottom: 2px solid var(--gold);
-    }
-    .page-container { padding: 1.5rem 1rem 3rem; }
-    .hero-intro h1 { font-size: 1.7rem; }
-    .page-link {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.3rem;
-    }
-    .page-link-desc {
-        padding: 0;
-    }
-    .page-link-arrow {
-        display: none;
-    }
-    .photo-gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
-    .photo-gallery img { height: 130px; }
-    .clue-card {
-        grid-template-columns: 1fr;
-    }
-    .clue-photos {
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-    .clue-photos img {
-        max-width: 140px;
-    }
-    .discovery-card { grid-template-columns: 1fr; }
-    .discovery-card img { max-width: 200px; }
+ .nav-links { display: none; }
+ .nav-toggle { display: flex; }
+ .nav-links.open {
+ display: flex;
+ flex-direction: column;
+ position: absolute;
+ top: 100%;
+ left: 0;
+ right: 0;
+ background: rgba(26, 26, 46, 0.95);
+ padding: 1rem 2rem;
+ gap: 1rem;
+ border-bottom: 2px solid var(--gold);
+ }
+ .page-container { padding: 1.5rem 1rem 3rem; }
+ .hero-intro h1 { font-size: 1.7rem; }
+ .page-link {
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 0.3rem;
+ }
+ .page-link-desc {
+ padding: 0;
+ }
+ .page-link-arrow {
+ display: none;
+ }
+ .photo-gallery { grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)); }
+ .photo-gallery img { height: 130px; }
+ .clue-card {
+ grid-template-columns: 1fr;
+ }
+ .clue-photos {
+ flex-direction: row;
+ flex-wrap: wrap;
+ }
+ .clue-photos img {
+ max-width: 140px;
+ }
+ .discovery-card { grid-template-columns: 1fr; }
+ .discovery-card img { max-width: 200px; }
 }
 
 @media (max-width: 480px) {
-    .wedding-details { grid-template-columns: 1fr; }
-    .photo-gallery { grid-template-columns: 1fr 1fr; }
-    .photo-gallery img { height: 120px; }
+ .wedding-details { grid-template-columns: 1fr; }
+ .photo-gallery { grid-template-columns: 1fr 1fr; }
+ .photo-gallery img { height: 120px; }
 }
 .color-toggle-btn {
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
-    background: rgba(26, 21, 16, 0.85);
-    color: var(--gold);
-    border: 1px solid var(--gold);
-    padding: 6px 14px;
-    font-family: 'Cormorant Garamond', serif;
-    font-size: 0.85rem;
-    cursor: pointer;
-    border-radius: 4px;
-    transition: all 0.3s ease;
-    z-index: 2;
+ position: absolute;
+ bottom: 10px;
+ right: 10px;
+ background: rgba(26, 21, 16, 0.85);
+ color: var(--gold);
+ border: 1px solid var(--gold);
+ padding: 6px 14px;
+ font-family: 'Cormorant Garamond', serif;
+ font-size: 0.85rem;
+ cursor: pointer;
+ border-radius: 4px;
+ transition: all 0.3s ease;
+ z-index: 2;
 }
 .color-toggle-btn:hover {
-    background: var(--gold);
-    color: var(--dark);
+ background: var(--gold);
+ color: var(--dark);
 }
 .clue-photos {
-    position: relative;
+ position: relative;
 }
 .color-toggle-img {
-    transition: opacity 0.5s ease;
+ transition: opacity 0.5s ease;
 }
-    </style>
+ </style>
 <style id="update-note-style">
 /* Update notes added in the November 2026 revision (see docs/canvas-audit.md) */
 .update-note { margin: 0.8rem 0 0; padding: 0.6rem 0.85rem; border-left: 3px solid #8B0000; background: #fdf3e7; color: #1a1a2e; font-family: 'EB Garamond', Georgia, serif; font-size: 0.95rem; line-height: 1.5; border-radius: 0 4px 4px 0; text-align: left; font-style: normal; }
@@ -620,269 +620,277 @@ body {
 <body>
 
 <nav class="main-nav">
-    <div class="nav-inner">
-        <a href="index.html" class="nav-logo">FitzMaurice &amp; Andrews</a>
-        <div class="nav-links" id="navLinks">
-            <a href="index.html" class="active">Home</a>
-            <a href="family-tree.html">Family Tree</a>
-            <a href="family-crest.html">Family Crest</a>
-            <a href="ron-egypt.html">Grandpa (Ron) WWII</a>
-            <a href="wedding.html">Pat + Ron Wedding</a>
-        </div>
-        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
-            <span></span><span></span><span></span>
-        </button>
-    </div>
+ <div class="nav-inner">
+ <a href="index.html" class="nav-logo">FitzMaurice &amp; Andrews</a>
+ <div class="nav-links" id="navLinks">
+ <a href="index.html" class="active">Home</a>
+ <a href="family-tree.html">Family Tree</a>
+ <a href="branches.html">Branches</a>
+ <a href="family-crest.html">Family Crest</a>
+ <a href="ron-egypt.html">Ron in WWII</a>
+ <a href="wedding.html">Wedding</a>
+ <a href="sources.html">Sources</a>
+ </div>
+ <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
 </nav>
 
 <div class="page-container">
 
-    <!-- ===== HERO / INTRO ===== -->
-    <div class="hero-intro">
-        <div class="hero-title">FitzMaurice &amp; Andrews</div>
-        <h1>The Story Behind This</h1>
+ <!-- ===== HERO / INTRO ===== -->
+ <div class="hero-intro">
+ <div class="hero-title">FitzMaurice &amp; Andrews</div>
+ <h1>The Story Behind This</h1>
 
-        <div class="intro-story">
-            <p>After Grandma's service, there was a large collection of photos out on the table. I took pictures of a handful that caught my eye.</p>
+ <div class="intro-story">
+ <p>There was a large collection of family photographs. I took pictures of a handful that caught my eye.</p>
 
-            <p>Recently I started running them through AI research tools. Studio names on the backs of cards, handwriting on the reverses, newspaper clippings &mdash; each one gave up a little more information. I cross-referenced the names and dates against census records, parish registers, military service records, and genealogical databases. Portraits were matched to known photographs in museum archives. Coats of arms were traced through Burke's Peerage. One clue led to the next.</p>
+ <p>Studio names on the backs of cards, handwriting on the reverses, and newspaper clippings each gave up a little more. The names and dates have since been checked against the civil registration indexes, the census, parish registers, and the probate calendar. One record led to the next.</p>
 
-            <p>The more I dug, the further back it went. What started as a few old photos turned into a family line that traces back through Victorian London, through a Scottish noble family, and back to a King of Scotland in the 1400s. Along the way it connected to British Prime Ministers, the first Field Marshal in Army history, a Victorian actress whose portrait hangs in the Met in New York, and an army truck driver who inherited a 300-year-old Earldom while scrubbing mess-decks on a troopship from Korea.</p>
+ <p>What the records support is a family in Victorian and Edwardian London, Birmingham, Cornwall, Bedfordshire and Hertfordshire. Reg's mother was Edith Madeline Spencer. His father, Edward Dixon FitzMaurice, was a civil engineer, born at Aston in 1872. Ron's parents, Henry George Andrews and Rosina Maud Cousins, were killed at their home in Plaistow on 19 April 1941. The newspaper cuttings about the Earls of Orkney are in the collection, but the London Gazette of 23 April 1890 rules out a descent from that family.</p>
 
-            <p>This is what we've pieced together so far. The research is broken down into five separate pages below.</p>
+ <p>This is what the records support so far. The branches, the tree, the crest, the wartime album and the wedding each have a page below. <a href="sources.html">Sources, and how a claim is worded</a>, are listed separately.</p>
 
-            <p class="intro-note">Note: there may be incorrect or missing information. This covers Grandma's lineage only &mdash; Grandad's side is not included.</p>
-        </div>
-    </div>
+ <p class="intro-note">Probable claims are worded with probably, about or likely. Patricia, Ronald, and anyone who may still be living, are named with their relationship only.</p>
+ </div>
+ </div>
 
-    <!-- ===== PAGES ===== -->
-    <h2 class="section-header">The Research</h2>
-    <div class="section-body" style="margin-bottom: 1.5rem;">
-        <p>Some of the research is broken down into different pages. The family tree maps the connections as far back as we can trace them. The coat of arms page explains the heraldry. Grandpa's wartime story is told through his own photo album. And the wedding album is preserved in full.</p>
-    </div>
+ <!-- ===== PAGES ===== -->
+ <h2 class="section-header">The Research</h2>
+ <div class="section-body" style="margin-bottom: 1.5rem;">
+ <p>Some of the research is broken down into different pages. The family tree maps the connections as far back as we can trace them. The coat of arms page explains the heraldry. Grandpa's wartime story is told through his own photo album. And the wedding album is preserved in full.</p>
+ </div>
 
-    <div class="page-list">
-        <a href="family-tree.html" class="page-link">
-            <span class="page-link-title">The Family Tree</span>
-            <span class="page-link-desc">Interactive family tree — click on anyone to read who they were and how they connect to you.</span>
-            <span class="page-link-arrow">&rarr;</span>
-        </a>
-        <a href="family-crest.html" class="page-link">
-            <span class="page-link-title">The Family Crest</span>
-            <span class="page-link-desc">The FitzMaurice Earls of Orkney coat of arms — every quarter of the shield explained.</span>
-            <span class="page-link-arrow">&rarr;</span>
-        </a>
-        <a href="ron-egypt.html" class="page-link">
-            <span class="page-link-title">Grandpa (Ron) WWII</span>
-            <span class="page-link-desc">Ronald Andrews in Egypt — RAF engine mechanic, cave workshops, the Tura Times, and Tutankhamun's gold.</span>
-            <span class="page-link-arrow">&rarr;</span>
-        </a>
-        <a href="wedding.html" class="page-link">
-            <span class="page-link-title">Pat + Ron Wedding</span>
-            <span class="page-link-desc">The wedding album from 11th February 1950, St Mary's Church, Wanstead.</span>
-            <span class="page-link-arrow">&rarr;</span>
-        </a>
-    </div>
+ <div class="page-list">
+ <a href="family-tree.html" class="page-link">
+ <span class="page-link-title">The Family Tree</span>
+ <span class="page-link-desc">Interactive family tree , click on anyone to read who they were and how they connect to you.</span>
+ <span class="page-link-arrow">&rarr;</span>
+ </a>
+ <a href="family-crest.html" class="page-link">
+ <span class="page-link-title">The Family Crest</span>
+ <span class="page-link-desc">The arms of the Earls of Orkney. No proven link to this family.</span>
+ <span class="page-link-arrow">&rarr;</span>
+ </a>
+ <a href="ron-egypt.html" class="page-link">
+ <span class="page-link-title">Grandpa (Ron) WWII</span>
+ <span class="page-link-desc">Ronald Andrews in Egypt , RAF engine mechanic, cave workshops, the Tura Times, and Tutankhamun's gold.</span>
+ <span class="page-link-arrow">&rarr;</span>
+ </a>
+ <a href="wedding.html" class="page-link">
+ <span class="page-link-title">Pat + Ron Wedding</span>
+ <span class="page-link-desc">The wedding album from 11 February 1950, St Mary's Church, Wanstead.</span>
+ <span class="page-link-arrow">&rarr;</span>
+ </a>
+ <a href="branches.html" class="page-link">
+ <span class="page-link-title">The Family Branches</span>
+ <span class="page-link-desc">Falcke and FitzMaurice, Reg's brother and sisters, Bennett of Bodmin, Andrews and Stacey, and the Cousins family, including Auntie May.</span>
+ <span class="page-link-arrow">&rarr;</span>
+ </a>
+ <a href="sources.html" class="page-link">
+ <span class="page-link-title">Sources</span>
+ <span class="page-link-desc">Census pieces, GRO volume and page, parish registers, probate, the 1939 Register and the 1921 census.</span>
+ <span class="page-link-arrow">&rarr;</span>
+ </a>
+ </div>
 
-    <!-- ===== CLUES FROM THE COLLECTION ===== -->
-    <h2 class="section-header">Clues from the Collection</h2>
+ <!-- ===== CLUES FROM THE COLLECTION ===== -->
+ <h2 class="section-header">Clues from the Collection</h2>
 
-    <div class="section-body" style="margin-bottom: 1.5rem;">
-        <p>These are the original photographs taken from the gathering after Grandma's funeral — the images that started the entire research. Studio names on the backs of cards, handwriting on the reverses, newspaper clippings. Each one gave up a little more information.</p>
-    </div>
+ <div class="section-body" style="margin-bottom: 1.5rem;">
+ <p>These are the original photographs from the family collection, the images that started the research. Studio names on the backs of cards, handwriting on the reverses, and newspaper clippings each gave up a little more.</p>
+ </div>
 
-    <div class="clue-grid">
+ <div class="clue-grid">
 
-        <div class="clue-card camden">
-            <div class="clue-photos">
-                <img src="photos/cdv-mother-child-front.jpg" alt="Mother and child, Camden Town, c. 1865" data-gallery="clues" data-caption="Mother and child, Camden Town, c. 1865 &mdash; the earliest photograph in the collection">
-                <img src="photos/cdv-perriman-back-flat.jpg" alt="Back of carte de visite — J. Perriman, Camden Town" data-gallery="clues" data-caption="Reverse of carte de visite &mdash; J. Perriman's studio, Camden Town">
-                <img src="photos/cdv-perriman-back-held.jpg" alt="Back of carte de visite held in hand" data-gallery="clues" data-caption="Reverse of carte de visite held in hand &mdash; J. Perriman, Camden Town">
-            </div>
-            <div class="clue-text">
-                <h3>Camden Town, c. 1865</h3>
-                <p>The earliest photograph in the collection was taken at J. Perriman's studio near the Mother Red Cap pub in Camden Town. A mother and young daughter &mdash; likely an earlier FitzMaurice generation &mdash; establish the family's North London roots. The reverse of the card reads: 'Camden Town School of Photography, Commission No. 925.'</p>
-            </div>
-        </div>
+ <div class="clue-card camden">
+ <div class="clue-photos">
+ <img src="photos/cdv-mother-child-front.jpg" alt="Mother and child, Camden Town, c. 1865" data-gallery="clues" data-caption="Mother and child, Camden Town, c. 1865 , the earliest photograph in the collection">
+ <img src="photos/cdv-perriman-back-flat.jpg" alt="Back of carte de visite , J. Perriman, Camden Town" data-gallery="clues" data-caption="Reverse of carte de visite , J. Perriman's studio, Camden Town">
+ <img src="photos/cdv-perriman-back-held.jpg" alt="Back of carte de visite held in hand" data-gallery="clues" data-caption="Reverse of carte de visite held in hand , J. Perriman, Camden Town">
+ </div>
+ <div class="clue-text">
+ <h3>Camden Town, c. 1865</h3>
+ <p>The earliest photograph in the collection was taken at J. Perriman's studio near the Mother Red Cap pub in Camden Town. Neither sitter is named. The card does not show where the family came from. Edward Dixon's parents married at Battersea, and their children were born in Birmingham. The reverse reads: 'Camden Town School of Photography, Commission No. 925.'</p>
+ </div>
+ </div>
 
-        <div class="clue-card clergy">
-            <div class="clue-photos">
-                <img src="photos/edith-medallion-front.jpg" alt="Edith Madeleine FitzMaurice, c. 1899" data-gallery="clues" data-caption="Edith Madeleine FitzMaurice, circular medallion portrait, c. 1899">
-                <img src="photos/edith-medallion-back.jpg" alt="Reverse of Edith medallion portrait" data-gallery="clues" data-caption="Reverse of medallion &mdash; inscribed 'Edith Madeleine Fitzmaurice c.1899'">
-                <img src="photos/edith-medallion-held-garden.jpg" alt="Edith medallion held in garden" data-gallery="clues" data-caption="Edith Madeleine FitzMaurice medallion held in garden">
-            </div>
-            <div class="clue-text">
-                <h3>Edith Madeleine FitzMaurice, c. 1899</h3>
-                <p>A circular medallion portrait inscribed on the reverse 'Edith Madeleine Fitzmaurice c.1899.' Edith was Reg's sister &mdash; Patricia's aunt. The photograph was found among the family collection and is one of the earliest identified portraits.</p>
-            </div>
-        </div>
+ <div class="clue-card clergy">
+ <div class="clue-photos">
+ <img src="photos/edith-medallion-front.jpg" alt="Edith Madeleine FitzMaurice, c. 1899" data-gallery="clues" data-caption="Edith Madeleine FitzMaurice, circular medallion portrait, c. 1899">
+ <img src="photos/edith-medallion-back.jpg" alt="Reverse of Edith medallion portrait" data-gallery="clues" data-caption="Reverse of medallion , inscribed 'Edith Madeleine Fitzmaurice c.1899'">
+ <img src="photos/edith-medallion-held-garden.jpg" alt="Edith medallion held in garden" data-gallery="clues" data-caption="Edith Madeleine FitzMaurice medallion held in garden">
+ </div>
+ <div class="clue-text">
+ <h3>Edith Madeleine FitzMaurice, c. 1899</h3>
+ <p>A circular medallion portrait inscribed on the reverse 'Edith Madeleine Fitzmaurice c.1899.' She was Reg's mother, Edith Madeline Spencer, not his sister. She was probably born about 1866 to 1869 in Islington, married Edward Dixon FitzMaurice at St Matthew's, Brixton, on 2 August 1897, and probably died in the Bridge district of Kent in early 1929, aged 61. Her age is not the same in every record. <a href="reg-sisters.html">Her children</a>.</p>
+ </div>
+ </div>
 
-        <div class="clue-card clergy">
-            <div class="clue-photos">
-                <img src="photos/edward-dixon-stuart-studio.jpg" alt="Edward Dixon FitzMaurice, Stuart Brothers studio, Knightsbridge" data-gallery="clues" data-caption="Edward Dixon FitzMaurice &mdash; Stuart Brothers studio, 47&ndash;49 Brompton Road, Knightsbridge">
-                <img src="photos/stuart-brothers-studio.jpg" alt="Stuart Brothers photographic studio, 47&ndash;49 Brompton Road, Knightsbridge" data-gallery="clues" data-caption="Stuart Brothers photographic studio, 47&ndash;49 Brompton Road, Knightsbridge &mdash; where Edward Dixon sat for his portrait. One of the leading studios in late-Victorian London.">
-            </div>
-            <div class="clue-text">
-                <h3>A Clergyman in Knightsbridge</h3>
-                <p>Edward Dixon FitzMaurice, a Church of England clergyman, sat for his portrait at the Stuart Brothers studio, 47&ndash;49 Brompton Road, Knightsbridge &mdash; one of the most prestigious photographic studios in late-Victorian London. Stuart Bros. operated from this address from around 1888, in the heart of Knightsbridge just minutes from Harrods. His clerical collar, wire-framed spectacles, and the choice of studio speak to a comfortable professional life. He is Reg's father and Patricia's grandfather.</p>
-            </div>
-        </div>
+ <div class="clue-card clergy">
+ <div class="clue-photos">
+ <img src="photos/edward-dixon-stuart-studio.jpg" alt="Edward Dixon FitzMaurice, Stuart Brothers studio, Knightsbridge" data-gallery="clues" data-caption="Edward Dixon FitzMaurice , Stuart Brothers studio, 47 to 49 Brompton Road, Knightsbridge">
+ <img src="photos/stuart-brothers-studio.jpg" alt="Stuart Brothers photographic studio, 47 to 49 Brompton Road, Knightsbridge" data-gallery="clues" data-caption="Stuart Brothers photographic studio, 47 to 49 Brompton Road, Knightsbridge , where Edward Dixon sat for his portrait. One of the leading studios in late-Victorian London.">
+ </div>
+ <div class="clue-text">
+ <h3>Edward Dixon FitzMaurice</h3>
+ <p>Edward Dixon FitzMaurice was born at Aston, Birmingham, in late 1872. In 1891 he was an apprentice civil engineer in Brighton. On 2 August 1897, a professional singer aged 25, he married Edith Madeline Spencer at St Matthew's, Brixton. He was a civil engineer in 1901 and in 1911, the latter at Whitstable. He died in the West Ham district in the second quarter of 1928, aged 56, and was probably buried at Chingford Mount Cemetery that June. A family photograph shows him in what may be a clerical collar. No church record has been found, so the clergyman story is an unproven family tradition. His parents were Robert William FitzMaurice and, probably, Fanny Mary Falcke. <a href="falcke.html">Their family</a>.</p>
+ </div>
+ </div>
 
-        <div class="clue-card camden">
-            <div class="clue-photos">
-                <img src="photos/lang-sims-woman.jpg" alt="Unidentified woman, Lang Sims studio, Brixton Road" data-gallery="clues" data-caption="Unidentified woman &mdash; Lang Sims studio, 437 Brixton Road SW and 9 Church Street, Folkestone">
-            </div>
-            <div class="clue-text">
-                <h3>Lang Sims Woman, Brixton Road</h3>
-                <p>An unidentified young woman photographed at Lang Sims studio, 437 Brixton Road SW and 9 Church Street, Folkestone. Possibly Edith or another FitzMaurice family member. The studio was active in the late Victorian and Edwardian period.</p>
-            </div>
-        </div>
+ <div class="clue-card camden">
+ <div class="clue-photos">
+ <img src="photos/lang-sims-woman.jpg" alt="Unidentified woman, Lang Sims studio, Brixton Road" data-gallery="clues" data-caption="Unidentified woman , Lang Sims studio, 437 Brixton Road SW and 9 Church Street, Folkestone">
+ </div>
+ <div class="clue-text">
+ <h3>Lang Sims Woman, Brixton Road</h3>
+ <p>An unidentified young woman photographed at Lang Sims studio, 437 Brixton Road SW and 9 Church Street, Folkestone. Possibly Edith or another FitzMaurice family member. The studio was active in the late Victorian and Edwardian period.</p>
+ </div>
+ </div>
 
-        <div class="clue-card camden gold-dark">
-            <div class="clue-photos">
-                <img src="photos/reg-fitzmaurice-portrait.jpg" alt="Reg FitzMaurice, formal portrait" data-gallery="clues" data-caption="Reg FitzMaurice &mdash; Patricia's father, c. 1910&ndash;1920">
-            </div>
-            <div class="clue-text">
-                <h3>Reg FitzMaurice &mdash; Patricia's Father</h3>
-                <p>Reg FitzMaurice, Patricia's father. This formal portrait shows him as a young man, c. 1910&ndash;1920, wearing a three-piece suit with a bowtie. Reg gave Patricia away at her wedding in 1950. He was living in Hayes, Middlesex at the time. His father was the clergyman Edward Dixon FitzMaurice.</p>
-                <p class="update-note"><strong>Update, November 2026:</strong> This portrait has no name on it. It may be Reg, but no record in the collection says so.</p>
-            </div>
-        </div>
+ <div class="clue-card camden gold-dark">
+ <div class="clue-photos">
+ <img src="photos/reg-fitzmaurice-portrait.jpg" alt="Reg FitzMaurice, formal portrait" data-gallery="clues" data-caption="Reg FitzMaurice , Patricia's father, c. 1910 to 1920">
+ </div>
+ <div class="clue-text">
+ <h3>A young man in a bow tie</h3>
+ <p>This portrait has no name on it. It is not identified as Reg. Reg himself was Baron Reginald FitzMaurice. Baron is a forename, not a title. He was probably born on 26 May 1904 in the Wandsworth district, probably married Lilian Maud Mary Bennett in late 1927, and died on 31 March 1977. The probate calendar places him at Hayes.</p>
+ </div>
+ </div>
 
-        <div class="clue-card africa">
-            <div class="clue-photos">
-                <img src="photos/south-africa-house-and-young-man.jpg" alt="South Africa photographs" data-gallery="clues" data-caption="South Africa photographs &mdash; beach and house scenes">
-                <img src="photos/photo-backs-labeled.jpg" alt="Photo reverses with handwritten labels" data-gallery="clues" data-caption="Photo reverses &mdash; 'Reg, Bob and their Father Edward Dixon Fitzmaurice' and 'Auntie Babs, South Africa'">
-            </div>
-            <div class="clue-text">
-                <h3>Reg, Bobs and their Father</h3>
-                <p>The reverses of two photographs confirm key family identities. One reads 'Reg, Bob and their Father Edward Dixon Fitzmaurice.' The other reads 'Auntie Babs, South Africa.' These handwritten inscriptions are the primary evidence linking Reg back to Edward Dixon.</p>
-            </div>
-        </div>
+ <div class="clue-card africa">
+ <div class="clue-photos">
+ <img src="photos/south-africa-house-and-young-man.jpg" alt="South Africa photographs" data-gallery="clues" data-caption="South Africa photographs , beach and house scenes">
+ <img src="photos/photo-backs-labeled.jpg" alt="Photo reverses with handwritten labels" data-gallery="clues" data-caption="Photo reverses , 'Reg, Bob and their Father Edward Dixon Fitzmaurice' and 'Auntie Babs, South Africa'">
+ </div>
+ <div class="clue-text">
+ <h3>Reg, Bobs and their Father</h3>
+ <p>The reverses of two photographs confirm key family identities. One reads 'Reg, Bob and their Father Edward Dixon Fitzmaurice.' The other reads 'Auntie Babs, South Africa.' These handwritten inscriptions are the primary evidence linking Reg back to Edward Dixon.</p>
+ </div>
+ </div>
 
-        <div class="clue-card africa">
-            <div class="clue-photos">
-                <img src="photos/babs-and-edward-with-boys.jpg" alt="Babs in South Africa" data-gallery="clues" data-caption="'Auntie Babs' on a verandah in South Africa">
-            </div>
-            <div class="clue-text">
-                <h3>Babs in South Africa</h3>
-                <p>'Auntie Babs' emigrated to South Africa, photographed on a verandah with wrought iron railings and subtropical plants typical of Cape Colony architecture. She returned to England for Patricia's wedding in 1950. The photo reverses confirm her identity.</p>
-            </div>
-        </div>
+ <div class="clue-card africa">
+ <div class="clue-photos">
+ <img src="photos/babs-and-edward-with-boys.jpg" alt="Babs in South Africa" data-gallery="clues" data-caption="'Auntie Babs' on a verandah in South Africa">
+ </div>
+ <div class="clue-text">
+ <h3>Babs in South Africa</h3>
+ <p>A snapshot is labelled Auntie Babs, South Africa, and a guest of that name is in the 1950 wedding captions. Her real name is not known. Reg did have a sister, Eileen Sybil, probably born in late 1907, but it is not proved that she was Babs, or that Babs emigrated. <a href="reg-sisters.html">Reg's brother and sisters</a>.</p>
+ </div>
+ </div>
 
-        <div class="clue-card gaiety">
-            <div class="clue-photos">
-                <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist, the Gold Girl" data-gallery="clues" data-caption="Connie Gilchrist &mdash; star of the Gaiety Theatre, painted by Whistler">
-                <img src="photos/portraits/gaiety_theatre.jpg" alt="The Gaiety Theatre, London" data-gallery="clues" data-caption="The Gaiety Theatre, London &mdash; Victorian London's most celebrated venue">
-            </div>
-            <div class="clue-text">
-                <h3>The Gaiety Theatre Connection</h3>
-                <p>Connie Gilchrist, wife of the 7th Earl of Orkney, was a star of the Gaiety Theatre &mdash; Victorian London's most celebrated venue. Her marriage into the FitzMaurice peerage was a society sensation of its era. She was painted by Whistler, and her portrait hangs in the Metropolitan Museum of Art.</p>
-            </div>
-        </div>
+ <div class="clue-card gaiety">
+ <div class="clue-photos">
+ <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist, the Gold Girl" data-gallery="clues" data-caption="Connie Gilchrist , star of the Gaiety Theatre, painted by Whistler">
+ <img src="photos/portraits/gaiety_theatre.jpg" alt="The Gaiety Theatre, London" data-gallery="clues" data-caption="The Gaiety Theatre, London , Victorian London's most celebrated venue">
+ </div>
+ <div class="clue-text">
+ <h3>The Gaiety Theatre Connection</h3>
+ <p>Connie Gilchrist, wife of the 7th Earl of Orkney, was a star of the Gaiety Theatre , Victorian London's most celebrated venue. Her marriage into the FitzMaurice peerage was a society sensation of its era. She was painted by Whistler, and her portrait hangs in the Metropolitan Museum of Art.</p>
+ </div>
+ </div>
 
-        <div class="clue-card korea">
-            <div class="clue-photos">
-                <img src="photos/korea-news-clipping.jpg" alt="Newspaper clipping — Earl from Korea" data-gallery="clues" data-caption="Evening News clipping &mdash; 'Earl from Korea Left a Fortune &mdash; He Scrubbed Decks'">
-                <img src="photos/orkney-marries-clipping.jpg" alt="Newspaper clipping — Earl of Orkney Marries" data-gallery="clues" data-caption="'Earl of Orkney Marries' &mdash; Cecil married Rose Silley at St Mary's, Brixham, Devon, November 1953">
-            </div>
-            <div class="clue-text">
-                <h3>The Korean War Earl</h3>
-                <p>Two newspaper clippings kept in the family collection. The first from the Evening News: 'Earl from Korea Left a Fortune &mdash; He Scrubbed Decks.' The second: 'Earl of Orkney Marries' &mdash; Cecil married Rose Silley at St Mary's, Brixham, Devon in November 1953. These clippings prove the family knew about their connection to Cecil.</p>
-                <p class="update-note"><strong>Update, November 2026:</strong> The cuttings show that someone in the family followed Cecil's story. On their own they do not show a family connection.</p>
-            </div>
-        </div>
+ <div class="clue-card korea">
+ <div class="clue-photos">
+ <img src="photos/korea-news-clipping.jpg" alt="Newspaper clipping , Earl from Korea" data-gallery="clues" data-caption="Evening News clipping , 'Earl from Korea Left a Fortune , He Scrubbed Decks'">
+ <img src="photos/orkney-marries-clipping.jpg" alt="Newspaper clipping , Earl of Orkney Marries" data-gallery="clues" data-caption="'Earl of Orkney Marries' , Cecil married Rose Silley at St Mary's, Brixham, Devon, November 1953">
+ </div>
+ <div class="clue-text">
+ <h3>The Korean War Earl</h3>
+ <p>Two newspaper clippings kept in the family collection. The Evening News heading is 'Earl from Korea Left a Fortune: He Scrubbed Decks.' Cecil married Rose Silley at St Mary's, Brixham, in November 1953. The cuttings show that someone followed his story. They do not show that he was a relative.</p>
+ </div>
+ </div>
 
-        <div class="clue-card" style="border-left-color: #4a6741;">
-            <div class="clue-photos" style="position: relative;">
-                <img src="photos/andrews-family-sepia.jpg" alt="The Andrews family, c. 1930s" data-gallery="clues" data-caption="The Andrews family — Front row L-R: Herbert (older brother), Ronald, their father, younger brother. Back row: unknown woman, their mother, their father." id="andrewsFamilyImg" class="color-toggle-img">
-                <button class="color-toggle-btn" id="colorToggleBtn" onclick="toggleAndrewsColor()">Show in Colour</button>
-            </div>
-            <div class="clue-text">
-                <h3>The Andrews Family, c. 1930s</h3>
-                <p>Ronald Andrews (second from left, front row) with his family. His older brother Herbert sits to the left, their younger brother on the right. Their parents sit behind them &mdash; the older man with the flat cap is their father. The identity of the woman on the left is unknown. Both Herbert and Ronald would go on to serve in WWII, and while they were away their parents and younger brother were killed in the Blitz bombing of East Ham.</p>
-                <p class="update-note"><strong>Update, November 2026:</strong> The photograph has no label, so these names come from family memory. The caption names the father twice, once in each row; only one of those can be right.</p>
-            </div>
-        </div>
+ <div class="clue-card" style="border-left-color: #4a6741;">
+ <div class="clue-photos" style="position: relative;">
+ <img src="photos/andrews-family-sepia.jpg" alt="The Andrews family, c. 1930s" data-gallery="clues" data-caption="The Andrews family , Front row L-R: Herbert (older brother), Ronald, their father, younger brother. Back row: unknown woman, their mother, their father." id="andrewsFamilyImg" class="color-toggle-img">
+ <button class="color-toggle-btn" id="colorToggleBtn" onclick="toggleAndrewsColor()">Show in Colour</button>
+ </div>
+ <div class="clue-text">
+ <h3>The Andrews Family, c. 1930s</h3>
+ <p>The photograph has no label, so the names come from family memory, and the caption names the father twice. The records name the parents as Henry George Andrews and Rosina Maud Cousins, and the younger son as Sidney George. All three were killed at their home in Plaistow on 19 April 1941. The album's East Ham is the next borough. Herbert William, the elder brother, was born in 1916. <a href="andrews-roots.html">The Andrews line</a> and <a href="cousins.html">the Cousins line</a>.</p>
+ <p class="update-note"><strong>Update, November 2026:</strong> The photograph has no label, so these names come from family memory. The caption names the father twice, once in each row; only one of those can be right.</p>
+ </div>
+ </div>
 
-        <div class="clue-card wedding-clue">
-            <div class="clue-photos">
-                <img src="photos/IMG_8854.jpeg" alt="The photo collection spread" data-gallery="clues" data-caption="The wider collection of photographs and cabinet cards laid out together">
-            </div>
-            <div class="clue-text">
-                <h3>The Photo Collection Spread</h3>
-                <p>The wider collection of photographs and cabinet cards laid out together. Additional postcards, unidentified portraits, and snapshots from across the family's history &mdash; many still waiting to be identified.</p>
-            </div>
-        </div>
+ <div class="clue-card wedding-clue">
+ <div class="clue-photos">
+ <img src="photos/IMG_8854.jpeg" alt="The photo collection spread" data-gallery="clues" data-caption="The wider collection of photographs and cabinet cards laid out together">
+ </div>
+ <div class="clue-text">
+ <h3>The Photo Collection Spread</h3>
+ <p>The wider collection of photographs and cabinet cards laid out together. Additional postcards, unidentified portraits, and snapshots from across the family's history , many still waiting to be identified.</p>
+ </div>
+ </div>
 
-    </div>
+ </div>
 
-    <!-- ===== KEY DISCOVERIES ===== -->
-    <h2 class="section-header">Key Discoveries</h2>
+ <!-- ===== KEY DISCOVERIES ===== -->
+ <h2 class="section-header">Key Discoveries</h2>
 
-    <div class="discovery-grid">
+ <div class="discovery-grid">
 
-        <div class="discovery-card">
-            <img src="photos/portraits/james2.jpg" alt="King James II of Scotland" data-gallery="discoveries" data-caption="King James II of Scotland &mdash; the line traces back to him through Princess Mary Stewart">
-            <div>
-                <span class="discovery-era">1430&ndash;1460</span>
-                <h3>King James II of Scotland</h3>
-                <p>The family line traces back to King James II of Scotland, who reigned from 1437 until his death in 1460. His daughter Princess Mary Stewart married James Hamilton, 1st Lord Hamilton. From the Hamiltons came the Dukes of Hamilton, from the Dukes came the Earls of Orkney, and from the Earls came the FitzMaurice line that leads directly to Patricia. The evidence: Burke's Peerage records the Hamilton&ndash;Stewart marriage; the FitzMaurice succession to the Earldom is recorded in the London Gazette; and the family's own wedding album confirms Patricia as a FitzMaurice.</p>
-                <p class="update-note"><strong>Update, November 2026:</strong> The London Gazette of 23 April 1890 names the 7th Earl's surviving brother and sister as Alexander Edmond and Isabella Emily only. Edward Dixon FitzMaurice is not among them, so he was not a legitimate son of Henry Warrender FitzMaurice, and the family's link to the Earls of Orkney is not proven. The new <a href="family-tree.html">family tree</a> shows the Orkney line in its own frame, with no line drawn to the family.</p>
-            </div>
-        </div>
+ <div class="discovery-card">
+ <img src="photos/portraits/james2.jpg" alt="King James II of Scotland" data-gallery="discoveries" data-caption="King James II of Scotland , the line traces back to him through Princess Mary Stewart">
+ <div>
+ <span class="discovery-era">1430 to 1460</span>
+ <h3>King James II of Scotland</h3>
+ <p>King James II of Scotland is an ancestor of the Earls of Orkney, not of this family. The London Gazette of 23 April 1890 names the 7th Earl's surviving brother and sister as Alexander Edmond and Isabella Emily only. Edward Dixon FitzMaurice, born at Aston in 1872, is not among them. The <a href="family-tree.html">family tree</a> keeps the Orkney line in its own frame, with no line drawn to the family. The <a href="family-crest.html">arms</a> are the earls' arms.</p>
+ </div>
+ </div>
 
-        <div class="discovery-card">
-            <img src="photos/portraits/lansdowne.jpg" alt="William Petty-FitzMaurice, 1st Marquess of Lansdowne" data-gallery="discoveries" data-caption="William Petty-FitzMaurice, 1st Marquess of Lansdowne &mdash; Prime Minister 1782&ndash;1783">
-            <div>
-                <span class="discovery-era">Prime Minister 1782&ndash;1783</span>
-                <h3>The Prime Minister Who Ended the American Revolution</h3>
-                <p>William Petty-FitzMaurice, 1st Marquess of Lansdowne, served as Prime Minister from 1782 to 1783 and negotiated the Treaty of Paris that ended the American Revolutionary War. He shares the FitzMaurice name through the same Anglo-Norman dynasty &mdash; 'son of Maurice,' tracing back to Maurice FitzGerald's invasion of Ireland in 1169. The Lansdowne FitzMaurices became Marquesses; the Orkney FitzMaurices became Earls. Both branches descend from the same medieval Irish-Norman stock.</p>
-            </div>
-        </div>
+ <div class="discovery-card">
+ <img src="photos/portraits/lansdowne.jpg" alt="William Petty-FitzMaurice, 1st Marquess of Lansdowne" data-gallery="discoveries" data-caption="William Petty-FitzMaurice, 1st Marquess of Lansdowne , Prime Minister 1782 to 1783">
+ <div>
+ <span class="discovery-era">Prime Minister 1782 to 1783</span>
+ <h3>The Prime Minister Who Ended the American Revolution</h3>
+ <p>William Petty FitzMaurice, Earl of Shelburne, was Prime Minister from 1782 to 1783 and negotiated the Treaty of Paris. He shares the FitzMaurice surname. No genealogical link to this family has been found, and the old claim of one Anglo-Norman dynasty is not a proven kinship.</p>
+ </div>
+ </div>
 
-        <div class="discovery-card">
-            <img src="photos/portraits/george_hamilton.jpg" alt="George Hamilton, 1st Earl of Orkney" data-gallery="discoveries" data-caption="George Hamilton, 1st Earl of Orkney &mdash; the first person to hold the rank of Field Marshal in British Army history">
-            <div>
-                <span class="discovery-era">1666&ndash;1737</span>
-                <h3>George Hamilton, 1st Earl of Orkney &mdash; Britain's First Field Marshal</h3>
-                <p>George Hamilton (1666&ndash;1737) was created 1st Earl of Orkney in 1696 by William III. He fought at the Battle of the Boyne and served as a general under Marlborough at Blenheim, Ramillies, Oudenarde, and Malplaquet. In 1736 he became the first person in British history to hold the rank of Field Marshal. He married Elizabeth Villiers, William III's mistress. The Earldom he created passed through the Hamilton and FitzMaurice families for three centuries.</p>
-            </div>
-        </div>
+ <div class="discovery-card">
+ <img src="photos/portraits/george_hamilton.jpg" alt="George Hamilton, 1st Earl of Orkney" data-gallery="discoveries" data-caption="George Hamilton, 1st Earl of Orkney , the first person to hold the rank of Field Marshal in British Army history">
+ <div>
+ <span class="discovery-era">1666 to 1737</span>
+ <h3>George Hamilton, 1st Earl of Orkney , Britain's First Field Marshal</h3>
+ <p>George Hamilton was created Earl of Orkney in 1696. He is part of the history of that title. He is not a proven ancestor of this family.</p>
+ </div>
+ </div>
 
-        <div class="discovery-card">
-            <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist, painted by Whistler" data-gallery="discoveries" data-caption="Connie Gilchrist, painted by Whistler &mdash; her portrait hangs in the Metropolitan Museum of Art, New York">
-            <div>
-                <span class="discovery-era">1865&ndash;1946</span>
-                <h3>Connie Gilchrist &mdash; The Gaiety Girl Who Became a Countess</h3>
-                <p>Constance Gilchrist (1865&ndash;1946) was one of the most famous faces in Victorian London &mdash; a child star at the Gaiety Theatre, painted by Whistler ('The Gold Girl'), photographed by every major studio, and the subject of intense public fascination. In 1892 she married the 7th Earl of Orkney, Edmond FitzMaurice. The Duke of Beaufort gave her away. She went from actress to Countess in a single afternoon. Her portrait 'Harmony in Yellow and Gold' hangs in the Met in New York.</p>
-            </div>
-        </div>
+ <div class="discovery-card">
+ <img src="photos/portraits/connie_gilchrist.jpg" alt="Connie Gilchrist, painted by Whistler" data-gallery="discoveries" data-caption="Connie Gilchrist, painted by Whistler , her portrait hangs in the Metropolitan Museum of Art, New York">
+ <div>
+ <span class="discovery-era">1865 to 1946</span>
+ <h3>Connie Gilchrist , The Gaiety Girl Who Became a Countess</h3>
+ <p>Constance Gilchrist married Edmond, 7th Earl of Orkney. She is not a proven relative of this family. Much of the published detail about her life is secondary, and it is not repeated here as fact.</p>
+ </div>
+ </div>
 
-        <div class="discovery-card">
-            <img src="photos/portraits/cecil_devonshire.jpg" alt="Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, at HMT Devonshire" data-gallery="discoveries" data-caption="Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, returns after his tour of duty in Korea. British Troopship Devonshire, 29th September 1951.">
-            <div>
-                <span class="discovery-era">1919&ndash;1998</span>
-                <h3>Cecil O'Bryen FitzMaurice &mdash; The Last Earl</h3>
-                <p>Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, photographed on the dockside beside the British troopship HMT Devonshire on 29th September 1951, returning from his tour of duty in Korea to inherit his title. Known as 'Ginger' in the Army, he was an R.A.S.C. truck driver who served in North Africa, Italy, France, Germany, and Korea. He was scrubbing mess-decks as punishment when he learned he had inherited the Earldom and a fortune of &pound;42,893. He was Amanda's 3rd cousin once removed &mdash; connected through the 5th Earl. The newspaper clippings were kept in the family collection because Patricia's family knew Cecil was kin. He died without issue in 1998, ending the FitzMaurice chapter of the Earldom forever.</p>
-                <p class="update-note"><strong>Update, November 2026:</strong> The cousin relationship to Amanda depends on Edward Dixon FitzMaurice being a son of Henry Warrender FitzMaurice, which the 1890 London Gazette record does not support. The Evening News cutting also says Cecil became Earl while still in Korea in August 1951, and was set to scrub the mess decks on the voyage home for returning late to the ship at Colombo.</p>
-            </div>
-        </div>
+ <div class="discovery-card">
+ <img src="photos/portraits/cecil_devonshire.jpg" alt="Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, at HMT Devonshire" data-gallery="discoveries" data-caption="Cecil O'Bryen FitzMaurice, 8th Earl of Orkney, returns after his tour of duty in Korea. British Troopship Devonshire, 29th September 1951.">
+ <div>
+ <span class="discovery-era">1919 to 1998</span>
+ <h3>Cecil O'Bryen FitzMaurice , The Last Earl</h3>
+ <p>The Evening News cutting says Cecil became Earl while he was still in Korea, in August 1951, and that on the voyage home he was set to scrub the mess decks because he returned late to the ship at Colombo. It says he was left the residue of a 42,893 pound estate. He was not Amanda's cousin. That relationship depended on Edward Dixon being a son of Henry Warrender FitzMaurice, which the 1890 Gazette rules out. A date of 29 September 1951 beside HMT Devonshire is not on the photograph itself, and it does not agree with the cutting.</p>
+ </div>
+ </div>
 
-    </div>
+ </div>
 
 </div>
 
 <!-- Lightbox with navigation -->
 <div class="lightbox-overlay" id="lightbox">
-    <button class="lightbox-close" aria-label="Close">&times;</button>
-    <button class="lightbox-btn prev" id="lightboxPrev" aria-label="Previous">&lsaquo;</button>
-    <div class="lightbox-main">
-        <img src="" alt="" id="lightboxImg">
-    </div>
-    <button class="lightbox-btn next" id="lightboxNext" aria-label="Next">&rsaquo;</button>
-    <div class="lightbox-caption" id="lightboxCaption"></div>
-    <div class="lightbox-counter" id="lightboxCounter"></div>
+ <button class="lightbox-close" aria-label="Close">&times;</button>
+ <button class="lightbox-btn prev" id="lightboxPrev" aria-label="Previous">&lsaquo;</button>
+ <div class="lightbox-main">
+ <img src="" alt="" id="lightboxImg">
+ </div>
+ <button class="lightbox-btn next" id="lightboxNext" aria-label="Next">&rsaquo;</button>
+ <div class="lightbox-caption" id="lightboxCaption"></div>
+ <div class="lightbox-counter" id="lightboxCounter"></div>
 </div>
 
 <script>
@@ -890,9 +898,9 @@ body {
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
 if (navToggle) {
-    navToggle.addEventListener('click', () => {
-        navLinks.classList.toggle('open');
-    });
+ navToggle.addEventListener('click', () => {
+ navLinks.classList.toggle('open');
+ });
 }
 
 // ===== GALLERY LIGHTBOX WITH NAVIGATION =====
@@ -908,69 +916,69 @@ let currentIndex = 0;
 
 // Build gallery arrays from data attributes
 function buildGallery(galleryName) {
-    const items = [];
-    if (galleryName === 'clues') {
-        document.querySelectorAll('[data-gallery="clues"]').forEach(img => {
-            items.push({ src: img.src, caption: img.getAttribute('data-caption') });
-        });
-    } else if (galleryName === 'discoveries') {
-        document.querySelectorAll('[data-gallery="discoveries"]').forEach(img => {
-            items.push({ src: img.src, caption: img.getAttribute('data-caption') });
-        });
-    }
-    return items;
+ const items = [];
+ if (galleryName === 'clues') {
+ document.querySelectorAll('[data-gallery="clues"]').forEach(img => {
+ items.push({ src: img.src, caption: img.getAttribute('data-caption') });
+ });
+ } else if (galleryName === 'discoveries') {
+ document.querySelectorAll('[data-gallery="discoveries"]').forEach(img => {
+ items.push({ src: img.src, caption: img.getAttribute('data-caption') });
+ });
+ }
+ return items;
 }
 
 function openLightbox(gallery, index) {
-    currentGallery = gallery;
-    currentIndex = index;
-    showCurrentImage();
-    lightbox.classList.add('active');
+ currentGallery = gallery;
+ currentIndex = index;
+ showCurrentImage();
+ lightbox.classList.add('active');
 }
 
 function showCurrentImage() {
-    const item = currentGallery[currentIndex];
-    lightboxImg.src = item.src;
-    lightboxCaption.innerHTML = item.caption;
-    lightboxCounter.textContent = (currentIndex + 1) + ' / ' + currentGallery.length;
+ const item = currentGallery[currentIndex];
+ lightboxImg.src = item.src;
+ lightboxCaption.innerHTML = item.caption;
+ lightboxCounter.textContent = (currentIndex + 1) + ' / ' + currentGallery.length;
 }
 
 function lightboxGoPrev() {
-    currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
-    showCurrentImage();
+ currentIndex = (currentIndex - 1 + currentGallery.length) % currentGallery.length;
+ showCurrentImage();
 }
 
 function lightboxGoNext() {
-    currentIndex = (currentIndex + 1) % currentGallery.length;
-    showCurrentImage();
+ currentIndex = (currentIndex + 1) % currentGallery.length;
+ showCurrentImage();
 }
 
 function closeLightbox() {
-    lightbox.classList.remove('active');
-    lightboxImg.src = '';
+ lightbox.classList.remove('active');
+ lightboxImg.src = '';
 }
 
 // Clues gallery clicks
 const clueImages = document.querySelectorAll('[data-gallery="clues"]');
 clueImages.forEach((img, i) => {
-    img.addEventListener('click', (e) => {
-        e.preventDefault();
-        openLightbox(buildGallery('clues'), i);
-    });
+ img.addEventListener('click', (e) => {
+ e.preventDefault();
+ openLightbox(buildGallery('clues'), i);
+ });
 });
 
 // Build discoveries gallery
 const discoveryImages = document.querySelectorAll('[data-gallery="discoveries"]');
 discoveryImages.forEach((img, i) => {
-    img.style.cursor = 'pointer';
-    img.addEventListener('click', (e) => {
-        e.preventDefault();
-        const items = [];
-        document.querySelectorAll('[data-gallery="discoveries"]').forEach(el => {
-            items.push({ src: el.src, caption: el.getAttribute('data-caption') });
-        });
-        openLightbox(items, i);
-    });
+ img.style.cursor = 'pointer';
+ img.addEventListener('click', (e) => {
+ e.preventDefault();
+ const items = [];
+ document.querySelectorAll('[data-gallery="discoveries"]').forEach(el => {
+ items.push({ src: el.src, caption: el.getAttribute('data-caption') });
+ });
+ openLightbox(items, i);
+ });
 });
 
 // Navigation buttons
@@ -979,34 +987,34 @@ lightboxNext.addEventListener('click', (e) => { e.stopPropagation(); lightboxGoN
 
 // Close on background click
 lightbox.addEventListener('click', (e) => {
-    if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
-        closeLightbox();
-    }
+ if (e.target === lightbox || e.target.classList.contains('lightbox-close')) {
+ closeLightbox();
+ }
 });
 
 // Keyboard navigation
 document.addEventListener('keydown', (e) => {
-    if (!lightbox.classList.contains('active')) return;
-    if (e.key === 'Escape') closeLightbox();
-    if (e.key === 'ArrowLeft') lightboxGoPrev();
-    if (e.key === 'ArrowRight') lightboxGoNext();
+ if (!lightbox.classList.contains('active')) return;
+ if (e.key === 'Escape') closeLightbox();
+ if (e.key === 'ArrowLeft') lightboxGoPrev();
+ if (e.key === 'ArrowRight') lightboxGoNext();
 });
 
 // Andrews family color toggle
 function toggleAndrewsColor() {
-    const img = document.getElementById('andrewsFamilyImg');
-    const btn = document.getElementById('colorToggleBtn');
-    if (img.src.includes('sepia')) {
-        img.src = 'photos/andrews-family-color.jpeg';
-        img.style.opacity = '0';
-        setTimeout(() => { img.style.opacity = '1'; }, 50);
-        btn.textContent = 'Show Original';
-    } else {
-        img.src = 'photos/andrews-family-sepia.jpg';
-        img.style.opacity = '0';
-        setTimeout(() => { img.style.opacity = '1'; }, 50);
-        btn.textContent = 'Show in Colour';
-    }
+ const img = document.getElementById('andrewsFamilyImg');
+ const btn = document.getElementById('colorToggleBtn');
+ if (img.src.includes('sepia')) {
+ img.src = 'photos/andrews-family-color.jpeg';
+ img.style.opacity = '0';
+ setTimeout(() => { img.style.opacity = '1'; }, 50);
+ btn.textContent = 'Show Original';
+ } else {
+ img.src = 'photos/andrews-family-sepia.jpg';
+ img.style.opacity = '0';
+ setTimeout(() => { img.style.opacity = '1'; }, 50);
+ btn.textContent = 'Show in Colour';
+ }
 }
 </script>
 

@@ -594,6 +594,7 @@ body.canvas-body.lb-open { overflow: hidden; }
 
 /* ------------------------------------------------------------------ responsive */
 .canvas-body .nav-logo, .canvas-body .nav-links a { white-space: nowrap; }
+.canvas-body .nav-links { flex-wrap: wrap; justify-content: flex-end; }
 @media (max-width: 1200px) and (min-width: 769px) {
     .canvas-body .nav-inner { padding: 0.8rem 1.2rem; }
     .canvas-body .nav-links { gap: 1.1rem; }

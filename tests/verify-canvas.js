@@ -237,7 +237,7 @@ const ok = (m) => console.log('  ok   ' + m);
                     ['kirkwall', 'lansdowne', 'uncle'], ['george-orkney', 'james-ii', '6× great-grandfather']];
                 want.forEach(([a, b, l]) => { const g = r(a, b); if (g !== l) out.push(`${a} -> ${b}: "${g}", expected "${l}"`); });
                 if (t.relInfo('sebastian-belfiore', 'james-ii').kind !== 'none') out.push('James II should have no recorded link to Sebastian');
-                if (t.relInfo('sebastian-belfiore', 'edith-madeleine-fitzmaurice').kind !== 'none') out.push('Edith should have no recorded link to Sebastian');
+                if (t.relInfo('sebastian-belfiore', 'edith-madeleine-fitzmaurice').label !== 'great-great-grandmother') out.push('Edith should be Sebastian\'s great-great-grandmother');
                 let n = 0;
                 t.D.people.forEach(a => t.D.people.forEach(b => { if (a.id === b.id) return; const i = t.relInfo(a.id, b.id); n++; if (i.kind !== 'none' && !i.label) out.push(`${a.id} -> ${b.id}: no label`); if (i.kind !== 'none' && !t.relPath(a.id, b.id)) out.push(`${a.id} -> ${b.id}: no path`); }));
                 return { out, n };

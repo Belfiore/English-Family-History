@@ -75,7 +75,7 @@
     function lifeLine(p) {
         if (p.isLiving) return '';
         var b = cardYear(p.birth), d = cardYear(p.death);
-        if (b && d) return b + ' – ' + d;
+        if (b && d) return b + ' to ' + d;
         if (b) return 'b. ' + b;
         if (d) return 'd. ' + d;
         return 'Dates unknown';
@@ -337,7 +337,7 @@
     function cardLabel(p) {
         var parts = [p.displayName];
         if (p.disambiguator) parts.push(p.disambiguator);
-        var life = lifeLine(p); if (life) parts.push(life.replace('–', 'to').replace('~', 'about ').replace('?', ' (unverified)'));
+        var life = lifeLine(p); if (life) parts.push(life.replace('~', 'about ').replace('?', ' (unverified)'));
         if (p.isLiving) parts.push('living');
         if (p.isDirectLine) parts.push('on ' + directLabel());
         return parts.join(', ');

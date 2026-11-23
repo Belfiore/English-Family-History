@@ -439,6 +439,346 @@
    "type": "context",
    "repository": "Encyclopaedia Britannica",
    "url": "https://www.britannica.com/event/the-Blitz"
+  },
+  {
+   "id": "gro-indexes",
+   "title": "GRO and FreeBMD birth, marriage and death indexes",
+   "type": "civil registration index",
+   "repository": "General Register Office online index (gro.gov.uk) and FreeBMD (freebmd.org.uk), read 22 November 2026",
+   "note": "Volume and page references are given on each person. Mother's maiden name is from the GRO online birth index. Ages at death are from the death index."
+  },
+  {
+   "id": "parish-brixton-1897",
+   "title": "Marriage register, St Matthew, Brixton, 2 August 1897",
+   "type": "parish register",
+   "repository": "London Metropolitan Archives P85/MTW1/024, entry 376. Ancestry collection 1623, London, England, Church of England Marriages and Banns, 1754 to 1941.",
+   "note": "Edward Dixon Fitzmaurice, 25, bachelor, professional singer, and Edith Madeline Spencer, 24, spinster, married by banns. His father Robert William Fitzmaurice, contractor, deceased. Her father Charles Spencer, builder and contractor, deceased. Witnesses included Caroline Spencer and May Spencer. GRO marriage index, September quarter 1897, Lambeth, volume 1d, page 583.",
+   "date": "1897-08-02"
+  },
+  {
+   "id": "parish-battersea-1861",
+   "title": "Marriage register, St Mary, Battersea, 14 September 1861",
+   "type": "parish register",
+   "repository": "London Metropolitan Archives P70/MRY2/004, entry 55. Ancestry collection 1623.",
+   "note": "Robert William Fitzmaurice, bachelor, surveyor, father John Fitzmaurice, gentleman, married Fanny Mary Falcke, of full age, father William Gottlob Falcke, manufacturer. GRO marriage index, September quarter 1861, Wandsworth, volume 1d, page 647.",
+   "date": "1861-09-14"
+  },
+  {
+   "id": "parish-stepney-1832",
+   "title": "Baptism register, St Dunstan, Stepney, 30 September 1832",
+   "type": "parish register",
+   "repository": "London Metropolitan Archives P93/DUN/016, entry 1536.",
+   "note": "Robert William, son of John and Eliza Fitzmaurice. Father a clerk. The date is the baptism, not a recorded birth.",
+   "date": "1832-09-30"
+  },
+  {
+   "id": "parish-battersea-1837",
+   "title": "Baptism register, St Mary, Battersea, 29 January 1837",
+   "type": "parish register",
+   "repository": "St Mary, Battersea, entry 650.",
+   "note": "Mary Fanny, daughter of William Gottlob Falcke, potter, and Elizabeth, born 3 December 1836.",
+   "date": "1837-01-29"
+  },
+  {
+   "id": "parish-falcke-1817",
+   "title": "Marriage of William Gottlob Falcke and Eliza Macfarlin, 15 October 1817",
+   "type": "parish register",
+   "repository": "St Mary, Battersea.",
+   "note": "William Gottlob Falcke married Eliza Macfarlin. Ten children were baptised at Chelsea and Battersea between 1818 and 1837. Daughters married at Battersea: Henrietta (Nichols, 1840), Eliza Caroline (Knight, 1845), Charlotte (Cooper, 1850), Jane (Turner, 1858).",
+   "date": "1817-10-15"
+  },
+  {
+   "id": "burial-falcke-1849",
+   "title": "Burial register, St Mary, Battersea, 27 August 1849",
+   "type": "parish register",
+   "repository": "St Mary, Battersea burial register.",
+   "note": "William Falcke, potter, buried aged 56. GRO death index, September quarter 1849, Wandsworth.",
+   "date": "1849-08-27"
+  },
+  {
+   "id": "burial-chingford-1928",
+   "title": "Burial register, Chingford Mount Cemetery, 13 June 1928",
+   "type": "burial register",
+   "repository": "Waltham Forest burial register, Chingford Mount Cemetery, section F12.",
+   "note": "Edward Dixon FitzMaurice, buried 13 June 1928. GRO death index: Fitzmaurice, Edward D., aged 56, June quarter 1928, West Ham, volume 4a, page 384. No will or probate found for 1928 to 1930. A Find a Grave day of death is a secondary note only and is not used here.",
+   "date": "1928-06-13"
+  },
+  {
+   "id": "probate-robert-1895",
+   "title": "Probate calendar, Robert William FitzMaurice, 1895",
+   "type": "probate calendar",
+   "repository": "England and Wales National Probate Calendar, 1895, page 100. Principal Probate Registry.",
+   "note": "Of Edgbaston. Died 10 May 1895. Probate (limited) Birmingham, 1 August 1895, to his widow Fanny Mary and sons John Rupert, quarry owner, and Walter, contractor. Effects 12,921 pounds 4 shillings and 9 pence. GRO death index, June quarter 1895, King's Norton, volume 6c, page 269, aged 64.",
+   "date": "1895-05-10"
+  },
+  {
+   "id": "probate-fanny-1917",
+   "title": "Probate calendar, Fanny Mary FitzMaurice, 1917",
+   "type": "probate calendar",
+   "repository": "England and Wales National Probate Calendar.",
+   "note": "Fanny Mary FitzMaurice died 25 October 1917 at Erdington. GRO death index, Tamworth, aged 80.",
+   "date": "1917-10-25"
+  },
+  {
+   "id": "probate-reg-1977",
+   "title": "Death index and probate calendar, Baron Reginald Fitzmaurice, 1977",
+   "type": "probate calendar",
+   "repository": "GRO death index, June quarter 1977, Hillingdon, volume 13, page 673. Probate calendar 1977, page 2725.",
+   "note": "Died 31 March 1977. The death index gives his date of birth as 26 May 1904. Probate Brighton, 9 June 1977. Estate 24,427 pounds. The calendar places him at Hayes. The house number is not published here.",
+   "date": "1977-03-31"
+  },
+  {
+   "id": "probate-rupert-1949",
+   "title": "Death index and probate calendar, John Rupert FitzMaurice, 1949",
+   "type": "probate calendar",
+   "repository": "GRO death index, September quarter 1949, Leicester, volume 3a, page 537, aged 84. Probate calendar 1949, page 268.",
+   "note": "Died 21 September 1949. Probate Leicester, 5 December 1949, to Barclays Bank Ltd and Leslie Charlesworth Simpson, chartered accountant. Effects 56,789 pounds 19 shillings and 2 pence. He was of Leicester.",
+   "date": "1949-09-21"
+  },
+  {
+   "id": "probate-charles-bennett-1926",
+   "title": "Probate calendar, Charles Bennett of Bodmin, 1926",
+   "type": "probate calendar",
+   "repository": "England and Wales National Probate Calendar, 1926.",
+   "note": "Charles Bennett of Bodmin died 5 December 1925. Administration with will, Bodmin, 16 February 1926, to May Bennett, spinster. Effects 296 pounds 1 shilling and 4 pence. GRO death index, December quarter 1925, Bodmin, volume 5c, page 77, aged 77.",
+   "date": "1925-12-05"
+  },
+  {
+   "id": "probate-may-1971",
+   "title": "Probate calendar, May Florence Cousins, 1971",
+   "type": "probate calendar",
+   "repository": "England and Wales National Probate Calendar. GRO death index, September quarter 1971, Surrey North, volume 5g, page 515.",
+   "note": "Died 27 September 1971. Probate London, 2 December 1971. Effects 1,541 pounds. The calendar places her at Feltham.",
+   "date": "1971-09-27"
+  },
+  {
+   "id": "census-1871-aston",
+   "title": "1871 England census, Little Bromwich, Aston",
+   "type": "census",
+   "repository": "The National Archives RG10, piece 3160, folio 30, page 4. Ancestry, 1871 England Census.",
+   "note": "Robert William Fitzmaurice, 39, surveyor and contractor, born Stepney. Fanny M., 34. Children Eliza Ada, Rupert J., Harry, Arthur Percy and Walter. The France birthplace given for Fanny on this page is an error. Later censuses and her baptism give Battersea."
+  },
+  {
+   "id": "census-1881-aston",
+   "title": "1881 England census, Aston Manor",
+   "type": "census",
+   "repository": "The National Archives RG11, piece 3046, folio 121, page 24. Ancestry collection 7572.",
+   "note": "Robert William, granite merchant and contractor, born London. Fanny Mary, born Battersea. Children Eliza Ada, Walter, and a son written Ernest Dixon, aged 8, born Little Bromwich, taken as Edward Dixon."
+  },
+  {
+   "id": "census-1891-brighton",
+   "title": "1891 England census, Brighton",
+   "type": "census",
+   "repository": "The National Archives RG12, piece 811, folio 23, page 39. Ancestry collection 6598.",
+   "note": "Edward Fitzmaurice, lodger, 18, apprentice civil engineer, born Ward End, in the household of Francis John C. May, civil engineer."
+  },
+  {
+   "id": "census-1891-spencer",
+   "title": "1891 England census, St Pancras",
+   "type": "census",
+   "repository": "The National Archives RG12, piece 116, folio 10, page 17. Ancestry collection 6598.",
+   "note": "Edith Spencer, daughter, single, 22, governess, born Islington, with her widowed mother Caroline, lodging house keeper, born Islington."
+  },
+  {
+   "id": "census-1901-brixton",
+   "title": "1901 England census, Brixton",
+   "type": "census",
+   "repository": "The National Archives RG13, piece 431, folio 14, page 19. Ancestry collection 7814.",
+   "note": "Probably Edward and Edith, recorded under variant initials, with her mother Caroline Spencer. His occupation is civil mechanical engineer. The link is probable, not certain."
+  },
+  {
+   "id": "census-1911-whitstable",
+   "title": "1911 England census, Whitstable",
+   "type": "census",
+   "repository": "The National Archives RG14, piece 4373, Whitstable Urban, enumeration district 5. Ancestry collection 2352.",
+   "note": "Edward Dixon Fitzmaurice, 38, civil engineer, born Birmingham. Wife Edith Madeline, 38, born St Anne, Soho. Married 12 years. Four children born alive, three living. Sons Edward Robert, 9, and Baron Reginald, 6. Daughter Eileen, 3. The house name is not published here."
+  },
+  {
+   "id": "census-1841-falcke",
+   "title": "1841 England census, Battersea",
+   "type": "census",
+   "repository": "The National Archives HO107. Ancestry.",
+   "note": "William Falcke, potter, born in foreign parts, with Elizabeth and children Eliza, Jane, Charlotte, Elizabeth, Frederick, Emily and Fanny, at Battersea."
+  },
+  {
+   "id": "census-1851-falcke",
+   "title": "1851 England census, Battersea",
+   "type": "census",
+   "repository": "The National Archives HO107, piece 1577, folio 58, page 10.",
+   "note": "Fanny Falcke, 14, born Battersea, daughter of Elizabeth, 54, born Harrow, with Jane, Elizabeth, Frederick and Emily."
+  },
+  {
+   "id": "cwgc-plaistow-1941",
+   "title": "Commonwealth War Graves Commission, civilian deaths at Plaistow, 19 April 1941",
+   "type": "war dead roll",
+   "repository": "CWGC Civilian War Dead. Henry George Andrews, casualty 3105324. Rosina Maud Andrews, 3105326. Sidney George Andrews, 3105327.",
+   "note": "All three died on 19 April 1941 at the family home in Plaistow, West Ham County Borough. Henry George was 52, son of Herbert Andrews. Rosina Maud was 59. Sidney George was 18, son of Henry George and Rosina Maud. GRO death index, June quarter 1941, West Ham: Henry G., volume 4a, page 70. Rosina M. and Sidney G., volume 4a, page 71. The street number is not published here.",
+   "date": "1941-04-19",
+   "url": "https://www.cwgc.org/find-records/find-war-dead/"
+  },
+  {
+   "id": "parish-plaistow-1915",
+   "title": "Marriage register, St Andrew, Plaistow, 18 April 1915",
+   "type": "parish register",
+   "repository": "Essex Archives Online, D/P 527/1/25. GRO marriage index, June quarter 1915, West Ham, volume 4a, page 305.",
+   "note": "Henry George Andrews, 25, son of Herbert Andrews, married Rosina Maud Cousins, daughter of William Cousins.",
+   "date": "1915-04-18"
+  },
+  {
+   "id": "parish-bushey-1888",
+   "title": "Marriage register, Bushey, 17 May 1888",
+   "type": "parish register",
+   "repository": "Bushey parish register. GRO marriage index, June quarter 1888, Watford, volume 3a, page 644.",
+   "note": "Herbert Andrews, 22, father George Andrews, married Lucy Stacey, daughter of Henry Stacey.",
+   "date": "1888-05-17"
+  },
+  {
+   "id": "parish-st-albans-1889",
+   "title": "Baptism, St Albans Abbey, 9 June 1889",
+   "type": "parish register",
+   "repository": "St Albans Abbey baptism register.",
+   "note": "Henry George, son of Herbert and Lucy Andrews. GRO birth index, June quarter 1889, St Albans, volume 3a, page 559, mother's maiden name Stacey.",
+   "date": "1889-06-09"
+  },
+  {
+   "id": "parish-stepney-1871",
+   "title": "Marriage register, St Philip, Stepney, 15 January 1871",
+   "type": "parish register",
+   "repository": "St Philip, Stepney, marriage after banns.",
+   "note": "William Cousins, 21, clerk, father William Cousins, clerk, married Anne Gall, 24, father John Gall, brewer, deceased. The street numbers on the register are not published here.",
+   "date": "1871-01-15"
+  },
+  {
+   "id": "parish-leavesden-1858",
+   "title": "Marriage register, Leavesden, 5 June 1858",
+   "type": "parish register",
+   "repository": "Leavesden parish register. GRO marriage index, June quarter 1858, Watford, volume 3a, page 379.",
+   "note": "Henry Stacey married Mary Walter. Her father was Robert Walter. GRO birth index for their daughter Lucy: June quarter 1865, Watford Union, volume 3a, page 333, mother's maiden name Walter.",
+   "date": "1858-06-05"
+  },
+  {
+   "id": "parish-denham-1834",
+   "title": "Baptism, Denham, Buckinghamshire, 16 March 1834",
+   "type": "parish register",
+   "repository": "Denham parish register.",
+   "note": "Henry Stacey, son of Henry and Ann Stacey.",
+   "date": "1834-03-16"
+  },
+  {
+   "id": "parish-aldenham-1838",
+   "title": "Baptism, Aldenham, 4 November 1838",
+   "type": "parish register",
+   "repository": "Aldenham parish register.",
+   "note": "Mary, daughter of Robert and Mary Walter.",
+   "date": "1838-11-04"
+  },
+  {
+   "id": "census-andrews-stacey",
+   "title": "Censuses for the Andrews and Stacey families, 1841 to 1921",
+   "type": "census",
+   "repository": "The National Archives. Ancestry: 1881 England Census, collection 7572; 1891, collection 6598; 1901, collection 7814; 1911, collection 2352; 1921, collection 63150. The 1841 and 1871 images were read on Ancestry. The collection numbers for those two censuses were not recorded.",
+   "note": "1871 Totternhoe, RG10/1566, folio 43, page 7: George and Alice Andrews with Herbert and Albert, and Elizabeth Field. 1881 Aldenham, RG11/1434, folio 5, page 4: George, agricultural labourer, Alice, Albert, Isabell, Rose and Mary, and Elizabeth Field. 1881 Herbert, 15, page, born Bedfordshire, at Wimbledon, probable. 1901 Hemel Hempstead, RG13/1325, folio 41, page 6: Herbert, Lucy and Henry George. 1911 Canning Town, RG14/9508, enumeration district 38: Herbert, journeyman baker, Lucy, and Henry, their only child. 1921 Plaistow, RG15/8364, enumeration district 43, schedule 228: Herbert, night baker, and Lucy, born Leavesden. 1841 Denham: Henry and Ann Stacey with their children, including Henry aged 7. 1841 Letchmore Heath: Robert and Mary Walter with their children, including Mary aged 2. 1861 Abbots Langley: Henry and Mary Stacey visiting, with baby Emily. 1871 Aldenham, RG10/1380, folio 13, page 18: Henry, Mary and Lucy. 1881 and 1891 Bushey: Henry, agricultural labourer, and Mary. 1881 Watford: Lucy, 16, general servant. House numbers and street names are not published here."
+  },
+  {
+   "id": "census-cousins",
+   "title": "Censuses for the Cousins family, 1881 to 1921",
+   "type": "census",
+   "repository": "The National Archives. Ancestry.",
+   "note": "1881 Bermondsey, William Cousens, wharf foreman, with Annie, born Thetford, and the older children. 1891 West Ham, RG12/1318, folio 90, page 17: William, born Hackney, Annie, born Thetford, and eight children including Rosina M., born Bermondsey. 1901 Canning Town, RG13/1580, folio 69, page 33: William, widowed in effect (no wife), with Amelia and Herbert. 1911 piece 9446: William at Plaistow. 1921 RG15/8364: William, retired dock labourer, in the household of Rosina and Henry George. Street addresses are not published here."
+  },
+  {
+   "id": "census-bennett",
+   "title": "Censuses for the Bennett family of Bodmin, 1891 to 1911",
+   "type": "census",
+   "repository": "The National Archives. Ancestry collections 6598, 7814 and 2352.",
+   "note": "1891 Bodmin, RG12/1816, folio 67, page 10, enumeration district 6, schedule 68: Charles Bennett, tailor, born Egloshayle, and Annie, born St Columb. 1901 Bodmin, RG13/2201, folio 22, page 15: Charles, general labourer, Annie, and the children including Lilian, aged 1. 1911 Bodmin, RG14/13691: Annie, draper, calling herself a widow, with Minnie, Gilbert and Floyd, 11 children born, 8 living, 3 dead. 1911 RG14/13689: Charles, 62, tailor and outfitter, born Slades, Egloshayle, alive, with son Frank. Street names are not published here."
+  },
+  {
+   "id": "census-1921-lilian",
+   "title": "1921 England census, Hampton Hill",
+   "type": "census",
+   "repository": "The National Archives RG15, piece 3700, enumeration district 6, schedule 72. Ancestry collection 63150.",
+   "note": "Lilian Maud Mary Bennett, single, boarder, aged 21 years and 3 months, born Bodmin, clerk at the Claims Record Office, at Hampton Hill."
+  },
+  {
+   "id": "register-1939",
+   "title": "1939 Register, West Ham, Colchester and related households",
+   "type": "1939 register",
+   "repository": "The National Archives RG101. Ancestry 1939 Register.",
+   "note": "Henry George Andrews, explosive worker at the Royal filling factory, Woolwich, with Rosina on unpaid domestic duties, Herbert William, explosive worker, and Sidney George, junior clerk at a hardwood merchant. Herbert Andrews the elder, born 12 November 1865, widower, baker retired. May Florence Cousins, single, dining hall maid, at Colchester. The exact birth date of Herbert William, and the house numbers, are not published here."
+  },
+  {
+   "id": "electoral-fitzmaurice",
+   "title": "Electoral registers, Wandsworth, Hammersmith, Spelthorne and Hayes",
+   "type": "electoral register",
+   "repository": "London, England, Electoral Registers, 1832 to 1965. Ancestry collection 1795.",
+   "note": "Baron or Reginald Fitzmaurice: Wandsworth in 1925 and 1926, Hammersmith in 1931 to 1933, the Spelthorne district in 1934 to 1937, and Hayes from 1938 until about 1972. Lilian is with him at Hayes to 1939. House numbers are not published here."
+  },
+  {
+   "id": "electoral-may",
+   "title": "Electoral registers for May Florence Cousins, 1948 to 1971",
+   "type": "electoral register",
+   "repository": "Electoral registers, Brentford and Chiswick, then Feltham.",
+   "note": "May Florence Cousins at Chiswick and Gunnersbury from 1948 to 1967, then Feltham from 1968 to 1971. Street addresses are not published here."
+  },
+  {
+   "id": "gro-lilian-death",
+   "title": "GRO death index, Lilian Maud Mary Fitzmaurice, 1947",
+   "type": "civil registration index",
+   "repository": "GRO online death index, December quarter 1947, Uxbridge, volume 5f, page 103.",
+   "note": "Lilian Maud Mary Fitzmaurice, aged 47. The Uxbridge district covered Hayes. No will or administration found for 1947 to 1949, and no burial has been found. Birth index: Lilian Maud Mary Bennett, mother's maiden name Grigg, June quarter 1900, Bodmin, volume 5c, page 64.",
+   "date": "1947"
+  },
+  {
+   "id": "gro-marriage-1927",
+   "title": "GRO marriage index, Fitzmaurice and Bennett, 1927",
+   "type": "civil registration index",
+   "repository": "GRO and FreeBMD, December quarter 1927, Hammersmith, volume 1a, page 661. Ancestry, England and Wales Marriage Index, 1916 to 2005, collection 8753.",
+   "note": "Baron R. Fitzmaurice and Lilian M. M. Bennett are on the same page. The parish register itself has not been seen, so the match is probable."
+  },
+  {
+   "id": "gro-edith-death",
+   "title": "GRO death index, Edith Madeline Fitzmaurice, 1929",
+   "type": "civil registration index",
+   "repository": "GRO online death index, March quarter 1929, Bridge, volume 2a, page 1999.",
+   "note": "Edith Madeline Fitzmaurice, aged 61. The age fits a birth about 1867 to 1868. No matching birth under Edith Madeline Spencer has been found.",
+   "date": "1929"
+  },
+  {
+   "id": "gro-bennett-grigg",
+   "title": "GRO index, Bennett births at Bodmin, mother Grigg, and Annie Grigg",
+   "type": "civil registration index",
+   "repository": "GRO online birth and death indexes.",
+   "note": "Matilda Ann Nicholls Grigg, mother's maiden name Stephens, March quarter 1864, St Columb, volume 5c, page 131. Death: Matilda Ann Nicholls Bennett, aged 48, June quarter 1912, Bodmin, volume 5c, page 89. Marriage index, probable: Charles Bennett and Annie Grigg, September quarter 1882, Stoke Damerel, volume 5b, page 573. The eleven Bodmin births with mother Grigg, 1883 to 1902, and the three infant deaths, are listed on the Bennett page."
+  },
+  {
+   "id": "gro-cousins-gall",
+   "title": "GRO birth index, Cousins children, mother Gall",
+   "type": "civil registration index",
+   "repository": "GRO online birth index, and FreeBMD.",
+   "note": "Mother's maiden name Gall (Galle for Amelia Annie in 1877) for all eight children, 1871 to 1886. Rosina Maud, December quarter 1881, St Olave Southwark, volume 1d, page 292. Annie Cousins, probable death, September quarter 1900, West Ham, volume 4a, page 76, aged 53. William Cousins, probable death, December quarter 1922, West Ham, volume 4a, page 53, aged 71."
+  },
+  {
+   "id": "census-1921-may",
+   "title": "1921 census and 1939 Register, May Florence Cousins",
+   "type": "census",
+   "repository": "1921 census, Ancestry collection 63150. 1939 Register.",
+   "note": "In 1921, single, aged 35 years and 1 month, born West Ham, ward maid at East Ham Isolation Hospital. Later at Ealing. In 1939, single, dining hall maid, at Colchester. Birth index: May Florence Cousins, mother's maiden name Gall, June quarter 1886, West Ham, volume 4a, page 167."
+  },
+  {
+   "id": "parish-hackney-1850",
+   "title": "Baptism of William Cousins, St John, Hackney, 1 December 1850",
+   "type": "parish register",
+   "repository": "London, England, Church of England Births and Baptisms, Ancestry, record 2494246",
+   "date": "1850-12-01",
+   "note": "Probably Rosina's father William. Baptised at St John, Hackney, son of William Cousins, a porter, and Elizabeth."
+  },
+  {
+   "id": "census-1861-cousins",
+   "title": "1861 England census, Mile End Old Town",
+   "type": "census",
+   "repository": "The National Archives RG9, piece 293, folio 180, page 18. Ancestry record 5902323.",
+   "note": "Probably the same family: William Cousins, a messenger, his wife Elizabeth, their son William, and his brothers and sisters, including Amelia, at Mile End Old Town. The street is not published."
   }
  ]
 }

@@ -81,7 +81,7 @@ const personData = {
         name: "Auntie Babs",
         subtitle: "Family Member",
         tags: ["Aunt", "Wedding Guest"],
-        description: `"Auntie Babs" appears in the group photographs on the church steps. As an aunt to either the bride or groom, she was part of the close family circle. Her presence, identified by name in the album annotations, shows she was an important figure in the family.`
+        description: `Auntie Babs is named in the group photographs on the church steps. The family knows her as a daughter of Edward Dixon FitzMaurice, and as Reg's sister. Her mother is not named. Her real name is unproved, and she is possibly Eileen Sybil.`
     },
     auntie_may: {
         name: "Auntie May",
@@ -182,9 +182,9 @@ const personData = {
     },
     auntie_babs_sa: {
         name: '"Babs" ,  Auntie Babs',
-        subtitle: "Emigrated to South Africa",
-        tags: ["South Africa", "Edwardian", "Emigrant"],
-        description: `"Auntie Babs" emigrated to South Africa, where she was photographed as a young girl (aged 8 to 14) on a verandah with ornamental wrought iron railings and subtropical plants ,  architecture highly consistent with Cape Colony or Natal region homes of the Edwardian era. She wears a white dress with dark tie, typical of Edwardian children's fashion. The photograph is labeled "Auntie Babs, South Africa" on the back. She was a sister or sister-in-law within the Fitzmaurice family circle. NOTE: An "Auntie Babs" also appears at the 1950 wedding ,  this may be the same person returned from South Africa, or a different family member sharing the name.`
+        subtitle: "South Africa label",
+        tags: ["South Africa", "Edwardian", "Family"],
+        description: `A snapshot is labelled Auntie Babs, South Africa. The family knows her as a daughter of Edward Dixon FitzMaurice. Her mother is not named, because no birth year is known. Her real name is unproved. She is possibly Eileen Sybil, and the two are kept apart. She is also named at the 1950 wedding.`
     },
     reg: {
         name: "Reg Fitzmaurice",

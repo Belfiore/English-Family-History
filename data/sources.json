@@ -467,8 +467,8 @@
    "id": "parish-stepney-1832",
    "title": "Baptism register, St Dunstan, Stepney, 30 September 1832",
    "type": "parish register",
-   "repository": "London Metropolitan Archives P93/DUN/016, entry 1536.",
-   "note": "Robert William, son of John and Eliza Fitzmaurice. Father a clerk. The date is the baptism, not a recorded birth.",
+   "repository": "London Metropolitan Archives P93/DUN/016, entry 1537.",
+   "note": "Robert William, son of John and Eliza Fitzmaurice of Mile End Old Town. Father a clerk in the Tower. Entry 1537. The date is the baptism, not a recorded birth.",
    "date": "1832-09-30"
   },
   {
@@ -779,6 +779,62 @@
    "type": "census",
    "repository": "The National Archives RG9, piece 293, folio 180, page 18. Ancestry record 5902323.",
    "note": "Probably the same family: William Cousins, a messenger, his wife Elizabeth, their son William, and his brothers and sisters, including Amelia, at Mile End Old Town. The street is not published."
+  },
+  {
+   "id": "parish-birmingham-1827",
+   "title": "Marriage register, St Martin's, Birmingham, 3 February 1827",
+   "type": "parish register",
+   "repository": "Library of Birmingham, Dro 34/43, entry 52. Image: Ancestry.com, from the original register.",
+   "note": "John Fitzmaurice, of His Majesty's Tower of London, bachelor, and Eliza Taylor of this parish, spinster, married by licence on the third day of February 1827. Witnesses include John Taylor.",
+   "date": "1827-02-03"
+  },
+  {
+   "id": "parish-whitechapel-1827",
+   "title": "Baptism register, St Mary's, Whitechapel, 25 December 1827",
+   "type": "parish register",
+   "repository": "London Metropolitan Archives P93/MRY1/016. Image: Ancestry.com, from the original register.",
+   "note": "William, son of John and Eliza Fitzmaurice, born 23 December 1827, baptised 25 December 1827. Father a clerk. The street of the abode is not published.",
+   "date": "1827-12-25"
+  },
+  {
+   "id": "parish-stepney-1829",
+   "title": "Baptism register, St Dunstan's, Stepney, 4 November 1829",
+   "type": "parish register",
+   "repository": "London Metropolitan Archives P93/DUN/015, page 226, entry 1006. Image: Ancestry.com, from the original register.",
+   "note": "John Richard, son of John and Eliza Fitzmaurice of Mile End Old Town. Father a clerk in the Ordnance Office. The date is the baptism.",
+   "date": "1829-11-04"
+  },
+  {
+   "id": "parish-clapham-1859",
+   "title": "Marriage register, St John the Evangelist, Clapham, 13 October 1859",
+   "type": "parish register",
+   "repository": "London Metropolitan Archives P95/JNE1/057, page 165, entry 330. Image: Ancestry.com, from the original register.",
+   "note": "Emma Frances, daughter of Robert Thomas Fitz Maurice, gentleman, married Samuel Dixon, merchant. Robert Thomas had been a clerk in the Ordnance Office. This does not prove the parents of John FitzMaurice.",
+   "date": "1859-10-13"
+  },
+  {
+   "id": "parish-wardend-1873",
+   "title": "Baptism register, St Margaret, Ward End, Aston, 19 June 1873",
+   "type": "parish register",
+   "repository": "Library of Birmingham, Ep 87/2/2/1, entry 339. Image: Ancestry.com, from the original register.",
+   "note": "Edward Dixon, son of William and Fanny Mary Fitzmaurice of Ward End. Born 21 October 1872. Father a surveyor and contractor.",
+   "date": "1873-06-19"
+  },
+  {
+   "id": "fitzmaurice-family-carlow",
+   "title": "FitzMaurice of Kerry, the Carlow account of John",
+   "type": "secondary account",
+   "repository": "fitzmaurice-family.com, read November 2026.",
+   "note": "A published family history. It says John was born on 6 July 1803, son of John FitzMaurice of Kelvin Grove, Killeshin, County Carlow, and Henrietta Frances Cary. The London details in that account, Eliza Taylor, the three sons, and William's birth date, now agree with the parish registers. No record found so far states John's birthplace or his parents. Treated as likely but not proved. Not drawn as a parent on the tree.",
+   "date": "2026-11-23"
+  },
+  {
+   "id": "family-testimony",
+   "title": "Family testimony, Patricia and Ronald Andrews",
+   "type": "family testimony",
+   "repository": "Family papers, 2026.",
+   "note": "Patricia Mary FitzMaurice was probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. She has died; the year is not recorded. Ronald Andrews was probably born in the summer of 1921 in the West Ham district and probably died in 2009. No addresses.",
+   "date": "2026-11-23"
   }
  ]
 }

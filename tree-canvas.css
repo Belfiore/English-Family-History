@@ -83,6 +83,8 @@ body.canvas-body.lb-open { overflow: hidden; }
 .ln { fill: none; stroke: var(--pc-line); stroke-width: 1.5; stroke-linejoin: round; stroke-linecap: square; transition: opacity .2s ease, stroke .2s ease; }
 .ln--direct { stroke: var(--pc-line-direct); stroke-width: 2.8; }
 .ln--dashed { stroke-dasharray: 5 5; }
+.ln--unconfirmed { stroke-dasharray: 2 5; stroke-width: 1.8; }
+.unconfirmed-label { font-family: var(--font-accent); font-size: 12px; font-style: italic; fill: var(--pc-muted); text-anchor: middle; }
 .ln--bar { stroke: #9a7c4f; stroke-width: 1.6; }
 .ln--bar.ln--direct { stroke: var(--pc-line-direct); stroke-width: 2.8; }
 .ln--hl { stroke: var(--pc-accent); stroke-width: 3.2; }
@@ -145,6 +147,9 @@ body.canvas-body.lb-open { overflow: hidden; }
 .c-dis {
     font-family: var(--font-accent); font-style: italic; font-size: 13px; line-height: 1.16;
     color: var(--pc-muted); max-height: 2.36em; overflow: hidden; overflow-wrap: break-word;
+}
+.card[data-id="babs-fitzmaurice"] .c-dis {
+    font-size: 12px; line-height: 1.12; max-height: 4.5em;
 }
 .c-meta { display: flex; flex-direction: column; gap: 0; margin-top: auto; min-width: 0; flex: none; }
 .c-dates {

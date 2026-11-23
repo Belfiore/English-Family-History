@@ -284,7 +284,7 @@ const ok = (m) => console.log('  ok   ' + m);
             const href0 = page.url();
             await page.click('#drRead'); await page.waitForTimeout(450);
             const ex = await page.evaluate(() => ({ exp: document.getElementById('drawer').classList.contains('is-expanded'), w: document.getElementById('drawer').getBoundingClientRect().width, vw: innerWidth, name: (document.querySelector('#drawerBody .pf-name') || {}).textContent, path: location.pathname, secs: Array.from(document.querySelectorAll('#drawerBody section[id^="pf-"]')).map(s => s.id) }));
-            if (!ex.exp || ex.name !== 'Reg FitzMaurice') errsP.push('read button did not expand the panel with the full story');
+            if (!ex.exp || ex.name !== 'Baron Reginald FitzMaurice') errsP.push('read button did not expand the panel with the full story (' + ex.name + ')');
             if (w > 900 && ex.w < ex.vw * 0.7) errsP.push(`expanded panel only ${Math.round(ex.w)}px of ${ex.vw}px`);
             if (w < 800 && ex.w < ex.vw - 2) errsP.push(`expanded panel should be full screen on phones (${Math.round(ex.w)}px of ${ex.vw}px)`);
             if (new URL(href0).pathname !== ex.path) errsP.push('expanding changed the page');
@@ -375,8 +375,13 @@ const ok = (m) => console.log('  ok   ' + m);
     const page = await ctx.newPage();
     const pages = fs.readdirSync(ROOT).filter(f => f.endsWith('.html'));
     const linkErrs = [];
+    const consoleErrs = [];
+    let currentPage = '';
+    page.on('pageerror', e => consoleErrs.push(currentPage + ': ' + e.message));
+    page.on('console', m => { if (m.type() === 'error') consoleErrs.push(currentPage + ': ' + m.text()); });
     for (const f of pages) {
-        await page.goto(base + f, { waitUntil: 'domcontentloaded' });
+        currentPage = f;
+        await page.goto(base + f, { waitUntil: 'networkidle' });
         const links = await page.evaluate(() => Array.from(document.querySelectorAll('a[href], img[src], iframe[src], link[rel=stylesheet][href], script[src]'))
             .map(n => n.getAttribute('href') || n.getAttribute('src')).filter(h => h && !/^(https?:|mailto:|data:|#\/|tel:|javascript:)/.test(h)));
         for (const l of new Set(links)) {
@@ -395,6 +400,7 @@ const ok = (m) => console.log('  ok   ' + m);
         }
     }
     if (linkErrs.length) linkErrs.forEach(e => fail('link: ' + e)); else ok(`internal links resolve on ${pages.length} pages`);
+    if (consoleErrs.length) consoleErrs.forEach(e => fail('console: ' + e)); else ok(`no console errors on ${pages.length} pages`);
 
     await browser.close();
     srv.close();

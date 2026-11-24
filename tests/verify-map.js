@@ -213,9 +213,12 @@ function expectScope(id, scope) {
     check(!ork.events && !ork.list && !ork.toggle, 'the Hamiltons and the Earls of Orkney are not on the map, in the list or in the filters', JSON.stringify(ork));
     check(ork.cecil > 0 && ork.cecilBadge, "Cecil O'Bryen FitzMaurice stays on the map, marked as no proven link", JSON.stringify(ork));
     check(ork.style === 'today', 'the Today map is the default', ork.style);
+    // config.js now holds the site's MapTiler key, so this check empties it for one click and puts it back. The assertion is the same: with no key, Then stays on the current map and says why.
+    await page.evaluate(() => { window.__fmMaptiler = window.FM_CONFIG.MAPTILER_KEY; window.FM_CONFIG.MAPTILER_KEY = ''; });
     await page.click('#styleSwitch [data-style="then"]');
     await page.waitForTimeout(400);
     const thenNoKey = await page.evaluate(() => ({ style: FM.state.style, pressed: document.querySelector('#styleSwitch [aria-checked="true"]').dataset.style, note: document.getElementById('note').innerText }));
+    await page.evaluate(() => { window.FM_CONFIG.MAPTILER_KEY = window.__fmMaptiler; });
     check(thenNoKey.style === 'today' && thenNoKey.pressed === 'today' && /MapTiler/.test(thenNoKey.note), 'Then without a key explains and stays on the current map', JSON.stringify(thenNoKey));
     let mp = await markerPlaces(page);
     // every place with a visible event has a marker; key counts match the index

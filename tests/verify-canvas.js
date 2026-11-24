@@ -85,7 +85,7 @@ const ok = (m) => console.log('  ok   ' + m);
     // no em dashes in the data or the new canvas files; no en dashes in the data
     const dashFiles = ['data/people.json', 'data/sources.json', PAGE, 'tree-canvas.js', 'tree-canvas.css', 'docs/canvas-audit.md'].filter(f => fs.existsSync(path.join(ROOT, f)));
     const dashErr = [];
-    dashFiles.forEach(f => { const t = fs.readFileSync(path.join(ROOT, f), 'utf8'); if (t.includes('—')) dashErr.push(f + ' has an em dash'); if (f.startsWith('data/') && t.includes('–')) dashErr.push(f + ' has an en dash'); });
+    dashFiles.forEach(f => { const t = fs.readFileSync(path.join(ROOT, f), 'utf8'); if (t.includes('\u2014')) dashErr.push(f + ' has an em dash'); if (f.startsWith('data/') && t.includes('\u2013')) dashErr.push(f + ' has an en dash'); });
     if (dashErr.length) dashErr.forEach(fail); else ok(`no em dashes in ${dashFiles.join(', ')}`);
 
     // the withheld family name appears in no file on the site
@@ -237,7 +237,7 @@ const ok = (m) => console.log('  ok   ' + m);
                     ['kirkwall', 'lansdowne', 'uncle'], ['george-orkney', 'james-ii', '6× great-grandfather']];
                 want.forEach(([a, b, l]) => { const g = r(a, b); if (g !== l) out.push(`${a} -> ${b}: "${g}", expected "${l}"`); });
                 if (t.relInfo('sebastian-belfiore', 'james-ii').kind !== 'none') out.push('James II should have no recorded link to Sebastian');
-                if (t.relInfo('sebastian-belfiore', 'edith-madeleine-fitzmaurice').kind !== 'none') out.push('Edith should have no recorded link to Sebastian');
+                if (t.relInfo('sebastian-belfiore', 'edith-madeleine-fitzmaurice').label !== 'great-great-grandmother') out.push('Edith should be Sebastian\'s great-great-grandmother');
                 let n = 0;
                 t.D.people.forEach(a => t.D.people.forEach(b => { if (a.id === b.id) return; const i = t.relInfo(a.id, b.id); n++; if (i.kind !== 'none' && !i.label) out.push(`${a.id} -> ${b.id}: no label`); if (i.kind !== 'none' && !t.relPath(a.id, b.id)) out.push(`${a.id} -> ${b.id}: no path`); }));
                 return { out, n };
@@ -284,7 +284,7 @@ const ok = (m) => console.log('  ok   ' + m);
             const href0 = page.url();
             await page.click('#drRead'); await page.waitForTimeout(450);
             const ex = await page.evaluate(() => ({ exp: document.getElementById('drawer').classList.contains('is-expanded'), w: document.getElementById('drawer').getBoundingClientRect().width, vw: innerWidth, name: (document.querySelector('#drawerBody .pf-name') || {}).textContent, path: location.pathname, secs: Array.from(document.querySelectorAll('#drawerBody section[id^="pf-"]')).map(s => s.id) }));
-            if (!ex.exp || ex.name !== 'Reg FitzMaurice') errsP.push('read button did not expand the panel with the full story');
+            if (!ex.exp || ex.name !== 'Baron Reginald FitzMaurice') errsP.push('read button did not expand the panel with the full story (' + ex.name + ')');
             if (w > 900 && ex.w < ex.vw * 0.7) errsP.push(`expanded panel only ${Math.round(ex.w)}px of ${ex.vw}px`);
             if (w < 800 && ex.w < ex.vw - 2) errsP.push(`expanded panel should be full screen on phones (${Math.round(ex.w)}px of ${ex.vw}px)`);
             if (new URL(href0).pathname !== ex.path) errsP.push('expanding changed the page');
@@ -302,7 +302,7 @@ const ok = (m) => console.log('  ok   ' + m);
             if (up !== 'edward-dixon-fitzmaurice') errsP.push(`up arrow went to ${up}, expected Edward Dixon FitzMaurice`);
             await page.keyboard.press('ArrowDown'); await page.waitForTimeout(250);
             const down = await page.evaluate(() => window.__tree.S.drawerFor);
-            if (!['bob-fitzmaurice', 'babs-fitzmaurice', 'reg-fitzmaurice'].includes(down)) errsP.push(`down arrow went to ${down}, expected a child of Edward Dixon`);
+            if (!['bob-fitzmaurice', 'eileen-sybil-fitzmaurice', 'reg-fitzmaurice', 'edith-marjorie-fitzmaurice'].includes(down)) errsP.push(`down arrow went to ${down}, expected a child of Edward Dixon`);
             const still = await page.evaluate(() => document.getElementById('drawer').classList.contains('is-expanded'));
             if (!still) errsP.push('panel collapsed while moving between people');
             await page.keyboard.press('Escape'); await page.waitForTimeout(200);
@@ -375,8 +375,15 @@ const ok = (m) => console.log('  ok   ' + m);
     const page = await ctx.newPage();
     const pages = fs.readdirSync(ROOT).filter(f => f.endsWith('.html'));
     const linkErrs = [];
+    const consoleErrs = [];
+    let currentPage = '';
+    page.on('pageerror', e => consoleErrs.push(currentPage + ': ' + e.message));
+    // an outside host that cannot be reached (map tiles offline, say) is the network, not the page
+    const offsite = m => /^Failed to load resource/.test(m.text()) && !String((m.location() || {}).url || '').startsWith(base);
+    page.on('console', m => { if (m.type() === 'error' && !offsite(m)) consoleErrs.push(currentPage + ': ' + m.text()); });
     for (const f of pages) {
-        await page.goto(base + f, { waitUntil: 'domcontentloaded' });
+        currentPage = f;
+        await page.goto(base + f, { waitUntil: 'networkidle' });
         const links = await page.evaluate(() => Array.from(document.querySelectorAll('a[href], img[src], iframe[src], link[rel=stylesheet][href], script[src]'))
             .map(n => n.getAttribute('href') || n.getAttribute('src')).filter(h => h && !/^(https?:|mailto:|data:|#\/|tel:|javascript:)/.test(h)));
         for (const l of new Set(links)) {
@@ -395,6 +402,7 @@ const ok = (m) => console.log('  ok   ' + m);
         }
     }
     if (linkErrs.length) linkErrs.forEach(e => fail('link: ' + e)); else ok(`internal links resolve on ${pages.length} pages`);
+    if (consoleErrs.length) consoleErrs.forEach(e => fail('console: ' + e)); else ok(`no console errors on ${pages.length} pages`);
 
     await browser.close();
     srv.close();

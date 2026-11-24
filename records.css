@@ -1,0 +1,89 @@
+/* Register figures. Matches the parchment pages. */
+.record {
+    float: right;
+    width: min(340px, 46%);
+    margin: 0.2rem 0 1rem 1.2rem;
+    background: #F8F1E4;
+    border: 1px solid #d4c5a9;
+    padding: 0.45rem 0.45rem 0.55rem;
+}
+.record img { width: 100%; height: auto; display: block; background: #fff; }
+.record-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.8rem;
+    clear: both;
+    margin: 0.4rem 0 1rem;
+}
+.record-grid .record { float: none; width: 100%; margin: 0; }
+@media (min-width: 860px) {
+    .record-grid { grid-template-columns: 1fr 1fr; }
+}
+.whats-new {
+    background: #F8F1E4;
+    border: 1px solid #d4c5a9;
+    border-left: 4px solid #8B0000;
+    padding: 1rem 1.25rem 0.4rem;
+    margin: 1.4rem 0 1.8rem;
+}
+.whats-new h2 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.05rem;
+    color: #8B0000;
+    margin: 0 0 0.45rem;
+}
+.whats-new ul { margin: 0 0 0.6rem; padding-left: 1.2rem; }
+.whats-new li { margin: 0.2rem 0; }
+.whats-new a { color: #704214; }
+.record-text {
+    font-family: 'EB Garamond', serif;
+    font-size: 0.98rem;
+    line-height: 1.35;
+    margin: 0;
+    padding: 0.35rem 0.2rem 0.2rem;
+}
+.record figcaption {
+    font-family: 'EB Garamond', serif;
+    font-size: 0.95rem;
+    line-height: 1.35;
+    color: #704214;
+    margin-top: 0.4rem;
+}
+.record-slot {
+    border: 2px dashed #B8860B;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1rem;
+    color: #704214;
+    background: #fff8e8;
+    font-family: 'EB Garamond', serif;
+    font-size: 1.05rem;
+}
+.record-lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(26, 26, 46, 0.9);
+    z-index: 2000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    cursor: zoom-out;
+}
+.record-lightbox img { max-width: 96vw; max-height: 84vh; background: #fff; }
+.record-lightbox p {
+    color: #F8F1E4;
+    font-family: 'EB Garamond', serif;
+    margin-top: 0.6rem;
+    max-width: 70ch;
+    text-align: center;
+}
+.record figcaption, .record figcaption a { overflow-wrap: anywhere; }
+@media (max-width: 860px) {
+    .record, .record-grid .record { float: none; width: 100%; max-width: 100%; margin: 0 0 1rem; }
+    .record img { max-width: 100%; height: auto; }
+}

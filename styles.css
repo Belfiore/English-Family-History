@@ -107,7 +107,9 @@ body {
 
 .nav-links {
     display: flex;
-    gap: 2rem;
+    flex-wrap: wrap;
+    gap: 0.35rem 1rem;
+    justify-content: flex-end;
 }
 
 .nav-links a {

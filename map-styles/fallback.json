@@ -1,0 +1,67 @@
+{
+ "version": 8,
+ "name": "Atlas fallback",
+ "glyphs": "{GLYPHS}",
+ "metadata": {
+  "credit": "Natural Earth land and rivers (public domain), shipped with the site for when OpenFreeMap does not answer."
+ },
+ "sources": {
+  "land": {
+   "type": "geojson",
+   "data": "{BASE}map-styles/fallback-land.geojson",
+   "attribution": "Natural Earth"
+  },
+  "rivers": {
+   "type": "geojson",
+   "data": "{BASE}map-styles/fallback-rivers.geojson"
+  }
+ },
+ "layers": [
+  {
+   "id": "background",
+   "type": "background",
+   "paint": {
+    "background-color": "#c9d5d3"
+   }
+  },
+  {
+   "id": "land",
+   "type": "fill",
+   "source": "land",
+   "paint": {
+    "fill-color": "#f4ecdb",
+    "fill-antialias": true
+   }
+  },
+  {
+   "id": "coast",
+   "type": "line",
+   "source": "land",
+   "paint": {
+    "line-color": "#b7a98f",
+    "line-width": 0.6
+   }
+  },
+  {
+   "id": "rivers",
+   "type": "line",
+   "source": "rivers",
+   "paint": {
+    "line-color": "#b3c4c3",
+    "line-width": [
+     "interpolate",
+     [
+      "linear"
+     ],
+     [
+      "zoom"
+     ],
+     5,
+     0.6,
+     12,
+     2.4
+    ]
+   }
+  }
+ ]
+}

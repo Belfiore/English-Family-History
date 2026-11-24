@@ -75,7 +75,7 @@
     function lifeLine(p) {
         if (p.isLiving) return '';
         var b = cardYear(p.birth), d = cardYear(p.death);
-        if (b && d) return b + ' – ' + d;
+        if (b && d) return b + ' to ' + d;
         if (b) return 'b. ' + b;
         if (d) return 'd. ' + d;
         return 'Dates unknown';
@@ -145,6 +145,8 @@
         D.people.forEach(function (p) {
             if (blockOf[p.id]) return;
             var spouses = (p.spouses || []).map(function (s) { return byId[s.id]; });
+            // uncertainBeside: drawn beside another person, joined only by a dashed unconfirmed line
+            if (p.uncertainBeside && byId[p.uncertainBeside]) return;
             // layoutJoin: a person with parents on the tree who is drawn beside their spouse, in the spouse's family
             var marriedIn = p.layoutJoin ? true : (!hasParents(p) && spouses.some(function (s) { return hasParents(s); }));
             if (marriedIn) return; // will join the spouse's block
@@ -163,6 +165,19 @@
             var b = { anchor: p, members: members, unions: [], subW: 0, x: 0, gen: p.generation, children: [] };
             members.forEach(function (m) { blockOf[m.id] = b; });
             blocks.push(b);
+        });
+        // attach unconfirmed people beside the card they may belong with
+        D.people.forEach(function (p) {
+            if (!p.uncertainBeside || blockOf[p.id]) return;
+            var host = blockOf[p.uncertainBeside];
+            if (!host) {
+                var b = { anchor: p, members: [p], unions: [], subW: 0, x: 0, gen: p.generation, children: [] };
+                blockOf[p.id] = b;
+                blocks.push(b);
+                return;
+            }
+            host.members.push(p);
+            blockOf[p.id] = host;
         });
 
         // 2. unions and child groups
@@ -194,10 +209,20 @@
             });
         });
 
-        function blockW(b) { return b.members.length * CW + (b.members.length - 1) * SG; }
+        // a person with uncertainBeside sits in the host's block, in a wider gap that holds a dashed line
+        var UNCERTAIN_GAP = 86;
+        function memberGap(b, i) { return b.members[i] && b.members[i].uncertainBeside ? UNCERTAIN_GAP : SG; }
+        function memberX(b, i) {
+            var x = 0;
+            for (var k = 1; k <= i; k++) x += CW + memberGap(b, k);
+            return x;
+        }
+        function blockW(b) { return b.members.length ? memberX(b, b.members.length - 1) + CW : 0; }
         function dropX(u) { // relative to block x
-            if (u.solo) return u.idx * (CW + SG) + CW / 2;
-            return u.leftIdx * (CW + SG) + CW + SG / 2;
+            if (u.solo) return memberX(u.block, u.idx) + CW / 2;
+            var endLeft = memberX(u.block, u.leftIdx) + CW;
+            var startRight = memberX(u.block, u.rightIdx);
+            return (endLeft + startRight) / 2;
         }
         function measure(b) {
             var groups = b.unions.filter(function (u) { return u.childBlocks.length; }).sort(function (x, y) { return dropX(x) - dropX(y); });
@@ -260,7 +285,7 @@
         function rowY(g) { return genTop[g]; }
         blocks.forEach(function (b) {
             if (b.anchor.kin) return;
-            b.members.forEach(function (m, i) { pos[m.id] = { x: b.x + i * (CW + SG), y: rowY(b.gen) + (b.stackRow || 0) * (CH + STACK_V), gen: b.gen, stackCol: b.stackCol }; });
+            b.members.forEach(function (m, i) { pos[m.id] = { x: b.x + memberX(b, i), y: rowY(b.gen) + (b.stackRow || 0) * (CH + STACK_V), gen: b.gen, stackCol: b.stackCol }; });
         });
         // kin cluster: to the left of the anchor's block in the same row
         if (kin.length) {
@@ -337,7 +362,7 @@
     function cardLabel(p) {
         var parts = [p.displayName];
         if (p.disambiguator) parts.push(p.disambiguator);
-        var life = lifeLine(p); if (life) parts.push(life.replace('–', 'to').replace('~', 'about ').replace('?', ' (unverified)'));
+        var life = lifeLine(p); if (life) parts.push(life.replace('~', 'about ').replace('?', ' (unverified)'));
         if (p.isLiving) parts.push('living');
         if (p.isDirectLine) parts.push('on ' + directLabel());
         return parts.join(', ');
@@ -401,8 +426,9 @@
                 if (u.solo) {
                     x0 = bx + L.dropX(u); y0 = by + CH;
                 } else {
-                    var xl = bx + u.leftIdx * (CW + SG) + CW, xr = xl + SG;
-                    x0 = xl + SG / 2; y0 = by + BAR_Y;
+                    var leftCard = L.pos[b.members[u.leftIdx].id], rightCard = L.pos[b.members[u.rightIdx].id];
+                    var xl = leftCard.x + CW, xr = rightCard.x;
+                    x0 = (xl + xr) / 2; y0 = by + BAR_Y;
                     var bar = svg('path', { d: 'M' + xl + ' ' + y0 + 'H' + xr, class: 'ln ln--bar' + (partnersDirect ? ' ln--direct' : '') }, partnersDirect ? gDirect : gBack);
                     pathEls.push({ el: bar, union: u, bar: true });
                     drawPill(u, x0, y0, partnersDirect);
@@ -421,6 +447,8 @@
                 var childTop = L.genY[u.children[0].generation];
                 var busY = childTop - ROW_GAP / 2 + (ng > 1 ? (gi - (ng - 1) / 2) * 12 : 0);
                 u.children.forEach(function (c) {
+                    // each child is drawn once, under the union that placed them
+                    if (!L.blockOf[c.id] || L.blockOf[c.id].parentUnion !== u) return;
                     var cp = L.pos[c.id];
                     var cx = cp.x + CW / 2;
                     var direct = c.isDirectLine && u.partners.some(function (id) { return byId[id].isDirectLine; });
@@ -434,6 +462,27 @@
                     pathEls.push({ el: path, union: u, child: c.id });
                 });
             });
+        });
+        // dashed line between a person and the card they may belong beside. Not a parent line.
+        D.people.forEach(function (p) {
+            if (!p.uncertainBeside) return;
+            var a = L.pos[p.uncertainBeside], b = L.pos[p.id];
+            if (!a || !b || a.y !== b.y) return;
+            var x1 = a.x + CW, x2 = b.x, y = a.y + Math.round(CH / 2);
+            if (x2 < x1) { var swap = x1; x1 = x2 + CW; x2 = swap - CW; }
+            var path = svg('path', {
+                d: 'M' + x1 + ' ' + y + 'H' + x2,
+                class: 'ln ln--dashed ln--unconfirmed'
+            }, gBack);
+            var title = svg('title', {}, path);
+            title.textContent = 'Unconfirmed. ' + (p.disambiguator || p.displayName);
+            var label = svg('text', {
+                x: (x1 + x2) / 2,
+                y: y - 7,
+                class: 'unconfirmed-label'
+            }, gBack);
+            label.textContent = 'unconfirmed';
+            pathEls.push({ el: path, uncertain: p.id });
         });
     }
 
@@ -1552,6 +1601,7 @@
         if (!p.isLiving) {
             if (p.birth) life += '<dt>Born</dt><dd>' + esc(p.birth.display) + (p.birth.place ? ', ' + esc(p.birth.place) : '') + (p.birth.alternates ? ' <span class="note">(or ' + esc(p.birth.alternates.map(function (a) { return a.display; }).join(', ')) + ')</span>' : '') + '</dd>';
             if (p.death) life += '<dt>Died</dt><dd>' + esc(p.death.display) + (p.death.place ? ', ' + esc(p.death.place) : '') + '</dd>';
+            if (p.burial) life += '<dt>Buried</dt><dd>' + esc(p.burial.display) + '</dd>';
             if (p.immigration && p.immigration.ship) life += '<dt>Arrived</dt><dd>' + esc(p.immigration.ship) + ', ' + esc(fmtDate(p.immigration.date)) + '</dd>';
             var places = uniq((p.residences || []).map(function (r) { return r.place; }));
             if (places.length) life += '<dt>Lived</dt><dd>' + esc(places.join('; ')) + '</dd>';
@@ -1610,7 +1660,8 @@
         function add(id) { if (id && !seen[id] && D.sources[id]) { seen[id] = true; order.push(id); } }
         (p.story || '').replace(/\[\^([a-z0-9\-]+)\]/g, function (_, id) { add(id); return ''; });
         function addAll(a) { (a || []).forEach(add); }
-        ['birth', 'death'].forEach(function (k) { if (p[k]) { addAll(p[k].sourceIds); (p[k].alternates || []).forEach(function (x) { addAll(x.sourceIds); }); } });
+        ['birth', 'death', 'burial'].forEach(function (k) { if (p[k]) { addAll(p[k].sourceIds); (p[k].alternates || []).forEach(function (x) { addAll(x.sourceIds); }); } });
+        (p.voyages || []).forEach(function (v) { addAll(v.sourceIds); });
         if (p.immigration) addAll(p.immigration.sourceIds);
         (p.residences || []).forEach(function (r) { addAll(r.sourceIds); });
         (p.occupations || []).forEach(function (r) { addAll(r.sourceIds); });
@@ -1657,6 +1708,16 @@
     }
     function confTag(c) { return '<span class="conf-tag ' + confClass(c) + '">' + esc(confLabel(c)) + '</span>'; }
 
+    // true when any fact of this person has a place on the family map
+    function hasMapPlace(p) {
+        var found = false;
+        (function walk(o) {
+            if (found || !o || typeof o !== 'object') return;
+            if (Array.isArray(o)) { o.forEach(walk); return; }
+            Object.keys(o).forEach(function (k) { if (/^(placeId|fromPlaceId|toPlaceId)$/.test(k) && o[k]) found = true; else if (o[k] && typeof o[k] === 'object') walk(o[k]); });
+        })(p);
+        return found;
+    }
     function profileHTML(p) {
         var sn = sourceNumbers(p), num = sn.num;
         var byId = D.byId;
@@ -1669,6 +1730,7 @@
         if (!p.isLiving) {
             if (p.birth) dates += '<div><span>Born</span>' + esc(p.birth.display) + (p.birth.alternates ? ' or ' + esc(p.birth.alternates.map(function (a) { return a.display; }).join(', ')) : '') + (p.birth.place ? '<small>' + esc(p.birth.place) + '</small>' : '') + '</div>';
             if (p.death) dates += '<div><span>Died</span>' + esc(p.death.display) + (p.death.place ? '<small>' + esc(p.death.place) + '</small>' : '') + '</div>';
+            if (p.burial) dates += '<div><span>Buried</span>' + esc(p.burial.display) + '</div>';
             if (p.immigration && p.immigration.ship) dates += '<div><span>Arrived</span>' + esc(p.immigration.ship) + ', ' + esc(fmtDate(p.immigration.date)) + '</div>';
         }
         var badges = (p.isDirectLine ? '<span class="badge badge--direct">' + esc(directLabel()) + '</span>' : '') +
@@ -1689,6 +1751,8 @@
                 (p.birth.alternates || []).forEach(function (a) { row('Born (other record)', esc(a.display), a.sourceIds, 'confirmed', a.note ? 'As recorded on the ' + a.note : null); });
             }
             if (p.death) row('Died', esc(p.death.display) + (p.death.place ? ', ' + esc(p.death.place) : ''), p.death.sourceIds, p.death.confidence, p.death.note);
+            if (p.burial) row('Buried', esc(p.burial.display), p.burial.sourceIds, p.burial.confidence, p.burial.note);
+            (p.voyages || []).forEach(function (v) { row('Voyage', esc(v.display), v.sourceIds, v.confidence, v.note); });
             if (p.immigration) {
                 var im = p.immigration;
                 row('Immigration', esc([im.ship, im.date ? fmtDate(im.date) : null, im.port, im.age ? 'age ' + im.age : null].filter(Boolean).join(', ') || 'Not yet found'), im.sourceIds, im.confidence, im.note);
@@ -1742,7 +1806,9 @@
             return '<li id="src-' + (i + 1) + '"><span>' + esc(s.title) + '</span>' + link + '<span class="s-meta">' + esc([s.type, s.repository, s.date].filter(Boolean).join(' · ')) + (s.note ? '. ' + esc(s.note) : '') + '</span></li>';
         }).join('') + '</ol>']);
 
-        if ((p.relatedPages || []).length) secs.push(['pf-more', 'Read more', '<div class="more">' + p.relatedPages.map(function (r) {
+        // the family map, for anyone it can show (never the living)
+        var mapLink = !p.isLiving && !p.placeholder && hasMapPlace(p) ? '<a href="map.html?person=' + encodeURIComponent(p.id) + '" class="more-map">Show on the family map<svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></a>' : '';
+        if (mapLink || (p.relatedPages || []).length) secs.push(['pf-more', 'Read more', '<div class="more">' + mapLink + (p.relatedPages || []).map(function (r) {
             return '<a href="' + esc(r.url) + '">' + esc(r.title) + '<svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></a>';
         }).join('') + '</div>']);
 

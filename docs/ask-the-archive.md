@@ -3,7 +3,7 @@
 Stuart answers questions about the FitzMaurice and Andrews families from the records on this site, and shows where each fact comes from. He lives in two places:
 
 - **His own page**, `ask.html` ("Ask Stuart" in the navigation), a full-height chat.
-- **The Ask Stuart button** in the bottom right-hand corner of the home page and every story page. It opens Stuart as a small window, which can be switched to a drawer down the side, and back.
+- **The Ask Stuart button** in the bottom right-hand corner of every other page. It opens Stuart as a small window, which can be switched to a drawer down the side, and back. On the family tree and the map it shrinks to Stuart's seal and keeps clear of those pages' own controls.
 
 Before anyone can ask a question, Stuart introduces himself and asks who they are. The visitor types part of their name and picks themselves from the family tree (or says they are not on it). From then on, "my grandfather", "my cousins" and "How am I related to Edward Dixon FitzMaurice?" are answered from where that person sits in the tree.
 
@@ -15,7 +15,7 @@ This note is for whoever maintains the feature. It covers how it works, what was
 
 | | |
 | --- | --- |
-| Where | `ask.html`; the Ask Stuart button on `index.html` and the nine story pages; "Ask Stuart about" in each profile on the family tree; "Ask Stuart" in every page's navigation |
+| Where | `ask.html`; the Ask Stuart button on every other page; "Ask Stuart about" in each profile on the family tree, which opens Stuart on the tree; "Ask Stuart" in every page's navigation |
 | Answers from | `data/people.json`, `data/places.json`, `data/sources.json` and the text of ten story pages, compiled into `archive/kb-<hash>.json` (541 KB, 108 KB compressed) |
 | How | Rule-based reading of the question, a genealogy engine, date arithmetic and keyword search, all in plain JavaScript; about 1 ms per question |
 | Written answers | Not switched on. The on-device model was removed so that nobody has to download anything (see Written answers) |
@@ -27,7 +27,7 @@ This note is for whoever maintains the feature. It covers how it works, what was
 
 1. **Stuart introduces himself.** On his page, a header with his seal and name; in the chat, a short hello and the question "who are you?", with a name finder. The question box stays locked, with the placeholder "Tell Stuart who you are first", until a person is chosen.
 2. **Choosing who you are.** The name finder is a type-ahead list of everyone living on the tree, Pat and Ron's descendants first, each with a line saying how they fit in ("Grandma Pat and Grandpa Ron's daughter"). Arrow keys, Enter and a click all work. "I'm not on the family tree" lets anyone else ask as a visitor.
-3. **A greeting for that person.** Stuart greets them by name and offers questions about their own family ("Who were my grandparents?", "How am I related to Edward Dixon FitzMaurice?"). On a story page he says which page they are reading and suggests questions about the people on it.
+3. **A greeting for that person.** Stuart greets them by name and offers questions about their own family ("Who were my grandparents?", "How am I related to Edward Dixon FitzMaurice?"). On a story page he says which page they are reading and suggests questions about the people on it. On the family tree with a profile open (`#/person/<id>`), or on the map following someone (`?person=<id>`), he starts with that person.
 4. **Answers.** Each question appears as a bubble on the right; Stuart shows that he is looking things up, then his answer rises in, a paragraph at a time. Names link to the person on the family tree. Relationship answers draw the line from you to them ("You, your mother, Patricia Andrews, her father, ..."). Sources are folded under "Where this comes from" and open when a citation number is clicked. Up to four follow-up questions sit under each answer.
 5. **Asking.** The box is pinned to the bottom, as in any modern chat. Enter asks; Shift and Enter adds a line. "Change" picks a different person; "New conversation" clears the answers and keeps who you are.
 
@@ -38,6 +38,7 @@ The person chosen is remembered in `localStorage` (`stuart.me`), so a returning 
 - **Hover or focus** on the button shows what Stuart does: he answers from the records on this site, works out how people are related to you, and shows where each fact comes from. The first time someone sees the button, this explanation appears by itself for a few seconds.
 - **The window** opens in the bottom right-hand corner, 410 pixels wide. **The drawer** runs the full height of the right-hand side; on screens 1,180 pixels and wider the page moves over to make room rather than being covered. The first button in Stuart's header switches between the two. The second opens his full page; the third closes him. Escape closes him and returns focus to the button.
 - **On phones** (640 pixels and narrower) Stuart opens full screen and the window and drawer switch is hidden.
+- **On the family tree and the map**, which fill the screen with their own controls, the script tag carries `data-compact` (the button shows only the seal; its name, "Ask Stuart", is kept for screen readers) and `data-avoid`, a list of the page's controls. Stuart moves the button just above whichever of those is showing in the corner (the tree's minimap, zoom bar and profile footer; the map's attribution, timeline, chips and bottom sheets), or to the left of a narrow panel down the right-hand side, such as the map's list of events. Wide panels scroll under the button. The check runs on resize and every 0.7 seconds while Stuart is closed. When the drawer is open on a wide screen, the tree, the map and their fixed navigation bar are narrowed to make room.
 - **Links that point to the page being read** scroll to that section and highlight it, without leaving the page. **Links to another page** go there, and Stuart opens again on arrival with the conversation where it was; if the link was to a section, that section is highlighted.
 - **Buttons elsewhere** can open Stuart with `data-stuart-open`, and ask a question at the same time with `data-stuart-ask="..."`. The home page's Ask Stuart section uses both.
 - The engine scripts load only when Stuart is first opened, so the button costs a story page about 12 KB of script (compressed) and the stylesheet until then.
@@ -45,6 +46,15 @@ The person chosen is remembered in `localStorage` (`stuart.me`), so a returning 
 ### Motion
 
 The panel scales and fades in from the corner; switching between window and drawer fades through; answers rise in paragraph by paragraph; sources slide open; the highlighted section on a page glows and fades. All of this is switched off when the visitor's system asks for reduced motion.
+
+## The navigation bar
+
+The bar used to be styled separately in nine places (`styles.css`, `branch.css`, `tree-canvas.css`, `map.css` and the inline styles of the home, wedding, Ron in WWII, crest and classic tree pages), with small differences in width, padding and type size, so the logo and links sat in different places from page to page. `nav.css` now sets all of it, and every page loads it last so it wins over those older rules. The older rules are left in place but no longer have any effect on the bar; the overrides in `tree-canvas.css` and `map.css` were removed.
+
+- The bar is 56 pixels tall on every page (the map lays itself out from that height), its content at most 1,400 pixels wide and centred, the logo at 1.1rem and the links at 0.8rem.
+- The menu button replaces the links when the bar is narrower than 1,180 pixels. This is a container query on the bar, not a media query on the window, so the bar also switches when Stuart's drawer narrows the page. Measured with the site's Cinzel font, the logo and links need about 1,140 pixels.
+- Pages keep their own position for the bar: sticky on the story pages, fixed on the family tree and the map.
+- `tests/verify-archive.js` checks that the bar is in the same place on all 15 pages at 1,440, 1,100 and 390 pixels, and that `nav.css` is the last stylesheet on each.
 
 ## How a question is answered
 
@@ -79,6 +89,7 @@ flowchart TD
 | --- | --- |
 | `stuart.js` | Stuart himself: one chat component used on his page and in the window and drawer; the name finder; storage; links that scroll and highlight; the button, explanation, window and drawer. No inline script; answer text only ever goes in with `textContent` |
 | `stuart.css` | Stuart's look, for the page and the widget, including the phone layout and reduced motion |
+| `nav.css` | The navigation bar for every page (see below) |
 | `ask.html` | Stuart's page: the site's navigation, a skip link to the question box, and an empty `#stuart-page` that `stuart.js` fills |
 | `archive-core.js` | Reads questions, reads them from the visitor's place, routes them, runs the tools and numbers the sources. 47 tools. Also keeps the prompt builder and the checks for written answers, unused for now (see Written answers) |
 | `archive-kin.js` | The genealogy engine: parents, children, spouses, siblings and half-siblings, ancestors and descendants with lines, any named relation ("great-grandparents", "aunts and uncles", "in-laws"), the exact relationship between any two people with the same labels as the family tree, the shortest path, common ancestors and generation gaps |
@@ -91,7 +102,9 @@ flowchart TD
 | `tests/archive-eval.html`, `tests/archive-eval-run.js` | The evaluation page: runs every question in a real browser |
 | `docs/ask-the-archive-eval.json` | The latest benchmark results, written by the test script |
 
-To put the button on another page, add `<link rel="stylesheet" href="stuart.css">` to its head and `<script src="stuart.js" data-widget defer></script>` before `</body>`. Give its headings `id`s so answers can link to them, and add the page to `PAGES` in `tools/build-archive.py` if Stuart should read it.
+Every page also loads `nav.css` last in its head (see The navigation bar).
+
+To put the button on a new page, add `<link rel="stylesheet" href="stuart.css">` and then `<link rel="stylesheet" href="nav.css">` as the last lines of its head, and `<script src="stuart.js" data-widget defer></script>` before `</body>`. Give its headings `id`s so answers can link to them, and add the page to `PAGES` in `tools/build-archive.py` if Stuart should read it.
 
 ## What Stuart can answer
 
@@ -164,7 +177,7 @@ Not checked: real screen readers (VoiceOver, NVDA, TalkBack) and voice control. 
 
 ### Browser checks
 
-`node tests/verify-archive.js` drives Chromium through: Stuart's introduction and locked question box; finding Venetia by typing "ven"; the greeting by name; "Who was my grandpa's grandpa?" and "How am I related to Edward Dixon FitzMaurice?" answered from her place in the tree; the line diagram starting from "You"; links to the family tree; sources opening from a citation; the live announcement; a suggested follow-up; choosing between two Ediths; typed markup staying text; the conversation surviving a reload; "New conversation"; asking as a visitor; no request to any other site. On a story page: the button's explanation on hover; the window in the corner; Stuart knowing the visitor and the page; switching to the drawer and it being remembered; a link to the same page scrolling and highlighting; Escape; the conversation following a link to another page. On a phone: no overflow, a question in the link (`ask.html?q=...`) asked at once, the menu, the full-screen panel. Also the home page's example questions, the family tree link, and the evaluation page. `SHOTS=1` writes screenshots to `tests/screenshots/ask-*.png`.
+`node tests/verify-archive.js` drives Chromium through: Stuart's introduction and locked question box; finding Venetia by typing "ven"; the greeting by name; "Who was my grandpa's grandpa?" and "How am I related to Edward Dixon FitzMaurice?" answered from her place in the tree; the line diagram starting from "You"; links to the family tree; sources opening from a citation; the live announcement; a suggested follow-up; choosing between two Ediths; typed markup staying text; the conversation surviving a reload; "New conversation"; asking as a visitor; no request to any other site. On every page: the navigation bar in the same place at three widths, `nav.css` last, Stuart present, and his button clear of the tree's and the map's controls. On the family tree: "Ask Stuart about" opening Stuart in place. On a story page: the button's explanation on hover; the window in the corner; Stuart knowing the visitor and the page; switching to the drawer and it being remembered; a link to the same page scrolling and highlighting; Escape; the conversation following a link to another page. On a phone: no overflow, a question in the link (`ask.html?q=...`) asked at once, the menu, the full-screen panel. Also the home page's example questions, the family tree link, and the evaluation page. `SHOTS=1` writes screenshots to `tests/screenshots/ask-*.png`.
 
 ## Evaluation report
 
@@ -217,6 +230,8 @@ Add the question to `tests/archive-eval.json` first, with what the answer must c
 | An answer reads the question wrongly | No pattern for that wording | Add the question to the test set, then adjust `RX` or `route()` |
 | Stuart opens on every page | The conversation was open when the visitor left the last page | Expected; closing him stops it for that tab |
 | The button does not appear on a page | Missing stylesheet or script tag | See The files |
+| The navigation bar sits differently on one page | `nav.css` is not the last stylesheet in that page's head | Move it to the end of the head; the test reports which page |
+| Stuart's button covers a control on the tree or the map | The control is not in the page's `data-avoid` list | Add its selector to `data-avoid` on the `stuart.js` script tag |
 
 ### Deploying
 

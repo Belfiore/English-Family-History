@@ -1914,7 +1914,7 @@
         // the family map, for anyone it can show (never the living)
         var mapLink = !p.isLiving && !p.placeholder && hasMapPlace(p) ? '<a href="map.html?person=' + encodeURIComponent(p.id) + '" class="more-map">Show on the family map<svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></a>' : '';
         // Ask Stuart about this person (not for living people, whose details are kept private)
-        var askLink = !p.isLiving && !p.placeholder ? '<a href="ask.html?q=' + encodeURIComponent('Tell me about ' + p.displayName) + '" class="more-ask">Ask Stuart about ' + esc(p.displayName) + '<svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></a>' : '';
+        var askLink = !p.isLiving && !p.placeholder ? '<a href="ask.html?q=' + encodeURIComponent('Tell me about ' + p.displayName) + '" class="more-ask" data-stuart-open data-stuart-ask="' + esc('Tell me about ' + p.displayName) + '">Ask Stuart about ' + esc(p.displayName) + '<svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></a>' : '';
         mapLink += askLink;
         if (mapLink || (p.relatedPages || []).length) secs.push(['pf-more', 'Read more', '<div class="more">' + mapLink + (p.relatedPages || []).map(function (r) {
             return '<a href="' + esc(r.url) + '">' + esc(r.title) + '<svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></a>';

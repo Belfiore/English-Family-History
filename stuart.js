@@ -2,7 +2,8 @@
  *
  * One chat, used two ways:
  *   - the full page, ask.html (<main id="stuart-page">), where Stuart sits at the top and the conversation fills the page;
- *   - a floating "Ask Stuart" button on the story pages (<script src="stuart.js" data-widget>), which opens the same chat
+ *   - a floating "Ask Stuart" button on every other page (<script src="stuart.js" data-widget>), which opens the same chat.
+ *     data-compact shows only the seal; data-avoid="<selectors>" keeps the button above those page controls
  *     as a window in the corner or a drawer down the right-hand side.
  *
  * Stuart first asks who the visitor is, with a type-ahead list of the family, so that "my grandfather" can be worked out
@@ -427,7 +428,15 @@
                 pick], 'st-msg--intro');
             setTimeout(function () { if (opts.focus !== false) pick.input.focus({ preventScroll: true }); }, REDUCE ? 0 : 350);
         }
+        // the person open on the family tree (#/person/id) or followed on the map (?person=id), if any
+        function focusPerson() {
+            var m = /#\/person\/([^\/?#]+)/.exec(location.hash) || /[?&]person=([^&#]+)/.exec(location.search);
+            var id = m && decodeURIComponent(m[1]);
+            return id && A.byId[id] && !A.byId[id].living ? id : null;
+        }
         function pageChips() {
+            var f = focusPerson();
+            if (f) return [f];
             // on a story page, start with the people on it
             var count = {};
             (A.docs || []).forEach(function (d) {
@@ -459,7 +468,10 @@
             } else {
                 kids.push(el('p', { text: returning ? 'Welcome back.' : 'That is fine. I will answer about the family as a whole. Ask about anyone by name, a place, a year or a family.' }));
             }
-            if (onStory) kids.push(el('p', { text: 'You are reading ' + onStory + '. Here is where I would start:' }));
+            var tool = HERE === 'family-tree.html' ? 'the family tree' : HERE === 'map.html' ? 'the family map' : null, f = !page && focusPerson();
+            if (f) kids.push(el('p', { text: 'You are looking at ' + A.byId[f].name + (tool ? ' on ' + tool : '') + '. Here is where I would start:' }));
+            else if (tool) kids.push(el('p', { text: 'You are looking at ' + tool + '. Here is where I would start:' }));
+            else if (onStory) kids.push(el('p', { text: 'You are reading ' + onStory + '. Here is where I would start:' }));
             else kids.push(el('p', { text: 'Here are some places to start:' }));
             kids.push(chips(starters()));
             stuart(kids, 'st-msg--greet');
@@ -546,6 +558,46 @@
         var panel = el('div', { class: 'st-panel', id: 'st-panel', role: 'dialog', 'aria-label': 'Chat with Stuart', 'data-mode': mode, tabindex: '-1', hidden: true }, [head, bodyHost]);
         // one labelled region holds the button, its explanation and the chat, so it is easy to find with a screen reader
         document.body.appendChild(el('aside', { class: 'st-widget', 'aria-label': 'Ask Stuart' }, [launch, tip, panel]));
+
+        // On full-screen pages (the family tree, the map) the button shrinks to Stuart's seal, and the page names its
+        // own controls in data-avoid so the button sits just above whichever of them is showing in the corner.
+        var avoid = script.getAttribute('data-avoid') || '';
+        if (script.hasAttribute('data-compact')) launch.classList.add('st-launch--compact');
+        var lastBottom = null;
+        function place() {
+            if (!avoid) return;
+            var W = window.innerWidth, H = window.innerHeight, edge = W <= 640 ? 14 : 22, size = launch.offsetHeight || 58, w = launch.offsetWidth || 58;
+            var right = edge, bottom = edge, boxes = [];
+            document.querySelectorAll(avoid).forEach(function (e) {
+                var cs = getComputedStyle(e);
+                if (cs.display === 'none' || cs.visibility === 'hidden' || +cs.opacity === 0 || e.closest('[hidden]')) return;
+                var r = e.getBoundingClientRect();
+                if (r.width && r.height && r.bottom > 0 && r.top < H) boxes.push(r);
+            });
+            // move the button up past anything in its way, or left of a narrow panel down the right-hand side;
+            // a wide panel is left alone (it scrolls under the button), but its own footer is listed and avoided
+            for (var pass = 0, moved = true; moved && pass < 8; pass++) {
+                moved = false;
+                for (var i = 0; i < boxes.length; i++) {
+                    var r = boxes[i], L = W - right - w - 8, R = W - right + 8, T = H - bottom - size - 8, B = H - bottom + 8;
+                    if (r.right < L || r.left > R || r.bottom < T || r.top > B) continue;
+                    if (r.top > H * 0.45) { bottom = Math.round(H - r.top + 12); moved = true; }
+                    else if (r.right >= W - 2 && r.width < W * 0.6) { right = Math.round(W - r.left + edge); moved = true; }
+                }
+            }
+            var key = right + ',' + bottom;
+            if (key !== lastBottom) {
+                lastBottom = key;
+                document.documentElement.style.setProperty('--st-launch-bottom', bottom + 'px');
+                document.documentElement.style.setProperty('--st-launch-right', right + 'px');
+            }
+        }
+        if (avoid) {
+            place();
+            window.addEventListener('resize', place);
+            // the page's controls change as people use it (the map's timeline, the tree's minimap): check now and then
+            setInterval(function () { if (!document.hidden && !panel.classList.contains('is-open')) place(); }, 700);
+        }
 
         function drawModeBtn() {
             modeBtn.textContent = '';

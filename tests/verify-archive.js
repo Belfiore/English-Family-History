@@ -401,6 +401,42 @@ async function browserChecks() {
     const RK2 = Kin.create(loadKb().kb.people);
     const diff = Object.keys(treeLabels).filter(k => { const [x, y] = k.split('|'); return RK2.byId[x] && RK2.byId[y] && (RK2.relate(x, y).label || null) !== (treeLabels[k] || null); });
     check(Object.keys(treeLabels).length > 8000 && !diff.length, `the archive agrees with the family tree on all ${Object.keys(treeLabels).length} pairs of people`, diff.slice(0, 4).map(k => k + ': tree "' + treeLabels[k] + '", archive "' + RK2.relate(...k.split('|')).label + '"').join('; '));
+    // the profile link opens Stuart where you are, with the question waiting
+    await hp.click('a.more-ask');
+    await hp.waitForSelector('.st-panel.is-open .st-msg--answer', { timeout: 8000 });
+    check(/family-tree\.html/.test(hp.url()) && /Baron Reginald FitzMaurice/.test(await hp.textContent('.st-panel .st-msg--answer')), '"Ask Stuart about" on a profile opens Stuart on the family tree and asks');
     await ctx.close();
+
+    section('Every page: the same navigation bar, and Stuart');
+    const PAGES = fs.readdirSync(ROOT).filter(f => f.endsWith('.html')).sort();
+    const navAt = async (w, h) => {
+        const out = {};
+        for (const f of PAGES) {
+            const c = await browser.newContext({ viewport: { width: w, height: h }, reducedMotion: 'reduce' }); const pg = await c.newPage();
+            await pg.route(/fonts\.g|tile|openstreetmap|carto|arcgis|stadia/, r => r.abort());
+            await pg.addInitScript(() => { localStorage.setItem('stuart.seen', 'true'); });
+            await pg.goto(base + f); await pg.waitForTimeout(f === 'map.html' || f === 'family-tree.html' ? 1500 : 500);
+            out[f] = await pg.evaluate(() => {
+                const n = document.querySelector('.main-nav').getBoundingClientRect(), l = document.querySelector('.nav-logo').getBoundingClientRect(), a = document.querySelector('.nav-links a').getBoundingClientRect();
+                const menu = getComputedStyle(document.querySelector('.nav-toggle')).display !== 'none';
+                const btn = document.querySelector('.st-launch'), b = btn && btn.getBoundingClientRect();
+                const avoid = (document.querySelector('script[data-avoid]') || { getAttribute: () => '' }).getAttribute('data-avoid');
+                const hits = !b || !avoid ? [] : [...document.querySelectorAll(avoid)].filter(e => { const r = e.getBoundingClientRect(); return r.width && r.height && getComputedStyle(e).display !== 'none' && !(r.right <= b.left || r.left >= b.right || r.bottom <= b.top || r.top >= b.bottom); }).map(e => e.className);
+                return { nav: [Math.round(n.top), Math.round(n.height), Math.round(l.left), menu, menu ? 0 : Math.round(a.left)].join(','), last: [...document.querySelectorAll('link[rel=stylesheet]')].pop().getAttribute('href'), stuart: !!btn || !!document.getElementById('stuart-page'), hits };
+            });
+            await c.close();
+        }
+        return out;
+    };
+    for (const [w, h] of [[1440, 900], [1100, 800], [390, 844]]) {
+        const r = await navAt(w, h), kinds = [...new Set(Object.values(r).map(x => x.nav))];
+        check(kinds.length === 1, `at ${w} pixels wide the navigation bar is in the same place on all ${PAGES.length} pages` + (w <= 1100 ? ', behind the menu button' : ''), kinds.length > 1 ? PAGES.map(f => f + ' ' + r[f].nav).join('; ') : '');
+        if (w === 1440) {
+            check(PAGES.every(f => r[f].last === 'nav.css'), 'every page loads nav.css last, so nothing overrides it', PAGES.filter(f => r[f].last !== 'nav.css').join(', '));
+            check(PAGES.every(f => r[f].stuart), 'Stuart is on every page', PAGES.filter(f => !r[f].stuart).join(', '));
+        }
+        const hit = PAGES.filter(f => r[f].hits.length);
+        check(!hit.length, `at ${w} pixels Stuart's button stays clear of the family tree's and the map's own controls`, hit.map(f => f + ': ' + r[f].hits.join(' ')).join('; '));
+    }
     await browser.close(); srv.close();
 }

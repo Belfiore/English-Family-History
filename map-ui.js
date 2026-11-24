@@ -830,6 +830,15 @@
         S.to = b === FM.yearBounds[1] ? null : b;
         showYears(); refreshOverlays(); renderChips(); writeURL();
     }
+    // on a wide screen the key folds away to a small button, and stays folded on the next visit
+    function setKeyCollapsed(on, quiet) {
+        var k = $('key');
+        k.classList.toggle('is-collapsed', on);
+        $('keyPill').setAttribute('aria-expanded', on ? 'false' : 'true');
+        $('fm').classList.toggle('key-collapsed', on);
+        try { localStorage.setItem('fm-key-collapsed', on ? '1' : '0'); } catch (e) {}
+        if (!quiet) { announce(on ? 'Key and filters hidden.' : 'Key and filters shown.'); if (map) updateMarkers(); }
+    }
     function renderFamily() {
         $('famSel').value = S.fam || '';
         $('genSel').innerHTML = GENS.map(function (g) { return '<option value="' + g[0] + '"' + (g[0] === S.gen ? ' selected' : '') + '>' + g[1] + '</option>'; }).join('');
@@ -1207,9 +1216,13 @@
         $('panelClose').addEventListener('click', function () { closePanel(); });
         $('svClose').addEventListener('click', function () { FM.sv.close(); });
         $('keyPill').addEventListener('click', function () {
-            var k = $('key'), open = !k.classList.contains('is-open');
+            var k = $('key');
+            if (window.matchMedia('(min-width: 821px)').matches) { setKeyCollapsed(false); $('famSel').focus(); return; }
+            var open = !k.classList.contains('is-open');
             k.classList.toggle('is-open', open); this.setAttribute('aria-expanded', open ? 'true' : 'false');
         });
+        $('keyHide').addEventListener('click', function () { setKeyCollapsed(true); $('keyPill').focus(); });
+        try { if (localStorage.getItem('fm-key-collapsed') === '1') setKeyCollapsed(true, true); } catch (e) {}
         $('types').addEventListener('click', function (e) {
             var b = e.target.closest('[data-group]'); if (!b) return;
             var g = b.dataset.group;

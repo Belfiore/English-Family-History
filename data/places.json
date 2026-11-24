@@ -698,7 +698,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "Elm Terrace has not been found on a map yet, so this is the stretch of Wandsworth Road it was on.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -1136,7 +1138,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "New Street has not been found on a map yet.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -1689,7 +1693,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "Rutland Street has not been found on a map yet.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "osm-nominatim-2026",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -1848,7 +1855,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "Which street the lists meant is not known.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": "The address Reg gave in 1925, written three ways on three passenger lists.",
@@ -1912,7 +1921,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "Harper Road in West Ham has not been found on a map yet.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -2579,7 +2590,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -2718,7 +2731,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -3388,7 +3404,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "Bolingbroke Gardens has not been found on a map yet.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "osm-nominatim-2026",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -3500,7 +3519,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -3925,7 +3947,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -4163,7 +4187,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -4484,7 +4510,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "Westgate Terrace is still a Whitstable street. Which house was Clifton Ville has not been worked out.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "osm-nominatim-2026",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": "Edward Dixon, Edith and the children were here on census night in 1911.",
@@ -5106,7 +5135,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -5474,7 +5506,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -5801,7 +5836,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": "Reg and Lilian probably married in the Hammersmith district in late 1927, and Pat's birth was probably registered here in early 1929. The family remembers Windsor (family), which is not the registered birthplace.",
@@ -6261,7 +6299,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "point",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "pin",
    "blurb": "The earliest photograph in the collection was taken at J. Perriman's studio here, near the Mother Red Cap pub. Neither sitter is named.",
@@ -6477,7 +6517,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -6533,7 +6576,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -6948,7 +6994,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -7095,7 +7144,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -7217,7 +7268,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "osm-nominatim-2026",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -7324,7 +7378,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -7584,7 +7640,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -7639,7 +7698,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -7798,7 +7860,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "street",
    "todayNote": "Queen Street is now called Flood Street.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -7853,7 +7917,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -8411,7 +8477,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -8695,7 +8764,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -8957,7 +9029,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "point",
    "todayNote": "The old church was bombed in 1941 and rebuilt; much of what stands is post-war.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "pin",
    "blurb": null,
@@ -9107,7 +9181,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "point",
    "todayNote": "Rebuilt in 1873 to 1875; the 1827 wedding was in the church that stood here before.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "pin",
    "blurb": "John FitzMaurice, of His Majesty's Tower of London, married Eliza Taylor here by licence on 3 February 1827.",
@@ -9850,7 +9926,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -9966,7 +10045,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "point",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "pin",
    "blurb": null,
@@ -10354,7 +10435,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -10558,7 +10642,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "Sutton Road in Aston Manor has not been found on a map yet.",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "osm-nominatim-2026",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -11006,7 +11093,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -11144,7 +11234,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -11574,7 +11667,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -12487,7 +12583,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "halo",
    "blurb": null,
@@ -12545,7 +12643,9 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,
@@ -12604,7 +12704,10 @@
    "noProvenLink": false,
    "coordinatePrecision": "area",
    "todayNote": "",
-   "coordinateSourceIds": [],
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-map-build-2026"
+   ],
    "boundary": null,
    "drawAs": "area",
    "blurb": null,

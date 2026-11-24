@@ -1708,6 +1708,16 @@
     }
     function confTag(c) { return '<span class="conf-tag ' + confClass(c) + '">' + esc(confLabel(c)) + '</span>'; }
 
+    // true when any fact of this person has a place on the family map
+    function hasMapPlace(p) {
+        var found = false;
+        (function walk(o) {
+            if (found || !o || typeof o !== 'object') return;
+            if (Array.isArray(o)) { o.forEach(walk); return; }
+            Object.keys(o).forEach(function (k) { if (/^(placeId|fromPlaceId|toPlaceId)$/.test(k) && o[k]) found = true; else if (o[k] && typeof o[k] === 'object') walk(o[k]); });
+        })(p);
+        return found;
+    }
     function profileHTML(p) {
         var sn = sourceNumbers(p), num = sn.num;
         var byId = D.byId;
@@ -1796,7 +1806,9 @@
             return '<li id="src-' + (i + 1) + '"><span>' + esc(s.title) + '</span>' + link + '<span class="s-meta">' + esc([s.type, s.repository, s.date].filter(Boolean).join(' · ')) + (s.note ? '. ' + esc(s.note) : '') + '</span></li>';
         }).join('') + '</ol>']);
 
-        if ((p.relatedPages || []).length) secs.push(['pf-more', 'Read more', '<div class="more">' + p.relatedPages.map(function (r) {
+        // the family map, for anyone it can show (never the living)
+        var mapLink = !p.isLiving && !p.placeholder && hasMapPlace(p) ? '<a href="map.html?person=' + encodeURIComponent(p.id) + '" class="more-map">Show on the family map<svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></a>' : '';
+        if (mapLink || (p.relatedPages || []).length) secs.push(['pf-more', 'Read more', '<div class="more">' + mapLink + (p.relatedPages || []).map(function (r) {
             return '<a href="' + esc(r.url) + '">' + esc(r.title) + '<svg class="i" viewBox="0 0 20 20" aria-hidden="true"><path d="M8 4l6 6-6 6"/></svg></a>';
         }).join('') + '</div>']);
 

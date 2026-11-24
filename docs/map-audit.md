@@ -642,7 +642,7 @@ Each of the 280 directory events, and what became of it. Facts already in people
 - `voyages` added for Edward Dixon (Balmoral Castle 1916, Armadale Castle and Arundel Castle 1923), Edith (Llanstephan Castle 1916, probably; Saxon 1925), Bob, Reg and Eileen (Llanstephan Castle 1916, probably) and Reg (Montrose and Marburn 1925). The tree profile lists them.
 - `placeId` added beside the existing place strings for every fact of the deceased that has a place, and on 50 timeline entries. Living people's facts are not linked.
 - Two timeline entries become map events of their own: Reg giving Patricia away and Herb at the wedding, both at St Mary's, Wanstead, on 11 February 1950 (type "celebrated").
-- New sources (locations only, never family facts): `loc-nhle`, `loc-survey-of-london-st-philip`, `loc-wiki-st-andrew-plaistow`, `loc-wiki-st-margaret-ward-end`, `loc-lost-hospitals-east-ham`, `loc-ukbmd-districts`, `loc-canning-town-directories`, `loc-london-streets-1938`, `loc-hilfield-estate-1906`, `loc-wiki-churches`.
+- New sources (locations only, never family facts): `loc-nhle`, `loc-survey-of-london-st-philip`, `loc-wiki-st-andrew-plaistow`, `loc-wiki-st-margaret-ward-end`, `loc-lost-hospitals-east-ham`, `loc-ukbmd-districts`, `loc-canning-town-directories`, `loc-london-streets-1938`, `loc-hilfield-estate-1906`, `loc-wiki-churches`, `loc-map-build-2026`.
 - New sources gathering records the pages already publish with their images: `parish-battersea-falcke-baptisms`, `parish-battersea-falcke-marriages`, `census-1861-marylebone-rwf`, `census-walter-aldenham`.
 
 ### Addresses moved from the pages into residences[].address
@@ -672,6 +672,53 @@ Only where the page publishes the street for the whole span of the residence. Wh
 | `george-andrews.residences[1]` | High Cross, Aldenham | Published on the page for this residence. | census-andrews-stacey |
 | `herbert-andrews-sr.residences[1]` | 94 Bury Road, Hemel Hempstead | Published on the page for this residence. | census-andrews-stacey |
 | `herbert-andrews-sr.residences[2]` | 40 Fisher Street, Canning Town | The 1911 census and the 1921 crop both give 40 Fisher Street. | census-andrews-stacey |
+
+## Points placed by hand
+
+These places had no point in the directory, or a point on the wrong place, so the map build placed them by hand from the place's published description (source `loc-map-build-2026`), or drew a circle round the place the record names. Four are pins: three churches and the Perriman studio beside the Mother Red Cap. The rest are areas or soft circles. Please check each one by eye on a map.
+
+| Place | Kind | Drawn as | Point | How it was placed |
+|---|---|---|---|---|
+| 2 Elm Terrace, Wandsworth Road (`2-elm-terrace`) | home | halo within 1200 m | 51.4705, -0.1395 | Corrected. The directory's point was on Wandsworth's high street, not Wandsworth Road. Elm Terrace has not been found on a map, so the circle covers the stretch of Wandsworth Road in Battersea parish. |
+| 33 New Street, London Docks (`33-new-street`) | home | halo within 900 m | 51.5062, -0.0581 | New Street has not been found on a map. It was the family's abode at Arthur's baptism at St Peter, London Docks, so the circle is drawn round that church. |
+| 57 Rutland Street, Stepney (`57-rutland-street`) | home | halo within 1500 m | 51.5174, -0.0462 | Rutland Street has not been found on a map. The circle covers Stepney, where William married from it in 1871. |
+| 7 North Lane, Clapham Common (`7-north-clapham-common`) | home | halo within 1000 m | 51.4638, -0.1508 | North Side, Clapham Common, and North Street, Clapham, are about a mile apart, and no North Lane has been found. The circle covers both. |
+| 92 Harper Road, West Ham (`92-harper-road`) | home | halo within 2500 m | 51.5250, 0.0150 | Corrected. The directory's point was Harper Road in Southwark, south of the Thames, not West Ham. Harper Road in West Ham has not been found on a map, so the circle covers West Ham, the place the census names. |
+| Berkeley Lodge, Wimbledon (`berkeley-lodge`) | workplace | halo within 2500 m | 51.4215, -0.2064 | Berkeley Lodge has not been found on a map. The circle covers Wimbledon, the place the census names. |
+| Blean registration district (`blean-registration-district`) | registration district | area within 10000 m | 51.3300, 1.0800 | Drawn as an approximate area, a circle of about 10 km round the district. Blean district: Whitstable, Herne Bay and the parishes north of Canterbury. |
+| Bolingbroke Gardens, Battersea (`bolingbroke-gardens`) | home | halo within 1500 m | 51.4708, -0.1722 | Bolingbroke Gardens has not been found on a map. The circle covers Battersea, the place the census names. |
+| Bridge registration district (`bridge-registration-district`) | registration district | area within 9000 m | 51.2450, 1.1250 | Drawn as an approximate area, a circle of about 9 km round the district. Bridge district: the villages south-east of Canterbury. |
+| Cape Supreme Court, Cape Town (`cape-supreme-court`) | venue | halo within 2500 m | -33.9249, 18.4241 | The court sat in Cape Town; the cases are undated and the building is not named, so the circle covers the city centre. |
+| Chalfont, Buckinghamshire (`chalfont-buckinghamshire`) | town | halo within 4000 m | 51.6250, -0.5600 | The record says Chalfont, which could be Chalfont St Giles or Chalfont St Peter; the circle covers both. |
+| Clifton Ville, Westgate Terrace, Whitstable (`clifton-ville-whitstable`) | home | halo within 700 m | 51.3606, 1.0241 | Westgate Terrace is a Whitstable street today, but its exact line was not checked and which house was called Clifton Ville is not known. The circle covers the middle of Whitstable. |
+| East Ham registration district (`east-ham-registration-district`) | registration district | area within 3500 m | 51.5400, 0.0550 | Drawn as an approximate area, a circle of about 4 km round the district. East Ham district, created in 1935 from West Ham district. |
+| Greenwich registration district (`greenwich-registration-district`) | registration district | area within 4000 m | 51.4800, 0.0000 | Drawn as an approximate area, a circle of about 4 km round the district. Greenwich district. |
+| Hammersmith registration district (`hammersmith-registration-district`) | registration district | area within 3000 m | 51.4970, -0.2250 | Drawn as an approximate area, a circle of about 3 km round the district. Hammersmith district. |
+| J. Perriman's studio, 3 Greenland Place, Camden Town (`perriman-greenland-place`) | studio | pin | 51.5389, -0.1419 | Placed beside the Mother Red Cap at Camden Town, as the studio stamp says ('side of the Mother Red Cap'). |
+| King's Norton registration district (`kings-norton-registration-district`) | registration district | area within 7000 m | 52.4400, -1.9200 | Drawn as an approximate area, a circle of about 7 km round the district. King's Norton district, south of Birmingham. |
+| Lambeth registration district (`lambeth-registration-district`) | registration district | area within 4500 m | 51.4680, -0.1150 | Drawn as an approximate area, a circle of about 4 km round the district. Lambeth district. |
+| Lewisham registration district (`lewisham-registration-district`) | registration district | area within 5000 m | 51.4450, 0.0100 | Drawn as an approximate area, a circle of about 5 km round the district. Lewisham district. |
+| Liverpool (`port-liverpool`) | port | halo within 1000 m | 53.4047, -2.9958 | Corrected. The directory's point was inland; this is the Pier Head landing stage on the Mersey. |
+| Mead Cottage, Bushey (`mead-cottage`) | home | halo within 2000 m | 51.6442, -0.3622 | Mead Cottage has not been found on a map. The circle covers Bushey, the place the census names. |
+| Mile End Old Town (`mile-end-old-town`) | parish | area within 1500 m | 51.5215, -0.0440 | Moved to the middle of the old hamlet of Mile End Old Town, round Stepney Green. |
+| Plymouth registration district (`plymouth-registration-district`) | registration district | area within 6000 m | 50.3760, -4.1430 | Drawn as an approximate area, a circle of about 6 km round the district. Plymouth district. |
+| Poplar registration district (`poplar-registration-district`) | registration district | area within 3000 m | 51.5100, -0.0150 | Drawn as an approximate area, a circle of about 3 km round the district. Poplar district. |
+| Queen Street, Chelsea (`queen-street-chelsea`) | home | halo within 300 m | 51.4868, -0.1660 | Queen Street, Chelsea, was later renamed Flood Street; the point is on Flood Street. |
+| Royal Albert Docks, London (`royal-albert-docks`) | workplace | halo within 1500 m | 51.5075, 0.0640 | Corrected. The directory's point was the Royal Albert Dock in Liverpool. This is the Royal Albert Dock in London's docklands, where the Port of London Authority employed him in 1921. |
+| Spelthorne district, Middlesex (`spelthorne-registration-district`) | district | area within 9000 m | 51.4550, -0.4500 | Drawn as an approximate area, a circle of about 9 km round the district. Spelthorne district, Middlesex, as the electoral registers name it. |
+| St Columb registration district (`st-columb-registration-district`) | registration district | area within 12000 m | 50.4240, -5.0000 | Drawn as an approximate area, a circle of about 12 km round the district. St Columb district, Cornwall. |
+| St Luke, Chelsea (the old parish church, now Chelsea Old Church) (`st-luke-chelsea`) | church | pin | 51.4830, -0.1708 | Corrected. The directory put the pin on the new St Luke's, Sydney Street, which was not consecrated until 1824. Before then St Luke's was the old parish church by the river, now Chelsea Old Church, so the 1818 and 1822 baptisms were there. |
+| St Martin in the Bull Ring, Birmingham (`st-martins-birmingham`) | church | pin | 52.4770, -1.8932 | Corrected: the directory's point was off the church. |
+| St Olave registration district (`st-olave-registration-district`) | registration district | area within 2000 m | 51.4970, -0.0700 | Drawn as an approximate area, a circle of about 2 km round the district. St Olave district: Bermondsey and Rotherhithe by the river. |
+| St Peter, London Docks (`st-peter-london-docks`) | church | pin | 51.5062, -0.0581 | Placed on St Peter's church, Wapping Lane, which stands in the London Docks parish. |
+| Stoke Damerel registration district (`stoke-damerel-registration-district`) | registration district | area within 3000 m | 50.3810, -4.1630 | Drawn as an approximate area, a circle of about 3 km round the district. Stoke Damerel district: Devonport. |
+| Sutton Road, Aston Manor (`sutton-road-aston`) | home | halo within 1500 m | 52.5158, -1.8728 | Sutton Road in Aston Manor has not been found on a map. The circle covers Aston Manor, the place the census names. |
+| Uxbridge registration district (`uxbridge-registration-district`) | registration district | area within 9000 m | 51.5400, -0.4700 | Drawn as an approximate area, a circle of about 9 km round the district. Uxbridge district: Uxbridge, Hayes, Harlington and the villages round them. |
+| Wandsworth registration district (`wandsworth-registration-district`) | registration district | area within 5000 m | 51.4550, -0.1650 | Drawn as an approximate area, a circle of about 5 km round the district. Wandsworth district: Wandsworth, Clapham, Putney, Streatham and Tooting. |
+| West Ham registration district (`west-ham-registration-district`) | registration district | area within 4500 m | 51.5300, 0.0100 | Drawn as an approximate area, a circle of about 4 km round the district. West Ham district. |
+| Abbots Langley (`abbots-langley`) | town | halo within 1500 m | 51.7016, -0.4166 | Added in the map build for a place the page names. Town centre; the census does not give a house. Placed at the centre of the town or area with a wide circle. |
+| St Marylebone (`st-marylebone`) | parish | area within 1500 m | 51.5225, -0.1550 | Added in the map build for a place the page names. The parish; the lodging house is not named on the page. Placed at the centre of the town or area with a wide circle. |
+| Luton registration district (`luton-registration-district`) | registration district | area within 10000 m | 51.8790, -0.4700 | Added in the map build for a place the page names. Luton district: Luton, Dunstable and the villages round them, including Totternhoe. Placed at the centre of the town or area with a wide circle. |
 
 ## What stands today, and Street View
 
@@ -871,6 +918,9 @@ Dated facts of people who have died that have no place yet. The map lists them i
 
 ## Things for Seb to do
 
-- Check the Street View viewpoints and the houses marked unknown (lists above).
+- Create a MapTiler key (free tier) for the old Ordnance Survey maps, restrict it to the HTTP origin https://belfiore.github.io in MapTiler's console, and put it in `config.js` as `MAPTILER_KEY`. Until then the Then button and the period maps say they need it.
+- Optionally, create a Google Maps Embed API key restricted to the HTTP referrer https://belfiore.github.io/* and to the Maps Embed API only, and put it in `config.js` as `GOOGLE_EMBED_KEY`. With it Street View opens inside the page; without it the button opens Google Maps in a new tab.
+- Optionally, use a separate Google key for the build-time Street View lookups (`GOOGLE_STREETVIEW_KEY=... node tools/streetview-viewpoints.mjs`). Keep that key out of the repo.
+- Check the points placed by hand, the Street View viewpoints and the houses marked unknown (lists above).
 - Answer the open questions with Mum.
 

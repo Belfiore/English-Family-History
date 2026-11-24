@@ -1141,6 +1141,14 @@
    "repository": "The National Archives HO107 and RG9. Image: Ancestry.com.",
    "date": "1841-06-06",
    "note": "1841, Letchmore Heath: Robert Walters, 32, agricultural labourer, and Mary with their children. 1851, High Cross: Robert Walter, 42, with Mary and the children. 1861, Letchmore Heath (schedule 67, indexed as Waller): Robert Walter, 52, carrier, with Mary, 53, and children. Published on the Andrews, Stacey and Walter page."
+  },
+  {
+   "id": "loc-map-build-2026",
+   "title": "Map build, November 2026: points placed by hand",
+   "type": "map",
+   "repository": "This site, docs/map-audit.md",
+   "date": "2026-11-23",
+   "note": "Where the directory had no point for a place, or a point on the wrong place, the map build placed it by hand at the named building, street or area from the place's published description, or drew a circle round the place the record names. Used only to put a place on the map, and not a source for any family fact. Each of these points is listed in docs/map-audit.md to be checked by eye."
   }
  ]
 }

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Family Map | The FitzMaurice &amp; Andrews Heritage</title>
+    <meta name="description" content="An interactive map of where the FitzMaurice and Andrews families were born, lived, married, worked, served, sailed, died and were buried, with a timeline you can play.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://tiles.openfreemap.org" crossorigin>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="records.css">
+    <link rel="stylesheet" href="vendor/maplibre-gl-5.24.1/maplibre-gl.css">
+    <link rel="stylesheet" href="map.css?v=1">
+</head>
+<body class="map-body">
+<a class="skip-link" href="#listOpen">Skip to the list of places</a>
+
+<nav class="main-nav" aria-label="Site">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">FitzMaurice &amp; Andrews</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="family-tree.html">Family Tree</a>
+            <a href="map.html" class="active" aria-current="page">Family Map</a>
+            <a href="branches.html">Branches</a>
+            <a href="family-crest.html">Family Crest</a>
+            <a href="ron-egypt.html">Ron in WWII</a>
+            <a href="wedding.html">Wedding</a>
+            <a href="sources.html">Sources</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+            <span></span><span></span><span></span>
+        </button>
+    </div>
+</nav>
+
+<main class="fm" id="fm" data-mode="explore">
+    <header class="fm-bar">
+        <div class="fm-title">
+            <h1>The Family Map</h1>
+            <p class="fm-sub" id="fmSub">Where the family was born, lived, married, worked, served, sailed, died and was buried.</p>
+        </div>
+        <div class="fm-modes" id="modeSwitch" role="tablist" aria-label="Map mode"></div>
+        <div class="fm-tools">
+            <div class="fm-seg fm-styles" id="styleSwitch" role="radiogroup" aria-label="Map style"></div>
+            <button type="button" class="fm-btn" id="compareBtn" aria-pressed="false" title="Compare the old map with today's">Then and now</button>
+            <button type="button" class="fm-btn" id="streetsBtn" aria-pressed="false" title="Click any street to see it in Street View">Explore streets</button>
+            <button type="button" class="fm-btn" id="listOpen">View as list</button>
+        </div>
+    </header>
+
+    <div class="fm-stage" id="stage">
+        <div class="fm-map" id="map" role="region" aria-label="Map of the family's places. Use Tab to move between places in date order, Enter to open one."></div>
+        <div class="fm-compare" id="compareWrap" hidden>
+            <div class="fm-map fm-map--today" id="compareMap" aria-hidden="true"></div>
+            <div class="fm-divider" id="divider" role="slider" tabindex="0" aria-label="Then and now divider: left is today, right is the old map" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></div>
+            <div class="fm-compare-tools">
+                <span class="fm-cmp-l">Today</span>
+                <label class="fm-opacity">Old map <input type="range" id="thenOpacity" min="0" max="100" value="100" aria-label="Old map opacity"></label>
+                <span class="fm-cmp-r" id="cmpEdition">Then</span>
+            </div>
+        </div>
+
+        <aside class="fm-key" id="key" aria-label="Key and filters">
+            <button type="button" class="fm-key-pill" id="keyPill" aria-expanded="false" aria-controls="keyBody">Key and filters</button>
+            <div class="fm-key-body" id="keyBody">
+                <div class="fm-person" id="personBox">
+                    <label for="personInput" class="fm-label">Follow a person</label>
+                    <div class="fm-combo">
+                        <input id="personInput" type="text" role="combobox" aria-expanded="false" aria-controls="personList" aria-autocomplete="list" autocomplete="off" spellcheck="false" placeholder="Search the family…">
+                        <button type="button" class="fm-clear" id="personClear" aria-label="Clear the person and every filter" hidden>&times;</button>
+                        <ul id="personList" class="fm-listbox" role="listbox" aria-label="People" hidden></ul>
+                    </div>
+                    <div class="fm-scopes" id="scopes" role="group" aria-label="Who to show" hidden></div>
+                </div>
+                <h2 class="fm-h">Key</h2>
+                <p class="fm-hint">Each row turns that kind of place on or off.</p>
+                <ul class="fm-types" id="types"></ul>
+                <div class="fm-conf" id="confKey"></div>
+                <div class="fm-orkney">
+                    <label class="fm-switch"><input type="checkbox" id="orkneyToggle"><span></span> The Hamiltons and the Earls of Orkney (no proven link)</label>
+                </div>
+                <div class="fm-years" id="yearsBox">
+                    <span class="fm-label" id="yearsLabel">Years</span>
+                    <div class="fm-range" role="group" aria-labelledby="yearsLabel">
+                        <input type="range" id="yearFrom" aria-label="From year">
+                        <input type="range" id="yearTo" aria-label="To year">
+                    </div>
+                    <output id="yearsOut" for="yearFrom yearTo"></output>
+                </div>
+            </div>
+        </aside>
+
+        <div class="fm-chips" id="chips">
+            <button type="button" class="fm-chip" id="beyondBtn" hidden></button>
+            <button type="button" class="fm-chip" id="backEngland" hidden>Back to England</button>
+            <button type="button" class="fm-chip fm-chip--tray" id="trayBtn"></button>
+            <button type="button" class="fm-chip fm-chip--follow" id="followAgain" hidden>Follow again</button>
+        </div>
+
+        <aside class="fm-panel" id="panel" aria-labelledby="panelTitle" hidden>
+            <div class="fm-panel-grip" aria-hidden="true"></div>
+            <div class="fm-panel-head">
+                <nav class="fm-crumbs" id="crumbs" aria-label="Where you are"></nav>
+                <button type="button" class="fm-x" id="panelClose" aria-label="Close the panel">&times;</button>
+            </div>
+            <div class="fm-panel-body" id="panelBody"></div>
+        </aside>
+
+        <div class="fm-peek" id="peek" role="dialog" aria-label="Place preview" hidden></div>
+
+        <section class="fm-tl" id="timeline" aria-label="Timeline" hidden>
+            <div class="fm-tl-controls">
+                <button type="button" class="fm-ctl" id="tlRestart" aria-label="Restart" title="Restart (Home)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 5v14M19 6l-9 6 9 6z"/></svg></button>
+                <button type="button" class="fm-ctl" id="tlPrev" aria-label="Previous event" title="Previous event (Left arrow)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 6l-8 6 8 6zM7 6v12"/></svg></button>
+                <button type="button" class="fm-ctl fm-ctl--play" id="tlPlay" aria-label="Play" title="Play or pause (Space)"><svg viewBox="0 0 24 24" aria-hidden="true" class="i-play"><path d="M8 5l11 7-11 7z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true" class="i-pause"><path d="M8 5v14M16 5v14"/></svg></button>
+                <button type="button" class="fm-ctl" id="tlNext" aria-label="Next event" title="Next event (Right arrow)"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 6l8 6-8 6zM17 6v12"/></svg></button>
+                <div class="fm-seg fm-speed" id="tlSpeed" role="radiogroup" aria-label="Speed"></div>
+                <button type="button" class="fm-btn fm-btn--sm fm-tl-opts" id="tlOpts" aria-expanded="false" aria-controls="tlMore">Options</button>
+                <div class="fm-tl-more" id="tlMore">
+                    <label class="fm-switch fm-switch--sm"><input type="checkbox" id="tlReal"><span></span> Real pace</label>
+                    <label class="fm-switch fm-switch--sm"><input type="checkbox" id="tlTrails" checked><span></span> Trails</label>
+                    <label class="fm-switch fm-switch--sm"><input type="checkbox" id="tlAll"><span></span> Show all events</label>
+                    <label class="fm-switch fm-switch--sm"><input type="checkbox" id="tlPeriod"><span></span> Period map follows the year</label>
+                    <label class="fm-select">Camera <select id="tlCamera"><option value="follow">Follow</option><option value="centre">Centre</option><option value="overview">Overview</option></select></label>
+                    <button type="button" class="fm-btn fm-btn--sm" id="tlJump" hidden>Jump to the proven family</button>
+                </div>
+            </div>
+            <div class="fm-track" id="track">
+                <div class="fm-year" id="tlYear" aria-hidden="true"></div>
+                <div class="fm-track-rail" id="rail"></div>
+                <div class="fm-playhead" id="playhead" role="slider" tabindex="0" aria-label="Timeline position" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"></div>
+                <div class="fm-tip" id="tlTip" role="tooltip" hidden></div>
+                <div class="fm-fan" id="tlFan" role="group" aria-label="Events here" hidden></div>
+            </div>
+        </section>
+
+        <aside class="fm-events" id="tlPanel" aria-label="Events" hidden>
+            <div class="fm-events-grip" aria-hidden="true"></div>
+            <div class="fm-now" id="tlNow"></div>
+            <h2 class="fm-h fm-h--list">Every event</h2>
+            <ol class="fm-elist" id="tlList"></ol>
+        </aside>
+
+        <div class="fm-stepcard" id="stepCard" hidden></div>
+        <div class="fm-edition" id="edition" hidden></div>
+        <div class="fm-note" id="note" role="status" hidden></div>
+        <div class="fm-attrib" id="attrib"></div>
+    </div>
+    <div id="live" class="visually-hidden" aria-live="polite" aria-atomic="true"></div>
+</main>
+
+<div class="fm-sv" id="sv" role="dialog" aria-modal="true" aria-labelledby="svTitle" hidden>
+    <div class="fm-sv-strip" id="svStrip" aria-hidden="true"></div>
+    <div class="fm-sv-main">
+        <div class="fm-sv-head">
+            <h2 id="svTitle">Street View</h2>
+            <button type="button" class="fm-x" id="svClose" aria-label="Close Street View">&times;</button>
+        </div>
+        <div class="fm-sv-frame"><div id="svFrame"></div><figure class="fm-sv-then" id="svThen" hidden></figure></div>
+        <p class="fm-sv-cap" id="svCap"></p>
+    </div>
+</div>
+
+<div class="fm-sheet" id="tray" role="dialog" aria-modal="true" aria-labelledby="trayTitle" hidden>
+    <div class="fm-sheet-in">
+        <div class="fm-sheet-head"><h2 id="trayTitle">Not yet on the map</h2><button type="button" class="fm-x" id="trayClose" aria-label="Close">&times;</button></div>
+        <p class="fm-hint">These facts have a date but no place yet. If you know where, the family can fill the gap.</p>
+        <ul class="fm-trayl" id="trayList"></ul>
+    </div>
+</div>
+
+<div class="fm-sheet fm-sheet--list" id="listView" role="dialog" aria-modal="true" aria-labelledby="listTitle" hidden>
+    <div class="fm-sheet-in">
+        <div class="fm-sheet-head"><h2 id="listTitle">Every place and event</h2><button type="button" class="fm-x" id="listClose" aria-label="Close the list">&times;</button></div>
+        <p class="fm-hint" id="listHint">The same places and events as the map, in date order of the first event at each place.</p>
+        <div id="listBody"></div>
+    </div>
+</div>
+
+<noscript><p class="fm-noscript">The family map needs JavaScript. The places are also listed on the <a href="branches.html">branch pages</a>.</p></noscript>
+
+<script src="config.js"></script>
+<script src="vendor/maplibre-gl-5.24.1/maplibre-gl.js"></script>
+<script src="records.js"></script>
+<script src="map-glyphs.js"></script>
+<script src="map-data.js"></script>
+<script src="map-player.js"></script>
+<script src="map-ui.js"></script>
+<script src="map-steps.js"></script>
+<script src="map-timeline.js"></script>
+<script>
+    (function () {
+        var t = document.getElementById('navToggle'), l = document.getElementById('navLinks');
+        if (t && l) t.addEventListener('click', function () {
+            var open = l.classList.toggle('open');
+            t.setAttribute('aria-expanded', open ? 'true' : 'false');
+        });
+    })();
+</script>
+</body>
+</html>

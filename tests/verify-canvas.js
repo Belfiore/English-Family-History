@@ -85,7 +85,7 @@ const ok = (m) => console.log('  ok   ' + m);
     // no em dashes in the data or the new canvas files; no en dashes in the data
     const dashFiles = ['data/people.json', 'data/sources.json', PAGE, 'tree-canvas.js', 'tree-canvas.css', 'docs/canvas-audit.md'].filter(f => fs.existsSync(path.join(ROOT, f)));
     const dashErr = [];
-    dashFiles.forEach(f => { const t = fs.readFileSync(path.join(ROOT, f), 'utf8'); if (t.includes('—')) dashErr.push(f + ' has an em dash'); if (f.startsWith('data/') && t.includes('–')) dashErr.push(f + ' has an en dash'); });
+    dashFiles.forEach(f => { const t = fs.readFileSync(path.join(ROOT, f), 'utf8'); if (t.includes('\u2014')) dashErr.push(f + ' has an em dash'); if (f.startsWith('data/') && t.includes('\u2013')) dashErr.push(f + ' has an en dash'); });
     if (dashErr.length) dashErr.forEach(fail); else ok(`no em dashes in ${dashFiles.join(', ')}`);
 
     // the withheld family name appears in no file on the site
@@ -378,7 +378,9 @@ const ok = (m) => console.log('  ok   ' + m);
     const consoleErrs = [];
     let currentPage = '';
     page.on('pageerror', e => consoleErrs.push(currentPage + ': ' + e.message));
-    page.on('console', m => { if (m.type() === 'error') consoleErrs.push(currentPage + ': ' + m.text()); });
+    // an outside host that cannot be reached (map tiles offline, say) is the network, not the page
+    const offsite = m => /^Failed to load resource/.test(m.text()) && !String((m.location() || {}).url || '').startsWith(base);
+    page.on('console', m => { if (m.type() === 'error' && !offsite(m)) consoleErrs.push(currentPage + ': ' + m.text()); });
     for (const f of pages) {
         currentPage = f;
         await page.goto(base + f, { waitUntil: 'networkidle' });

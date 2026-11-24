@@ -356,11 +356,12 @@
         if (items) lastItems = items; else items = lastItems;
         if (!map) return;
         var z = map.getZoom();
-        // screen-space clustering: places closer than 34 px share a marker
+        // screen-space clustering. A smaller radius, and no clustering from zoom 11 up,
+        // so a mid zoom of England shows the towns instead of one blob.
         var pts = items.map(function (it) { var p = map.project(placeLL(it.place)); return { it: it, x: p.x, y: p.y }; });
         pts.sort(function (a, b) { return b.it.events.length - a.it.events.length; });
         var clusters = [];
-        var R = z >= 15.5 ? 0 : 34;
+        var R = z >= 11 ? 0 : (z >= 8 ? 16 : 24);
         pts.forEach(function (p) {
             var hit = null;
             for (var i = 0; i < clusters.length && R; i++) {

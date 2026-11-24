@@ -236,6 +236,12 @@ function expectScope(id, scope) {
     const thenNoKey = await page.evaluate(() => ({ style: FM.state.style, pressed: document.querySelector('#styleSwitch [aria-checked="true"]').dataset.style, note: document.getElementById('note').innerText }));
     await page.evaluate(() => { window.FM_CONFIG.MAPTILER_KEY = window.__fmMaptiler; });
     check(thenNoKey.style === 'today' && thenNoKey.pressed === 'today' && /MapTiler/.test(thenNoKey.note), 'Then without a key explains and stays on the current map', JSON.stringify(thenNoKey));
+    const conf = await page.evaluate(() => ({ key: /Confidence|Probable|Confirmed/.test(document.getElementById('confKey').innerText), sat: !!document.getElementById('satBtn'), peg: !!document.getElementById('pegman') }));
+    check(!conf.key && conf.sat && conf.peg, 'no confidence legend; the Satellite toggle and the Street View figure are there', JSON.stringify(conf));
+    await page.click('#satBtn'); await page.waitForTimeout(300);
+    const sat = await page.evaluate(() => ({ on: FM.state.sat, layer: !!FM.map.getLayer('fm-sat'), url: location.search }));
+    await page.click('#satBtn'); await page.waitForTimeout(200);
+    check(sat.on && sat.layer && /sat=1/.test(sat.url) && !(await page.evaluate(() => FM.map.getLayer('fm-sat'))), 'Satellite adds the aerial layer under the labels, and takes it away again', JSON.stringify(sat));
     let mp = await markerPlaces(page);
     // every place with a visible event has a marker; key counts match the index
     const expectedPlaces = await page.evaluate(() => Object.keys(FM.DATA.placeEvents).filter(pid => FM.DATA.placeEvents[pid].some(e => FM.filters.eventPasses(e))));
@@ -658,9 +664,12 @@ function expectScope(id, scope) {
         'with a key the button opens the overlay, and the Embed URL is right', emb.url);
     const pnsv = await page.evaluate(() => { const f = document.querySelector('#panel .pn-sv iframe'); return { src: f && f.src, open: !!document.querySelector('#panel .pn-sv-open[data-sv]'), first: document.querySelector('#panel .pn').firstElementChild.className }; });
     check(pnsv.src === emb.url && pnsv.open && pnsv.first === 'pn-sv', "the place panel opens with that address's Street View at the top", JSON.stringify(pnsv).slice(0, 200));
+    const anyConf = await page.evaluate(() => document.querySelectorAll('.badge.c-conf, .badge.c-prob, .badge.c-fam').length);
+    check(!anyConf, 'no confidence tags in the panel', String(anyConf));
     await page.click('#panel .pn-sv-open');
     await page.waitForTimeout(700);
-    const ovp = await page.evaluate(() => ({ open: FM.sv.isOpen(), tab: document.getElementById('svTab').href }));
+    const ovp = await page.evaluate(() => ({ open: FM.sv.isOpen(), tab: document.getElementById('svTab').href, head: document.getElementById('svHead').textContent, card: (() => { const r = document.getElementById('svCard').getBoundingClientRect(), f = document.querySelector('.fm-sv-frame').getBoundingClientRect(); return Math.abs((r.left + r.right) / 2 - (f.left + f.right) / 2) < 4 && f.bottom - r.bottom < 80; })() }));
+    check(ovp.head && ovp.card, 'Street View shows the place title front and centre at the bottom', JSON.stringify(ovp).slice(0, 200));
     check(ovp.open && /^https:\/\/www\.google\.com\/maps\/@\?api=1&map_action=pano/.test(ovp.tab), 'clicking the Street View in the panel opens it inside the map, with a link to open it in a new tab', JSON.stringify(ovp));
     await page.keyboard.press('Escape');
     await page.waitForTimeout(400);
@@ -673,6 +682,16 @@ function expectScope(id, scope) {
     await page.waitForTimeout(400);
     const ov2 = await page.evaluate(() => ({ hidden: document.getElementById('sv').hidden, focus: document.activeElement && document.activeElement.matches('button.sv-btn') }));
     check(ov2.hidden && ov2.focus, 'Esc closes the overlay and returns focus to the button', JSON.stringify(ov2));
+    await page.evaluate(() => FM.util.closePanel && FM.util.closePanel());
+    await page.waitForTimeout(400);
+    const pb = await page.$eval('#pegman', el => { const r = el.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; });
+    await page.mouse.move(pb.x, pb.y); await page.mouse.down();
+    await page.mouse.move(pb.x - 300, pb.y + 250, { steps: 8 });
+    const ghost = await page.evaluate(() => !!document.querySelector('.fm-peg-ghost'));
+    await page.mouse.up(); await page.waitForTimeout(600);
+    const dropped = await page.evaluate(() => ({ open: FM.sv.isOpen(), src: (document.querySelector('#svFrame iframe') || {}).src || '', head: document.getElementById('svHead').textContent }));
+    check(ghost && dropped.open && /embed\/v1\/streetview\?key=TEST-EMBED-KEY&location=/.test(dropped.src), 'dragging the little figure onto the map opens Street View there, inside the map', JSON.stringify(dropped).slice(0, 200));
+    await page.keyboard.press('Escape');
     await s.close();
     s = await open('map.html?mode=timeline', { embedKey: true, settle: 1500 });
     page = s.page;

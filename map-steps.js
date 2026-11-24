@@ -33,7 +33,7 @@
             '<p class="ec-top"><span class="ec-gl">' + glyph(e.type) + '</span><span class="ec-type">' + esc(FM.data.TYPE_LABEL[e.type]) + '</span><span class="ec-date">' + esc(U().dateLabel(e)) + '</span></p>' +
             (e.noProvenLink ? '<p class="ec-npl"><span class="badge badge--npl">No proven link to this family</span></p>' : '') +
             '<p class="ec-where">' + where + '</p>' + voyage +
-            '<p class="ec-text">' + esc(e.summary) + (e.familyStatement && !/\(family/.test(e.summary) ? ' (family)' : '') + ' <span class="badge ' + U().confClass(conf) + '">' + esc(U().confLabel(conf)) + '</span></p>' +
+            '<p class="ec-text">' + esc(e.summary) + (e.familyStatement && !/\(family/.test(e.summary) ? ' (family)' : '') + '</p>' +
             (people ? '<div class="ec-people">' + people + '</div>' : '') + media +
             (opts.noActions ? '' : '<div class="ec-actions">' + (pl ? '<button type="button" class="fm-btn fm-btn--sm" data-open-place="' + esc(pl.id) + '">Open place</button>' : '') +
                 (pl && pl.streetView ? FM.sv.button(pl, { small: true }) : (pl && pl.streetViewReason && /coverage/i.test(pl.streetViewReason) ? '<span class="ec-nosv">' + esc(pl.streetViewReason) + '</span>' : '')) +

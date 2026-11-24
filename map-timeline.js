@@ -175,15 +175,17 @@
         fanFor = null;
     }
     function closeFanSoon() { clearTimeout(fanTimer); fanTimer = setTimeout(function () { closeFan(); }, 220); }
+    // how the people in an event are related to Pat or Ron, when that is close ("Ron's parents")
+    function kinSpan(e) { var k = FM.data.kinLine(e.personIds, FM.DATA.people); return k ? '<span class="el-r">' + esc(k) + '</span>' : ''; }
     function renderList() {
         var html = T.beats.map(function (b) {
             return b.events.map(function (e) {
                 return '<li class="el" data-beat="' + b.index + '" data-event="' + esc(e.id) + '"><button type="button" class="el-b"><span class="el-gl">' + glyph(e.type) + '</span><span class="el-d">' + esc(U().dateLabel(e)) + '</span><span class="el-t">' +
-                    esc(e.personIds.map(function (id) { return FM.DATA.people[id].displayName; }).join(', ') || FM.data.TYPE_LABEL[e.type]) + '</span><span class="el-p">' + esc(e.placeId ? FM.DATA.places[e.placeId].name : 'Place not known') + '</span></button></li>';
+                    esc(e.personIds.map(function (id) { return FM.DATA.people[id].displayName; }).join(', ') || FM.data.TYPE_LABEL[e.type]) + '</span>' + kinSpan(e) + '<span class="el-p">' + esc(e.placeId ? FM.DATA.places[e.placeId].name : 'Place not known') + '</span></button></li>';
             }).join('');
         }).join('');
         if (T.undated.length) html += '<li class="el-h" role="presentation">Date unknown</li>' + T.undated.map(function (e) {
-            return '<li class="el el--undated" data-undated="' + esc(e.id) + '"><button type="button" class="el-b"><span class="el-gl">' + glyph(e.type) + '</span><span class="el-d">Date unknown</span><span class="el-t">' + esc(e.personIds.map(function (id) { return FM.DATA.people[id].displayName; }).join(', ')) + '</span><span class="el-p">' + esc(e.placeId ? FM.DATA.places[e.placeId].name : 'Place not known') + '</span></button></li>';
+            return '<li class="el el--undated" data-undated="' + esc(e.id) + '"><button type="button" class="el-b"><span class="el-gl">' + glyph(e.type) + '</span><span class="el-d">Date unknown</span><span class="el-t">' + esc(e.personIds.map(function (id) { return FM.DATA.people[id].displayName; }).join(', ')) + '</span>' + kinSpan(e) + '<span class="el-p">' + esc(e.placeId ? FM.DATA.places[e.placeId].name : 'Place not known') + '</span></button></li>';
         }).join('');
         $('tlList').innerHTML = html;
     }

@@ -14,7 +14,11 @@
     function eventCard(e, opts) {
         opts = opts || {};
         var D = FM.DATA, pl = e.placeId ? D.places[e.placeId] : null;
-        var people = e.personIds.map(function (id) { var p = D.people[id]; return '<button type="button" class="chip" data-person="' + esc(id) + '">' + U().avatar(p, 'av--xs') + esc(p.displayName) + '</button>'; }).join('');
+        // each person with how they are related to Pat or Ron, when that is close ("Reg FitzMaurice, Pat's father")
+        var people = e.personIds.map(function (id) {
+            var p = D.people[id], k = FM.data.kinOf(id, D.people);
+            return '<button type="button" class="chip" data-person="' + esc(id) + '">' + U().avatar(p, 'av--xs') + '<span>' + esc(p.displayName) + (k ? '<span class="chip-rel">, ' + esc(k.label) + '</span>' : '') + '</span></button>';
+        }).join('');
         var media = '';
         var img = pl && (pl.images || [])[0];
         if (e.recordCrops && e.recordCrops.length) media = '<a class="record-link ec-media" href="images/records/' + esc(e.recordCrops[0]) + '"><img src="images/records/' + esc(e.recordCrops[0]) + '" alt="' + esc(e.summary) + '" loading="lazy"></a>';

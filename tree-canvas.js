@@ -102,6 +102,34 @@
             });
     }
 
+    // The Hamiltons and the Earls of Orkney (King James II down) are switched off on the tree for now.
+    // They stay in data/people.json untouched: set SHOW_ORKNEY_LINE to true to draw them again.
+    // Cecil O'Bryen FitzMaurice, 8th Earl, stays: he is drawn beside Pat as a suspected relative,
+    // joined by a dashed line, with no proven link.
+    var SHOW_ORKNEY_LINE = false;
+    var KEEP_FROM_ORKNEY = { 'cecil-8th': 'patricia-andrews' };
+    function pruneOrkney(people) {
+        if (SHOW_ORKNEY_LINE) return people;
+        var drop = {};
+        people.forEach(function (p) { if (p.region === 'orkney' && !KEEP_FROM_ORKNEY[p.id]) drop[p.id] = true; });
+        var idOf = function (r) { return typeof r === 'string' ? r : r && r.id; };
+        var host = {};
+        people.forEach(function (p) { host[p.id] = p; });
+        return people.filter(function (p) { return !drop[p.id]; }).map(function (p) {
+            var q = Object.assign({}, p);
+            q.parents = (p.parents || []).filter(function (r) { return !drop[idOf(r)]; });
+            q.children = (p.children || []).filter(function (r) { return !drop[idOf(r)]; });
+            q.spouses = (p.spouses || []).filter(function (r) { return !drop[idOf(r)]; });
+            if (q.uncertainBeside && drop[q.uncertainBeside]) delete q.uncertainBeside;
+            if (KEEP_FROM_ORKNEY[p.id]) {
+                var beside = host[KEEP_FROM_ORKNEY[p.id]];
+                q.region = null; q.parents = []; q.spouses = [];
+                q.uncertainBeside = beside.id; q.generation = beside.generation;
+                q.suspectedRelative = true;
+            }
+            return q;
+        });
+    }
     function syncHeader() {
         var nav = document.querySelector('.main-nav');
         if (nav) document.documentElement.style.setProperty('--pc-head-h', Math.round(nav.getBoundingClientRect().height) + 'px');
@@ -109,7 +137,7 @@
     function init(pdata, sdata) {
         syncHeader();
         D.meta = pdata.meta;
-        D.people = pdata.people;
+        D.people = pruneOrkney(pdata.people);
         D.people.forEach(function (p) { D.byId[p.id] = p; });
         sdata.sources.forEach(function (s) { D.sources[s.id] = s; });
         layout();
@@ -137,8 +165,39 @@
     // =================================================================== LAYOUT
     function layout() {
         var byId = D.byId;
+        L.splitX = null;
         var blockOf = {};
         var blocks = [];
+
+        // 0. sides: Grandpa Ron's family is laid out on the left and Grandma Pat's on the right, each
+        //    with its line to the couple on the inner edge, so neither crosses the other
+        var SIDE = (D.meta && D.meta.sides) || { left: 'ronald-andrews', right: 'patricia-andrews' };
+        var sideOf = {}, lineOf = {};
+        (function () {
+            var idOf = function (r) { return typeof r === 'string' ? r : r && r.id; };
+            var nb = function (p) { return [].concat((p.parents || []).map(idOf), (p.children || []).map(idOf), (p.spouses || []).map(idOf)).filter(function (id) { return byId[id]; }); };
+            var shared = {};
+            var q = [];
+            (byId[SIDE.left] ? byId[SIDE.left].children || [] : []).forEach(function (c) { q.push(idOf(c)); });
+            while (q.length) { var c = q.shift(); if (shared[c] || !byId[c]) continue; shared[c] = true; (byId[c].children || []).forEach(function (x) { q.push(idOf(x)); }); }
+            [['left', SIDE.left, SIDE.right], ['right', SIDE.right, SIDE.left]].forEach(function (t) {
+                if (!byId[t[1]]) return;
+                var seen = {}, queue = [t[1]];
+                seen[t[2]] = true; Object.keys(shared).forEach(function (k) { seen[k] = true; });
+                while (queue.length) {
+                    var id = queue.shift(); if (seen[id] && id !== t[1]) continue; seen[id] = true;
+                    if (!sideOf[id]) sideOf[id] = t[0];
+                    nb(byId[id]).forEach(function (n) { if (!seen[n]) queue.push(n); });
+                }
+                // the direct line up from the grandparent
+                var up = [t[1]];
+                while (up.length) { var a = up.shift(); if (lineOf[a]) continue; lineOf[a] = t[0]; (byId[a].parents || []).forEach(function (r) { up.push(idOf(r)); }); }
+            });
+            Object.keys(shared).forEach(function (k) { sideOf[k] = 'right'; });
+            sideOf[SIDE.left] = 'left';
+        })();
+        var sideRank = function (id) { return sideOf[id] === 'left' ? 0 : sideOf[id] === 'right' ? 1 : 2; };
+        L.sideOf = sideOf;
 
         // 1. anchors and blocks
         function hasParents(p) { return p.parents && p.parents.length > 0; }
@@ -159,7 +218,7 @@
                 .filter(function (s) { return !blockOf[s.id] && (!hasParents(s) || s.layoutJoin === p.id); });
             var members;
             if (sp.length >= 2) members = [sp[0], p].concat(sp.slice(1));
-            else if (sp.length === 1 && sp[0].layoutJoin === p.id) members = [p, sp[0]]; // the joining partner sits on the side of their own family
+            else if (sp.length === 1 && sp[0].layoutJoin === p.id) members = (sideOf[sp[0].id] === 'left') ? [sp[0], p] : [p, sp[0]]; // the joining partner sits on the side of their own family
             else if (sp.length === 1) members = (p.sex === 'F' && sp[0].sex === 'M') ? [sp[0], p] : [p, sp[0]];
             else members = [p];
             var b = { anchor: p, members: members, unions: [], subW: 0, x: 0, gen: p.generation, children: [] };
@@ -197,9 +256,32 @@
                 // a child drawn in their spouse's family gets a connector, but is not laid out under this union
                 if (c.layoutJoin) (u || solo).joins.push(c); else (u || solo).children.push(c);
             });
-            // children of a married-in partner only (none expected)
-            if (solo.children.length || solo.joins.length) b.unions.push(solo);
+            // the child on the direct line sits on the inner edge: last on the left side, first on the right
+            b.unions.concat([solo]).forEach(function (u) {
+                u.children.sort(function (x, y) {
+                    var k = function (c) { return lineOf[c.id] === 'left' ? 1 : lineOf[c.id] === 'right' ? -1 : 0; };
+                    return k(x) - k(y);
+                });
+            });
+            b.solo = solo;
         });
+        // a child whose parents both head their own blocks (two families that each go back further)
+        // is laid out once, under the father; the mother gets a connector to them instead
+        (function () {
+            var owners = {};
+            blocks.forEach(function (b) { b.unions.concat([b.solo]).forEach(function (u) { u.children.forEach(function (c) { (owners[c.id] = owners[c.id] || []).push(u); }); }); });
+            Object.keys(owners).forEach(function (cid) {
+                var us = owners[cid]; if (us.length < 2) return;
+                var keep = us.filter(function (u) { return u.partners.some(function (id) { return byId[id].sex === 'M'; }); })[0] || us[0];
+                us.forEach(function (u) {
+                    if (u === keep) return;
+                    u.children = u.children.filter(function (c) { return c.id !== cid; });
+                    u.joins.push(byId[cid]);
+                });
+            });
+        })();
+        // children of a married-in partner only (none expected)
+        blocks.forEach(function (b) { var solo = b.solo; if (b.unions.indexOf(solo) < 0 && (solo.children.length || solo.joins.length)) b.unions.push(solo); });
 
         // 3. tree of blocks
         blocks.forEach(function (b) {
@@ -268,20 +350,31 @@
         var extra = {};
         var rootOrder = (D.meta && D.meta.rootOrder) || [];
         var rIdx = function (b) { var i = rootOrder.indexOf(b.anchor.id); return i < 0 ? 999 : i; };
+        var rootOf = function (b) { while (b.parentUnion) b = b.parentUnion.block; return b; };
+        var inner = {};
+        if (byId[SIDE.left] && byId[SIDE.left].parents && byId[SIDE.left].parents.length) { var pb = blockOf[typeof byId[SIDE.left].parents[0] === 'string' ? byId[SIDE.left].parents[0] : byId[SIDE.left].parents[0].id]; if (pb) inner[rootOf(pb).anchor.id] = 1; }
+        if (blockOf[SIDE.right]) inner[rootOf(blockOf[SIDE.right]).anchor.id] = -1;
+        var rootSide = function (b) { var r = 2; b.members.forEach(function (m) { r = Math.min(r, sideRank(m.id)); }); return r; };
         var roots = blocks.filter(function (b) { return !b.parentUnion && !b.anchor.kin; })
             .map(function (b, i) { return { b: b, i: i }; })
-            .sort(function (x, y) { return (rIdx(x.b) - rIdx(y.b)) || (x.i - y.i); })
+            .sort(function (x, y) { return (rootSide(x.b) - rootSide(y.b)) || ((inner[x.b.anchor.id] || 0) - (inner[y.b.anchor.id] || 0)) || (rIdx(x.b) - rIdx(y.b)) || (x.i - y.i); })
             .map(function (x) { return x.b; });
         var kin = blocks.filter(function (b) { return b.anchor.kin; });
         var cursor = 0;
-        roots.forEach(function (r) { measure(r); place(r, cursor); cursor += r.subW + ROOT_GAP; });
+        var SIDE_GAP = 320; // a wider gap where Ron's family ends and Pat's begins
+        roots.forEach(function (r, i) {
+            if (i && rootSide(r) !== rootSide(roots[i - 1])) { cursor += SIDE_GAP - ROOT_GAP; if (rootSide(r) === 1) L.splitX = cursor - SIDE_GAP / 2; }
+            measure(r); place(r, cursor); cursor += r.subW + ROOT_GAP;
+        });
         kin.forEach(measure);
 
         // positions
         var pos = {}, genTop = {}, maxGen = 0;
         D.people.forEach(function (p) { maxGen = Math.max(maxGen, p.generation); });
         genTop[0] = 0;
-        for (var g = 0; g < maxGen; g++) genTop[g + 1] = genTop[g] + CH + (extra[g] || 0) * (CH + STACK_V) + ROW_GAP;
+        // generations with nobody on the tree (the Orkney line switched off, say) take no room
+        var present = {}; D.people.forEach(function (p) { present[p.generation] = true; });
+        for (var g = 0; g < maxGen; g++) genTop[g + 1] = genTop[g] + (present[g] ? CH + (extra[g] || 0) * (CH + STACK_V) + ROW_GAP : 0);
         function rowY(g) { return genTop[g]; }
         blocks.forEach(function (b) {
             if (b.anchor.kin) return;
@@ -304,6 +397,7 @@
         Object.keys(pos).forEach(function (k) { pos[k].x += dx; pos[k].y += dy; });
         blocks.forEach(function (b) { b.x += dx; b.unions.forEach(function (u) { if (u.spineX != null) u.spineX += dx; }); });
         if (L.kinBox) { L.kinBox.x += dx; L.kinBox.y += dy; }
+        if (L.splitX != null) L.splitX += dx;
         L.width = maxX + dx + PAD;
         L.height = maxY + dy + PAD * 0.8;
         L.pos = pos;
@@ -333,12 +427,22 @@
     }
 
     // =================================================================== RENDER
+    function SIDE_RIGHT() { return ((D.meta && D.meta.sides) || {}).right || 'patricia-andrews'; }
     function renderBands() {
         var html = '';
         Object.keys(L.genY).forEach(function (g) {
             var y = L.genY[g] - ROW_GAP / 2 + 6;
             html += '<div class="tc-band" style="top:' + y + 'px;height:' + (L.genH[g] + ROW_GAP - 12) + 'px;width:' + L.width + 'px"></div>';
         });
+        if (L.splitX != null) {
+            // the divide between the two families runs down to the row above the couple
+            var coupleGen = (D.byId[SIDE_RIGHT()] || {}).generation;
+            var bottom = coupleGen != null && L.genY[coupleGen] != null ? L.genY[coupleGen] - ROW_GAP / 2 : L.height;
+            var top = PAD - ROW_GAP / 2;
+            html += '<div class="tc-split" style="left:' + L.splitX + 'px;top:' + top + 'px;height:' + (bottom - top) + 'px"></div>' +
+                '<div class="tc-side tc-side--l" style="left:' + (L.splitX - 24) + 'px;top:' + (top - 16) + 'px">Grandpa Ron\u2019s family <span aria-hidden="true">&larr;</span></div>' +
+                '<div class="tc-side tc-side--r" style="left:' + (L.splitX + 24) + 'px;top:' + (top - 16) + 'px"><span aria-hidden="true">&rarr;</span> Grandma Pat\u2019s family</div>';
+        }
         el.bands.innerHTML = html;
         el.bands.style.width = L.width + 'px';
     }
@@ -475,13 +579,13 @@
                 class: 'ln ln--dashed ln--unconfirmed'
             }, gBack);
             var title = svg('title', {}, path);
-            title.textContent = 'Unconfirmed. ' + (p.disambiguator || p.displayName);
+            title.textContent = p.suspectedRelative ? 'Suspected relative of ' + D.byId[p.uncertainBeside].displayName + '. No proven link.' : 'Unconfirmed. ' + (p.disambiguator || p.displayName);
             var label = svg('text', {
                 x: (x1 + x2) / 2,
                 y: y - 7,
                 class: 'unconfirmed-label'
             }, gBack);
-            label.textContent = 'unconfirmed';
+            label.textContent = p.suspectedRelative ? 'suspected relative' : 'unconfirmed';
             pathEls.push({ el: path, uncertain: p.id });
         });
     }
@@ -581,6 +685,7 @@
         el.world.style.transform = 'translate(' + S.tx + 'px,' + S.ty + 'px) scale(' + S.s + ')';
         el.zoomPct.textContent = Math.round(S.s * 100) + '%';
         el.world.style.setProperty('--dz', clamp(0.8 / S.s, 1, 2.4).toFixed(3));
+        el.world.style.setProperty('--ds', clamp(0.9 / S.s, 1, 5).toFixed(3));
         if (R.shown) { var s0 = dotAt(R.shown.a), s1 = dotAt(R.shown.b); R.sx = s0.x; R.sy = s0.y; R.ex = s1.x; R.ey = s1.y; drawRel(); positionRelPop(); }
         syncRail();
         drawMinimap();

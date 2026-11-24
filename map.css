@@ -185,6 +185,7 @@ body.map-body { overflow: hidden; height: 100vh; height: 100dvh; background: var
 .fm-scopes { display: flex; flex-wrap: wrap; gap: .3rem; margin: .45rem 0 .2rem; }
 .chip { display: inline-flex; align-items: center; gap: .35rem; font-family: var(--font-accent); font-size: .86rem; color: var(--fm-ink-2); background: var(--fm-paper); border: 1px solid var(--fm-rule); border-radius: 999px; padding: .12rem .55rem .12rem .15rem; cursor: pointer; line-height: 1.25; }
 .chip:hover { border-color: var(--fm-gold); color: var(--fm-accent-deep); }
+.chip-rel { font-style: italic; color: var(--fm-muted); }
 .chip--scope { padding: .2rem .6rem; }
 .chip--scope[aria-pressed="true"] { background: var(--fm-ink); color: #fff; border-color: var(--fm-ink); }
 .fm-types { list-style: none; margin: 0; padding: 0; display: grid; gap: 2px; }
@@ -406,13 +407,14 @@ sup .fn, .fn { color: var(--fm-accent); font-family: var(--font-display); font-s
 .fm-now { padding: .8rem 1rem .4rem; border-bottom: 1px solid var(--fm-rule); max-height: 62%; overflow: auto; background: var(--fm-bg); }
 .fm-h--list { padding: 0 1rem; }
 .fm-elist { list-style: none; margin: 0; padding: 0 0 2rem; overflow: auto; flex: 1; }
-.el-b { width: 100%; display: grid; grid-template-columns: 22px 92px 1fr; grid-template-rows: auto auto; column-gap: .5rem; text-align: left; background: none; border: 0; border-bottom: 1px dotted var(--fm-rule); padding: .4rem 1rem; cursor: pointer; color: var(--fm-ink); font-family: var(--font-accent); }
+.el-b { width: 100%; display: grid; grid-template-columns: 22px 92px 1fr; grid-template-rows: auto auto auto; column-gap: .5rem; text-align: left; background: none; border: 0; border-bottom: 1px dotted var(--fm-rule); padding: .4rem 1rem; cursor: pointer; color: var(--fm-ink); font-family: var(--font-accent); }
 .el-b:hover { background: #fbefdc; }
-.el-gl { grid-row: span 2; color: var(--fm-accent); }
+.el-gl { grid-row: span 3; color: var(--fm-accent); }
 .el-gl .gl { width: 18px; height: 18px; }
-.el-d { font-family: var(--font-display); font-size: .62rem; letter-spacing: .06em; color: var(--fm-muted); grid-row: span 2; align-self: center; line-height: 1.3; }
+.el-d { font-family: var(--font-display); font-size: .62rem; letter-spacing: .06em; color: var(--fm-muted); grid-row: span 3; align-self: center; line-height: 1.3; }
 .el-t { font-size: .95rem; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.el-p { font-size: .82rem; font-style: italic; color: var(--fm-muted); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.el-r { grid-column: 3; font-size: .82rem; color: var(--fm-accent-deep); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.el-p { grid-column: 3; font-size: .82rem; font-style: italic; color: var(--fm-muted); line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .el.is-past .el-b { opacity: .55; }
 .el.is-current .el-b { background: #fbe7d0; box-shadow: inset 3px 0 0 var(--fm-accent); opacity: 1; }
 .el-h { font-family: var(--font-display); font-size: .66rem; letter-spacing: .16em; text-transform: uppercase; color: var(--fm-muted); padding: .8rem 1rem .3rem; }

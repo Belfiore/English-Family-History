@@ -520,6 +520,16 @@ function expectScope(id, scope) {
     check(tl.voyages > 0, `voyages play as their own beats (${tl.voyages})`);
     check(tl.undated > 0 && tl.listUndated === tl.undated && !tl.inBeats && tl.dateUnknown, `undated events are listed under "Date unknown" and not played (${tl.undated})`, JSON.stringify(tl).slice(0, 200));
     check(!tl.living, 'no timeline beat carries a living person');
+    // close family is named by how they are related to Pat or Ron, up to three steps away
+    const kin = await page.evaluate(() => {
+        const D = FM.DATA, k = id => { const r = FM.data.kinOf(id, D.people); return r ? r.label : null; };
+        const want = { 'reg-fitzmaurice': "Pat's father", 'mrs-r-fitzmaurice': "Pat's mother", 'edward-dixon-fitzmaurice': "Pat's grandfather", 'mr-hg-andrews': "Ron's father",
+            'sidney-andrews': "Ron's brother", 'herbert-andrews-sr': "Ron's grandfather", 'eileen-sybil-fitzmaurice': "Pat's aunt", 'patricia-andrews': null, 'ronald-andrews': null, 'cecil-8th': null };
+        const bad = Object.keys(want).filter(id => D.people[id] && k(id) !== want[id]).map(id => id + ': ' + k(id));
+        const row = [].find.call(document.querySelectorAll('#tlList .el'), li => /Henry George Andrews/.test(li.querySelector('.el-t').textContent));
+        return { bad, row: row && row.querySelector('.el-r') ? row.querySelector('.el-r').textContent : '' };
+    });
+    check(!kin.bad.length && /Ron's (father|parents)/.test(kin.row), "the timeline names close family by their link to Pat or Ron (Reg, Pat's father; Henry George, Ron's father)", JSON.stringify(kin));
     const start = await page.evaluate(() => ({ i: FM.timeline.index, playing: FM.timelineDebug.player().playing, card: document.getElementById('tlNow').innerText }));
     check(start.i === 0 && !start.playing, 'Timeline opens paused at the first event', JSON.stringify(start).slice(0, 160));
     // an unplaced event gets a beat that says so

@@ -346,10 +346,8 @@
         if (player) player.pause();
         buildBeats();
         renderTrack(); renderList();
-        $('tlJump').hidden = !(FM.state.orkney && T.beats.some(function (b) { return b.orkney; }) && T.beats.some(function (b) { return !b.orkney; }));
         var startAt = 0;
         if (curEvent) T.beats.forEach(function (b, i) { if (b.events.some(function (e) { return e.id === curEvent; })) startAt = i; });
-        else if (!FM.state.orkney) startAt = 0;
         player.setSteps(stepsFromBeats(T.beats), startAt);
         if (wasPlaying) player.play();
     }
@@ -385,7 +383,6 @@
         });
         $('tlCamera').value = T.camera;
         $('tlCamera').addEventListener('change', function () { T.camera = this.value; try { localStorage.setItem('fm-camera', T.camera); } catch (e) { /* blocked */ } FM.camera.following = true; FM.camera.resetOverview(); $('followAgain').hidden = true; var s = player.current(); if (s) frameBeat(s.beat); FM.writeURL(); });
-        $('tlJump').addEventListener('click', function () { var i = T.beats.findIndex(function (b) { return !b.orkney; }); if (i >= 0) player.goTo(i); });
         $('followAgain').addEventListener('click', function () { FM.camera.following = true; this.hidden = true; var s = player.current(); if (s) frameBeat(s.beat); });
         $('rail').addEventListener('click', function (e) {
             var tk = e.target.closest('.tk'); if (!tk) return;

@@ -15,8 +15,8 @@
     var reducedMQ = window.matchMedia ? window.matchMedia('(prefers-reduced-motion: reduce)') : { matches: false };
 
     var S = {
-        mode: 'explore', style: 'atlas', place: null, person: null, scope: 'self', from: null, to: null,
-        hidden: {}, orkney: false, streets: false, compare: false, beyond: false, event: null
+        mode: 'explore', style: 'today', place: null, person: null, scope: 'self', from: null, to: null,
+        hidden: {}, orkney: false, fam: null, gen: 3, sib: false, streets: false, compare: false, beyond: false, event: null
     };
     var DATA = null, map = null, cmap = null, camera = null;
     var markers = {}, markerOrder = '', peekTimer = null, peekFor = null, peekHideTimer = null, lastTapKey = null;
@@ -82,6 +82,18 @@
         var a = Math.min.apply(null, ys), b = Math.max.apply(null, ys);
         return a === b ? String(a) : a + ' to ' + b;
     }
+    function headline(e) { return FM.data.headline(e, DATA.people, DATA.places); }
+    // what a place is, in a few words: its main event, and how many more
+    function placeHeadline(evs) {
+        var seen = [], order = evs.slice().sort(function (a, b) { return (TYPE_PRIORITY.indexOf(a.type) - TYPE_PRIORITY.indexOf(b.type)) || FM.data.byDate(a, b); });
+        order.forEach(function (e) { var h = headline(e); if (seen.indexOf(h) < 0) seen.push(h); });
+        return { text: seen[0] || '', more: Math.max(0, seen.length - 1), all: seen };
+    }
+    function approxLine(pl) {
+        if (pl.drawAs === 'area') return 'Somewhere in ' + (/^(the|a)\s/i.test(pl.name) ? '' : pl.kind === 'registration district' || pl.kind === 'district' || pl.kind === 'parish' ? 'the ' : '') + pl.name + '. The exact place is not known, so the pin marks the middle of the area.';
+        if (pl.drawAs === 'halo') return 'In this general area, within ' + metresText(pl.uncertaintyMetres) + ' of the pin. The exact house is not known.';
+        return '';
+    }
     function metresText(m) { return m >= 1500 ? 'about ' + Math.round(m / 1000) + ' km' : 'about ' + Math.round(m / 10) * 10 + ' metres'; }
 
     // ================================================================== filters and scope
@@ -98,9 +110,36 @@
         Object.keys(out).forEach(function (id) { if (!DATA.visible(id)) delete out[id]; });
         return out;
     }
+    // ---- family: Ron's or Pat's (or both), back a chosen number of generations
+    var FAMILIES = { ron: { label: "Ron's family", roots: ['ronald-andrews'] }, pat: { label: "Pat's family", roots: ['patricia-andrews'] }, both: { label: "Ron's and Pat's families", roots: ['ronald-andrews', 'patricia-andrews'] } };
+    var GENS = [[1, 'Parents'], [2, 'Grandparents'], [3, 'Great-grandparents'], [4, '2x great-grandparents'], [5, '3x great-grandparents'], [0, 'Every generation']];
+    var famCache = { key: null, set: null };
+    function refIds(list) { return (list || []).map(function (r) { return typeof r === 'string' ? r : r && r.id; }).filter(function (id) { return id && DATA.people[id]; }); }
+    function familySet() {
+        if (!S.fam || !FAMILIES[S.fam]) return null;
+        var key = S.fam + '|' + S.gen + '|' + (S.sib ? 1 : 0);
+        if (famCache.key === key) return famCache.set;
+        var out = {}, front = FAMILIES[S.fam].roots.slice(), depth = 0;
+        front.forEach(function (id) { out[id] = 0; });
+        while (front.length && (!S.gen || depth < S.gen)) {
+            depth++;
+            var next = [];
+            front.forEach(function (id) { refIds(DATA.people[id].parents).forEach(function (pid) { if (!(pid in out)) { out[pid] = depth; next.push(pid); } }); });
+            front = next;
+        }
+        if (S.sib) Object.keys(out).forEach(function (id) {
+            refIds(DATA.people[id].parents).forEach(function (pid) { refIds(DATA.people[pid].children).forEach(function (c) { if (!(c in out)) out[c] = out[id]; }); });
+        });
+        var set = {}; Object.keys(out).forEach(function (id) { if (DATA.visible(id)) set[id] = true; });
+        famCache = { key: key, set: set };
+        return set;
+    }
+    FM.familySet = familySet;
     function eventPasses(e, opts) {
         opts = opts || {};
         if (S.hidden[e.group]) return false;
+        var fam = familySet();
+        if (fam && !e.personIds.some(function (id) { return fam[id]; })) return false;
         if (e.orkney && !S.orkney) return false;
         if (!opts.ignoreYears && (S.from != null || S.to != null)) {
             if (e.dateStart) {
@@ -148,7 +187,7 @@
                  attribution: '<a href="https://maps.nls.uk/projects/subscription-api/" target="_blank" rel="noopener">National Library of Scotland</a> historic maps via <a href="https://www.maptiler.com/copyright/" target="_blank" rel="noopener">MapTiler</a>' };
     }
     function styleFor(name, ctx) {
-        if (name === 'today') return Promise.resolve('https://tiles.openfreemap.org/styles/liberty');
+        if (name === 'today') return styleState.failed ? loadStyleJson('fallback') : Promise.resolve('https://tiles.openfreemap.org/styles/liberty');
         if (name === 'fallback') return loadStyleJson('fallback');
         return loadStyleJson(styleState.failed ? 'fallback' : 'atlas').then(function (s) {
             if (name === 'then' && CFG.MAPTILER_KEY) {
@@ -172,8 +211,10 @@
     function setStyle(name, opts) {
         opts = opts || {};
         if ((name === 'then') && !CFG.MAPTILER_KEY) {
-            note('The old maps need a free MapTiler key. Add it to config.js; the file says how.');
-            name = 'atlas';
+            // without a key the map stays as it is, rather than jumping to another style
+            note('The old maps are not switched on yet: they need a free MapTiler key in config.js.');
+            renderStyleSwitch();
+            return Promise.resolve();
         }
         S.style = name;
         renderStyleSwitch();
@@ -212,7 +253,7 @@
     };
     function renderStyleSwitch() {
         var box = $('styleSwitch');
-        var opts = [['atlas', 'Atlas'], ['today', 'Today'], ['then', 'Then']];
+        var opts = [['today', 'Today'], ['atlas', 'Atlas'], ['then', 'Then']];
         box.innerHTML = opts.map(function (o) {
             return '<button type="button" role="radio" aria-checked="' + (S.style === o[0]) + '" data-style="' + o[0] + '"' +
                 (o[0] === 'then' && !CFG.MAPTILER_KEY ? ' title="Needs a MapTiler key (see config.js)"' : '') + '>' + o[1] + '</button>';
@@ -240,12 +281,12 @@
         function src(id) { if (!map.getSource(id)) map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } }); }
         ['fm-areas', 'fm-halos', 'fm-path', 'fm-arcs', 'fm-trails', 'fm-hl'].forEach(src);
         function layer(def) { if (!map.getLayer(def.id)) map.addLayer(def, before); }
-        layer({ id: 'fm-area-fill', type: 'fill', source: 'fm-areas', paint: { 'fill-color': ['case', ['get', 'orkney'], '#8b0000', '#704214'], 'fill-opacity': ['case', ['get', 'faded'], 0.025, ['get', 'hl'], 0.12, 0.06] } });
+        layer({ id: 'fm-area-fill', type: 'fill', source: 'fm-areas', paint: { 'fill-color': ['case', ['get', 'orkney'], '#8b0000', '#704214'], 'fill-opacity': 0.08 } });
         layer({ id: 'fm-area-line', type: 'line', source: 'fm-areas', paint: { 'line-color': ['case', ['get', 'orkney'], '#8b0000', '#704214'], 'line-width': ['case', ['get', 'hl'], 2, 1.1], 'line-dasharray': [3, 2.4], 'line-opacity': ['case', ['get', 'faded'], 0.25, 0.65] } });
         layer({ id: 'fm-halo', type: 'circle', source: 'fm-halos', paint: {
             'circle-radius': ['interpolate', ['exponential', 2], ['zoom'], 0, ['get', 'k'], 22, ['*', ['get', 'k'], 4194304]],
             'circle-color': ['case', ['get', 'orkney'], '#8b0000', '#b8860b'],
-            'circle-opacity': ['case', ['get', 'faded'], 0.04, ['get', 'hl'], 0.22, 0.11], 'circle-blur': 0.55,
+            'circle-opacity': 0.14, 'circle-blur': 0.55,
             'circle-stroke-width': ['case', ['get', 'hl'], 1.2, 0], 'circle-stroke-color': '#8b0000', 'circle-stroke-opacity': 0.5 } });
         layer({ id: 'fm-trails', type: 'line', source: 'fm-trails', layout: { 'line-cap': 'round' }, paint: { 'line-color': '#8b0000', 'line-width': 1.6, 'line-opacity': ['get', 'o'], 'line-dasharray': [1, 2.2] } });
         layer({ id: 'fm-path-casing', type: 'line', source: 'fm-path', layout: { 'line-cap': 'round', 'line-join': 'round' }, paint: { 'line-color': '#fffdf9', 'line-width': 5, 'line-opacity': 0.8 } });
@@ -254,6 +295,7 @@
         refreshOverlays();
         if (FM.onOverlays) FM.onOverlays();
     }
+    var areaFocus = null; // the place whose area is shown while its peek is open
     var lastData = FM.lastData = {};
     function setData(id, fc) { lastData[id] = fc; var s = map && map.getSource(id); if (s) s.setData(fc); }
     FM.setData = setData;
@@ -286,17 +328,26 @@
     }
     function refreshOverlays() {
         if (!map || !map.getSource('fm-areas')) return;
-        var items = currentItems(), areas = [], halos = [];
-        items.forEach(function (it) {
+        var items = currentItems();
+        lastItems = items;
+        refreshAreas();
+        updateMarkers(items);
+    }
+    // the soft area round an approximate place is drawn only while that place is in focus
+    // (its peek is open, its panel is open, or it is the timeline's current event)
+    function refreshAreas() {
+        if (!map || !map.getSource('fm-areas')) return;
+        var areas = [], halos = [];
+        lastItems.forEach(function (it) {
             var pl = it.place;
-            var hl = (S.place === pl.id) || (it.tl && it.tl.current);
-            var faded = it.faded || (it.tl && it.tl.past);
-            if (pl.drawAs === 'area') areas.push({ type: 'Feature', properties: { id: pl.id, faded: !!faded, hl: !!hl, orkney: it.orkney }, geometry: { type: 'Polygon', coordinates: [circlePoly(pl.lng, pl.lat, pl.uncertaintyMetres || 2000)] } });
-            else if (pl.drawAs === 'halo') halos.push({ type: 'Feature', properties: { id: pl.id, k: (pl.uncertaintyMetres || 500) / (156543.03392 * Math.cos(pl.lat * Math.PI / 180)), faded: !!faded, hl: !!hl, orkney: it.orkney }, geometry: { type: 'Point', coordinates: placeLL(pl) } });
+            if (pl.drawAs === 'pin') return;
+            var hl = (S.place === pl.id) || (it.tl && it.tl.current) || pl.id === areaFocus;
+            if (!hl) return;
+            if (pl.drawAs === 'area') areas.push({ type: 'Feature', properties: { id: pl.id, faded: false, hl: true, orkney: it.orkney }, geometry: { type: 'Polygon', coordinates: [circlePoly(pl.lng, pl.lat, pl.uncertaintyMetres || 2000)] } });
+            else halos.push({ type: 'Feature', properties: { id: pl.id, k: (pl.uncertaintyMetres || 500) / (156543.03392 * Math.cos(pl.lat * Math.PI / 180)), faded: false, hl: true, orkney: it.orkney }, geometry: { type: 'Point', coordinates: placeLL(pl) } });
         });
         setData('fm-areas', { type: 'FeatureCollection', features: areas });
         setData('fm-halos', { type: 'FeatureCollection', features: halos });
-        updateMarkers(items);
     }
     FM.refresh = function () { refreshOverlays(); renderKey(); renderChips(); };
 
@@ -377,21 +428,20 @@
             return {
                 anchor: 'center', cls: 'mk--cluster' + (allFaded ? ' is-faded' : '') + (anyOrk ? ' is-orkney' : '') + (tlCur ? ' is-current' : '') + (tlPast ? ' is-past' : '') + (tlFut ? ' is-future' : ''),
                 inner: '<span class="mk-c"><span class="mk-n">' + members.length + '</span><span class="mk-sub">places</span></span>',
-                label: members.length + ' places close together, ' + n + ' events: ' + members.map(function (m) { return m.place.name; }).slice(0, 6).join('; ') + (members.length > 6 ? '; and more' : '') + '. Press Enter to zoom in.'
+                label: members.length + ' places close together, ' + n + ' events: ' + members.map(function (m) { return placeHeadline(m.events).text + ', ' + m.place.name; }).slice(0, 6).join('; ') + (members.length > 6 ? '; and more' : '') + '. Press Enter to zoom in.'
             };
         }
         var m = members[0], pl = m.place;
-        var kind = pl.drawAs === 'area' ? 'area' : pl.drawAs === 'pin' ? 'pin' : 'halo';
-        var cls = 'mk--' + kind + ' mk-conf--' + (m.conf === 'family tradition' ? 'family' : m.conf) + (m.faded ? ' is-faded' : '') + (m.orkney ? ' is-orkney' : '') + (S.place === pl.id ? ' is-selected' : '') +
+        var approx = pl.drawAs !== 'pin';
+        var cls = 'mk--pin' + (approx ? ' mk--approx' : '') + ' mk-conf--' + (m.conf === 'family tradition' ? 'family' : m.conf) + (m.faded ? ' is-faded' : '') + (m.orkney ? ' is-orkney' : '') + (S.place === pl.id ? ' is-selected' : '') +
                   (m.tl ? (m.tl.current ? ' is-current' : '') + (m.tl.past ? ' is-past' : '') + (m.tl.future ? ' is-future' : '') : '');
         var count = m.events.length > 1 ? '<span class="mk-count" aria-hidden="true">' + m.events.length + '</span>' : '';
-        var shape = kind === 'pin' ? '<span class="mk-pin"><svg class="mk-pin-bg" viewBox="0 0 30 40" aria-hidden="true"><path d="M15 39C15 39 3 24.5 3 15a12 12 0 0 1 24 0c0 9.5-12 24-12 24z"/></svg>' + glyph(m.head, 'mk-gl') + '</span>'
-                  : kind === 'area' ? '<span class="mk-area">' + glyph('area', 'mk-gl') + '<span class="mk-area-name">' + esc(shortName(pl)) + '</span></span>'
-                  : '<span class="mk-med">' + glyph(m.head, 'mk-gl') + '</span>';
-        var label = pl.name + ': ' + m.events.length + (m.events.length === 1 ? ' event' : ' events') + ', ' + spanOf(m.events) +
-                    (kind === 'area' ? '. An area, not a precise place' : kind === 'halo' ? '. Known to within ' + metresText(pl.uncertaintyMetres) : '') +
-                    (m.orkney ? '. No proven link to this family' : '') + '.';
-        return { anchor: kind === 'pin' ? 'bottom' : 'center', cls: cls, inner: shape + count, label: label };
+        var hd = placeHeadline(m.events);
+        var shape = '<span class="mk-pin"><svg class="mk-pin-bg" viewBox="0 0 30 40" aria-hidden="true"><path d="M15 39C15 39 3 24.5 3 15a12 12 0 0 1 24 0c0 9.5-12 24-12 24z"/></svg>' + glyph(m.head, 'mk-gl') + '</span>';
+        var tag = '<span class="mk-label" aria-hidden="true">' + esc(hd.text) + (hd.more ? ' <i>+' + hd.more + '</i>' : '') + '</span>';
+        var label = hd.text + (hd.more ? ' and ' + hd.more + ' more' : '') + ', ' + pl.name + ', ' + spanOf(m.events) +
+                    (approx ? '. Somewhere in this area, not an exact address' : '') + (m.orkney ? '. No proven link to this family' : '') + '.';
+        return { anchor: 'bottom', cls: cls, inner: shape + count + tag, label: label };
     }
     // the area chip's label: the name before its first comma, never cut mid-word
     function shortName(pl) {
@@ -451,30 +501,35 @@
             hidePeek();
         }, 220);
     }
-    function hidePeek() { var pk = $('peek'); pk.hidden = true; peekFor = null; }
+    function hidePeek() { var pk = $('peek'); pk.hidden = true; peekFor = null; setAreaFocus(null); }
+    function setAreaFocus(pid) { if (areaFocus === pid) return; areaFocus = pid; refreshAreas(); }
     function showPeek(mk, opts) {
         opts = opts || {};
         var pk = $('peek');
         peekFor = mk.key;
         if (mk.members.length > 1) {
             pk.innerHTML = '<p class="pk-kicker">' + mk.members.length + ' places here</p><ul class="pk-choose">' + mk.members.map(function (m) {
-                return '<li><button type="button" data-open-place="' + esc(m.place.id) + '">' + glyph(m.head) + '<span>' + esc(m.place.name) + '</span><small>' + esc(spanOf(m.events)) + '</small></button></li>';
-            }).join('') + '</ul>' + (opts.chooser ? '' : '<p class="pk-hint">Select to zoom in.</p>');
+                var hd = placeHeadline(m.events);
+                return '<li><button type="button" data-open-place="' + esc(m.place.id) + '">' + glyph(m.head) + '<span>' + esc(hd.text) + (hd.more ? ' <em>and ' + hd.more + ' more</em>' : '') +
+                    '</span><small>' + esc(m.place.name) + ', ' + esc(spanOf(m.events)) + (m.place.drawAs !== 'pin' ? ', somewhere in the area' : '') + '</small></button></li>';
+            }).join('') + '</ul>' + (opts.chooser ? '' : '<p class="pk-hint">Select one to open it, or the cluster to zoom in.</p>');
+            setAreaFocus(null);
         } else {
             var m = mk.members[0], pl = m.place;
-            var people = []; m.events.forEach(function (e) { e.personIds.forEach(function (id) { if (people.indexOf(id) < 0) people.push(id); }); });
-            var line = pl.blurb || (m.events[0] && m.events[0].summary) || '';
-            var src = pl.blurb ? (pl.blurbSourceIds || []) : (m.events[0] ? m.events[0].sourceIds : []);
-            var srcName = src.length && DATA.sources[src[0]] ? DATA.sources[src[0]].title : '';
+            var hd = placeHeadline(m.events);
+            var rows = m.events.slice(0, 4).map(function (e) {
+                return '<li>' + glyph(e.type) + '<span>' + esc(headline(e)) + '</span><small>' + esc(dateLabel(e)) + '</small></li>';
+            }).join('') + (m.events.length > 4 ? '<li class="pk-ev-more">and ' + (m.events.length - 4) + ' more</li>' : '');
+            var approx = approxLine(pl);
             pk.innerHTML =
-                '<p class="pk-kicker">' + esc(kindLabel(pl)) + '</p>' +
-                '<h3 class="pk-name">' + esc(pl.name) + '</h3>' +
-                '<p class="pk-span">' + esc(spanOf(m.events)) + '<span class="pk-gl">' + m.types.sort(function (a, b) { return TYPE_PRIORITY.indexOf(a) - TYPE_PRIORITY.indexOf(b); }).map(function (t) { return '<span title="' + esc(FM.data.TYPE_LABEL[t]) + '">' + glyph(t) + '</span>'; }).join('') + '</span></p>' +
-                (people.length ? '<div class="pk-people">' + people.slice(0, 4).map(function (id) { var p = DATA.people[id]; return '<span class="pk-p" title="' + esc(p.displayName) + '">' + avatar(p) + '</span>'; }).join('') + (people.length > 4 ? '<span class="pk-more">+' + (people.length - 4) + '</span>' : '') + '</div>' : '') +
-                (line ? '<p class="pk-line">' + esc(line) + (srcName ? ' <span class="pk-src" title="Source: ' + esc(srcName) + '">Source: ' + esc(srcName) + '</span>' : '') + '</p>' : '') +
-                '<p class="pk-badges"><span class="badge ' + confClass(m.conf) + '">' + esc(confLabel(m.conf)) + '</span>' + (m.orkney ? '<span class="badge badge--npl">No proven link</span>' : '') +
-                (pl.drawAs === 'area' ? '<span class="badge">An area</span>' : pl.drawAs === 'halo' ? '<span class="badge">Within ' + esc(metresText(pl.uncertaintyMetres)) + '</span>' : '') + '</p>' +
+                '<p class="pk-kicker">' + esc(kindLabel(pl)) + ' · ' + esc(spanOf(m.events)) + '</p>' +
+                '<h3 class="pk-name">' + esc(hd.text) + '</h3>' +
+                '<p class="pk-where">' + esc(pl.name) + '</p>' +
+                (approx ? '<p class="pk-approx">' + esc(approx) + '</p>' : '') +
+                (m.events.length > 1 ? '<ul class="pk-evs">' + rows + '</ul>' : '<p class="pk-line">' + esc(m.events[0].summary) + '</p>') +
+                '<p class="pk-badges"><span class="badge ' + confClass(m.conf) + '">' + esc(confLabel(m.conf)) + '</span>' + (m.orkney ? '<span class="badge badge--npl">No proven link</span>' : '') + '</p>' +
                 '<div class="pk-actions"><button type="button" class="fm-btn fm-btn--sm" data-open-place="' + esc(pl.id) + '">Open</button>' + (pl.streetView ? FM.sv.button(pl, { small: true }) : '') + '</div>';
+            setAreaFocus(pl.drawAs !== 'pin' ? pl.id : null);
         }
         pk.hidden = false;
         positionPeek(mk);
@@ -575,11 +630,19 @@
         var hero = '';
         var img = (pl.images || [])[0];
         var crop = null; evs.some(function (e) { if (e.recordCrops && e.recordCrops.length) { crop = { file: 'images/records/' + e.recordCrops[0], caption: e.summary }; return true; } return false; });
+        var then = '';
         if (img) hero = '<figure class="pn-hero"><a class="record-link" href="' + esc(img.file) + '"><img src="' + esc(img.thumb || img.file) + '" alt="' + esc(img.caption) + '" loading="lazy"></a><figcaption>' + esc(img.caption) + ' <span class="pn-credit">' + esc(img.credit) + ', ' + esc(img.year) + '</span></figcaption></figure>';
         else if (crop) hero = '<figure class="pn-hero pn-hero--record"><a class="record-link" href="' + esc(crop.file) + '"><img src="' + esc(crop.file) + '" alt="' + esc(crop.caption) + '" loading="lazy"></a><figcaption>The record: ' + esc(crop.caption) + '</figcaption></figure>';
         else hero = '<div class="pn-hero pn-hero--plate" aria-hidden="true">' + glyph(sm.head, 'pn-plate-gl') + '<span>' + esc(kindLabel(pl)) + '</span></div>';
-        var precision = pl.drawAs === 'area' ? (pl.kind === 'registration district' ? 'A registration district, drawn as an approximate area. Births, marriages and deaths here are "registered in the district", not at a known address.' : 'An area, drawn as an approximate circle.')
-                      : pl.drawAs === 'halo' ? 'Known to within ' + metresText(pl.uncertaintyMetres) + ', so it is drawn as a soft circle rather than a pin.'
+        if (pl.streetView && CFG.GOOGLE_EMBED_KEY) {
+            // today's street at the top; the old photo or record follows as "then"
+            if (img || crop) then = hero.replace('class="pn-hero', 'class="pn-then pn-hero').replace('<figcaption>', '<figcaption><span class="then-k">Then</span>');
+            hero = '<div class="pn-sv"><div class="pn-sv-frame"><iframe src="' + esc(FM.sv.embedUrl(pl)) + '" title="Street View of ' + esc(pl.name) + ' today" loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>' +
+                '<button type="button" class="pn-sv-open" data-sv="' + esc(pl.id) + '" aria-label="Open Street View of ' + esc(pl.name) + ' here in the map"><span class="pn-sv-hint">' + '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>Explore the street</span></button></div>' +
+                '<p class="pn-sv-cap"><span class="then-k">Today</span>' + esc(FM.sv.caption(pl)) + ' <a href="' + esc(FM.sv.mapsUrl(pl)) + '" target="_blank" rel="noopener">Open in a new tab</a></p></div>';
+        }
+        var precision = pl.drawAs === 'area' ? (pl.kind === 'registration district' ? 'A registration district. Births, marriages and deaths here are "registered in the district", not at a known address, so the dashed pin marks the middle of the district and the shaded circle shows roughly how far it reaches.' : 'An area rather than an address: the dashed pin marks its middle and the shaded circle shows roughly how far it reaches.')
+                      : pl.drawAs === 'halo' ? 'Known to within ' + metresText(pl.uncertaintyMetres) + ', so the pin is dashed and the shaded circle shows where the house could be.'
                       : 'A published address or named building.';
         var sv = pl.streetView ? FM.sv.button(pl) : '<p class="pn-nosv">' + esc(pl.streetViewReason || 'No Street View for this place.') + '</p>';
         var thenNow = '<div class="pn-tn" role="group" aria-label="Then and now"><button type="button" class="fm-btn fm-btn--sm" data-style-set="then"' + (CFG.MAPTILER_KEY && pl.inEngland !== false ? '' : ' disabled title="' + (CFG.MAPTILER_KEY ? 'The old maps cover Great Britain only' : 'Needs a MapTiler key') + '"') + '>Then</button><button type="button" class="fm-btn fm-btn--sm" data-style-set="today">Today</button>' +
@@ -590,7 +653,7 @@
         (pl.blurbSourceIds || []).forEach(function (s) { if (srcIds.indexOf(s) < 0) srcIds.push(s); });
         var num = {}; srcIds.forEach(function (s, i) { num[s] = i + 1; });
         var locIds = (pl.coordinateSourceIds || []).filter(function (s) { return DATA.sources[s]; });
-        return '<article class="pn" data-place="' + esc(pl.id) + '">' + hero +
+        return '<article class="pn" data-place="' + esc(pl.id) + '">' + hero + then +
             '<p class="pn-kicker">' + esc(kindLabel(pl)) + (sm.orkney ? ' · <span class="badge badge--npl">No proven link to this family</span>' : '') + '</p>' +
             '<h2 class="pn-title" id="panelTitle" tabindex="-1">' + esc(pl.name) + '</h2>' +
             ((pl.historicName && pl.historicName !== pl.name) || (pl.variants || []).length ? '<p class="pn-also">Also written ' + esc([pl.historicName].concat(pl.variants || []).filter(function (v) { return v && v !== pl.name; }).join('; ')) + '</p>' : '') +
@@ -645,7 +708,6 @@
         opts = opts || {};
         var p = DATA.people[id];
         if (!p || !DATA.visible(id)) return;
-        if (DATA.orkney[id] && !S.orkney) { S.orkney = true; $('orkneyToggle').checked = true; }
         S.person = id; S.place = null;
         if (opts.scope) S.scope = opts.scope;
         renderPersonBox();
@@ -734,7 +796,8 @@
     // ================================================================== key and filters
     function renderKey() {
         var counts = {};
-        DATA.events.forEach(function (e) { if ((e.orkney && !S.orkney)) return; counts[e.group] = (counts[e.group] || 0) + 1; });
+        var fam = familySet();
+        DATA.events.forEach(function (e) { if (fam && !e.personIds.some(function (id) { return fam[id]; })) return; counts[e.group] = (counts[e.group] || 0) + 1; });
         $('types').innerHTML = FM.data.KEY_GROUPS.filter(function (g) { return counts[g.id]; }).map(function (g) {
             var on = !S.hidden[g.id];
             return '<li><button type="button" class="kt" aria-pressed="' + on + '" data-group="' + esc(g.id) + '">' + glyph(g.types[0], 'kt-gl') +
@@ -743,7 +806,7 @@
         $('confKey').innerHTML = '<p class="fm-label">Confidence</p><ul class="kc">' +
             '<li><span class="kc-s kc-s--conf"></span>Confirmed</li><li><span class="kc-s kc-s--prob"></span>Probable</li><li><span class="kc-s kc-s--fam"></span>Family statement (family)</li>' +
             '<li><span class="kc-s kc-s--npl"></span>No proven link</li></ul>' +
-            '<p class="fm-label">Precision</p><ul class="kc kc--prec"><li><span class="kc-pin"></span>A known address or building</li><li><span class="kc-halo"></span>Known only roughly: a soft circle</li><li><span class="kc-area"></span>A district or area, never a pin</li></ul>';
+            '<p class="fm-label">Pins</p><ul class="kc kc--prec"><li><span class="kc-pin"></span>A known address or building</li><li><span class="kc-pin kc-pin--approx"></span>Somewhere in this area: the exact place is not known</li></ul>';
     }
     function initYears() {
         var ys = [];
@@ -765,6 +828,32 @@
         S.from = a === FM.yearBounds[0] ? null : a;
         S.to = b === FM.yearBounds[1] ? null : b;
         showYears(); refreshOverlays(); renderChips(); writeURL();
+    }
+    function renderFamily() {
+        $('famSel').value = S.fam || '';
+        $('genSel').innerHTML = GENS.map(function (g) { return '<option value="' + g[0] + '"' + (g[0] === S.gen ? ' selected' : '') + '>' + g[1] + '</option>'; }).join('');
+        $('sibChk').checked = !!S.sib;
+        $('famMore').hidden = !S.fam;
+        var set = familySet();
+        if (set) {
+            var nPeople = Object.keys(set).length, nPlaces = Object.keys(DATA.placeEvents).filter(function (pid) { return visiblePlaceEvents(pid).length; }).length;
+            $('famCount').textContent = nPeople + (nPeople === 1 ? ' person, ' : ' people, ') + nPlaces + (nPlaces === 1 ? ' place' : ' places') + ' on the map.';
+        }
+        var chip = $('famChip');
+        chip.hidden = !S.fam;
+        if (S.fam) {
+            var g = GENS.filter(function (x) { return x[0] === S.gen; })[0];
+            chip.innerHTML = esc(FAMILIES[S.fam].label) + ': ' + esc(g ? g[1].toLowerCase() : '') + (S.sib ? ', with brothers and sisters' : '') + ' <span aria-hidden="true">&times;</span>';
+            chip.setAttribute('aria-label', 'Showing ' + FAMILIES[S.fam].label + '. Show everyone instead');
+        }
+    }
+    function setFamily(fam, gen, sib) {
+        S.fam = fam; S.gen = gen; S.sib = sib;
+        if (S.person && familySet() && !familySet()[S.person]) { S.person = null; S.scope = 'self'; if (S.mode === 'explore' && !$('panel').hidden) closePanel({ silent: true }); clearPersonPath(); }
+        renderFamily(); renderKey(); renderChips(); renderPersonBox(); refreshOverlays();
+        if (FM.onFiltersChanged) FM.onFiltersChanged();
+        writeURL();
+        announce(fam ? 'Showing ' + FAMILIES[fam].label + '.' : 'Showing everyone on the map.');
     }
     function renderChips() {
         var beyond = Object.keys(DATA.places).filter(function (pid) { var pl = DATA.places[pid]; return pl.inEngland === false && pl.lat != null && visiblePlaceEvents(pid).length; });
@@ -796,6 +885,7 @@
         var groups = FM.data.BRANCHES.map(function (b) { return { b: b, people: [] }; });
         Object.keys(DATA.branchOf).forEach(function (id) {
             var p = DATA.people[id], g = DATA.branchOf[id];
+            var famSet = familySet(); if (famSet && !famSet[id]) return;
             var hay = [p.displayName, p.givenNames + ' ' + p.surname, p.disambiguator].concat((p.nameVariants || []).map(function (v) { return v.name; })).join(' ').toLowerCase();
             if (q && hay.indexOf(q) < 0) return;
             groups.filter(function (x) { return x.b.id === g; })[0].people.push(p);
@@ -835,14 +925,13 @@
     function renderPersonBox() {
         var p = S.person && DATA.people[S.person];
         $('personInput').value = p ? p.displayName : '';
-        $('personClear').hidden = !p && !Object.keys(S.hidden).length && S.from == null && S.to == null && !S.orkney;
+        $('personClear').hidden = !p && !Object.keys(S.hidden).length && S.from == null && S.to == null;
         var sc = $('scopes');
         sc.hidden = !p;
         sc.innerHTML = p ? SCOPES.map(function (s) { return '<button type="button" class="chip chip--scope" aria-pressed="' + (S.scope === s[0]) + '" data-scope="' + s[0] + '">' + esc(s[1]) + '</button>'; }).join('') : '';
     }
     function clearAll() {
-        S.person = null; S.scope = 'self'; S.hidden = {}; S.from = null; S.to = null; S.orkney = false;
-        $('orkneyToggle').checked = false;
+        S.person = null; S.scope = 'self'; S.hidden = {}; S.from = null; S.to = null; S.fam = null; S.sib = false; S.gen = 3; renderFamily();
         clearPersonPath();
         initYears(); renderPersonBox(); renderKey(); refreshOverlays(); renderChips();
         if (!$('panel').hidden) closePanel({ silent: true });
@@ -908,6 +997,7 @@
             if (FM.player && FM.player.playing) FM.player.pause();
             var box = $('sv');
             $('svTitle').textContent = pl.name ? 'Street View: ' + pl.name : 'Street View';
+            $('svTab').href = mapsUrl(pl); $('svTab').setAttribute('aria-label', 'Open Street View in Google Maps in a new tab');
             $('svFrame').innerHTML = '<iframe title="Street View of ' + esc(pl.name || 'this spot') + '" src="' + esc(embedUrl(pl)) + '" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>';
             $('svCap').textContent = pl.id ? caption(pl) : 'Street View near here. The family\'s places are marked on the map beside it.';
             // then and now: the place's old photo or record sits over the corner of today's view
@@ -925,7 +1015,6 @@
             box.hidden = true;
             $('svFrame').innerHTML = ''; $('svThen').innerHTML = ''; $('svThen').hidden = true;
             document.body.classList.remove('sv-open');
-            if (S.streets) setStreets(false);
             if (opener && document.contains(opener)) opener.focus();
             if (resumeAfter && FM.player) FM.player.play();
             resumeAfter = false;
@@ -940,12 +1029,6 @@
         }
         return { button: button, mapsUrl: mapsUrl, embedUrl: embedUrl, open: open, close: close, caption: caption, linkClicked: linkClicked, isOpen: function () { return !$('sv').hidden; } };
     })();
-    function setStreets(on) {
-        S.streets = on;
-        $('streetsBtn').setAttribute('aria-pressed', on ? 'true' : 'false');
-        map.getCanvas().style.cursor = on ? 'crosshair' : '';
-        if (on) note('Explore streets is on: click any street to see it in Street View.');
-    }
 
     // ================================================================== then and now
     function setCompare(on) {
@@ -1003,10 +1086,10 @@
         var st = {};
         st.mode = q.get('mode') || 'explore';
         st.place = q.get('place'); st.person = q.get('person'); st.scope = q.get('scope') || 'self';
+        st.fam = FAMILIES[q.get('family')] ? q.get('family') : null; st.gen = q.get('gen') != null ? +q.get('gen') : 3; st.sib = q.get('siblings') === '1';
         st.from = q.get('from') ? +q.get('from') : null; st.to = q.get('to') ? +q.get('to') : null;
-        st.style = q.get('style') || 'atlas';
+        st.style = q.get('style') || 'today';
         st.hidden = {}; (q.get('hide') || '').split(',').filter(Boolean).forEach(function (g) { st.hidden[g] = true; });
-        st.orkney = q.get('orkney') === '1';
         st.compare = q.get('compare') === '1';
         st.event = q.get('event'); st.speed = q.get('speed'); st.camera = q.get('camera'); st.playing = q.get('playing') === '1';
         st.pace = q.get('pace');
@@ -1018,12 +1101,12 @@
         var q = new URLSearchParams();
         if (S.mode !== 'explore') q.set('mode', S.mode);
         if (S.place) q.set('place', S.place);
+        if (S.fam) { q.set('family', S.fam); if (S.gen !== 3) q.set('gen', String(S.gen)); if (S.sib) q.set('siblings', '1'); }
         if (S.person) { q.set('person', S.person); if (S.scope !== 'self') q.set('scope', S.scope); }
         if (S.from != null) q.set('from', S.from);
         if (S.to != null) q.set('to', S.to);
-        if (S.style !== 'atlas') q.set('style', S.style);
+        if (S.style !== 'today') q.set('style', S.style);
         var hid = Object.keys(S.hidden); if (hid.length) q.set('hide', hid.join(','));
-        if (S.orkney) q.set('orkney', '1');
         if (S.compare) q.set('compare', '1');
         if (modes[S.mode] && modes[S.mode].urlState) { var extra = modes[S.mode].urlState(); Object.keys(extra).forEach(function (k) { if (extra[k] != null && extra[k] !== '') q.set(k, extra[k]); }); }
         var url = location.pathname + (q.toString() ? '?' + q.toString() : '');
@@ -1033,13 +1116,14 @@
     FM.writeURL = writeURL;
     function applyState(st, opts) {
         opts = opts || {};
-        S.hidden = st.hidden || {}; S.orkney = !!st.orkney; $('orkneyToggle').checked = S.orkney;
+        S.hidden = st.hidden || {}; S.orkney = false;
         S.from = st.from; S.to = st.to; S.scope = st.scope || 'self';
+        S.fam = st.fam || null; S.gen = st.gen != null && !isNaN(st.gen) ? st.gen : 3; S.sib = !!st.sib; renderFamily();
         // the person belongs to the page, so it is set before the mode starts (Timeline scopes its beats by it)
         var person = st.person && DATA.people[st.person] && DATA.visible(st.person) ? st.person : null;
         S.person = person;
         initYears(); renderKey(); renderChips(); renderPersonBox();
-        if ((st.style || 'atlas') !== S.style) setStyle(st.style || 'atlas', { silent: true });
+        if ((st.style || 'today') !== S.style) setStyle(st.style || 'today', { silent: true });
         var targetMode = modes[st.mode] ? st.mode : 'explore';
         if (targetMode !== S.mode) setMode(targetMode, { silent: true, state: st });
         else if (modes[S.mode] && modes[S.mode].applyState) modes[S.mode].applyState(st);
@@ -1101,7 +1185,10 @@
         });
         $('styleSwitch').addEventListener('click', function (e) { var b = e.target.closest('[data-style]'); if (b) setStyle(b.dataset.style); });
         $('compareBtn').addEventListener('click', function () { setCompare(!S.compare); });
-        $('streetsBtn').addEventListener('click', function () { setStreets(!S.streets); });
+        $('famSel').addEventListener('change', function () { setFamily(this.value || null, S.gen, S.sib); });
+        $('genSel').addEventListener('change', function () { setFamily(S.fam, +this.value, S.sib); });
+        $('sibChk').addEventListener('change', function () { setFamily(S.fam, S.gen, this.checked); });
+        $('famChip').addEventListener('click', function () { setFamily(null, S.gen, S.sib); $('famSel').focus(); });
         $('listOpen').addEventListener('click', openList);
         $('listClose').addEventListener('click', function () { hideSheet('listView'); });
         $('trayBtn').addEventListener('click', openTray);
@@ -1130,12 +1217,6 @@
             if (FM.onFiltersChanged) FM.onFiltersChanged();
             writeURL();
             var nb = $('types').querySelector('[data-group="' + g + '"]'); if (nb) nb.focus();
-        });
-        $('orkneyToggle').addEventListener('change', function () {
-            S.orkney = this.checked; renderKey(); refreshOverlays(); renderChips(); renderPersonBox();
-            if (FM.onFiltersChanged) FM.onFiltersChanged();
-            writeURL();
-            announce(S.orkney ? 'The Orkney frame is shown. There is no proven link to this family.' : 'The Orkney frame is hidden.');
         });
         $('yearFrom').addEventListener('input', onYears); $('yearTo').addEventListener('input', onYears);
         // combobox
@@ -1228,8 +1309,9 @@
         try { var c = document.createElement('canvas'); return !!(c.getContext('webgl2') || c.getContext('webgl')); } catch (e) { return false; }
     }
     function initMap(st) {
-        return styleFor(st.style === 'then' && CFG.MAPTILER_KEY ? 'then' : (st.style === 'today' ? 'today' : 'atlas'), { year: 1900 }).then(function (style) {
-            S.style = (st.style === 'then' && !CFG.MAPTILER_KEY) ? 'atlas' : (st.style || 'atlas');
+        var first = st.style === 'then' && CFG.MAPTILER_KEY ? 'then' : (st.style === 'atlas' ? 'atlas' : 'today');
+        return styleFor(first, { year: 1900 }).then(function (style) {
+            S.style = first;
             map = new maplibregl.Map({
                 container: 'map', style: style, bounds: ENGLAND, fitBoundsOptions: { padding: 30 },
                 attributionControl: false, dragRotate: false, pitchWithRotate: false, touchPitch: false,
@@ -1265,15 +1347,12 @@
             var raf = null;
             map.on('move', function () { if (raf) return; raf = requestAnimationFrame(function () { raf = null; updateMarkers(); if (!$('peek').hidden && peekFor && markers[peekFor]) positionPeek(markers[peekFor]); }); });
             map.on('moveend', function () { updateMarkers(); });
+            // names under the pins once the map is close enough to read them
+            var labelsAt = function () { map.getContainer().classList.toggle('fm-labels', map.getZoom() >= 13); };
+            map.on('zoom', labelsAt); labelsAt();
             map.on('click', function (e) {
                 var t = e.originalEvent && e.originalEvent.target;
                 if (t && t.closest && t.closest('.mk-wrap')) return; // a marker handles its own click (a first tap shows its peek)
-                if (S.streets) {
-                    var spot = { name: '', lat: e.lngLat.lat, lng: e.lngLat.lng, streetView: { targetLat: e.lngLat.lat, targetLng: e.lngLat.lng, pitch: 5, fov: 80 } };
-                    if (CFG.GOOGLE_EMBED_KEY) FM.sv.open(spot, $('streetsBtn'));
-                    else { FM.sv.linkClicked(spot); window.open(FM.sv.mapsUrl(spot), '_blank', 'noopener'); setStreets(false); }
-                    return;
-                }
                 hidePeek();
             });
             // zoom controls in the site's style
@@ -1297,9 +1376,9 @@
         var st = readURL();
         FM.data.load().then(function (d) {
             DATA = d; FM.DATA = d;
-            S.style = st.style || 'atlas';
+            S.style = st.style === 'atlas' || (st.style === 'then' && CFG.MAPTILER_KEY) ? st.style : 'today';
             renderStyleSwitch();
-            renderKey(); initYears(); renderPersonBox(); bindUI();
+            renderFamily(); renderKey(); initYears(); renderPersonBox(); bindUI();
             if (!hasWebGL() || !window.maplibregl) {
                 document.body.classList.add('no-webgl');
                 $('listHint').textContent = 'This device cannot draw the map, so here is every place and event as a list.';

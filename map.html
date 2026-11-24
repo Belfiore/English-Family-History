@@ -46,7 +46,6 @@
         <div class="fm-tools">
             <div class="fm-seg fm-styles" id="styleSwitch" role="radiogroup" aria-label="Map style"></div>
             <button type="button" class="fm-btn" id="compareBtn" aria-pressed="false" title="Compare the old map with today's">Then and now</button>
-            <button type="button" class="fm-btn" id="streetsBtn" aria-pressed="false" title="Click any street to see it in Street View">Explore streets</button>
             <button type="button" class="fm-btn" id="listOpen">View as list</button>
         </div>
     </header>
@@ -66,6 +65,21 @@
         <aside class="fm-key" id="key" aria-label="Key and filters">
             <button type="button" class="fm-key-pill" id="keyPill" aria-expanded="false" aria-controls="keyBody">Key and filters</button>
             <div class="fm-key-body" id="keyBody">
+                <div class="fm-family" id="familyBox">
+                    <label for="famSel" class="fm-label">Family</label>
+                    <select id="famSel" class="fm-select">
+                        <option value="">Everyone on the map</option>
+                        <option value="ron">Ron's family (Andrews)</option>
+                        <option value="pat">Pat's family (FitzMaurice)</option>
+                        <option value="both">Ron's and Pat's families</option>
+                    </select>
+                    <div class="fm-family-more" id="famMore" hidden>
+                        <label for="genSel" class="fm-label">How far back</label>
+                        <select id="genSel" class="fm-select"></select>
+                        <label class="fm-check"><input type="checkbox" id="sibChk"> Include their brothers and sisters</label>
+                        <p class="fm-hint" id="famCount"></p>
+                    </div>
+                </div>
                 <div class="fm-person" id="personBox">
                     <label for="personInput" class="fm-label">Follow a person</label>
                     <div class="fm-combo">
@@ -79,9 +93,6 @@
                 <p class="fm-hint">Each row turns that kind of place on or off.</p>
                 <ul class="fm-types" id="types"></ul>
                 <div class="fm-conf" id="confKey"></div>
-                <div class="fm-orkney">
-                    <label class="fm-switch"><input type="checkbox" id="orkneyToggle"><span></span> The Hamiltons and the Earls of Orkney (no proven link)</label>
-                </div>
                 <div class="fm-years" id="yearsBox">
                     <span class="fm-label" id="yearsLabel">Years</span>
                     <div class="fm-range" role="group" aria-labelledby="yearsLabel">
@@ -94,6 +105,7 @@
         </aside>
 
         <div class="fm-chips" id="chips">
+            <button type="button" class="fm-chip fm-chip--fam" id="famChip" hidden></button>
             <button type="button" class="fm-chip" id="beyondBtn" hidden></button>
             <button type="button" class="fm-chip" id="backEngland" hidden>Back to England</button>
             <button type="button" class="fm-chip fm-chip--tray" id="trayBtn"></button>
@@ -125,7 +137,6 @@
                     <label class="fm-switch fm-switch--sm"><input type="checkbox" id="tlAll"><span></span> Show all events</label>
                     <label class="fm-switch fm-switch--sm"><input type="checkbox" id="tlPeriod"><span></span> Period map follows the year</label>
                     <label class="fm-select">Camera <select id="tlCamera"><option value="follow">Follow</option><option value="centre">Centre</option><option value="overview">Overview</option></select></label>
-                    <button type="button" class="fm-btn fm-btn--sm" id="tlJump" hidden>Jump to the proven family</button>
                 </div>
             </div>
             <div class="fm-track" id="track">
@@ -157,6 +168,7 @@
     <div class="fm-sv-main">
         <div class="fm-sv-head">
             <h2 id="svTitle">Street View</h2>
+            <a class="fm-btn fm-btn--sm fm-sv-tab" id="svTab" href="#" target="_blank" rel="noopener">Open in a new tab</a>
             <button type="button" class="fm-x" id="svClose" aria-label="Close Street View">&times;</button>
         </div>
         <div class="fm-sv-frame"><div id="svFrame"></div><figure class="fm-sv-then" id="svThen" hidden></figure></div>

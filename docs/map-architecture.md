@@ -44,8 +44,10 @@ Dates: an exact day or month is kept as it is; a season becomes its quarter (ear
 Each place has a `drawAs` in `places.json`:
 
 - `pin`: a known address or building. A teardrop pin, which can open Street View.
-- `halo`: a place known only roughly. A soft circle sized to its uncertainty, with a medallion marker.
-- `area`: a district, parish, county or country. A dashed area with a label chip, never a pin.
+- `halo`: a place known only roughly. A dashed pin; while it is in focus a soft circle shows its uncertainty.
+- `area`: a district, parish, county or country. A dashed pin in the middle of the area; while it is in focus a dashed circle shows roughly how far it reaches.
+
+Every marker is named by who and what ("Edward FitzMaurice's home", "Annie Cousins' death"): `FM.data.headline()` builds the phrase from the event's people and type. From zoom 13 the name appears under each pin; the peek lists the events by the same phrases, and a cluster's peek lists its places that way.
 
 Markers are HTML elements on top of the map, clustered in screen space (closer than 34 pixels share a marker; no clustering from zoom 15.5). They are ordered in the document by first date, so Tab walks the family's places in date order. Areas, soft circles, trails, voyage arcs and the person path are GeoJSON layers drawn under the map's labels.
 
@@ -53,12 +55,18 @@ Progressive disclosure in Explore: level 0 is the map with its markers; level 1 
 
 ## Map styles
 
-- Atlas (default): `map-styles/atlas.json` over OpenFreeMap vector tiles, in the site's palette with Cormorant labels.
-- Today: OpenFreeMap's Liberty style.
+- Today (default): OpenFreeMap's Liberty style.
+- Atlas: `map-styles/atlas.json` over OpenFreeMap vector tiles, in the site's palette with Cormorant labels.
 - Then: the National Library of Scotland's Ordnance Survey maps through MapTiler, the edition chosen by year (`FM.editionFor`). Needs `MAPTILER_KEY`.
 - If the tiles fail or take more than eight seconds, the page switches to `fallback.json` and says so.
 
 `FM.setThenEdition(year)` crossfades between editions; Timeline's "Period map follows the year" uses it, and a tour can too.
+
+## Filters
+
+- Family: Everyone, Ron's family, Pat's family, or both, back a chosen number of generations (parents to 3x great-grandparents, or every generation), with or without their brothers and sisters. `FM.familySet()` returns the people; the URL keeps `family`, `gen` and `siblings`.
+- The key (kinds of event), the year range and a person with a scope (just them, with spouse, parents and children, ancestors, descendants) work on top of the family.
+- The Hamiltons and the Earls of Orkney are left out of the index entirely; only Cecil O'Bryen FitzMaurice is kept, marked as no proven link (`KEEP_ORKNEY` in `map-data.js`).
 
 ## Modes
 

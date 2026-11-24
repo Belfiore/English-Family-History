@@ -142,7 +142,7 @@
         { id: 'bennett', label: 'Bennett of Bodmin', pages: ['bennett.html'] },
         { id: 'andrews', label: 'Andrews, Stacey, Walter', pages: ['andrews-roots.html'] },
         { id: 'cousins', label: 'Cousins and Auntie May', pages: ['cousins.html'] },
-        { id: 'orkney', label: 'The Hamiltons and the Earls of Orkney (no proven link)', pages: [] }
+        { id: 'orkney', label: "Cecil O'Bryen FitzMaurice (no proven link)", pages: [] }
     ];
 
     function esc(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
@@ -153,6 +153,7 @@
         return Promise.all([get('data/people.json'), get('data/places.json'), get('data/sources.json')]).then(function (all) { return build(all[0], all[1], all[2]); });
     }
 
+    var KEEP_ORKNEY = { 'cecil-8th': true };
     function build(peopleDoc, placesDoc, sourcesDoc) {
         var people = {}, living = {}, orkney = {}, placeholder = {}, nameOnly = {};
         peopleDoc.people.forEach(function (p) {
@@ -163,7 +164,8 @@
         });
         var sources = {}; sourcesDoc.sources.forEach(function (s) { sources[s.id] = s; });
         var places = {}; placesDoc.places.forEach(function (p) { places[p.id] = p; });
-        function visible(pid) { return pid && people[pid] && !living[pid] && !nameOnly[pid]; }
+        // The Hamiltons and the Earls of Orkney stay off the map: only Cecil O'Bryen FitzMaurice is kept
+        function visible(pid) { return pid && people[pid] && !living[pid] && !nameOnly[pid] && (!orkney[pid] || KEEP_ORKNEY[pid]); }
 
         // names of living people, for keeping them out of borrowed sentences
         var livingNames = [];
@@ -190,7 +192,9 @@
             ev.personIds = (ev.personIds || []).filter(visible);
             if (!ev.personIds.length && ev.type !== 'photographed') return;
             ev.group = keyGroupOf(ev.type);
-            ev.orkney = !!(ev.personIds.length && ev.personIds.every(function (id) { return orkney[id]; })) || !!(places[ev.placeId] && places[ev.placeId].noProvenLink);
+            var ork = !!(ev.personIds.length && ev.personIds.every(function (id) { return orkney[id]; })) || !!(places[ev.placeId] && places[ev.placeId].noProvenLink);
+            if (ork && !ev.personIds.some(function (id) { return KEEP_ORKNEY[id]; })) return;
+            ev.noProvenLink = ork; ev.orkney = false;
             events.push(ev); byId[ev.id] = ev;
             (ev.factRefs || []).forEach(function (r) { byFactRef[r] = ev; });
         }
@@ -288,7 +292,7 @@
         // ---- unplaced facts (for the tray and for Timeline beats with "Place not known")
         var unplaced = [];
         peopleDoc.people.forEach(function (p) {
-            if (!visible(p.id) || orkney[p.id] || placeholder[p.id]) return;
+            if (!visible(p.id) || (orkney[p.id] && !KEEP_ORKNEY[p.id]) || placeholder[p.id]) return;
             function un(ref, f, type, what) {
                 if (!f || f.placeId) return;
                 var disp = factDisplay(ref, f);
@@ -396,9 +400,41 @@
         return 'in ' + pl.name;
     }
 
+
+    // ---- who and what: "Edward FitzMaurice's home", "Robert and Mary Walter's wedding"
+    function personShort(p) {
+        if (!p) return '';
+        var g = String(p.givenNames || '').trim().split(/\s+/)[0], sn = String(p.surname || '').trim();
+        return g && sn ? g + ' ' + sn : p.displayName;
+    }
+    function whoOf(ids, people) {
+        var ps = (ids || []).map(function (id) { return people[id]; }).filter(Boolean);
+        if (!ps.length) return '';
+        if (ps.length === 1) return personShort(ps[0]);
+        var sn = ps[0].surname, same = ps.every(function (p) { return p.surname === sn; }) && sn;
+        if (ps.length === 2) {
+            var a = String(ps[0].givenNames || '').split(/\s+/)[0], b = String(ps[1].givenNames || '').split(/\s+/)[0];
+            return same ? a + ' and ' + b + ' ' + sn : personShort(ps[0]) + ' and ' + personShort(ps[1]);
+        }
+        return same ? 'the ' + sn + ' family' : personShort(ps[0]) + ' and ' + (ps.length - 1) + ' others';
+    }
+    function possessive(n) { return /s$/.test(n) ? n + "'" : n + "'s"; }
+    var NOUN = { born: 'birthplace', baptised: 'baptism', lived: 'home', married: 'wedding', worked: 'workplace', served: 'service',
+                 sailed: 'voyage', died: 'death', buried: 'grave', 'civil case': 'court case', photographed: 'photograph', celebrated: 'celebration' };
+    function headline(e, people, places) {
+        var who = whoOf(e.personIds, people), pl = places && places[e.placeId];
+        var noun = NOUN[e.type] || 'place';
+        if (pl && pl.kind === 'registration district' && (e.type === 'born' || e.type === 'died' || e.type === 'married')) noun = e.type === 'born' ? 'birth' : e.type === 'died' ? 'death' : 'wedding';
+        if (e.personIds.length > 1 && { born: 1, baptised: 1, died: 1, buried: 1 }[e.type]) noun = { born: 'births', baptised: 'baptisms', died: 'deaths', buried: 'graves' }[e.type];
+        if (e.voyageEnd === 'departure') noun = 'sailing';
+        if (e.voyageEnd === 'arrival') noun = 'arrival';
+        if (!who) return e.type === 'photographed' ? 'A family photograph' : FM.data.TYPE_LABEL[e.type] || 'An event';
+        var h = possessive(who) + ' ' + noun;
+        return h.charAt(0).toUpperCase() + h.slice(1);
+    }
     FM.data = {
         load: load, build: build, deriveDates: deriveDates, deriveFromText: deriveFromText, byDate: byDate, esc: esc,
         TYPE_ORDER: TYPE_ORDER, TYPE_LABEL: TYPE_LABEL, KEY_GROUPS: KEY_GROUPS, keyGroupOf: keyGroupOf, BRANCHES: BRANCHES,
-        districtName: districtName, getFact: getFact
+        districtName: districtName, getFact: getFact, personShort: personShort, whoOf: whoOf, headline: headline
     };
 })();

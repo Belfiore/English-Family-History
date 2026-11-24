@@ -6,7 +6,8 @@
  * Map tiles, Google and the font service are blocked here, so the page runs on its own
  * fallback map. The checks are about the family's data and what the page does with it:
  * place links and sources; living people and the held-back list; dates no more precise
- * than the site; districts never drawn as pins; the Orkney layer; key counts, toggles and
+ * than the site; approximate places drawn as dashed pins; the Hamiltons and Earls of Orkney
+ * left off (except Cecil); the family filter; Today as the default map; key counts, toggles and
  * person scopes; the peek by hover, keyboard and tap; the mode switcher and mode=tour; the
  * step player with hand-made steps and no Timeline code; Timeline order, playback, keys,
  * ticks, list, markers, scrubbing, filters, voyages, undated and unplaced events and reduced
@@ -202,12 +203,21 @@ function expectScope(id, scope) {
     // the mode switcher and the default state
     const modes = await page.$$eval('#modeSwitch [data-mode]', els => els.map(e => e.textContent.trim()));
     check(JSON.stringify(modes) === JSON.stringify(['Explore', 'Timeline']), 'the mode switcher shows only Explore and Timeline', modes.join(', '));
-    const orkOff = await page.evaluate(() => ({ off: !FM.state.orkney, box: document.getElementById('orkneyToggle').checked }));
-    check(orkOff.off && !orkOff.box, 'the Orkney layer is off by default');
-    const orkneyPlaces = places.filter(p => p.noProvenLink).map(p => p.id);
+    const orkneyIds = people.filter(p => p.region === 'orkney' && p.id !== 'cecil-8th').map(p => p.id);
+    const ork = await page.evaluate((ids) => ({
+        events: FM.DATA.events.concat(FM.DATA.unplaced).filter(e => e.personIds.some(id => ids.indexOf(id) >= 0)).length,
+        list: Object.keys(FM.DATA.branchOf).filter(id => ids.indexOf(id) >= 0).length,
+        cecil: (FM.DATA.personEvents['cecil-8th'] || []).length, cecilBadge: FM.DATA.events.filter(e => e.personIds.indexOf('cecil-8th') >= 0).every(e => e.noProvenLink),
+        toggle: !!document.getElementById('orkneyToggle'), style: FM.state.style
+    }), orkneyIds);
+    check(!ork.events && !ork.list && !ork.toggle, 'the Hamiltons and the Earls of Orkney are not on the map, in the list or in the filters', JSON.stringify(ork));
+    check(ork.cecil > 0 && ork.cecilBadge, "Cecil O'Bryen FitzMaurice stays on the map, marked as no proven link", JSON.stringify(ork));
+    check(ork.style === 'today', 'the Today map is the default', ork.style);
+    await page.click('#styleSwitch [data-style="then"]');
+    await page.waitForTimeout(400);
+    const thenNoKey = await page.evaluate(() => ({ style: FM.state.style, pressed: document.querySelector('#styleSwitch [aria-checked="true"]').dataset.style, note: document.getElementById('note').innerText }));
+    check(thenNoKey.style === 'today' && thenNoKey.pressed === 'today' && /MapTiler/.test(thenNoKey.note), 'Then without a key explains and stays on the current map', JSON.stringify(thenNoKey));
     let mp = await markerPlaces(page);
-    check(!mp.some(id => orkneyPlaces.includes(id)), 'no Orkney place has a marker while the layer is off');
-
     // every place with a visible event has a marker; key counts match the index
     const expectedPlaces = await page.evaluate(() => Object.keys(FM.DATA.placeEvents).filter(pid => FM.DATA.placeEvents[pid].some(e => FM.filters.eventPasses(e))));
     check(sameSet(mp, expectedPlaces), `every place with a visible event has a marker (${expectedPlaces.length} places)`, 'missing ' + diff(expectedPlaces, mp).join(', ') + ' extra ' + diff(mp, expectedPlaces).join(', '));
@@ -244,7 +254,7 @@ function expectScope(id, scope) {
     await page.click('#types [data-group="died"]');
     await page.waitForTimeout(300);
 
-    // registration districts are never pins
+    // registration districts and other approximate places are dashed pins, never exact ones
     const districtPins = await page.evaluate(async () => {
         const out = [];
         const ids = Object.keys(FM.DATA.places).filter(id => FM.DATA.places[id].kind === 'registration district' && (FM.DATA.placeEvents[id] || []).length);
@@ -255,29 +265,52 @@ function expectScope(id, scope) {
             FM.refresh();
             await new Promise(r => setTimeout(r, 60));
             const el = [].filter.call(document.querySelectorAll('.mk-wrap'), m => m.dataset.places === id)[0];
-            if (el && !el.classList.contains('mk--area')) out.push(id + ' drawn as ' + el.className);
+            if (el && !el.classList.contains('mk--approx')) out.push(id + ' drawn as ' + el.className);
         }
         FM.frameEngland(0);
         return { out, n: ids.length };
     });
-    check(!districtPins.out.length, `registration districts never render as pins (${districtPins.n} districts)`, districtPins.out.join('; '));
+    check(!districtPins.out.length, `registration districts are drawn as approximate (dashed) pins, never exact ones (${districtPins.n} districts)`, districtPins.out.join('; '));
 
-    // the Orkney layer, when switched on
-    await page.click('label:has(#orkneyToggle)');
-    await page.waitForTimeout(500);
-    const ork = await page.evaluate(() => {
-        const ids = Object.keys(FM.DATA.places).filter(id => FM.DATA.places[id].noProvenLink);
-        const marks = [].filter.call(document.querySelectorAll('.mk-wrap'), el => el.dataset.places.split('|').some(id => ids.indexOf(id) >= 0));
-        const single = marks.filter(el => el.dataset.places.split('|').length === 1);
-        return { ids: ids.length, marks: marks.length, plain: single.filter(el => !el.classList.contains('is-orkney')).map(el => el.dataset.places), url: location.search };
+    // no circle by default: an approximate place's area appears only while it is in focus
+    const areas = await page.evaluate(async () => {
+        const before = (FM.lastData['fm-areas'] || { features: [] }).features.length + (FM.lastData['fm-halos'] || { features: [] }).features.length;
+        const pl = FM.DATA.places['west-ham-registration-district'];
+        FM.map.jumpTo({ center: [pl.lng, pl.lat], zoom: 12 }); await new Promise(r => setTimeout(r, 500));
+        const el = [].filter.call(document.querySelectorAll('.mk-wrap'), m => m.dataset.places === 'west-ham-registration-district')[0];
+        el.focus(); await new Promise(r => setTimeout(r, 300));
+        const during = FM.lastData['fm-areas'].features.map(f => f.properties.id);
+        const pk = document.getElementById('peek').innerText;
+        el.blur(); document.body.focus(); await new Promise(r => setTimeout(r, 500));
+        return { before, during, pk, labels: FM.map.getContainer().classList.contains('fm-labels') ? 'on at z12' : 'off at z12' };
     });
-    check(ork.marks > 0 && !ork.plain.length && /orkney=1/.test(ork.url), 'switching the Orkney layer on shows its places, each with the no-proven-link treatment', JSON.stringify(ork));
-    await page.evaluate(() => FM.openPlace('orkney-hamilton-palace'));
-    await page.waitForTimeout(700);
-    const orkPanel = await page.$eval('#panel', el => el.innerText);
-    check(/no proven link/i.test(orkPanel), 'an Orkney place panel says there is no proven link');
-    await page.evaluate(() => { FM.util.closePanel(); document.getElementById('orkneyToggle').click(); });
+    check(areas.before === 0 && areas.during.join() === 'west-ham-registration-district' && /Somewhere in the West Ham/.test(areas.pk), 'no area circles are drawn until an approximate place is in focus, and its peek says it is somewhere in the area', JSON.stringify(areas).slice(0, 220));
+    // the peek says who and what, not initials
+    check(/Cousins' (birth|death|home)|Cousins'/.test(areas.pk) && !/\b[A-Z]{2}\b\s*\b[A-Z]{2}\b/.test(areas.pk.split('\n').slice(0, 3).join(' ')), 'the peek names who and what (for example "Annie Cousins\' death")', areas.pk.split('\n').slice(0, 4).join(' | '));
+    await page.evaluate(() => FM.frameEngland(0));
+
+    // the family filter: Ron's family, back to his parents
+    await page.selectOption('#famSel', 'ron');
+    await page.selectOption('#genSel', '1');
+    await page.waitForTimeout(500);
+    const fam = await page.evaluate(() => {
+        const set = FM.familySet(), bad = [];
+        [].forEach.call(document.querySelectorAll('.mk-wrap'), el => el.dataset.places.split('|').forEach(pid => {
+            if (!FM.DATA.placeEvents[pid].some(e => e.personIds.some(id => set[id]))) bad.push(pid);
+        }));
+        return { set: Object.keys(set).sort(), bad, url: location.search, chip: !document.getElementById('famChip').hidden };
+    });
+    const wantFam = ['ronald-andrews'].concat(linkIds(P['ronald-andrews'].parents)).filter(id => !livingIds.has(id)).sort();
+    check(JSON.stringify(fam.set) === JSON.stringify(wantFam) && !fam.bad.length && /family=ron/.test(fam.url) && /gen=1/.test(fam.url) && fam.chip, "choosing Ron's family, back to his parents, shows only their places", JSON.stringify(fam).slice(0, 240));
+    await page.click('#sibChk');
+    await page.waitForTimeout(300);
+    const sib = await page.evaluate(() => Object.keys(FM.familySet()));
+    const wantSib = new Set(wantFam); linkIds(P['ronald-andrews'].parents).forEach(pid => linkIds(P[pid].children).forEach(c => { if (!livingIds.has(c)) wantSib.add(c); }));
+    linkIds(P['ronald-andrews'].parents).forEach(pid => linkIds(P[pid].parents).forEach(gp => linkIds(P[gp].children).forEach(c => { if (!livingIds.has(c)) wantSib.add(c); })));
+    check(sib.length >= wantFam.length && sib.every(id => wantSib.has(id)) && linkIds(P['ronald-andrews'].parents).flatMap(pid => linkIds(P[pid].children)).filter(c => !livingIds.has(c)).every(c => sib.includes(c)), 'adding brothers and sisters brings in Ron\'s siblings', sib.join(','));
+    await page.click('#famChip');
     await page.waitForTimeout(400);
+    check(await page.evaluate(() => !FM.familySet() && !/family=/.test(location.search)), 'the family chip clears the family filter');
 
     // person scopes
     const scopeCases = [['ronald-andrews', 'spouse'], ['ronald-andrews', 'family'], ['herbert-andrews', 'family'], ['patricia-andrews', 'ancestors'], ['robert-william-fitzmaurice', 'descendants']];
@@ -387,18 +420,18 @@ function expectScope(id, scope) {
     check(tour.mode === 'explore' && !/tour/.test(tour.url) && tour.tl && !s.errors.length, 'a URL with mode=tour falls back to Explore cleanly', JSON.stringify(tour));
     await s.close();
 
-    s = await open('map.html?style=today&hide=died,lived&from=1850&to=1950&orkney=1&place=st-marys-church-wanstead');
+    s = await open('map.html?style=atlas&hide=died,lived&from=1850&to=1950&family=pat&gen=2&place=st-marys-church-wanstead');
     page = s.page;
     const rt = await page.evaluate(() => { FM.writeURL(); return location.search; });
     const q = new URLSearchParams(rt);
-    check(q.get('style') === 'today' && q.get('hide').split(',').sort().join() === 'died,lived' && q.get('from') === '1850' && q.get('to') === '1950' && q.get('orkney') === '1' && q.get('place') === 'st-marys-church-wanstead', 'Explore state round-trips through the URL', rt);
+    check(q.get('style') === 'atlas' && q.get('family') === 'pat' && q.get('gen') === '2' && q.get('hide').split(',').sort().join() === 'died,lived' && q.get('from') === '1850' && q.get('to') === '1950' && q.get('place') === 'st-marys-church-wanstead', 'Explore state round-trips through the URL', rt);
     await page.click('#modeSwitch [data-mode="timeline"]');
     await page.waitForTimeout(1200);
-    const kept = await page.evaluate(() => ({ mode: FM.state.mode, style: FM.state.style, died: !!FM.state.hidden.died, orkney: FM.state.orkney, url: location.search }));
+    const kept = await page.evaluate(() => ({ mode: FM.state.mode, style: FM.state.style, died: !!FM.state.hidden.died, fam: FM.state.fam, url: location.search }));
     await page.click('#modeSwitch [data-mode="explore"]');
     await page.waitForTimeout(800);
     const kept2 = await page.evaluate(() => ({ mode: FM.state.mode, style: FM.state.style, died: !!FM.state.hidden.died }));
-    check(kept.mode === 'timeline' && kept.style === 'today' && kept.died && kept.orkney && kept2.mode === 'explore' && kept2.style === 'today' && kept2.died, 'switching modes keeps the filters and the map style', JSON.stringify([kept, kept2]));
+    check(kept.mode === 'timeline' && kept.style === 'atlas' && kept.died && kept.fam === 'pat' && kept2.mode === 'explore' && kept2.style === 'atlas' && kept2.died, 'switching modes keeps the filters and the map style', JSON.stringify([kept, kept2]));
     await s.close();
 
     s = await open('map.html?person=patricia-andrews&scope=ancestors');
@@ -601,6 +634,14 @@ function expectScope(id, scope) {
     check(emb.btn && u.origin + u.pathname === 'https://www.google.com/maps/embed/v1/streetview' && u.searchParams.get('key') === 'TEST-EMBED-KEY' &&
         u.searchParams.get('location') === `${+(wsv.panoLat ?? wsv.targetLat).toFixed(6)},${+(wsv.panoLng ?? wsv.targetLng).toFixed(6)}` && u.searchParams.has('pitch') && u.searchParams.has('fov') && u.searchParams.get('language') === 'en-GB',
         'with a key the button opens the overlay, and the Embed URL is right', emb.url);
+    const pnsv = await page.evaluate(() => { const f = document.querySelector('#panel .pn-sv iframe'); return { src: f && f.src, open: !!document.querySelector('#panel .pn-sv-open[data-sv]'), first: document.querySelector('#panel .pn').firstElementChild.className }; });
+    check(pnsv.src === emb.url && pnsv.open && pnsv.first === 'pn-sv', "the place panel opens with that address's Street View at the top", JSON.stringify(pnsv).slice(0, 200));
+    await page.click('#panel .pn-sv-open');
+    await page.waitForTimeout(700);
+    const ovp = await page.evaluate(() => ({ open: FM.sv.isOpen(), tab: document.getElementById('svTab').href }));
+    check(ovp.open && /^https:\/\/www\.google\.com\/maps\/@\?api=1&map_action=pano/.test(ovp.tab), 'clicking the Street View in the panel opens it inside the map, with a link to open it in a new tab', JSON.stringify(ovp));
+    await page.keyboard.press('Escape');
+    await page.waitForTimeout(400);
     await page.click('#panel button.sv-btn[data-sv]');
     await page.waitForTimeout(900);
     const ov = await page.evaluate(() => ({ shown: !document.getElementById('sv').hidden, src: (document.querySelector('#svFrame iframe') || {}).src, focus: document.activeElement && document.activeElement.id, cap: document.getElementById('svCap').innerText }));

@@ -311,7 +311,12 @@
             ])]));
         });
         if (!fs.querySelector('input:checked')) { var first = fs.querySelector('input:not([disabled])'); if (first) first.checked = true; }
-        body.appendChild(fs);
+        // one click for most people: the standard model is chosen; the larger one sits behind "More detailed answers"
+        var chosen = opts.filter(function (o) { return o.m.key === (W.key || 'standard'); })[0] || std;
+        body.appendChild(el('p', { class: 'check', text: 'This will download the ' + chosen.m.name.toLowerCase() + ' model, ' + (chosen.bytes ? (chosen.measured ? '' : 'about ') + LLM.mb(chosen.bytes) : 'size unknown') + '.' }));
+        var more = el('details', { class: 'more-models' }, [el('summary', { text: 'Want more detailed answers? Choose a larger model' }), fs]);
+        fs.addEventListener('change', function () { var c = fs.querySelector('input:checked'); var o = opts.filter(function (x) { return c && x.m.key === c.value; })[0]; if (o) more.previousSibling.textContent = 'This will download the ' + o.m.name.toLowerCase() + ' model, ' + (o.bytes ? (o.measured ? '' : 'about ') + LLM.mb(o.bytes) : 'size unknown') + '.'; });
+        body.appendChild(more);
         var any = opts.some(function (o) { return o.v.v !== 'no'; });
         actions.appendChild(el('button', { type: 'button', class: 'btn-b', onclick: function () { d.close(); } }, ['Not now']));
         if (any) actions.appendChild(el('button', { type: 'button', class: 'btn-a', id: 'setupGo', onclick: function () {

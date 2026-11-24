@@ -125,3 +125,7 @@
     .photos a, .photos img { width: 104px; } .photos img { height: 80px; }
 }
 @media (prefers-reduced-motion: reduce) { .bar span { transition: none; } }
+
+.setup .more-models { margin-bottom: 0.8rem; }
+.setup .more-models summary { cursor: pointer; color: var(--burgundy); text-decoration: underline; text-underline-offset: 3px; min-height: 32px; padding: 0.2rem 0; }
+.setup .more-models fieldset { margin-top: 0.5rem; }

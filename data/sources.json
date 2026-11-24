@@ -1028,7 +1028,7 @@
    "type": "map",
    "repository": "Historic England, historicengland.org.uk/listing/the-list",
    "date": "2026-11-23",
-   "note": "Used only to locate churches and to say whether a listed building still stands: St Andrew, Plaistow (1080967); St Margaret, Ward End (1220802); All Saints, Leavesden (1175616); St Augustine with St Philip, Stepney Way (1065066). Not a source for any family fact."
+   "note": "Used only to locate churches and to say whether a listed building still stands: St Andrew, Plaistow (1080967); St Margaret, Ward End (1220802); All Saints, Leavesden (1175616); St Augustine with St Philip, Stepney Way (1065066); Chelsea Old Church (1189649, grid TQ 27100 77596); St Peter, Wapping Lane (1065844, grid TQ 34865 80368); St Martin in the Bull Ring (1075690, grid SP 07352 86566). Not a source for any family fact."
   },
   {
    "id": "loc-survey-of-london-st-philip",
@@ -1148,7 +1148,23 @@
    "type": "map",
    "repository": "This site, docs/map-audit.md",
    "date": "2026-11-23",
-   "note": "Where the directory had no point for a place, or a point on the wrong place, the map build placed it by hand at the named building, street or area from the place's published description, or drew a circle round the place the record names. Used only to put a place on the map, and not a source for any family fact. Each of these points is listed in docs/map-audit.md to be checked by eye."
+   "note": "Where the directory had no point for a place, or a point on the wrong place, the map build placed it by hand at the named building, street or area from the place's published description, or drew a circle round the place the record names. Used only to put a place on the map, and not a source for any family fact. Each of these points is listed in docs/map-audit.md. Checked again on 24 November 2026: see Hand-placed points: checked."
+  },
+  {
+   "id": "loc-osm-nominatim-2026-11-24",
+   "title": "OpenStreetMap Nominatim place search, 24 November 2026",
+   "type": "map",
+   "repository": "OpenStreetMap, nominatim.openstreetmap.org",
+   "date": "2026-11-24",
+   "note": "Used only to check, and where needed to move, the points the map build had placed by hand. Not a source for any family fact."
+  },
+  {
+   "id": "loc-wikipedia-coords-2026-11-24",
+   "title": "Wikipedia coordinates, 24 November 2026",
+   "type": "map",
+   "repository": "Wikipedia, en.wikipedia.org",
+   "date": "2026-11-24",
+   "note": "Coordinates taken from the Wikipedia page summary for Pier Head, Liverpool, and for the Western Cape Division of the High Court (the Cape Supreme Court building on Keerom Street). Used only to check a point on the map. Not a source for any family fact."
   }
  ]
 }

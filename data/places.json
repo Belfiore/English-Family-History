@@ -59,7 +59,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026 snapped to 9 Turf Street, not Honey Street, so the house was not seen.",
    "significance": "1 Honey Street, Bodmin is published on the site. The owner approved this reading on 23 November 2026.",
    "events": [
     {
@@ -110,11 +110,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Aug 2026",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The nearest panorama is labelled 9 Turf Street, Bodmin, not Honey Street. It shows shops on Turf Street. Honey Street itself was not in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The nearest panorama is labelled 9 Turf Street, Bodmin, not Honey Street. It shows shops on Turf Street. Honey Street itself was not in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -134,7 +134,7 @@
    "uncertaintyMetres": 1500,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The street has not been placed more closely than about 1500 m, so neither Street View nor a single historic map sheet can say whether number 10 stands.",
    "significance": "10 Riles Road, Plaistow is on the site for Herbert C. Cousins: lived 1911.",
    "events": [
     {
@@ -194,7 +194,7 @@
    "uncertaintyMetres": 450,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 41 Bourne Avenue, shows 1930s houses. Number 113 was not in view.",
    "significance": "113 Bourne Avenue, Harlington is on the site for Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice: lived 1936 to 1937.",
    "events": [
     {
@@ -245,11 +245,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jul 2024",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 41 Bourne Avenue, Hayes, and shows 1930s semis and terraces. This is the same point as 55 Bourne Avenue, so the view cannot tell 55 from 113.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 41 Bourne Avenue, Hayes, and shows 1930s semis and terraces. This is the same point as 55 Bourne Avenue, so the view cannot tell 55 from 113."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -268,8 +268,8 @@
    "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Keeton's Road, Bermondsey. The house number was not matched, so the point is the street.",
    "uncertaintyMetres": 300,
    "inEngland": true,
-   "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsToday": "rebuilt",
+   "standsTodaySource": "Rebuilt. Google Street View, 24 November 2026 (capture Jun 2022), on Keeton's Road: post-war brick flats and maisonettes along the street. No Victorian terrace was in view. The camera was at about number 40, not at 118, so this is the street rather than a reading of that one door.",
    "significance": "118 Keeton Road, Bermondsey is on the site for William Cousins, Annie Cousins, Arthur E. Cousins: lived 1881.",
    "events": [
     {
@@ -323,11 +323,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jun 2022",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is on Keeton's Road and shows post-war brick flats and maisonettes along both sides. No Victorian terrace was in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is on Keeton's Road and shows post-war brick flats and maisonettes along both sides. No Victorian terrace was in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -347,7 +347,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026 is labelled 13 Gladding Road and shows inter-war semis and a stone Gothic building. The door of number 13 was not read, so the 1901 house is not confirmed.",
    "significance": "13 Gladding Road, Manor Park is on the site for Rosina Maud Andrews: lived 1901.",
    "events": [
     {
@@ -396,11 +396,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Aug 2025",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 13 Gladding Road. The road name is painted on the carriageway. The houses beside the camera are inter-war semis, and a stone Gothic building stands opposite. Whether number 13 is one of those semis was not read from a door number.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 13 Gladding Road. The road name is painted on the carriageway. The houses beside the camera are inter-war semis, and a stone Gothic building stands opposite. Whether number 13 is one of those semis was not read from a door number."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -420,7 +420,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 11, shows a late 20th century block. Number 14 was not in view.",
    "significance": "14 Waterloo Road, Whitstable is on the site for Edward Dixon FitzMaurice: lived 15 October 1923.",
    "events": [
     {
@@ -469,11 +469,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jul 2025",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 11 Waterloo Road, Whitstable, and shows a late 20th century brick and weatherboard block. Number 14 was not in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 11 Waterloo Road, Whitstable, and shows a late 20th century brick and weatherboard block. Number 14 was not in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -492,8 +492,8 @@
    "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026 (osm-nominatim-2026), as in the address directory. Mornington Place is short; the point is on the street, not the house. The number may read 15b.",
    "uncertaintyMetres": 120,
    "inEngland": true,
-   "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsToday": "standing",
+   "standsTodaySource": "Standing. Google Street View, 24 November 2026 (capture Sep 2022), at 14 Mornington Place: an early 19th century stock-brick terrace, with number 15 of the same build beside it.",
    "significance": "15 Mornington Place, St Pancras is published on the site. The owner approved this reading on 23 November 2026. The house number may read 15b.",
    "events": [
     {
@@ -543,11 +543,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Sep 2022",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 14 Mornington Place and shows an early 19th century stock-brick terrace, with number 15 next door of the same build.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 14 Mornington Place and shows an early 19th century stock-brick terrace, with number 15 next door of the same build."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -567,7 +567,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. No Street View coverage on 24 November 2026, and the historic maps were not opened sheet by sheet for this house.",
    "significance": "16 York Road, Edgbaston is on the site for Robert W. FitzMaurice: died 10 May 1895.",
    "events": [
     {
@@ -631,21 +631,8 @@
    "blurb": "Robert William FitzMaurice died here on 10 May 1895.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 52.472945,
-    "targetLng": -1.941594,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 5,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026).",
    "blurbSourceIds": [
     "probate-robert-1895"
    ]
@@ -665,7 +652,7 @@
    "uncertaintyMetres": 1200,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Elm Terrace has not been found as its own street (see the hand-placed check). The 1861 crop names Wandsworth Road. Whether number 2 stands cannot be said.",
    "significance": "2 Elm Terrace, Wandsworth Road is on the site for Fanny Mary Falcke: lived 1861.",
    "events": [
     {
@@ -699,7 +686,8 @@
    "coordinatePrecision": "area",
    "todayNote": "Elm Terrace has not been found on a map yet, so this is the stretch of Wandsworth Road it was on.",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -725,7 +713,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026 (capture Sep 2025), labelled 24 Sutton Court Road, shows a brick terrace still there, but the door numbers were not read and the picture cannot say whether number 23 is the 1911 house. Bomb Sight (bombsight.org) was in maintenance on 24 November 2026 and drew no bomb markers, so it does not say whether a bomb fell on this house on 19 April 1941. The Commonwealth War Graves entry says Henry George Andrews died at 23 Sutton Court Road that day, not whether the house was destroyed or repaired. PlanIndex's reading of Newham application 26/01578/HH, granted 11 November 2026, is a householder rear extension at 23 Sutton Court Road, E13 9NN, which means a house is at that address now. The council's own documents were not opened. None of this chooses standing over rebuilt.",
    "significance": "23 Sutton Court Road, Plaistow is on the site for William Cousins, Amelia Cousins, Henry George Andrews, Rosina Maud Andrews: lived 1911 to 19 April 1941.",
    "events": [
     {
@@ -864,11 +852,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Sep 2025",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 24 Sutton Court Road and shows a long brick terrace with bay windows and arched porches. House numbers were not readable, so number 23 itself was not picked out. The terrace looks earlier than the post-war rebuilds nearby. This does not settle whether number 23 was destroyed on 19 April 1941.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 24 Sutton Court Road and shows a long brick terrace with bay windows and arched porches. House numbers were not readable, so number 23 itself was not picked out. The terrace looks earlier than the post-war rebuilds nearby. This does not settle whether number 23 was destroyed on 19 April 1941."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -890,8 +878,8 @@
    "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Query: 25 Compton Avenue, Brighton, UK",
    "uncertaintyMetres": 100,
    "inEngland": true,
-   "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsToday": "standing",
+   "standsTodaySource": "Standing. Google Street View, 24 November 2026 (capture May 2014), on Compton Avenue, Brighton: a continuous white stucco terrace, the camera at number 29 in the same terrace as number 25.",
    "significance": "25 Compton Avenue, Brighton is published on the site. The owner approved this reading on 23 November 2026.",
    "events": [
     {
@@ -940,11 +928,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "May 2014",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is on Compton Avenue, Brighton (the name is painted on the road) and shows a continuous white stucco terrace. The camera is at number 29, in the same terrace as number 25.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is on Compton Avenue, Brighton (the name is painted on the road) and shows a continuous white stucco terrace. The camera is at number 29, in the same terrace as number 25."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -964,7 +952,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026 shows a side wall on Turret Grove, not the front of number 26.",
    "significance": "26 Turret Grove, Clapham is on the site for Baron Reginald FitzMaurice: lived 1925 to 1926.",
    "events": [
     {
@@ -1013,11 +1001,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jul 2022",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is on Turret Grove (the street sign is in view) but shows a side wall at a corner, not a house front, so number 26 was not identified.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is on Turret Grove (the street sign is in view) but shows a side wall at a corner, not a house front, so number 26 was not identified."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -1040,7 +1028,7 @@
    "uncertaintyMetres": 350,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The place is the street, not one house, and it was not precise enough for Street View.",
    "significance": "3 Young Street, Canning Town is on the site for William Cousins: lived 1901.",
    "events": [
     {
@@ -1103,7 +1091,7 @@
    "uncertaintyMetres": 900,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. New Street by the London Docks has not been found on OpenStreetMap or in the 1810 Lockie directory under that name in Wapping. Left as the circle round St Peter.",
    "significance": "33 New Street, London Docks is on the site for Arthur E. Cousins: lived 9 January 1872.",
    "events": [
     {
@@ -1139,7 +1127,8 @@
    "coordinatePrecision": "area",
    "todayNote": "New Street has not been found on a map yet.",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -1165,7 +1154,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. No Street View coverage on 24 November 2026.",
    "significance": "34 Blythe Road, Hammersmith is on the site for Baron Reginald FitzMaurice, Eileen Sybil FitzMaurice: lived 1931 to 1933.",
    "events": [
     {
@@ -1208,21 +1197,8 @@
    "blurb": null,
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.497096,
-    "targetLng": -0.212645,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 5,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). Google showed no street imagery. A user photo of a restaurant interior is not a street panorama, so it is not used.",
    "blurbSourceIds": []
   },
   {
@@ -1240,7 +1216,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 22, shows later houses and flats. Number 40 was not in view.",
    "significance": "40 Fisher Street, Canning Town is on the site for Herbert Andrews, Lucy Andrews, Henry George Andrews: lived 1911.",
    "events": [
     {
@@ -1313,11 +1289,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Sep 2025",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 22 Fisher Street and shows a short row of later brick houses and a block of low flats. Number 40 was not in view, so this does not settle that house.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 22 Fisher Street and shows a short row of later brick houses and a block of low flats. Number 40 was not in view, so this does not settle that house."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -1339,7 +1315,7 @@
    "uncertaintyMetres": 250,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 10, shows a warehouse, not houses. Number 42 was not in view.",
    "significance": "42 Nestles Avenue, Hayes is on the site for Baron Reginald FitzMaurice: lived 1938 to 1977.",
    "events": [
     {
@@ -1410,11 +1386,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jul 2024",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 10 Nestles Avenue and shows a brick warehouse with roller shutters, not houses. Number 42 was not in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 10 Nestles Avenue and shows a brick warehouse with roller shutters, not houses. Number 42 was not in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -1437,7 +1413,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 69, shows Victorian villas and one modern infill. Number 48 was not in view.",
    "significance": "48 Oxford Road South, Gunnersbury is on the site for May F. Cousins: lived 1948.",
    "events": [
     {
@@ -1486,11 +1462,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jul 2025",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 69 Oxford Road South and shows Victorian stock-brick villas, with one modern infill beside them. Number 48 was not in that view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 69 Oxford Road South and shows Victorian stock-brick villas, with one modern infill beside them. Number 48 was not in that view."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -1510,7 +1486,7 @@
    "uncertaintyMetres": 450,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026 is the same point as 113 Bourne Avenue (number 41). It shows 1930s houses and cannot tell 55 from 113.",
    "significance": "55 Bourne Avenue, Hayes is on the site for Eileen Sybil FitzMaurice, Leslie Hugh Simmons: lived 1939.",
    "events": [
     {
@@ -1562,11 +1538,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jul 2024",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The same panorama as 113 Bourne Avenue: labelled 41 Bourne Avenue, Hayes, 1930s houses. It cannot tell number 55 from number 113.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The same panorama as 113 Bourne Avenue: labelled 41 Bourne Avenue, Hayes, 1930s houses. It cannot tell number 55 from number 113."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -1586,7 +1562,7 @@
    "uncertaintyMetres": 250,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 41 Seymour Street, Birkenhead, shows a Victorian terrace. Number 55 was not in view.",
    "significance": "55 Seymour Street, Higher Tranmere is on the site for Edith Madeline FitzMaurice: lived 24 November 1925.",
    "events": [
     {
@@ -1636,11 +1612,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "May 2025",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 41 Seymour Street, Birkenhead, and shows a Victorian terrace. Number 55 was not in that view. The house number on the 1925 list is a separate question.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 41 Seymour Street, Birkenhead, and shows a Victorian terrace. Number 55 was not in that view. The house number on the 1925 list is a separate question."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -1660,7 +1636,7 @@
    "uncertaintyMetres": 1500,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Rutland Street, Stepney, is not on the modern map. A Mile End vestry list of 1882 records the renaming of New Rutland Street to Rutland Street, but gives no coordinate. The circle over Stepney stays.",
    "significance": "57 Rutland Street, Stepney is on the site for William Cousins: lived 15 January 1871.",
    "events": [
     {
@@ -1695,7 +1671,8 @@
    "todayNote": "Rutland Street has not been found on a map yet.",
    "coordinateSourceIds": [
     "osm-nominatim-2026",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -1721,7 +1698,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 61, shows a Victorian terrace. Number 6 was not in view.",
    "significance": "6 Cathles Road, Balham Hill is on the site for Caroline Spencer: lived 1911.",
    "events": [
     {
@@ -1770,11 +1747,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Aug 2022",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 61 Cathles Road and shows a late Victorian terrace. Number 6 was not in that view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 61 Cathles Road and shows a late Victorian terrace. Number 6 was not in that view."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -1797,7 +1774,7 @@
    "uncertaintyMetres": 1000,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. No North Lane has been found. North Street and Clapham Common North Side are different streets, and the 1925 lists disagree. See Open questions: evidence.",
    "significance": "7 North Lane, Clapham Common is on the site for Baron Reginald FitzMaurice: lived 7 February 1925.",
    "events": [
     {
@@ -1856,7 +1833,8 @@
    "coordinatePrecision": "area",
    "todayNote": "Which street the lists meant is not known.",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -1886,7 +1864,7 @@
    "uncertaintyMetres": 2500,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Harper Road is not in the transcribed Canning Town street directories for 1896 or 1902 (pubwiki.co.uk and londonwiki.co.uk) and is not on OpenStreetMap in West Ham. The 1891 census places it in Canning Town ward. The circle stays.",
    "significance": "92 Harper Road, West Ham is on the site for William Cousins, Annie Cousins: lived 1891.",
    "events": [
     {
@@ -1922,7 +1900,8 @@
    "coordinatePrecision": "area",
    "todayNote": "Harper Road in West Ham has not been found on a map yet.",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -1948,7 +1927,7 @@
    "uncertaintyMetres": 100,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 85 Bury Road, shows older cottages. Number 94 was not in view.",
    "significance": "94 Bury Road, Hemel Hempstead is on the site for Herbert Andrews, Lucy Andrews, Henry George Andrews: lived 1901.",
    "events": [
     {
@@ -2001,11 +1980,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Aug 2020",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 85 Bury Road, Hemel Hempstead, and shows a mix of older cottages. Number 94 was not in that view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 85 Bury Road, Hemel Hempstead, and shows a mix of older cottages. Number 94 was not in that view."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -2125,21 +2104,8 @@
    "blurb": null,
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.673414,
-    "targetLng": -0.352907,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of the churchyard does not show the church, so it is not used.",
    "blurbSourceIds": []
   },
   {
@@ -2591,7 +2557,8 @@
    "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -2733,7 +2700,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -3369,7 +3337,7 @@
    "uncertaintyMetres": 1500,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Bolingbroke Gardens is not a modern street. The 1851 crop also writes Pottery Lane on the next line. That second line is not entered. See Open questions: evidence.",
    "significance": "Bolingbroke Gardens, Battersea is on the site for Elizabeth Falcke: lived 1851.",
    "events": [
     {
@@ -3406,7 +3374,8 @@
    "todayNote": "Bolingbroke Gardens has not been found on a map yet.",
    "coordinateSourceIds": [
     "osm-nominatim-2026",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -3521,7 +3490,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -3948,7 +3918,9 @@
    "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24",
+    "loc-wikipedia-coords-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -4151,9 +4123,9 @@
    "address": "",
    "modernAddress": "",
    "precision": "town",
-   "lat": 51.625,
-   "lng": -0.56,
-   "coordinateMethod": "The record says Chalfont, which could be Chalfont St Giles or Chalfont St Peter; the circle covers both.",
+   "lat": 51.619635,
+   "lng": -0.56318,
+   "coordinateMethod": "Checked 24 November 2026. The previous point was at Chalfont Common, inside Chalfont St Giles. Moved to the midpoint of Chalfont St Giles (OpenStreetMap 51.63210, -0.56979) and Chalfont St Peter (OpenStreetMap 51.60717, -0.55657), so the 4 km circle sits between the two villages the record might mean.",
    "uncertaintyMetres": 4000,
    "inEngland": true,
    "standsToday": "unknown",
@@ -4188,7 +4160,8 @@
    "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -4214,7 +4187,7 @@
    "uncertaintyMetres": 900,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The place is the road, known only to about 900 m, so a single house cannot be judged.",
    "significance": "Chester Road, Boldmere is on the site for Fanny Mary Falcke: lived 1901.",
    "events": [
     {
@@ -4317,21 +4290,8 @@
    "blurb": "Edward Dixon FitzMaurice was buried here on 13 June 1928, in section F12.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.621741,
-    "targetLng": -0.011976,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026).",
    "blurbSourceIds": [
     "burial-chingford-1928"
    ]
@@ -4461,13 +4421,13 @@
    "address": "Clifton Ville, Westgate Terrace, Whitstable",
    "modernAddress": "",
    "precision": "address",
-   "lat": 51.3606,
-   "lng": 1.0241,
-   "coordinateMethod": "Westgate Terrace is a Whitstable street today, but its exact line was not checked and which house was called Clifton Ville is not known. The circle covers the middle of Whitstable.",
-   "uncertaintyMetres": 700,
+   "lat": 51.362185,
+   "lng": 1.029941,
+   "coordinateMethod": "Checked 24 November 2026. Westgate Terrace is a short street in Tankerton, Whitstable (OpenStreetMap). The point is now in the middle of that street (51.362185, 1.029941). Which house was called Clifton Ville is still not known, so it stays a circle. The circle is now 200 m, which covers the terrace (the mapped street is about 130 m long).",
+   "uncertaintyMetres": 200,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The point is now on Westgate Terrace, but which house was Clifton Ville is not known, so there is no building to judge.",
    "significance": "Clifton Ville, Westgate Terrace, Whitstable is on the site for Edward Dixon FitzMaurice, Edith Madeline FitzMaurice, Edward Robert FitzMaurice, Baron Reginald FitzMaurice: lived 1911.",
    "events": [
     {
@@ -4512,7 +4472,8 @@
    "todayNote": "Westgate Terrace is still a Whitstable street. Which house was Clifton Ville has not been worked out.",
    "coordinateSourceIds": [
     "osm-nominatim-2026",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -4520,7 +4481,7 @@
    "images": [],
    "historicMap": null,
    "streetView": null,
-   "streetViewReason": "Not precise enough for Street View: the place is known only to within about 700 metres. The panel offers the Then and Today maps instead.",
+   "streetViewReason": "Westgate Terrace is now placed to about 200 m, but which house was Clifton Ville is not known. Street View was not opened at this point on 24 November 2026. The panel offers the Then and Today maps instead.",
    "blurbSourceIds": [
     "census-1911-whitstable"
    ]
@@ -4654,11 +4615,11 @@
     "heading": null,
     "pitch": 10,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jun 2019",
     "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The nearest panorama is labelled 43 Church Street and shows a gravel lane and a house. The church was not in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The nearest panorama is labelled 43 Church Street and shows a gravel lane and a house. The church was not in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -4730,11 +4691,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Apr 2018",
     "subject": "site only",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama shows a car park and parkland, with a radio mast in the distance. Nothing in the picture names the Crystal Palace site.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama shows a car park and parkland, with a radio mast in the distance. Nothing in the picture names the Crystal Palace site."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -4884,11 +4845,11 @@
     "heading": null,
     "pitch": 10,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Aug 2024",
     "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The nearest panorama is labelled 1 St Mary's Road and shows modern flats and semis. St Mary's church was not in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The nearest panorama is labelled 1 St Mary's Road and shows modern flats and semis. St Mary's church was not in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -4908,7 +4869,7 @@
    "uncertaintyMetres": 200,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The place is the street, known only to about 200 m, and it has no Street View entry.",
    "significance": "Denmark Street, Watford is on the site for Lucy Andrews: worked 1881.",
    "events": [
     {
@@ -5071,21 +5032,8 @@
    "blurb": "In 1921 May Cousins worked here as a ward maid, and probably her sister Grace as a housemaid.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.5248,
-    "targetLng": 0.0478,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 5,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "site only",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of a park is not the hospital site, so it is not used.",
    "blurbSourceIds": [
     "census-1921-may"
    ]
@@ -5137,7 +5085,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -5508,7 +5457,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -5674,7 +5624,7 @@
    "uncertaintyMetres": 2500,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. OpenStreetMap has no Ham Farm in Aldenham. The 1906 Hilfield sale particulars (Historic England Archive SC00489) name the farm but the sheet was not opened here, so the farmhouse is not placed.",
    "significance": "Ham Farm, Aldenham is on the site for Henry Stacey, Mary Stacey: lived 1901.",
    "events": [
     {
@@ -5838,7 +5788,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -6063,7 +6014,7 @@
    "uncertaintyMetres": 600,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Street View on 24 November 2026 shows a lane called Kemprow, not a building called High Cross.",
    "significance": "High Cross, Aldenham is on the site for George Andrews, Alice Andrews: lived 1891.",
    "events": [
     {
@@ -6165,11 +6116,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Sep 2024",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 4 Kemprow, Radlett, and shows a hedge-lined lane. No cross or farmstead was identified.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 4 Kemprow, Radlett, and shows a hedge-lined lane. No cross or farmstead was identified."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -6300,7 +6251,8 @@
    "coordinatePrecision": "point",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "pin",
@@ -6338,11 +6290,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "May 2017",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 2 Greenland Place and shows the junction and a stock-brick building. The World's End (the old Mother Red Cap) was not clearly in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 2 Greenland Place and shows the junction and a stock-brick building. The World's End (the old Mother Red Cap) was not clearly in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -6519,7 +6471,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -6578,7 +6531,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -6663,11 +6617,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Apr 2025",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 516 Brixton Road and shows the A23 shops. It is the right road. The studio building was not identified.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 516 Brixton Road and shows the A23 shops. It is the right road. The studio building was not identified."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -6788,21 +6742,8 @@
    "blurb": "Henry Stacey married Mary Walter here on 5 June 1858.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.6955,
-    "targetLng": -0.3884,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of a church hall is not a view of the church, so it is not used.",
    "blurbSourceIds": [
     "parish-leavesden-1858"
    ]
@@ -6996,7 +6937,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -7145,7 +7087,9 @@
    "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24",
+    "loc-wikipedia-coords-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -7171,7 +7115,7 @@
    "uncertaintyMetres": 300,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The place is the street, known only to about 300 m, and it has no Street View entry.",
    "significance": "Mansell Street, Whitechapel is on the site for William FitzMaurice, John FitzMaurice, Eliza FitzMaurice: lived 25 December 1827.",
    "events": [
     {
@@ -7234,7 +7178,7 @@
    "uncertaintyMetres": 2000,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Mead Cottage was not found on OpenStreetMap. The 1881 crop names it in Bushey. The circle over Bushey stays.",
    "significance": "Mead Cottage, Bushey is on the site for Henry Stacey, Mary Stacey: lived 1881.",
    "events": [
     {
@@ -7270,7 +7214,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "osm-nominatim-2026",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -7379,7 +7324,8 @@
    "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -7642,7 +7588,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -7700,7 +7647,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -7819,13 +7767,13 @@
    "address": "Queen Street, Chelsea",
    "modernAddress": "Flood Street, Chelsea",
    "precision": "street",
-   "lat": 51.4868,
-   "lng": -0.166,
-   "coordinateMethod": "Queen Street, Chelsea, was later renamed Flood Street; the point is on Flood Street.",
+   "lat": 51.486587,
+   "lng": -0.165668,
+   "coordinateMethod": "Checked 24 November 2026. The previous point (51.4868, -0.1660) reverse-geocoded to Flood Walk, not Flood Street. Queen Street, Chelsea, is the street later called Flood Street, so the point is now on Flood Street (OpenStreetMap Nominatim, 51.486587, -0.165668). The house number is not known, so the circle stays at 300 m.",
    "uncertaintyMetres": 300,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The point is now on Flood Street, but no house number is known, so there is no building to judge.",
    "significance": "Queen Street, Chelsea is on the site for William G. Falcke, Elizabeth Falcke: lived 1818 to 1822.",
    "events": [
     {
@@ -7861,7 +7809,8 @@
    "coordinatePrecision": "street",
    "todayNote": "Queen Street is now called Flood Street.",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -7881,9 +7830,9 @@
    "address": "",
    "modernAddress": "",
    "precision": "building",
-   "lat": 51.5075,
-   "lng": 0.064,
-   "coordinateMethod": "Corrected. The directory's point was the Royal Albert Dock in Liverpool. This is the Royal Albert Dock in London's docklands, where the Port of London Authority employed him in 1921.",
+   "lat": 51.50614,
+   "lng": 0.058033,
+   "coordinateMethod": "Checked 24 November 2026. The previous point (51.5075, 0.0640) reverse-geocoded to University Way, on the campus beside the dock, not on the dock basin. Moved to the Royal Albert Dock basin in OpenStreetMap (51.50614, 0.058033). The circle stays at 1500 m.",
    "uncertaintyMetres": 1500,
    "inEngland": true,
    "standsToday": "yes",
@@ -7918,7 +7867,8 @@
    "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -8441,9 +8391,9 @@
    "address": "",
    "modernAddress": "",
    "precision": "registration district",
-   "lat": 51.455,
-   "lng": -0.45,
-   "coordinateMethod": "Drawn as an approximate area, a circle of about 9 km round the district. Spelthorne district, Middlesex, as the electoral registers name it.",
+   "lat": 51.433024,
+   "lng": -0.461984,
+   "coordinateMethod": "Checked 24 November 2026. The previous point (51.4550, -0.4500) reverse-geocoded to the Heathrow Terminal 4 park and ride, on the edge of the district. Moved to Ashford, a town in Spelthorne (OpenStreetMap, 51.433024, -0.461984). Staines and Sunbury sit inside the same 9 km circle.",
    "uncertaintyMetres": 9000,
    "inEngland": true,
    "standsToday": "unknown",
@@ -8479,7 +8429,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -8544,21 +8495,8 @@
    "blurb": "Henry George Andrews was baptised here on 9 June 1889.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.750531,
-    "targetLng": -0.342564,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of an interior passage is not a view of the abbey, so it is not used.",
    "blurbSourceIds": [
     "parish-st-albans-1889"
    ]
@@ -8707,11 +8645,11 @@
     "heading": null,
     "pitch": 10,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Apr 2021",
     "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The nearest panorama is on the Greenway and shows the embankment and trees. St Andrew's church was not in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The nearest panorama is on the Greenway and shows the embankment and trees. St Andrew's church was not in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -8766,7 +8704,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -8857,21 +8796,8 @@
    "blurb": "John Richard (1829) and Robert William (1832), sons of John and Eliza FitzMaurice, were baptised here.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.516849,
-    "targetLng": -0.041666,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of the churchyard is not a street panorama, so it is not used.",
    "blurbSourceIds": [
     "parish-stepney-1829",
     "parish-stepney-1832"
@@ -8936,21 +8862,8 @@
    "blurb": "William Cousins was probably baptised here on 1 December 1850.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.549082,
-    "targetLng": -0.05324,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo in the churchyard is not a street panorama, so it is not used.",
    "blurbSourceIds": [
     "parish-hackney-1850"
    ]
@@ -9030,28 +8943,17 @@
    "coordinatePrecision": "point",
    "todayNote": "The old church was bombed in 1941 and rebuilt; much of what stands is post-war.",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24",
+    "loc-nhle"
    ],
    "boundary": null,
    "drawAs": "pin",
    "blurb": null,
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.483,
-    "targetLng": -0.1708,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "rebuilt on the site",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of the riverside garden is not a view of the church, so it is not used.",
    "blurbSourceIds": []
   },
   {
@@ -9121,11 +9023,11 @@
     "heading": null,
     "pitch": 10,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Mar 2019",
     "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The nearest panorama is labelled 23 Over Pool Road and shows modern terraces and a low building. St Margaret's church was not in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The nearest panorama is labelled 23 Over Pool Road and shows modern terraces and a low building. St Margaret's church was not in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -9182,28 +9084,17 @@
    "coordinatePrecision": "point",
    "todayNote": "Rebuilt in 1873 to 1875; the 1827 wedding was in the church that stood here before.",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24",
+    "loc-nhle"
    ],
    "boundary": null,
    "drawAs": "pin",
    "blurb": "John FitzMaurice, of His Majesty's Tower of London, married Eliza Taylor here by licence on 3 February 1827.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 52.477,
-    "targetLng": -1.8932,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "rebuilt on the site",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo inside the Bullring is not a view of the church, so it is not used.",
    "blurbSourceIds": [
     "parish-birmingham-1827"
    ]
@@ -9338,11 +9229,11 @@
     "heading": null,
     "pitch": 10,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Oct 2026",
     "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The nearest panorama is labelled 108 Overton Drive and shows houses and a fence. St Mary's church was not in view. Google printed the capture date as Oct 2026.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The nearest panorama is labelled 108 Overton Drive and shows houses and a fence. St Mary's church was not in view. Google printed the capture date as Oct 2026."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -9718,11 +9609,11 @@
     "heading": null,
     "pitch": 10,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "May 2023",
     "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The nearest panorama shows the riverside path and a modern block of flats. St Mary's church was not in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The nearest panorama shows the riverside path and a modern block of flats. St Mary's church was not in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": [
@@ -9786,21 +9677,8 @@
    "blurb": "William, son of John and Eliza FitzMaurice, was baptised here on 25 December 1827.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.516188,
-    "targetLng": -0.068521,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "site only",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of Altab Ali Park is not a street panorama, so it is not used.",
    "blurbSourceIds": [
     "parish-whitechapel-1827"
    ]
@@ -9862,21 +9740,8 @@
    "blurb": "Edward Dixon FitzMaurice married Edith Madeline Spencer here on 2 August 1897.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.459685,
-    "targetLng": -0.115954,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). The only picture offered was a private indoor photo, not the church.",
    "blurbSourceIds": [
     "parish-brixton-1897"
    ]
@@ -9928,7 +9793,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -10046,28 +9912,17 @@
    "coordinatePrecision": "point",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24",
+    "loc-nhle"
    ],
    "boundary": null,
    "drawAs": "pin",
    "blurb": null,
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.5062,
-    "targetLng": -0.0581,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of the church interior is not a street panorama, so it is not used.",
    "blurbSourceIds": []
   },
   {
@@ -10125,21 +9980,8 @@
    "blurb": "William Cousins married Anne Gall here on 15 January 1871.",
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.5173,
-    "targetLng": -0.0605,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "rebuilt on the site",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of a library interior could not be confirmed as this church, so it is not used.",
    "blurbSourceIds": [
     "parish-stepney-1871"
    ]
@@ -10437,7 +10279,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -10584,11 +10427,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Aug 2025",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is on the A4, Brompton Road, and shows the shops and mansion blocks. It is the right street. Numbers 47 and 49 were not picked out.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is on the A4, Brompton Road, and shows the shops and mansion blocks. It is the right street. Numbers 47 and 49 were not picked out."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -10608,7 +10451,7 @@
    "uncertaintyMetres": 1500,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. Sutton Road was not found on OpenStreetMap in Aston. The 1881 crop names the road. Birmingham Archives hold Aston Manor street maps (for example MAP/259303, 1883) which were not opened, so the road is not placed.",
    "significance": "Sutton Road, Aston Manor is on the site for Robert W. FitzMaurice, Edward Dixon FitzMaurice: lived 1881.",
    "events": [
     {
@@ -10644,7 +10487,8 @@
    "todayNote": "Sutton Road in Aston Manor has not been found on a map yet.",
    "coordinateSourceIds": [
     "osm-nominatim-2026",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -10670,7 +10514,7 @@
    "uncertaintyMetres": 900,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The house name is known only to about 900 m along Chester Road, and it has no Street View entry.",
    "significance": "The Nest, Chester Road, Erdington is on the site for Fanny Mary Falcke: died 25 October 1917.",
    "events": [
     {
@@ -10960,21 +10804,8 @@
    "blurb": null,
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 51.508217,
-    "targetLng": -0.076188,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 5,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of an indoor armoury is not a street panorama, so it is not used.",
    "blurbSourceIds": []
   },
   {
@@ -11095,7 +10926,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -11236,7 +11068,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -11669,7 +11502,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -11831,11 +11665,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Jun 2021",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 6 Leda Road. A Georgian building with a white cupola is in the distance, which fits the old dockyard offices, but the view is the side street rather than the yard itself.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 6 Leda Road. A Georgian building with a white cupola is in the distance, which fits the old dockyard offices, but the view is the side street rather than the yard itself."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -11958,11 +11792,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Oct 2018",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is the Cliveden forecourt: a stone clock tower, railings and the edge of the house. The main front was only partly in view.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is the Cliveden forecourt: a stone clock tower, railings and the edge of the house. The main front was only partly in view."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -12038,8 +11872,8 @@
    "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Query: Hamilton Palace",
    "uncertaintyMetres": 40,
    "inEngland": false,
-   "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsToday": "gone",
+   "standsTodaySource": "Gone. The palace was demolished in 1921 after mining undermined it (stated on the family tree page, and on the Wikipedia article Hamilton Palace, checked 24 November 2026). Street View on 24 November 2026, capture Mar 2026, labelled 11 Keith Street, shows modern buildings and no palace.",
    "significance": "Hamilton Palace is on the site for James Hamilton, 1st Duke of Hamilton: born 1606-06-19.",
    "events": [
     {
@@ -12085,11 +11919,11 @@
     "heading": null,
     "pitch": 5,
     "fov": 80,
-    "captureDate": null,
+    "captureDate": "Mar 2026",
     "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
+    "caption": "Looked at on 24 November 2026. The panorama is labelled 11 Keith Street, Hamilton, and shows modern commercial buildings and a cleared site. No palace remains were visible.",
+    "checked": true,
+    "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 11 Keith Street, Hamilton, and shows modern commercial buildings and a cleared site. No palace remains were visible."
    },
    "streetViewReason": null,
    "blurbSourceIds": []
@@ -12147,21 +11981,8 @@
    "blurb": null,
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 55.953151,
-    "targetLng": -3.171648,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "original building",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of the ruined nave is not a street panorama, so it is not used.",
    "blurbSourceIds": []
   },
   {
@@ -12179,7 +12000,7 @@
    "uncertaintyMetres": 2000,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The house is known only to about 2000 m, and it has no Street View entry.",
    "significance": "Lantern Hatch, Itchingfield, near Horsham, Sussex is on the site for Dorothy FitzMaurice: lived 1951.",
    "events": [
     {
@@ -12331,21 +12152,8 @@
    "blurb": null,
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 55.596609,
-    "targetLng": -2.456165,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 5,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026).",
    "blurbSourceIds": []
   },
   {
@@ -12403,21 +12211,8 @@
    "blurb": null,
    "images": [],
    "historicMap": null,
-   "streetView": {
-    "targetLat": 50.386615,
-    "targetLng": -3.503585,
-    "panoLat": null,
-    "panoLng": null,
-    "heading": null,
-    "pitch": 10,
-    "fov": 80,
-    "captureDate": null,
-    "subject": "nearest public view",
-    "caption": null,
-    "checked": false,
-    "method": "No build key was available, so the panorama is not fixed: the Maps link opens the panorama nearest the place, facing it. To be checked by eye."
-   },
-   "streetViewReason": null,
+   "streetView": null,
+   "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of St Mary's Bay is the beach, not the church, so it is not used.",
    "blurbSourceIds": []
   },
   {
@@ -12492,7 +12287,7 @@
    "uncertaintyMetres": 2000,
    "inEngland": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not yet checked against the historic OS maps and Street View. Listed in docs/map-audit.md for checking.",
+   "standsTodaySource": "Left unknown. The house is known only to about 2000 m, and it has no Street View entry.",
    "significance": "The Tythe House, Stewkley, near Leighton Buzzard is on the site for Edmond FitzMaurice, 7th Earl of Orkney: lived date not stated.",
    "events": [
     {
@@ -12584,7 +12379,8 @@
    "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -12644,7 +12440,8 @@
    "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",
@@ -12706,7 +12503,8 @@
    "todayNote": "",
    "coordinateSourceIds": [
     "loc-ukbmd-districts",
-    "loc-map-build-2026"
+    "loc-map-build-2026",
+    "loc-osm-nominatim-2026-11-24"
    ],
    "boundary": null,
    "drawAs": "area",

@@ -1,4 +1,4 @@
-/* Ask the Archive: the genealogy engine.
+/* Stuart: the genealogy engine.
  *
  * Every relationship answer is worked out here from the parent, child and marriage links in the family data,
  * never by the language model. The labels follow the family tree exactly (tree-canvas.js relInfo), so the tree

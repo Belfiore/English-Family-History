@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the knowledge base for Ask the Archive (ask.html).
+"""Build the knowledge base Stuart answers from (ask.html and the Ask Stuart button on every page).
 
     python3 tools/build-archive.py           write archive/kb-<hash>.json and archive/manifest.json
     python3 tools/build-archive.py --check   exit 1 if the committed index is out of date
@@ -21,7 +21,7 @@ to them so ages can be worked out without pretending to more precision than the 
 The model download sizes in the manifest are read from the model host when the network allows (the
 GitHub Pages build does); otherwise the last known sizes are kept.
 """
-import hashlib, html, json, os, re, sys, urllib.request
+import hashlib, html, json, os, re, sys
 from html.parser import HTMLParser
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -38,15 +38,6 @@ PAGE_INFO = {
 }
 KEEP_FROM_ORKNEY = {'cecil-8th'}
 SIDES = {'ron': 'ronald-andrews', 'pat': 'patricia-andrews'}
-
-# the language models offered on ask.html, so the page can show their real download size
-MODELS = [
-    {'id': 'Qwen3-1.7B-q4f16_1-MLC', 'repo': 'mlc-ai/Qwen3-1.7B-q4f16_1-MLC', 'estimateMB': 990},
-    {'id': 'Qwen3-1.7B-q4f32_1-MLC', 'repo': 'mlc-ai/Qwen3-1.7B-q4f32_1-MLC', 'estimateMB': 1100},
-    {'id': 'Qwen3-4B-q4f16_1-MLC', 'repo': 'mlc-ai/Qwen3-4B-q4f16_1-MLC', 'estimateMB': 2280},
-    {'id': 'Qwen3-4B-q4f32_1-MLC', 'repo': 'mlc-ai/Qwen3-4B-q4f32_1-MLC', 'estimateMB': 2520},
-]
-
 
 def load(name):
     with open(os.path.join(ROOT, 'data', name), encoding='utf-8') as f:
@@ -514,29 +505,6 @@ def examples(people):
     return [{'kind': k, 'q': q} for k, q in out]
 
 
-# ------------------------------------------------------------------ model sizes
-def model_sizes(previous):
-    sizes = dict(previous or {})
-    for m in MODELS:
-        got = None
-        for fn in ('tensor-cache.json', 'ndarray-cache.json'):
-            try:
-                url = 'https://huggingface.co/%s/resolve/main/%s' % (m['repo'], fn)
-                with urllib.request.urlopen(url, timeout=15) as r:
-                    data = json.load(r)
-                meta = data.get('metadata') or {}
-                total = sum(rec.get('nbytes', 0) for rec in data.get('records', []))
-                got = int(meta.get('ParamBytes') or total)
-                if got: break
-            except Exception:
-                continue
-        if got:
-            sizes[m['id']] = {'bytes': got, 'measured': True}
-        elif m['id'] not in sizes:
-            sizes[m['id']] = {'bytes': m['estimateMB'] * 1000 * 1000, 'measured': False}
-    return sizes
-
-
 def main():
     check = '--check' in sys.argv
     kb = build()
@@ -555,8 +523,7 @@ def main():
     for f in os.listdir(OUT):
         if f.startswith('kb-') and f.endswith('.json') and f != name: os.remove(os.path.join(OUT, f))
     with open(os.path.join(OUT, name), 'w', encoding='utf-8') as f: f.write(body)
-    sizes = old.get('models') if '--offline' in sys.argv else model_sizes(old.get('models'))
-    manifest = {'schema': SCHEMA, 'kb': name, 'hash': digest, 'counts': kb['counts'], 'models': sizes}
+    manifest = {'schema': SCHEMA, 'kb': name, 'hash': digest, 'counts': kb['counts']}
     with open(man_path, 'w', encoding='utf-8') as f: json.dump(manifest, f, indent=1)
     print('wrote archive/%s (%d bytes): %s' % (name, len(body), ', '.join('%d %s' % (v, k) for k, v in kb['counts'].items())))
 

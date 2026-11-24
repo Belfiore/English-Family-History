@@ -1,4 +1,4 @@
-/* Checks for Ask the Archive.
+/* Checks for Stuart, the family archivist (ask.html and the Ask Stuart button).
  *
  *   node tests/verify-archive.js           everything
  *   SHOTS=1 node tests/verify-archive.js   also writes screenshots to tests/screenshots/ask-*.png
@@ -6,9 +6,10 @@
  *
  * Part 1, in Node: the archive index is up to date and keeps living people private; the genealogy engine on
  * made-up families and on the real tree (and agrees with the family tree page on every pair); the question
- * benchmark in tests/archive-eval.json; the checks on model output.
- * Part 2, in a browser: the page, its links and sources, the fallback without WebGPU, the setup and written
- * answers with a stand-in model (no real model can run here), safety against injected markup, mobile layout.
+ * benchmark in tests/archive-eval.json; the checks kept for written answers, should they come back.
+ * Part 2, in a browser: Stuart's page (choosing who you are, answers about you, sources, follow-ups, choosing
+ * between people, a visitor), the button, window and drawer on the story pages, following links, safety against
+ * injected markup, phones, the home page and the family tree link.
  */
 const fs = require('fs'), path = require('path'), http = require('http'), cp = require('child_process');
 const ROOT = path.join(__dirname, '..');
@@ -58,7 +59,6 @@ kb.sections.concat(kb.photos).forEach(s => {
     if (hash) { anchors[file] = anchors[file] || fs.readFileSync(path.join(ROOT, file), 'utf8'); if (anchors[file].indexOf('id="' + hash + '"') < 0) missingAnchor.push(s.url); }
 });
 check(!missingAnchor.length, 'every section and image link goes to a real page and anchor', missingAnchor.slice(0, 5).join(', '));
-check(Object.keys(man.models).length >= 2 && Object.values(man.models).every(m => m.bytes > 1e8), 'download sizes are recorded for the offered models' + (Object.values(man.models).some(m => !m.measured) ? ' (estimates: the build could not reach the model host)' : ' (measured)'));
 
 section('Genealogy engine on made-up families');
 const P = (id, sex, parents = [], spouses = [], extra = {}) => Object.assign({ id, name: id, sex, parents, children: [], spouses: spouses.map((s, i) => typeof s === 'string' ? { id: s, order: i + 1 } : s) }, extra);
@@ -163,7 +163,7 @@ evalSet.forEach(q => { const k = 'round ' + (q.round || 1); const x = rounds[k] 
 console.log('  ' + Object.keys(rounds).map(k => k + ': ' + rounds[k].questions + (rounds[k].right != null ? ' (first run: ' + rounds[k].right + ' right, ' + (rounds[k].partly || 0) + ' partly, ' + (rounds[k].wrong || 0) + ' wrong)' : ' (written with the code)')).join('; '));
 fs.writeFileSync(path.join(ROOT, 'docs', 'ask-the-archive-eval.json'), JSON.stringify({ date: new Date().toISOString().slice(0, 10), mode: 'quick answers', total, passed, byCategory: byCat, rounds, failed, citations: cites, citationErrors: citeBad, avgMs: Math.round(ms / total) }, null, 1) + '\n');
 
-section('Checking what a model writes');
+section('Checks kept for written answers (not switched on)');
 const rr = A.ask('How old was Edward Dixon FitzMaurice when he died?', {});
 rr.question = 'How old was Edward Dixon FitzMaurice when he died?';
 const v1 = A.checkModelAnswer('<think>hmm</think>Edward Dixon FitzMaurice died on 7 June 1928 [3]. He moved to Paris in 1931 [2]. <img src=x onerror=alert(1)>He was **55** [9].', rr);
@@ -204,12 +204,12 @@ async function browserChecks() {
     };
 
     async function open(url, opts = {}) {
-        const ctx = await browser.newContext({ viewport: opts.viewport || { width: 1280, height: 900 } });
+        const ctx = await browser.newContext({ viewport: opts.viewport || { width: 1280, height: 900 }, reducedMotion: opts.motion ? 'no-preference' : 'reduce' });
         const page = await ctx.newPage();
         const errs = [], external = [];
         page.on('pageerror', e => errs.push(e.message));
         page.on('console', m => { if (m.type() === 'error' && !/Failed to load resource/.test(m.text())) errs.push(m.text()); });
-        page.on('request', r => { if (/huggingface|raw\.githubusercontent|mlc\.ai/.test(r.url())) external.push(r.url()); });
+        page.on('request', r => { if (!r.url().startsWith(base) && !/fonts\.g/.test(r.url())) external.push(r.url()); });
         await page.route(/fonts\.googleapis|fonts\.gstatic/, r => r.abort());
         if (opts.init) await page.addInitScript(opts.init);
         await page.goto(base + url);
@@ -217,164 +217,185 @@ async function browserChecks() {
         await page.waitForTimeout(300);
         return { ctx, page, errs, external };
     }
+    const answers = page => page.evaluate(() => document.querySelectorAll('.st-msg--answer').length);
+    async function askIt(page, q) {
+        const n = await answers(page);
+        await page.fill('.st-input', q);
+        await page.keyboard.press('Enter');
+        await page.waitForFunction(k => document.querySelectorAll('.st-msg--answer').length === k + 1, n, { timeout: 6000 });
+        return page.evaluate(() => { const a = [...document.querySelectorAll('.st-msg--answer')].pop(); return a.textContent; });
+    }
 
-    section('The page');
-    let s = await open('ask.html');
+    section('Stuart on his own page');
+    let s = await open('ask.html', { motion: true });
     let page = s.page;
-    const first = await page.evaluate(() => ({ examples: document.querySelectorAll('#askExamples button').length, label: !!document.querySelector('label[for="askInput"]'), written: document.getElementById('writtenState').textContent, nav: !!document.querySelector('.nav-links a.active[href="ask.html"]') }));
-    check(first.examples >= 6 && first.label && first.nav, `the page opens with ${first.examples} starter questions, a labelled question box and its menu item`);
-    check(/need WebGPU/.test(first.written), 'without WebGPU the page says written answers cannot run here, and that quick answers work in full');
-    await shot(page, 'start');
-    await page.fill('#askInput', 'How was John FitzMaurice related to Grandma Pat?');
+    await page.waitForSelector('.st-pick-input');
+    const first = await page.evaluate(() => ({
+        hero: (document.querySelector('.st-hero-name') || {}).textContent, intro: document.querySelector('.st-msg--intro').textContent,
+        locked: document.querySelector('.st-input').disabled, nav: !!document.querySelector('.nav-links a.active[href="ask.html"]'),
+        options: document.querySelectorAll('.st-pick-opt').length, combo: document.querySelector('.st-pick-input').getAttribute('role')
+    }));
+    check(/Ask Stuart/.test(first.hero) && /I'm Stuart/.test(first.intro) && first.nav, 'Stuart introduces himself at the top of the page');
+    check(first.locked && /who are you/i.test(first.intro), 'Stuart asks who you are before the question box opens');
+    await page.waitForTimeout(900);
+    await shot(page, 'intro');
+    await page.fill('.st-pick-input', 'ven');
+    await page.waitForTimeout(150);
+    const ta = await page.evaluate(() => [...document.querySelectorAll('.st-pick-opt')].map(o => o.textContent));
+    check(first.combo === 'combobox' && ta.length === 1 && /Venetia Andrews Austin/.test(ta[0]) && /Grandma Pat and Grandpa Ron's daughter/.test(ta[0]), 'typing part of a name finds the person, with how they fit in the family');
+    await shot(page, 'typeahead');
+    await page.keyboard.press('ArrowDown');
     await page.keyboard.press('Enter');
-    await page.waitForSelector('.turn .answer .sources li');
-    await page.waitForFunction(() => /Answer ready/.test(document.getElementById('askLive').textContent), null, { timeout: 2000 }).catch(() => {});
+    await page.waitForSelector('.st-msg--greet');
+    await page.waitForTimeout(700);
+    const hi = await page.evaluate(() => ({ greet: document.querySelector('.st-msg--greet').textContent, open: !document.querySelector('.st-input').disabled, who: document.querySelector('.st-who').textContent, stored: localStorage.getItem('stuart.me') }));
+    check(/Venetia/.test(hi.greet) && /Who were my grandparents/.test(hi.greet) && hi.open && /Venetia Andrews Austin/.test(hi.who) && /venetia-austin/.test(hi.stored), 'after choosing, Stuart greets you by name with questions about your own family, and the question box opens');
+    await shot(page, 'greeting');
+    let t = await askIt(page, "Who was my grandpa's grandpa?");
+    check(/Your grandfathers' grandfathers were/.test(t) && /Robert W. FitzMaurice/.test(t) && /George Andrews/.test(t), '"my grandpa\'s grandpa" is worked out from the person you are');
+    t = await askIt(page, 'How am I related to Edward Dixon FitzMaurice?');
+    check(/Edward Dixon FitzMaurice was your great-grandfather/.test(t), '"How am I related to" answers from you');
     const rel = await page.evaluate(() => {
-        const a = document.querySelector('.turn .answer');
-        const cites = [...a.querySelectorAll('sup a')].map(x => x.getAttribute('href'));
-        return { text: a.textContent, chain: a.querySelectorAll('.chain li').length, cites, targets: cites.every(h => !!document.getElementById(h.slice(1))), people: [...a.querySelectorAll('a[href^="family-tree.html#/person/"]')].length, live: document.getElementById('askLive').textContent };
+        const a = [...document.querySelectorAll('.st-msg--answer')].pop();
+        const cite = a.querySelector('.st-cite');
+        return { you: !!a.querySelector('.st-chain .is-you'), chain: a.querySelectorAll('.st-chain-who').length, cite: cite && cite.getAttribute('href'), open: a.querySelector('.st-sources').classList.contains('is-open'), people: a.querySelectorAll('a.st-person[href^="family-tree.html#/person/"]').length };
     });
-    check(/great-great-grandfather/.test(rel.text) && rel.chain >= 9, 'a relationship answer shows the label and the chain of five people');
-    check(rel.cites.length && rel.targets, 'citation numbers link to the source list under the answer');
-    check(rel.people >= 5, 'names link to each person on the family tree');
-    check(/Answer ready/.test(rel.live), 'the answer is announced to screen readers once, when it is ready');
-    await shot(page, 'relationship', true);
-    await page.click('.next button');
-    await page.waitForFunction(() => document.querySelectorAll('.turn').length === 2);
-    check(true, 'a suggested follow-up question asks itself');
-    await page.fill('#askInput', 'Tell me about Edith');
+    check(rel.you && rel.chain === 4, 'the line from you to them is drawn, starting from you');
+    check(rel.people >= 3, 'names link to each person on the family tree');
+    await page.click('.st-msg--answer:last-child .st-cite');
+    await page.waitForTimeout(400);
+    check(!rel.open && await page.evaluate(() => [...document.querySelectorAll('.st-msg--answer')].pop().querySelector('.st-sources').classList.contains('is-open')), 'sources are folded away until a citation or "Where this comes from" opens them');
+    await page.waitForFunction(() => /Stuart answered/.test(document.querySelector('.st-sr[role=status]').textContent), null, { timeout: 2000 }).catch(() => {});
+    check(/Stuart answered/.test(await page.evaluate(() => document.querySelector('.st-sr[role=status]').textContent)), 'each answer is announced to screen readers once');
+    await shot(page, 'relationship');
+    await page.click('.st-msg--answer:last-child .st-chips .st-chip');
+    await page.waitForFunction(() => document.querySelectorAll('.st-msg--answer').length === 3);
+    check(true, 'a suggested follow-up asks itself');
+    await page.fill('.st-input', 'Tell me about Edith');
     await page.keyboard.press('Enter');
-    await page.waitForSelector('.choices button');
-    await page.click('.choices button >> nth=1');
-    await page.waitForFunction(() => document.querySelectorAll('.turn').length === 4);
-    const pinned = await page.evaluate(() => document.querySelectorAll('.turn')[3].textContent);
-    check(/Edith Marjorie/.test(pinned) && /1899|1900/.test(pinned), 'when a name is shared, choosing one answers about that person');
-    await page.click('#newConvo');
-    check(await page.evaluate(() => !document.querySelector('.turn') && !document.getElementById('askStart').hidden), 'a new conversation clears the answers');
-    await page.fill('#askInput', 'Why did Ron emigrate to Australia?');
-    await page.keyboard.press('Enter');
-    await page.waitForSelector('.turn .answer p');
-    await shot(page, 'missing-information');
-    await page.fill('#askInput', 'Which family members went to South Africa?');
-    await page.keyboard.press('Enter');
-    await page.waitForFunction(() => document.querySelectorAll('.turn').length === 2);
+    await page.waitForSelector('.st-chips--choose .st-chip');
+    await page.click('.st-chips--choose .st-chip >> nth=1');
+    await page.waitForFunction(() => document.querySelectorAll('.st-msg--answer').length === 5);
+    const pinned = await page.evaluate(() => [...document.querySelectorAll('.st-msg--answer')].pop().textContent);
+    check(/Edith Marjorie/.test(pinned) && /1899|1900/.test(pinned), 'when a name is shared, Stuart asks which person, and answers about the one chosen');
+    t = await askIt(page, 'Which family members went to South Africa?');
     await shot(page, 'historical', true);
     // injected markup is shown as text, never run
-    await page.fill('#askInput', '<img src=x onerror="window.__xss=1"> Who was Reg?');
+    await page.fill('.st-input', '<img src=x onerror="window.__xss=1"> Who was Reg?');
     await page.keyboard.press('Enter');
-    await page.waitForFunction(() => document.querySelectorAll('.turn').length === 3);
-    const xss = await page.evaluate(() => ({ flag: window.__xss, imgs: [...document.querySelectorAll('.turn-q img, .answer img')].filter(i => i.getAttribute('src') === 'x').length }));
+    await page.waitForFunction(() => document.querySelectorAll('.st-msg--answer').length === 7);
+    const xss = await page.evaluate(() => ({ flag: window.__xss, imgs: [...document.querySelectorAll('.st-bubble img, .st-body img')].filter(i => i.getAttribute('src') === 'x').length }));
     check(!xss.flag && !xss.imgs, 'markup typed into a question is shown as text and never runs');
+    // the conversation carries on after a reload
+    await page.reload();
+    await page.waitForFunction(() => document.querySelectorAll('.st-msg--answer').length === 7, null, { timeout: 8000 });
+    check(true, 'the conversation is still there after going to another page and coming back');
+    await page.click('.st-who .st-link >> text=New conversation');
+    check(await page.evaluate(() => !document.querySelector('.st-msg--answer') && !!document.querySelector('.st-msg--greet')), 'a new conversation clears the answers and keeps who you are');
+    await page.click('.st-who .st-link >> text=Change');
+    await page.waitForSelector('.st-pick-input');
+    await page.click('.st-pick-visitor');
+    await page.waitForSelector('.st-msg--greet >> nth=1');
+    t = await askIt(page, 'Why did Ron emigrate to Australia?');
+    check(/do not show Ronald Andrews in Australia/.test(t), 'a visitor not on the tree can ask too, and a false premise is answered plainly');
+    await shot(page, 'missing-information');
     check(!s.errs.length, 'no page errors', s.errs.join(' | '));
-    check(!s.external.length, 'nothing is requested from the model hosts until the visitor sets up written answers', s.external.slice(0, 2).join(', '));
-    await s.ctx.close();
-
-    section('Written answers, with a stand-in model');
-    // A fake GPU and a fake worker that behaves like archive-worker.js: real progress messages, streamed tokens.
-    const init = () => {
-        Object.defineProperty(navigator, 'gpu', { value: { requestAdapter: async () => ({ features: new Set(['shader-f16']), limits: { maxBufferSize: 2 ** 31, maxStorageBufferBindingSize: 2 ** 30 } }) } });
-        window.__ASK_TEST_BACKEND = {
-            createWorker() {
-                const w = { cached: false, onmessage: null, terminated: false };
-                const send = m => setTimeout(() => { if (!w.terminated && w.onmessage) w.onmessage({ data: m }); }, 5);
-                w.terminate = () => { w.terminated = true; };
-                w.postMessage = m => {
-                    if (m.type === 'cached') send({ type: 'cached', model: m.model, cached: w.cached });
-                    if (m.type === 'load') {
-                        window.__loadedModel = m.model;
-                        // half way after 0.3 s, then a pause long enough for the screenshot to show the bar at 50%
-                        [0.1, 0.5, 1].forEach((p, i) => setTimeout(() => send({ type: 'progress', progress: p, text: 'Fetching param cache[' + (i + 1) + '/3]: ' + Math.round(p * 990) + 'MB fetched. ' + Math.round(p * 100) + '% completed, ' + (i + 1) * 4 + ' secs elapsed.' }), [0, 300, 1600][i]));
-                        setTimeout(() => send({ type: 'progress', progress: 1, text: 'Finish loading on WebGPU' }), 1900);
-                        setTimeout(() => send({ type: 'loaded', model: m.model }), 2000);
-                    }
-                    if (m.type === 'generate') {
-                        window.__lastPrompt = m.messages;
-                        const out = '<think>\n\n</think>Edward Dixon FitzMaurice was a civil engineer [1]. He sailed for South Africa in 1916 [2]. He also won a prize in 1999 [1].';
-                        out.match(/.{1,12}/g).forEach((t, i) => setTimeout(() => send({ type: 'token', id: m.id, delta: t }), 10 + i * 6));
-                        setTimeout(() => send({ type: 'done', id: m.id, text: out }), 30 + out.length / 12 * 6);
-                    }
-                    if (m.type === 'stop') {}
-                    if (m.type === 'remove') send({ type: 'removed', model: m.model });
-                };
-                return w;
-            }
-        };
-    };
-    s = await open('ask.html', { init });
-    page = s.page;
-    await page.waitForSelector('#writtenActions .btn-a');
-    await page.click('#writtenActions .btn-a');
-    await page.waitForSelector('#setup[open]');
-    const dlg = await page.evaluate(() => ({ text: document.getElementById('setupBody').textContent, radios: document.querySelectorAll('#setup input[type=radio]').length, checked: (document.querySelector('#setup input:checked') || {}).value }));
-    check(/Hugging Face/.test(dlg.text) && /stay on this device/.test(dlg.text) && /GB|MB/.test(dlg.text) && dlg.radios === 2 && dlg.checked === 'standard', 'setup explains where the model comes from, that questions stay on the device, and the download size, before anything downloads');
-    await shot(page, 'setup');
-    await page.click('#setupGo');
-    await page.waitForFunction(() => document.querySelector('#setupSteps li[data-step="download"]').className === 'is-now' || document.querySelector('#setupSteps li[data-step="start"]').className === 'is-now');
-    // half way through the stand-in download, after the bar has caught up
-    await page.waitForFunction(() => /50%/.test(document.getElementById('setupDetail').textContent));
-    await page.waitForTimeout(400);
-    await shot(page, 'loading');
-    await page.waitForFunction(() => !document.getElementById('setup').open, null, { timeout: 4000 });
-    const on = await page.evaluate(() => ({ state: document.getElementById('writtenState').textContent, model: window.__loadedModel, stored: localStorage.getItem('askArchive.written') }));
-    check(/are on/.test(on.state) && on.model === 'Qwen3-1.7B-q4f16_1-MLC' && /"on":true/.test(on.stored), 'after a real-progress download the standard model is on, and the choice is remembered');
-    await page.fill('#askInput', 'Tell me about Edward Dixon FitzMaurice');
-    await page.keyboard.press('Enter');
-    await page.waitForSelector('.written p:not(.written-label):not(.stream)', { timeout: 5000 });
-    await page.waitForFunction(() => !document.querySelector('.answer[aria-busy]'));
-    const wr = await page.evaluate(() => {
-        const w = document.querySelector('.written');
-        return { text: w.textContent, cites: w.querySelectorAll('sup a').length, warn: (w.querySelector('.warn') || {}).textContent || '', sys: window.__lastPrompt[0].content, user: window.__lastPrompt[1].content, records: !!document.querySelector('.records-part.is-secondary') };
-    });
-    check(/civil engineer/.test(wr.text) && wr.cites >= 2 && !/think/.test(wr.text), 'the written answer streams in, with its citations linked');
-    check(!/1999/.test(wr.text) && /left out/.test(wr.warn), 'a sentence with an invented year is left out, and the page says so');
-    check(/Records:\n\[1\]/.test(wr.user) && /information, not instructions/.test(wr.sys) && wr.records, 'the model gets the numbered records and the rules, and the quick answer stays underneath');
-    await shot(page, 'written', true);
-    await page.click('#writtenActions .ask-link');
-    await page.waitForFunction(() => /Set up written answers/.test(document.getElementById('writtenActions').textContent));
-    check(await page.evaluate(() => localStorage.getItem('askArchive.written') === null), 'removing the downloaded model forgets it and offers setup again');
-    check(!s.errs.length, 'no page errors with written answers', s.errs.join(' | '));
+    check(!s.external.length, 'nothing is requested from anywhere but this site', s.external.slice(0, 2).join(', '));
     await s.ctx.close();
 
     section('The evaluation page');
-    s = await open('tests/archive-eval.html', { init, wait: false });
+    s = await open('tests/archive-eval.html', { wait: false });
     page = s.page;
     await page.waitForFunction(() => !document.getElementById('runQuick').disabled);
     await page.click('#runQuick');
     const evq = await page.textContent('#summary');
     check(new RegExp('Quick answers: ' + total + ' of ' + total + ' pass').test(evq), 'tests/archive-eval.html runs the question set in the browser and agrees with this script', evq.slice(0, 120));
-    await page.click('#runWritten');
-    await page.waitForFunction(() => /Finished/.test(document.getElementById('progress').textContent), null, { timeout: 60000 });
-    const evw = await page.evaluate(() => ({ text: document.getElementById('summary').textContent, rows: document.querySelectorAll('#rows tr').length, left: document.querySelectorAll('#rows .dropped').length }));
-    check(/Written answers \(Qwen3-1\.7B-q4f16_1-MLC\)/.test(evw.text) && /tokens\/s/.test(evw.text) && evw.left > 0, 'with a model loaded it writes each answer, vets it as the page does and reports what was left out and the timings', evw.text.slice(0, 200));
     check(!s.errs.length, 'no page errors on the evaluation page', s.errs.join(' | '));
     await s.ctx.close();
 
-    section('Mobile, home page and family tree');
-    s = await open('ask.html?q=' + encodeURIComponent('Who were Reg FitzMaurice\'s grandparents?'), { viewport: { width: 390, height: 844 } });
+    section('Ask Stuart on the story pages');
+    s = await open('falcke.html', { wait: false, motion: true, init: () => { localStorage.setItem('stuart.me', JSON.stringify('venetia-austin')); } });
     page = s.page;
-    await page.waitForSelector('.turn .answer .sources');
-    const mob = await page.evaluate(() => ({ over: document.documentElement.scrollWidth - window.innerWidth, btn: document.getElementById('askGo').getBoundingClientRect().height }));
-    check(mob.over <= 1 && mob.btn >= 44, 'on a phone nothing runs off the side and the Ask button is a full-size target');
+    await page.waitForSelector('.st-launch');
+    await page.waitForTimeout(1200);
+    await page.hover('.st-launch');
+    await page.waitForTimeout(400);
+    const tip = await page.evaluate(() => { const t = document.querySelector('.st-tip'); return { text: t.textContent, shown: getComputedStyle(t).opacity === '1' }; });
+    check(tip.shown && /family archivist/.test(tip.text) && /where each fact comes from/.test(tip.text), 'hovering over "Ask Stuart" explains what he does');
+    await shot(page, 'launcher');
+    await page.click('.st-launch');
+    await page.waitForSelector('.st-panel.is-open .st-msg--greet');
+    await page.waitForTimeout(800);
+    const fl = await page.evaluate(() => { const p = document.querySelector('.st-panel'); const r = p.getBoundingClientRect(); return { mode: p.dataset.mode, w: r.width, right: innerWidth - r.right, greet: p.querySelector('.st-msg--greet').textContent }; });
+    check(fl.mode === 'float' && fl.w < 480 && fl.right < 40, 'Ask Stuart opens as a window in the bottom right-hand corner');
+    check(/Welcome back, Venetia/.test(fl.greet) && /Falcke and FitzMaurice/.test(fl.greet) && /How am I related to/.test(fl.greet), 'Stuart knows who you are and which page you are reading, and suggests questions about the people on it');
+    await shot(page, 'window');
+    await page.click('.st-head-tools button >> nth=0');
+    await page.waitForTimeout(600);
+    const dr = await page.evaluate(() => { const p = document.querySelector('.st-panel'); const r = p.getBoundingClientRect(); return { mode: p.dataset.mode, h: r.height, stored: localStorage.getItem('stuart.mode') }; });
+    check(dr.mode === 'drawer' && dr.h >= 890 && /drawer/.test(dr.stored), 'the window can become a drawer down the side, and stays that way');
+    await page.fill('.st-panel .st-input', 'When did the Falckes come to England?');
+    await page.keyboard.press('Enter');
+    await page.waitForSelector('.st-panel .st-msg--answer');
+    await page.waitForTimeout(700);
+    await shot(page, 'drawer');
+    // an answer that points to this page scrolls to the place and highlights it
+    const here = await page.evaluate(() => { const a = [...document.querySelectorAll('.st-panel a')].find(x => /^falcke\.html#/.test(x.getAttribute('href'))); return a ? a.getAttribute('href') : null; });
+    if (here) {
+        const y0 = await page.evaluate(() => scrollY);
+        await page.evaluate(h => { const a = [...document.querySelectorAll('.st-panel a')].find(x => x.getAttribute('href') === h); const box = a.closest('.st-sources'); if (box) box.dispatchEvent(new CustomEvent('st-open')); a.click(); }, here);
+        await page.waitForTimeout(900);
+        const moved = await page.evaluate(() => ({ y: scrollY, flash: !!document.querySelector('.st-flash'), url: location.pathname }));
+        check(moved.url.endsWith('falcke.html') && moved.flash && moved.y !== y0, 'a link to this page scrolls to the right section and highlights it, without leaving the page');
+    } else check(false, 'an answer about this page links to a section of it');
+    await page.keyboard.press('Escape');
+    await page.waitForTimeout(400);
+    check(await page.evaluate(() => document.querySelector('.st-panel').hidden && document.activeElement === document.querySelector('.st-launch')), 'Escape closes Stuart and puts the focus back on the button');
+    check(!s.errs.length, 'no page errors on a story page', s.errs.join(' | '));
+    // the chat follows you to another page
+    await page.click('.st-launch');
+    await page.waitForSelector('.st-panel.is-open');
+    await page.evaluate(() => { const a = document.querySelector('.st-panel a.st-person'); a.click(); });
+    await page.waitForURL(/family-tree\.html/);
+    await page.goto(base + 'bennett.html');
+    await page.waitForSelector('.st-panel.is-open .st-msg--answer', { timeout: 8000 });
+    check(true, 'after following a link, Stuart opens again on the next page with the conversation carried on');
+    await s.ctx.close();
 
+    section('Phone, home page and family tree');
+    s = await open('ask.html?q=' + encodeURIComponent('Who were Reg FitzMaurice\'s grandparents?'), { viewport: { width: 390, height: 844 }, init: () => { localStorage.setItem('stuart.me', JSON.stringify('visitor')); } });
+    page = s.page;
+    await page.waitForSelector('.st-msg--answer');
+    const mob = await page.evaluate(() => ({ over: document.documentElement.scrollWidth - window.innerWidth, btn: document.querySelector('.st-send').getBoundingClientRect().height, text: document.querySelector('.st-msg--answer').textContent }));
+    check(mob.over <= 1 && mob.btn >= 40 && /Robert W. FitzMaurice/.test(mob.text), 'on a phone nothing runs off the side, and a question in the link is asked straight away');
     const csp = await page.evaluate(() => (document.querySelector('meta[http-equiv="Content-Security-Policy"]') || {}).content || '');
-    check(/script-src 'self'/.test(csp) && /connect-src 'self'/.test(csp) && !/script-src[^;]*unsafe-inline/.test(csp) && !/script-src[^;]*unsafe-eval'/.test(csp.replace("'wasm-unsafe-eval'", '')), 'the page only runs its own scripts, and fetches only from this site and the two model hosts');
+    check(/script-src 'self'/.test(csp) && /connect-src 'self'/.test(csp) && !/script-src[^;]*unsafe/.test(csp) && !/huggingface/.test(csp), 'the page only runs its own scripts and only talks to this site');
     check(!s.errs.length, 'no page errors or blocked resources on a phone', s.errs.join(' | '));
     await shot(page, 'mobile', true);
-    // after the screenshot, so the open menu is not in it
     await page.click('#navToggle');
     check(await page.evaluate(() => document.getElementById('navLinks').classList.contains('open')), 'the menu button opens the menu (the page has no inline script)');
+    await s.ctx.close();
+    s = await open('index.html', { wait: false, viewport: { width: 390, height: 844 } });
+    page = s.page;
+    await page.waitForSelector('.st-launch');
+    await page.click('.st-launch');
+    await page.waitForSelector('.st-panel.is-open .st-pick-input');
+    await page.waitForTimeout(500);
+    const full = await page.evaluate(() => { const r = document.querySelector('.st-panel').getBoundingClientRect(); return r.width >= 389 && r.height >= 843; });
+    check(full, 'on a phone Stuart opens full screen');
+    await shot(page, 'mobile-widget');
     await s.ctx.close();
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
     const hp = await ctx.newPage();
     await hp.route(/fonts\.googleapis|fonts\.gstatic/, r => r.abort());
+    await hp.addInitScript(() => { localStorage.setItem('stuart.me', JSON.stringify('visitor')); });
     await hp.goto(base + 'index.html');
-    await hp.fill('#homeAsk', 'Who was Pat\'s father?');
-    await hp.press('#homeAsk', 'Enter');
-    await hp.waitForSelector('.turn .answer .sources', { timeout: 8000 });
-    check(/Baron Reginald FitzMaurice/.test(await hp.textContent('.turn .answer')), 'the question box on the home page opens Ask the Archive with the answer');
+    await hp.click('.home-ask-try a >> nth=0');
+    await hp.waitForSelector('.st-panel.is-open .st-msg--answer', { timeout: 8000 });
+    check(/Cape Town|South Africa/.test(await hp.textContent('.st-panel .st-msg--answer')), 'the example questions on the home page open Stuart and ask them');
     await hp.goto(base + 'family-tree.html#/person/reg-fitzmaurice');
     await hp.waitForTimeout(1500);
-    check(await hp.evaluate(() => !!document.querySelector('a.more-ask[href^="ask.html?q="]')), 'each person on the family tree links to Ask the Archive');
+    check(await hp.evaluate(() => !!document.querySelector('a.more-ask[href^="ask.html?q="]')), 'each person on the family tree links to Stuart');
     // the archive and the family tree page give the same label for every pair of people
     const treeLabels = await hp.evaluate(() => { const t = window.__tree, out = {}; t.D.people.forEach(a => t.D.people.forEach(b => { if (a.id !== b.id) out[a.id + '|' + b.id] = t.relInfo(a.id, b.id).label; })); return out; });
     const RK2 = Kin.create(loadKb().kb.people);

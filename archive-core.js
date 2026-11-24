@@ -1,4 +1,4 @@
-/* Ask the Archive: reading a question and answering it from the records.
+/* Stuart: reading a question and answering it from the records.
  *
  *   var archive = ArchiveCore.create(kb);
  *   var result = archive.ask('How was John FitzMaurice related to Grandma Pat?', conversation);
@@ -306,7 +306,9 @@
         function relTo(anchor, id) { var r = kin.relate(anchor, id); return r && r.label ? r.label : null; }
         // how someone connects to Grandma Pat or Grandpa Ron, for the side they are on
         function sideLabel(id) {
-            var p = byId[id]; if (!p || id === PAT || id === RON) return null;
+            var p = byId[id];
+            if (p && ME && ME !== id) { var rm = kin.relate(ME, id); if (rm.label && rm.kind !== 'none' && rm.kind !== 'unknown' && rm.kind !== 'marriage') return 'your ' + rm.label; }
+            if (!p || id === PAT || id === RON) return null;
             var a = p.side === 'ron' ? RON : PAT;
             var r = kin.relate(a, id);
             if (!r.label || r.kind === 'none' || r.kind === 'marriage') { var r2 = kin.relate(a === PAT ? RON : PAT, id); if (r2.label && r2.kind !== 'marriage') { r = r2; a = a === PAT ? RON : PAT; } }
@@ -335,7 +337,8 @@
             }
             if (id !== PAT && id !== RON && skip !== 'relate') {
                 var a = p.side === 'ron' ? RON : PAT, r = kin.relate(a, id);
-                if (r.label && r.kind !== 'marriage') out.push('How is ' + nm + ' related to ' + (a === PAT ? 'Grandma Pat' : 'Grandpa Ron') + '?');
+                if (ME && ME !== id && kin.relate(ME, id).label) out.push('How am I related to ' + nm + '?');
+                else if (r.label && r.kind !== 'marriage') out.push('How is ' + nm + ' related to ' + (a === PAT ? 'Grandma Pat' : 'Grandpa Ron') + '?');
             }
             return out;
         }
@@ -368,7 +371,7 @@
             var label = info.label, back = kin.relate(y, x).label;
             var calc = r.ev.calc('rel:' + x + ':' + y, 'Relationship worked out from the family tree', byId[y].url, nameOf(y) + ' is ' + nameOf(x) + "'s " + label + '.');
             var lead = P(y) + ' ' + (isDead(y) || isDead(x) ? 'was' : 'is') + ' ' + P(x) + "'s " + label + '.' + r.ev.refs([calc]);
-            if (back && info.kind === 'blood' && info.m !== info.n) lead += ' Put the other way round, ' + P(x) + ' ' + (isDead(y) || isDead(x) ? 'was' : 'is') + ' ' + P(y) + "'s " + back + '.';
+            if (back && info.kind === 'blood' && info.m !== info.n) lead += ' Put the other way round, ' + P(x) + ' ' + (isDead(x) ? 'was' : 'is') + ' ' + P(y) + "'s " + back + '.';
             r.paras.push(lead);
             if (info.kind === 'blood' && info.commons.length && info.m > 0 && info.n > 0) {
                 var cm = info.commons;
@@ -445,7 +448,7 @@
                 sideText = ' on ' + pron(id, 'poss') + ' ' + (viaDad ? "father's" : "mother's") + ' side';
             }
             if (known.length > 1 && many[words[words.length - 1]]) words[words.length - 1] = many[words[words.length - 1]];
-            var phrase = nameOf(id) + "'s " + words.join("'s ") + sideText;
+            var phrase = nameOf(id) + "'s " + words.map(function (w, i) { return i < words.length - 1 ? w + (/s$/.test(w) ? "'" : "'s") : w; }).join(' ') + sideText;
             r.focus = r.focus.concat(known.filter(function (k) { return !living(k); }).slice(0, 3));
             var c = r.ev.calc('list:' + id + ':' + words.join('-'), 'Worked out from the family tree', byId[id].url, '');
             if (!known.length) {
@@ -1684,15 +1687,47 @@
         function theName(a, term) { return (new RegExp('\\bthe\\s+' + S.norm(term) + '\\b').test(S.norm(a.L)) ? 'the ' : '') + term; }
         function majoritySide(ids) { var n = { ron: 0, pat: 0 }; ids.forEach(function (id) { var sd = byId[id] && byId[id].side; if (n[sd] != null) n[sd]++; }); return n.ron > n.pat ? 'ron' : n.pat > n.ron ? 'pat' : null; }
 
+        // "my grandfather", "How am I related to...": the visitor has said who they are, so read the question from them
+        function personalise(q, me) {
+            var nm = byId[me].name;
+            var s = ' ' + String(q || '').replace(/[‘’]/g, "'") + ' ';
+            s = s.replace(new RegExp('\\b(' + REL_WORD + ")s(?=\\s+" + REL_WORD + '\\b)', 'gi'), "$1's");
+            s = s.replace(/\bam I\b/gi, 'is ' + nm).replace(/\bI am\b/gi, nm + ' is').replace(/\bI'm\b/gi, nm + ' is').replace(/\bwas I\b/gi, 'was ' + nm)
+                .replace(/\b(my|mine|myself)\b/gi, function (m) { return /^my$/i.test(m) ? nm + "'s" : nm; })
+                .replace(/(\w+\s+)?\bme\b/gi, function (m, pre) { return pre && /^(tell|show|give|let|help|remind|send|teach|find)\s+$/i.test(pre) ? m : (pre || '') + nm; })
+                .replace(/\bI\b/g, nm);
+            // "Who was grandpa's grandpa?" with no one named: grandpa is theirs
+            if (!names.find(s).mentions.length) {
+                var m = new RegExp('\\b(?:the\\s+)?(' + REL_WORD + ')\\b', 'i').exec(s);
+                if (m) s = s.slice(0, m.index) + nm + "'s " + m[1] + s.slice(m.index + m[0].length);
+            }
+            return s.trim();
+        }
+        function youify(r, me) {
+            var t = '{{p:' + me + '}}';
+            function y(x) {
+                if (!x) return x;
+                x = String(x).split(t + "'s").join('your').split(t + ' was ').join('you were ').split(t + ' is ').join('you are ').split(t + ' has ').join('you have ').split(t).join('you');
+                return x.replace(/(^|[.!?:]\s+)(your|you)\b/g, function (m, a1, b1) { return a1 + b1.charAt(0).toUpperCase() + b1.slice(1); });
+            }
+            r.paras = r.paras.map(y); if (r.bullets) r.bullets = r.bullets.map(y); if (r.paras2) r.paras2 = r.paras2.map(y);
+            if (r.after) r.after.bullets = r.after.bullets.map(y);
+            if (r.list) r.list.forEach(function (x) { x.note = y(x.note); });
+        }
+        var ME = null;
         function ask(raw, convo) {
             convo = convo || {};
-            var a = analyse(raw, convo), L = a.L;
+            ME = convo.me && byId[convo.me] ? convo.me : null;
+            var a = analyse(ME ? personalise(raw, ME) : raw, convo), L = a.L;
             var r = route(a, convo);
             r = finish(r, a);
+            if (ME) youify(r, ME);
+            r.asked = String(raw || '');
             // remember what this answer was about, for "he", "her father", "that branch"
             r.state = { focus: r.focus.length ? r.focus : (convo.focus || []), family: r.familyKey || (a.families[0] && a.families[0].family) || convo.family || null, period: r.period || a.period || convo.period || null, last: { q: a.q, type: r.type } };
             r.analysis = { people: a.people.map(function (x) { return x.id; }), families: a.families.map(function (x) { return x.family; }), period: a.period, places: a.places.map(function (x) { return x.key; }), unknown: a.unknown, usedFocus: a.usedFocus };
             if (r.allowModel) r.llm = buildPrompt(r, a, convo);
+            ME = null;
             return r;
         }
 
@@ -1748,6 +1783,7 @@
                 if (RX.young.test(L) && isCouple(x, y)) return toolDiedYoung(a, kin.children(x).filter(function (k) { return kin.children(y).indexOf(k) >= 0; }), 'the family of ' + nameOf(x) + ' and ' + nameOf(y));
                 if (RX.common.test(L)) return toolCommon(a, x, y);
                 if (RX.gens.test(L)) return toolGenerations(a, x, y);
+                if (ME && (x === ME || y === ME) && (RX.relate.test(L) || RX.line.test(L))) return toolRelationship(a, ME, x === ME ? y : x);
                 if (RX.relate.test(L) || RX.line.test(L) || / and .* (related|connected)/.test(L)) return toolRelationship(a, y, x);
                 // "Reg's father and mother": treat as the first person; "Reg and Lilian's children" handled below
             }
@@ -1758,6 +1794,9 @@
                 var tg = chainTargets(one, a.chains[one]);
                 var attr = RX.work.test(L) || RX.homes.test(L) || RX.born.test(L) || RX.died.test(L) || RX.buried.test(L) || RX.cause.test(L) || RX.maiden.test(L) || RX.age.test(L) ||
                     RX.photos.test(L) || recordsAsked(L) || RX.missing.test(L) || /\btell me (more )?about\b|\bwhat (do we|do you) know about\b|\bwhat happened to\b/.test(L) || (RX.married.test(L) && !/\bwho\b/.test(L));
+                if (attr && ids.length > 1 && tg.indexOf(ids[1]) >= 0 && !living(ids[1])) return route(Object.assign({}, a, { people: [a.people[1]], chains: {} }), convo);
+                if (attr && tg.length > 1 && RX.homes.test(L)) return toolHomes(a, tg.filter(function (t) { return !living(t); }));
+                if (attr && tg.length > 1 && RX.work.test(L)) return toolWork(a, tg.filter(function (t) { return !living(t); }));
                 if (attr && tg.length === 1 && !living(tg[0])) return route(Object.assign({}, a, { people: [{ id: tg[0], text: nameOf(tg[0]).toLowerCase(), how: 'chain' }], chains: {} }), convo);
                 if (RX.married.test(L) && /\b(when|where)\b/.test(L) && tg.length === 2 && isCouple(tg[0], tg[1])) return toolFact(a, tg[0], 'marriage');
                 var ch = a.chains[one];
@@ -1993,7 +2032,7 @@
         }
 
         return {
-            ask: ask, analyse: analyse, kin: kin, names: names, places: placeIndex, index: index, byId: byId, sources: sources,
+            ask: ask, analyse: analyse, kin: kin, PAT: PAT, RON: RON, names: names, places: placeIndex, index: index, byId: byId, sources: sources,
             checkModelAnswer: checkModelAnswer, examples: kb.examples || [], nameOf: nameOf, docs: docs, KIND_LABEL: KIND_LABEL
         };
     }

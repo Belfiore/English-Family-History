@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="robots" content="noindex">
-    <title>Ask the Archive: evaluation</title>
+    <title>Stuart: evaluation</title>
     <link rel="stylesheet" href="../branch.css">
     <style>
         body { background: #fbf7f0; }
@@ -28,25 +28,20 @@
 </head>
 <body>
 <main>
-    <h1>Ask the Archive: evaluation</h1>
-    <p>This page runs every question in <code>tests/archive-eval.json</code> through the archive. Quick answers run straight away. Written answers need WebGPU and the downloaded model; if the model is not already on this device, running them downloads it from Hugging Face first. Nothing is sent anywhere else, and the results stay on this page until you download them.</p>
+    <h1>Stuart: evaluation</h1>
+    <p>This page runs every question in <code>tests/archive-eval.json</code> through Stuart's answers in this browser and checks each one, with the same rules as <code>tests/verify-archive.js</code>. Results stay on this page until you download them.</p>
 
     <div class="env" id="env">Checking this device…</div>
 
     <div class="controls">
         <button type="button" id="runQuick" disabled>Run quick answers</button>
-        <label><input type="radio" name="model" value="standard" checked> Standard model</label>
-        <label><input type="radio" name="model" value="larger"> More detailed model</label>
-        <label><input type="checkbox" id="writtenOnly" checked> Only questions that get a written answer</label>
-        <button type="button" id="runWritten" disabled>Run written answers</button>
-        <button type="button" class="ghost" id="stop" disabled>Stop</button>
         <button type="button" class="ghost" id="download" disabled>Download results (JSON)</button>
     </div>
     <p class="muted" id="progress" aria-live="polite"></p>
 
     <div class="summary" id="summary" hidden></div>
     <table>
-        <thead><tr><th>#</th><th>Question</th><th>Category</th><th>Quick</th><th>Written answer</th><th>Checks</th><th>Timing</th></tr></thead>
+        <thead><tr><th>#</th><th>Question</th><th>Category</th><th>Quick</th></tr></thead>
         <tbody id="rows"></tbody>
     </table>
 </main>
@@ -54,7 +49,6 @@
 <script src="../archive-dates.js"></script>
 <script src="../archive-search.js"></script>
 <script src="../archive-core.js"></script>
-<script src="../archive-llm.js"></script>
 <script src="archive-eval-run.js"></script>
 </body>
 </html>

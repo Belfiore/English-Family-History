@@ -546,18 +546,16 @@ body {
 .gmap-actions { display: flex; flex-direction: column; align-items: stretch; gap: 0.7rem; }
 .gmap-actions .gmap-note { margin: 0.1rem 0 0; font-size: 0.95rem; font-style: italic; color: rgba(255, 255, 255, 0.7); text-align: center; }
 
-/* the question box for Ask the Archive */
+/* the Ask Stuart section */
 .visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
 .home-ask { margin: 3.6rem auto 0; max-width: 860px; padding: 1.6rem 1.8rem 1.4rem; border: 1px solid var(--border); border-left: 4px solid var(--burgundy); border-radius: 4px; background: #fff; }
 .home-ask h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; margin-bottom: 0.4rem; }
+.home-ask-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.2rem; margin-top: 1rem; }
+.home-ask-full { color: var(--burgundy); text-underline-offset: 3px; }
 .home-ask-text p { font-size: 1.1rem; line-height: 1.65; color: var(--ink-light); max-width: 62ch; }
-.home-ask-form { display: flex; gap: 0.6rem; margin-top: 1rem; }
-.home-ask-form input { flex: 1; min-width: 0; font: inherit; font-size: 1.15rem; padding: 0.55rem 0.8rem; border: 1px solid var(--border); border-radius: 4px; background: var(--cream); color: var(--ink); }
-.home-ask-form input:focus { outline: 3px solid var(--gold-dark); outline-offset: 1px; }
 .home-ask-try { margin-top: 0.8rem; font-size: 1rem; color: var(--sepia); }
 .home-ask-try a { color: var(--burgundy); margin-right: 0.9rem; text-underline-offset: 3px; display: inline-block; }
-@media (max-width: 560px) { .home-ask-form { flex-direction: column; } .home-ask { padding: 1.3rem 1.1rem; } }
-.home-clues { margin-top: 1rem; }
+@media (max-width: 560px) { .home-clues { margin-top: 1rem; }
 /* the clue cards: a compact grid of thumbnails beside the text */
 .home-clues .clue-grid { max-width: 980px; margin-left: auto; margin-right: auto; }
 .home-clues .clue-card { grid-template-columns: 240px 1fr; }
@@ -597,6 +595,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  .hero-surname { font-size: 1.7rem; }
 }
 </style>
+    <link rel="stylesheet" href="stuart.css">
 </head>
 <body>
 
@@ -612,7 +611,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <a href="ron-egypt.html">Ron in WWII</a>
  <a href="wedding.html">Wedding</a>
  <a href="sources.html">Sources</a>
- <a href="ask.html">Ask the Archive</a>
+ <a href="ask.html">Ask Stuart</a>
  </div>
  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
  <span></span><span></span><span></span>
@@ -750,15 +749,11 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <!-- ===== ASK THE ARCHIVE ===== -->
  <section class="home-ask" aria-labelledby="h-ask">
  <div class="home-ask-text">
- <h2 id="h-ask">Ask the Archive</h2>
- <p>Ask a question about the family in your own words, and get an answer from the records on this site with a link to each one. Relationships and ages are worked out from the family tree.</p>
+ <h2 id="h-ask">Ask Stuart</h2>
+ <p>Stuart is the family archivist. Tell him who you are, then ask about anyone on the tree in your own words: how you are related to them, where they lived, what they did. He answers from the records on this site and shows you where each fact comes from.</p>
  </div>
- <form class="home-ask-form" action="ask.html" method="get">
- <label for="homeAsk" class="visually-hidden">Your question</label>
- <input id="homeAsk" name="q" type="text" maxlength="500" placeholder="How was John FitzMaurice related to Grandma Pat?">
- <button type="submit" class="btn btn--solid">Ask</button>
- </form>
- <p class="home-ask-try">Or try: <a href="ask.html?q=Which%20family%20members%20went%20to%20South%20Africa%3F">Which family members went to South Africa?</a> <a href="ask.html?q=What%20did%20Grandpa%20Ron%20do%20in%20the%20war%3F">What did Grandpa Ron do in the war?</a> <a href="ask.html?q=Who%20were%20Reg%20FitzMaurice%27s%20grandparents%3F">Who were Reg FitzMaurice's grandparents?</a></p>
+ <p class="home-ask-actions"><a href="ask.html" class="btn btn--solid" data-stuart-open>Ask Stuart</a> <a href="ask.html" class="home-ask-full">Open Stuart on a full page</a></p>
+ <p class="home-ask-try">Or try: <a href="ask.html?q=Which%20family%20members%20went%20to%20South%20Africa%3F" data-stuart-open data-stuart-ask="Which family members went to South Africa?">Which family members went to South Africa?</a> <a href="ask.html?q=What%20did%20Grandpa%20Ron%20do%20in%20the%20war%3F" data-stuart-open data-stuart-ask="What did Grandpa Ron do in the war?">What did Grandpa Ron do in the war?</a> <a href="ask.html?q=Who%20were%20Reg%20FitzMaurice%27s%20grandparents%3F" data-stuart-open data-stuart-ask="Who were Reg FitzMaurice's grandparents?">Who were Reg FitzMaurice's grandparents?</a></p>
  </section>
 
  <!-- ===== GOOGLE MY MAPS ===== -->
@@ -1059,5 +1054,6 @@ function toggleAndrewsColor() {
 </script>
 
 <script src="records.js"></script>
+<script src="stuart.js" data-widget defer></script>
 </body>
 </html>

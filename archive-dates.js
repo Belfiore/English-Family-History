@@ -1,4 +1,4 @@
-/* Ask the Archive: date and age arithmetic.
+/* Stuart: date and age arithmetic.
  *
  * Every date in the knowledge base carries a range ({from, to, precision, qualifier}) built from what the record
  * actually says. Ages are worked out from both ends of both ranges, so a birth known only as "about 1866 to 1869"

@@ -1,4 +1,4 @@
-/* Ask the Archive: finding people, places and passages.
+/* Stuart: finding people, places and passages.
  *
  *  - Names: every spelling the site uses (display names, full names, variants, nicknames, maiden names), with a
  *    sound-alike key so "Fitzmorris" finds FitzMaurice and "Stacy" finds Stacey.
@@ -7,7 +7,7 @@
  *    everyday words for archive terms ("job" also looks for occupation, "emigrate" also for sailed).
  *
  * The archive is small (a few thousand passages), so everything is built in the browser in a few milliseconds
- * and nothing extra is downloaded. Semantic embeddings were considered and left out: see docs/ask-the-archive.md.
+ * and nothing extra is downloaded. Semantic embeddings were considered and left out: see docs/ask-the-archive.md (Stuart's maintainer notes).
  */
 (function (root) {
     'use strict';

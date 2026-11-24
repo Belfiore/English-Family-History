@@ -921,6 +921,163 @@ Dated facts of people who have died that have no place yet. The map lists them i
 - Create a MapTiler key (free tier) for the old Ordnance Survey maps, restrict it to the HTTP origin https://belfiore.github.io in MapTiler's console, and put it in `config.js` as `MAPTILER_KEY`. Until then the Then button and the period maps say they need it.
 - Optionally, create a Google Maps Embed API key restricted to the HTTP referrer https://belfiore.github.io/* and to the Maps Embed API only, and put it in `config.js` as `GOOGLE_EMBED_KEY`. With it Street View opens inside the page; without it the button opens Google Maps in a new tab.
 - Optionally, use a separate Google key for the build-time Street View lookups (`GOOGLE_STREETVIEW_KEY=... node tools/streetview-viewpoints.mjs`). Keep that key out of the repo.
-- Check the points placed by hand, the Street View viewpoints and the houses marked unknown (lists above).
-- Answer the open questions with Mum.
+- The exact console steps for the three keys are in `docs/map-keys.md`. No key has been committed.
+- The points, the Street View viewpoints and the houses are checked below.
+- Answer the open questions with Mum. The evidence for each one is under "Open questions: evidence". Nothing there has been guessed into the map.
 
+
+## Hand-placed points: checked
+
+Checked on 24 November 2026 against OpenStreetMap Nominatim (search and reverse geocode) and, for the three churches, against the National Heritage List. Historic England grid references were converted from OSGB36 to WGS84. Where a street had not been found, the Canning Town street directories, Lockie's 1810 London directory, and the Mile End vestry renaming list were searched as well. The old OS sheets on maps.nls.uk were not opened one by one: the georeferenced viewer needs a person at the map, and the sheets that would show a lost street were not read here. That limit is stated on each street that is still a circle.
+
+Every point below still cites `loc-map-build-2026`. The check adds `loc-osm-nominatim-2026-11-24`. The three churches also cite `loc-nhle`. Pier Head and the Cape court also cite `loc-wikipedia-coords-2026-11-24`.
+
+Five points were moved. Nine streets or house names were not found, so their circles stay. The other 26 were already in the right place for the precision they claim. `uncertaintyMetres` and `drawAs` were left as they were, except Clifton Ville, where finding the short street justifies a smaller circle.
+
+| Place | Outcome | What was checked |
+|---|---|---|
+| 2 Elm Terrace, Wandsworth Road | Circle kept | No Elm Terrace on OpenStreetMap. The point reverse-geocodes to Wandsworth Road, SW8, which is the road the 1861 crop names. The Survey of London chapter on Nine Elms does not name Elm Terrace. |
+| 33 New Street, London Docks | Circle kept | No New Street in Wapping on OpenStreetMap. Lockie's 1810 directory lists many New Streets, including one in Lower East Smithfield, but none that can be pinned to this baptism. The circle stays on St Peter. |
+| 57 Rutland Street, Stepney | Circle kept | Not on the modern map. The Mile End Old Town medical officer's report for 1882 lists New Rutland Street among streets renamed Rutland Street. The Underground Map says the same renaming was in 1864, and that the street is on the 1899 Booth map, but gives no coordinate. |
+| 7 North Lane, Clapham Common | Circle kept | No North Lane on OpenStreetMap. Clapham Common North Side is about 650 m west of the centre and North Street, Clapham, about 650 m east. Both sit inside the 1000 m circle. Which list is right is question 4. |
+| 92 Harper Road, West Ham | Circle kept | Not in the transcribed Canning Town directories for 1896 or 1902, and not on OpenStreetMap in West Ham. The centre reverse-geocodes to Elim Way, Canning Town, which matches the 1891 census ward. The Southwark Harper Road was not used. |
+| Berkeley Lodge, Wimbledon | Circle kept | The house was not found. The centre is the Wimbledon town point. The published reading stays Berkeley Lodge. The 1881 crop's house-name column is not clear enough to replace it. |
+| Blean registration district | Kept | Blean village is about 3.5 km away, Whitstable about 5 km, Herne Bay about 5.8 km. All sit inside the 10 km circle. |
+| Bolingbroke Gardens, Battersea | Circle kept | Not a street on OpenStreetMap. The centre reverse-geocodes to Battersea High Street, in the old village. Bolingbroke Grove, 2.1 km south, is a different street and was not used. See question 7. |
+| Bridge registration district | Kept | OpenStreetMap places Bridge, Kent, 68 m from the point. |
+| Cape Supreme Court, Cape Town | Kept | Cape Town City Hall is 67 m from the point. The Western Cape High Court is on Keerom Street, about 580 m west, inside the 2500 m circle. The family record does not name the building, so the circle stays on the city centre. The court building is a lead, not a new pin. |
+| Chalfont, Buckinghamshire | Moved | The old point was at Chalfont Common, inside Chalfont St Giles. It is now the midpoint of Chalfont St Giles (51.63210, -0.56979) and Chalfont St Peter (51.60717, -0.55657). The 4 km circle is unchanged. |
+| Clifton Ville, Westgate Terrace | Moved | Westgate Terrace is a real street in Tankerton, Whitstable, about 130 m long. The point is now in the middle of it (51.362185, 1.029941). The circle is now 200 m, which covers the terrace. Which house was Clifton Ville is still not known. |
+| East Ham registration district | Kept | OpenStreetMap East Ham is 179 m from the point, inside the 3.5 km circle. |
+| Greenwich registration district | Kept | OpenStreetMap Greenwich is 391 m from the point. The Wikipedia coordinate for Greenwich is the same point. |
+| Hammersmith registration district | Kept | OpenStreetMap Hammersmith is 560 m from the point, inside the 3 km circle. |
+| J. Perriman's studio | Kept | The World's End, 174 Camden High Street (the old Mother Red Cap), is 31 m away. Greenland Place is 36 m away. Both are inside the 120 m pin. |
+| King's Norton registration district | Kept | The centre reverse-geocodes to Selly Park, which was in the district. King's Norton village is 3.7 km south, inside the 7 km circle. |
+| Lambeth registration district | Kept | The northern core of Lambeth is 3.0 km from a centre that also has to cover the southern parishes. It stays inside the 4.5 km circle. |
+| Lewisham registration district | Kept | Lewisham town centre is 2.4 km from the point, inside the 5 km circle. |
+| Liverpool (Pier Head) | Kept | The Wikipedia coordinate for Pier Head is about 60 m away. OpenStreetMap's nearest address is Brunswick Street, because the landing stage has no separate address. Inside the 1000 m circle. |
+| Mead Cottage, Bushey | Circle kept | The cottage was not found. The centre is the Bushey town point. The 1881 crop names Mead Cottage in Bushey. |
+| Mile End Old Town | Kept | Stepney Green is 189 m away. The point reverse-geocodes to Ernest Street, Stepney, in the old hamlet. The modern Mile End centre, further east, was not used. |
+| Plymouth registration district | Kept | The Wikipedia coordinate for Plymouth is about 510 m away. Nominatim's first hit was the Plymouth Leat near Yelverton, which is the wrong place, and it was ignored. |
+| Poplar registration district | Kept | OpenStreetMap Poplar is 125 m from the point. |
+| Queen Street, Chelsea | Moved | The old point reverse-geocoded to Flood Walk. It is now on Flood Street (51.486587, -0.165668). The 300 m circle is unchanged, because no house number is known. |
+| Royal Albert Docks, London | Moved | The old point reverse-geocoded to University Way, on the campus, not the dock. It is now the Royal Albert Dock basin (51.50614, 0.058033). The 1500 m circle is unchanged. |
+| Spelthorne district | Moved | The old point reverse-geocoded to the Heathrow Terminal 4 park and ride. It is now Ashford, a town in Spelthorne (51.433024, -0.461984). Staines and Sunbury sit inside the same 9 km circle. |
+| St Columb registration district | Kept | The point reverse-geocodes to Colan, between St Columb Major (4.4 km east) and Newquay (6.1 km west). Both sit inside the 12 km circle. |
+| St Luke, Chelsea (Chelsea Old Church) | Kept | List entry 1189649, grid TQ 27100 77596, converts to 51.483038, -0.170979, about 13 m from the pin. The Wikipedia coordinate is about 6 m away. OpenStreetMap reverse names Chelsea Old Church. |
+| St Martin in the Bull Ring | Kept | List entry 1075690, grid SP 07352 86566, converts to 52.476967, -1.893184, about 4 m from the pin. OpenStreetMap reverse names the church on Edgbaston Street. |
+| St Olave registration district | Kept | Bermondsey is 466 m away and Rotherhithe 1.9 km. Both sit inside the 2 km circle. |
+| St Peter, London Docks | Kept | List entry 1065844, grid TQ 34865 80368, converts to 51.506151, -0.058161, about 7 m from the pin. OpenStreetMap agrees to about 6 m. |
+| Stoke Damerel registration district | Kept | OpenStreetMap Devonport is 574 m away, inside the 3 km circle. |
+| Sutton Road, Aston Manor | Circle kept | No Sutton Road on OpenStreetMap in Aston. The centre reverse-geocodes to Deykin Avenue, which is in Aston, so the circle is over the right town. The 1881 crop names Sutton Road. Birmingham Archives' Aston Manor maps (MAP/259303, 1883, and others) were not opened. |
+| Uxbridge registration district | Kept | Uxbridge is 977 m away and Hayes about 5.1 km. Both sit inside the 9 km circle. |
+| Wandsworth registration district | Kept | Wandsworth town is 2.0 km west and Clapham 2.0 km east, which is the spread the district name covers. Both sit inside the 5 km circle. |
+| West Ham registration district | Kept | OpenStreetMap West Ham is 431 m from the point. |
+| Abbots Langley | Kept | The Wikipedia coordinate is about 80 m away. OpenStreetMap reverse names Oak Green, in the village. A Nominatim hit 566 m away was Leavesden, not the village, and was not used. |
+| St Marylebone | Kept | The point reverse-geocodes to Marylebone Road. The Wikipedia coordinate for Marylebone is about 770 m away, inside the 1500 m parish circle. |
+| Luton registration district | Kept | The point reverse-geocodes to Chaul End, between Luton and Dunstable. Luton is 3.8 km east, Dunstable 3.6 km, Totternhoe 7.0 km. All sit inside the 10 km circle. Nominatim's first "Luton" hit was the county, and it was ignored. |
+
+## Street View viewpoints: checked
+
+Looked at in Google Maps, in a browser, on 24 November 2026. The first panorama loaded, so the whole list was opened. No picture was saved into the repository. Google did not show a compass bearing, so no `heading` was set, and no panorama coordinate was copied because the page did not show one. `checked` is true only for an official Street View panorama that was actually on screen. Where Google said "No Street View imagery available here", the `streetView` entry was removed and `streetViewReason` says there is no coverage (checked 24 November 2026). A user photo that Google offered instead is not treated as coverage.
+
+49 entries were on the list. 30 are now checked (113 and 55 Bourne Avenue share one panorama, and both are marked from that one look). 19 had no coverage and the entry was removed. No viewpoint was moved: where the nearest panorama showed the wrong thing, the caption says so.
+
+| Place | Result | Capture date | What was on screen |
+|---|---|---|---|
+| 1 Honey Street, Bodmin | Checked, wrong street | Aug 2026 | Labelled 9 Turf Street. Shops. Honey Street was not shown. |
+| 113 Bourne Avenue and 55 Bourne Avenue | Checked, right street | Jul 2024 | Labelled 41 Bourne Avenue. 1930s houses. The shared point cannot tell 55 from 113. |
+| 118 Keeton's Road | Checked, street rebuilt | Jun 2022 | Post-war flats along Keeton's Road. Camera near number 40. |
+| 13 Gladding Road | Checked, right street | Aug 2025 | Labelled 13 Gladding Road. Inter-war semis and a stone Gothic building. The door number was not read. |
+| 14 Waterloo Road, Whitstable | Checked, nearby only | Jul 2025 | Labelled 11 Waterloo Road. A late 20th century block. Number 14 not shown. |
+| 15 Mornington Place | Checked, right terrace | Sep 2022 | Labelled 14 Mornington Place. Early 19th century stock-brick terrace, number 15 beside it. |
+| 16 York Road, Edgbaston | No coverage |  | Black screen. Entry removed. |
+| 23 Sutton Court Road | Checked, right street | Sep 2025 | Labelled 24 Sutton Court Road. A brick terrace with bays and arched porches. Number 23 not picked out. |
+| 25 Compton Avenue, Brighton | Checked, right terrace | May 2014 | Compton Avenue painted on the road. White stucco terrace. Camera at number 29. |
+| 26 Turret Grove | Checked, street only | Jul 2022 | Street sign in view. A side wall, not a house front. |
+| 34 Blythe Road | No coverage |  | No street imagery. A restaurant interior was offered and not used. |
+| 40 Fisher Street | Checked, nearby only | Sep 2025 | Labelled 22 Fisher Street. Later houses and low flats. Number 40 not shown. |
+| 42 Nestles Avenue | Checked, not the houses | Jul 2024 | Labelled 10 Nestles Avenue. A warehouse. Number 42 not shown. |
+| 48 Oxford Road South | Checked, right kind of street | Jul 2025 | Labelled 69 Oxford Road South. Victorian villas and one modern infill. Number 48 not shown. |
+| 55 Seymour Street, Birkenhead | Checked, right kind of street | May 2025 | Labelled 41 Seymour Street. A Victorian terrace. Number 55 not shown. |
+| 6 Cathles Road | Checked, right kind of street | Aug 2022 | Labelled 61 Cathles Road. A late Victorian terrace. Number 6 not shown. |
+| 94 Bury Road | Checked, right kind of street | Aug 2020 | Labelled 85 Bury Road. Older cottages. Number 94 not shown. |
+| St John the Baptist, Aldenham | No coverage |  | A churchyard photo did not show the church. Entry removed. |
+| Chingford Mount Cemetery | No coverage |  | Black screen. Entry removed. |
+| St John the Baptist, Crowthorne | Checked, church not in view | Jun 2019 | Labelled 43 Church Street. A lane and a house. |
+| Crystal Palace | Checked, park only | Apr 2018 | A car park, parkland and a distant mast. Nothing names the palace site. |
+| St Mary's, Denham | Checked, church not in view | Aug 2024 | Labelled 1 St Mary's Road. Modern flats. |
+| East Ham Isolation Hospital | No coverage |  | A park photo, not the hospital site. Entry removed. |
+| High Cross, Aldenham | Checked, lane only | Sep 2024 | Labelled 4 Kemprow. A hedge-lined lane. No cross identified. |
+| Perriman, Greenland Place | Checked, right street | May 2017 | Labelled 2 Greenland Place. The World's End was not clearly in view. |
+| Lang Sims, Brixton Road | Checked, right road | Apr 2025 | Labelled 516 Brixton Road. The A23 shops. The studio was not identified. |
+| All Saints, Leavesden | No coverage |  | A church-hall photo. Entry removed. |
+| St Albans Abbey | No coverage |  | An interior passage, not confirmed as the abbey. Entry removed. |
+| St Andrew's, Plaistow | Checked, church not in view | Apr 2021 | The Greenway embankment. |
+| St Dunstan, Stepney | No coverage |  | A churchyard photo, not a street panorama. Entry removed. |
+| St John, Hackney | No coverage |  | A churchyard photo. Entry removed. |
+| Chelsea Old Church | No coverage |  | A riverside-garden photo. The church was not shown. Entry removed. |
+| St Margaret, Ward End | Checked, church not in view | Mar 2019 | Labelled 23 Over Pool Road. Modern terraces. |
+| St Martin in the Bull Ring | No coverage |  | A photo inside the Bullring. Entry removed. |
+| St Mary's, Wanstead | Checked, church not in view | Oct 2026 | Labelled 108 Overton Drive. Houses and a fence. Google printed Oct 2026. |
+| St Mary's, Battersea | Checked, church not in view | May 2023 | The riverside path and a modern block of flats. |
+| St Mary, Whitechapel | No coverage |  | A photo of Altab Ali Park, not a street panorama. Entry removed. |
+| St Matthew's, Brixton | No coverage |  | A private indoor photo. Entry removed. |
+| St Peter, London Docks | No coverage |  | An interior photo, not a street panorama. Entry removed. |
+| St Philip's, Stepney | No coverage |  | A library interior that could not be confirmed as this church. Entry removed. |
+| Stuart studio, Brompton Road | Checked, right road | Aug 2025 | The A4, Brompton Road, shops and mansion blocks. Numbers 47 and 49 not picked out. |
+| Tower of London | No coverage |  | An indoor armoury photo. Entry removed. |
+| Woolwich Dockyard | Checked, side street | Jun 2021 | Labelled 6 Leda Road. A Georgian cupola building in the distance. |
+| Cliveden | Checked, the estate | Oct 2018 | The forecourt, clock tower and the edge of the house. |
+| Hamilton Palace | Checked, palace gone | Mar 2026 | Labelled 11 Keith Street. Modern buildings. No palace. |
+| Holyrood Abbey | No coverage |  | A photo of the ruined nave, not a street panorama. Entry removed. |
+| Roxburgh Castle | No coverage |  | Black screen. Entry removed. |
+| St Mary's, Brixham | No coverage |  | A photo of the beach at St Mary's Bay, not the church. Entry removed. |
+
+## Houses marked unknown: checked
+
+`standsToday` was changed only where the view, or a published history, shows what is there.
+
+- 15 Mornington Place: `standing`. The September 2022 panorama at number 14 shows the early 19th century terrace, with number 15 of the same build.
+- 25 Compton Avenue, Brighton: `standing`. The May 2014 panorama shows the white stucco terrace, the camera at number 29 in the same run as number 25.
+- 118 Keeton's Road: `rebuilt`. The June 2022 panorama shows post-war flats along the street. The camera was near number 40, so this is the street, not a reading of door 118.
+- Hamilton Palace (Orkney layer, no proven link): `gone`. The palace was demolished in 1921 (the family tree page, and the Wikipedia article Hamilton Palace). The March 2026 panorama shows modern buildings on Keith Street.
+
+23 Sutton Court Road stays `unknown`. The September 2025 panorama, labelled 24 Sutton Court Road, shows a brick terrace with bay windows and arched porches, so a terrace is there, but the door numbers were not read. Bomb Sight was opened on 24 November 2026 and could not be used: the site said it was in maintenance, its map tiles asked for an API key, and no bomb marker was drawn. That is not evidence that no bomb fell. The Commonwealth War Graves entry says Henry George Andrews died at 23 Sutton Court Road on 19 April 1941. It does not say the house was destroyed or that it was repaired. PlanIndex's reading of Newham application 26/01578/HH, granted 11 November 2026, is a householder rear extension at 23 Sutton Court Road, London E13 9NN, which means a house is at that address now. The council's own documents were not opened. None of this chooses `standing` over `rebuilt`.
+
+Every other home that was `unknown` is still `unknown`. The `standsTodaySource` text now says what was looked at: a panorama at a neighbouring number, no coverage, or a street that has not been found. The National Library of Scotland map sheets were not read house by house.
+
+## Open questions: evidence
+
+Nothing below has been added to the map. Each one still needs Seb or his mum, except where the crop already on the site answers it.
+
+1. Edith's address in November 1925. The crop `images/records/1925-saxon-edith-fitzmaurice-arrival.jpg` reads 55, Seymour Street, then Higher Tranmere, then Birkenhead. It does not read 86. The map already uses 55, which matches the crop and the Reg's brother and sisters page (TNA BT26/807, the Ancestry incoming passenger list). A second pair of eyes on that same image is the only check left. The house number is not changed.
+
+2. Pat's birthplace. The wedding page says she was probably born in the Hammersmith district in early 1929, and that the family remembers Windsor, which is not the registered birthplace. No birth certificate and no christening card is in the published records. Windsor is not on the map. To tie the registration to a Windsor address the family would need the certificate, or the GRO birth index entry for the Hammersmith district in the March quarter of 1929. That index was not opened here (GRO and FreeBMD). Nothing was added.
+
+3. Where Ron and Pat lived after the wedding. The published record stops at St Mary's, Wanstead, on 11 February 1950. No later address is on the site. Later electoral registers, if they exist, would be in Ancestry's London Electoral Registers, 1832 to 1965 (collection 1795), under Ronald Andrews and Patricia Andrews after February 1950. That collection was not searched: it needs a login. No address was added, and no living person is named.
+
+4. 7 North Lane, Clapham Common. The outward Montrose list (7 February 1925) reads 7 North Lane, Clapham Common, S.W. The Marburn list (14 March 1925) reads 7 North St., Clapham Common. The Canadian crop cuts the address off: the site's reading of the full page is 7 North Side, Clapham, and that full page was not reopened (Ancestry, Canada Incoming Passenger Lists, 1865 to 1935, Library and Archives Canada RG 76, roll T-14846, image 49 of 71). No North Lane was found on OpenStreetMap. North Street and Turret Grove meet in the old village of Clapham (the Underground Map's note on North Street, SW4). The 1925 electoral register crop is Clapham North Ward, Turret Grove, the same year. Clapham Common North Side is the other street, along the common, about a mile from North Street by the earlier note in this audit, and about 1.3 km from it on OpenStreetMap. A street-by-street Kelly's Post Office London Directory for 1925, Clapham, was not found on an open page. The place to look is the University of Leicester Historical Directories (specialcollections.le.ac.uk, collection p16445coll4) or Ancestry's London directories: the entries for 7 North Street, 7 North Side, and any North Lane. The circle was not moved, and no new address was added.
+
+5. Clifton Ville. The names crop of the 1911 census does not show the address line. The source note, from the schedule, says Clifton Ville, Westgate Terrace, Whitstable. Westgate Terrace is now on the map (see above). No house number and no photograph of the house was found. Cliftonville House, 54 Canterbury Road, is a different present-day business and is not identified with this house. The family is still the source for a number or a photo.
+
+6. The years at 42 Nestles Avenue. The published page says Reg lived there from 1938 until he died in 1977, from the 1938 register and the 1977 probate. The 1949 to 1965 registers are on the held-back list and are not used, and nobody who appears only there is named on the map. Whether the pin should stop in 1949 is a decision for the family. It was not shortened.
+
+7. Bolingbroke Gardens and Pottery Lane. The 1851 crop (`images/records/1851-falcke-household-battersea-bolingbroke-gardens.jpg`) writes Bolingbroke Gardens, and Pottery Lane on the next line of the same address, in the parish of St Mary, Battersea. The Post Office London Directory for 1851 lists a stone mason at Bolingbroke Gardens, Battersea (University of Glasgow, Mapping Sculpture, citing that directory, p. 1385). A later directory lists Falcke & Son, crucible manufacturers, at Bolingbroke Gardens, Battersea. A local history note says the name appears to have been on the site of Bolingbroke House in Church Road. That "appears" is not firm enough to move the point. Pottery Lane in Battersea was not found on OpenStreetMap. The Pottery Lane in Notting Hill is a different street and was not used. The second line is still not entered. If the family wants it read in, the address would become Bolingbroke Gardens, Pottery Lane, Battersea, and the circle could then be tightened. It was not added.
+
+8. 23 Sutton Court Road on 19 April 1941. See the house check above. The sources show a death at the address, a terrace in the street in 2025, and a householder extension granted for that address in 2026. They do not show whether the house was destroyed that night or damaged and repaired. Bomb Sight could not be read. The family may know, and the London Fire Brigade incident reports at The London Archives (LCC/FB/WAR/02) or the Bomb Census maps at The National Archives (HO 198 and HO 193) would say. Those were not opened. The map stays `unknown`.
+
+9. Ham Farm, Aldenham. The 1901 crop names Ham Farm in Aldenham. OpenStreetMap has no Ham Farm there. The Hilfield Park sale particulars of 28 June 1906 (Historic England Archive SC00489) list the farm among the estate's farms. The plan itself was not opened, so the farmhouse is not placed. The wide circle stays. A look at that sale plan, or at the Ordnance Survey 25-inch sheet for Aldenham around 1901 on maps.nls.uk, is what would place it.
+
+10. Street View. The viewpoints have now been looked at. The table above is the result. Headings were not on the page, so they are still empty. Nineteen places have no coverage. Several churches that do have a panorama nearby are not in that panorama, and the caption says so.
+
+11. The wedding photograph. The map uses `photos/wedding-group-closeup-print.jpg` as the "then" picture for St Mary's, Wanstead. The caption names nobody. The couple on the steps is the other print already on the wedding page, `photos/wedding-church-steps-couple.jpg`. The wedding was in 1950, so a group can include people who are still living. Whether to keep the group or switch to the couple is the family's decision. The picture was not changed.
+
+## Leads not added
+
+- Pottery Lane on the 1851 Battersea crop, if the family wants the second line entered (question 7).
+- The Cape court building on Keerom Street, if the family wants the undated cases pinned to that building rather than the city circle.
+- Aston Manor street maps at Birmingham Archives, if someone can read Sutton Road off MAP/259303 (1883) or the 1894 and 1900 district maps.
+- Kelly's 1925 Clapham street list, for number 7 (question 4).
+- The Hilfield sale plan, for the Ham Farm farmhouse (question 9).
+- The Bomb Census or the fire brigade report for 23 Sutton Court Road on 19 April 1941 (question 8).

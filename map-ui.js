@@ -606,9 +606,9 @@
     function todayText(pl, evs) {
         var st = pl.standsToday;
         if (pl.todayNote) return pl.todayNote;
-        if (st === 'yes') return 'The building still stands.';
+        if (st === 'yes' || st === 'standing') return 'The building still stands.';
         if (st === 'rebuilt') return 'Rebuilt: the building here today is not the one the family knew.';
-        if (st === 'demolished') return 'The building has gone.';
+        if (st === 'demolished' || st === 'gone') return 'The building has gone.';
         if (pl.drawAs === 'area') return 'An area rather than a building; use the Then and Today maps to look around.';
         return 'Not yet checked: whether the building the family knew still stands has not been confirmed against the old maps.';
     }

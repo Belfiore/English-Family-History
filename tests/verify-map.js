@@ -374,6 +374,8 @@ function expectScope(id, scope) {
     await page.waitForTimeout(300);
     const peekFocus = await page.evaluate(() => !document.getElementById('peek').hidden);
     check(peekFocus, 'focusing a marker with the keyboard shows its peek');
+    // config.js now holds the Embed key, so this check empties it before the panel is drawn and puts it back. The assertion is the same: with no key, Street View is a Maps link.
+    await page.evaluate(() => { window.__fmEmbed = window.FM_CONFIG.GOOGLE_EMBED_KEY; window.FM_CONFIG.GOOGLE_EMBED_KEY = ''; });
     await page.keyboard.press('Enter');
     await page.waitForTimeout(900);
     const panel = await page.evaluate(() => { const p = document.getElementById('panel'); const a = p.querySelector('a.sv-btn'); return { shown: !p.hidden, href: a ? a.href : null, place: FM.state.place, url: location.search }; });
@@ -387,6 +389,7 @@ function expectScope(id, scope) {
         vp && Math.abs(+vp.split(',')[0] - wantLat) < 1e-5 && Math.abs(+vp.split(',')[1] - wantLng) < 1e-5 && u.searchParams.get('pitch') === String(Math.round(sv.pitch)) && u.searchParams.get('fov') === String(Math.round(sv.fov)) &&
         (sv.heading == null ? !u.searchParams.has('heading') : u.searchParams.get('heading') === String(Math.round(sv.heading))),
         'without a key, the panel\'s Street View button is a correct Google Maps link (viewpoint, pitch, fov, and heading when known)', panel.href);
+    await page.evaluate(() => { window.FM_CONFIG.GOOGLE_EMBED_KEY = window.__fmEmbed; });
     const withHeading = await page.evaluate(() => FM.sv.mapsUrl({ lat: 51.5, lng: -0.1, streetView: { panoLat: 51.50001, panoLng: -0.10002, heading: 123.4, pitch: 6, fov: 75 } }));
     u = new URL(withHeading);
     check(u.searchParams.get('viewpoint') === '51.50001,-0.10002' && u.searchParams.get('heading') === '123' && u.searchParams.get('pitch') === '6' && u.searchParams.get('fov') === '75', 'a checked viewpoint puts its heading in the Maps URL', withHeading);

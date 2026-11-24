@@ -201,18 +201,21 @@
      "gro-indexes"
     ],
     "confidence": "confirmed",
-    "note": "St Margaret, Ward End, entry 339. The register says born 21 October 1872 and names both parents."
+    "note": "St Margaret, Ward End, entry 339. The register says born 21 October 1872 and names both parents.",
+    "placeId": "ward-end-aston"
    },
    "death": {
     "date": "1928-06-07",
     "display": "7 June 1928, probably aged 55",
-    "place": "Chingford Mount Cemetery",
+    "place": "West Ham district",
     "sourceIds": [
      "findagrave-214209661",
-     "burial-chingford-1928"
+     "burial-chingford-1928",
+     "gro-indexes"
     ],
     "confidence": "probable",
-    "note": "The gravestone and Find a Grave memorial 214209661 give 7 June 1928. The burial register gives 13 June 1928, aged 56. The birth date makes the age 55."
+    "note": "The gravestone and Find a Grave memorial 214209661 give 7 June 1928. The burial register gives 13 June 1928, aged 56. The birth date makes the age 55. Update, November 2026: The place was entered as Chingford Mount Cemetery, which is where he was buried on 13 June 1928 (see burial). The death index on the Falcke page registers the death in the West Ham district, June quarter 1928, volume 4a, page 384.",
+    "placeId": "west-ham-registration-district"
    },
    "residences": [
     {
@@ -222,16 +225,18 @@
      "sourceIds": [
       "census-1881-aston"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "aston"
     },
     {
      "place": "Brighton",
-     "address": null,
+     "address": "25 Compton Avenue, Brighton",
      "years": "1891",
      "sourceIds": [
       "census-1891-brighton"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "25-compton-avenue"
     },
     {
      "place": "Brixton",
@@ -240,16 +245,18 @@
      "sourceIds": [
       "parish-brixton-1897"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "brixton"
     },
     {
      "place": "Whitstable, Kent",
-     "address": null,
+     "address": "Clifton Ville, Westgate Terrace, Whitstable",
      "years": "1911",
      "sourceIds": [
       "census-1911-whitstable"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "clifton-ville-whitstable"
     },
     {
      "place": "South Africa (Cape Town)",
@@ -260,16 +267,38 @@
       "passenger-1923-armadale",
       "passenger-1923-arundel"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "cape-town"
     },
     {
      "place": "Whitstable",
-     "address": null,
+     "address": "14 Waterloo Road, Whitstable",
      "years": "1923",
      "sourceIds": [
       "passenger-1923-armadale"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "14-waterloo-road-whitstable"
+    },
+    {
+     "place": "18 Saltoun Road, Brixton",
+     "address": "18 Saltoun Road, Brixton",
+     "years": "1897",
+     "sourceIds": [
+      "parish-brixton-1897"
+     ],
+     "confidence": "probable",
+     "placeId": "18-saltoun-road"
+    },
+    {
+     "place": "Westfield House, Brixton",
+     "address": "Westfield House, Brixton",
+     "years": "1901",
+     "sourceIds": [
+      "census-1901-brixton"
+     ],
+     "confidence": "probable",
+     "placeId": "westfield-house-brixton"
     }
    ],
    "occupations": [
@@ -281,7 +310,8 @@
      "sourceIds": [
       "census-1891-brighton"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "brighton"
     },
     {
      "title": "Professional singer",
@@ -291,7 +321,8 @@
      "sourceIds": [
       "parish-brixton-1897"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "brixton"
     },
     {
      "title": "Civil mechanical engineer",
@@ -301,7 +332,8 @@
      "sourceIds": [
       "census-1901-brixton"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "brixton"
     },
     {
      "title": "Civil engineer",
@@ -311,7 +343,8 @@
      "sourceIds": [
       "census-1911-whitstable"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "whitstable"
     },
     {
      "title": "Engineer",
@@ -321,7 +354,8 @@
      "sourceIds": [
       "passenger-1916-balmoral"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "south-africa"
     },
     {
      "title": "Civil engineer",
@@ -331,7 +365,8 @@
      "sourceIds": [
       "passenger-1923-armadale"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "whitstable"
     },
     {
      "title": "Engineer",
@@ -341,7 +376,8 @@
      "sourceIds": [
       "passenger-1923-arundel"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "cape-town"
     }
    ],
    "immigration": null,
@@ -357,7 +393,8 @@
       "gro-indexes"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "ward-end-aston"
     },
     {
      "date": "1891",
@@ -367,7 +404,8 @@
       "census-1891-brighton"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "brighton"
     },
     {
      "date": "1897-08-02",
@@ -377,7 +415,8 @@
       "parish-brixton-1897"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-matthews-brixton"
     },
     {
      "date": "1911",
@@ -387,7 +426,8 @@
       "census-1911-whitstable"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "clifton-ville-whitstable"
     },
     {
      "date": "1916-03-29",
@@ -397,7 +437,8 @@
       "passenger-1916-balmoral"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "port-london"
     },
     {
      "date": "1923-10-15",
@@ -408,7 +449,8 @@
       "passenger-1923-arundel"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "port-southampton"
     },
     {
      "date": "1928-06-07",
@@ -419,7 +461,8 @@
       "burial-chingford-1928"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "chingford-mount-cemetery"
     }
    ],
    "facts": [
@@ -524,7 +567,8 @@
       "parish-brixton-1897"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-matthews-brixton"
     }
    ],
    "isDirectLine": true,
@@ -532,7 +576,74 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": {
+    "place": "Chingford Mount Cemetery",
+    "placeId": "chingford-mount-cemetery",
+    "date": "1928-06-13",
+    "display": "13 June 1928, Chingford Mount Cemetery, section F12",
+    "sourceIds": [
+     "burial-chingford-1928",
+     "findagrave-214209661"
+    ],
+    "confidence": "confirmed"
+   },
+   "voyages": [
+    {
+     "id": "v-1916-balmoral-castle",
+     "ship": "Balmoral Castle",
+     "from": "London",
+     "fromPlaceId": "port-london",
+     "to": "South Africa",
+     "toPlaceId": "south-africa",
+     "departureDate": "1916-03-29",
+     "arrivalDate": null,
+     "display": "29 March 1916, London to South Africa on the Balmoral Castle",
+     "sourceIds": [
+      "passenger-1916-balmoral"
+     ],
+     "confidence": "confirmed",
+     "recordCrops": [
+      "1916-03-balmoral-castle-edward-departure.jpg"
+     ]
+    },
+    {
+     "id": "v-1923-armadale-castle",
+     "ship": "Armadale Castle",
+     "from": "Cape Town",
+     "fromPlaceId": "cape-town",
+     "to": "Southampton",
+     "toPlaceId": "port-southampton",
+     "departureDate": null,
+     "arrivalDate": "1923-10-15",
+     "display": "Landed at Southampton on 15 October 1923 from Cape Town on the Armadale Castle",
+     "sourceIds": [
+      "passenger-1923-armadale"
+     ],
+     "confidence": "confirmed",
+     "recordCrops": [
+      "1923-10-armadale-castle-edward-arrival.jpg"
+     ]
+    },
+    {
+     "id": "v-1923-arundel-castle",
+     "ship": "Arundel Castle",
+     "from": "Southampton",
+     "fromPlaceId": "port-southampton",
+     "to": "Cape Town",
+     "toPlaceId": "cape-town",
+     "departureDate": "1923-12-21",
+     "arrivalDate": null,
+     "display": "21 December 1923, Southampton to Cape Town on the Arundel Castle",
+     "sourceIds": [
+      "passenger-1923-arundel"
+     ],
+     "confidence": "confirmed",
+     "recordCrops": [
+      "1923-12-arundel-castle-edward-departure.jpg"
+     ]
+    }
+   ]
   },
   {
    "id": "edith-madeleine-fitzmaurice",
@@ -562,7 +673,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "1891 census: aged 22, born Islington. Death in 1929: aged 61. The 1897 register says 24, and the 1911 census says 38, born St Anne, Soho."
+    "note": "1891 census: aged 22, born Islington. Death in 1929: aged 61. The 1897 register says 24, and the 1911 census says 38, born St Anne, Soho.",
+    "placeId": "islington"
    },
    "death": {
     "date": "1929",
@@ -572,17 +684,19 @@
      "gro-edith-death"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "bridge-registration-district"
    },
    "residences": [
     {
      "place": "Islington and St Pancras",
-     "address": null,
+     "address": "15 Mornington Place, St Pancras",
      "years": "1891",
      "sourceIds": [
       "census-1891-spencer"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "15-mornington-place"
     },
     {
      "place": "Brixton",
@@ -591,16 +705,18 @@
      "sourceIds": [
       "parish-brixton-1897"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "brixton"
     },
     {
      "place": "Whitstable, Kent",
-     "address": null,
+     "address": "Clifton Ville, Westgate Terrace, Whitstable",
      "years": "1911",
      "sourceIds": [
       "census-1911-whitstable"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "clifton-ville-whitstable"
     },
     {
      "place": "South Africa",
@@ -610,7 +726,38 @@
       "passenger-1916-llanstephan",
       "passenger-1925-edith"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "south-africa"
+    },
+    {
+     "place": "18 Saltoun Road, Brixton",
+     "address": "18 Saltoun Road, Brixton",
+     "years": "1897",
+     "sourceIds": [
+      "parish-brixton-1897"
+     ],
+     "confidence": "probable",
+     "placeId": "18-saltoun-road"
+    },
+    {
+     "place": "Westfield House, Brixton",
+     "address": "Westfield House, Brixton",
+     "years": "1901",
+     "sourceIds": [
+      "census-1901-brixton"
+     ],
+     "confidence": "probable",
+     "placeId": "westfield-house-brixton"
+    },
+    {
+     "place": "140A Clapham Road, London",
+     "address": "140A Clapham Road, London S.W.",
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "placeId": "140a-clapham-road"
     }
    ],
    "occupations": [
@@ -622,7 +769,8 @@
      "sourceIds": [
       "census-1891-spencer"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "st-pancras"
     }
    ],
    "immigration": null,
@@ -638,7 +786,8 @@
       "census-1891-spencer"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "15-mornington-place"
     },
     {
      "date": "1897-08-02",
@@ -648,7 +797,8 @@
       "parish-brixton-1897"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-matthews-brixton"
     },
     {
      "date": "1911",
@@ -658,7 +808,8 @@
       "census-1911-whitstable"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "clifton-ville-whitstable"
     },
     {
      "date": "1929",
@@ -668,7 +819,8 @@
       "gro-edith-death"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bridge-registration-district"
     }
    ],
    "facts": [
@@ -765,7 +917,8 @@
       "parish-brixton-1897"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-matthews-brixton"
     }
    ],
    "isDirectLine": true,
@@ -774,7 +927,46 @@
    "isLiving": false,
    "nameUncertain": false,
    "order": 4,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": [
+    {
+     "id": "v-1916-llanstephan-castle",
+     "ship": "Llanstephan Castle",
+     "from": "London",
+     "fromPlaceId": "port-london",
+     "to": "Cape Town",
+     "toPlaceId": "cape-town",
+     "departureDate": "1916-08-16",
+     "arrivalDate": null,
+     "display": "16 August 1916, London to Cape Town on the Llanstephan Castle (probably Edith and the three children)",
+     "sourceIds": [
+      "passenger-1916-llanstephan"
+     ],
+     "confidence": "probable",
+     "recordCrops": [
+      "1916-llanstephan-castle-fitzmaurice-rows.jpg"
+     ]
+    },
+    {
+     "id": "v-1925-saxon",
+     "ship": "Saxon",
+     "from": "Durban",
+     "fromPlaceId": "port-durban",
+     "to": "Southampton",
+     "toPlaceId": "port-southampton",
+     "departureDate": null,
+     "arrivalDate": "1925-11-24",
+     "display": "Landed at Southampton on 24 November 1925 from Durban on the Saxon",
+     "sourceIds": [
+      "passenger-1925-edith"
+     ],
+     "confidence": "probable",
+     "recordCrops": [
+      "1925-saxon-edith-fitzmaurice-arrival.jpg"
+     ]
+    }
+   ]
   },
   {
    "id": "camden-town-portrait",
@@ -804,7 +996,8 @@
       "genealogy-report"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "perriman-greenland-place"
     }
    ],
    "facts": [],
@@ -860,7 +1053,9 @@
    "kin": true,
    "placeholder": true,
    "nameUncertain": true,
-   "order": 5
+   "order": 5,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "reg-fitzmaurice",
@@ -905,7 +1100,8 @@
      "census-1911-whitstable"
     ],
     "confidence": "probable",
-    "note": "The death index gives the date of birth. The birth was registered in the September quarter of 1904, Wandsworth, volume 1d, page 670, mother Spenser."
+    "note": "The death index gives the date of birth. The birth was registered in the September quarter of 1904, Wandsworth, volume 1d, page 670, mother Spenser.",
+    "placeId": "wandsworth-registration-district"
    },
    "death": {
     "date": "1977-03-31",
@@ -914,7 +1110,8 @@
     "sourceIds": [
      "probate-reg-1977"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "hayes"
    },
    "residences": [
     {
@@ -925,16 +1122,18 @@
       "gro-indexes",
       "electoral-fitzmaurice"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "wandsworth-registration-district"
     },
     {
      "place": "Whitstable, Kent",
-     "address": null,
+     "address": "Clifton Ville, Westgate Terrace, Whitstable",
      "years": "1911",
      "sourceIds": [
       "census-1911-whitstable"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "clifton-ville-whitstable"
     },
     {
      "place": "Hammersmith",
@@ -944,7 +1143,8 @@
       "gro-marriage-1927",
       "electoral-fitzmaurice"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hammersmith-registration-district"
     },
     {
      "place": "Spelthorne district",
@@ -953,17 +1153,29 @@
      "sourceIds": [
       "electoral-fitzmaurice"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "spelthorne-registration-district"
     },
     {
      "place": "Hayes, Middlesex",
-     "address": null,
+     "address": "42 Nestles Avenue, Hayes",
      "years": "1938 to about 1972",
      "sourceIds": [
       "electoral-fitzmaurice",
       "probate-reg-1977"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "42-nestles-avenue"
+    },
+    {
+     "place": "140A Clapham Road, London",
+     "address": "140A Clapham Road, London S.W.",
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "placeId": "140a-clapham-road"
     }
    ],
    "occupations": [],
@@ -981,7 +1193,8 @@
       "gro-indexes"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "wandsworth-registration-district"
     },
     {
      "date": "1911",
@@ -991,7 +1204,8 @@
       "census-1911-whitstable"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "clifton-ville-whitstable"
     },
     {
      "date": "1927",
@@ -1001,7 +1215,8 @@
       "gro-marriage-1927"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hammersmith-registration-district"
     },
     {
      "date": "1950-02-11",
@@ -1011,7 +1226,9 @@
       "album-1950"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "st-marys-church-wanstead",
+     "mapEvent": "celebrated"
     },
     {
      "date": "1977-03-31",
@@ -1021,7 +1238,8 @@
       "probate-reg-1977"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "hayes"
     }
    ],
    "facts": [
@@ -1143,7 +1361,8 @@
       "album-1950"
      ],
      "confidence": "probable",
-     "note": null
+     "note": null,
+     "placeId": "hammersmith-registration-district"
     }
    ],
    "isDirectLine": true,
@@ -1151,7 +1370,66 @@
    "portrait": null,
    "isLiving": false,
    "parentLinkConfidence": "probable",
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": [
+    {
+     "id": "v-1916-llanstephan-castle",
+     "ship": "Llanstephan Castle",
+     "from": "London",
+     "fromPlaceId": "port-london",
+     "to": "Cape Town",
+     "toPlaceId": "cape-town",
+     "departureDate": "1916-08-16",
+     "arrivalDate": null,
+     "display": "16 August 1916, London to Cape Town on the Llanstephan Castle (probably Edith and the three children)",
+     "sourceIds": [
+      "passenger-1916-llanstephan"
+     ],
+     "confidence": "probable",
+     "recordCrops": [
+      "1916-llanstephan-castle-fitzmaurice-rows.jpg"
+     ]
+    },
+    {
+     "id": "v-1925-montrose",
+     "ship": "Montrose",
+     "from": "Liverpool",
+     "fromPlaceId": "port-liverpool",
+     "to": "Saint John, New Brunswick",
+     "toPlaceId": "port-saint-john",
+     "departureDate": "1925-02-07",
+     "arrivalDate": "1925-02-15",
+     "display": "7 February 1925, Liverpool to Saint John, New Brunswick, on the Montrose, arriving 15 February",
+     "sourceIds": [
+      "passenger-1925-montrose-out",
+      "passenger-1925-montrose-in"
+     ],
+     "confidence": "probable",
+     "recordCrops": [
+      "1925-02-baron-fitzmaurice-departure-liverpool-montrose-7-north-lane-clapham.jpg",
+      "1925-02-baron-reg-fitzmaurice-arrival-saint-john-montrose-line-8.jpg"
+     ]
+    },
+    {
+     "id": "v-1925-marburn",
+     "ship": "Marburn",
+     "from": "Saint John, New Brunswick",
+     "fromPlaceId": "port-saint-john",
+     "to": "Southampton",
+     "toPlaceId": "port-southampton",
+     "departureDate": "1925-03-06",
+     "arrivalDate": "1925-03-14",
+     "display": "Left Saint John on 6 March 1925 on the Marburn; landed at Southampton on 14 March",
+     "sourceIds": [
+      "passenger-1925-marburn"
+     ],
+     "confidence": "probable",
+     "recordCrops": [
+      "1925-banon-reg-fitzmaurice-arrival-southampton-marburn.jpg"
+     ]
+    }
+   ]
   },
   {
    "id": "mrs-r-fitzmaurice",
@@ -1187,7 +1465,8 @@
      "census-bennett"
     ],
     "confidence": "confirmed",
-    "note": "GRO June quarter 1900, Bodmin, volume 5c, page 64, mother Grigg. In June 1921 she was 21 years and 3 months."
+    "note": "GRO June quarter 1900, Bodmin, volume 5c, page 64, mother Grigg. In June 1921 she was 21 years and 3 months.",
+    "placeId": "bodmin"
    },
    "death": {
     "date": "1947",
@@ -1197,7 +1476,8 @@
      "gro-lilian-death"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "uxbridge-registration-district"
    },
    "residences": [
     {
@@ -1207,7 +1487,8 @@
      "sourceIds": [
       "census-bennett"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
     },
     {
      "place": "Hampton Hill",
@@ -1216,7 +1497,8 @@
      "sourceIds": [
       "census-1921-lilian"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hampton-hill"
     },
     {
      "place": "Hammersmith",
@@ -1225,28 +1507,42 @@
      "sourceIds": [
       "gro-marriage-1927"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hammersmith-registration-district"
     },
     {
      "place": "Hayes, Middlesex",
-     "address": null,
+     "address": "42 Nestles Avenue, Hayes",
      "years": "1938 to 1939",
      "sourceIds": [
       "electoral-fitzmaurice"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "42-nestles-avenue"
+    },
+    {
+     "place": "Thombrake, Queens Road, Hampton Hill",
+     "address": "Thombrake, Queens Road, Hampton Hill",
+     "years": "1921",
+     "sourceIds": [
+      "census-1921-lilian"
+     ],
+     "confidence": "probable",
+     "placeId": "thombrake-hampton-hill"
     }
    ],
    "occupations": [
     {
      "title": "Clerk, Claims Record Office",
      "employer": null,
-     "place": "Hampton Hill",
+     "place": "Kew",
      "years": "1921",
      "sourceIds": [
       "census-1921-lilian"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "claims-record-office",
+     "note": "Update, November 2026: Her 1921 census entry gives Kew as her place of work (the Claims Record Office). Hampton Hill is where she boarded."
     }
    ],
    "immigration": null,
@@ -1263,7 +1559,8 @@
       "gro-lilian-death"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "bodmin"
     },
     {
      "date": "1921",
@@ -1273,7 +1570,8 @@
       "census-1921-lilian"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hampton-hill"
     },
     {
      "date": "1927",
@@ -1283,7 +1581,8 @@
       "gro-marriage-1927"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hammersmith-registration-district"
     },
     {
      "date": "1947",
@@ -1293,7 +1592,8 @@
       "gro-lilian-death"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "uxbridge-registration-district"
     }
    ],
    "facts": [],
@@ -1335,7 +1635,8 @@
       "album-1950"
      ],
      "confidence": "probable",
-     "note": null
+     "note": null,
+     "placeId": "hammersmith-registration-district"
     }
    ],
    "isDirectLine": true,
@@ -1345,7 +1646,9 @@
    "nameUncertain": false,
    "order": 2,
    "parentLinkConfidence": "probable",
-   "layoutJoin": "reg-fitzmaurice"
+   "layoutJoin": "reg-fitzmaurice",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "bob-fitzmaurice",
@@ -1367,37 +1670,51 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO June quarter 1901, Lambeth, volume 1d, page 503, mother Spencer. Aged 9 at Whitstable in 1911."
+    "note": "GRO June quarter 1901, Lambeth, volume 1d, page 503, mother Spencer. Aged 9 at Whitstable in 1911.",
+    "placeId": "lambeth-registration-district"
    },
    "death": {
     "date": "1981-05-07",
-    "display": "7 May 1981, Port Elizabeth, probably aged about 80",
+    "display": "7 May 1981, Port Elizabeth",
     "place": "Port Elizabeth",
     "sourceIds": [
+     "fs-death-1981-edward-robert",
      "estate-1981-bob"
     ],
     "confidence": "probable",
+    "placeId": "port-elizabeth",
     "note": "The index registers the death at Cape Town on 27 May 1981. A second entry for the same notice gives the death as 7 May 1981 at Port Elizabeth. The death notice image is not open to view."
    },
    "residences": [
     {
-     "place": "Three Anchor Bay, Cape Town",
-     "address": "Auleta",
+     "place": "Auleta, Three Anchor Bay",
+     "address": "Auleta, Three Anchor Bay, Cape Town",
      "years": "1925",
      "sourceIds": [
-      "marriage-1925-bob-yallop"
+      "fs-marriage-1925-cape-town"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "auleta-three-anchor-bay"
     },
     {
-     "place": "Gardens, Cape Town",
-     "address": "17 Berkley Street",
+     "place": "17 Berkley Street, Gardens",
+     "address": "17 Berkley Street, Gardens, Cape Town",
      "years": "1926",
      "sourceIds": [
-      "baptism-1926-edward-scott"
+      "fs-baptism-1926-edward-scott"
      ],
-     "confidence": "probable",
-     "note": "The house number may be 14."
+     "confidence": "confirmed",
+     "placeId": "17-berkley-street-gardens"
+    },
+    {
+     "place": "1st Avenue, Bellville",
+     "address": "1st Avenue, Bellville",
+     "years": "1935",
+     "sourceIds": [
+      "fs-death-1935-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "placeId": "1st-avenue-bellville"
     }
    ],
    "occupations": [
@@ -1413,9 +1730,9 @@
     }
    ],
    "immigration": null,
-   "cardPlace": "Cape Town, died at Port Elizabeth",
-   "summary": "Reg's brother, called Bob. Probably born in the Lambeth district in the spring of 1901. He settled in Cape Town, married Eileen Alice Yallop in 1925, and died at Port Elizabeth on 7 May 1981.",
-   "story": "The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice.[^photo-labels] Bob is probably Edward Robert Fitzmaurice, mother's maiden name Spencer, registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503.[^gro-indexes] In 1911 he is Edward Robert, aged 9, at school, with his parents at Whitstable.[^census-1911-whitstable]\n\nHe was probably the boy of 15 who sailed to Cape Town with his mother in August 1916. No later record of him has been found in England.[^passenger-1916-llanstephan] The family always believed that Bob stayed in South Africa, and the records now show that he did. On 30 October 1925, aged 24, he married Eileen Alice Yallop, 23, born in South Africa, at St George's Cathedral, Cape Town, by licence. He was a tramway engineer living at \"Auleta\", Three Anchor Bay, and she lived at 7 Bertram Road, Sea Point.[^marriage-1925-bob-yallop]\n\nTheir first son, Edward Scott FitzMaurice, was born on 29 April 1926 and baptised on 25 July 1926 in the parish of Woodstock, Cape Town. The family was then living at 17 Berkley Street, Gardens, Cape Town (the house number may be 14).[^baptism-1926-edward-scott] Edward Scott died on 9 August 1935, aged 9.\n\nBob and Eileen had two more sons, both baptised in Cape Town: Lawrence John FitzMaurice in 1932 and Derek Anthony FitzMaurice in 1934. They may be living, so only their names, that they are Bob's sons, and those baptism years are published.\n\nBob died at Port Elizabeth on 7 May 1981, aged about 80, and his death was registered in Cape Town on 27 May. The index names his father as Edward Dickson, his mother as Edith (also indexed Adellia), his wife Eileen Alice, and his sons Laurence John and Derek Anthony (indexed as \"Serel Anthony\").[^estate-1981-bob] Two undated Cape Supreme Court civil cases that he brought against a Raymond William Wilson are probably his too.[^family-bob-south-africa]",
+   "cardPlace": "Lambeth, then Cape Town",
+   "summary": "Reg's brother, called Bob. Edward Robert FitzMaurice, born in the Lambeth district in 1901. He married in Cape Town in 1925 and died at Port Elizabeth on 7 May 1981.",
+   "story": "The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice. Bob is Edward Robert Fitzmaurice, mother's maiden name Spencer, registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503. In 1911 he was 9, at school, at Whitstable. He was probably the boy of 15 who sailed to Cape Town with his mother in August 1916.\n\nOn 30 October 1925, aged 24, a tramway engineer, he married Eileen Alice Yallop at St George's Cathedral, Cape Town. He was living at Auleta, Three Anchor Bay, and she at 7 Bertram Road, Sea Point. In 1926 their home was 17 Berkley Street, Gardens, when their son Edward Scott was baptised in the parish of Woodstock. Edward Scott died on 9 August 1935, aged 9, at Somerset Hospital. The home was then given as 1st Avenue, Bellville. Edward Robert died on 7 May 1981 at Port Elizabeth.",
    "timeline": [
     {
      "date": "1901",
@@ -1425,7 +1742,8 @@
       "gro-indexes"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "lambeth-registration-district"
     },
     {
      "date": "1911",
@@ -1435,27 +1753,8 @@
       "census-1911-whitstable"
      ],
      "kind": "life",
-     "confidence": "probable"
-    },
-    {
-     "date": "1925-10-30",
-     "label": "30 October 1925",
-     "event": "Married Eileen Alice Yallop at St George's Cathedral, Cape Town.",
-     "sourceIds": [
-      "marriage-1925-bob-yallop"
-     ],
-     "kind": "life",
-     "confidence": "confirmed"
-    },
-    {
-     "date": "1981-05-07",
-     "label": "7 May 1981",
-     "event": "Died at Port Elizabeth. The death was registered at Cape Town on 27 May.",
-     "sourceIds": [
-      "estate-1981-bob"
-     ],
-     "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "clifton-ville-whitstable"
     }
    ],
    "facts": [],
@@ -1481,7 +1780,12 @@
      "transcription": "[Left card]\nAuntie Babs\nSouth Africa\n\n[Right card]\nReg, Bob and\ntheir Father\nEdward Dixon\nFitzmaurice"
     }
    ],
-   "openQuestions": [],
+   "openQuestions": [
+    {
+     "question": "Which house on Berkley Street was theirs in 1926?",
+     "record": "The baptism register reads 17 Berkley Street, and the number may be 14."
+    }
+   ],
    "relatedPages": [
     {
      "title": "Reg's brother and sisters",
@@ -1505,10 +1809,11 @@
      "marriageDisplay": "30 October 1925",
      "place": "St George's Cathedral, Cape Town",
      "sourceIds": [
-      "marriage-1925-bob-yallop"
+      "fs-marriage-1925-cape-town"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-georges-cathedral-cape-town"
     }
    ],
    "isDirectLine": false,
@@ -1516,7 +1821,28 @@
    "portrait": null,
    "isLiving": false,
    "parentLinkConfidence": "probable",
-   "order": 2
+   "order": 2,
+   "burial": null,
+   "voyages": [
+    {
+     "id": "v-1916-llanstephan-castle",
+     "ship": "Llanstephan Castle",
+     "from": "London",
+     "fromPlaceId": "port-london",
+     "to": "Cape Town",
+     "toPlaceId": "cape-town",
+     "departureDate": "1916-08-16",
+     "arrivalDate": null,
+     "display": "16 August 1916, London to Cape Town on the Llanstephan Castle (probably Edith and the three children)",
+     "sourceIds": [
+      "passenger-1916-llanstephan"
+     ],
+     "confidence": "probable",
+     "recordCrops": [
+      "1916-llanstephan-castle-fitzmaurice-rows.jpg"
+     ]
+    }
+   ]
   },
   {
    "id": "mr-hg-andrews",
@@ -1538,7 +1864,8 @@
      "census-andrews-stacey"
     ],
     "confidence": "confirmed",
-    "note": "GRO June quarter 1889, St Albans, volume 3a, page 559, mother Stacey. Baptised 9 June 1889. The 1939 Register probably gives the day as 8 April."
+    "note": "GRO June quarter 1889, St Albans, volume 3a, page 559, mother Stacey. Baptised 9 June 1889. The 1939 Register probably gives the day as 8 April.",
+    "placeId": "st-albans-hertfordshire"
    },
    "death": {
     "date": "1941-04-19",
@@ -1547,7 +1874,8 @@
     "sourceIds": [
      "cwgc-plaistow-1941"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "23-sutton-court-road"
    },
    "residences": [
     {
@@ -1557,35 +1885,39 @@
      "sourceIds": [
       "parish-st-albans-1889"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-albans-hertfordshire"
     },
     {
      "place": "Hemel Hempstead",
-     "address": null,
+     "address": "94 Bury Road, Hemel Hempstead",
      "years": "1901",
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "94-bury-road"
     },
     {
      "place": "Canning Town",
-     "address": null,
+     "address": "40 Fisher Street, Canning Town",
      "years": "1911",
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "40-fisher-street"
     },
     {
      "place": "Plaistow, West Ham",
-     "address": null,
+     "address": "23 Sutton Court Road, Plaistow",
      "years": "1921 to 1941",
      "sourceIds": [
       "census-cousins",
       "cwgc-plaistow-1941"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "23-sutton-court-road"
     }
    ],
    "occupations": [
@@ -1597,7 +1929,8 @@
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "canning-town"
     },
     {
      "title": "Dock labourer, Port of London Authority",
@@ -1607,7 +1940,8 @@
      "sourceIds": [
       "census-cousins"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "royal-albert-docks"
     },
     {
      "title": "Explosive worker, Royal filling factory",
@@ -1617,7 +1951,8 @@
      "sourceIds": [
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "royal-filling-factory"
     }
    ],
    "immigration": null,
@@ -1633,7 +1968,8 @@
       "parish-st-albans-1889"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-albans-hertfordshire"
     },
     {
      "date": "1915-04-18",
@@ -1643,7 +1979,8 @@
       "parish-plaistow-1915"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-andrews-plaistow"
     },
     {
      "date": "1941-04-19",
@@ -1653,7 +1990,8 @@
       "cwgc-plaistow-1941"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "23-sutton-court-road"
     }
    ],
    "facts": [
@@ -1729,7 +2067,8 @@
       "parish-plaistow-1915"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-andrews-plaistow"
     }
    ],
    "isDirectLine": true,
@@ -1738,7 +2077,9 @@
    "isLiving": false,
    "nameUncertain": false,
    "order": 1,
-   "parentLinkConfidence": "confirmed"
+   "parentLinkConfidence": "confirmed",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "mrs-hg-andrews",
@@ -1767,7 +2108,8 @@
      "register-1939",
      "census-cousins"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "bermondsey"
    },
    "death": {
     "date": "1941-04-19",
@@ -1776,18 +2118,20 @@
     "sourceIds": [
      "cwgc-plaistow-1941"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "23-sutton-court-road"
    },
    "residences": [
     {
      "place": "Plaistow, West Ham",
-     "address": null,
+     "address": "23 Sutton Court Road, Plaistow",
      "years": "1921 to 1941",
      "sourceIds": [
       "census-cousins",
       "cwgc-plaistow-1941"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "23-sutton-court-road"
     }
    ],
    "occupations": [
@@ -1816,7 +2160,8 @@
       "gro-cousins-gall"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "bermondsey"
     },
     {
      "date": "1915-04-18",
@@ -1826,7 +2171,8 @@
       "parish-plaistow-1915"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-andrews-plaistow"
     },
     {
      "date": "1941-04-19",
@@ -1836,7 +2182,8 @@
       "cwgc-plaistow-1941"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "23-sutton-court-road"
     }
    ],
    "facts": [],
@@ -1894,7 +2241,8 @@
       "parish-plaistow-1915"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-andrews-plaistow"
     }
    ],
    "isDirectLine": true,
@@ -1904,7 +2252,9 @@
    "nameUncertain": false,
    "order": 2,
    "parentLinkConfidence": "confirmed",
-   "layoutJoin": "mr-hg-andrews"
+   "layoutJoin": "mr-hg-andrews",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "herbert-andrews",
@@ -1934,7 +2284,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO September quarter 1916, West Ham, volume 4a, page 180, mother Cousins. He was 4 in the 1921 census. The 1939 day of birth is not published, because his death has not been found."
+    "note": "GRO September quarter 1916, West Ham, volume 4a, page 180, mother Cousins. He was 4 in the 1921 census. The 1939 day of birth is not published, because his death has not been found.",
+    "placeId": "west-ham-registration-district"
    },
    "death": null,
    "residences": [
@@ -1946,7 +2297,8 @@
       "census-cousins",
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "plaistow"
     }
    ],
    "occupations": [
@@ -1958,7 +2310,8 @@
      "sourceIds": [
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "royal-filling-factory"
     }
    ],
    "immigration": null,
@@ -1974,7 +2327,8 @@
       "gro-indexes"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "west-ham-registration-district"
     },
     {
      "date": "1940",
@@ -1984,7 +2338,8 @@
       "gro-indexes"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "east-ham-registration-district"
     },
     {
      "date": "1950-02-11",
@@ -1994,7 +2349,9 @@
       "album-1950"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "st-marys-church-wanstead",
+     "mapEvent": "celebrated"
     }
    ],
    "facts": [],
@@ -2050,7 +2407,8 @@
       "gro-indexes"
      ],
      "confidence": "probable",
-     "note": "Herbert W. Andrews and Christina M. Knight are on the same marriage-index page, September quarter 1940, East Ham, volume 4a, page 561."
+     "note": "Herbert W. Andrews and Christina M. Knight are on the same marriage-index page, September quarter 1940, East Ham, volume 4a, page 561.",
+     "placeId": "east-ham-registration-district"
     }
    ],
    "isDirectLine": false,
@@ -2058,7 +2416,9 @@
    "portrait": null,
    "isLiving": false,
    "parentLinkConfidence": "probable",
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "sidney-andrews",
@@ -2079,7 +2439,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO June quarter 1923, West Ham, volume 4a, page 150, mother Cousins."
+    "note": "GRO June quarter 1923, West Ham, volume 4a, page 150, mother Cousins.",
+    "placeId": "west-ham-registration-district"
    },
    "death": {
     "date": "1941-04-19",
@@ -2088,7 +2449,8 @@
     "sourceIds": [
      "cwgc-plaistow-1941"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "23-sutton-court-road"
    },
    "residences": [],
    "occupations": [
@@ -2116,7 +2478,8 @@
       "gro-indexes"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "west-ham-registration-district"
     },
     {
      "date": "1941-04-19",
@@ -2126,7 +2489,8 @@
       "cwgc-plaistow-1941"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "23-sutton-court-road"
     }
    ],
    "facts": [
@@ -2176,7 +2540,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "nameUncertain": false,
-   "order": 3
+   "order": 3,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "ronald-andrews",
@@ -2211,7 +2577,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "Family testimony. No home address is published."
+    "note": "Family testimony. No home address is published.",
+    "placeId": "west-ham-registration-district"
    },
    "death": {
     "date": "2010",
@@ -2234,7 +2601,8 @@
      "sourceIds": [
       "ron-album"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "tura"
     }
    ],
    "immigration": null,
@@ -2409,7 +2777,8 @@
       "album-1950"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-marys-church-wanstead"
     }
    ],
    "isDirectLine": true,
@@ -2418,7 +2787,19 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "layoutJoin": "patricia-andrews",
-   "order": 2
+   "order": 2,
+   "burial": {
+    "place": "Churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire",
+    "placeId": "st-john-the-baptist-crowthorne",
+    "date": null,
+    "display": "Buried with Pat in the churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire (family)",
+    "sourceIds": [
+     "family-testimony",
+     "st-john-crowthorne-churchyard"
+    ],
+    "confidence": "family tradition"
+   },
+   "voyages": []
   },
   {
    "id": "patricia-andrews",
@@ -2459,7 +2840,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "The family remembers Windsor. That is not the registered birthplace. No home address is published."
+    "note": "The family remembers Windsor. That is not the registered birthplace. No home address is published.",
+    "placeId": "hammersmith-registration-district"
    },
    "death": {
     "date": "2020",
@@ -2611,7 +2993,8 @@
       "album-1950"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-marys-church-wanstead"
     }
    ],
    "isDirectLine": true,
@@ -2619,7 +3002,19 @@
    "portrait": null,
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
-   "order": 1
+   "order": 1,
+   "burial": {
+    "place": "Churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire",
+    "placeId": "st-john-the-baptist-crowthorne",
+    "date": null,
+    "display": "Buried with Ron in the churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire (family)",
+    "sourceIds": [
+     "family-testimony",
+     "st-john-crowthorne-churchyard"
+    ],
+    "confidence": "family tradition"
+   },
+   "voyages": []
   },
   {
    "id": "amanda-belfiore",
@@ -2679,7 +3074,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "robert-belfiore",
@@ -2728,7 +3125,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": null,
-   "order": 2
+   "order": 2,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "venetia-austin",
@@ -2788,7 +3187,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
-   "order": 2
+   "order": 2,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "gary-austin",
@@ -2837,7 +3238,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": null,
-   "order": 3
+   "order": 3,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "sebastian-belfiore",
@@ -2895,7 +3298,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "valeria-belfiore",
@@ -2943,7 +3348,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": null,
-   "order": 2
+   "order": 2,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "alex-belfiore",
@@ -2994,7 +3401,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
-   "order": 2
+   "order": 2,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "lauren-belfiore",
@@ -3042,7 +3451,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": null,
-   "order": 3
+   "order": 3,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "max-austin",
@@ -3092,7 +3503,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "lizzie-eley",
@@ -3139,7 +3552,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": null,
-   "order": 2
+   "order": 2,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "ben-austin",
@@ -3189,7 +3604,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
-   "order": 2
+   "order": 2,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "mollie-wells",
@@ -3236,7 +3653,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": null,
-   "order": 3
+   "order": 3,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "enzo-belfiore",
@@ -3272,7 +3691,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "violet-belfiore",
@@ -3308,7 +3729,9 @@
    "portrait": null,
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
-   "order": 2
+   "order": 2,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "james-ii",
@@ -3341,7 +3764,8 @@
     "sourceIds": [
      "wiki-james-ii"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "orkney-holyrood-abbey-edinburgh"
    },
    "death": {
     "date": "1460-08-03",
@@ -3350,7 +3774,8 @@
     "sourceIds": [
      "wiki-james-ii"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "orkney-roxburgh-castle"
    },
    "residences": [],
    "occupations": [
@@ -3378,7 +3803,8 @@
       "wiki-james-ii"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-holyrood-abbey-edinburgh"
     },
     {
      "date": "1437-02",
@@ -3408,7 +3834,8 @@
       "wiki-james-ii"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-roxburgh-castle"
     }
    ],
    "facts": [],
@@ -3458,7 +3885,9 @@
    "portrait": "photos/thumbs/james2.jpg",
    "isLiving": false,
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "mary-stewart",
@@ -3477,7 +3906,8 @@
     "sourceIds": [
      "wiki-mary-stewart"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "orkney-stirling"
    },
    "death": {
     "date": "1488-05",
@@ -3503,7 +3933,8 @@
       "wiki-mary-stewart"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-stirling"
     },
     {
      "date": "1467",
@@ -3581,7 +4012,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "james-hamilton-1st-lord",
@@ -3682,7 +4115,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "arran-1",
@@ -3775,7 +4210,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "chatellerault",
@@ -3894,7 +4331,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "marquess-1",
@@ -3965,7 +4404,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "marquess-2",
@@ -4047,7 +4488,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "duke-1",
@@ -4066,7 +4509,8 @@
     "sourceIds": [
      "wiki-marquess-2"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "orkney-hamilton-palace"
    },
    "death": {
     "date": "1649",
@@ -4076,7 +4520,8 @@
      "site-earlier"
     ],
     "confidence": "probable",
-    "note": "Executed after the Second Civil War, as earlier pages say."
+    "note": "Executed after the Second Civil War, as earlier pages say.",
+    "placeId": "orkney-london"
    },
    "residences": [],
    "occupations": [],
@@ -4093,7 +4538,8 @@
       "wiki-marquess-2"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-hamilton-palace"
     },
     {
      "date": "1622",
@@ -4166,7 +4612,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "anne-duchess",
@@ -4290,7 +4738,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "william-douglas",
@@ -4403,7 +4853,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "george-orkney",
@@ -4442,7 +4894,8 @@
      "sourceIds": [
       "wiki-george-orkney"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-cliveden-and-taplow-buckinghamshire"
     }
    ],
    "occupations": [
@@ -4616,7 +5069,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "elizabeth-villiers",
@@ -4726,7 +5181,9 @@
    "portrait": "photos/thumbs/elizabeth_villiers.jpg",
    "isLiving": false,
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "anne-countess",
@@ -4838,7 +5295,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "william-obrien-inchiquin",
@@ -4929,7 +5388,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "mary-3rd",
@@ -5023,7 +5484,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "john-petty-shelburne",
@@ -5109,7 +5572,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "mary-4th",
@@ -5230,7 +5695,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "thomas-fitzmaurice-mp",
@@ -5345,7 +5812,9 @@
    "layoutJoin": "mary-4th",
    "parentLinkConfidence": "confirmed",
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "lansdowne",
@@ -5389,7 +5858,8 @@
     "sourceIds": [
      "wiki-lansdowne"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "orkney-dublin"
    },
    "death": {
     "date": "1805-05-07",
@@ -5500,7 +5970,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "kirkwall",
@@ -5602,7 +6074,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "earl-5",
@@ -5724,7 +6198,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "george-6th",
@@ -5840,7 +6316,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "henry-warrender",
@@ -5958,7 +6436,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "frederick-obryen",
@@ -6049,7 +6529,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 3,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "edmond-7th",
@@ -6088,7 +6570,8 @@
      "sourceIds": [
       "korea-clipping"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-the-tythe-house-stewkley-near-leighton-buzzard"
     }
    ],
    "occupations": [],
@@ -6223,7 +6706,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "connie",
@@ -6428,7 +6913,9 @@
    "portrait": "photos/thumbs/connie_gilchrist.jpg",
    "isLiving": false,
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "lady-mary-fitzmaurice",
@@ -6515,7 +7002,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "douglas-commerel-menzies",
@@ -6587,7 +7076,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 3,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "douglas-frederick-harold",
@@ -6691,7 +7182,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "dorothy-dickie",
@@ -6728,7 +7221,8 @@
      "sourceIds": [
       "korea-clipping"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-lantern-hatch-itchingfield-near-horsham-sussex"
     }
    ],
    "occupations": [],
@@ -6755,7 +7249,8 @@
       "korea-clipping"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-lantern-hatch-itchingfield-near-horsham-sussex"
     }
    ],
    "facts": [],
@@ -6791,7 +7286,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "douglas-hubert",
@@ -6871,7 +7368,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 1,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "cecil-8th",
@@ -7012,7 +7511,8 @@
       "peerage-cecil"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-st-marys-brixham"
     },
     {
      "date": "1998-02-05",
@@ -7082,7 +7582,8 @@
       "marries-clipping"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "orkney-st-marys-brixham"
     }
    ],
    "isDirectLine": false,
@@ -7091,7 +7592,9 @@
    "isLiving": false,
    "parentLinkConfidence": "confirmed",
    "order": 2,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "rose-silley",
@@ -7130,7 +7633,8 @@
      "sourceIds": [
       "marries-clipping"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-brixham-devon"
     }
    ],
    "occupations": [],
@@ -7148,7 +7652,8 @@
       "marries-clipping"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "orkney-st-marys-brixham"
     },
     {
      "date": "1995-07-27",
@@ -7194,7 +7699,8 @@
       "peerage-cecil"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "orkney-st-marys-brixham"
     }
    ],
    "isDirectLine": false,
@@ -7202,7 +7708,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 3,
-   "region": "orkney"
+   "region": "orkney",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "john-fitzmaurice",
@@ -7229,7 +7737,8 @@
       "parish-stepney-1829",
       "parish-stepney-1832"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "tower-of-london"
     }
    ],
    "immigration": null,
@@ -7267,14 +7776,17 @@
       "parish-birmingham-1827"
      ],
      "confidence": "confirmed",
-     "note": "By licence. He was of His Majesty's Tower of London."
+     "note": "By licence. He was of His Majesty's Tower of London.",
+     "placeId": "st-martins-birmingham"
     }
    ],
    "isDirectLine": true,
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "eliza-fitzmaurice",
@@ -7329,7 +7841,8 @@
       "parish-birmingham-1827"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-martins-birmingham"
     }
    ],
    "isDirectLine": true,
@@ -7337,7 +7850,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "layoutJoin": "john-fitzmaurice"
+   "layoutJoin": "john-fitzmaurice",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "william-gottlob-falcke",
@@ -7368,7 +7883,8 @@
     "sourceIds": [
      "burial-falcke-1849"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "battersea"
    },
    "residences": [],
    "occupations": [
@@ -7382,7 +7898,8 @@
       "census-1841-falcke",
       "parish-battersea-1861"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "battersea"
     }
    ],
    "immigration": null,
@@ -7425,14 +7942,26 @@
       "parish-falcke-1817"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-marys-battersea"
     }
    ],
    "isDirectLine": true,
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": {
+    "place": "St Mary's, Battersea",
+    "placeId": "st-marys-battersea",
+    "date": "1849-08-27",
+    "display": "27 August 1849, St Mary's, Battersea, aged 56",
+    "sourceIds": [
+     "burial-falcke-1849"
+    ],
+    "confidence": "confirmed"
+   },
+   "voyages": []
   },
   {
    "id": "elizabeth-falcke",
@@ -7452,7 +7981,8 @@
      "census-1851-falcke"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "harrow-middlesex"
    },
    "death": null,
    "residences": [],
@@ -7493,7 +8023,8 @@
       "parish-falcke-1817"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-marys-battersea"
     }
    ],
    "isDirectLine": true,
@@ -7502,7 +8033,9 @@
    "isLiving": false,
    "order": 2,
    "parentLinkConfidence": "probable",
-   "layoutJoin": "william-gottlob-falcke"
+   "layoutJoin": "william-gottlob-falcke",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "henrietta-falcke",
@@ -7543,7 +8076,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "eliza-caroline-falcke",
@@ -7563,7 +8098,8 @@
      "census-1841-falcke"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "battersea"
    },
    "death": null,
    "residences": [],
@@ -7593,7 +8129,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "jane-falcke",
@@ -7613,7 +8151,8 @@
      "census-1841-falcke"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "battersea"
    },
    "death": null,
    "residences": [],
@@ -7643,7 +8182,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 3,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "charlotte-falcke",
@@ -7663,7 +8204,8 @@
      "census-1841-falcke"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "battersea"
    },
    "death": null,
    "residences": [],
@@ -7693,7 +8235,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 4,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "elizabeth-falcke-dau",
@@ -7713,7 +8257,8 @@
      "census-1841-falcke"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "battersea"
    },
    "death": null,
    "residences": [],
@@ -7743,7 +8288,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 5,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "frederick-falcke",
@@ -7763,7 +8310,8 @@
      "census-1841-falcke"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "battersea"
    },
    "death": null,
    "residences": [],
@@ -7793,7 +8341,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 6,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "emily-falcke",
@@ -7813,7 +8363,8 @@
      "census-1841-falcke"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "battersea"
    },
    "death": null,
    "residences": [],
@@ -7843,7 +8394,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 7,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "william-fitzmaurice-1827",
@@ -7863,7 +8416,8 @@
      "parish-whitechapel-1827"
     ],
     "confidence": "confirmed",
-    "note": "The baptism register gives both the birth and the baptism."
+    "note": "The baptism register gives both the birth and the baptism.",
+    "placeId": "st-mary-whitechapel"
    },
    "death": null,
    "residences": [],
@@ -7888,7 +8442,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "layoutJoin": null
+   "layoutJoin": null,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "john-richard-fitzmaurice",
@@ -7909,7 +8465,8 @@
     ],
     "confidence": "confirmed",
     "dateQualifier": "baptism",
-    "note": "Baptism date. No birth date is on the register."
+    "note": "Baptism date. No birth date is on the register.",
+    "placeId": "st-dunstan-stepney"
    },
    "death": null,
    "residences": [],
@@ -7934,7 +8491,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "layoutJoin": null
+   "layoutJoin": null,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "robert-william-fitzmaurice",
@@ -7954,7 +8513,8 @@
      "parish-stepney-1832"
     ],
     "confidence": "confirmed",
-    "note": "The register records the baptism. A separate birth date has not been found."
+    "note": "The register records the baptism. A separate birth date has not been found.",
+    "placeId": "st-dunstan-stepney"
    },
    "death": {
     "date": "1895-05-10",
@@ -7963,7 +8523,8 @@
     "sourceIds": [
      "probate-robert-1895"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "16-york-road-edgbaston"
    },
    "residences": [
     {
@@ -7973,7 +8534,8 @@
      "sourceIds": [
       "parish-stepney-1832"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "stepney"
     },
     {
      "place": "Little Bromwich, Aston",
@@ -7982,25 +8544,38 @@
      "sourceIds": [
       "census-1871-aston"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "little-bromwich-aston"
     },
     {
      "place": "Aston Manor",
-     "address": null,
+     "address": "Sutton Road, Aston Manor",
      "years": "1881",
      "sourceIds": [
       "census-1881-aston"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "sutton-road-aston"
     },
     {
      "place": "Edgbaston",
-     "address": null,
+     "address": "16 York Road, Edgbaston",
      "years": "1895",
      "sourceIds": [
       "probate-robert-1895"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "16-york-road-edgbaston"
+    },
+    {
+     "place": "Brompton, London",
+     "address": null,
+     "years": "1861",
+     "sourceIds": [
+      "parish-battersea-1861"
+     ],
+     "confidence": "confirmed",
+     "placeId": "brompton-london"
     }
    ],
    "occupations": [
@@ -8022,7 +8597,8 @@
      "sourceIds": [
       "census-1871-aston"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "aston"
     },
     {
      "title": "Granite merchant and contractor",
@@ -8032,7 +8608,8 @@
      "sourceIds": [
       "census-1881-aston"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "aston-manor"
     }
    ],
    "immigration": null,
@@ -8048,7 +8625,8 @@
       "parish-stepney-1832"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-dunstan-stepney"
     },
     {
      "date": "1861-09-14",
@@ -8058,7 +8636,8 @@
       "parish-battersea-1861"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-marys-battersea"
     },
     {
      "date": "1895-05-10",
@@ -8068,7 +8647,8 @@
       "probate-robert-1895"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "16-york-road-edgbaston"
     }
    ],
    "facts": [],
@@ -8108,7 +8688,8 @@
       "parish-battersea-1861"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-marys-battersea"
     }
    ],
    "isDirectLine": true,
@@ -8116,7 +8697,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "confirmed"
+   "parentLinkConfidence": "confirmed",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "fanny-mary-falcke",
@@ -8143,7 +8726,8 @@
     "sourceIds": [
      "parish-battersea-1837"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "battersea"
    },
    "death": {
     "date": "1917-10-25",
@@ -8152,7 +8736,8 @@
     "sourceIds": [
      "probate-fanny-1917"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "erdington"
    },
    "residences": [],
    "occupations": [],
@@ -8194,7 +8779,8 @@
       "parish-battersea-1861"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-marys-battersea"
     }
    ],
    "isDirectLine": true,
@@ -8203,7 +8789,9 @@
    "isLiving": false,
    "order": 2,
    "parentLinkConfidence": "confirmed",
-   "layoutJoin": "robert-william-fitzmaurice"
+   "layoutJoin": "robert-william-fitzmaurice",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "william-robert-fitzmaurice",
@@ -8224,7 +8812,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO birth index, September quarter 1862, King's Norton, volume 6c, page 406, mother Falcke."
+    "note": "GRO birth index, September quarter 1862, King's Norton, volume 6c, page 406, mother Falcke.",
+    "placeId": "kings-norton-registration-district"
    },
    "death": null,
    "residences": [],
@@ -8254,7 +8843,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "eliza-ada-fitzmaurice",
@@ -8275,7 +8866,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO birth index, March quarter 1864, King's Norton, volume 6c, page 466, mother Falcke."
+    "note": "GRO birth index, March quarter 1864, King's Norton, volume 6c, page 466, mother Falcke.",
+    "placeId": "kings-norton-registration-district"
    },
    "death": null,
    "residences": [],
@@ -8305,7 +8897,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "john-rupert-fitzmaurice",
@@ -8326,18 +8920,31 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO birth index, June quarter 1865, King's Norton, volume 6c, page 447, mother Falcke."
+    "note": "GRO birth index, June quarter 1865, King's Norton, volume 6c, page 447, mother Falcke.",
+    "placeId": "kings-norton-registration-district"
    },
    "death": {
     "date": "1949-09-21",
     "display": "21 September 1949, Leicester, aged 84",
-    "place": "Leicester",
+    "place": "3 Salisbury Road, Leicester",
     "sourceIds": [
      "probate-rupert-1949"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "3-salisbury-road-leicester"
    },
-   "residences": [],
+   "residences": [
+    {
+     "place": "3 Salisbury Road, Leicester",
+     "address": "3 Salisbury Road, Leicester",
+     "years": "1949",
+     "sourceIds": [
+      "probate-rupert-1949"
+     ],
+     "confidence": "confirmed",
+     "placeId": "3-salisbury-road-leicester"
+    }
+   ],
    "occupations": [
     {
      "title": "Quarry owner",
@@ -8353,7 +8960,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Probably a son of Robert William and Fanny Mary. Called Rupert J. in 1871. A quarry owner by 1895, and one of his father's executors. Died at Leicester on 21 September 1949.",
-   "story": "John Rupert's birth was registered in the King's Norton district in the June quarter of 1865, volume 6c, page 447, mother's maiden name Falcke.[^gro-indexes] In 1871 he is the son recorded as Rupert J., aged 6, born in Birmingham.[^census-1871-aston] In 1895 he was a quarry owner and an executor of his father.[^probate-robert-1895] He died on 21 September 1949, aged 84. The probate calendar places him at Leicester. The estate was 56,789 pounds 19 shillings and 2 pence.[^probate-rupert-1949]",
+   "story": "John Rupert's birth was registered in the King's Norton district in the June quarter of 1865, volume 6c, page 447, mother's maiden name Falcke.[^gro-indexes] In 1871 he is the son recorded as Rupert J., aged 6, born in Birmingham.[^census-1871-aston] In 1895 he was a quarry owner and an executor of his father.[^probate-robert-1895] He died on 21 September 1949, aged 84, of 3 Salisbury Road, Leicester. The estate was 56,789 pounds 19 shillings and 2 pence.[^probate-rupert-1949]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -8375,7 +8982,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 3,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "harry-fitzmaurice",
@@ -8396,7 +9005,8 @@
      "gro-indexes"
     ],
     "confidence": "probable",
-    "note": "Census age 5 in 1871."
+    "note": "Census age 5 in 1871.",
+    "placeId": "little-bromwich-aston"
    },
    "death": null,
    "residences": [],
@@ -8427,7 +9037,9 @@
    "isLiving": false,
    "order": 4,
    "parentLinkConfidence": "probable",
-   "nameUncertain": true
+   "nameUncertain": true,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "arthur-percy-fitzmaurice",
@@ -8448,7 +9060,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO birth index, September quarter 1867, Aston, volume 6d, page 352, mother Falcke."
+    "note": "GRO birth index, September quarter 1867, Aston, volume 6d, page 352, mother Falcke.",
+    "placeId": "aston"
    },
    "death": null,
    "residences": [],
@@ -8478,7 +9091,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 5,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "walter-fitzmaurice",
@@ -8499,7 +9114,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO birth index, December quarter 1869, Aston, volume 6d, page 345, mother Falcke."
+    "note": "GRO birth index, December quarter 1869, Aston, volume 6d, page 345, mother Falcke.",
+    "placeId": "aston"
    },
    "death": null,
    "residences": [],
@@ -8540,7 +9156,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 6,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "charles-spencer",
@@ -8618,7 +9236,9 @@
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "caroline-spencer",
@@ -8639,7 +9259,8 @@
      "census-1901-brixton"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "islington"
    },
    "death": null,
    "residences": [],
@@ -8682,7 +9303,9 @@
    "isLiving": false,
    "order": 2,
    "parentLinkConfidence": "probable",
-   "layoutJoin": "charles-spencer"
+   "layoutJoin": "charles-spencer",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "edith-marjorie-fitzmaurice",
@@ -8702,7 +9325,8 @@
      "gro-indexes"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "greenwich-registration-district"
    },
    "death": {
     "date": "1900",
@@ -8712,7 +9336,8 @@
      "gro-indexes"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "lewisham-registration-district"
    },
    "residences": [],
    "occupations": [],
@@ -8741,7 +9366,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "eileen-sybil-fitzmaurice",
@@ -8779,7 +9406,8 @@
      "news-1936-simmons"
     ],
     "confidence": "confirmed",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "blean-registration-district"
    },
    "death": {
     "date": "1996",
@@ -8790,17 +9418,19 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "Death index, Eileen Sybil Hallawell, March quarter 1996, Canterbury. The recorded birth day does not match the 1939 Register."
+    "note": "Death index, Eileen Sybil Hallawell, March quarter 1996, Canterbury. The recorded birth day does not match the 1939 Register.",
+    "placeId": "canterbury"
    },
    "residences": [
     {
      "place": "Whitstable",
-     "address": null,
+     "address": "Clifton Ville, Westgate Terrace, Whitstable",
      "years": "1911",
      "sourceIds": [
       "census-1911-whitstable"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "clifton-ville-whitstable"
     },
     {
      "place": "South Africa",
@@ -8810,16 +9440,18 @@
       "passenger-1916-llanstephan",
       "photo-labels"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "south-africa"
     },
     {
      "place": "Hayes",
-     "address": null,
+     "address": "55 Bourne Avenue, Hayes",
      "years": "1939",
      "sourceIds": [
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "55-bourne-avenue"
     },
     {
      "place": "Kent",
@@ -8828,7 +9460,18 @@
      "sourceIds": [
       "gro-indexes"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "kent"
+    },
+    {
+     "place": "140A Clapham Road, London",
+     "address": "140A Clapham Road, London S.W.",
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "placeId": "140a-clapham-road"
     }
    ],
    "occupations": [],
@@ -8914,7 +9557,8 @@
       "news-1936-simmons"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "staines"
     },
     {
      "id": "ralph-hallawell",
@@ -8926,7 +9570,8 @@
       "gro-indexes"
      ],
      "confidence": "probable",
-     "note": "Married in 1984. The year is given on Eileen's story. Ralph may still be living, so his card has no dates."
+     "note": "Married in 1984. The year is given on Eileen's story. Ralph may still be living, so his card has no dates.",
+     "placeId": "kent"
     }
    ],
    "isDirectLine": false,
@@ -8935,7 +9580,28 @@
    "isLiving": false,
    "order": 4,
    "parentLinkConfidence": "confirmed",
-   "nameUncertain": false
+   "nameUncertain": false,
+   "burial": null,
+   "voyages": [
+    {
+     "id": "v-1916-llanstephan-castle",
+     "ship": "Llanstephan Castle",
+     "from": "London",
+     "fromPlaceId": "port-london",
+     "to": "Cape Town",
+     "toPlaceId": "cape-town",
+     "departureDate": "1916-08-16",
+     "arrivalDate": null,
+     "display": "16 August 1916, London to Cape Town on the Llanstephan Castle (probably Edith and the three children)",
+     "sourceIds": [
+      "passenger-1916-llanstephan"
+     ],
+     "confidence": "probable",
+     "recordCrops": [
+      "1916-llanstephan-castle-fitzmaurice-rows.jpg"
+     ]
+    }
+   ]
   },
   {
    "id": "leslie-hugh-simmons",
@@ -8974,16 +9640,18 @@
      "sourceIds": [
       "news-1936-simmons"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "staines"
     },
     {
      "place": "Hayes",
-     "address": null,
+     "address": "55 Bourne Avenue, Hayes",
      "years": "1939",
      "sourceIds": [
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "55-bourne-avenue"
     }
    ],
    "occupations": [
@@ -8995,7 +9663,8 @@
      "sourceIds": [
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hayes"
     }
    ],
    "immigration": null,
@@ -9025,7 +9694,8 @@
       "news-1936-simmons"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "staines"
     }
    ],
    "isDirectLine": false,
@@ -9035,7 +9705,9 @@
    "order": 1,
    "parentLinkConfidence": "confirmed",
    "nameUncertain": false,
-   "layoutJoin": "eileen-sybil-fitzmaurice"
+   "layoutJoin": "eileen-sybil-fitzmaurice",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "ralph-hallawell",
@@ -9073,7 +9745,8 @@
       "gro-indexes"
      ],
      "confidence": "probable",
-     "note": null
+     "note": null,
+     "placeId": "kent"
     }
    ],
    "isDirectLine": false,
@@ -9083,7 +9756,9 @@
    "order": 2,
    "parentLinkConfidence": "confirmed",
    "nameUncertain": false,
-   "layoutJoin": "eileen-sybil-fitzmaurice"
+   "layoutJoin": "eileen-sybil-fitzmaurice",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "charles-bennett",
@@ -9103,7 +9778,8 @@
      "census-bennett"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "egloshayle-cornwall"
    },
    "death": {
     "date": "1925-12-05",
@@ -9112,7 +9788,8 @@
     "sourceIds": [
      "probate-charles-bennett-1926"
     ],
-    "confidence": "probable"
+    "confidence": "probable",
+    "placeId": "bodmin"
    },
    "residences": [
     {
@@ -9123,7 +9800,18 @@
       "census-bennett",
       "probate-charles-bennett-1926"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
+    },
+    {
+     "place": "Fore Street, Bodmin",
+     "address": "Fore Street, Bodmin",
+     "years": "1891",
+     "sourceIds": [
+      "census-bennett"
+     ],
+     "confidence": "probable",
+     "placeId": "fore-street-bodmin"
     }
    ],
    "occupations": [
@@ -9135,7 +9823,8 @@
      "sourceIds": [
       "census-bennett"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
     },
     {
      "title": "General labourer",
@@ -9145,7 +9834,8 @@
      "sourceIds": [
       "census-bennett"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
     },
     {
      "title": "Tailor and outfitter",
@@ -9155,7 +9845,8 @@
      "sourceIds": [
       "census-bennett"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
     }
    ],
    "immigration": null,
@@ -9202,14 +9893,17 @@
       "census-bennett"
      ],
      "confidence": "probable",
-     "note": "Charles Bennett and Annie Grigg are on the same marriage-index page. The register has not been seen."
+     "note": "Charles Bennett and Annie Grigg are on the same marriage-index page. The register has not been seen.",
+     "placeId": "stoke-damerel-registration-district"
     }
    ],
    "isDirectLine": true,
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "annie-bennett",
@@ -9238,7 +9932,8 @@
      "census-bennett"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "st-columb-registration-district"
    },
    "death": {
     "date": "1912",
@@ -9248,9 +9943,21 @@
      "gro-bennett-grigg"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "bodmin"
    },
-   "residences": [],
+   "residences": [
+    {
+     "place": "Fore Street, Bodmin",
+     "address": "Fore Street, Bodmin",
+     "years": "1891",
+     "sourceIds": [
+      "census-bennett"
+     ],
+     "confidence": "probable",
+     "placeId": "fore-street-bodmin"
+    }
+   ],
    "occupations": [
     {
      "title": "Draper",
@@ -9260,7 +9967,8 @@
      "sourceIds": [
       "census-bennett"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
     }
    ],
    "immigration": null,
@@ -9302,7 +10010,8 @@
       "gro-bennett-grigg"
      ],
      "confidence": "probable",
-     "note": null
+     "note": null,
+     "placeId": "stoke-damerel-registration-district"
     }
    ],
    "isDirectLine": true,
@@ -9311,7 +10020,9 @@
    "isLiving": false,
    "order": 2,
    "parentLinkConfidence": "probable",
-   "layoutJoin": "charles-bennett"
+   "layoutJoin": "charles-bennett",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "james-alfred-bennett",
@@ -9333,7 +10044,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO December quarter 1883, Bodmin, volume 5c, page 79, mother Grigg."
+    "note": "GRO December quarter 1883, Bodmin, volume 5c, page 79, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": {
     "date": "1884",
@@ -9343,7 +10055,8 @@
      "gro-bennett-grigg"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "bodmin"
    },
    "residences": [],
    "occupations": [],
@@ -9372,7 +10085,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "gilbert-bennett",
@@ -9394,7 +10109,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO December quarter 1884, Bodmin, volume 5c, page 77, mother Grigg."
+    "note": "GRO December quarter 1884, Bodmin, volume 5c, page 77, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": null,
    "residences": [],
@@ -9407,7 +10123,8 @@
      "sourceIds": [
       "census-bennett"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
     }
    ],
    "immigration": null,
@@ -9435,7 +10152,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "reginald-bennett",
@@ -9457,7 +10176,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO December quarter 1886, Bodmin, volume 5c, page 71, mother Grigg."
+    "note": "GRO December quarter 1886, Bodmin, volume 5c, page 71, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": null,
    "residences": [],
@@ -9470,7 +10190,8 @@
      "sourceIds": [
       "census-bennett"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
     }
    ],
    "immigration": null,
@@ -9498,7 +10219,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 3,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "minnie-bennett",
@@ -9520,7 +10243,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO June quarter 1888, Bodmin, volume 5c, page 72, mother Grigg."
+    "note": "GRO June quarter 1888, Bodmin, volume 5c, page 72, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": null,
    "residences": [],
@@ -9533,7 +10257,8 @@
      "sourceIds": [
       "census-bennett"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bodmin"
     }
    ],
    "immigration": null,
@@ -9561,7 +10286,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 4,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "harry-bennett",
@@ -9583,7 +10310,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO June quarter 1890, Bodmin, volume 5c, page 77, mother Grigg."
+    "note": "GRO June quarter 1890, Bodmin, volume 5c, page 77, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": null,
    "residences": [],
@@ -9613,7 +10341,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 5,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "arthur-sidney-bennett",
@@ -9635,7 +10365,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO June quarter 1892, Bodmin, volume 5c, page 65, mother Grigg."
+    "note": "GRO June quarter 1892, Bodmin, volume 5c, page 65, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": null,
    "residences": [],
@@ -9665,7 +10396,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 6,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "frederick-cyril-bennett",
@@ -9687,7 +10420,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO June quarter 1894, Bodmin, volume 5c, page 77, mother Grigg."
+    "note": "GRO June quarter 1894, Bodmin, volume 5c, page 77, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": {
     "date": "1895",
@@ -9697,7 +10431,8 @@
      "gro-bennett-grigg"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "bodmin"
    },
    "residences": [],
    "occupations": [],
@@ -9726,7 +10461,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 7,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "francis-bennett",
@@ -9761,14 +10498,35 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO December quarter 1895, Bodmin, volume 5c, page 69, mother Grigg. The index forename is Frances. He was known as Francis, and as Frank."
+    "note": "GRO December quarter 1895, Bodmin, volume 5c, page 69, mother Grigg. The index forename is Frances. He was known as Francis, and as Frank.",
+    "placeId": "bodmin"
    },
-   "death": null,
-   "residences": [],
+   "death": {
+    "date": "1981-10-01",
+    "display": "1 October 1981, Bristol, aged 86",
+    "place": "9A St Marks Avenue, Easton, Bristol",
+    "sourceIds": [
+     "probate-francis-bennett-1981"
+    ],
+    "confidence": "probable",
+    "placeId": "9a-st-marks-avenue-easton"
+   },
+   "residences": [
+    {
+     "place": "9A St Marks Avenue, Easton, Bristol",
+     "address": "9A St Marks Avenue, Easton, Bristol",
+     "years": "1981",
+     "sourceIds": [
+      "probate-francis-bennett-1981"
+     ],
+     "confidence": "probable",
+     "placeId": "9a-st-marks-avenue-easton"
+    }
+   ],
    "occupations": [],
    "immigration": null,
    "cardPlace": "Bodmin",
-   "summary": "Lilian's brother, registered as William Frances and known as Francis or Frank. He was with his father in 1911.",
+   "summary": "Lilian's brother, registered as William Frances and known as Francis or Frank. He probably died on 1 October 1981 at 9A St Marks Avenue, Easton, Bristol.",
    "story": "William Frances Bennett was registered at Bodmin in the December quarter of 1895, volume 5c, page 69, mother Grigg. The 1901 census calls him Francis, aged 5. In 1911 he is Frank, 15, living with his father Charles.[^gro-bennett-grigg] [^census-bennett]",
    "timeline": [],
    "facts": [],
@@ -9791,7 +10549,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 8,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "floyd-bennett",
@@ -9813,24 +10573,37 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO September quarter 1898, Bodmin, volume 5c, page 70, mother Grigg."
+    "note": "GRO September quarter 1898, Bodmin, volume 5c, page 70, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": {
-    "date": "1970",
-    "display": "probably 1970, Plymouth district",
-    "place": "Plymouth",
+    "date": "1970-08-21",
+    "display": "21 August 1970, of 1 Leat Walk, Peverell",
+    "place": "1 Leat Walk, Peverell, Plymouth",
     "sourceIds": [
+     "probate-cecil-bennett-1971",
      "gro-bennett-grigg"
     ],
-    "confidence": "probable",
-    "dateQualifier": "about"
+    "confidence": "confirmed",
+    "placeId": "1-leat-walk-peverell"
    },
-   "residences": [],
+   "residences": [
+    {
+     "place": "1 Leat Walk, Peverell, Plymouth",
+     "address": "1 Leat Walk, Peverell, Plymouth",
+     "years": "1970",
+     "sourceIds": [
+      "probate-cecil-bennett-1971"
+     ],
+     "confidence": "confirmed",
+     "placeId": "1-leat-walk-peverell"
+    }
+   ],
    "occupations": [],
    "immigration": null,
    "cardPlace": "Bodmin",
-   "summary": "Lilian's brother, called Floyd. He was 12 and at school with his mother in 1911. He probably married in 1924 and probably died in 1970.",
-   "story": "Cecil Floyd Chester Bennett was registered at Bodmin in the September quarter of 1898, volume 5c, page 70, mother Grigg. The censuses call him Floyd.[^census-bennett] He probably married Ethel G. Clark in the March quarter of 1924, in the Farnham district, volume 2a, page 202, and he probably died in the September quarter of 1970, in the Plymouth district, volume 7a, page 1599.[^gro-bennett-grigg]",
+   "summary": "Lilian's brother, called Floyd. He died on 21 August 1970, of 1 Leat Walk, Peverell, Plymouth.",
+   "story": "Cecil Floyd Chester Bennett was registered at Bodmin in the September quarter of 1898, volume 5c, page 70, mother Grigg. The censuses call him Floyd.[^census-bennett] He probably married Ethel G. Clark in the March quarter of 1924, in the Farnham district, volume 2a, page 202.[^gro-bennett-grigg] He died on 21 August 1970, of 1 Leat Walk, Peverell, Plymouth. Probate was granted at Bristol on 15 February 1971.[^probate-cecil-bennett-1971] The death index for the September quarter of 1970, Plymouth district, volume 7a, page 1599, is the same death.[^gro-bennett-grigg]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -9852,7 +10625,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 9,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "harold-victor-bennett",
@@ -9874,7 +10649,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO June quarter 1902, Bodmin, volume 5c, page 61, mother Grigg."
+    "note": "GRO June quarter 1902, Bodmin, volume 5c, page 61, mother Grigg.",
+    "placeId": "bodmin"
    },
    "death": {
     "date": "1904",
@@ -9884,7 +10660,8 @@
      "gro-bennett-grigg"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "bodmin"
    },
    "residences": [],
    "occupations": [],
@@ -9913,7 +10690,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 11,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "henry-stacey-elder",
@@ -9933,7 +10712,8 @@
      "census-andrews-stacey"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "chalfont-buckinghamshire"
    },
    "death": null,
    "residences": [],
@@ -9946,7 +10726,8 @@
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "denham"
     }
    ],
    "immigration": null,
@@ -9985,7 +10766,9 @@
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "ann-stacey",
@@ -10047,7 +10830,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "layoutJoin": "henry-stacey-elder"
+   "layoutJoin": "henry-stacey-elder",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "robert-walter",
@@ -10080,7 +10865,8 @@
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "letchmore-heath"
     }
    ],
    "immigration": null,
@@ -10120,7 +10906,9 @@
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "mary-walter-sr",
@@ -10182,7 +10970,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "layoutJoin": "robert-walter"
+   "layoutJoin": "robert-walter",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "henry-stacey",
@@ -10202,7 +10992,8 @@
      "parish-denham-1834"
     ],
     "confidence": "probable",
-    "note": "The register records the baptism. He was 7 in the 1841 census."
+    "note": "The register records the baptism. He was 7 in the 1841 census.",
+    "placeId": "denham-church"
    },
    "death": null,
    "residences": [
@@ -10214,16 +11005,18 @@
       "parish-denham-1834",
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "denham"
     },
     {
      "place": "Aldenham, Hertfordshire",
-     "address": null,
+     "address": "Patchetts Green, Aldenham",
      "years": "1871",
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "patchetts-green"
     },
     {
      "place": "Bushey, Hertfordshire",
@@ -10232,7 +11025,8 @@
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bushey"
     }
    ],
    "occupations": [
@@ -10279,7 +11073,8 @@
       "parish-leavesden-1858"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "leavesden-church"
     }
    ],
    "isDirectLine": true,
@@ -10287,7 +11082,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "mary-stacey",
@@ -10315,7 +11112,8 @@
      "census-andrews-stacey"
     ],
     "confidence": "probable",
-    "note": "Baptism and the 1841 age of 2. The marriage age of 21 is a little high."
+    "note": "Baptism and the 1841 age of 2. The marriage age of 21 is a little high.",
+    "placeId": "aldenham-church"
    },
    "death": null,
    "residences": [],
@@ -10352,7 +11150,8 @@
       "parish-leavesden-1858"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "leavesden-church"
     }
    ],
    "isDirectLine": true,
@@ -10361,7 +11160,9 @@
    "isLiving": false,
    "order": 2,
    "parentLinkConfidence": "probable",
-   "layoutJoin": "henry-stacey"
+   "layoutJoin": "henry-stacey",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "elizabeth-field",
@@ -10381,7 +11182,8 @@
      "census-andrews-stacey"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "stanbridge-bedfordshire"
    },
    "death": null,
    "residences": [],
@@ -10409,7 +11211,9 @@
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "george-andrews",
@@ -10429,7 +11233,8 @@
      "census-andrews-stacey"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "totternhoe-bedfordshire"
    },
    "death": null,
    "residences": [
@@ -10440,16 +11245,18 @@
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "totternhoe-bedfordshire"
     },
     {
      "place": "Aldenham, Hertfordshire",
-     "address": null,
+     "address": "High Cross, Aldenham",
      "years": "1881",
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "high-cross-aldenham"
     }
    ],
    "occupations": [
@@ -10486,21 +11293,25 @@
     {
      "id": "alice-andrews",
      "order": 1,
-     "marriageDate": null,
-     "marriageDisplay": null,
-     "place": null,
+     "marriageDate": "1863",
+     "marriageDisplay": "late 1863, Luton district",
+     "place": "Luton district",
      "sourceIds": [
-      "census-andrews-stacey"
+      "census-andrews-stacey",
+      "marriage-index-1863-andrews-field"
      ],
      "confidence": "probable",
-     "note": null
+     "note": "Update, November 2026: The marriage index on the Andrews page registers the marriage in the October to December quarter of 1863 in the Luton district, volume 3b, page 1000.",
+     "placeId": "luton-registration-district"
     }
    ],
    "isDirectLine": true,
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "alice-andrews",
@@ -10520,7 +11331,8 @@
      "census-andrews-stacey"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "totternhoe-bedfordshire"
    },
    "death": null,
    "residences": [],
@@ -10549,14 +11361,16 @@
     {
      "id": "george-andrews",
      "order": 1,
-     "marriageDate": null,
-     "marriageDisplay": null,
-     "place": null,
+     "marriageDate": "1863",
+     "marriageDisplay": "late 1863, Luton district",
+     "place": "Luton district",
      "sourceIds": [
-      "census-andrews-stacey"
+      "census-andrews-stacey",
+      "marriage-index-1863-andrews-field"
      ],
      "confidence": "probable",
-     "note": null
+     "note": "Update, November 2026: The marriage index on the Andrews page registers the marriage in the October to December quarter of 1863 in the Luton district, volume 3b, page 1000.",
+     "placeId": "luton-registration-district"
     }
    ],
    "isDirectLine": true,
@@ -10564,7 +11378,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "herbert-andrews-sr",
@@ -10585,7 +11401,8 @@
      "census-andrews-stacey"
     ],
     "confidence": "probable",
-    "note": "The day is from the 1939 Register. The 1871, 1911 and 1921 ages agree with 1865."
+    "note": "The day is from the 1939 Register. The 1871, 1911 and 1921 ages agree with 1865.",
+    "placeId": "totternhoe-bedfordshire"
    },
    "death": {
     "date": "1951",
@@ -10596,7 +11413,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "The death-index age is about a year younger than the 1939 birth date."
+    "note": "The death-index age is about a year younger than the 1939 birth date.",
+    "placeId": "essex-south-western-registration-district"
    },
    "residences": [
     {
@@ -10606,25 +11424,28 @@
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "totternhoe-bedfordshire"
     },
     {
      "place": "Hemel Hempstead",
-     "address": null,
+     "address": "94 Bury Road, Hemel Hempstead",
      "years": "1901",
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "94-bury-road"
     },
     {
      "place": "Canning Town and Plaistow",
-     "address": null,
+     "address": "40 Fisher Street, Canning Town",
      "years": "1911 to 1921",
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "40-fisher-street"
     },
     {
      "place": "West Ham",
@@ -10633,7 +11454,8 @@
      "sourceIds": [
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "west-ham-registration-district"
     }
    ],
    "occupations": [
@@ -10645,7 +11467,8 @@
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "berkeley-lodge"
     },
     {
      "title": "Journeyman baker",
@@ -10665,7 +11488,8 @@
      "sourceIds": [
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "west-ham-registration-district"
     }
    ],
    "immigration": null,
@@ -10704,7 +11528,8 @@
       "parish-bushey-1888"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "bushey"
     }
    ],
    "isDirectLine": true,
@@ -10712,7 +11537,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "lucy-andrews",
@@ -10740,7 +11567,8 @@
      "census-andrews-stacey"
     ],
     "confidence": "confirmed",
-    "note": "GRO June quarter 1865, Watford Union, volume 3a, page 333, mother Walter. The 1921 census says Leavesden."
+    "note": "GRO June quarter 1865, Watford Union, volume 3a, page 333, mother Walter. The 1921 census says Leavesden.",
+    "placeId": "leavesden"
    },
    "death": {
     "date": "1932",
@@ -10750,7 +11578,8 @@
      "gro-indexes"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "west-ham-registration-district"
    },
    "residences": [],
    "occupations": [
@@ -10762,7 +11591,8 @@
      "sourceIds": [
       "census-andrews-stacey"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "denmark-street-watford"
     }
    ],
    "immigration": null,
@@ -10797,7 +11627,8 @@
       "parish-bushey-1888"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "bushey"
     }
    ],
    "isDirectLine": true,
@@ -10806,7 +11637,9 @@
    "isLiving": false,
    "order": 2,
    "parentLinkConfidence": "probable",
-   "layoutJoin": "herbert-andrews-sr"
+   "layoutJoin": "herbert-andrews-sr",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "william-cousins-elder",
@@ -10828,7 +11661,8 @@
      "sourceIds": [
       "parish-hackney-1850"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hackney"
     },
     {
      "place": "Mile End Old Town",
@@ -10837,7 +11671,8 @@
      "sourceIds": [
       "census-1861-cousins"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "mile-end-old-town"
     }
    ],
    "occupations": [
@@ -10849,7 +11684,8 @@
      "sourceIds": [
       "parish-hackney-1850"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hackney"
     },
     {
      "title": "Messenger",
@@ -10859,7 +11695,8 @@
      "sourceIds": [
       "census-1861-cousins"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "mile-end-old-town"
     },
     {
      "title": "Clerk",
@@ -10885,7 +11722,8 @@
       "parish-hackney-1850"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "st-john-hackney"
     },
     {
      "date": "1861",
@@ -10895,7 +11733,8 @@
       "census-1861-cousins"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "mile-end-old-town"
     }
    ],
    "facts": [],
@@ -10930,7 +11769,9 @@
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "elizabeth-cousins",
@@ -10952,7 +11793,8 @@
      "sourceIds": [
       "parish-hackney-1850"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "hackney"
     },
     {
      "place": "Mile End Old Town",
@@ -10961,7 +11803,8 @@
      "sourceIds": [
       "census-1861-cousins"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "mile-end-old-town"
     }
    ],
    "occupations": [],
@@ -11004,7 +11847,9 @@
    "isLiving": false,
    "order": 2,
    "layoutJoin": "william-cousins-elder",
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "john-gall",
@@ -11063,7 +11908,9 @@
    "photo": null,
    "portrait": null,
    "isLiving": false,
-   "order": 1
+   "order": 1,
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "william-cousins",
@@ -11093,7 +11940,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "The baptism is the probable match for the William born at Hackney about 1850. Censuses agree with Hackney."
+    "note": "The baptism is the probable match for the William born at Hackney about 1850. Censuses agree with Hackney.",
+    "placeId": "st-john-hackney"
    },
    "death": {
     "date": "1922",
@@ -11103,7 +11951,8 @@
      "gro-cousins-gall"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "west-ham-registration-district"
    },
    "residences": [],
    "occupations": [
@@ -11115,7 +11964,8 @@
      "sourceIds": [
       "parish-stepney-1871"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "stepney"
     },
     {
      "title": "Wharf foreman",
@@ -11125,7 +11975,8 @@
      "sourceIds": [
       "census-cousins"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "bermondsey"
     },
     {
      "title": "Dock labourer, later retired",
@@ -11135,7 +11986,8 @@
      "sourceIds": [
       "census-cousins"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "plaistow"
     }
    ],
    "immigration": null,
@@ -11151,7 +12003,8 @@
       "parish-hackney-1850"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "st-john-hackney"
     },
     {
      "date": "1861",
@@ -11161,7 +12014,8 @@
       "census-1861-cousins"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "mile-end-old-town"
     },
     {
      "date": "1871-01-15",
@@ -11171,7 +12025,8 @@
       "parish-stepney-1871"
      ],
      "kind": "life",
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "st-philips-stepney"
     },
     {
      "date": "1922",
@@ -11181,7 +12036,8 @@
       "gro-cousins-gall"
      ],
      "kind": "life",
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "west-ham-registration-district"
     }
    ],
    "facts": [],
@@ -11222,7 +12078,8 @@
       "parish-stepney-1871"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-philips-stepney"
     }
    ],
    "isDirectLine": true,
@@ -11230,7 +12087,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "annie-cousins",
@@ -11258,7 +12117,8 @@
      "parish-stepney-1871"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "thetford-norfolk"
    },
    "death": {
     "date": "1900",
@@ -11268,9 +12128,21 @@
      "gro-cousins-gall"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "west-ham-registration-district"
    },
-   "residences": [],
+   "residences": [
+    {
+     "place": "44 New Street, Stepney",
+     "address": "44 New Street, Stepney",
+     "years": "1871",
+     "sourceIds": [
+      "parish-stepney-1871"
+     ],
+     "confidence": "confirmed",
+     "placeId": "44-new-street-stepney"
+    }
+   ],
    "occupations": [],
    "immigration": null,
    "cardPlace": "Thetford",
@@ -11310,7 +12182,8 @@
       "parish-stepney-1871"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-philips-stepney"
     }
    ],
    "isDirectLine": true,
@@ -11319,7 +12192,9 @@
    "isLiving": false,
    "order": 2,
    "parentLinkConfidence": "confirmed",
-   "layoutJoin": "william-cousins"
+   "layoutJoin": "william-cousins",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "arthur-edward-cousins",
@@ -11340,7 +12215,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO December quarter 1871, Mile End Old Town, mother Gall."
+    "note": "GRO December quarter 1871, Mile End Old Town, mother Gall.",
+    "placeId": "mile-end-old-town"
    },
    "death": {
     "date": "1912",
@@ -11351,7 +12227,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "FreeBMD death index, Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March 1912. Probably him."
+    "note": "FreeBMD death index, Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March 1912. Probably him.",
+    "placeId": "west-ham-registration-district"
    },
    "residences": [],
    "occupations": [],
@@ -11380,7 +12257,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "robert-henry-cousins",
@@ -11401,7 +12280,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO December quarter 1874, Stepney, mother Gall."
+    "note": "GRO December quarter 1874, Stepney, mother Gall.",
+    "placeId": "stepney"
    },
    "death": null,
    "residences": [],
@@ -11431,7 +12311,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 2,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "amelia-ann-cousins",
@@ -11451,7 +12333,8 @@
      "gro-cousins-gall"
     ],
     "confidence": "confirmed",
-    "note": "GRO September quarter 1877, Poplar, volume 1c, page 597, registered Amelia Annie, mother Galle."
+    "note": "GRO September quarter 1877, Poplar, volume 1c, page 597, registered Amelia Annie, mother Galle.",
+    "placeId": "poplar-registration-district"
    },
    "death": {
     "date": "1915",
@@ -11461,7 +12344,8 @@
      "gro-cousins-gall"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "west-ham-registration-district"
    },
    "residences": [],
    "occupations": [
@@ -11501,7 +12385,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 3,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "horatio-lionel-cousins",
@@ -11522,7 +12408,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO September quarter 1879, St Olave, mother Gall."
+    "note": "GRO September quarter 1879, St Olave, mother Gall.",
+    "placeId": "st-olave-registration-district"
    },
    "death": null,
    "residences": [],
@@ -11552,7 +12439,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 4,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "herbert-charles-cousins",
@@ -11573,7 +12462,8 @@
      "register-1939"
     ],
     "confidence": "probable",
-    "note": "GRO June quarter 1883, West Ham, volume 4a, page 104, mother Gall. The day is from the 1939 Register."
+    "note": "GRO June quarter 1883, West Ham, volume 4a, page 104, mother Gall. The day is from the 1939 Register.",
+    "placeId": "west-ham-registration-district"
    },
    "death": {
     "date": "1953",
@@ -11583,7 +12473,8 @@
      "gro-indexes"
     ],
     "confidence": "probable",
-    "dateQualifier": "about"
+    "dateQualifier": "about",
+    "placeId": "braintree-essex"
    },
    "residences": [],
    "occupations": [
@@ -11595,7 +12486,8 @@
      "sourceIds": [
       "gro-indexes"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "halstead"
     }
    ],
    "immigration": null,
@@ -11623,7 +12515,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 6,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "grace-lilian-cousins",
@@ -11644,7 +12538,8 @@
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "GRO June quarter 1884, West Ham, mother Gall."
+    "note": "GRO June quarter 1884, West Ham, mother Gall.",
+    "placeId": "west-ham-registration-district"
    },
    "death": null,
    "residences": [],
@@ -11674,7 +12569,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 7,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "may-florence-cousins",
@@ -11694,16 +12591,18 @@
      "census-1921-may"
     ],
     "confidence": "confirmed",
-    "note": "The 1939 Register gives a different year, so a day of birth is not stated."
+    "note": "The 1939 Register gives a different year, so a day of birth is not stated.",
+    "placeId": "west-ham-registration-district"
    },
    "death": {
     "date": "1971-09-27",
     "display": "27 September 1971",
-    "place": "Feltham, Middlesex",
+    "place": "205 Highfield, Feltham",
     "sourceIds": [
      "probate-may-1971"
     ],
-    "confidence": "confirmed"
+    "confidence": "confirmed",
+    "placeId": "205-highfield-feltham"
    },
    "residences": [
     {
@@ -11713,7 +12612,8 @@
      "sourceIds": [
       "census-1921-may"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "west-ham-registration-district"
     },
     {
      "place": "Chiswick",
@@ -11722,7 +12622,8 @@
      "sourceIds": [
       "electoral-may"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "chiswick"
     },
     {
      "place": "Feltham, Middlesex",
@@ -11732,7 +12633,19 @@
       "electoral-may",
       "probate-may-1971"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "feltham-middlesex"
+    },
+    {
+     "place": "205 Highfield, Feltham",
+     "address": "205 Highfield, Feltham",
+     "years": "1968 to 1971",
+     "sourceIds": [
+      "probate-may-1971",
+      "electoral-may"
+     ],
+     "confidence": "confirmed",
+     "placeId": "205-highfield-feltham"
     }
    ],
    "occupations": [
@@ -11744,7 +12657,8 @@
      "sourceIds": [
       "census-1921-may"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "east-ham-isolation-hospital"
     },
     {
      "title": "Dining hall maid",
@@ -11754,7 +12668,19 @@
      "sourceIds": [
       "register-1939"
      ],
-     "confidence": "probable"
+     "confidence": "probable",
+     "placeId": "colchester"
+    },
+    {
+     "title": "Hospital domestic work",
+     "employer": "Isolation Hospital, Ealing",
+     "place": "Ealing",
+     "years": "1933 to 1939",
+     "sourceIds": [
+      "electoral-may-ealing"
+     ],
+     "confidence": "probable",
+     "placeId": "ealing-isolation-hospital"
     }
    ],
    "immigration": null,
@@ -11793,7 +12719,9 @@
    "portrait": null,
    "isLiving": false,
    "order": 8,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "christina-knight",
@@ -11838,7 +12766,8 @@
       "gro-indexes"
      ],
      "confidence": "probable",
-     "note": null
+     "note": null,
+     "placeId": "east-ham-registration-district"
     }
    ],
    "isDirectLine": false,
@@ -11846,7 +12775,9 @@
    "portrait": null,
    "isLiving": true,
    "order": 2,
-   "layoutJoin": "herbert-andrews"
+   "layoutJoin": "herbert-andrews",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "christine-ellis",
@@ -11895,58 +12826,79 @@
    "portrait": null,
    "isLiving": true,
    "order": 1,
-   "parentLinkConfidence": "probable"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "eileen-alice-yallop",
    "displayName": "Eileen Alice Yallop",
-   "disambiguator": "Bob's wife",
+   "disambiguator": "Bob's wife, born about 1902 in South Africa",
    "givenNames": "Eileen Alice",
    "surname": "Yallop",
    "sex": "F",
    "generation": 16,
-   "nameVariants": [
-    {
-     "name": "Tallop",
-     "sourceIds": [
-      "estate-1981-bob"
-     ],
-     "note": "the estate index spelling of Yallop"
-    }
-   ],
-   "confidence": "confirmed",
+   "nameVariants": [],
+   "confidence": "probable",
    "birth": {
     "date": "1902",
     "display": "about 1902, South Africa",
     "place": "South Africa",
     "sourceIds": [
-     "marriage-1925-bob-yallop"
+     "fs-marriage-1925-cape-town"
     ],
     "confidence": "probable",
     "dateQualifier": "about",
-    "note": "Aged 23 on 30 October 1925, born in South Africa."
+    "note": "Aged 23 at the marriage on 30 October 1925, born in South Africa. No death record has been found. She was alive in May 1981, and the ledger treats her as deceased because she was born about 1902.",
+    "placeId": "south-africa"
    },
    "death": null,
    "residences": [
     {
-     "place": "Sea Point, Cape Town",
-     "address": "7 Bertram Road",
+     "place": "7 Bertram Road, Sea Point",
+     "address": "7 Bertram Road, Sea Point",
      "years": "1925",
      "sourceIds": [
-      "marriage-1925-bob-yallop"
+      "fs-marriage-1925-cape-town"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "7-bertram-road-sea-point"
+    },
+    {
+     "place": "17 Berkley Street, Gardens",
+     "address": "17 Berkley Street, Gardens, Cape Town",
+     "years": "1926",
+     "sourceIds": [
+      "fs-baptism-1926-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "placeId": "17-berkley-street-gardens"
+    },
+    {
+     "place": "1st Avenue, Bellville",
+     "address": "1st Avenue, Bellville",
+     "years": "1935",
+     "sourceIds": [
+      "fs-death-1935-edward-scott"
+     ],
+     "confidence": "probable",
+     "placeId": "1st-avenue-bellville"
     }
    ],
    "occupations": [],
    "immigration": null,
-   "cardPlace": "Sea Point, Cape Town",
-   "summary": "Bob's wife. Eileen Alice Yallop, born in South Africa about 1902. She married Edward Robert FitzMaurice at St George's Cathedral, Cape Town, on 30 October 1925.",
-   "story": "Eileen Alice Yallop was born in South Africa about 1902. On 30 October 1925, aged 23, she married Edward Robert FitzMaurice, called Bob, at St George's Cathedral, Cape Town, by licence. She lived at 7 Bertram Road, Sea Point. One of the witnesses was J. A. Cartwright.[^marriage-1925-bob-yallop] Their son Edward Scott was born in 1926 and died in 1935. Two further sons, Lawrence John and Derek Anthony, may be living, so only their names and relationship are given here.[^estate-1981-bob]",
+   "cardPlace": "Cape Town",
+   "summary": "Bob's wife. Born about 1902 in South Africa. She married him at St George's Cathedral, Cape Town, on 30 October 1925. She was alive in May 1981. No later death record has been found, and she is treated as deceased because of her age.",
+   "story": "Eileen Alice Yallop was 23, born in South Africa, and living at 7 Bertram Road, Sea Point, when she married Edward Robert Fitzmaurice on 30 October 1925 at St George's Cathedral, Cape Town. In 1926 they lived at 17 Berkley Street, Gardens. Their son Edward Scott was born on 29 April 1926 and died in 1935. She is named as Edward Robert's spouse on his 1981 death index, so she was alive in May 1981. No record of her own death has been found. She was born about 1902, so the ledger treats her as deceased.",
    "timeline": [],
    "facts": [],
    "media": [],
-   "openQuestions": [],
+   "openQuestions": [
+    {
+     "question": "When and where did Eileen Alice die?",
+     "record": "A Cape deceased estate file after 1981."
+    }
+   ],
    "relatedPages": [
     {
      "title": "Reg's brother and sisters",
@@ -11955,9 +12907,7 @@
    ],
    "parents": [],
    "children": [
-    "edward-scott-fitzmaurice",
-    "lawrence-john-fitzmaurice",
-    "derek-anthony-fitzmaurice"
+    "edward-scott-fitzmaurice"
    ],
    "spouses": [
     {
@@ -11967,10 +12917,11 @@
      "marriageDisplay": "30 October 1925",
      "place": "St George's Cathedral, Cape Town",
      "sourceIds": [
-      "marriage-1925-bob-yallop"
+      "fs-marriage-1925-cape-town"
      ],
      "confidence": "confirmed",
-     "note": null
+     "note": null,
+     "placeId": "st-georges-cathedral-cape-town"
     }
    ],
    "isDirectLine": false,
@@ -11978,13 +12929,14 @@
    "portrait": null,
    "isLiving": false,
    "order": 1,
-   "parentLinkConfidence": "confirmed",
-   "layoutJoin": "bob-fitzmaurice"
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "edward-scott-fitzmaurice",
    "displayName": "Edward Scott FitzMaurice",
-   "disambiguator": "Bob's son, died aged 9",
+   "disambiguator": "Bob's son, 1926 to 1935",
    "givenNames": "Edward Scott",
    "surname": "FitzMaurice",
    "sex": "M",
@@ -11993,41 +12945,41 @@
    "confidence": "confirmed",
    "birth": {
     "date": "1926-04-29",
-    "display": "29 April 1926, Cape Town",
-    "place": "Cape Town",
+    "display": "29 April 1926, Cape Province",
+    "place": "Cape Province",
     "sourceIds": [
-     "baptism-1926-edward-scott"
+     "fs-baptism-1926-edward-scott"
     ],
     "confidence": "confirmed",
-    "note": "Baptised 25 July 1926 in the parish of Woodstock."
+    "note": "The Woodstock baptism register says he was born on 29 April 1926."
    },
    "death": {
     "date": "1935-08-09",
-    "display": "9 August 1935, aged 9",
-    "place": null,
+    "display": "9 August 1935, Somerset Hospital, Cape Town, aged 9",
+    "place": "Somerset Hospital, Cape Town",
     "sourceIds": [
-     "estate-1981-bob"
+     "fs-death-1935-edward-scott"
     ],
-    "confidence": "probable",
-    "note": "Known from an index and from the title of his estate file in the Cape Town archives. The death place is not stated."
+    "confidence": "confirmed",
+    "placeId": "somerset-hospital-cape-town"
    },
    "residences": [
     {
-     "place": "Gardens, Cape Town",
-     "address": "17 Berkley Street",
-     "years": "1926",
+     "place": "1st Avenue, Bellville",
+     "address": "1st Avenue, Bellville",
+     "years": "1935",
      "sourceIds": [
-      "baptism-1926-edward-scott"
+      "fs-death-1935-edward-scott"
      ],
-     "confidence": "probable",
-     "note": "The house number may be 14."
+     "confidence": "confirmed",
+     "placeId": "1st-avenue-bellville"
     }
    ],
    "occupations": [],
    "immigration": null,
    "cardPlace": "Cape Town",
-   "summary": "Son of Bob and Eileen Alice Yallop. Born 29 April 1926 in Cape Town. Died 9 August 1935, aged 9.",
-   "story": "Edward Scott FitzMaurice, son of Edward Robert FitzMaurice and Eileen Alice Yallop, was born on 29 April 1926 and baptised on 25 July 1926 in the parish of Woodstock, Cape Town. The family was then living at 17 Berkley Street, Gardens (the house number may be 14). The godparents were Joseph Allan Cartwright, Thomas Baker and Bertha Scott.[^baptism-1926-edward-scott] He died on 9 August 1935, aged 9. His death is known from an index and from the title of his estate file in the Cape Town archives.[^estate-1981-bob]",
+   "summary": "Son of Edward Robert FitzMaurice and Eileen Alice Yallop. Born 29 April 1926, baptised in the parish of Woodstock, and died at Somerset Hospital on 9 August 1935, aged 9.",
+   "story": "Edward Scott Fitzmaurice was baptised on 25 July 1926 in the parish of Woodstock, Cape Town, entry 1565. The register says he was born on 29 April 1926, the son of Edward Robert and Eileen Alice Fitzmaurice, of 17 Berkley Street, Gardens. He died on 9 August 1935 at Somerset Hospital, aged 9. The family home was then 1st Avenue, Bellville.",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -12048,8 +13000,10 @@
    "photo": null,
    "portrait": null,
    "isLiving": false,
+   "order": 1,
    "parentLinkConfidence": "confirmed",
-   "order": 1
+   "burial": null,
+   "voyages": []
   },
   {
    "id": "lawrence-john-fitzmaurice",

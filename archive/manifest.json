@@ -1,0 +1,31 @@
+{
+ "schema": 1,
+ "kb": "kb-cb19ef32b265.json",
+ "hash": "cb19ef32b265",
+ "counts": {
+  "people": 95,
+  "living": 19,
+  "sections": 120,
+  "photos": 165,
+  "places": 120,
+  "sources": 102
+ },
+ "models": {
+  "Qwen3-1.7B-q4f16_1-MLC": {
+   "bytes": 990000000,
+   "measured": false
+  },
+  "Qwen3-1.7B-q4f32_1-MLC": {
+   "bytes": 1100000000,
+   "measured": false
+  },
+  "Qwen3-4B-q4f16_1-MLC": {
+   "bytes": 2280000000,
+   "measured": false
+  },
+  "Qwen3-4B-q4f32_1-MLC": {
+   "bytes": 2520000000,
+   "measured": false
+  }
+ }
+}

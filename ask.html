@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Only this site's own scripts run here. The model files come from Hugging Face (weights) and
+         raw.githubusercontent.com (the compiled model library), fetched inside archive-worker.js; they are
+         listed here, with 'wasm-unsafe-eval', for browsers that apply the page's policy to its worker too.
+         Inline styles are allowed so that readers' own tools (text spacing, contrast and reading aids) still
+         work; the page never writes HTML from answers, and img-src and font-src stop styles fetching elsewhere. -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'wasm-unsafe-eval'; worker-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'self' https://huggingface.co https://*.huggingface.co https://*.hf.co https://raw.githubusercontent.com; object-src 'none'; base-uri 'self'; form-action 'self'">
+    <title>Ask the Archive | FitzMaurice &amp; Andrews</title>
+    <meta name="description" content="Ask a question about the FitzMaurice and Andrews families in your own words. Answers come from the records on this site, with a link to each one.">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="branch.css">
+    <link rel="stylesheet" href="ask.css">
+</head>
+<body>
+<a class="skip-link" href="#askInput">Skip to the question</a>
+<nav class="main-nav">
+    <div class="nav-inner">
+        <a href="index.html" class="nav-logo">FitzMaurice &amp; Andrews</a>
+        <div class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="family-tree.html">Family Tree</a>
+            <a href="map.html">Family Map</a>
+            <a href="branches.html">Branches</a>
+            <!-- Family Crest is switched off for now. Restore this link to bring it back: <a href="family-crest.html">Family Crest</a> -->
+            <a href="ron-egypt.html">Ron in WWII</a>
+            <a href="wedding.html">Wedding</a>
+            <a href="sources.html">Sources</a>
+            <a href="ask.html" class="active">Ask the Archive</a>
+        </div>
+        <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+    </div>
+</nav>
+
+<main class="page-container ask" id="ask">
+    <header class="ask-head">
+        <h1>Ask the Archive</h1>
+        <p class="ask-lede">Ask about the FitzMaurice and Andrews families in your own words. Every answer comes from the records on this site, with a link to each one, so you can check it for yourself.</p>
+    </header>
+
+    <form class="ask-form" id="askForm" autocomplete="off">
+        <label for="askInput" class="ask-label">Your question</label>
+        <div class="ask-row">
+            <textarea id="askInput" name="q" rows="2" maxlength="500" placeholder="For example: Who were Reg FitzMaurice's grandparents?" aria-describedby="askHint"></textarea>
+            <button type="submit" class="ask-go" id="askGo">Ask</button>
+        </div>
+        <p class="ask-hint" id="askHint">Press Enter to ask. Shift and Enter starts a new line.</p>
+    </form>
+
+    <section class="ask-start" id="askStart" aria-labelledby="tryHead">
+        <h2 id="tryHead" class="ask-small-head">Try one of these</h2>
+        <ul class="ask-examples" id="askExamples"></ul>
+    </section>
+
+    <section class="ask-mode" id="askMode" aria-labelledby="modeHead">
+        <h2 id="modeHead" class="ask-small-head">How answers are written</h2>
+        <div class="mode-body" id="modeBody">
+            <p class="mode-line"><strong>Quick answers</strong> work straight away on any device. They are put together from the records: relationships and ages are worked out from the family tree, and other questions are answered with the passages that match best.</p>
+            <div class="mode-written" id="modeWritten">
+                <p class="mode-line" id="writtenState"><strong>Written answers</strong> are checking this device…</p>
+                <div class="mode-actions" id="writtenActions"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ask-convo" aria-labelledby="convoHead">
+        <h2 id="convoHead" class="visually-hidden">Your questions and the answers</h2>
+        <div class="convo-bar" id="convoBar" hidden>
+            <button type="button" class="ask-link" id="newConvo">Start a new conversation</button>
+        </div>
+        <ol class="turns" id="turns"></ol>
+    </section>
+
+    <p class="ask-note">Answers use only what is on this site. They can still be wrong, so check the linked records. Living family members are named with their relationship only, as on the family tree. Nothing you type is stored or sent anywhere: your questions stay in this page and are gone when you close it.</p>
+
+    <div class="visually-hidden" id="askLive" role="status" aria-live="polite"></div>
+</main>
+
+<dialog class="setup" id="setup" aria-labelledby="setupHead">
+    <form method="dialog" class="setup-in" id="setupForm">
+        <h2 id="setupHead">Set up written answers</h2>
+        <div id="setupBody"></div>
+        <div class="setup-progress" id="setupProgress" hidden>
+            <ol class="steps" id="setupSteps">
+                <li data-step="archive">Preparing the archive</li>
+                <li data-step="download">Downloading the model</li>
+                <li data-step="start">Starting it on this device</li>
+                <li data-step="ready">Ready to answer questions</li>
+            </ol>
+            <div class="bar" role="progressbar" id="setupBar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-label="Download progress"><span></span></div>
+            <p class="setup-detail" id="setupDetail"></p>
+        </div>
+        <p class="setup-error" id="setupError" role="alert" hidden></p>
+        <div class="setup-actions" id="setupActions"></div>
+    </form>
+</dialog>
+
+<script src="archive-kin.js"></script>
+<script src="archive-dates.js"></script>
+<script src="archive-search.js"></script>
+<script src="archive-core.js"></script>
+<script src="archive-llm.js"></script>
+<script src="ask.js"></script>
+</body>
+</html>

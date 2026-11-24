@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content="noindex">
+    <title>Ask the Archive: evaluation</title>
+    <link rel="stylesheet" href="../branch.css">
+    <style>
+        body { background: #fbf7f0; }
+        main { max-width: 1100px; margin: 0 auto; padding: 2rem 1.2rem 4rem; font-family: 'EB Garamond', Georgia, serif; }
+        h1 { font-family: 'Cinzel', Georgia, serif; font-size: 1.8rem; margin: 0 0 0.6rem; }
+        .controls { display: flex; flex-wrap: wrap; gap: 0.8rem; align-items: center; margin: 1rem 0; }
+        .controls button { font: inherit; padding: 0.45rem 1rem; border-radius: 999px; border: 1px solid #7a1a1a; background: #7a1a1a; color: #fff; cursor: pointer; }
+        .controls button.ghost { background: transparent; color: #7a1a1a; }
+        .controls button:disabled { opacity: 0.5; cursor: default; }
+        .env, .summary { background: #f5ecdd; border-left: 4px solid #b8860b; padding: 0.8rem 1rem; margin: 1rem 0; }
+        table { width: 100%; border-collapse: collapse; font-size: 0.95rem; }
+        th, td { text-align: left; vertical-align: top; padding: 0.45rem 0.5rem; border-bottom: 1px solid #e3d6bf; }
+        th { font-weight: 600; }
+        td.pass { color: #1c5e2a; }
+        td.fail { color: #8b1a1a; font-weight: 600; }
+        .written { white-space: pre-wrap; }
+        .dropped { color: #8b1a1a; font-size: 0.9rem; }
+        .muted { color: #6b5a45; font-size: 0.9rem; }
+        :focus-visible { outline: 3px solid #b8860b; outline-offset: 2px; }
+    </style>
+</head>
+<body>
+<main>
+    <h1>Ask the Archive: evaluation</h1>
+    <p>This page runs every question in <code>tests/archive-eval.json</code> through the archive. Quick answers run straight away. Written answers need WebGPU and the downloaded model; if the model is not already on this device, running them downloads it from Hugging Face first. Nothing is sent anywhere else, and the results stay on this page until you download them.</p>
+
+    <div class="env" id="env">Checking this device…</div>
+
+    <div class="controls">
+        <button type="button" id="runQuick" disabled>Run quick answers</button>
+        <label><input type="radio" name="model" value="standard" checked> Standard model</label>
+        <label><input type="radio" name="model" value="larger"> More detailed model</label>
+        <label><input type="checkbox" id="writtenOnly" checked> Only questions that get a written answer</label>
+        <button type="button" id="runWritten" disabled>Run written answers</button>
+        <button type="button" class="ghost" id="stop" disabled>Stop</button>
+        <button type="button" class="ghost" id="download" disabled>Download results (JSON)</button>
+    </div>
+    <p class="muted" id="progress" aria-live="polite"></p>
+
+    <div class="summary" id="summary" hidden></div>
+    <table>
+        <thead><tr><th>#</th><th>Question</th><th>Category</th><th>Quick</th><th>Written answer</th><th>Checks</th><th>Timing</th></tr></thead>
+        <tbody id="rows"></tbody>
+    </table>
+</main>
+<script src="../archive-kin.js"></script>
+<script src="../archive-dates.js"></script>
+<script src="../archive-search.js"></script>
+<script src="../archive-core.js"></script>
+<script src="../archive-llm.js"></script>
+<script src="archive-eval-run.js"></script>
+</body>
+</html>

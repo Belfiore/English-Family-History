@@ -970,7 +970,7 @@
    "type": "family testimony",
    "repository": "Family papers, 2026.",
    "date": "2026-11-23",
-   "note": "The family believes Bob stayed in South Africa. No South African record of his later life has been found yet. The only entries under his name in the South African archives catalogue are two undated Cape Supreme Court civil cases he brought against a Raymond William Wilson."
+   "note": "The family believes Bob stayed in South Africa. The marriage in 1925, the 1926 baptism and the 1981 estate index now show that he did. Two undated Cape Supreme Court civil cases that he brought against a Raymond William Wilson are probably his too."
   },
   {
    "id": "family-arthur-cousins-1912",
@@ -1229,6 +1229,33 @@
    "repository": "Electoral registers, read for the claim ledger, claim C0457.",
    "date": "1933-01-01",
    "note": "May Florence Cousins is listed at the Isolation Hospital, Ealing, from 1933 to 1939. The hospital building was not found as a named point on OpenStreetMap. Ledger claim C0457, status probable."
+  },
+  {
+   "id": "marriage-1925-bob-yallop",
+   "title": "Marriage register, St George's Cathedral, Cape Town, 30 October 1925",
+   "type": "marriage register",
+   "repository": "FamilySearch, South Africa, Civil Marriage Records, 1801 to 1974, film 007732056, image 286 of 320.",
+   "date": "1925-10-30",
+   "file": "images/records/1925-10-30-marriage-edward-robert-fitzmaurice-eileen-alice-yallop-st-georges-cathedral-cape-town.jpg",
+   "note": "Edward Robert Fitzmaurice, 24, tramway engineer, of Auleta, Three Anchor Bay, and Eileen Alice Yallop, 23, of 7 Bertram Road, Sea Point. By licence. Witness J. A. Cartwright."
+  },
+  {
+   "id": "baptism-1926-edward-scott",
+   "title": "Baptism of Edward Scott Fitzmaurice, Woodstock, 25 July 1926",
+   "type": "baptism register",
+   "repository": "FamilySearch, South Africa, Church of the Province of South Africa, Parish Registers, film 005029474, image 390 of 400.",
+   "date": "1926-07-25",
+   "file": "images/records/1926-07-25-baptism-edward-scott-fitzmaurice-woodstock-entry-1565-row.jpg",
+   "note": "Entry 1565. Born 29 April 1926. Parents Edward Robert and Eileen Alice Fitzmaurice, of 17 Berkley Street, Gardens, Cape Town. The house number may be 14. Father a tramway engineer."
+  },
+  {
+   "id": "estate-1981-bob",
+   "title": "Index to the death notice of Edward Robert Fitzmaurice, 1981",
+   "type": "estate index",
+   "repository": "FamilySearch, South Africa, Western Cape, Deceased Estate Files, 1951 to 2011. The image, DGS 100814366, image 83, is not open to view.",
+   "date": "1981-05-07",
+   "file": "images/records/1981-edward-robert-fitzmaurice-western-cape-deceased-estate-index.jpg",
+   "note": "Born 1901, London. Death registered 27 May 1981, Cape Town. A second entry gives the death as 7 May 1981, Port Elizabeth. Father Edward Dickson. Mother indexed as Adellia and as Edith. Wife Eileen Alice, indexed Tallop. Sons Laurence John and Serel Anthony, probably Derek Anthony."
   }
  ]
 }

@@ -135,7 +135,9 @@ function expectScope(id, scope) {
     const scott = people.find(p => p.id === 'edward-scott-fitzmaurice');
     const yallop = people.find(p => p.id === 'eileen-alice-yallop');
     check(scott && scott.isLiving === false && yallop && yallop.isLiving === false, 'Edward Scott and Eileen Alice are on the tree as people who have died');
-    check(!people.some(p => /derek|lawrence john|laurence john/i.test(p.displayName || '')), 'no possibly living son of Bob is on the tree');
+    // PR #3 shows Bob's possibly living sons on the tree by name and relationship only; they must never reach the map
+    const bobSons = people.filter(p => /derek|lawrence john|laurence john/i.test(p.displayName || ''));
+    check(bobSons.every(p => p.isLiving) && !places.some(pl => (pl.events || []).some(e => (e.personIds || []).some(id => bobSons.some(b => b.id === id)))), "Bob's possibly living sons are name-only on the tree and not on the map", bobSons.map(p => p.id).join(', '));
     const badSrc = [];
     const needSrc = (ids, where, required) => { if (required && !(ids || []).length) badSrc.push(where + ' has no source'); (ids || []).forEach(i => { if (!sid.has(i)) badSrc.push(where + ' cites unknown source ' + i); }); };
     let nEvents = 0, nImages = 0;

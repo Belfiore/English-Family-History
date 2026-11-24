@@ -15,6 +15,6 @@
  * to the site's address. Never put a key without restrictions here.
  */
 window.FM_CONFIG = {
-    MAPTILER_KEY: '',
+    MAPTILER_KEY: 'DmGXe7VpArzLD0VzWdx3',
     GOOGLE_EMBED_KEY: ''
 };

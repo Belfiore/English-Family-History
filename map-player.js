@@ -191,7 +191,7 @@
         var targetCam;
         if (single) {
             var z = target.zoom != null ? target.zoom : zoomForRadius(target.radius || 200, lat);
-            targetCam = { center: b.getCenter(), zoom: Math.min(z, 16), padding: pad };
+            targetCam = { center: b.getCenter(), zoom: Math.min(z, 15), padding: pad };
         } else {
             targetCam = fitCamera(map, b, pad, target.zoom != null ? target.zoom : 14);
         }

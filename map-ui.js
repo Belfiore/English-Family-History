@@ -618,7 +618,8 @@
         openPanel(placeHTML(pl, evs, sm), pl.name, parts);
         refreshOverlays();
         if (!opts.noFly) {
-            var target = { points: [placeLL(pl)], radius: pl.uncertaintyMetres || 100 };
+            // open on the neighbourhood, not the doorstep: at least the streets within about 600 metres
+            var target = { points: [placeLL(pl)], radius: Math.max(pl.uncertaintyMetres || 0, 600) };
             if (camera) { camera.following = true; camera.frame(target, { mode: 'follow', force: true, noJourney: true }); }
         }
         if (S.style === 'then') FM.setThenEdition(yearOf(evs[0] && evs[0].dateStart), placeLL(pl));

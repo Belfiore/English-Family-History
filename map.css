@@ -660,3 +660,12 @@ body.sv-open .fm-key, body.sv-open .fm-chips, body.sv-open .fm-tl, body.sv-open 
 .fm-sat[aria-pressed="true"] { background: var(--fm-accent); color: #fff6e6; border-color: var(--fm-accent); }
 @media (max-width: 820px) { .fm-peg { top: 126px; right: 10px; } .fm-panel:not([hidden]) ~ .fm-peg { right: 10px; } }
 .fm-sv-then { top: 14px; bottom: auto; }
+
+/* then and now: the controls sit at the bottom, above the divider; the header button is plain to spot */
+.fm-divider { z-index: 4; }
+.fm-compare-tools { top: auto !important; bottom: 26px; z-index: 6; }
+.fm-cmp-btn { display: inline-flex; gap: .35rem; align-items: center; border-color: var(--fm-accent); color: var(--fm-accent); font-weight: 600; }
+.fm-cmp-btn svg { width: 16px; height: 16px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+.fm-cmp-btn[aria-pressed="true"] { background: var(--fm-accent); color: #fff6e6; }
+.fm-sat:disabled { opacity: .45; cursor: not-allowed; }
+@media (max-width: 820px) { .fm-compare-tools { bottom: 64px; flex-wrap: wrap; justify-content: center; max-width: calc(100% - 20px); } }

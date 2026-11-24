@@ -46,7 +46,7 @@
         <div class="fm-tools">
             <div class="fm-seg fm-styles" id="styleSwitch" role="radiogroup" aria-label="Map style"></div>
             <button type="button" class="fm-btn fm-sat" id="satBtn" aria-pressed="false" title="Show the photograph from above under today's map">Satellite</button>
-            <button type="button" class="fm-btn" id="compareBtn" aria-pressed="false" title="Compare the old map with today's">Then and now</button>
+            <button type="button" class="fm-btn fm-cmp-btn" id="compareBtn" aria-pressed="false" title="Swipe between the old map and today's"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M8 8l-4 4 4 4M16 8l4 4-4 4"/></svg>Swipe then and now</button>
             <button type="button" class="fm-btn" id="listOpen">View as list</button>
         </div>
     </header>
@@ -57,9 +57,10 @@
             <div class="fm-map fm-map--today" id="compareMap" aria-hidden="true"></div>
             <div class="fm-divider" id="divider" role="slider" tabindex="0" aria-label="Then and now divider: left is today, right is the old map" aria-valuemin="0" aria-valuemax="100" aria-valuenow="50"><span></span></div>
             <div class="fm-compare-tools">
-                <span class="fm-cmp-l">Today</span>
-                <label class="fm-opacity">Old map <input type="range" id="thenOpacity" min="0" max="100" value="100" aria-label="Old map opacity"></label>
-                <span class="fm-cmp-r" id="cmpEdition">Then</span>
+                <span class="fm-cmp-l">&larr; Today</span>
+                <label class="fm-opacity">Old map strength <input type="range" id="thenOpacity" min="0" max="100" value="100" aria-label="Old map opacity"></label>
+                <span class="fm-cmp-r"><span id="cmpEdition">Then</span> &rarr;</span>
+                <button type="button" class="fm-btn fm-btn--sm" id="cmpDone">Done</button>
             </div>
         </div>
 

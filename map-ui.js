@@ -210,6 +210,8 @@
     }
     function setStyle(name, opts) {
         opts = opts || {};
+        // comparing only makes sense with the old map on one side: another style ends it
+        if (S.compare && name !== 'then') setCompare(false);
         if ((name === 'then') && !CFG.MAPTILER_KEY) {
             // without a key the map stays as it is, rather than jumping to another style
             note('The old maps are not switched on yet: they need a free MapTiler key in config.js.');
@@ -292,9 +294,15 @@
         applySat();
         if (!quiet) { writeURL(); announce(S.sat ? 'Satellite view on.' : 'Satellite view off.'); }
     }
-    function renderSatBtn() { $('satBtn').hidden = S.style === 'then'; $('satBtn').setAttribute('aria-pressed', S.sat ? 'true' : 'false'); }
+    function renderSatBtn() { $('satBtn').disabled = S.style === 'then'; $('satBtn').title = S.style === 'then' ? 'Satellite works with Today and Atlas' : 'Show the photograph from above under today\'s map'; $('satBtn').setAttribute('aria-pressed', S.sat ? 'true' : 'false'); }
+    // shop, bus-stop and other point-of-interest icons only clutter a family map
+    function hidePois(m) {
+        var st = m && m.getStyle(); if (!st) return;
+        st.layers.forEach(function (l) { if (l['source-layer'] === 'poi' && l.type === 'symbol') m.setLayoutProperty(l.id, 'visibility', 'none'); });
+    }
     function addOverlays() {
         if (!map.getStyle()) return;
+        hidePois(map);
         applySat();
         var before = firstSymbolLayer();
         function src(id) { if (!map.getSource(id)) map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } }); }
@@ -1120,6 +1128,7 @@
             if (S.style !== 'then') setStyle('then');
             if (!cmap) {
                 cmap = new maplibregl.Map({ container: 'compareMap', style: 'https://tiles.openfreemap.org/styles/liberty', center: map.getCenter(), zoom: map.getZoom(), interactive: false, attributionControl: false });
+                cmap.on('style.load', function () { hidePois(cmap); });
                 map.on('move', function () { if (S.compare) cmap.jumpTo({ center: map.getCenter(), zoom: map.getZoom(), bearing: map.getBearing(), pitch: map.getPitch() }); });
             }
             cmap.resize(); cmap.jumpTo({ center: map.getCenter(), zoom: map.getZoom() });
@@ -1267,6 +1276,7 @@
         });
         $('styleSwitch').addEventListener('click', function (e) { var b = e.target.closest('[data-style]'); if (b) setStyle(b.dataset.style); });
         $('compareBtn').addEventListener('click', function () { setCompare(!S.compare); });
+        $('cmpDone').addEventListener('click', function () { setCompare(false); $('compareBtn').focus(); });
         $('satBtn').addEventListener('click', function () { setSat(!S.sat); });
         $('famSel').addEventListener('change', function () { setFamily(this.value || null, S.gen, S.sib); });
         $('genSel').addEventListener('change', function () { setFamily(S.fam, +this.value, S.sib); });

@@ -279,6 +279,26 @@
      ],
      "confidence": "confirmed",
      "placeId": "14-waterloo-road-whitstable"
+    },
+    {
+     "place": "18 Saltoun Road, Brixton",
+     "address": "18 Saltoun Road, Brixton",
+     "years": "1897",
+     "sourceIds": [
+      "parish-brixton-1897"
+     ],
+     "confidence": "probable",
+     "placeId": "18-saltoun-road"
+    },
+    {
+     "place": "Westfield House, Brixton",
+     "address": "Westfield House, Brixton",
+     "years": "1901",
+     "sourceIds": [
+      "census-1901-brixton"
+     ],
+     "confidence": "probable",
+     "placeId": "westfield-house-brixton"
     }
    ],
    "occupations": [
@@ -708,6 +728,36 @@
      ],
      "confidence": "probable",
      "placeId": "south-africa"
+    },
+    {
+     "place": "18 Saltoun Road, Brixton",
+     "address": "18 Saltoun Road, Brixton",
+     "years": "1897",
+     "sourceIds": [
+      "parish-brixton-1897"
+     ],
+     "confidence": "probable",
+     "placeId": "18-saltoun-road"
+    },
+    {
+     "place": "Westfield House, Brixton",
+     "address": "Westfield House, Brixton",
+     "years": "1901",
+     "sourceIds": [
+      "census-1901-brixton"
+     ],
+     "confidence": "probable",
+     "placeId": "westfield-house-brixton"
+    },
+    {
+     "place": "140A Clapham Road, London",
+     "address": "140A Clapham Road, London S.W.",
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "placeId": "140a-clapham-road"
     }
    ],
    "occupations": [
@@ -1116,6 +1166,16 @@
      ],
      "confidence": "probable",
      "placeId": "42-nestles-avenue"
+    },
+    {
+     "place": "140A Clapham Road, London",
+     "address": "140A Clapham Road, London S.W.",
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "placeId": "140a-clapham-road"
     }
    ],
    "occupations": [],
@@ -1459,6 +1519,16 @@
      ],
      "confidence": "probable",
      "placeId": "42-nestles-avenue"
+    },
+    {
+     "place": "Thombrake, Queens Road, Hampton Hill",
+     "address": "Thombrake, Queens Road, Hampton Hill",
+     "years": "1921",
+     "sourceIds": [
+      "census-1921-lilian"
+     ],
+     "confidence": "probable",
+     "placeId": "thombrake-hampton-hill"
     }
    ],
    "occupations": [
@@ -1603,13 +1673,53 @@
     "note": "GRO June quarter 1901, Lambeth, volume 1d, page 503, mother Spencer. Aged 9 at Whitstable in 1911.",
     "placeId": "lambeth-registration-district"
    },
-   "death": null,
-   "residences": [],
+   "death": {
+    "date": "1981-05-07",
+    "display": "7 May 1981, Port Elizabeth",
+    "place": "Port Elizabeth",
+    "sourceIds": [
+     "fs-death-1981-edward-robert"
+    ],
+    "confidence": "probable",
+    "placeId": "port-elizabeth"
+   },
+   "residences": [
+    {
+     "place": "Auleta, Three Anchor Bay",
+     "address": "Auleta, Three Anchor Bay, Cape Town",
+     "years": "1925",
+     "sourceIds": [
+      "fs-marriage-1925-cape-town"
+     ],
+     "confidence": "confirmed",
+     "placeId": "auleta-three-anchor-bay"
+    },
+    {
+     "place": "17 Berkley Street, Gardens",
+     "address": "17 Berkley Street, Gardens, Cape Town",
+     "years": "1926",
+     "sourceIds": [
+      "fs-baptism-1926-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "placeId": "17-berkley-street-gardens"
+    },
+    {
+     "place": "1st Avenue, Bellville",
+     "address": "1st Avenue, Bellville",
+     "years": "1935",
+     "sourceIds": [
+      "fs-death-1935-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "placeId": "1st-avenue-bellville"
+    }
+   ],
    "occupations": [],
    "immigration": null,
-   "cardPlace": "Lambeth, then Whitstable",
-   "summary": "Reg's brother, called Bob on the family photograph. Probably Edward Robert FitzMaurice, born in the Lambeth district in the spring of 1901.",
-   "story": "The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice.[^photo-labels] Bob is probably Edward Robert Fitzmaurice, mother's maiden name Spencer, registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503.[^gro-indexes] In 1911 he is Edward Robert, aged 9, at school, with his parents at Whitstable.[^census-1911-whitstable] No marriage or death has been tied to him.\n\nHe was probably the boy of 15 who sailed to Cape Town with his mother in August 1916. No later record of him has been found in England.[^passenger-1916-llanstephan] The family believes Bob stayed in South Africa. No South African record of his later life has been found yet; the only entries under his name in the South African archives catalogue are two undated Cape Supreme Court civil cases he brought against a Raymond William Wilson.[^family-bob-south-africa]",
+   "cardPlace": "Lambeth, then Cape Town",
+   "summary": "Reg's brother, called Bob. Edward Robert FitzMaurice, born in the Lambeth district in 1901. He married in Cape Town in 1925 and died at Port Elizabeth on 7 May 1981.",
+   "story": "The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice. Bob is Edward Robert Fitzmaurice, mother's maiden name Spencer, registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503. In 1911 he was 9, at school, at Whitstable. He was probably the boy of 15 who sailed to Cape Town with his mother in August 1916.\n\nOn 30 October 1925, aged 24, a tramway engineer, he married Eileen Alice Yallop at St George's Cathedral, Cape Town. He was living at Auleta, Three Anchor Bay, and she at 7 Bertram Road, Sea Point. In 1926 their home was 17 Berkley Street, Gardens, when their son Edward Scott was baptised in the parish of Woodstock. Edward Scott died on 9 August 1935, aged 9, at Somerset Hospital. The home was then given as 1st Avenue, Bellville. Edward Robert died on 7 May 1981 at Port Elizabeth.",
    "timeline": [
     {
      "date": "1901",
@@ -1659,8 +1769,8 @@
    ],
    "openQuestions": [
     {
-     "question": "Did Edward Robert marry, and when did he die?",
-     "record": "Marriage and death indexes for Edward Robert Fitzmaurice, and the 1921 census."
+     "question": "Which house on Berkley Street was theirs in 1926?",
+     "record": "The baptism register reads 17 Berkley Street, and the number may be 14."
     }
    ],
    "relatedPages": [
@@ -1673,8 +1783,24 @@
     "edward-dixon-fitzmaurice",
     "edith-madeleine-fitzmaurice"
    ],
-   "children": [],
-   "spouses": [],
+   "children": [
+    "edward-scott-fitzmaurice"
+   ],
+   "spouses": [
+    {
+     "id": "eileen-alice-yallop",
+     "order": 1,
+     "marriageDate": "1925-10-30",
+     "marriageDisplay": "30 October 1925",
+     "place": "St George's Cathedral, Cape Town",
+     "sourceIds": [
+      "fs-marriage-1925-cape-town"
+     ],
+     "confidence": "confirmed",
+     "note": null,
+     "placeId": "st-georges-cathedral-cape-town"
+    }
+   ],
    "isDirectLine": false,
    "photo": null,
    "portrait": null,
@@ -8425,6 +8551,16 @@
      ],
      "confidence": "confirmed",
      "placeId": "16-york-road-edgbaston"
+    },
+    {
+     "place": "Brompton, London",
+     "address": null,
+     "years": "1861",
+     "sourceIds": [
+      "parish-battersea-1861"
+     ],
+     "confidence": "confirmed",
+     "placeId": "brompton-london"
     }
    ],
    "occupations": [
@@ -8775,14 +8911,25 @@
    "death": {
     "date": "1949-09-21",
     "display": "21 September 1949, Leicester, aged 84",
-    "place": "Leicester",
+    "place": "3 Salisbury Road, Leicester",
     "sourceIds": [
      "probate-rupert-1949"
     ],
     "confidence": "confirmed",
-    "placeId": "leicester"
+    "placeId": "3-salisbury-road-leicester"
    },
-   "residences": [],
+   "residences": [
+    {
+     "place": "3 Salisbury Road, Leicester",
+     "address": "3 Salisbury Road, Leicester",
+     "years": "1949",
+     "sourceIds": [
+      "probate-rupert-1949"
+     ],
+     "confidence": "confirmed",
+     "placeId": "3-salisbury-road-leicester"
+    }
+   ],
    "occupations": [
     {
      "title": "Quarry owner",
@@ -8798,7 +8945,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Probably a son of Robert William and Fanny Mary. Called Rupert J. in 1871. A quarry owner by 1895, and one of his father's executors. Died at Leicester on 21 September 1949.",
-   "story": "John Rupert's birth was registered in the King's Norton district in the June quarter of 1865, volume 6c, page 447, mother's maiden name Falcke.[^gro-indexes] In 1871 he is the son recorded as Rupert J., aged 6, born in Birmingham.[^census-1871-aston] In 1895 he was a quarry owner and an executor of his father.[^probate-robert-1895] He died on 21 September 1949, aged 84. The probate calendar places him at Leicester. The estate was 56,789 pounds 19 shillings and 2 pence.[^probate-rupert-1949]",
+   "story": "John Rupert's birth was registered in the King's Norton district in the June quarter of 1865, volume 6c, page 447, mother's maiden name Falcke.[^gro-indexes] In 1871 he is the son recorded as Rupert J., aged 6, born in Birmingham.[^census-1871-aston] In 1895 he was a quarry owner and an executor of his father.[^probate-robert-1895] He died on 21 September 1949, aged 84, of 3 Salisbury Road, Leicester. The estate was 56,789 pounds 19 shillings and 2 pence.[^probate-rupert-1949]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -9300,6 +9447,16 @@
      ],
      "confidence": "probable",
      "placeId": "kent"
+    },
+    {
+     "place": "140A Clapham Road, London",
+     "address": "140A Clapham Road, London S.W.",
+     "years": "1923",
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "placeId": "140a-clapham-road"
     }
    ],
    "occupations": [],
@@ -9630,6 +9787,16 @@
      ],
      "confidence": "probable",
      "placeId": "bodmin"
+    },
+    {
+     "place": "Fore Street, Bodmin",
+     "address": "Fore Street, Bodmin",
+     "years": "1891",
+     "sourceIds": [
+      "census-bennett"
+     ],
+     "confidence": "probable",
+     "placeId": "fore-street-bodmin"
     }
    ],
    "occupations": [
@@ -9764,7 +9931,18 @@
     "dateQualifier": "about",
     "placeId": "bodmin"
    },
-   "residences": [],
+   "residences": [
+    {
+     "place": "Fore Street, Bodmin",
+     "address": "Fore Street, Bodmin",
+     "years": "1891",
+     "sourceIds": [
+      "census-bennett"
+     ],
+     "confidence": "probable",
+     "placeId": "fore-street-bodmin"
+    }
+   ],
    "occupations": [
     {
      "title": "Draper",
@@ -10308,12 +10486,32 @@
     "note": "GRO December quarter 1895, Bodmin, volume 5c, page 69, mother Grigg. The index forename is Frances. He was known as Francis, and as Frank.",
     "placeId": "bodmin"
    },
-   "death": null,
-   "residences": [],
+   "death": {
+    "date": "1981-10-01",
+    "display": "1 October 1981, Bristol, aged 86",
+    "place": "9A St Marks Avenue, Easton, Bristol",
+    "sourceIds": [
+     "probate-francis-bennett-1981"
+    ],
+    "confidence": "probable",
+    "placeId": "9a-st-marks-avenue-easton"
+   },
+   "residences": [
+    {
+     "place": "9A St Marks Avenue, Easton, Bristol",
+     "address": "9A St Marks Avenue, Easton, Bristol",
+     "years": "1981",
+     "sourceIds": [
+      "probate-francis-bennett-1981"
+     ],
+     "confidence": "probable",
+     "placeId": "9a-st-marks-avenue-easton"
+    }
+   ],
    "occupations": [],
    "immigration": null,
    "cardPlace": "Bodmin",
-   "summary": "Lilian's brother, registered as William Frances and known as Francis or Frank. He was with his father in 1911.",
+   "summary": "Lilian's brother, registered as William Frances and known as Francis or Frank. He probably died on 1 October 1981 at 9A St Marks Avenue, Easton, Bristol.",
    "story": "William Frances Bennett was registered at Bodmin in the December quarter of 1895, volume 5c, page 69, mother Grigg. The 1901 census calls him Francis, aged 5. In 1911 he is Frank, 15, living with his father Charles.[^gro-bennett-grigg] [^census-bennett]",
    "timeline": [],
    "facts": [],
@@ -10364,22 +10562,33 @@
     "placeId": "bodmin"
    },
    "death": {
-    "date": "1970",
-    "display": "probably 1970, Plymouth district",
-    "place": "Plymouth",
+    "date": "1970-08-21",
+    "display": "21 August 1970, of 1 Leat Walk, Peverell",
+    "place": "1 Leat Walk, Peverell, Plymouth",
     "sourceIds": [
+     "probate-cecil-bennett-1971",
      "gro-bennett-grigg"
     ],
-    "confidence": "probable",
-    "dateQualifier": "about",
-    "placeId": "plymouth-registration-district"
+    "confidence": "confirmed",
+    "placeId": "1-leat-walk-peverell"
    },
-   "residences": [],
+   "residences": [
+    {
+     "place": "1 Leat Walk, Peverell, Plymouth",
+     "address": "1 Leat Walk, Peverell, Plymouth",
+     "years": "1970",
+     "sourceIds": [
+      "probate-cecil-bennett-1971"
+     ],
+     "confidence": "confirmed",
+     "placeId": "1-leat-walk-peverell"
+    }
+   ],
    "occupations": [],
    "immigration": null,
    "cardPlace": "Bodmin",
-   "summary": "Lilian's brother, called Floyd. He was 12 and at school with his mother in 1911. He probably married in 1924 and probably died in 1970.",
-   "story": "Cecil Floyd Chester Bennett was registered at Bodmin in the September quarter of 1898, volume 5c, page 70, mother Grigg. The censuses call him Floyd.[^census-bennett] He probably married Ethel G. Clark in the March quarter of 1924, in the Farnham district, volume 2a, page 202, and he probably died in the September quarter of 1970, in the Plymouth district, volume 7a, page 1599.[^gro-bennett-grigg]",
+   "summary": "Lilian's brother, called Floyd. He died on 21 August 1970, of 1 Leat Walk, Peverell, Plymouth.",
+   "story": "Cecil Floyd Chester Bennett was registered at Bodmin in the September quarter of 1898, volume 5c, page 70, mother Grigg. The censuses call him Floyd.[^census-bennett] He probably married Ethel G. Clark in the March quarter of 1924, in the Farnham district, volume 2a, page 202.[^gro-bennett-grigg] He died on 21 August 1970, of 1 Leat Walk, Peverell, Plymouth. Probate was granted at Bristol on 15 February 1971.[^probate-cecil-bennett-1971] The death index for the September quarter of 1970, Plymouth district, volume 7a, page 1599, is the same death.[^gro-bennett-grigg]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -11907,7 +12116,18 @@
     "dateQualifier": "about",
     "placeId": "west-ham-registration-district"
    },
-   "residences": [],
+   "residences": [
+    {
+     "place": "44 New Street, Stepney",
+     "address": "44 New Street, Stepney",
+     "years": "1871",
+     "sourceIds": [
+      "parish-stepney-1871"
+     ],
+     "confidence": "confirmed",
+     "placeId": "44-new-street-stepney"
+    }
+   ],
    "occupations": [],
    "immigration": null,
    "cardPlace": "Thetford",
@@ -12362,12 +12582,12 @@
    "death": {
     "date": "1971-09-27",
     "display": "27 September 1971",
-    "place": "Feltham, Middlesex",
+    "place": "205 Highfield, Feltham",
     "sourceIds": [
      "probate-may-1971"
     ],
     "confidence": "confirmed",
-    "placeId": "feltham-middlesex"
+    "placeId": "205-highfield-feltham"
    },
    "residences": [
     {
@@ -12400,6 +12620,17 @@
      ],
      "confidence": "probable",
      "placeId": "feltham-middlesex"
+    },
+    {
+     "place": "205 Highfield, Feltham",
+     "address": "205 Highfield, Feltham",
+     "years": "1968 to 1971",
+     "sourceIds": [
+      "probate-may-1971",
+      "electoral-may"
+     ],
+     "confidence": "confirmed",
+     "placeId": "205-highfield-feltham"
     }
    ],
    "occupations": [
@@ -12424,6 +12655,17 @@
      ],
      "confidence": "probable",
      "placeId": "colchester"
+    },
+    {
+     "title": "Hospital domestic work",
+     "employer": "Isolation Hospital, Ealing",
+     "place": "Ealing",
+     "years": "1933 to 1939",
+     "sourceIds": [
+      "electoral-may-ealing"
+     ],
+     "confidence": "probable",
+     "placeId": "ealing-isolation-hospital"
     }
    ],
    "immigration": null,
@@ -12570,6 +12812,181 @@
    "isLiving": true,
    "order": 1,
    "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
+  },
+  {
+   "id": "eileen-alice-yallop",
+   "displayName": "Eileen Alice Yallop",
+   "disambiguator": "Bob's wife, born about 1902 in South Africa",
+   "givenNames": "Eileen Alice",
+   "surname": "Yallop",
+   "sex": "F",
+   "generation": 16,
+   "nameVariants": [],
+   "confidence": "probable",
+   "birth": {
+    "date": "1902",
+    "display": "about 1902, South Africa",
+    "place": "South Africa",
+    "sourceIds": [
+     "fs-marriage-1925-cape-town"
+    ],
+    "confidence": "probable",
+    "dateQualifier": "about",
+    "note": "Aged 23 at the marriage on 30 October 1925, born in South Africa. No death record has been found. She was alive in May 1981, and the ledger treats her as deceased because she was born about 1902.",
+    "placeId": "south-africa"
+   },
+   "death": null,
+   "residences": [
+    {
+     "place": "7 Bertram Road, Sea Point",
+     "address": "7 Bertram Road, Sea Point",
+     "years": "1925",
+     "sourceIds": [
+      "fs-marriage-1925-cape-town"
+     ],
+     "confidence": "confirmed",
+     "placeId": "7-bertram-road-sea-point"
+    },
+    {
+     "place": "17 Berkley Street, Gardens",
+     "address": "17 Berkley Street, Gardens, Cape Town",
+     "years": "1926",
+     "sourceIds": [
+      "fs-baptism-1926-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "placeId": "17-berkley-street-gardens"
+    },
+    {
+     "place": "1st Avenue, Bellville",
+     "address": "1st Avenue, Bellville",
+     "years": "1935",
+     "sourceIds": [
+      "fs-death-1935-edward-scott"
+     ],
+     "confidence": "probable",
+     "placeId": "1st-avenue-bellville"
+    }
+   ],
+   "occupations": [],
+   "immigration": null,
+   "cardPlace": "Cape Town",
+   "summary": "Bob's wife. Born about 1902 in South Africa. She married him at St George's Cathedral, Cape Town, on 30 October 1925. She was alive in May 1981. No later death record has been found, and she is treated as deceased because of her age.",
+   "story": "Eileen Alice Yallop was 23, born in South Africa, and living at 7 Bertram Road, Sea Point, when she married Edward Robert Fitzmaurice on 30 October 1925 at St George's Cathedral, Cape Town. In 1926 they lived at 17 Berkley Street, Gardens. Their son Edward Scott was born on 29 April 1926 and died in 1935. She is named as Edward Robert's spouse on his 1981 death index, so she was alive in May 1981. No record of her own death has been found. She was born about 1902, so the ledger treats her as deceased.",
+   "timeline": [],
+   "facts": [],
+   "media": [],
+   "openQuestions": [
+    {
+     "question": "When and where did Eileen Alice die?",
+     "record": "A Cape deceased estate file after 1981."
+    }
+   ],
+   "relatedPages": [
+    {
+     "title": "Reg's brother and sisters",
+     "url": "reg-sisters.html"
+    }
+   ],
+   "parents": [],
+   "children": [
+    "edward-scott-fitzmaurice"
+   ],
+   "spouses": [
+    {
+     "id": "bob-fitzmaurice",
+     "order": 1,
+     "marriageDate": "1925-10-30",
+     "marriageDisplay": "30 October 1925",
+     "place": "St George's Cathedral, Cape Town",
+     "sourceIds": [
+      "fs-marriage-1925-cape-town"
+     ],
+     "confidence": "confirmed",
+     "note": null,
+     "placeId": "st-georges-cathedral-cape-town"
+    }
+   ],
+   "isDirectLine": false,
+   "photo": null,
+   "portrait": null,
+   "isLiving": false,
+   "order": 1,
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
+  },
+  {
+   "id": "edward-scott-fitzmaurice",
+   "displayName": "Edward Scott FitzMaurice",
+   "disambiguator": "Bob's son, 1926 to 1935",
+   "givenNames": "Edward Scott",
+   "surname": "FitzMaurice",
+   "sex": "M",
+   "generation": 17,
+   "nameVariants": [],
+   "confidence": "confirmed",
+   "birth": {
+    "date": "1926-04-29",
+    "display": "29 April 1926, Cape Province",
+    "place": "Cape Province",
+    "sourceIds": [
+     "fs-baptism-1926-edward-scott"
+    ],
+    "confidence": "confirmed",
+    "note": "The Woodstock baptism register says he was born on 29 April 1926."
+   },
+   "death": {
+    "date": "1935-08-09",
+    "display": "9 August 1935, Somerset Hospital, Cape Town, aged 9",
+    "place": "Somerset Hospital, Cape Town",
+    "sourceIds": [
+     "fs-death-1935-edward-scott"
+    ],
+    "confidence": "confirmed",
+    "placeId": "somerset-hospital-cape-town"
+   },
+   "residences": [
+    {
+     "place": "1st Avenue, Bellville",
+     "address": "1st Avenue, Bellville",
+     "years": "1935",
+     "sourceIds": [
+      "fs-death-1935-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "placeId": "1st-avenue-bellville"
+    }
+   ],
+   "occupations": [],
+   "immigration": null,
+   "cardPlace": "Cape Town",
+   "summary": "Son of Edward Robert FitzMaurice and Eileen Alice Yallop. Born 29 April 1926, baptised in the parish of Woodstock, and died at Somerset Hospital on 9 August 1935, aged 9.",
+   "story": "Edward Scott Fitzmaurice was baptised on 25 July 1926 in the parish of Woodstock, Cape Town, entry 1565. The register says he was born on 29 April 1926, the son of Edward Robert and Eileen Alice Fitzmaurice, of 17 Berkley Street, Gardens. He died on 9 August 1935 at Somerset Hospital, aged 9. The family home was then 1st Avenue, Bellville.",
+   "timeline": [],
+   "facts": [],
+   "media": [],
+   "openQuestions": [],
+   "relatedPages": [
+    {
+     "title": "Reg's brother and sisters",
+     "url": "reg-sisters.html"
+    }
+   ],
+   "parents": [
+    "bob-fitzmaurice",
+    "eileen-alice-yallop"
+   ],
+   "children": [],
+   "spouses": [],
+   "isDirectLine": false,
+   "photo": null,
+   "portrait": null,
+   "isLiving": false,
+   "order": 1,
+   "parentLinkConfidence": "confirmed",
    "burial": null,
    "voyages": []
   }

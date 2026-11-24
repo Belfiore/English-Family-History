@@ -3,7 +3,7 @@
   "startedFrom": "c8caf1b433acce5be7338533f966281ed12afbee",
   "date": "2026-11-23",
   "counts": {
-   "places": 152,
+   "places": 172,
    "events": 268,
    "byKind": {
     "home": 37,
@@ -12513,6 +12513,1179 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: a registration district. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "st-georges-cathedral-cape-town",
+   "name": "St George's Cathedral, Cape Town",
+   "historicName": "St George's Cathedral, Cape Town",
+   "variants": [],
+   "kind": "church",
+   "address": "Wale Street, Cape Town",
+   "modernAddress": "",
+   "precision": "building",
+   "lat": -33.92487,
+   "lng": 18.41942,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026: St George's Cathedral, Wale Street, Cape Town, a place of worship. The point matches that building.",
+   "uncertaintyMetres": 60,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Edward Robert FitzMaurice married Eileen Alice Yallop here on 30 October 1925.",
+   "events": [
+    {
+     "id": "pe-st-georges-married-1925",
+     "type": "married",
+     "personIds": [
+      "bob-fitzmaurice",
+      "eileen-alice-yallop"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "bob-fitzmaurice.spouses[0]",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "fs-marriage-1925-cape-town"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "Edward Robert Fitzmaurice, tramway engineer, of Auleta, Three Anchor Bay, married Eileen Alice Yallop, of 7 Bertram Road, Sea Point."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "building",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "pin",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not yet looked at in Street View (added 24 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "auleta-three-anchor-bay",
+   "name": "Auleta, Three Anchor Bay",
+   "historicName": "Auleta, Three Anchor Bay",
+   "variants": [],
+   "kind": "home",
+   "address": "Three Anchor Bay, Cape Town",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": -33.90917,
+   "lng": 18.39556,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026, places Three Anchor Bay at this point. The house called Auleta was not found, so the circle covers the suburb.",
+   "uncertaintyMetres": 500,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Edward Robert FitzMaurice's home at his marriage in 1925.",
+   "events": [
+    {
+     "id": "pe-auleta-lived-1925",
+     "type": "lived",
+     "personIds": [
+      "bob-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "bob-fitzmaurice.residences[0]",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "fs-marriage-1925-cape-town"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "At his marriage he was living at Auleta, Three Anchor Bay."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the house called Auleta was not found, only the suburb. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "7-bertram-road-sea-point",
+   "name": "7 Bertram Road, Sea Point",
+   "historicName": "7 Bertram Road, Sea Point",
+   "variants": [],
+   "kind": "home",
+   "address": "7 Bertram Road, Sea Point, Cape Town",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": -33.9145,
+   "lng": 18.39326,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026: the point is on Bertram Road, Sea Point. Number 7 was not a separate building in the search, so the circle covers the street.",
+   "uncertaintyMetres": 150,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Eileen Alice Yallop's home at her marriage in 1925.",
+   "events": [
+    {
+     "id": "pe-bertram-lived-1925",
+     "type": "lived",
+     "personIds": [
+      "eileen-alice-yallop"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "eileen-alice-yallop.residences[0]",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "fs-marriage-1925-cape-town"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "At the marriage she was living at 7 Bertram Road, Sea Point."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the point is the street, not a matched house number. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "17-berkley-street-gardens",
+   "name": "17 Berkley Street, Gardens",
+   "historicName": "17 Berkley Street, Gardens, Cape Town",
+   "variants": [
+    "Berkeley Street, Gardens"
+   ],
+   "kind": "home",
+   "address": "17 Berkley Street, Gardens, Cape Town",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": -33.9374,
+   "lng": 18.41584,
+   "coordinateMethod": "OpenStreetMap Nominatim reverse geocode, 24 November 2026, of the coordinate on Berkeley Street, Gardens. The baptism reads 17 Berkley Street, and the number may be 14, so the circle covers that part of the street.",
+   "uncertaintyMetres": 200,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "The family home at Edward Scott FitzMaurice's baptism in 1926.",
+   "events": [
+    {
+     "id": "pe-berkley-lived-1926",
+     "type": "lived",
+     "personIds": [
+      "bob-fitzmaurice",
+      "eileen-alice-yallop"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "bob-fitzmaurice.residences[1]",
+     "alsoFactRefs": [
+      "eileen-alice-yallop.residences[1]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "fs-baptism-1926-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "The baptism gives their abode as 17 Berkley Street, Gardens. The number may be 14."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the house number may be 14, so the point is the street. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "1st-avenue-bellville",
+   "name": "1st Avenue, Bellville",
+   "historicName": "1st Avenue, Bellville",
+   "variants": [],
+   "kind": "home",
+   "address": "1st Avenue, Bellville",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": -33.90643,
+   "lng": 18.62706,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026, places Bellville town at this point. Which 1st Avenue was not found, so the circle covers Bellville.",
+   "uncertaintyMetres": 1500,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "The family home when Edward Scott FitzMaurice died in 1935.",
+   "events": [
+    {
+     "id": "pe-bellville-lived-1935",
+     "type": "lived",
+     "personIds": [
+      "bob-fitzmaurice",
+      "eileen-alice-yallop",
+      "edward-scott-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "bob-fitzmaurice.residences[2]",
+     "alsoFactRefs": [
+      "eileen-alice-yallop.residences[2]",
+      "edward-scott-fitzmaurice.residences[0]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "fs-death-1935-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "When Edward Scott died, the family home was given as 1st Avenue, Bellville."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "town",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: which 1st Avenue in Bellville was not found. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "parish-of-woodstock",
+   "name": "Parish of Woodstock, Cape Town",
+   "historicName": "Parish of Woodstock, Cape Town",
+   "variants": [],
+   "kind": "parish",
+   "address": "",
+   "modernAddress": "",
+   "precision": "parish",
+   "lat": -33.93056,
+   "lng": 18.44722,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026, places the suburb of Woodstock at this point. The baptism is in the parish, not at a named church building, so it is drawn as an area.",
+   "uncertaintyMetres": 1500,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Edward Scott FitzMaurice was baptised in this parish on 25 July 1926.",
+   "events": [
+    {
+     "id": "pe-woodstock-baptised-1926",
+     "type": "baptised",
+     "personIds": [
+      "edward-scott-fitzmaurice"
+     ],
+     "date": "25 July 1926",
+     "dateStart": "1926-07-25",
+     "dateEnd": "1926-07-25",
+     "datePrecision": "day",
+     "approximate": false,
+     "factRef": "",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "fs-baptism-1926-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "Baptised in the parish of Woodstock on 25 July 1926. The register says he was born on 29 April 1926."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "parish",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "area",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: a parish, not a single church building. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "somerset-hospital-cape-town",
+   "name": "Somerset Hospital, Cape Town",
+   "historicName": "Somerset Hospital, Cape Town",
+   "variants": [],
+   "kind": "hospital",
+   "address": "Portswood Road, Green Point, Cape Town",
+   "modernAddress": "",
+   "precision": "building",
+   "lat": -33.90511,
+   "lng": 18.41631,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026: New Somerset Hospital, Portswood Road, Green Point.",
+   "uncertaintyMetres": 80,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Edward Scott FitzMaurice died here on 9 August 1935.",
+   "events": [
+    {
+     "id": "pe-somerset-died-1935",
+     "type": "died",
+     "personIds": [
+      "edward-scott-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "edward-scott-fitzmaurice.death",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "fs-death-1935-edward-scott"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "Died here on 9 August 1935, aged 9."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "building",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "pin",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not yet looked at in Street View (added 24 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "port-elizabeth",
+   "name": "Port Elizabeth",
+   "historicName": "Port Elizabeth",
+   "variants": [],
+   "kind": "town",
+   "address": "",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": -33.96186,
+   "lng": 25.61867,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026, places the city (now Gqeberha) at this point. No street is known for the death, so the circle covers the city.",
+   "uncertaintyMetres": 3000,
+   "inEngland": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Edward Robert FitzMaurice died here on 7 May 1981.",
+   "events": [
+    {
+     "id": "pe-port-elizabeth-died-1981",
+     "type": "died",
+     "personIds": [
+      "bob-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "bob-fitzmaurice.death",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "fs-death-1981-edward-robert"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Died here on 7 May 1981. No street is known."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "town",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: no street is known, only the city. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "9a-st-marks-avenue-easton",
+   "name": "9A St Marks Avenue, Easton, Bristol",
+   "historicName": "9A St Marks Avenue, Easton, Bristol",
+   "variants": [],
+   "kind": "home",
+   "address": "9A St Marks Avenue, Easton, Bristol",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 51.468,
+   "lng": -2.56301,
+   "coordinateMethod": "OpenStreetMap Nominatim reverse geocode, 24 November 2026: the point is on Saint Mark's Avenue, Easton, Bristol. Number 9A was not a separate building, so the circle covers the avenue.",
+   "uncertaintyMetres": 150,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Francis William Bennett's address at his death on 1 October 1981.",
+   "events": [
+    {
+     "id": "pe-st-marks-died-1981",
+     "type": "died",
+     "personIds": [
+      "francis-bennett"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "francis-bennett.death",
+     "alsoFactRefs": [
+      "francis-bennett.residences[0]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "probate-francis-bennett-1981"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Of 9A St Marks Avenue, Easton, Bristol. He died on 1 October 1981."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the point is the avenue, not a matched house number. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "1-leat-walk-peverell",
+   "name": "1 Leat Walk, Peverell, Plymouth",
+   "historicName": "1 Leat Walk, Peverell, Plymouth",
+   "variants": [],
+   "kind": "home",
+   "address": "1 Leat Walk, Peverell, Plymouth",
+   "modernAddress": "",
+   "precision": "address",
+   "lat": 50.39057,
+   "lng": -4.137,
+   "coordinateMethod": "OpenStreetMap Nominatim reverse geocode, 24 November 2026, returns 1, Leat Walk, Peverell. The probate calendar reads Leat Wk, taken as Leat Walk.",
+   "uncertaintyMetres": 40,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Cecil Floyd Chester Bennett's address at his death on 21 August 1970.",
+   "events": [
+    {
+     "id": "pe-leat-died-1970",
+     "type": "died",
+     "personIds": [
+      "floyd-bennett"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "floyd-bennett.death",
+     "alsoFactRefs": [
+      "floyd-bennett.residences[0]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "probate-cecil-bennett-1971"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "The 1971 probate calendar places him at 1 Leat Walk, Peverell. He died on 21 August 1970."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "address",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "pin",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not yet looked at in Street View (added 24 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "18-saltoun-road",
+   "name": "18 Saltoun Road, Brixton",
+   "historicName": "18 Saltoun Road, Brixton",
+   "variants": [],
+   "kind": "home",
+   "address": "18 Saltoun Road, Brixton",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 51.46044,
+   "lng": -0.114,
+   "coordinateMethod": "OpenStreetMap Nominatim reverse geocode, 24 November 2026: the point is on Saltoun Road, Brixton. Number 18 was not a separate building, so the circle covers the street.",
+   "uncertaintyMetres": 150,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Edward Dixon and Edith FitzMaurice's residence at their marriage on 2 August 1897.",
+   "events": [
+    {
+     "id": "pe-saltoun-lived-1897",
+     "type": "lived",
+     "personIds": [
+      "edward-dixon-fitzmaurice",
+      "edith-madeleine-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "edward-dixon-fitzmaurice.residences[6]",
+     "alsoFactRefs": [
+      "edith-madeleine-fitzmaurice.residences[4]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "parish-brixton-1897"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "The marriage register gives the residence of both as 18 Saltoun Road."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the point is the street, not a matched house number. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "westfield-house-brixton",
+   "name": "Westfield House, Brixton",
+   "historicName": "Westfield House, Brixton",
+   "variants": [],
+   "kind": "home",
+   "address": "Westfield House, Brixton",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": 51.463391,
+   "lng": -0.114802,
+   "coordinateMethod": "The house was not found on OpenStreetMap. A coordinate published for it falls on Brixton Road, the same point as the town of Brixton, so the circle covers Brixton. The 1901 entry is probable: it names Westfield House, Brixton, but writes the head as Edward A, born Belfast.",
+   "uncertaintyMetres": 2000,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "A probable 1901 census home of Edward Dixon and Edith, with her mother Caroline Spencer.",
+   "events": [
+    {
+     "id": "pe-westfield-lived-1901",
+     "type": "lived",
+     "personIds": [
+      "edward-dixon-fitzmaurice",
+      "edith-madeleine-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "edward-dixon-fitzmaurice.residences[7]",
+     "alsoFactRefs": [
+      "edith-madeleine-fitzmaurice.residences[5]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "census-1901-brixton"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "A probable 1901 census entry at Westfield House, Brixton. The head is written Edward A, born Belfast, with wife Ethel M, born Islington, and mother-in-law Caroline Spencer."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "town",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the house was not found, so the circle is Brixton. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "3-salisbury-road-leicester",
+   "name": "3 Salisbury Road, Leicester",
+   "historicName": "3 Salisbury Road, Leicester",
+   "variants": [],
+   "kind": "home",
+   "address": "3 Salisbury Road, Leicester",
+   "modernAddress": "",
+   "precision": "address",
+   "lat": 52.62615,
+   "lng": -1.12136,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026: 3 to 9 Salisbury Road, Highfields, Leicester.",
+   "uncertaintyMetres": 40,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "John Rupert FitzMaurice's address at his death on 21 September 1949.",
+   "events": [
+    {
+     "id": "pe-salisbury-died-1949",
+     "type": "died",
+     "personIds": [
+      "john-rupert-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "john-rupert-fitzmaurice.death",
+     "alsoFactRefs": [
+      "john-rupert-fitzmaurice.residences[0]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "probate-rupert-1949"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "Of 3 Salisbury Road, Leicester. He died on 21 September 1949, aged 84."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "address",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "pin",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not yet looked at in Street View (added 24 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "205-highfield-feltham",
+   "name": "205 Highfield, Feltham",
+   "historicName": "205 Highfield, Feltham",
+   "variants": [],
+   "kind": "home",
+   "address": "205 Highfield, Feltham",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 51.44493,
+   "lng": -0.41434,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026, places this coordinate on Highfield Road, Feltham. The registers say 205 Highfield, so the circle covers that road rather than a matched door.",
+   "uncertaintyMetres": 250,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "May Florence Cousins lived here from 1968, and died on 27 September 1971.",
+   "events": [
+    {
+     "id": "pe-highfield-died-1971",
+     "type": "died",
+     "personIds": [
+      "may-florence-cousins"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "may-florence-cousins.death",
+     "alsoFactRefs": [
+      "may-florence-cousins.residences[3]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "probate-may-1971"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "Of 205 Highfield, Feltham. She died on 27 September 1971."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the point is Highfield Road, and number 205 was not matched on its own. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "fore-street-bodmin",
+   "name": "Fore Street, Bodmin",
+   "historicName": "Fore Street, Bodmin",
+   "variants": [],
+   "kind": "home",
+   "address": "Fore Street, Bodmin",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 50.47122,
+   "lng": -4.72133,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026: Fore Street, Bodmin. No house number is in the 1891 census, so the circle covers the street.",
+   "uncertaintyMetres": 250,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Charles and Annie Bennett's home in the 1891 census.",
+   "events": [
+    {
+     "id": "pe-fore-street-lived-1891",
+     "type": "lived",
+     "personIds": [
+      "charles-bennett",
+      "annie-bennett"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "charles-bennett.residences[1]",
+     "alsoFactRefs": [
+      "annie-bennett.residences[0]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "census-bennett"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "1891 census, Fore Street, Bodmin: Charles Bennett, tailor, Annie, and their children Gilbert, Reginald, Minnie and Harry."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: no house number is known, only the street. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "thombrake-hampton-hill",
+   "name": "Thombrake, Queens Road, Hampton Hill",
+   "historicName": "Thombrake, Queens Road, Hampton Hill",
+   "variants": [],
+   "kind": "home",
+   "address": "Queens Road, Hampton Hill",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 51.43219,
+   "lng": -0.36735,
+   "coordinateMethod": "OpenStreetMap Nominatim reverse geocode, 24 November 2026: the point is on Queens Road, Hampton Hill. The house called Thombrake was not found. The census index names it, and that name is not on the photographed side of the schedule.",
+   "uncertaintyMetres": 250,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Lilian Bennett's lodging in June 1921.",
+   "events": [
+    {
+     "id": "pe-thombrake-lived-1921",
+     "type": "lived",
+     "personIds": [
+      "mrs-r-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "mrs-r-fitzmaurice.residences[4]",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "census-1921-lilian"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "In June 1921 she lodged at Thombrake, Queens Road, Hampton Hill, a clerk at the Claims Record Office."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the house name is from the census index and was not found on the map. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "44-new-street-stepney",
+   "name": "44 New Street, Stepney",
+   "historicName": "44 New Street, Stepney",
+   "variants": [],
+   "kind": "home",
+   "address": "44 New Street, Stepney",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 51.5173,
+   "lng": -0.0605,
+   "coordinateMethod": "OpenStreetMap has no New Street in Stepney. A published coordinate for this address falls on Fieldgate Street, so it was not used. The circle is drawn round St Philip, Stepney, where Anne Gall married from this address on 15 January 1871.",
+   "uncertaintyMetres": 800,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Anne Gall's address at her marriage on 15 January 1871.",
+   "events": [
+    {
+     "id": "pe-44-new-street-lived-1871",
+     "type": "lived",
+     "personIds": [
+      "annie-cousins"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "annie-cousins.residences[0]",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "parish-stepney-1871"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "At her marriage she was of 44 New Street. Her father, John Gall, a brewer, was already dead."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the street has not been found, so the circle covers Stepney near the church. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "140a-clapham-road",
+   "name": "140A Clapham Road, London",
+   "historicName": "140A Clapham Road, London",
+   "variants": [],
+   "kind": "home",
+   "address": "140A Clapham Road, London S.W.",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 51.47683,
+   "lng": -0.11767,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026, finds Clapham Road but not number 140A as its own building. The circle is centred on the road at Stockwell.",
+   "uncertaintyMetres": 400,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "The address Edith, Reg and Eileen gave when they landed in London on 28 December 1923.",
+   "events": [
+    {
+     "id": "pe-140a-lived-1923",
+     "type": "lived",
+     "personIds": [
+      "edith-madeleine-fitzmaurice",
+      "reg-fitzmaurice",
+      "eileen-sybil-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "edith-madeleine-fitzmaurice.residences[6]",
+     "alsoFactRefs": [
+      "reg-fitzmaurice.residences[5]",
+      "eileen-sybil-fitzmaurice.residences[4]"
+     ],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "passenger-1923-bendigo"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "On the Bendigo list of 28 December 1923 their proposed address is 140A Clapham Road, London S.W."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: number 140A was not matched, so the circle covers part of Clapham Road. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "brompton-london",
+   "name": "Brompton, London",
+   "historicName": "Brompton, London",
+   "variants": [],
+   "kind": "home",
+   "address": "",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": 51.49182,
+   "lng": -0.17833,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026, places the suburb of Brompton here. The 1861 marriage register says Robert William was of Brompton, with no street.",
+   "uncertaintyMetres": 800,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "Robert William FitzMaurice's residence at his marriage on 14 September 1861.",
+   "events": [
+    {
+     "id": "pe-brompton-lived-1861",
+     "type": "lived",
+     "personIds": [
+      "robert-william-fitzmaurice"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "robert-william-fitzmaurice.residences[4]",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "parish-battersea-1861"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "At his marriage he was of Brompton. No street is given."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "town",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: no street is known, only the suburb. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "ealing-isolation-hospital",
+   "name": "Ealing Isolation Hospital",
+   "historicName": "Ealing Isolation Hospital",
+   "variants": [],
+   "kind": "hospital",
+   "address": "",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": 51.51266,
+   "lng": -0.3052,
+   "coordinateMethod": "OpenStreetMap Nominatim, 24 November 2026, places the town of Ealing here. The isolation hospital was not found as a named building, so the circle covers Ealing. The electoral registers list May Florence Cousins at the Isolation Hospital, Ealing, from 1933 to 1939.",
+   "uncertaintyMetres": 2000,
+   "inEngland": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not yet checked against the historic maps. Added 24 November 2026 from a sourced address.",
+   "significance": "May Florence Cousins worked here from 1933 to 1939.",
+   "events": [
+    {
+     "id": "pe-ealing-hospital-worked-1933",
+     "type": "worked",
+     "personIds": [
+      "may-florence-cousins"
+     ],
+     "date": "",
+     "dateStart": "",
+     "dateEnd": "",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "may-florence-cousins.occupations[2]",
+     "alsoFactRefs": [],
+     "pages": [],
+     "recordCrops": [],
+     "sourceIds": [
+      "electoral-may-ealing"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "The electoral registers place her at the Isolation Hospital, Ealing, from 1933 to 1939."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "town",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the hospital building was not found, so the circle covers Ealing. The panel offers the Then and Today maps instead.",
    "blurbSourceIds": []
   }
  ]

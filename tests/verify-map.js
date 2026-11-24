@@ -129,6 +129,13 @@ function expectScope(id, scope) {
     const referenced = new Set(refs.map(r => r[0]));
     const orphans = places.filter(p => !(p.events || []).length && !referenced.has(p.id));
     check(!orphans.length, `no place is orphaned (${places.length} places)`, orphans.map(p => p.id).join(', '));
+    const addedPlaces = ['st-georges-cathedral-cape-town','auleta-three-anchor-bay','7-bertram-road-sea-point','17-berkley-street-gardens','1st-avenue-bellville','parish-of-woodstock','somerset-hospital-cape-town','port-elizabeth','9a-st-marks-avenue-easton','1-leat-walk-peverell','18-saltoun-road','westfield-house-brixton','3-salisbury-road-leicester','205-highfield-feltham','fore-street-bodmin','thombrake-hampton-hill','44-new-street-stepney','140a-clapham-road','brompton-london','ealing-isolation-hospital'];
+    const missingAdded = addedPlaces.filter(id => !PL[id] || PL[id].lat == null || !(PL[id].coordinateSourceIds || []).length);
+    check(!missingAdded.length, `the ledger places are on the map with coordinates and a source (${addedPlaces.length})`, missingAdded.join(', '));
+    const scott = people.find(p => p.id === 'edward-scott-fitzmaurice');
+    const yallop = people.find(p => p.id === 'eileen-alice-yallop');
+    check(scott && scott.isLiving === false && yallop && yallop.isLiving === false, 'Edward Scott and Eileen Alice are on the tree as people who have died');
+    check(!people.some(p => /derek|lawrence john|laurence john/i.test(p.displayName || '')), 'no possibly living son of Bob is on the tree');
     const badSrc = [];
     const needSrc = (ids, where, required) => { if (required && !(ids || []).length) badSrc.push(where + ' has no source'); (ids || []).forEach(i => { if (!sid.has(i)) badSrc.push(where + ' cites unknown source ' + i); }); };
     let nEvents = 0, nImages = 0;
@@ -213,6 +220,13 @@ function expectScope(id, scope) {
     check(!ork.events && !ork.list && !ork.toggle, 'the Hamiltons and the Earls of Orkney are not on the map, in the list or in the filters', JSON.stringify(ork));
     check(ork.cecil > 0 && ork.cecilBadge, "Cecil O'Bryen FitzMaurice stays on the map, marked as no proven link", JSON.stringify(ork));
     check(ork.style === 'today', 'the Today map is the default', ork.style);
+    const midEngland = await page.evaluate(async () => {
+        FM.map.jumpTo({ center: [-1.8, 52.5], zoom: 6.2 });
+        FM.refresh();
+        await new Promise(r => setTimeout(r, 200));
+        return { n: document.querySelectorAll('.mk-wrap').length, z: Math.round(FM.map.getZoom() * 10) / 10 };
+    });
+    check(midEngland.n >= 6, 'at a mid zoom over England the places are not one cluster', JSON.stringify(midEngland));
     // config.js now holds the site's MapTiler key, so this check empties it for one click and puts it back. The assertion is the same: with no key, Then stays on the current map and says why.
     await page.evaluate(() => { window.__fmMaptiler = window.FM_CONFIG.MAPTILER_KEY; window.FM_CONFIG.MAPTILER_KEY = ''; });
     await page.click('#styleSwitch [data-style="then"]');

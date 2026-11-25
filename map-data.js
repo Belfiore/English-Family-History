@@ -432,9 +432,76 @@
         var h = possessive(who) + ' ' + noun;
         return h.charAt(0).toUpperCase() + h.slice(1);
     }
+    // ---- how someone is related to Grandma Pat (her side) or Grandpa Ron (his side), for the timeline.
+    // Only close family is named: no more than three steps away (a great-grandparent, an aunt, a nephew,
+    // a brother-in-law). Pat and Ron themselves, and anyone further out, get no label.
+    var KIN_ANCHORS = [{ id: 'patricia-andrews', name: 'Pat' }, { id: 'ronald-andrews', name: 'Ron' }];
+    var kinCache = {};
+    function kinOf(id, people) {
+        if (id in kinCache) return kinCache[id];
+        var P = people[id], best = null;
+        if (!P || KIN_ANCHORS.some(function (a) { return a.id === id; })) return (kinCache[id] = null);
+        var sexWord = function (p, m, f, n) { return p.sex === 'M' ? m : p.sex === 'F' ? f : n; };
+        var par = function (x) { return ((people[x] || {}).parents || []).filter(function (q) { return people[q]; }); };
+        var kids = function (x) { return ((people[x] || {}).children || []).filter(function (q) { return people[q]; }); };
+        var sps = function (x) { return ((people[x] || {}).spouses || []).map(function (s) { return s.id; }).filter(function (q) { return people[q]; }); };
+        var sibs = function (x) { var out = {}; par(x).forEach(function (q) { kids(q).forEach(function (c) { if (c !== x) out[c] = true; }); }); return Object.keys(out); };
+        function ups(x, max) { var d = {}, fr = [x]; d[x] = 0; for (var k = 1; k <= max; k++) { var nx = []; fr.forEach(function (y) { par(y).forEach(function (q) { if (!(q in d)) { d[q] = k; nx.push(q); } }); }); fr = nx; } return d; }
+        function blood(aId) {
+            var A = ups(aId, 3), B = ups(id, 3), hit = null;
+            Object.keys(A).forEach(function (c) { if (c in B && A[c] + B[c] <= 3 && (!hit || A[c] + B[c] < hit.m + hit.n)) hit = { m: A[c], n: B[c] }; });
+            if (!hit) return null;
+            var m = hit.m, n = hit.n, w = null;
+            var great = function (k) { return k > 2 ? 'great-' : ''; };
+            if (n === 0) w = great(m) + (m >= 2 ? sexWord(P, 'grandfather', 'grandmother', 'grandparent') : sexWord(P, 'father', 'mother', 'parent'));
+            else if (m === 0) w = great(n) + (n >= 2 ? sexWord(P, 'grandson', 'granddaughter', 'grandchild') : sexWord(P, 'son', 'daughter', 'child'));
+            else if (m === 1 && n === 1) {
+                var shared = par(aId).filter(function (q) { return par(id).indexOf(q) >= 0; }).length;
+                w = (shared === 1 && par(aId).length > 1 && par(id).length > 1 ? 'half-' : '') + sexWord(P, 'brother', 'sister', 'sibling');
+            }
+            else if (m === 2 && n === 1) w = sexWord(P, 'uncle', 'aunt', 'aunt or uncle');
+            else if (m === 1 && n === 2) w = sexWord(P, 'nephew', 'niece', 'nephew or niece');
+            return w ? { word: w, steps: m + n, blood: true } : null;
+        }
+        function byMarriage(aId) {
+            if (sps(aId).indexOf(id) >= 0) return { word: sexWord(P, 'husband', 'wife', 'spouse'), steps: 1 };
+            if (sps(aId).some(function (s) { return par(s).indexOf(id) >= 0; })) return { word: sexWord(P, 'father-in-law', 'mother-in-law', 'parent-in-law'), steps: 2 };
+            if (kids(aId).some(function (c) { return sps(c).indexOf(id) >= 0; })) return { word: sexWord(P, 'son-in-law', 'daughter-in-law', 'child-in-law'), steps: 2 };
+            if (par(aId).some(function (q) { return sps(q).indexOf(id) >= 0; }) && par(aId).indexOf(id) < 0) return { word: sexWord(P, 'stepfather', 'stepmother', 'step-parent'), steps: 2 };
+            if (sps(aId).some(function (s) { return sibs(s).indexOf(id) >= 0; })) return { word: sexWord(P, 'brother-in-law', 'sister-in-law', 'sibling-in-law'), steps: 2 };
+            if (sibs(aId).some(function (s) { return sps(s).indexOf(id) >= 0; })) return { word: sexWord(P, 'brother-in-law', 'sister-in-law', 'sibling-in-law'), steps: 3 };
+            return null;
+        }
+        KIN_ANCHORS.forEach(function (a) {
+            if (!people[a.id]) return;
+            var r = blood(a.id) || byMarriage(a.id);
+            if (!r) return;
+            r.owner = a.name;
+            if (!best || r.steps < best.steps || (r.steps === best.steps && r.blood && !best.blood)) best = r;
+        });
+        if (best) best.label = best.owner + "'s " + best.word;
+        return (kinCache[id] = best);
+    }
+    // "Ron's father and mother" reads better as "Ron's parents"
+    var PAIRS = { 'father|mother': 'parents', 'grandfather|grandmother': 'grandparents', 'great-grandfather|great-grandmother': 'great-grandparents', 'daughter|son': 'children' };
+    function kinLine(ids, people) {
+        var groups = [], byOwner = {};
+        (ids || []).forEach(function (id) {
+            var k = kinOf(id, people); if (!k) return;
+            if (!byOwner[k.owner]) { byOwner[k.owner] = []; groups.push(k.owner); }
+            if (byOwner[k.owner].indexOf(k.word) < 0) byOwner[k.owner].push(k.word);
+        });
+        return groups.map(function (o) {
+            var ws = byOwner[o], key = ws.slice().sort().join('|');
+            if (PAIRS[key]) return o + "'s " + PAIRS[key];
+            var txt = ws.length > 1 ? ws.slice(0, -1).join(', ') + ' and ' + ws[ws.length - 1] : ws[0];
+            return o + "'s " + txt;
+        }).join(', ');
+    }
     FM.data = {
         load: load, build: build, deriveDates: deriveDates, deriveFromText: deriveFromText, byDate: byDate, esc: esc,
         TYPE_ORDER: TYPE_ORDER, TYPE_LABEL: TYPE_LABEL, KEY_GROUPS: KEY_GROUPS, keyGroupOf: keyGroupOf, BRANCHES: BRANCHES,
-        districtName: districtName, getFact: getFact, personShort: personShort, whoOf: whoOf, headline: headline
+        districtName: districtName, getFact: getFact, personShort: personShort, whoOf: whoOf, headline: headline,
+        kinOf: kinOf, kinLine: kinLine
     };
 })();

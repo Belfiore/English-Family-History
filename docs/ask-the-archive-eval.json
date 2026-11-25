@@ -1,0 +1,127 @@
+{
+ "date": "2026-11-24",
+ "mode": "quick answers",
+ "total": 177,
+ "passed": 177,
+ "byCategory": {
+  "fact": {
+   "n": 20,
+   "pass": 20
+  },
+  "biography": {
+   "n": 12,
+   "pass": 12
+  },
+  "genealogy": {
+   "n": 36,
+   "pass": 36
+  },
+  "calculation": {
+   "n": 19,
+   "pass": 19
+  },
+  "chronology": {
+   "n": 12,
+   "pass": 12
+  },
+  "geography": {
+   "n": 21,
+   "pass": 21
+  },
+  "documents": {
+   "n": 8,
+   "pass": 8
+  },
+  "navigation": {
+   "n": 1,
+   "pass": 1
+  },
+  "missing": {
+   "n": 7,
+   "pass": 7
+  },
+  "spelling": {
+   "n": 4,
+   "pass": 4
+  },
+  "ambiguous": {
+   "n": 3,
+   "pass": 3
+  },
+  "approximate": {
+   "n": 1,
+   "pass": 1
+  },
+  "false premise": {
+   "n": 5,
+   "pass": 5
+  },
+  "nonexistent": {
+   "n": 2,
+   "pass": 2
+  },
+  "unrelated": {
+   "n": 4,
+   "pass": 4
+  },
+  "bypass": {
+   "n": 2,
+   "pass": 2
+  },
+  "living": {
+   "n": 3,
+   "pass": 3
+  },
+  "follow-up": {
+   "n": 5,
+   "pass": 5
+  },
+  "analysis": {
+   "n": 4,
+   "pass": 4
+  },
+  "overview": {
+   "n": 1,
+   "pass": 1
+  },
+  "exploratory": {
+   "n": 2,
+   "pass": 2
+  },
+  "history": {
+   "n": 5,
+   "pass": 5
+  }
+ },
+ "rounds": {
+  "round 1": {
+   "questions": 76,
+   "now": 76
+  },
+  "round 2": {
+   "questions": 46,
+   "now": 46,
+   "right": 21,
+   "wrong": 16,
+   "partly": 9
+  },
+  "round 3": {
+   "questions": 30,
+   "now": 30,
+   "right": 13,
+   "wrong": 11,
+   "partly": 6
+  },
+  "round 4": {
+   "questions": 25,
+   "now": 25,
+   "right": 16,
+   "partly": 3,
+   "wrong": 6
+  }
+ },
+ "failed": [],
+ "citations": 707,
+ "citationErrors": 0,
+ "avgMs": 1
+}

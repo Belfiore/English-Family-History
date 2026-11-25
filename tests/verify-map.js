@@ -236,6 +236,12 @@ function expectScope(id, scope) {
     const thenNoKey = await page.evaluate(() => ({ style: FM.state.style, pressed: document.querySelector('#styleSwitch [aria-checked="true"]').dataset.style, note: document.getElementById('note').innerText }));
     await page.evaluate(() => { window.FM_CONFIG.MAPTILER_KEY = window.__fmMaptiler; });
     check(thenNoKey.style === 'today' && thenNoKey.pressed === 'today' && /MapTiler/.test(thenNoKey.note), 'Then without a key explains and stays on the current map', JSON.stringify(thenNoKey));
+    const conf = await page.evaluate(() => ({ key: /Confidence|Probable|Confirmed/.test(document.getElementById('confKey').innerText), sat: !!document.getElementById('satBtn'), peg: !!document.getElementById('pegman') }));
+    check(!conf.key && conf.sat && conf.peg, 'no confidence legend; the Satellite toggle and the Street View figure are there', JSON.stringify(conf));
+    await page.click('#satBtn'); await page.waitForTimeout(300);
+    const sat = await page.evaluate(() => ({ on: FM.state.sat, layer: !!FM.map.getLayer('fm-sat'), url: location.search }));
+    await page.click('#satBtn'); await page.waitForTimeout(200);
+    check(sat.on && sat.layer && /sat=1/.test(sat.url) && !(await page.evaluate(() => FM.map.getLayer('fm-sat'))), 'Satellite adds the aerial layer under the labels, and takes it away again', JSON.stringify(sat));
     let mp = await markerPlaces(page);
     // every place with a visible event has a marker; key counts match the index
     const expectedPlaces = await page.evaluate(() => Object.keys(FM.DATA.placeEvents).filter(pid => FM.DATA.placeEvents[pid].some(e => FM.filters.eventPasses(e))));
@@ -514,6 +520,16 @@ function expectScope(id, scope) {
     check(tl.voyages > 0, `voyages play as their own beats (${tl.voyages})`);
     check(tl.undated > 0 && tl.listUndated === tl.undated && !tl.inBeats && tl.dateUnknown, `undated events are listed under "Date unknown" and not played (${tl.undated})`, JSON.stringify(tl).slice(0, 200));
     check(!tl.living, 'no timeline beat carries a living person');
+    // close family is named by how they are related to Pat or Ron, up to three steps away
+    const kin = await page.evaluate(() => {
+        const D = FM.DATA, k = id => { const r = FM.data.kinOf(id, D.people); return r ? r.label : null; };
+        const want = { 'reg-fitzmaurice': "Pat's father", 'mrs-r-fitzmaurice': "Pat's mother", 'edward-dixon-fitzmaurice': "Pat's grandfather", 'mr-hg-andrews': "Ron's father",
+            'sidney-andrews': "Ron's brother", 'herbert-andrews-sr': "Ron's grandfather", 'eileen-sybil-fitzmaurice': "Pat's aunt", 'patricia-andrews': null, 'ronald-andrews': null, 'cecil-8th': null };
+        const bad = Object.keys(want).filter(id => D.people[id] && k(id) !== want[id]).map(id => id + ': ' + k(id));
+        const row = [].find.call(document.querySelectorAll('#tlList .el'), li => /Henry George Andrews/.test(li.querySelector('.el-t').textContent));
+        return { bad, row: row && row.querySelector('.el-r') ? row.querySelector('.el-r').textContent : '' };
+    });
+    check(!kin.bad.length && /Ron's (father|parents)/.test(kin.row), "the timeline names close family by their link to Pat or Ron (Reg, Pat's father; Henry George, Ron's father)", JSON.stringify(kin));
     const start = await page.evaluate(() => ({ i: FM.timeline.index, playing: FM.timelineDebug.player().playing, card: document.getElementById('tlNow').innerText }));
     check(start.i === 0 && !start.playing, 'Timeline opens paused at the first event', JSON.stringify(start).slice(0, 160));
     // an unplaced event gets a beat that says so
@@ -658,9 +674,12 @@ function expectScope(id, scope) {
         'with a key the button opens the overlay, and the Embed URL is right', emb.url);
     const pnsv = await page.evaluate(() => { const f = document.querySelector('#panel .pn-sv iframe'); return { src: f && f.src, open: !!document.querySelector('#panel .pn-sv-open[data-sv]'), first: document.querySelector('#panel .pn').firstElementChild.className }; });
     check(pnsv.src === emb.url && pnsv.open && pnsv.first === 'pn-sv', "the place panel opens with that address's Street View at the top", JSON.stringify(pnsv).slice(0, 200));
+    const anyConf = await page.evaluate(() => document.querySelectorAll('.badge.c-conf, .badge.c-prob, .badge.c-fam').length);
+    check(!anyConf, 'no confidence tags in the panel', String(anyConf));
     await page.click('#panel .pn-sv-open');
     await page.waitForTimeout(700);
-    const ovp = await page.evaluate(() => ({ open: FM.sv.isOpen(), tab: document.getElementById('svTab').href }));
+    const ovp = await page.evaluate(() => ({ open: FM.sv.isOpen(), tab: document.getElementById('svTab').href, head: document.getElementById('svHead').textContent, card: (() => { const r = document.getElementById('svCard').getBoundingClientRect(), f = document.querySelector('.fm-sv-frame').getBoundingClientRect(); return Math.abs((r.left + r.right) / 2 - (f.left + f.right) / 2) < 4 && f.bottom - r.bottom < 80; })() }));
+    check(ovp.head && ovp.card, 'Street View shows the place title front and centre at the bottom', JSON.stringify(ovp).slice(0, 200));
     check(ovp.open && /^https:\/\/www\.google\.com\/maps\/@\?api=1&map_action=pano/.test(ovp.tab), 'clicking the Street View in the panel opens it inside the map, with a link to open it in a new tab', JSON.stringify(ovp));
     await page.keyboard.press('Escape');
     await page.waitForTimeout(400);
@@ -673,6 +692,16 @@ function expectScope(id, scope) {
     await page.waitForTimeout(400);
     const ov2 = await page.evaluate(() => ({ hidden: document.getElementById('sv').hidden, focus: document.activeElement && document.activeElement.matches('button.sv-btn') }));
     check(ov2.hidden && ov2.focus, 'Esc closes the overlay and returns focus to the button', JSON.stringify(ov2));
+    await page.evaluate(() => FM.util.closePanel && FM.util.closePanel());
+    await page.waitForTimeout(400);
+    const pb = await page.$eval('#pegman', el => { const r = el.getBoundingClientRect(); return { x: r.left + r.width / 2, y: r.top + r.height / 2 }; });
+    await page.mouse.move(pb.x, pb.y); await page.mouse.down();
+    await page.mouse.move(pb.x - 300, pb.y + 250, { steps: 8 });
+    const ghost = await page.evaluate(() => !!document.querySelector('.fm-peg-ghost'));
+    await page.mouse.up(); await page.waitForTimeout(600);
+    const dropped = await page.evaluate(() => ({ open: FM.sv.isOpen(), src: (document.querySelector('#svFrame iframe') || {}).src || '', head: document.getElementById('svHead').textContent }));
+    check(ghost && dropped.open && /embed\/v1\/streetview\?key=TEST-EMBED-KEY&location=/.test(dropped.src), 'dragging the little figure onto the map opens Street View there, inside the map', JSON.stringify(dropped).slice(0, 200));
+    await page.keyboard.press('Escape');
     await s.close();
     s = await open('map.html?mode=timeline', { embedKey: true, settle: 1500 });
     page = s.page;

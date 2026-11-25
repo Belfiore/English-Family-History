@@ -16,7 +16,7 @@
 
     var S = {
         mode: 'explore', style: 'today', place: null, person: null, scope: 'self', from: null, to: null,
-        hidden: {}, orkney: false, fam: null, gen: 3, sib: false, streets: false, compare: false, beyond: false, event: null
+        hidden: {}, orkney: false, sat: false, fam: null, gen: 3, sib: false, streets: false, compare: false, beyond: false, event: null
     };
     var DATA = null, map = null, cmap = null, camera = null;
     var markers = {}, markerOrder = '', peekTimer = null, peekFor = null, peekHideTimer = null, lastTapKey = null;
@@ -210,6 +210,8 @@
     }
     function setStyle(name, opts) {
         opts = opts || {};
+        // comparing only makes sense with the old map on one side: another style ends it
+        if (S.compare && name !== 'then') setCompare(false);
         if ((name === 'then') && !CFG.MAPTILER_KEY) {
             // without a key the map stays as it is, rather than jumping to another style
             note('The old maps are not switched on yet: they need a free MapTiler key in config.js.');
@@ -252,6 +254,7 @@
         } catch (e) { /* style not ready yet */ }
     };
     function renderStyleSwitch() {
+        if ($('satBtn')) renderSatBtn();
         var box = $('styleSwitch');
         var opts = [['today', 'Today'], ['atlas', 'Atlas'], ['then', 'Then']];
         box.innerHTML = opts.map(function (o) {
@@ -275,8 +278,32 @@
         for (var i = 0; i < ls.length; i++) if (ls[i].type === 'symbol') return ls[i].id;
         return undefined;
     }
+    // ---- satellite: MapTiler's aerial photographs under the map's roads names and labels
+    function applySat() {
+        if (!map || !map.getStyle()) return;
+        var want = S.sat && S.style !== 'then' && !!CFG.MAPTILER_KEY;
+        if (!want) { if (map.getLayer('fm-sat')) map.removeLayer('fm-sat'); return; }
+        if (!map.getSource('fm-sat')) map.addSource('fm-sat', { type: 'raster', url: 'https://api.maptiler.com/tiles/satellite-v2/tiles.json?key=' + encodeURIComponent(CFG.MAPTILER_KEY), tileSize: 256,
+            attribution: '<a href="https://www.maptiler.com/copyright/" target="_blank" rel="noopener">MapTiler</a> satellite' });
+        if (!map.getLayer('fm-sat')) map.addLayer({ id: 'fm-sat', type: 'raster', source: 'fm-sat', paint: { 'raster-fade-duration': 200 } }, ['fm-area-fill', 'fm-area-line', 'fm-halo', 'fm-trails'].filter(function (id) { return map.getLayer(id); })[0] || firstSymbolLayer());
+    }
+    function setSat(on, quiet) {
+        if (on && !CFG.MAPTILER_KEY) { note('Satellite needs the MapTiler key in config.js.'); on = false; }
+        S.sat = !!on;
+        $('satBtn').setAttribute('aria-pressed', S.sat ? 'true' : 'false');
+        applySat();
+        if (!quiet) { writeURL(); announce(S.sat ? 'Satellite view on.' : 'Satellite view off.'); }
+    }
+    function renderSatBtn() { $('satBtn').disabled = S.style === 'then'; $('satBtn').title = S.style === 'then' ? 'Satellite works with Today and Atlas' : 'Show the photograph from above under today\'s map'; $('satBtn').setAttribute('aria-pressed', S.sat ? 'true' : 'false'); }
+    // shop, bus-stop and other point-of-interest icons only clutter a family map
+    function hidePois(m) {
+        var st = m && m.getStyle(); if (!st) return;
+        st.layers.forEach(function (l) { if (l['source-layer'] === 'poi' && l.type === 'symbol') m.setLayoutProperty(l.id, 'visibility', 'none'); });
+    }
     function addOverlays() {
         if (!map.getStyle()) return;
+        hidePois(map);
+        applySat();
         var before = firstSymbolLayer();
         function src(id) { if (!map.getSource(id)) map.addSource(id, { type: 'geojson', data: { type: 'FeatureCollection', features: [] } }); }
         ['fm-areas', 'fm-halos', 'fm-path', 'fm-arcs', 'fm-trails', 'fm-hl'].forEach(src);
@@ -528,7 +555,7 @@
                 '<p class="pk-where">' + esc(pl.name) + '</p>' +
                 (approx ? '<p class="pk-approx">' + esc(approx) + '</p>' : '') +
                 (m.events.length > 1 ? '<ul class="pk-evs">' + rows + '</ul>' : '<p class="pk-line">' + esc(m.events[0].summary) + '</p>') +
-                '<p class="pk-badges"><span class="badge ' + confClass(m.conf) + '">' + esc(confLabel(m.conf)) + '</span>' + (m.orkney ? '<span class="badge badge--npl">No proven link</span>' : '') + '</p>' +
+                (m.orkney ? '<p class="pk-badges"><span class="badge badge--npl">No proven link</span></p>' : '') +
                 '<div class="pk-actions"><button type="button" class="fm-btn fm-btn--sm" data-open-place="' + esc(pl.id) + '">Open</button>' + (pl.streetView ? FM.sv.button(pl, { small: true }) : '') + '</div>';
             setAreaFocus(pl.drawAs !== 'pin' ? pl.id : null);
         }
@@ -697,7 +724,7 @@
         var voyage = e.voyage ? '<span class="ev-ship">' + esc(e.voyage.ship) + ': ' + esc(e.voyage.display) + '</span>' : '';
         return '<li class="ev ev--' + esc(e.type.replace(/\s+/g, '-')) + (e.familyStatement ? ' is-family' : '') + (e.orkney ? ' is-orkney' : '') + '" data-event="' + esc(e.id) + '">' +
             '<span class="ev-gl" title="' + esc(FM.data.TYPE_LABEL[e.type]) + '">' + glyph(e.type) + '</span>' +
-            '<div class="ev-body"><p class="ev-date">' + esc(dateLabel(e)) + (e.approximate ? '' : '') + ' <span class="badge ' + confClass(e.familyStatement ? 'family tradition' : e.confidence) + '">' + esc(confLabel(e.familyStatement ? 'family tradition' : e.confidence)) + '</span></p>' +
+            '<div class="ev-body"><p class="ev-date">' + esc(dateLabel(e)) + '</p>' +
             '<p class="ev-text">' + esc(e.summary) + (e.familyStatement && !/\(family/.test(e.summary) ? ' (family)' : '') + (num ? fn(e.sourceIds, num) : '') + '</p>' +
             (opts.hidePlace || !pl ? '' : '<p class="ev-place"><button type="button" class="ev-plbtn" data-open-place="' + esc(pl.id) + '">' + esc(pl.name) + '</button></p>') +
             voyage + (people ? '<div class="ev-people">' + people + '</div>' : '') + (crops ? '<div class="ev-crops">' + crops + '</div>' : '') +
@@ -805,10 +832,7 @@
             return '<li><button type="button" class="kt" aria-pressed="' + on + '" data-group="' + esc(g.id) + '">' + glyph(g.types[0], 'kt-gl') +
                 '<span class="kt-l">' + esc(g.label) + '</span><span class="kt-n" aria-label="' + counts[g.id] + ' events">' + counts[g.id] + '</span></button></li>';
         }).join('');
-        $('confKey').innerHTML = '<p class="fm-label">Confidence</p><ul class="kc">' +
-            '<li><span class="kc-s kc-s--conf"></span>Confirmed</li><li><span class="kc-s kc-s--prob"></span>Probable</li><li><span class="kc-s kc-s--fam"></span>Family statement (family)</li>' +
-            '<li><span class="kc-s kc-s--npl"></span>No proven link</li></ul>' +
-            '<p class="fm-label">Pins</p><ul class="kc kc--prec"><li><span class="kc-pin"></span>A known address or building</li><li><span class="kc-pin kc-pin--approx"></span>Somewhere in this area: the exact place is not known</li></ul>';
+        $('confKey').innerHTML = '<p class="fm-label">Pins</p><ul class="kc kc--prec"><li><span class="kc-pin"></span>A known address or building</li><li><span class="kc-pin kc-pin--approx"></span>Somewhere in this area: the exact place is not known</li></ul>';
     }
     function initYears() {
         var ys = [];
@@ -832,6 +856,45 @@
         showYears(); refreshOverlays(); renderChips(); writeURL();
     }
     // on a wide screen the key folds away to a small button, and stays folded on the next visit
+    var PEG_SVG = '<svg viewBox="0 0 24 32" aria-hidden="true"><circle cx="12" cy="5.5" r="4.2"/><path d="M6.2 12.2c0-1.3 1-2.3 2.3-2.3h7c1.3 0 2.3 1 2.3 2.3v7.6h-2.6V30H11.4V22h-.8v8H8.8V19.8H6.2z"/></svg>';
+    function dropPegman(lngLat) {
+        var spot = { name: '', lat: lngLat.lat, lng: lngLat.lng, streetView: { targetLat: lngLat.lat, targetLng: lngLat.lng, pitch: 5, fov: 80 } };
+        if (CFG.GOOGLE_EMBED_KEY) FM.sv.open(spot, $('pegman'));
+        else { FM.sv.linkClicked(spot); window.open(FM.sv.mapsUrl(spot), '_blank', 'noopener'); }
+    }
+    function bindPegman(peg) {
+        var ghost = null, start = null, moved = false;
+        peg.addEventListener('pointerdown', function (e) {
+            if (e.button !== 0) return;
+            e.preventDefault();
+            start = { x: e.clientX, y: e.clientY }; moved = false;
+            peg.setPointerCapture(e.pointerId);
+        });
+        peg.addEventListener('pointermove', function (e) {
+            if (!start) return;
+            if (!moved && Math.hypot(e.clientX - start.x, e.clientY - start.y) < 6) return;
+            if (!moved) { moved = true; ghost = document.createElement('div'); ghost.className = 'fm-peg-ghost'; ghost.innerHTML = PEG_SVG; document.body.appendChild(ghost); $('map').classList.add('is-pegging'); }
+            ghost.style.left = e.clientX + 'px'; ghost.style.top = e.clientY + 'px';
+        });
+        function end(e, cancel) {
+            if (!start) return;
+            var wasMoved = moved; start = null; moved = false;
+            if (ghost) { ghost.remove(); ghost = null; }
+            $('map').classList.remove('is-pegging');
+            if (!wasMoved || cancel) return;
+            var r = map.getCanvas().getBoundingClientRect();
+            if (e.clientX < r.left || e.clientX > r.right || e.clientY < r.top || e.clientY > r.bottom) return;
+            var hit = document.elementsFromPoint(e.clientX, e.clientY).filter(function (el) { return el.closest && el.closest('.fm-key, .fm-panel, .fm-tl, .fm-events, .fm-zoom, .fm-chips'); })[0];
+            if (hit) return;
+            dropPegman(map.unproject([e.clientX - r.left, e.clientY - r.top + 14]));
+        }
+        peg.addEventListener('pointerup', function (e) { end(e); });
+        peg.addEventListener('pointercancel', function (e) { end(e, true); });
+        peg.addEventListener('click', function (e) {
+            if (e.detail === 0) { dropPegman(map.getCenter()); return; } // keyboard
+            if (!e.defaultPrevented) note('Drag the little figure onto any street to see it in Street View.');
+        });
+    }
     function setKeyCollapsed(on, quiet) {
         var k = $('key');
         k.classList.toggle('is-collapsed', on);
@@ -989,6 +1052,16 @@
                        'The street today. Whether the building the family knew still stands has not been checked.';
             return lead + (why ? ' ' + why : '') + (sv.checked ? '' : ' (The viewpoint has not yet been checked by eye.)');
         }
+        // the title on the Street View card: the place's own title if it has one, otherwise who and what
+        function svTitleFor(pl, evs) {
+            if (pl.title) return pl.title;
+            var order = evs.slice().sort(function (a, b) { return TYPE_PRIORITY.indexOf(a.type) - TYPE_PRIORITY.indexOf(b.type); });
+            var first = order[0] ? headline(order[0]) : pl.name;
+            var second = order.filter(function (e) { return e.type !== (order[0] || {}).type; })[0];
+            if (!second) return first;
+            var noun = headline(second).replace(/^.*'s?\s+/, '');
+            return first + ' & ' + noun;
+        }
         function thenOf(pl) {
             var im = (pl.images || [])[0];
             if (im) return { file: im.file, thumb: im.thumb || im.file, alt: im.caption, caption: im.caption };
@@ -1010,7 +1083,10 @@
             $('svTitle').textContent = pl.name ? 'Street View: ' + pl.name : 'Street View';
             $('svTab').href = mapsUrl(pl); $('svTab').setAttribute('aria-label', 'Open Street View in Google Maps in a new tab');
             $('svFrame').innerHTML = '<iframe title="Street View of ' + esc(pl.name || 'this spot') + '" src="' + esc(embedUrl(pl)) + '" loading="lazy" allowfullscreen referrerpolicy="no-referrer-when-downgrade"></iframe>';
-            $('svCap').textContent = pl.id ? caption(pl) : 'Street View near here. The family\'s places are marked on the map beside it.';
+            $('svCap').textContent = pl.id ? caption(pl) : 'The street nearest where you dropped the figure. Drag to look around; the arrows walk along the street.';
+            var evs = pl.id ? (DATA.placeEvents[pl.id] || []) : [];
+            $('svHead').textContent = pl.id ? svTitleFor(pl, evs) : 'Street View';
+            $('svKicker').textContent = pl.id ? pl.name + (evs.length ? ' \u00b7 ' + spanOf(evs) : '') : 'Wherever you dropped the figure';
             // then and now: the place's old photo or record sits over the corner of today's view
             var then = pl.id ? thenOf(pl) : null;
             $('svThen').innerHTML = then ? '<a class="record-link" href="' + esc(then.file) + '"><img src="' + esc(then.thumb) + '" alt="' + esc(then.alt) + '" loading="lazy"></a><figcaption><span class="then-k">Then</span>' + esc(then.caption) + '</figcaption>' : '';
@@ -1052,6 +1128,7 @@
             if (S.style !== 'then') setStyle('then');
             if (!cmap) {
                 cmap = new maplibregl.Map({ container: 'compareMap', style: 'https://tiles.openfreemap.org/styles/liberty', center: map.getCenter(), zoom: map.getZoom(), interactive: false, attributionControl: false });
+                cmap.on('style.load', function () { hidePois(cmap); });
                 map.on('move', function () { if (S.compare) cmap.jumpTo({ center: map.getCenter(), zoom: map.getZoom(), bearing: map.getBearing(), pitch: map.getPitch() }); });
             }
             cmap.resize(); cmap.jumpTo({ center: map.getCenter(), zoom: map.getZoom() });
@@ -1097,6 +1174,7 @@
         var st = {};
         st.mode = q.get('mode') || 'explore';
         st.place = q.get('place'); st.person = q.get('person'); st.scope = q.get('scope') || 'self';
+        st.sat = q.get('sat') === '1';
         st.fam = FAMILIES[q.get('family')] ? q.get('family') : null; st.gen = q.get('gen') != null ? +q.get('gen') : 3; st.sib = q.get('siblings') === '1';
         st.from = q.get('from') ? +q.get('from') : null; st.to = q.get('to') ? +q.get('to') : null;
         st.style = q.get('style') || 'today';
@@ -1112,6 +1190,7 @@
         var q = new URLSearchParams();
         if (S.mode !== 'explore') q.set('mode', S.mode);
         if (S.place) q.set('place', S.place);
+        if (S.sat) q.set('sat', '1');
         if (S.fam) { q.set('family', S.fam); if (S.gen !== 3) q.set('gen', String(S.gen)); if (S.sib) q.set('siblings', '1'); }
         if (S.person) { q.set('person', S.person); if (S.scope !== 'self') q.set('scope', S.scope); }
         if (S.from != null) q.set('from', S.from);
@@ -1129,6 +1208,7 @@
         opts = opts || {};
         S.hidden = st.hidden || {}; S.orkney = false;
         S.from = st.from; S.to = st.to; S.scope = st.scope || 'self';
+        if (!!st.sat !== S.sat) setSat(!!st.sat, true);
         S.fam = st.fam || null; S.gen = st.gen != null && !isNaN(st.gen) ? st.gen : 3; S.sib = !!st.sib; renderFamily();
         // the person belongs to the page, so it is set before the mode starts (Timeline scopes its beats by it)
         var person = st.person && DATA.people[st.person] && DATA.visible(st.person) ? st.person : null;
@@ -1196,6 +1276,8 @@
         });
         $('styleSwitch').addEventListener('click', function (e) { var b = e.target.closest('[data-style]'); if (b) setStyle(b.dataset.style); });
         $('compareBtn').addEventListener('click', function () { setCompare(!S.compare); });
+        $('cmpDone').addEventListener('click', function () { setCompare(false); $('compareBtn').focus(); });
+        $('satBtn').addEventListener('click', function () { setSat(!S.sat); });
         $('famSel').addEventListener('change', function () { setFamily(this.value || null, S.gen, S.sib); });
         $('genSel').addEventListener('change', function () { setFamily(S.fam, +this.value, S.sib); });
         $('sibChk').addEventListener('change', function () { setFamily(S.fam, S.gen, this.checked); });
@@ -1378,6 +1460,14 @@
             zc.children[0].addEventListener('click', function () { map.zoomIn({ duration: reduced() ? 0 : 300 }); });
             zc.children[1].addEventListener('click', function () { map.zoomOut({ duration: reduced() ? 0 : 300 }); });
             zc.children[2].addEventListener('click', function () { S.beyond = false; renderChips(); frameEngland(); });
+            // the little figure: drag it onto any street to see Street View there (Enter drops it in the middle of the map)
+            var peg = document.createElement('button');
+            peg.type = 'button'; peg.className = 'fm-peg'; peg.id = 'pegman';
+            peg.setAttribute('aria-label', 'Street View: drag the figure onto a street, or press Enter for the middle of the map');
+            peg.title = 'Drag onto a street for Street View';
+            peg.innerHTML = PEG_SVG;
+            $('stage').appendChild(peg);
+            bindPegman(peg);
             map.getCanvasContainer().addEventListener('touchstart', function (e) {
                 if (tapZoomParked && !(e.target.closest && e.target.closest('.mk-wrap'))) { map.doubleClickZoom.enable(); tapZoomParked = false; }
             }, { passive: true, capture: true });

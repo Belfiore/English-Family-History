@@ -6,6 +6,8 @@
     <title>Reg's brother and sisters | Family history</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="branch.css">
+    <link rel="stylesheet" href="stuart.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 <body>
 <nav class="main-nav">
@@ -16,10 +18,11 @@
             <a href="family-tree.html">Family Tree</a>
             <a href="map.html">Family Map</a>
             <a href="branches.html" class="active">Branches</a>
-            <a href="family-crest.html">Family Crest</a>
+            <!-- Family Crest is switched off for now. Restore this link to bring it back: <a href="family-crest.html">Family Crest</a> -->
             <a href="ron-egypt.html">Ron in WWII</a>
             <a href="wedding.html">Wedding</a>
             <a href="sources.html">Sources</a>
+            <a href="ask.html">Ask Stuart</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
@@ -27,7 +30,7 @@
 <div class="page-container">
     <div class="hero-intro">
         <div class="hero-title">The next generation</div>
-        <h1>Reg's mother, brother and sisters</h1>
+        <h1 id="regs-mother-brother-and-sisters">Reg's mother, brother and sisters</h1>
         <p class="lede">The medallion inscribed Edith Madeleine Fitzmaurice is Reg's mother, Edith Madeline Spencer, not his sister. She and Edward Dixon had four children. Three of them grew up.</p>
     </div>
 
@@ -60,12 +63,12 @@
 
     <h2 class="section-header" id="children">The four children</h2>
     <div class="person">
-        <h3>Edith Marjorie FitzMaurice</h3>
+        <h3 id="edith-marjorie-fitzmaurice">Edith Marjorie FitzMaurice</h3>
         <p class="meta">Probably late 1899, Greenwich district, to summer 1900, Lewisham district.</p>
         <p>Mother's maiden name Spencer. Volume 1d, page 1075 for the birth, and volume 1d, page 707 for the death, aged under a year. She is the child who had died by 1911. She was named after her mother, and she is not the woman in the medallion.</p>
     </div>
     <div class="person">
-        <h3>Edward Robert FitzMaurice, called Bob (1901 to 1981)</h3>
+        <h3 id="edward-robert-fitzmaurice-called-bob-1901-to-1981">Edward Robert FitzMaurice, called Bob (1901 to 1981)</h3>
         <p class="meta">Probably spring 1901, Lambeth district. Died 7 May 1981, Port Elizabeth, South Africa.</p>
         <p>The beach photograph is labelled Reg, Bob and their father Edward Dixon Fitzmaurice. It was probably taken about 1908 to 1910 on the Kent coast. Edward Robert, mother's maiden name Spencer, was registered in the Lambeth district in the June quarter of 1901, volume 1d, page 503. He is probably Bob. He was probably the boy of 15 who sailed to Cape Town with his mother in August 1916. No later record of him has been found in England. The family always believed that Bob stayed in South Africa, and the records now show that he did. On 30 October 1925, aged 24, he married Eileen Alice Yallop, 23, born in South Africa, at St George's Cathedral, Cape Town, by licence. He was a tramway engineer living at "Auleta", Three Anchor Bay, and she lived at 7 Bertram Road, Sea Point. One of the witnesses was J. A. Cartwright.</p>
         <p>Their first son, Edward Scott FitzMaurice, was born on 29 April 1926 and baptised on 25 July 1926 in the parish of Woodstock, Cape Town. The family was then living at 17 Berkley Street, Gardens, Cape Town (the house number may be 14), and Bob was still a tramway engineer. The godparents were Joseph Allan Cartwright, Thomas Baker and Bertha Scott. Edward Scott died on 9 August 1935, aged 9; his death is known from an index and from the title of his estate file in the Cape Town archives.</p>
@@ -169,5 +172,6 @@ document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
 });
 </script>
+<script src="stuart.js" data-widget defer></script>
 </body>
 </html>

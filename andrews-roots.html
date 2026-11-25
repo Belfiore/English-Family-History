@@ -6,6 +6,8 @@
     <title>Andrews, Stacey and Walter | Family history</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="branch.css">
+    <link rel="stylesheet" href="stuart.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 <body>
 <nav class="main-nav">
@@ -16,10 +18,11 @@
             <a href="family-tree.html">Family Tree</a>
             <a href="map.html">Family Map</a>
             <a href="branches.html" class="active">Branches</a>
-            <a href="family-crest.html">Family Crest</a>
+            <!-- Family Crest is switched off for now. Restore this link to bring it back: <a href="family-crest.html">Family Crest</a> -->
             <a href="ron-egypt.html">Ron in WWII</a>
             <a href="wedding.html">Wedding</a>
             <a href="sources.html">Sources</a>
+            <a href="ask.html">Ask Stuart</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
@@ -27,7 +30,7 @@
 <div class="page-container">
     <div class="hero-intro">
         <div class="hero-title">Bedfordshire and Hertfordshire</div>
-        <h1>Andrews, Stacey and Walter</h1>
+        <h1 id="andrews-stacey-and-walter">Andrews, Stacey and Walter</h1>
         <p class="lede">Henry George Andrews, Ron's father, was the only child of a Totternhoe baker and a Stacey from Leavesden. The line runs back through Aldenham, Bushey, Denham and Letchmore Heath.</p>
     </div>
 
@@ -150,12 +153,12 @@
 </div>
 
     <div class="person">
-        <h3>Herbert Andrews</h3>
+        <h3 id="herbert-andrews">Herbert Andrews</h3>
         <p class="meta">12 November 1865 on the 1939 Register. Totternhoe. Probably died early 1951.</p>
         <p>He was 5 at Totternhoe in 1871, son of George and Alice. At 15 he was probably a page in a household at Wimbledon. On 17 May 1888, aged 22, he married Lucy Stacey at Bushey. His father is named as George Andrews. He was a journeyman baker: at Hemel Hempstead in 1901, at Canning Town in 1911, and on night work for a bakery in Plymouth Road, Canning Town, in 1921, when he and Lucy were at Plaistow. In 1911 Henry, 21, worked as a sawyer's labourer at a saw mill and lived with his parents at 40 Fisher Street, Canning Town. His father Herbert, 45, was a journeyman baker; his mother Lucy was 46. The form says they had been married 23 years and had one child, so Henry George was their only child. In 1939 he was a widower and a retired baker at West Ham. He probably died in the March quarter of 1951 in the Essex South Western district, volume 5a, page 209, aged 84. That age is about a year younger than the 1939 birth date.</p>
     </div>
     <div class="person">
-        <h3>Lucy Andrews, nee Stacey</h3>
+        <h3 id="lucy-andrews-nee-stacey">Lucy Andrews, nee Stacey</h3>
         <p class="meta">Spring 1865, Watford district. Probably died 1932, West Ham, aged 67.</p>
         <p>Born in the June quarter of 1865, Watford Union, volume 3a, page 333, mother's maiden name Walter. The censuses give Watford and, in 1921, Leavesden. She was 6 at Aldenham in 1871. In 1881 Lucy Stacey, 16, born at Aldenham, was a general servant in the household of Francis Miller in Denmark Street, Watford. She probably died in the September quarter of 1932, West Ham, volume 4a, page 153, aged 67.</p>
     </div>
@@ -256,5 +259,6 @@ document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
 });
 </script>
+<script src="stuart.js" data-widget defer></script>
 </body>
 </html>

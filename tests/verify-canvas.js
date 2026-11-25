@@ -50,6 +50,8 @@ const ok = (m) => console.log('  ok   ' + m);
 
     // ---------------------------------------------------------------- data integrity
     const people = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/people.json'))).people;
+    // the Hamiltons and the Earls of Orkney stay in the data but are switched off on the tree; Cecil stays
+    const onTree = people.filter(p => p.region !== 'orkney' || p.id === 'cecil-8th');
     const sources = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/sources.json'))).sources;
     const sid = new Set(sources.map(s => s.id));
     let refs = 0, bad = 0, unsourced = 0;
@@ -121,7 +123,7 @@ const ok = (m) => console.log('  ok   ' + m);
             });
             return out;
         });
-        if (over.length) over.forEach(o => fail(`${w}px overflow: ${o}`)); else ok(`${w}px: no card overflows (${people.length} cards)`);
+        if (over.length) over.forEach(o => fail(`${w}px overflow: ${o}`)); else ok(`${w}px: no card overflows (${onTree.length} cards)`);
 
         const chrome = await page.evaluate(() => ({ rail: document.querySelectorAll('#genrail > *').length, mini: !!document.getElementById('minimap'), vp: document.getElementById('viewpoint').options.length, s: window.__tree.S.s }));
         if (!chrome.rail || !chrome.mini || chrome.vp < 10) fail(`${w}px: generation rail, minimap or relationships selector missing ${JSON.stringify(chrome)}`);
@@ -154,18 +156,19 @@ const ok = (m) => console.log('  ok   ' + m);
                         if (!touches(a).length || !endIds.length) out.push('marriage bar not attached to two cards: ' + path.getAttribute('d'));
                     } else if (!endIds.length) out.push('connector ends on no card: ' + path.getAttribute('d'));
                 });
-                // every child with parents has exactly one incoming connector ending on its own card, starting at a parent
+                // every child with parents has one incoming connector per parent block (two when each parent
+                // heads a family of their own), each ending on the child's card and starting at a parent
                 t.D.people.forEach(p => {
                     if (!p.parents.length) return;
                     const r = rects[p.id];
+                    const want = new Set(p.parents.filter(pid => t.L.blockOf[pid]).map(pid => t.L.blockOf[pid])).size;
                     const hits = Array.from(document.querySelectorAll('#links path.ln:not(.ln--bar)')).filter(path => { const q = pts(path.getAttribute('d')); const z = q[q.length - 1]; return z[0] >= r.x - 0.6 && z[0] <= r.x + r.w + 0.6 && z[1] >= r.y - 0.6 && z[1] <= r.y + r.h + 0.6; });
-                    if (hits.length !== 1) out.push(`${p.id} has ${hits.length} incoming connectors`);
-                    else {
-                        const q = pts(hits[0].getAttribute('d'));
-                        const parentsTop = q[0];
+                    if (hits.length !== want) out.push(`${p.id} has ${hits.length} incoming connectors, expected ${want}`);
+                    hits.forEach(h => {
+                        const parentsTop = pts(h.getAttribute('d'))[0];
                         const ok = p.parents.some(pid => { const pr = rects[pid]; return parentsTop[1] >= pr.y && parentsTop[1] <= pr.y + pr.h + 0.6 && parentsTop[0] >= pr.x - 70 && parentsTop[0] <= pr.x + pr.w + 70; });
                         if (!ok) out.push(`${p.id}: connector does not start at a parent`);
-                    }
+                    });
                 });
                 // the framed Orkney group: every member inside the frame, no one else inside it
                 const frames = Array.from(document.querySelectorAll('#links rect.ln--region'));
@@ -178,6 +181,24 @@ const ok = (m) => console.log('  ok   ' + m);
             });
             if (conn.out.length) conn.out.forEach(o => fail('connector: ' + o)); else ok(`all ${conn.n} connectors attach to the right cards and cross no card; the Orkney group sits in its own frame`);
 
+            // Grandpa Ron's family on the left of the divide, Grandma Pat's on the right
+            const sides = await page.evaluate(() => {
+                const t = window.__tree, L = t.L, out = [];
+                if (L.splitX == null) return { out: ['no divide between the two families'] };
+                const couple = t.D.byId['patricia-andrews'].generation;
+                let l = 0, r = 0;
+                t.D.people.forEach(p => {
+                    const q = L.pos[p.id], side = L.sideOf[p.id]; if (!q || !side || p.generation >= couple) return;
+                    if (side === 'left') { l++; if (q.x + 200 > L.splitX) out.push(p.id + ' (Ron\'s side) is right of the divide'); }
+                    else { r++; if (q.x < L.splitX) out.push(p.id + ' (Pat\'s side) is left of the divide'); }
+                });
+                const ron = L.pos['ronald-andrews'], pat = L.pos['patricia-andrews'];
+                if (!(ron.x < pat.x)) out.push('Ron should sit to the left of Pat');
+                if (!document.querySelector('.tc-side--l') || !document.querySelector('.tc-side--r')) out.push('side headings missing');
+                return { out, l, r };
+            });
+            if (sides.out.length) sides.out.forEach(o => fail('sides: ' + o)); else ok(`Ron's family (${sides.l}) sits left of the divide and Pat's (${sides.r}) right of it, with headings`);
+
             const missing = await page.evaluate(async (list) => {
                 const out = [];
                 for (const f of list) { const r = await fetch(encodeURI(f), { method: 'HEAD' }); if (!r.ok) out.push(f + ' ' + r.status); }
@@ -186,7 +207,7 @@ const ok = (m) => console.log('  ok   ' + m);
             if (missing.length) missing.forEach(m => fail('missing file: ' + m)); else ok(`all ${files.size} image, PDF and data file paths resolve`);
 
             const routeErrs = [];
-            for (const p of people) {
+            for (const p of onTree) {
                 await page.evaluate(id => { location.hash = '#/person/' + id; }, p.id);
                 await page.waitForFunction(id => { const d = document.getElementById('drawer'); return !d.hidden && d.classList.contains('is-expanded') && window.__tree.S.drawerFor === id && document.querySelector('#drawerBody .pf-name'); }, p.id, { timeout: 4000 }).catch(() => routeErrs.push(p.id + ' did not open'));
                 const r = await page.evaluate(() => {
@@ -200,7 +221,7 @@ const ok = (m) => console.log('  ok   ' + m);
                 if (r.dead.length) routeErrs.push(`${p.id}: footnote targets missing ${r.dead.join(',')}`);
             }
             await page.evaluate(() => { history.pushState('', '', location.pathname); dispatchEvent(new HashChangeEvent('hashchange')); });
-            if (routeErrs.length) routeErrs.forEach(e => fail('route: ' + e)); else ok(`all ${people.length} #/person/ routes open the full story in the expanded panel`);
+            if (routeErrs.length) routeErrs.forEach(e => fail('route: ' + e)); else ok(`all ${onTree.length} #/person/ routes open the full story in the expanded panel`);
 
             // lightbox: the wedding album's dedication page, with its transcription beside it
             await page.evaluate(() => { location.hash = '#/person/patricia-andrews'; });
@@ -232,11 +253,13 @@ const ok = (m) => console.log('  ok   ' + m);
                     ['sebastian-belfiore', 'bob-fitzmaurice', 'great-great-uncle'], ['sebastian-belfiore', 'max-austin', '1st cousin'],
                     ['enzo-belfiore', 'violet-belfiore', '1st cousin'], ['amanda-belfiore', 'robert-belfiore', 'husband'],
                     ['robert-belfiore', 'patricia-andrews', 'mother-in-law'], ['max-austin', 'lizzie-eley', 'partner'],
-                    ['cecil-8th', 'edmond-7th', '1st cousin twice removed'], ['sebastian-belfiore', 'alex-belfiore', 'brother'],
+                    ['sebastian-belfiore', 'alex-belfiore', 'brother'],
                     ['venetia-austin', 'amanda-belfiore', 'sister'], ['reg-fitzmaurice', 'mrs-r-fitzmaurice', 'wife'],
-                    ['kirkwall', 'lansdowne', 'uncle'], ['george-orkney', 'james-ii', '6× great-grandfather']];
+                    ['sebastian-belfiore', 'ronald-andrews', 'grandfather'], ['sebastian-belfiore', 'mr-hg-andrews', 'great-grandfather']];
                 want.forEach(([a, b, l]) => { const g = r(a, b); if (g !== l) out.push(`${a} -> ${b}: "${g}", expected "${l}"`); });
-                if (t.relInfo('sebastian-belfiore', 'james-ii').kind !== 'none') out.push('James II should have no recorded link to Sebastian');
+                if (t.D.byId['james-ii'] || t.D.byId['george-orkney']) out.push('the Orkney line should be switched off on the tree');
+                if (!t.D.byId['cecil-8th']) out.push('Cecil should stay on the tree');
+                else if (t.relInfo('sebastian-belfiore', 'cecil-8th').kind !== 'none') out.push('Cecil should have no proven link to Sebastian');
                 if (t.relInfo('sebastian-belfiore', 'edith-madeleine-fitzmaurice').label !== 'great-great-grandmother') out.push('Edith should be Sebastian\'s great-great-grandmother');
                 let n = 0;
                 t.D.people.forEach(a => t.D.people.forEach(b => { if (a.id === b.id) return; const i = t.relInfo(a.id, b.id); n++; if (i.kind !== 'none' && !i.label) out.push(`${a.id} -> ${b.id}: no label`); if (i.kind !== 'none' && !t.relPath(a.id, b.id)) out.push(`${a.id} -> ${b.id}: no path`); }));
@@ -363,9 +386,9 @@ const ok = (m) => console.log('  ok   ' + m);
             await page.waitForTimeout(1100);
             await page.screenshot({ path: path.join(SHOTS, `expanded-${w}.png`) });
             await page.keyboard.press('Escape'); await page.keyboard.press('Escape');
-            await page.evaluate(() => window.__tree.centerOn('edmond-7th', 0.75, false));
+            await page.evaluate(() => window.__tree.centerOn('reg-fitzmaurice', 0.38, false));
             await page.waitForTimeout(400);
-            await page.screenshot({ path: path.join(SHOTS, `orkney-${w}.png`) });
+            await page.screenshot({ path: path.join(SHOTS, `sides-${w}.png`) });
         }
         await ctx.close();
     }
@@ -403,6 +426,24 @@ const ok = (m) => console.log('  ok   ' + m);
     }
     if (linkErrs.length) linkErrs.forEach(e => fail('link: ' + e)); else ok(`internal links resolve on ${pages.length} pages`);
     if (consoleErrs.length) consoleErrs.forEach(e => fail('console: ' + e)); else ok(`no console errors on ${pages.length} pages`);
+
+    // ---------------------------------------------------------------- the home page
+    await page.goto(base + 'index.html', { waitUntil: 'networkidle' });
+    const home = await page.evaluate(async () => {
+        const out = [];
+        const cards = Array.from(document.querySelectorAll('.tour h3 a')).map(a => a.getAttribute('href'));
+        ['family-tree.html', 'map.html', 'branches.html', 'ron-egypt.html', 'wedding.html', 'sources.html'].forEach(h => { if (cards.indexOf(h) < 0) out.push('no card for ' + h); });
+        document.querySelectorAll('.tour').forEach(c => { if (!c.querySelector('.tour-img img[alt]')) out.push('a card has no image with alt text'); });
+        const g = document.querySelector('.gmap a[href*="google.com/maps/d/"]');
+        if (!g || g.target !== '_blank' || !/noopener/.test(g.rel)) out.push('the Google My Maps link is missing or does not open safely in a new tab');
+        if (!document.querySelector('.gmap a[href="map.html"]')) out.push('the Google map section does not point to our Family Map');
+        const text = document.body.innerText;
+        [/will go here/i, /Gaiety/, /King James/, /Key Discoveries/].forEach(re => { if (re.test(text)) out.push('still on the home page: ' + re); });
+        if (document.querySelector('.main-nav a[href="family-crest.html"]')) out.push('Family Crest is still in the menu');
+        for (const img of document.querySelectorAll('img[src]:not([src=""])')) { img.loading = 'eager'; if (!img.complete) await new Promise(r => { img.onload = img.onerror = r; setTimeout(r, 3000); }); if (!img.naturalWidth) out.push('image did not load: ' + img.getAttribute('src')); }
+        return out;
+    });
+    if (home.length) home.forEach(e => fail('home: ' + e)); else ok('home page: a card with a picture for each page, the Google My Maps link, no crest, Gaiety or King James');
 
     await browser.close();
     srv.close();

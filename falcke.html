@@ -6,6 +6,8 @@
     <title>Falcke and FitzMaurice | Family history</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="branch.css">
+    <link rel="stylesheet" href="stuart.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 <body>
 <nav class="main-nav">
@@ -16,10 +18,11 @@
             <a href="family-tree.html">Family Tree</a>
             <a href="map.html">Family Map</a>
             <a href="branches.html" class="active">Branches</a>
-            <a href="family-crest.html">Family Crest</a>
+            <!-- Family Crest is switched off for now. Restore this link to bring it back: <a href="family-crest.html">Family Crest</a> -->
             <a href="ron-egypt.html">Ron in WWII</a>
             <a href="wedding.html">Wedding</a>
             <a href="sources.html">Sources</a>
+            <a href="ask.html">Ask Stuart</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
@@ -27,7 +30,7 @@
 <div class="page-container">
     <div class="hero-intro">
         <div class="hero-title">FitzMaurice &amp; Falcke</div>
-        <h1>Edward Dixon's parents</h1>
+        <h1 id="edward-dixons-parents">Edward Dixon's parents</h1>
         <p class="lede">Edward Dixon FitzMaurice was born on 21 October 1872 and baptised at Ward End, Aston, on 19 June 1873. The baptism names his parents as Robert William and Fanny Mary Fitzmaurice, of Ward End. Fanny Mary's maiden name, on the birth index and on her marriage, is Falcke.</p>
     </div>
 
@@ -130,7 +133,7 @@
         <p>When he landed at Southampton on 15 October 1923 he gave 14 Waterloo Road, Whitstable as his address, and he sailed back to the Cape from the same address on 21 December. The incoming passenger lists from 1924 to June 1928 show no later voyage home for him, so how and when he finally came back to England before his death is not known. Edith came home in November 1925. When Eileen married in 1936, the paper remembered him as formerly of Cape Town.</p>
     </div>
 
-    <h2 class="section-header">John FitzMaurice and Eliza Taylor</h2>
+    <h2 class="section-header" id="john-fitzmaurice-and-eliza-taylor">John FitzMaurice and Eliza Taylor</h2>
     <div class="prose">
         <div class="record-grid">
         <figure class="record">
@@ -150,7 +153,7 @@
         <p>Eliza was of Birmingham. That is probably why their son Robert William later settled there. Her own birth and death have not been found.</p>
     </div>
 
-    <h2 class="section-header">Their three sons</h2>
+    <h2 class="section-header" id="their-three-sons">Their three sons</h2>
     <div class="prose">
         <div class="record-grid">
         <figure class="record">
@@ -175,7 +178,7 @@
         <p>William, the eldest, was born on 23 December 1827 and baptised the next day, Christmas Day, at St Mary's, Whitechapel. The family were then at Mansell Street, and John was a clerk. John Richard was baptised on 4 November 1829 at St Dunstan's, Stepney, entry 1006. The family were of Mile End Old Town, and John was a clerk in the Ordnance Office. The date is the baptism, not a recorded birth. Robert William, the youngest, was baptised on 30 September 1832 at the same church, entry 1537. John was then a clerk in the Tower. The date is the baptism. A family history that says he was born that day is copying the baptism.</p>
     </div>
 
-    <h2 class="section-header">A Carlow origin, likely but not proved</h2>
+    <h2 class="section-header" id="a-carlow-origin-likely-but-not-proved">A Carlow origin, likely but not proved</h2>
     <div class="prose">
         <figure class="record">
     <a class="record-link" href="images/records/1859-marriage-emma-frances.jpg">
@@ -188,7 +191,7 @@
 
     <h2 class="section-header" id="robert-william">Robert William FitzMaurice</h2>
     <div class="person">
-        <h3>Robert William FitzMaurice</h3>
+        <h3 id="robert-william-fitzmaurice">Robert William FitzMaurice</h3>
         <p class="meta">Baptised 30 September 1832, St Dunstan's, Stepney, entry 1537. Died 10 May 1895, 16 York Road, Edgbaston.</p>
         <p>On 2 October 1858, three years before their own wedding, Robert William and Fanny Mary both signed as witnesses when her sister Jane married John Peacock Turner at St Mary's, Battersea. On census night in April 1861 Robert William, 29 and unmarried, was a visitor in a lodging house in St Marylebone, described as an engineer and contractor. The birthplace written on his line is Norfolk. His baptism at Stepney and the 1871 and 1881 censuses all say London, and in a lodging house the householder usually answered for visitors, so London is the better reading.</p>
         <div class="record-grid">
@@ -250,7 +253,7 @@
 </figure>
     </div>
     <div class="person">
-        <h3>William Gottlob Falcke</h3>
+        <h3 id="william-gottlob-falcke">William Gottlob Falcke</h3>
         <p class="meta">Born abroad about 1793. Potter at Battersea. Buried 27 August 1849, St Mary's, Battersea, aged 56.</p>
         <div class="record-grid">
         <figure class="record">
@@ -311,7 +314,7 @@
 </div>
     </div>
     <div class="person">
-        <h3>Elizabeth Falcke</h3>
+        <h3 id="elizabeth-falcke">Elizabeth Falcke</h3>
         <p class="meta">Probably born at Harrow about 1796 or 1797. Recorded as Eliza Macfarlin in 1817.</p>
         <figure class="record">
     <a class="record-link" href="images/records/1851-falcke-household-battersea-bolingbroke-gardens.jpg">
@@ -322,7 +325,7 @@
         <p>In 1851 his widow Elizabeth, 54, born at Harrow, was working as a potter at Bolingbroke Gardens, Battersea, employing 3 men and 2 boys. Her death has not been tied to a certificate.</p>
     </div>
 
-    <h2 class="section-header">The children at Battersea in 1841</h2>
+    <h2 class="section-header" id="the-children-at-battersea-in-1841">The children at Battersea in 1841</h2>
     <div class="prose">
         <figure class="record">
     <a class="record-link" href="images/records/1841-falcke-household-battersea.jpg">
@@ -353,7 +356,7 @@
         </div>
     </div>
 
-<h2 class="section-header">Edward's brothers and sister</h2>
+<h2 class="section-header" id="edwards-brothers-and-sister">Edward's brothers and sister</h2>
     <div class="prose">
         <p>Six births name the mother as Falcke, in the King's Norton and Aston districts. They are probably Robert and Fanny's children.</p>
         <ul class="clean">
@@ -374,5 +377,6 @@ document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
 });
 </script>
+<script src="stuart.js" data-widget defer></script>
 </body>
 </html>

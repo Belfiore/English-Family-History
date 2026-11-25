@@ -468,6 +468,8 @@ body {
 .update-banner { margin: 0 0 1rem; padding: 0.75rem 1rem; background: #fdf3e7; border: 1px solid #e3d3c4; border-left: 4px solid #8B0000; color: #1a1a2e; font-family: 'EB Garamond', Georgia, serif; font-size: 1rem; line-height: 1.5; border-radius: 4px; }
 .update-banner a { color: #8B0000; font-weight: 600; }
 </style>
+<link rel="stylesheet" href="stuart.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 <body>
 
@@ -479,10 +481,11 @@ body {
  <a href="family-tree.html">Family Tree</a>
  <a href="map.html">Family Map</a>
  <a href="branches.html">Branches</a>
- <a href="family-crest.html" class="active">Family Crest</a>
+ <!-- Family Crest is switched off for now, so this page is not in the menu. Restore this link to bring it back: <a href="family-crest.html" class="active">Family Crest</a> -->
  <a href="ron-egypt.html">Ron in WWII</a>
  <a href="wedding.html">Wedding</a>
  <a href="sources.html">Sources</a>
+ <a href="ask.html">Ask Stuart</a>
  </div>
  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
  <span></span><span></span><span></span>
@@ -747,10 +750,16 @@ body {
  <div class="timeline-title">Cecil O'Bryen FitzMaurice , 8th Earl of Orkney</div>
  <div class="timeline-body">
  Among Pat's papers were two Evening News cuttings about Cecil FitzMaurice, who became the 8th Earl of Orkney in 1951 while serving as an Army driver in Korea, and who married at Brixham in 1953. Pat kept them, so the family followed his story and believed there was a connection. The records do not show that we descend from the Earls of Orkney. Our FitzMaurice line goes back to John FitzMaurice, a clerk in the Board of Ordnance at the Tower of London, who married Eliza Taylor at Birmingham in 1827. A published family history places John in a Carlow branch of the FitzMaurices of Kerry. If that is right, the Earls were very distant cousins, not ancestors. That link is likely but not yet proved.
- <figure class="record record-wait">
- <div class="record-slot">Pat's two Evening News cuttings will go here.</div>
- <figcaption>Placeholder. The two cuttings from Pat's papers are not on the site yet.</figcaption>
+ <div class="record-grid">
+ <figure class="record">
+ <a class="record-link" href="photos/korea-news-clipping.jpg"><img src="photos/korea-news-clipping.jpg" alt="Evening News cutting about Cecil FitzMaurice, the Earl from Korea"></a>
+ <figcaption>Evening News, 1951: Cecil FitzMaurice inherits the earldom while serving in Korea. From Pat's papers.</figcaption>
  </figure>
+ <figure class="record">
+ <a class="record-link" href="photos/orkney-marries-clipping.jpg"><img src="photos/orkney-marries-clipping.jpg" alt="Evening News cutting headed Earl of Orkney Marries"></a>
+ <figcaption>Evening News, November 1953: Earl of Orkney Marries. Cecil married Rose Silley at Brixham. From Pat's papers.</figcaption>
+ </figure>
+ </div>
  <div class="update-note"><strong>Update, November 2026:</strong> The 1890 London Gazette rules out Edward Dixon FitzMaurice as a son of Henry Warrender FitzMaurice. The Carlow account, if it is right, makes the Earls distant cousins, not ancestors, and it is likely but not proved.</div>
  </div>
  <div class="timeline-person">Cecil O'Bryen FitzMaurice, 8th &amp; last Earl of Orkney</div>
@@ -772,10 +781,16 @@ body {
  <p>Born in 1919, Cecil served as an R.A.S.C. driver through WWII , North Africa, Italy, France, and Germany , then was sent to Korea. While serving there, the 7th Earl died and Cecil unexpectedly inherited the title. The <em>Evening News</em> called him a "rags to riches Earl" , he had worked in a garage before the war. He inherited an estate of &pound;42,893 (approximately &pound;1.5 to 2 million today).</p>
  <p>He married Rose Silley at St Mary's Church, Brixham, Devon in November 1953. He died without issue in 1998 , and with him died the FitzMaurice Earldom of Orkney. The title passed to Oliver Peter St John as the 9th Earl, ending the FitzMaurice chapter of the arms entirely.</p>
  <p>Among Pat's papers were two Evening News cuttings about Cecil FitzMaurice, who became the 8th Earl of Orkney in 1951 while serving as an Army driver in Korea, and who married at Brixham in 1953. Pat kept them, so the family followed his story and believed there was a connection. The records do not show that we descend from the Earls of Orkney. Our FitzMaurice line goes back to John FitzMaurice, a clerk in the Board of Ordnance at the Tower of London, who married Eliza Taylor at Birmingham in 1827. A published family history places John in a Carlow branch of the FitzMaurices of Kerry. If that is right, the Earls were very distant cousins, not ancestors. That link is likely but not yet proved.</p>
- <figure class="record record-wait">
- <div class="record-slot">Pat's two Evening News cuttings will go here.</div>
- <figcaption>Placeholder. The two cuttings from Pat's papers are not on the site yet.</figcaption>
+ <div class="record-grid">
+ <figure class="record">
+ <a class="record-link" href="photos/korea-news-clipping.jpg"><img src="photos/korea-news-clipping.jpg" alt="Evening News cutting about Cecil FitzMaurice, the Earl from Korea"></a>
+ <figcaption>Evening News, 1951: Cecil FitzMaurice inherits the earldom while serving in Korea. From Pat's papers.</figcaption>
  </figure>
+ <figure class="record">
+ <a class="record-link" href="photos/orkney-marries-clipping.jpg"><img src="photos/orkney-marries-clipping.jpg" alt="Evening News cutting headed Earl of Orkney Marries"></a>
+ <figcaption>Evening News, November 1953: Earl of Orkney Marries. Cecil married Rose Silley at Brixham. From Pat's papers.</figcaption>
+ </figure>
+ </div>
  </div>
  </div>
 
@@ -814,5 +829,6 @@ if (navToggle) {
 </script>
 
 <script src="records.js"></script>
+<script src="stuart.js" data-widget defer></script>
 </body>
 </html>

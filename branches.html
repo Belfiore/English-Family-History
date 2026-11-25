@@ -6,6 +6,8 @@
     <title>Family branches | FitzMaurice &amp; Andrews</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="branch.css">
+    <link rel="stylesheet" href="stuart.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 <body>
 <nav class="main-nav">
@@ -16,10 +18,11 @@
             <a href="family-tree.html">Family Tree</a>
             <a href="map.html">Family Map</a>
             <a href="branches.html" class="active">Branches</a>
-            <a href="family-crest.html">Family Crest</a>
+            <!-- Family Crest is switched off for now. Restore this link to bring it back: <a href="family-crest.html">Family Crest</a> -->
             <a href="ron-egypt.html">Ron in WWII</a>
             <a href="wedding.html">Wedding</a>
             <a href="sources.html">Sources</a>
+            <a href="ask.html">Ask Stuart</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
@@ -27,7 +30,7 @@
 <div class="page-container">
     <div class="hero-intro">
         <div class="hero-title">FitzMaurice &amp; Andrews</div>
-        <h1>The family branches</h1>
+        <h1 id="the-family-branches">The family branches</h1>
         <p class="lede">These pages follow the lines that the records support: FitzMaurice and Falcke, Reg's brother and sisters, the Bennetts of Bodmin, the Andrews, Stacey and Walter families, and the Cousins family, including Auntie May. Words such as probably, about and likely mark a claim that the records point to, but that a certificate would still make firmer. <a href="sources.html">How the evidence is graded</a>.</p>
     </div>
     <div class="page-list">
@@ -62,12 +65,13 @@
             <span class="page-link-arrow">&rarr;</span>
         </a>
     </div>
-    <p class="note">Patricia Andrews, nee FitzMaurice, and Ronald Andrews have both died. Ronald died in 2010 (family). Pat died in 2020 (family). Pat and Ron are buried together in the churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire (family). Patricia was probably born in the Hammersmith district in early 1929, and the family remembers Windsor, which is not the registered birthplace. Their years are on the tree. Everyone else who may still be living is named with their relationship only. House numbers are left off. The coat of arms of the Earls of Orkney is on the <a href="family-crest.html">crest page</a>. The 1890 London Gazette rules out a descent from that family. A Carlow origin for John FitzMaurice, which would make the earls distant cousins rather than ancestors, is likely but not proved.</p>
+    <p class="note">Patricia Andrews, nee FitzMaurice, and Ronald Andrews have both died. Ronald died in 2010 (family). Pat died in 2020 (family). Pat and Ron are buried together in the churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire (family). Patricia was probably born in the Hammersmith district in early 1929, and the family remembers Windsor, which is not the registered birthplace. Their years are on the tree. Everyone else who may still be living is named with their relationship only. House numbers are left off. <!-- The coat of arms of the Earls of Orkney is on the <a href="family-crest.html">crest page</a>. --> The 1890 London Gazette rules out a descent from that family. A Carlow origin for John FitzMaurice, which would make the earls distant cousins rather than ancestors, is likely but not proved.</p>
 </div>
 <script>
 document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
 });
 </script>
+<script src="stuart.js" data-widget defer></script>
 </body>
 </html>

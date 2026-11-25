@@ -14,7 +14,11 @@
     function eventCard(e, opts) {
         opts = opts || {};
         var D = FM.DATA, pl = e.placeId ? D.places[e.placeId] : null;
-        var people = e.personIds.map(function (id) { var p = D.people[id]; return '<button type="button" class="chip" data-person="' + esc(id) + '">' + U().avatar(p, 'av--xs') + esc(p.displayName) + '</button>'; }).join('');
+        // each person with how they are related to Pat or Ron, when that is close ("Reg FitzMaurice, Pat's father")
+        var people = e.personIds.map(function (id) {
+            var p = D.people[id], k = FM.data.kinOf(id, D.people);
+            return '<button type="button" class="chip" data-person="' + esc(id) + '">' + U().avatar(p, 'av--xs') + '<span>' + esc(p.displayName) + (k ? '<span class="chip-rel">, ' + esc(k.label) + '</span>' : '') + '</span></button>';
+        }).join('');
         var media = '';
         var img = pl && (pl.images || [])[0];
         if (e.recordCrops && e.recordCrops.length) media = '<a class="record-link ec-media" href="images/records/' + esc(e.recordCrops[0]) + '"><img src="images/records/' + esc(e.recordCrops[0]) + '" alt="' + esc(e.summary) + '" loading="lazy"></a>';
@@ -33,7 +37,7 @@
             '<p class="ec-top"><span class="ec-gl">' + glyph(e.type) + '</span><span class="ec-type">' + esc(FM.data.TYPE_LABEL[e.type]) + '</span><span class="ec-date">' + esc(U().dateLabel(e)) + '</span></p>' +
             (e.noProvenLink ? '<p class="ec-npl"><span class="badge badge--npl">No proven link to this family</span></p>' : '') +
             '<p class="ec-where">' + where + '</p>' + voyage +
-            '<p class="ec-text">' + esc(e.summary) + (e.familyStatement && !/\(family/.test(e.summary) ? ' (family)' : '') + ' <span class="badge ' + U().confClass(conf) + '">' + esc(U().confLabel(conf)) + '</span></p>' +
+            '<p class="ec-text">' + esc(e.summary) + (e.familyStatement && !/\(family/.test(e.summary) ? ' (family)' : '') + '</p>' +
             (people ? '<div class="ec-people">' + people + '</div>' : '') + media +
             (opts.noActions ? '' : '<div class="ec-actions">' + (pl ? '<button type="button" class="fm-btn fm-btn--sm" data-open-place="' + esc(pl.id) + '">Open place</button>' : '') +
                 (pl && pl.streetView ? FM.sv.button(pl, { small: true }) : (pl && pl.streetViewReason && /coverage/i.test(pl.streetViewReason) ? '<span class="ec-nosv">' + esc(pl.streetViewReason) + '</span>' : '')) +

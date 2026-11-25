@@ -546,7 +546,16 @@ body {
 .gmap-actions { display: flex; flex-direction: column; align-items: stretch; gap: 0.7rem; }
 .gmap-actions .gmap-note { margin: 0.1rem 0 0; font-size: 0.95rem; font-style: italic; color: rgba(255, 255, 255, 0.7); text-align: center; }
 
-.home-clues { margin-top: 1rem; }
+/* the Ask Stuart section */
+.visually-hidden { position: absolute !important; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.home-ask { margin: 3.6rem auto 0; max-width: 860px; padding: 1.6rem 1.8rem 1.4rem; border: 1px solid var(--border); border-left: 4px solid var(--burgundy); border-radius: 4px; background: #fff; }
+.home-ask h2 { font-family: var(--font-display); font-weight: 600; font-size: 1.45rem; margin-bottom: 0.4rem; }
+.home-ask-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 0.6rem 1.2rem; margin-top: 1rem; }
+.home-ask-full { color: var(--burgundy); text-underline-offset: 3px; }
+.home-ask-text p { font-size: 1.1rem; line-height: 1.65; color: var(--ink-light); max-width: 62ch; }
+.home-ask-try { margin-top: 0.8rem; font-size: 1rem; color: var(--sepia); }
+.home-ask-try a { color: var(--burgundy); margin-right: 0.9rem; text-underline-offset: 3px; display: inline-block; }
+@media (max-width: 560px) { .home-clues { margin-top: 1rem; }
 /* the clue cards: a compact grid of thumbnails beside the text */
 .home-clues .clue-grid { max-width: 980px; margin-left: auto; margin-right: auto; }
 .home-clues .clue-card { grid-template-columns: 240px 1fr; }
@@ -586,6 +595,8 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  .hero-surname { font-size: 1.7rem; }
 }
 </style>
+    <link rel="stylesheet" href="stuart.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 <body>
 
@@ -601,6 +612,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <a href="ron-egypt.html">Ron in WWII</a>
  <a href="wedding.html">Wedding</a>
  <a href="sources.html">Sources</a>
+ <a href="ask.html">Ask Stuart</a>
  </div>
  <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
  <span></span><span></span><span></span>
@@ -620,7 +632,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  </figure>
  <p class="hero-side hero-side--r"><span class="hero-surname">FitzMaurice</span><span class="hero-who">Grandma Pat&rsquo;s family</span></p>
  </div>
- <h1>Grandma Pat and Grandpa Ron, and the families they came from</h1>
+ <h1 id="grandma-pat-and-grandpa-ron-and-the-families-they-came-from">Grandma Pat and Grandpa Ron, and the families they came from</h1>
  <p class="hero-dek">This site follows both families back from the photographs they kept to the records behind them: where they lived, what they did, and how everyone is connected.</p>
  <div class="hero-actions">
  <a class="btn btn--solid" href="family-tree.html">Explore the family tree</a>
@@ -683,13 +695,13 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <div class="tour-big">
  <article class="tour">
  <div class="tour-img"><img src="photos/home/tree.jpg" width="1184" height="740" loading="lazy" alt="The family tree, with Grandpa Ron&rsquo;s family on the left of a dashed line and Grandma Pat&rsquo;s on the right"></div>
- <h3><a href="family-tree.html">The family tree</a></h3>
+ <h3 id="the-family-tree"><a href="family-tree.html">The family tree</a></h3>
  <p>Everyone we have found, from the early 1800s to the youngest great-grandchildren, with Ron&rsquo;s family on the left and Pat&rsquo;s on the right. Select anyone to read their story and see their records, or drag the dot on a card onto another person to find out how you are related.</p>
  <span class="tour-go" aria-hidden="true">Explore the family tree</span>
  </article>
  <article class="tour">
  <div class="tour-img"><img src="photos/home/map.jpg" width="1184" height="740" loading="lazy" alt="The family map of southern England, with pins for the places in the family&rsquo;s story"></div>
- <h3><a href="map.html">The family map</a></h3>
+ <h3 id="the-family-map"><a href="map.html">The family map</a></h3>
  <p>The places where the family were born, lived, married, worked and were buried, from Bodmin to Plaistow and on to Cape Town and Egypt. Follow one person through their life, play the timeline, swipe between today&rsquo;s streets and the old Ordnance Survey maps, and look at the houses in Street View.</p>
  <span class="tour-go" aria-hidden="true">Open the family map</span>
  </article>
@@ -698,28 +710,28 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <article class="tour tour--s">
  <div class="tour-img"><img src="photos/home/branches.jpg" width="900" height="675" loading="lazy" alt="The Andrews family sitting on the grass in front of a striped awning, about the 1930s"></div>
  <div class="tour-text">
- <h3><a href="branches.html">The branches</a></h3>
+ <h3 id="the-branches"><a href="branches.html">The branches</a></h3>
  <p>A page for each line of the family, from the FitzMaurices and Falckes to the Andrews, Stacey and Cousins families, with the records behind every story.</p>
  </div>
  </article>
  <article class="tour tour--s">
  <div class="tour-img"><img src="photos/home/ron-wwii.jpg" width="900" height="675" loading="lazy" alt="Ron at work on an aircraft engine in an RAF workshop, in a colourised photograph"></div>
  <div class="tour-text">
- <h3><a href="ron-egypt.html">Ron in WWII</a></h3>
+ <h3 id="ron-in-wwii"><a href="ron-egypt.html">Ron in WWII</a></h3>
  <p>Ron&rsquo;s wartime album from Egypt: the RAF workshops in the caves at Tura, the Tura Times he drew for, and Cairo.</p>
  </div>
  </article>
  <article class="tour tour--s">
  <div class="tour-img tour-img--album"><img src="photos/home/wedding.jpg" width="900" height="556" loading="lazy" alt="The cover of Pat and Ron&rsquo;s wedding album, labelled Ronald and Patricia, with its handwritten first page"></div>
  <div class="tour-text">
- <h3><a href="wedding.html">The wedding</a></h3>
+ <h3 id="the-wedding"><a href="wedding.html">The wedding</a></h3>
  <p>Pat and Ron&rsquo;s wedding album from 11 February 1950, page by page, with the guests named.</p>
  </div>
  </article>
  <article class="tour tour--s">
  <div class="tour-img"><img src="photos/home/sources.jpg" width="655" height="470" loading="lazy" alt="The 1841 census page for the Falcke household at Battersea"></div>
  <div class="tour-text">
- <h3><a href="sources.html">Sources</a></h3>
+ <h3 id="sources"><a href="sources.html">Sources</a></h3>
  <p>Every record behind the site, from census pages and parish registers to probate and army files, with links to the originals and how each claim is worded.</p>
  </div>
  </article>
@@ -727,12 +739,22 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <article class="tour tour--s">
  <div class="tour-img"><img src="photos/heraldry/7th_earl_crest.png" loading="lazy" alt="Crest of the 7th Earl of Orkney"></div>
  <div class="tour-text">
- <h3><a href="family-crest.html">The family crest</a></h3>
+ <h3 id="the-family-crest"><a href="family-crest.html">The family crest</a></h3>
  <p>The arms of the Earls of Orkney. No proven link to this family.</p>
  </div>
  </article>
  -->
  </div>
+ </section>
+
+ <!-- ===== ASK THE ARCHIVE ===== -->
+ <section class="home-ask" aria-labelledby="h-ask">
+ <div class="home-ask-text">
+ <h2 id="h-ask">Ask Stuart</h2>
+ <p>Stuart is the family archivist. Tell him who you are, then ask about anyone on the tree in your own words: how you are related to them, where they lived, what they did. He answers from the records on this site and shows you where each fact comes from.</p>
+ </div>
+ <p class="home-ask-actions"><a href="ask.html" class="btn btn--solid" data-stuart-open>Ask Stuart</a> <a href="ask.html" class="home-ask-full">Open Stuart on a full page</a></p>
+ <p class="home-ask-try">Or try: <a href="ask.html?q=Which%20family%20members%20went%20to%20South%20Africa%3F" data-stuart-open data-stuart-ask="Which family members went to South Africa?">Which family members went to South Africa?</a> <a href="ask.html?q=What%20did%20Grandpa%20Ron%20do%20in%20the%20war%3F" data-stuart-open data-stuart-ask="What did Grandpa Ron do in the war?">What did Grandpa Ron do in the war?</a> <a href="ask.html?q=Who%20were%20Reg%20FitzMaurice%27s%20grandparents%3F" data-stuart-open data-stuart-ask="Who were Reg FitzMaurice's grandparents?">Who were Reg FitzMaurice's grandparents?</a></p>
  </section>
 
  <!-- ===== GOOGLE MY MAPS ===== -->
@@ -765,7 +787,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/cdv-perriman-back-held.jpg" alt="Back of carte de visite held in hand" data-gallery="clues" data-caption="Reverse of carte de visite held in hand: J. Perriman, Camden Town">
  </div>
  <div class="clue-text">
- <h3>Camden Town, c. 1865</h3>
+ <h3 id="camden-town-c-1865">Camden Town, c. 1865</h3>
  <p>The earliest photograph in the collection was taken at J. Perriman's studio near the Mother Red Cap pub in Camden Town. Neither sitter is named. The card does not show where the family came from. Edward Dixon's parents married at Battersea, and their children were born in Birmingham. The reverse reads: 'Camden Town School of Photography, Commission No. 925.'</p>
  </div>
  </div>
@@ -777,7 +799,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/edith-medallion-held-garden.jpg" alt="Edith medallion held in garden" data-gallery="clues" data-caption="Edith Madeleine FitzMaurice medallion held in garden">
  </div>
  <div class="clue-text">
- <h3>Edith Madeleine FitzMaurice, c. 1899</h3>
+ <h3 id="edith-madeleine-fitzmaurice-c-1899">Edith Madeleine FitzMaurice, c. 1899</h3>
  <p>A circular medallion portrait inscribed on the reverse 'Edith Madeleine Fitzmaurice c.1899.' She was Reg's mother, Edith Madeline Spencer, not his sister. She was probably born about 1866 to 1869 in Islington, married Edward Dixon FitzMaurice at St Matthew's, Brixton, on 2 August 1897, and probably died in the Bridge district of Kent in early 1929, aged 61. Her age is not the same in every record. <a href="reg-sisters.html">Her children</a>.</p>
  </div>
  </div>
@@ -788,7 +810,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/stuart-brothers-studio.jpg" alt="Stuart Brothers photographic studio, 47 to 49 Brompton Road, Knightsbridge" data-gallery="clues" data-caption="Stuart Brothers photographic studio, 47 to 49 Brompton Road, Knightsbridge, where Edward Dixon sat for his portrait. One of the leading studios in late-Victorian London.">
  </div>
  <div class="clue-text">
- <h3>Edward Dixon in Knightsbridge</h3>
+ <h3 id="edward-dixon-in-knightsbridge">Edward Dixon in Knightsbridge</h3>
  <figure class="record">
  <a class="record-link" href="images/records/1873-baptism-edward-dixon.jpg">
  <img src="images/records/1873-baptism-edward-dixon.jpg" alt="Baptism of Edward Dixon Fitzmaurice at Ward End, Aston, 19 June 1873, born 21 October 1872">
@@ -804,7 +826,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/lang-sims-woman.jpg" alt="Unidentified woman, Lang Sims studio, Brixton Road" data-gallery="clues" data-caption="Unidentified woman: Lang Sims studio, 437 Brixton Road SW and 9 Church Street, Folkestone">
  </div>
  <div class="clue-text">
- <h3>Probably Edith, Brixton</h3>
+ <h3 id="probably-edith-brixton">Probably Edith, Brixton</h3>
  <p>The same young woman, in the same jewelled headband, pearl necklace and flowered costume, appears on the medallion inscribed Edith Madeleine Fitzmaurice c.1899. The Lang Sims studio was on Brixton Road, close to St Matthew's, Brixton, where Edith married Edward Dixon in 1897. The costume looks theatrical. Edward gave his occupation as professional singer at the wedding.</p>
  </div>
  </div>
@@ -814,7 +836,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/reg-fitzmaurice-portrait.jpg" alt="Reg FitzMaurice, formal portrait" data-gallery="clues" data-caption="Reg FitzMaurice, Patricia's father, c. 1910 to 1920">
  </div>
  <div class="clue-text">
- <h3>A young man in a bow tie</h3>
+ <h3 id="a-young-man-in-a-bow-tie">A young man in a bow tie</h3>
  <p>This portrait has no name on it. It is not identified as Reg. Reg himself was Baron Reginald FitzMaurice. Baron is a forename, not a title. He was probably born on 26 May 1904 in the Wandsworth district, probably married Lilian Maud Mary Bennett in late 1927, and died on 31 March 1977. The probate calendar places him at Hayes.</p>
  </div>
  </div>
@@ -825,7 +847,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/photo-backs-labeled.jpg" alt="Photo reverses with handwritten labels" data-gallery="clues" data-caption="Photo reverses: 'Reg, Bob and their Father Edward Dixon Fitzmaurice' and 'Auntie Babs, South Africa'">
  </div>
  <div class="clue-text">
- <h3>Reg, Bob and their father</h3>
+ <h3 id="reg-bob-and-their-father">Reg, Bob and their father</h3>
  <p>The reverses of two photographs confirm key family identities. One reads 'Reg, Bob and their Father Edward Dixon Fitzmaurice.' The other reads 'Auntie Babs, South Africa.' The 1911 census bears out what the label says: Reg and Bob were Edward Dixon's sons. The beach snapshot was probably taken about 1908 to 1910 on the Kent coast, when the family lived near Whitstable. Bob would have been about 7 and Reg about 4. Reg made a short trip to Canada early in 1925: see <a href="reg-sisters.html#reg">Reg's page</a>.</p>
  <p>Two unlabelled snapshots, a house with a verandah and a young man in a dark suit, may date from the family's South African years, about 1916 to 1925, but nothing on them says so.</p>
  </div>
@@ -837,7 +859,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/photo-backs-labeled.jpg" alt="Photo backs reading Auntie Babs, South Africa, and Reg, Bob and their father" data-gallery="clues" data-caption="Photo backs: Auntie Babs, South Africa, and Reg, Bob and their Father Edward Dixon Fitzmaurice">
  </div>
  <div class="clue-text">
- <h3>Auntie Babs, the girl in South Africa</h3>
+ <h3 id="auntie-babs-the-girl-in-south-africa">Auntie Babs, the girl in South Africa</h3>
  <p>A snapshot of a girl on a verandah is labelled on the back in pencil: Auntie Babs, South Africa. The letters Eil are scratched into the front. The family confirms she was Eileen Sybil FitzMaurice, Reg's younger sister, born in Kent in late 1907. In March 1916 her father, Edward Dixon, an engineer, sailed for South Africa to make a new life there, and that August a Mrs FitzMaurice of 43 followed with two boys of 15 and 12 and a girl of 8, the ages of Edith, Bob, Reg and Eileen. When Eileen married Leslie Hugh Simmons at Staines in the summer of 1936, the local paper called her the daughter of the late Mr Edward Dixon Fitzmaurice, formerly of Cape Town. Fourteen years later Auntie Babs and Uncle Leslie stood side by side on the steps at Pat and Ron's wedding. Babs lived with Reg and Lilian in the early 1930s: see <a href="reg-sisters.html#eileen">Eileen's entry</a>.</p>
  </div>
  </div>
@@ -848,7 +870,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/orkney-marries-clipping.jpg" alt="Evening News cutting headed Earl of Orkney Marries" data-gallery="clues" data-caption="Evening News, November 1953: Earl of Orkney Marries. Cecil married Rose Silley at St Mary's, Brixham, Devon. From Pat's papers.">
  </div>
  <div class="clue-text">
- <h3>The Korean War Earl</h3>
+ <h3 id="the-korean-war-earl">The Korean War Earl</h3>
  <p>Among Pat's papers were two Evening News cuttings about Cecil FitzMaurice. The first says that he became the 8th Earl of Orkney in August 1951 while he was serving as an Army driver in Korea, that he was set to scrub the mess decks on the voyage home after returning late to the ship at Colombo, and that he was left the residue of a &pound;42,893 estate. The second reports his marriage to Rose Silley at Brixham in November 1953. Pat kept both, and the family believed there was a connection.</p>
  <p>The records do not show that we descend from the Earls of Orkney: the London Gazette of 23 April 1890 rules that out. Cecil may still be a relative somewhere on Pat's side, so he stays on the <a href="family-tree.html#/person/cecil-8th">family tree</a> beside her as a suspected relative, with no proven link. Our FitzMaurice line goes back to John FitzMaurice, a clerk in the Board of Ordnance at the Tower of London, who married Eliza Taylor at Birmingham in 1827. A published family history places John in a Carlow branch of the FitzMaurices of Kerry. If that is right, the Earls were distant cousins. That link is likely but not yet proved.</p>
  </div>
@@ -860,7 +882,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <button class="color-toggle-btn" id="colorToggleBtn" onclick="toggleAndrewsColor()">Show in Colour</button>
  </div>
  <div class="clue-text">
- <h3>The Andrews Family, c. 1930s</h3>
+ <h3 id="the-andrews-family-c-1930s">The Andrews Family, c. 1930s</h3>
  <p>The photograph has no label, so the names come from family memory, and the caption names the father twice. The records name the parents as Henry George Andrews and Rosina Maud Cousins, and the younger son as Sidney George. All three were killed at their home in Plaistow on 19 April 1941. The album's East Ham is the next borough. Herbert William, the elder brother, was born in 1916. <a href="andrews-roots.html">The Andrews line</a> and <a href="cousins.html">the Cousins line</a>.</p>
  <p class="update-note"><strong>Update, November 2026:</strong> The photograph has no label, so these names come from family memory. The caption names the father twice, once in each row; only one of those can be right.</p>
  </div>
@@ -871,7 +893,7 @@ details.whats-new[open] summary { margin-bottom: 0.2rem; }
  <img src="photos/IMG_8854.jpeg" alt="The photo collection spread" data-gallery="clues" data-caption="The wider collection of photographs and cabinet cards laid out together">
  </div>
  <div class="clue-text">
- <h3>The Photo Collection Spread</h3>
+ <h3 id="the-photo-collection-spread">The Photo Collection Spread</h3>
  <p>The wider collection of photographs and cabinet cards laid out together. Additional postcards, unidentified portraits, and snapshots from across the family's history, many still waiting to be identified.</p>
  </div>
  </div>
@@ -1033,5 +1055,6 @@ function toggleAndrewsColor() {
 </script>
 
 <script src="records.js"></script>
+<script src="stuart.js" data-widget defer></script>
 </body>
 </html>

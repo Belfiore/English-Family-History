@@ -6,6 +6,8 @@
     <title>The Cousins family and Auntie May | Family history</title>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=EB+Garamond:ital,wght@0,400;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="branch.css">
+    <link rel="stylesheet" href="stuart.css">
+<link rel="stylesheet" href="nav.css">
 </head>
 <body>
 <nav class="main-nav">
@@ -20,6 +22,7 @@
             <a href="ron-egypt.html">Ron in WWII</a>
             <a href="wedding.html">Wedding</a>
             <a href="sources.html">Sources</a>
+            <a href="ask.html">Ask Stuart</a>
         </div>
         <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
     </div>
@@ -27,7 +30,7 @@
 <div class="page-container">
     <div class="hero-intro">
         <div class="hero-title">London docks</div>
-        <h1>Cousins, Gall, and Auntie May</h1>
+        <h1 id="cousins-gall-and-auntie-may">Cousins, Gall, and Auntie May</h1>
         <p class="lede">Rosina Maud Andrews was born Rosina Maud Cousins, at Bermondsey, on 14 November 1881. Her mother was Annie Cousins, nee Gall. Her younger sister May Florence Cousins was Auntie May.</p>
     </div>
 
@@ -117,9 +120,9 @@
         </ul>
     </div>
 
-    <h2 class="section-header">Auntie May</h2>
+    <h2 class="section-header" id="auntie-may">Auntie May</h2>
     <div class="person">
-        <h3>May Florence Cousins</h3>
+        <h3 id="may-florence-cousins">May Florence Cousins</h3>
 <div class="record-grid">
 <figure class="record">
     <a class="record-link" href="images/records/1921-may-cousins-ward-maid-east-ham-isolation-hospital.jpg">
@@ -159,5 +162,6 @@ document.getElementById('navToggle').addEventListener('click', function () {
     document.getElementById('navLinks').classList.toggle('open');
 });
 </script>
+<script src="stuart.js" data-widget defer></script>
 </body>
 </html>

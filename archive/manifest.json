@@ -1,0 +1,13 @@
+{
+ "schema": 1,
+ "kb": "kb-cb19ef32b265.json",
+ "hash": "cb19ef32b265",
+ "counts": {
+  "people": 95,
+  "living": 19,
+  "sections": 120,
+  "photos": 165,
+  "places": 120,
+  "sources": 102
+ }
+}

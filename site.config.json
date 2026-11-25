@@ -534,7 +534,15 @@
     "familyNames": [
       "fitzmaurices",
       "andrews"
-    ]
+    ],
+    "synonyms": {
+      "earl": [
+        "orkney"
+      ],
+      "newspaper": [
+        "evening news"
+      ]
+    }
   },
   "widget": {
     "enabled": true

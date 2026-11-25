@@ -33,7 +33,7 @@ concurrency:
 
 jobs:
   site:
-    uses: Belfiore/family-site-engine/.github/workflows/build-site.yml@v1.0.0
+    uses: Belfiore/family-site-engine/.github/workflows/build-site.yml@v1.0.1
     with:
       engine-version: ${{ inputs.engine-version || '' }}
       site-tests: |

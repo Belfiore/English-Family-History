@@ -1,9 +1,7 @@
 {
  "meta": {
+  "schemaVersion": 1,
   "title": "FitzMaurice & Andrews family",
-  "familyLabel": "FitzMaurice & Andrews family",
-  "rootPersonId": "sebastian-belfiore",
-  "directLineLabel": "Sebastian's direct line",
   "updated": "2026-11-23",
   "confidenceScale": [
    "confirmed",
@@ -11,167 +9,7 @@
    "family tradition",
    "unverified"
   ],
-  "generations": [
-   {
-    "generation": 0,
-    "label": "I",
-    "title": "Royal Stewarts",
-    "range": "c. 1430 to 1460"
-   },
-   {
-    "generation": 1,
-    "label": "II",
-    "title": "Mary Stewart",
-    "range": "c. 1453 to 1488"
-   },
-   {
-    "generation": 2,
-    "label": "III",
-    "title": "Hamiltons, Earls of Arran",
-    "range": "c. 1475 to 1529"
-   },
-   {
-    "generation": 3,
-    "label": "IV",
-    "title": "Hamiltons",
-    "range": "c. 1516 to 1575"
-   },
-   {
-    "generation": 4,
-    "label": "V",
-    "title": "Marquesses of Hamilton",
-    "range": "c. 1540 to 1604"
-   },
-   {
-    "generation": 5,
-    "label": "VI",
-    "title": "Marquesses of Hamilton",
-    "range": "1589 to 1625"
-   },
-   {
-    "generation": 6,
-    "label": "VII",
-    "title": "Dukes of Hamilton",
-    "range": "1606 to 1649"
-   },
-   {
-    "generation": 7,
-    "label": "VIII",
-    "title": "Duchess Anne",
-    "range": "1632 to 1716"
-   },
-   {
-    "generation": 8,
-    "label": "IX",
-    "title": "First Earl of Orkney",
-    "range": "1666 to 1737"
-   },
-   {
-    "generation": 9,
-    "label": "X",
-    "title": "Countesses of Orkney",
-    "range": "born 1690s to 1700s"
-   },
-   {
-    "generation": 10,
-    "label": "XI",
-    "title": "Countesses of Orkney",
-    "range": "born 1700s to 1720s"
-   },
-   {
-    "generation": 11,
-    "label": "XII",
-    "title": "O'Brien and FitzMaurice",
-    "range": "born 1730s to 1750s"
-   },
-   {
-    "generation": 12,
-    "label": "XIII",
-    "title": "Viscount Kirkwall",
-    "range": "1778 to 1820"
-   },
-   {
-    "generation": 13,
-    "label": "XIV",
-    "title": "Early nineteenth century",
-    "range": "about 1790 to 1845"
-   },
-   {
-    "generation": 14,
-    "label": "XV",
-    "title": "Victorian parents",
-    "range": "about 1830 to 1865"
-   },
-   {
-    "generation": 15,
-    "label": "XVI",
-    "title": "Late Victorians",
-    "range": "about 1860 to 1890"
-   },
-   {
-    "generation": 16,
-    "label": "XVII",
-    "title": "Edwardian generation",
-    "range": "about 1880 to 1910"
-   },
-   {
-    "generation": 17,
-    "label": "XVIII",
-    "title": "Pat and Ron",
-    "range": "born about 1915 to 1930"
-   },
-   {
-    "generation": 18,
-    "label": "XIX",
-    "title": "Amanda and Venetia",
-    "range": null
-   },
-   {
-    "generation": 19,
-    "label": "XX",
-    "title": "Sebastian's generation",
-    "range": null
-   },
-   {
-    "generation": 20,
-    "label": "XXI",
-    "title": "The newest generation",
-    "range": null
-   }
-  ],
-  "rootOrder": [
-   "john-fitzmaurice",
-   "william-gottlob-falcke",
-   "henry-stacey-elder",
-   "robert-walter",
-   "elizabeth-field",
-   "george-andrews",
-   "william-cousins-elder",
-   "john-gall",
-   "charles-bennett",
-   "charles-spencer",
-   "james-ii",
-   "john-petty-shelburne"
-  ],
-  "kinAnchor": "edward-dixon-fitzmaurice",
-  "kinLabel": "FitzMaurice kin · relationship unproven",
-  "regions": [
-   {
-    "id": "orkney",
-    "label": "The Hamiltons and the Earls of Orkney",
-    "sub": "No proven link to this family"
-   }
-  ],
-  "regionKicker": "Earls of Orkney (link unproven)",
-  "initialView": {
-   "ids": [
-    "patricia-andrews",
-    "sebastian-belfiore"
-   ],
-   "fromGen": 16,
-   "toGen": 19
-  },
-  "note": "Living people are shown with names and relationships only. Probable claims are worded with probably, about or likely. Sources are in sources.json."
+  "note": "Probable claims are worded with probably, about or likely. Sources are in sources.json."
  },
  "people": [
   {
@@ -3041,7 +2879,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Daughter of Ronald and Patricia Andrews, wife of Robert Belfiore, and mother of Sebastian and Alex.",
-   "story": "Amanda is the daughter of Ronald and Patricia Andrews. She married Robert Belfiore, and they are the parents of Sebastian and Alex.[^family-account] Her answers about Reg, Bob and Babs are the basis for that part of the tree.[^family-account]\n\nThis profile shows only names and relationships because Amanda is living.",
+   "story": "Amanda is the daughter of Ronald and Patricia Andrews. She married Robert Belfiore, and they are the parents of Sebastian and Alex.[^family-account] Her answers about Reg, Bob and Babs are the basis for that part of the tree.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3095,7 +2933,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Husband of Amanda and father of Sebastian and Alex. His Italian family is on the Belfiore family site.",
-   "story": "Robert is married to Amanda, and they are the parents of Sebastian and Alex.[^family-account] His own family, the Belfiores, are not mapped on this site.[^site-earlier]\n\nThis profile shows only names and relationships because Robert is living.",
+   "story": "Robert is married to Amanda, and they are the parents of Sebastian and Alex.[^family-account] His own family, the Belfiores, are not mapped on this site.[^site-earlier]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3154,7 +2992,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Daughter of Ronald and Patricia Andrews, wife of Gary Austin, and mother of Max and Ben.",
-   "story": "Venetia is the daughter of Ronald and Patricia Andrews and Amanda's sister. She married Gary Austin, and they have two sons, Max and Ben.[^family-account]\n\nThis profile shows only names and relationships because Venetia is living.",
+   "story": "Venetia is the daughter of Ronald and Patricia Andrews and Amanda's sister. She married Gary Austin, and they have two sons, Max and Ben.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3208,7 +3046,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Husband of Venetia and father of Max and Ben.",
-   "story": "Gary is married to Venetia, and they are the parents of Max and Ben.[^family-account]\n\nThis profile shows only names and relationships because Gary is living.",
+   "story": "Gary is married to Venetia, and they are the parents of Max and Ben.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3266,7 +3104,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of Amanda and Robert Belfiore, husband of Valeria and father of Enzo. He photographed the collection that this site is built on.",
-   "story": "Sebastian is the son of Amanda and Robert Belfiore and Alex's brother. He is married to Valeria, and they are the parents of Enzo.[^family-account] He photographed the collection after his grandmother's service and built this site from it.[^site-earlier]\n\nThis profile shows only names and relationships because Sebastian is living.",
+   "story": "Sebastian is the son of Amanda and Robert Belfiore and Alex's brother. He is married to Valeria, and they are the parents of Enzo.[^family-account] He photographed the collection after his grandmother's service and built this site from it.[^site-earlier]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3319,7 +3157,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Wife of Sebastian and mother of Enzo.",
-   "story": "Valeria is married to Sebastian, and they are the parents of Enzo.[^family-account]\n\nThis profile shows only names and relationships because Valeria is living.",
+   "story": "Valeria is married to Sebastian, and they are the parents of Enzo.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3369,7 +3207,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of Amanda and Robert Belfiore, husband of Lauren and father of Violet.",
-   "story": "Alex is the son of Amanda and Robert Belfiore and Sebastian's brother. He is married to Lauren, and they are the parents of Violet.[^family-account]\n\nThis profile shows only names and relationships because Alex is living.",
+   "story": "Alex is the son of Amanda and Robert Belfiore and Sebastian's brother. He is married to Lauren, and they are the parents of Violet.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3422,7 +3260,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Wife of Alex and mother of Violet.",
-   "story": "Lauren is married to Alex, and they are the parents of Violet.[^family-account]\n\nThis profile shows only names and relationships because Lauren is living.",
+   "story": "Lauren is married to Alex, and they are the parents of Violet.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3472,7 +3310,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of Venetia and Gary Austin; Lizzie Eley is his partner.",
-   "story": "Max is the son of Venetia and Gary Austin and Ben's brother. His partner is Lizzie Eley.[^family-account]\n\nThis profile shows only names and relationships because Max is living.",
+   "story": "Max is the son of Venetia and Gary Austin and Ben's brother. His partner is Lizzie Eley.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3524,7 +3362,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Max Austin's partner.",
-   "story": "Lizzie is Max Austin's partner.[^family-account]\n\nThis profile shows only names and relationships because Lizzie is living.",
+   "story": "Lizzie is Max Austin's partner.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3573,7 +3411,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of Venetia and Gary Austin; Mollie Wells is his partner.",
-   "story": "Ben is the son of Venetia and Gary Austin and Max's brother. His partner is Mollie Wells.[^family-account]\n\nThis profile shows only names and relationships because Ben is living.",
+   "story": "Ben is the son of Venetia and Gary Austin and Max's brother. His partner is Mollie Wells.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3625,7 +3463,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Ben Austin's partner.",
-   "story": "Mollie is Ben Austin's partner.[^family-account]\n\nThis profile shows only names and relationships because Mollie is living.",
+   "story": "Mollie is Ben Austin's partner.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3674,7 +3512,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Son of Sebastian and Valeria Belfiore.",
-   "story": "Enzo is the son of Sebastian and Valeria Belfiore.[^family-account]\n\nThis profile shows only names and relationships because Enzo is living.",
+   "story": "Enzo is the son of Sebastian and Valeria Belfiore.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -3712,7 +3550,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Daughter of Alex and Lauren Belfiore.",
-   "story": "Violet is the daughter of Alex and Lauren Belfiore.[^family-account]\n\nThis profile shows only names and relationships because Violet is living.",
+   "story": "Violet is the daughter of Alex and Lauren Belfiore.[^family-account]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -12907,7 +12745,9 @@
    ],
    "parents": [],
    "children": [
-    "edward-scott-fitzmaurice"
+    "edward-scott-fitzmaurice",
+    "lawrence-john-fitzmaurice",
+    "derek-anthony-fitzmaurice"
    ],
    "spouses": [
     {
@@ -13022,7 +12862,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Lawrence John FitzMaurice is a son of Edward Robert FitzMaurice, called Bob, and Eileen Alice Yallop.",
-   "story": "Lawrence John FitzMaurice is a son of Edward Robert FitzMaurice, called Bob, and Eileen Alice Yallop. He may be living, so this profile gives his name and relationship only.",
+   "story": "Lawrence John FitzMaurice is a son of Edward Robert FitzMaurice, called Bob, and Eileen Alice Yallop.",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -13071,7 +12911,7 @@
    "immigration": null,
    "cardPlace": null,
    "summary": "Derek Anthony FitzMaurice is a son of Edward Robert FitzMaurice, called Bob, and Eileen Alice Yallop.",
-   "story": "Derek Anthony FitzMaurice is a son of Edward Robert FitzMaurice, called Bob, and Eileen Alice Yallop. He may be living, so this profile gives his name and relationship only.",
+   "story": "Derek Anthony FitzMaurice is a son of Edward Robert FitzMaurice, called Bob, and Eileen Alice Yallop.",
    "timeline": [],
    "facts": [],
    "media": [],

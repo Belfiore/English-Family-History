@@ -4,7 +4,7 @@
  *   SHOTS=1 node tests/verify-archive.js   also writes screenshots to tests/screenshots/ask-*.png
  *   QUICK=1 node tests/verify-archive.js   the Node checks only (no browser)
  *
- * Part 1, in Node: the archive index is up to date and keeps living people private; the genealogy engine on
+ * Run against the built site (see tests/site-paths.js). Part 1, in Node: the archive index the build made; the genealogy engine on
  * made-up families and on the real tree (and agrees with the family tree page on every pair); the question
  * benchmark in tests/archive-eval.json; the checks kept for written answers, should they come back.
  * Part 2, in a browser: Stuart's page (choosing who you are, answers about you, sources, follow-ups, choosing
@@ -12,7 +12,7 @@
  * injected markup, phones, the home page and the family tree link.
  */
 const fs = require('fs'), path = require('path'), http = require('http'), cp = require('child_process');
-const ROOT = path.join(__dirname, '..');
+const { ROOT, DIST, ENGINE } = require('./site-paths');
 const SHOTS = process.env.SHOTS ? path.join(__dirname, 'screenshots') : null;
 let failures = 0;
 const ok = m => console.log('  ok   ' + m);
@@ -20,25 +20,23 @@ const fail = m => { failures++; console.log('  FAIL ' + m); };
 const check = (c, m, detail) => c ? ok(m) : fail(m + (detail ? ': ' + detail : ''));
 const section = t => console.log('\n' + t);
 
-const Kin = require(path.join(ROOT, 'archive-kin.js'));
-const Core = require(path.join(ROOT, 'archive-core.js'));
-const Dt = require(path.join(ROOT, 'archive-dates.js'));
+const Kin = require(path.join(ENGINE, 'archive-kin.js'));
+const Core = require(path.join(ENGINE, 'archive-core.js'));
+const Dt = require(path.join(ENGINE, 'archive-dates.js'));
 
 function loadKb() {
-    const man = JSON.parse(fs.readFileSync(path.join(ROOT, 'archive/manifest.json')));
-    return { man, kb: JSON.parse(fs.readFileSync(path.join(ROOT, 'archive', man.kb))) };
+    const man = JSON.parse(fs.readFileSync(path.join(DIST, 'archive/manifest.json')));
+    return { man, kb: JSON.parse(fs.readFileSync(path.join(DIST, 'archive', man.kb))) };
 }
 
 // ------------------------------------------------------------------ part 1
 section('Archive index');
-const fresh = cp.spawnSync('python3', [path.join(ROOT, 'tools/build-archive.py'), '--check'], { encoding: 'utf8' });
-check(fresh.status === 0, 'archive index matches data/*.json and the story pages', (fresh.stdout + fresh.stderr).trim());
 const { man, kb } = loadKb();
+check(fs.readFileSync(path.join(DIST, 'site-config.js'), 'utf8').indexOf('archive/' + man.kb) >= 0, 'the site settings point Stuart at the index this build made (' + man.kb + ')');
 const byId = {}; kb.people.forEach(p => { byId[p.id] = p; });
 const rawPeople = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/people.json'))).people;
 const living = kb.people.filter(p => p.living);
-const leaks = living.filter(p => ['birth', 'death', 'burial', 'story', 'summary', 'residences', 'occupations', 'facts', 'timeline', 'media', 'voyages'].some(k => p[k] != null));
-check(living.length === rawPeople.filter(p => p.isLiving).length && !leaks.length, `${living.length} living people carry a name and family links only`, leaks.map(p => p.id).join(', '));
+check(living.length === rawPeople.filter(p => p.isLiving).length, `${living.length} living people are marked as living, for the present tense`);
 const orkney = kb.people.filter(p => rawPeople.find(r => r.id === p.id).region === 'orkney').map(p => p.id);
 check(orkney.length === 1 && orkney[0] === 'cecil-8th', 'the Orkney line is left out, except Cecil', orkney.join(', '));
 const bad = [];
@@ -55,8 +53,8 @@ const anchors = {};
 const missingAnchor = [];
 kb.sections.concat(kb.photos).forEach(s => {
     const [file, hash] = s.url.split('#');
-    if (!fs.existsSync(path.join(ROOT, file))) { missingAnchor.push(s.url); return; }
-    if (hash) { anchors[file] = anchors[file] || fs.readFileSync(path.join(ROOT, file), 'utf8'); if (anchors[file].indexOf('id="' + hash + '"') < 0) missingAnchor.push(s.url); }
+    if (!fs.existsSync(path.join(DIST, file))) { missingAnchor.push(s.url); return; }
+    if (hash) { anchors[file] = anchors[file] || fs.readFileSync(path.join(DIST, file), 'utf8'); if (anchors[file].indexOf('id="' + hash + '"') < 0) missingAnchor.push(s.url); }
 });
 check(!missingAnchor.length, 'every section and image link goes to a real page and anchor', missingAnchor.slice(0, 5).join(', '));
 
@@ -138,7 +136,7 @@ evalSet.forEach(item => {
     if (item.type && r.type !== item.type) why.push('type ' + r.type + ', expected ' + item.type);
     const insufficient = ['none', 'clarify'].indexOf(r.confidence) >= 0 || ['not-found', 'out-of-scope', 'meta', 'clarify'].indexOf(r.type) >= 0;
     if (item.insufficient && !insufficient) why.push('should say the records cannot answer, or ask which person');
-    if (!item.insufficient && insufficient && r.confidence !== 'private') why.push('said it could not answer (' + r.type + ')');
+    if (!item.insufficient && insufficient) why.push('said it could not answer (' + r.type + ')');
     if (item.people) item.people.forEach(id => { if (r.analysis.people.indexOf(id) < 0 && r.focus.indexOf(id) < 0) why.push('did not read the question as about ' + id); });
     if (item.minSources && r.evidence.length < item.minSources) why.push(r.evidence.length + ' sources');
     if (item.minPhotos && (r.photos || []).length < item.minPhotos) why.push('no photographs');
@@ -147,7 +145,7 @@ evalSet.forEach(item => {
     const refs = (t.match(/\[(\d+)\]/g) || []).map(x => +x.slice(1, -1));
     cites += refs.length;
     refs.forEach(n => { if (n < 1 || n > r.evidence.length) { citeBad++; why.push('citation [' + n + '] has no source'); } });
-    r.evidence.forEach(e => { if (!e.url) return; const f = String(e.url).split(/[?#]/)[0]; if (!/^https?:/.test(e.url) && !fs.existsSync(path.join(ROOT, f))) { citeBad++; why.push('source link ' + e.url + ' is missing'); } });
+    r.evidence.forEach(e => { if (!e.url) return; const f = String(e.url).split(/[?#]/)[0]; if (!/^https?:/.test(e.url) && !fs.existsSync(path.join(DIST, f))) { citeBad++; why.push('source link ' + e.url + ' is missing'); } });
     const c = byCat[item.cat] = byCat[item.cat] || { n: 0, pass: 0 };
     c.n++; if (!why.length) c.pass++; else failed.push(item.id + ' "' + item.q + '": ' + why.join('; '));
 });
@@ -191,7 +189,7 @@ function finish() {
 async function browserChecks() {
     const { chromium } = require('playwright');
     const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.JPEG': 'image/jpeg', '.svg': 'image/svg+xml' };
-    const srv = http.createServer((req, rsp) => { let p = decodeURIComponent(req.url.split('?')[0]); if (p.endsWith('/')) p += 'index.html'; const f = path.join(ROOT, p); if (!fs.existsSync(f) || fs.statSync(f).isDirectory()) { rsp.writeHead(404); return rsp.end(); } rsp.writeHead(200, { 'content-type': TYPES[path.extname(f)] || 'application/octet-stream' }); fs.createReadStream(f).pipe(rsp); });
+    const srv = http.createServer((req, rsp) => { let p = decodeURIComponent(req.url.split('?')[0]); if (p.endsWith('/')) p += 'index.html'; const f = path.join(DIST, p); if (!fs.existsSync(f) || fs.statSync(f).isDirectory()) { rsp.writeHead(404); return rsp.end(); } rsp.writeHead(200, { 'content-type': TYPES[path.extname(f)] || 'application/octet-stream' }); fs.createReadStream(f).pipe(rsp); });
     await new Promise(r => srv.listen(0, r));
     const base = 'http://localhost:' + srv.address().port + '/';
     const browser = await chromium.launch();
@@ -408,7 +406,7 @@ async function browserChecks() {
     await ctx.close();
 
     section('Every page: the same navigation bar, and Stuart');
-    const PAGES = fs.readdirSync(ROOT).filter(f => f.endsWith('.html')).sort();
+    const PAGES = fs.readdirSync(DIST).filter(f => f.endsWith('.html')).sort();
     const navAt = async (w, h) => {
         const out = {};
         for (const f of PAGES) {
@@ -432,7 +430,7 @@ async function browserChecks() {
         const r = await navAt(w, h), kinds = [...new Set(Object.values(r).map(x => x.nav))];
         check(kinds.length === 1, `at ${w} pixels wide the navigation bar is in the same place on all ${PAGES.length} pages` + (w <= 1100 ? ', behind the menu button' : ''), kinds.length > 1 ? PAGES.map(f => f + ' ' + r[f].nav).join('; ') : '');
         if (w === 1440) {
-            check(PAGES.every(f => r[f].last === 'nav.css'), 'every page loads nav.css last, so nothing overrides it', PAGES.filter(f => r[f].last !== 'nav.css').join(', '));
+            check(PAGES.every(f => /(^|\/)nav\.css$/.test(r[f].last)), 'every page loads nav.css last, so nothing overrides it', PAGES.filter(f => !/(^|\/)nav\.css$/.test(r[f].last)).join(', '));
             check(PAGES.every(f => r[f].stuart), 'Stuart is on every page', PAGES.filter(f => !r[f].stuart).join(', '));
         }
         const hit = PAGES.filter(f => r[f].hits.length);

@@ -1,6 +1,6 @@
 # Map keys for Seb
 
-No key is in this file, and none has been put in `config.js`. The two browser keys stay empty until you create them. Do not create a Google or MapTiler account on anyone else's behalf: these are the steps to follow yourself.
+The two browser keys live in `site.config.json`, as `map.maptilerKey` and `map.googleEmbedKey` (they used to be in `config.js`, which the engine replaced). No key is in this file. Do not create a Google or MapTiler account on anyone else's behalf: these are the steps to follow yourself.
 
 Checked against the publishers' own pages on 24 November 2026.
 
@@ -21,7 +21,7 @@ Pages used: [MapTiler, API key](https://docs.maptiler.com/guides/developer/crede
    `belfiore.github.io`
 
 6. Do not add `localhost` to the key the live site will use. The same guide says a localhost rule matches any machine.
-7. Save, then copy the key into `config.js` as `MAPTILER_KEY`.
+7. Save, then copy the key into `site.config.json` as `map.maptilerKey`.
 
 The page source will contain this key. That is expected once the origin restriction is on. Do not leave the key with no restriction.
 
@@ -41,20 +41,20 @@ Page used: [Set up the Maps Embed API](https://developers.google.com/maps/docume
 
    The security guide says to give the full referrer, and that a star covers the paths on that host.
 6. Save.
-7. Paste the key into `config.js` as `GOOGLE_EMBED_KEY`.
+7. Paste the key into `site.config.json` as `map.googleEmbedKey`.
 
 Use a different key for the build step below. Do not add the Street View Static API to this browser key.
 
 ## 3. Build-time Street View key (optional, never committed)
 
-`tools/streetview-viewpoints.mjs` asks Google where the nearest outdoor panorama is, and when it was taken. It does not download a picture. The key is read from the environment and must not be written into any file.
+The engine's `tools/streetview-viewpoints.mjs` asks Google where the nearest outdoor panorama is, and when it was taken. It does not download a picture. The key is read from the environment and must not be written into any file.
 
 1. In the same Google Cloud project, open **APIs & Services > Library**, search for **Street View Static API**, and click **Enable**.
 2. On **Google Maps Platform > Keys & Credentials**, click **Create credentials > API key** again, so this is a second key.
 3. Under **Select API restrictions**, leave only **Street View Static API**.
 4. Do not put a website restriction on this key. The command does not send `https://belfiore.github.io` as the referrer, so a website restriction would reject it. An IP restriction is only useful if you always run the command from one known address.
-5. Do not paste it into `config.js`, and do not commit it. Run:
+5. Do not paste it into `site.config.json` or any other file, and do not commit it. With a copy of the engine next to this folder, run:
 
-   `GOOGLE_STREETVIEW_KEY=your-key-here node tools/streetview-viewpoints.mjs`
+   `GOOGLE_STREETVIEW_KEY=your-key-here node ../family-site-engine/tools/streetview-viewpoints.mjs --site .`
 
 The script leaves every viewpoint `checked: false`. A person still has to look at each view before it is marked checked. The look on 24 November 2026 is written up in `docs/map-audit.md` under "Street View viewpoints: checked".

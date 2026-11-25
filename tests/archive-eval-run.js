@@ -6,7 +6,14 @@
  */
 (function () {
     'use strict';
-    var Core = window.ArchiveCore;
+    var Core = null;
+    // the engine's scripts, from the built site (site-config.js says where they are)
+    function loadEngine() {
+        var base = '../' + (((window.FamilySite || {}).engine || {}).base || '');
+        return ['archive-kin.js', 'archive-dates.js', 'archive-search.js', 'archive-core.js'].reduce(function (p, f) {
+            return p.then(function () { return new Promise(function (ok, no) { var s = document.createElement('script'); s.src = base + f; s.onload = ok; s.onerror = function () { no(new Error('could not load ' + f)); }; document.head.appendChild(s); }); });
+        }, Promise.resolve()).then(function () { Core = window.ArchiveCore; });
+    }
     var $ = function (id) { return document.getElementById(id); };
     var A = null, set = [], kb = null, manifest = null;
     var out = { date: new Date().toISOString().slice(0, 10), userAgent: navigator.userAgent, quick: null };
@@ -43,7 +50,7 @@
         if (item.type && r.type !== item.type) why.push('type ' + r.type + ', expected ' + item.type);
         var insufficient = ['none', 'clarify'].indexOf(r.confidence) >= 0 || ['not-found', 'out-of-scope', 'meta', 'clarify'].indexOf(r.type) >= 0;
         if (item.insufficient && !insufficient) why.push('should say the records cannot answer, or ask which person');
-        if (!item.insufficient && insufficient && r.confidence !== 'private') why.push('said it could not answer (' + r.type + ')');
+        if (!item.insufficient && insufficient) why.push('said it could not answer (' + r.type + ')');
         (t.match(/\[(\d+)\]/g) || []).forEach(function (x) { var n = +x.slice(1, -1); if (n < 1 || n > r.evidence.length) why.push('citation ' + x + ' has no source'); });
         return why;
     }
@@ -89,10 +96,10 @@
     $('runQuick').addEventListener('click', runQuick);
     $('download').addEventListener('click', download);
 
-    Promise.all([
+    loadEngine().then(function () { return Promise.all([
         fetch('../archive/manifest.json', { cache: 'no-cache' }).then(function (r) { return r.json(); }).then(function (m) { manifest = m; return fetch('../archive/' + m.kb).then(function (r) { return r.json(); }); }),
         fetch('archive-eval.json', { cache: 'no-cache' }).then(function (r) { return r.json(); })
-    ]).then(function (res) {
+    ]); }).then(function (res) {
         kb = res[0]; set = res[1].questions;
         A = Core.create(kb);
         var env = $('env'); env.textContent = '';

@@ -1,0 +1,547 @@
+{
+  "$schema": "https://raw.githubusercontent.com/Belfiore/family-site-engine/main/schema/site-config.schema.json",
+  "schemaVersion": 1,
+  "engine": {
+    "channel": "canary"
+  },
+  "site": {
+    "name": "FitzMaurice & Andrews",
+    "familyName": "the FitzMaurice and Andrews families",
+    "lang": "en-GB",
+    "description": "The FitzMaurice and Andrews families: Grandma Pat and Grandpa Ron, and the families they came from."
+  },
+  "pages": {
+    "home": "index.html",
+    "tree": {
+      "file": "family-tree.html",
+      "title": "Family Tree | The FitzMaurice & Andrews Heritage",
+      "description": "An interactive family tree of the FitzMaurice and Andrews families. Grandpa Ron’s family is on the left and Grandma Pat’s on the right.",
+      "stylesheets": [
+        "styles.css"
+      ]
+    },
+    "map": {
+      "file": "map.html",
+      "title": "Family Map | The FitzMaurice & Andrews Heritage",
+      "description": "An interactive map of where the FitzMaurice and Andrews families were born, lived, married, worked, served, sailed, died and were buried, with a timeline you can play.",
+      "stylesheets": [
+        "styles.css"
+      ]
+    },
+    "ask": {
+      "file": "ask.html",
+      "title": "Ask Stuart | FitzMaurice & Andrews",
+      "description": "Stuart, the family archivist, answers questions about the FitzMaurice and Andrews families from the records on this site, with a link to each one.",
+      "stylesheets": [
+        "branch.css"
+      ]
+    }
+  },
+  "nav": [
+    {
+      "href": "index.html",
+      "label": "Home"
+    },
+    {
+      "href": "family-tree.html",
+      "label": "Family Tree",
+      "match": [
+        "family-tree-classic.html"
+      ]
+    },
+    {
+      "href": "map.html",
+      "label": "Family Map"
+    },
+    {
+      "href": "branches.html",
+      "label": "Branches",
+      "match": [
+        "falcke.html",
+        "reg-sisters.html",
+        "bennett.html",
+        "andrews-roots.html",
+        "cousins.html"
+      ]
+    },
+    {
+      "comment": "Family Crest is switched off for now. Restore this link to bring it back: <a href=\"family-crest.html\">Family Crest</a>"
+    },
+    {
+      "href": "ron-egypt.html",
+      "label": "Ron in WWII"
+    },
+    {
+      "href": "wedding.html",
+      "label": "Wedding"
+    },
+    {
+      "href": "sources.html",
+      "label": "Sources"
+    },
+    {
+      "href": "ask.html",
+      "label": "Ask Stuart"
+    }
+  ],
+  "head": {
+    "fonts": "https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap",
+    "stylesheets": [
+      "styles.css"
+    ]
+  },
+  "theme": {},
+  "tree": {
+    "sides": {
+      "left": "ronald-andrews",
+      "right": "patricia-andrews",
+      "leftLabel": "Grandpa Ron’s family",
+      "rightLabel": "Grandma Pat’s family"
+    },
+    "hiddenRegions": [
+      "orkney"
+    ],
+    "suspectedRelatives": {
+      "cecil-8th": "patricia-andrews"
+    },
+    "cardPhotos": "set",
+    "coupleBlocks": "explicit",
+    "legendNote": "The <a href=\"family-tree-classic.html\">earlier version of this tree</a> is still available.",
+    "familyLabel": "FitzMaurice & Andrews family",
+    "rootPersonId": "sebastian-belfiore",
+    "directLineLabel": "Sebastian's direct line",
+    "generations": [
+      {
+        "generation": 0,
+        "label": "I",
+        "title": "Royal Stewarts",
+        "range": "c. 1430 to 1460"
+      },
+      {
+        "generation": 1,
+        "label": "II",
+        "title": "Mary Stewart",
+        "range": "c. 1453 to 1488"
+      },
+      {
+        "generation": 2,
+        "label": "III",
+        "title": "Hamiltons, Earls of Arran",
+        "range": "c. 1475 to 1529"
+      },
+      {
+        "generation": 3,
+        "label": "IV",
+        "title": "Hamiltons",
+        "range": "c. 1516 to 1575"
+      },
+      {
+        "generation": 4,
+        "label": "V",
+        "title": "Marquesses of Hamilton",
+        "range": "c. 1540 to 1604"
+      },
+      {
+        "generation": 5,
+        "label": "VI",
+        "title": "Marquesses of Hamilton",
+        "range": "1589 to 1625"
+      },
+      {
+        "generation": 6,
+        "label": "VII",
+        "title": "Dukes of Hamilton",
+        "range": "1606 to 1649"
+      },
+      {
+        "generation": 7,
+        "label": "VIII",
+        "title": "Duchess Anne",
+        "range": "1632 to 1716"
+      },
+      {
+        "generation": 8,
+        "label": "IX",
+        "title": "First Earl of Orkney",
+        "range": "1666 to 1737"
+      },
+      {
+        "generation": 9,
+        "label": "X",
+        "title": "Countesses of Orkney",
+        "range": "born 1690s to 1700s"
+      },
+      {
+        "generation": 10,
+        "label": "XI",
+        "title": "Countesses of Orkney",
+        "range": "born 1700s to 1720s"
+      },
+      {
+        "generation": 11,
+        "label": "XII",
+        "title": "O'Brien and FitzMaurice",
+        "range": "born 1730s to 1750s"
+      },
+      {
+        "generation": 12,
+        "label": "XIII",
+        "title": "Viscount Kirkwall",
+        "range": "1778 to 1820"
+      },
+      {
+        "generation": 13,
+        "label": "XIV",
+        "title": "Early nineteenth century",
+        "range": "about 1790 to 1845"
+      },
+      {
+        "generation": 14,
+        "label": "XV",
+        "title": "Victorian parents",
+        "range": "about 1830 to 1865"
+      },
+      {
+        "generation": 15,
+        "label": "XVI",
+        "title": "Late Victorians",
+        "range": "about 1860 to 1890"
+      },
+      {
+        "generation": 16,
+        "label": "XVII",
+        "title": "Edwardian generation",
+        "range": "about 1880 to 1910"
+      },
+      {
+        "generation": 17,
+        "label": "XVIII",
+        "title": "Pat and Ron",
+        "range": "born about 1915 to 1930"
+      },
+      {
+        "generation": 18,
+        "label": "XIX",
+        "title": "Amanda and Venetia",
+        "range": null
+      },
+      {
+        "generation": 19,
+        "label": "XX",
+        "title": "Sebastian's generation",
+        "range": null
+      },
+      {
+        "generation": 20,
+        "label": "XXI",
+        "title": "The newest generation",
+        "range": null
+      }
+    ],
+    "rootOrder": [
+      "john-fitzmaurice",
+      "william-gottlob-falcke",
+      "henry-stacey-elder",
+      "robert-walter",
+      "elizabeth-field",
+      "george-andrews",
+      "william-cousins-elder",
+      "john-gall",
+      "charles-bennett",
+      "charles-spencer",
+      "james-ii",
+      "john-petty-shelburne"
+    ],
+    "kinAnchor": "edward-dixon-fitzmaurice",
+    "kinLabel": "FitzMaurice kin · relationship unproven",
+    "regions": [
+      {
+        "id": "orkney",
+        "label": "The Hamiltons and the Earls of Orkney",
+        "sub": "No proven link to this family"
+      }
+    ],
+    "regionKicker": "Earls of Orkney (link unproven)",
+    "initialView": {
+      "ids": [
+        "patricia-andrews",
+        "sebastian-belfiore"
+      ],
+      "fromGen": 16,
+      "toGen": 19
+    }
+  },
+  "map": {
+    "maptilerKey": "DmGXe7VpArzLD0VzWdx3",
+    "googleEmbedKey": "AIzaSyCSMoLXPXC1CSKplulHbMNMXbhY2JBZIqM",
+    "home": {
+      "name": "England",
+      "bounds": [
+        [
+          -6.4,
+          49.85
+        ],
+        [
+          1.9,
+          55.9
+        ]
+      ]
+    },
+    "historicMaps": "uk-os",
+    "branches": [
+      {
+        "id": "ron-pat",
+        "label": "Ron and Pat",
+        "pages": [
+          "ron-egypt.html",
+          "wedding.html"
+        ],
+        "people": [
+          "ronald-andrews",
+          "patricia-andrews"
+        ],
+        "default": true
+      },
+      {
+        "id": "falcke",
+        "label": "Falcke and FitzMaurice",
+        "pages": [
+          "falcke.html"
+        ]
+      },
+      {
+        "id": "reg-sisters",
+        "label": "Reg's brother and sisters",
+        "pages": [
+          "reg-sisters.html"
+        ]
+      },
+      {
+        "id": "bennett",
+        "label": "Bennett of Bodmin",
+        "pages": [
+          "bennett.html"
+        ]
+      },
+      {
+        "id": "andrews",
+        "label": "Andrews, Stacey, Walter",
+        "pages": [
+          "andrews-roots.html"
+        ]
+      },
+      {
+        "id": "cousins",
+        "label": "Cousins and Auntie May",
+        "pages": [
+          "cousins.html"
+        ]
+      },
+      {
+        "id": "orkney",
+        "label": "Cecil O'Bryen FitzMaurice (no proven link)",
+        "pages": [],
+        "regions": [
+          "orkney"
+        ]
+      }
+    ],
+    "kinAnchors": [
+      {
+        "id": "patricia-andrews",
+        "name": "Pat"
+      },
+      {
+        "id": "ronald-andrews",
+        "name": "Ron"
+      }
+    ],
+    "families": [
+      {
+        "id": "ron",
+        "label": "Ron's family",
+        "option": "Ron's family (Andrews)",
+        "roots": [
+          "ronald-andrews"
+        ]
+      },
+      {
+        "id": "pat",
+        "label": "Pat's family",
+        "option": "Pat's family (FitzMaurice)",
+        "roots": [
+          "patricia-andrews"
+        ]
+      },
+      {
+        "id": "both",
+        "label": "Ron's and Pat's families",
+        "option": "Ron's and Pat's families",
+        "roots": [
+          "ronald-andrews",
+          "patricia-andrews"
+        ]
+      }
+    ],
+    "noscript": "The places are also listed on the <a href=\"branches.html\">branch pages</a>."
+  },
+  "stuart": {
+    "anchors": [
+      {
+        "key": "ron",
+        "id": "ronald-andrews",
+        "title": "Grandpa Ron",
+        "short": "Ron"
+      },
+      {
+        "key": "pat",
+        "id": "patricia-andrews",
+        "title": "Grandma Pat",
+        "short": "Pat"
+      }
+    ],
+    "homeCountry": "England",
+    "pages": [
+      "index.html",
+      "branches.html",
+      "falcke.html",
+      "reg-sisters.html",
+      "bennett.html",
+      "andrews-roots.html",
+      "cousins.html",
+      "ron-egypt.html",
+      "wedding.html",
+      "sources.html"
+    ],
+    "generalPages": [
+      "index.html",
+      "branches.html",
+      "sources.html"
+    ],
+    "examples": [
+      {
+        "kind": "genealogy",
+        "q": "How was John FitzMaurice related to Grandma Pat?",
+        "needs": [
+          "john-fitzmaurice",
+          "patricia-andrews"
+        ]
+      },
+      {
+        "kind": "biography",
+        "q": "What happened to Henry George Andrews?",
+        "needs": [
+          "mr-hg-andrews"
+        ]
+      },
+      {
+        "kind": "migration",
+        "q": "Which family members went to South Africa?",
+        "needs": [
+          "edward-dixon-fitzmaurice"
+        ]
+      },
+      {
+        "kind": "calculation",
+        "q": "How old was Edward Dixon FitzMaurice when he died?",
+        "needs": [
+          "edward-dixon-fitzmaurice"
+        ]
+      },
+      {
+        "kind": "history",
+        "q": "What did Grandpa Ron do in the war?",
+        "needs": [
+          "ronald-andrews"
+        ]
+      },
+      {
+        "kind": "genealogy",
+        "q": "Who were Reg FitzMaurice's grandparents?",
+        "needs": [
+          "reg-fitzmaurice"
+        ]
+      },
+      {
+        "kind": "documents",
+        "q": "What records are there for the Bennetts of Bodmin?"
+      },
+      {
+        "kind": "analysis",
+        "q": "What jobs did the family have?"
+      },
+      {
+        "kind": "overview",
+        "q": "Who is the earliest documented member of the family?"
+      }
+    ],
+    "helpExample": "Who were Reg FitzMaurice's grandparents?",
+    "overviewSections": [
+      "pg:index#h-start",
+      "pg:index#h-ron",
+      "pg:index#h-pat"
+    ],
+    "overviewFallback": "This archive covers the families of Grandpa Ron Andrews and Grandma Pat FitzMaurice.",
+    "overviewFollowups": [
+      "Who is the earliest documented member of the family?",
+      "How was John FitzMaurice related to Grandma Pat?",
+      "Which family members went to South Africa?"
+    ],
+    "warFollowups": [
+      "What did Grandpa Ron do in the war?",
+      "What happened during the Blitz?"
+    ],
+    "stories": {
+      "page": "index.html",
+      "anchors": [
+        "h-clues",
+        "camden",
+        "medallion",
+        "knightsbridge",
+        "bow-tie",
+        "south-africa",
+        "korean",
+        "andrews-family",
+        "brixton",
+        "reg-bob"
+      ]
+    },
+    "photos": {
+      "text": "The photographs are on the family tree (under each person's documents and photographs), in \"The photographs that started it\" on the home page, in Ron's wartime album and in the wedding album.",
+      "links": [
+        {
+          "title": "Home: the photographs that started it",
+          "url": "index.html#h-clues"
+        },
+        {
+          "title": "The wedding album",
+          "url": "wedding.html"
+        },
+        {
+          "title": "Ron in Egypt",
+          "url": "ron-egypt.html"
+        }
+      ]
+    },
+    "wordlikeNames": [
+      "stacey",
+      "spencer",
+      "bennett",
+      "gall",
+      "cousins",
+      "andrews"
+    ],
+    "familyNames": [
+      "fitzmaurices",
+      "andrews"
+    ]
+  },
+  "widget": {
+    "enabled": true
+  },
+  "publish": {
+    "exclude": [
+      "README.md"
+    ]
+  }
+}

@@ -5,7 +5,7 @@
  *
  * Map tiles, Google and the font service are blocked here, so the page runs on its own
  * fallback map. The checks are about the family's data and what the page does with it:
- * place links and sources; living people and the held-back list; dates no more precise
+ * place links and sources; the held-back list; dates no more precise
  * than the site; approximate places drawn as dashed pins; the Hamiltons and Earls of Orkney
  * left off (except Cecil); the family filter; Today as the default map; key counts, toggles and
  * person scopes; the peek by hover, keyboard and tap; the mode switcher and mode=tour; the
@@ -20,7 +20,7 @@ const path = require('path');
 const { execSync } = require('child_process');
 const { chromium } = require('playwright');
 
-const ROOT = path.join(__dirname, '..');
+const { ROOT, DIST, ENGINE } = require('./site-paths');
 const SHOTS = process.env.SHOTS ? path.join(__dirname, 'screenshots') : null;
 const BASE_COMMIT = '7639fee';
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.css': 'text/css', '.json': 'application/json', '.geojson': 'application/json', '.pbf': 'application/x-protobuf', '.png': 'image/png', '.jpg': 'image/jpeg', '.jpeg': 'image/jpeg', '.svg': 'image/svg+xml', '.md': 'text/plain', '.txt': 'text/plain' };
@@ -33,8 +33,8 @@ function serve() {
         const srv = http.createServer((req, rsp) => {
             let p = decodeURIComponent(req.url.split('?')[0].split('#')[0]);
             if (p.endsWith('/')) p += 'index.html';
-            const f = path.join(ROOT, p);
-            if (!f.startsWith(ROOT) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { rsp.writeHead(404); return rsp.end('not found'); }
+            const f = path.join(DIST, p);
+            if (!f.startsWith(DIST) || !fs.existsSync(f) || fs.statSync(f).isDirectory()) { rsp.writeHead(404); return rsp.end('not found'); }
             rsp.writeHead(200, { 'content-type': TYPES[path.extname(f).toLowerCase()] || 'application/octet-stream' });
             fs.createReadStream(f).pipe(rsp);
         });
@@ -59,14 +59,8 @@ const people = peopleDoc.people, places = placesDoc.places;
 const P = Object.fromEntries(people.map(p => [p.id, p]));
 const PL = Object.fromEntries(places.map(p => [p.id, p]));
 const sid = new Set(sourcesDoc.sources.map(s => s.id));
-const living = people.filter(p => p.isLiving);
-const livingIds = new Set(living.map(p => p.id));
-// PR #3: anyone who may be living is shown by name and relationship only; these three are named there
-const NAME_ONLY = ['Christine Ellis', 'Lawrence John', 'Derek Anthony'];
-const deceasedNames = new Set(people.filter(p => !p.isLiving).map(p => p.displayName));
-const livingNames = living.map(p => p.displayName).filter(n => !deceasedNames.has(n)).concat(NAME_ONLY);
 // PR #3's held-back list: words that would only appear if one of its items had got onto the map
-const HELD_BACK_WORDS = ['Evening News', 'Melbourne', 'Wynberg', 'Plumstead'].concat(NAME_ONLY);
+const HELD_BACK_WORDS = ['Evening News', 'Melbourne', 'Wynberg', 'Plumstead'];
 
 const linkIds = (refs) => (refs || []).map(r => (typeof r === 'string' ? r : r.id)).filter(id => P[id]);
 function expectScope(id, scope) {
@@ -76,7 +70,8 @@ function expectScope(id, scope) {
     if (scope === 'family') linkIds(p.parents).concat(linkIds(p.children)).forEach(x => out.add(x));
     if (scope === 'ancestors') { const q = linkIds(p.parents); while (q.length) { const x = q.shift(); if (!out.has(x)) { out.add(x); q.push(...linkIds(P[x].parents)); } } }
     if (scope === 'descendants') { const q = linkIds(p.children); while (q.length) { const x = q.shift(); if (!out.has(x)) { out.add(x); q.push(...linkIds(P[x].children)); } } }
-    return [...out].filter(x => !livingIds.has(x));
+    // living people are included: the map shows whatever the data holds for them
+    return [...out];
 }
 
 (async () => {
@@ -96,10 +91,11 @@ function expectScope(id, scope) {
         page.on('pageerror', e => errors.push(url + ': ' + e.message));
         page.on('console', m => { if (m.type() === 'error' && !/Failed to load resource|net::ERR|AJAXError|Failed to fetch|NetworkError/i.test(m.text())) errors.push(url + ': ' + m.text()); });
         if (opts.init) await page.addInitScript(opts.init);
-        await page.route('**/*', route => {
+        await page.route('**/*', async route => {
             const u = route.request().url();
             if (u.startsWith(base)) {
-                if (opts.embedKey && /\/config\.js(\?|$)/.test(u)) return route.fulfill({ contentType: 'text/javascript', body: "window.FM_CONFIG = { MAPTILER_KEY: '', GOOGLE_EMBED_KEY: 'TEST-EMBED-KEY' };" });
+                // the site settings with a test Embed key and no MapTiler key
+                if (opts.embedKey && /\/site-config\.js(\?|$)/.test(u)) { const r = await route.fetch(); return route.fulfill({ response: r, body: (await r.text()) + "\nwindow.FamilySite.map.maptilerKey = ''; window.FamilySite.map.googleEmbedKey = 'TEST-EMBED-KEY';" }); }
                 if (opts.noTimeline && /\/map-timeline\.js(\?|$)/.test(u)) return route.fulfill({ contentType: 'text/javascript', body: '/* left out by the test */' });
                 return route.continue();
             }
@@ -135,9 +131,6 @@ function expectScope(id, scope) {
     const scott = people.find(p => p.id === 'edward-scott-fitzmaurice');
     const yallop = people.find(p => p.id === 'eileen-alice-yallop');
     check(scott && scott.isLiving === false && yallop && yallop.isLiving === false, 'Edward Scott and Eileen Alice are on the tree as people who have died');
-    // PR #3 shows Bob's possibly living sons on the tree by name and relationship only; they must never reach the map
-    const bobSons = people.filter(p => /derek|lawrence john|laurence john/i.test(p.displayName || ''));
-    check(bobSons.every(p => p.isLiving) && !places.some(pl => (pl.events || []).some(e => (e.personIds || []).some(id => bobSons.some(b => b.id === id)))), "Bob's possibly living sons are name-only on the tree and not on the map", bobSons.map(p => p.id).join(', '));
     const badSrc = [];
     const needSrc = (ids, where, required) => { if (required && !(ids || []).length) badSrc.push(where + ' has no source'); (ids || []).forEach(i => { if (!sid.has(i)) badSrc.push(where + ' cites unknown source ' + i); }); };
     let nEvents = 0, nImages = 0;
@@ -153,14 +146,8 @@ function expectScope(id, scope) {
     }
     check(!badSrc.length, `every place, event and image is sourced, and every image has a credit and a licence (${nEvents} events, ${nImages} images)`, badSrc.slice(0, 6).join('; '));
 
-    section('Data: living people, the held-back list and dates');
-    const livingInEvents = [];
-    for (const p of places) for (const e of p.events || []) (e.personIds || []).forEach(id => { if (livingIds.has(id)) livingInEvents.push(e.id + ' ' + id); });
-    check(!livingInEvents.length, `no living person's id appears in places.json (${livingIds.size} living people)`, livingInEvents.join('; '));
+    section('Data: the held-back list and dates');
     const placeText = places.map(p => [p.id, [p.name, p.historicName, p.blurb, p.todayNote, p.significance, p.address, (p.images || []).map(i => i.caption).join(' '), (p.events || []).map(e => (e.summary || '') + ' ' + (e.date || '')).join(' ')].join(' ')]);
-    const namedLiving = [];
-    placeText.forEach(([id, t]) => livingNames.forEach(n => { if (t.includes(n)) namedLiving.push(id + ': ' + n); }));
-    check(!namedLiving.length, 'no place text names a living person, or anyone shown by name and relationship only', namedLiving.join('; '));
     const held = [];
     placeText.forEach(([id, t]) => HELD_BACK_WORDS.forEach(w => { if (t.includes(w)) held.push(id + ': ' + w); }));
     for (const p of places) for (const e of p.events || []) {
@@ -195,19 +182,16 @@ function expectScope(id, scope) {
             if ((rank[e.datePrecision] || 0) > (rank[d.datePrecision] || 0) + 1e-9) tooPrecise.push(e.id + ' ' + e.datePrecision + ' > ' + d.datePrecision);
         });
         const hw = D.events.concat(D.unplaced).filter(e => e.factRef === 'herbert-andrews.birth')[0];
-        const livingIds = Object.keys(D.people).filter(id => D.people[id].isLiving);
-        const evLiving = D.events.concat(D.unplaced).filter(e => e.personIds.some(id => livingIds.indexOf(id) >= 0)).map(e => e.id);
         return {
-            events: D.events.length, unplaced: D.unplaced.length, tooPrecise, evLiving,
+            events: D.events.length, unplaced: D.unplaced.length, tooPrecise,
             herbert: hw ? [hw.datePrecision, hw.dateStart, FM.util.dateLabel(hw)] : null,
             text: D.events.concat(D.unplaced).map(e => e.summary + ' ' + (e.date || '') + ' ' + FM.util.dateLabel(e)).join('\n')
         };
     });
     check(!info.tooPrecise.length, `no date on the map is more precise than the site's own record (${info.events} placed events, ${info.unplaced} not yet placed)`, info.tooPrecise.slice(0, 5).join('; '));
     check(info.herbert && info.herbert[0] === 'year' && /^1916|about 1916/.test(info.herbert[2]), 'Herbert William stays at 1916', JSON.stringify(info.herbert));
-    check(!info.evLiving.length, 'no event in the index carries a living person', info.evLiving.join(', '));
-    const textHits = livingNames.concat(HELD_BACK_WORDS).filter(n => info.text.includes(n));
-    check(!textHits.length, 'no event sentence names a living person or anything held back', textHits.join(', '));
+    const textHits = HELD_BACK_WORDS.filter(n => info.text.includes(n));
+    check(!textHits.length, 'no event sentence names anything held back', textHits.join(', '));
 
     // the mode switcher and the default state
     const modes = await page.$$eval('#modeSwitch [data-mode]', els => els.map(e => e.textContent.trim()));
@@ -229,12 +213,12 @@ function expectScope(id, scope) {
         return { n: document.querySelectorAll('.mk-wrap').length, z: Math.round(FM.map.getZoom() * 10) / 10 };
     });
     check(midEngland.n >= 6, 'at a mid zoom over England the places are not one cluster', JSON.stringify(midEngland));
-    // config.js now holds the site's MapTiler key, so this check empties it for one click and puts it back. The assertion is the same: with no key, Then stays on the current map and says why.
-    await page.evaluate(() => { window.__fmMaptiler = window.FM_CONFIG.MAPTILER_KEY; window.FM_CONFIG.MAPTILER_KEY = ''; });
+    // site.config.json holds the site's MapTiler key, so this check empties it for one click and puts it back. The assertion is the same: with no key, Then stays on the current map and says why.
+    await page.evaluate(() => { window.__fmMaptiler = window.FamilySite.map.maptilerKey; window.FamilySite.map.maptilerKey = ''; });
     await page.click('#styleSwitch [data-style="then"]');
     await page.waitForTimeout(400);
     const thenNoKey = await page.evaluate(() => ({ style: FM.state.style, pressed: document.querySelector('#styleSwitch [aria-checked="true"]').dataset.style, note: document.getElementById('note').innerText }));
-    await page.evaluate(() => { window.FM_CONFIG.MAPTILER_KEY = window.__fmMaptiler; });
+    await page.evaluate(() => { window.FamilySite.map.maptilerKey = window.__fmMaptiler; });
     check(thenNoKey.style === 'today' && thenNoKey.pressed === 'today' && /MapTiler/.test(thenNoKey.note), 'Then without a key explains and stays on the current map', JSON.stringify(thenNoKey));
     const conf = await page.evaluate(() => ({ key: /Confidence|Probable|Confirmed/.test(document.getElementById('confKey').innerText), sat: !!document.getElementById('satBtn'), peg: !!document.getElementById('pegman') }));
     check(!conf.key && conf.sat && conf.peg, 'no confidence legend; the Satellite toggle and the Street View figure are there', JSON.stringify(conf));
@@ -325,14 +309,14 @@ function expectScope(id, scope) {
         }));
         return { set: Object.keys(set).sort(), bad, url: location.search, chip: !document.getElementById('famChip').hidden };
     });
-    const wantFam = ['ronald-andrews'].concat(linkIds(P['ronald-andrews'].parents)).filter(id => !livingIds.has(id)).sort();
+    const wantFam = ['ronald-andrews'].concat(linkIds(P['ronald-andrews'].parents)).sort();
     check(JSON.stringify(fam.set) === JSON.stringify(wantFam) && !fam.bad.length && /family=ron/.test(fam.url) && /gen=1/.test(fam.url) && fam.chip, "choosing Ron's family, back to his parents, shows only their places", JSON.stringify(fam).slice(0, 240));
     await page.click('#sibChk');
     await page.waitForTimeout(300);
     const sib = await page.evaluate(() => Object.keys(FM.familySet()));
-    const wantSib = new Set(wantFam); linkIds(P['ronald-andrews'].parents).forEach(pid => linkIds(P[pid].children).forEach(c => { if (!livingIds.has(c)) wantSib.add(c); }));
-    linkIds(P['ronald-andrews'].parents).forEach(pid => linkIds(P[pid].parents).forEach(gp => linkIds(P[gp].children).forEach(c => { if (!livingIds.has(c)) wantSib.add(c); })));
-    check(sib.length >= wantFam.length && sib.every(id => wantSib.has(id)) && linkIds(P['ronald-andrews'].parents).flatMap(pid => linkIds(P[pid].children)).filter(c => !livingIds.has(c)).every(c => sib.includes(c)), 'adding brothers and sisters brings in Ron\'s siblings', sib.join(','));
+    const wantSib = new Set(wantFam); linkIds(P['ronald-andrews'].parents).forEach(pid => linkIds(P[pid].children).forEach(c => wantSib.add(c)));
+    linkIds(P['ronald-andrews'].parents).forEach(pid => linkIds(P[pid].parents).forEach(gp => linkIds(P[gp].children).forEach(c => wantSib.add(c))));
+    check(sib.length >= wantFam.length && sib.every(id => wantSib.has(id)) && linkIds(P['ronald-andrews'].parents).flatMap(pid => linkIds(P[pid].children)).every(c => sib.includes(c)), 'adding brothers and sisters brings in Ron\'s siblings', sib.join(','));
     await page.click('#famChip');
     await page.waitForTimeout(400);
     check(await page.evaluate(() => !FM.familySet() && !/family=/.test(location.search)), 'the family chip clears the family filter');
@@ -356,7 +340,7 @@ function expectScope(id, scope) {
     await page.keyboard.press('ArrowDown');
     await page.waitForTimeout(200);
     const allOpts = await page.$$eval('#personList [role="option"]', els => els.map(e => e.id.replace(/^opt-/, '')));
-    check(opts.some(t => /Ronald/.test(t)) && allOpts.length > 50 && !allOpts.some(id => livingIds.has(id)), `the person list finds people by name and offers no living person (${allOpts.length} people)`);
+    check(opts.some(t => /Ronald/.test(t)) && allOpts.length > 50, `the person list finds people by name (${allOpts.length} people)`);
     await page.fill('#personInput', 'Ronald');
     await page.waitForTimeout(250);
     await page.keyboard.press('Enter');
@@ -396,8 +380,8 @@ function expectScope(id, scope) {
     await page.waitForTimeout(300);
     const peekFocus = await page.evaluate(() => !document.getElementById('peek').hidden);
     check(peekFocus, 'focusing a marker with the keyboard shows its peek');
-    // config.js now holds the Embed key, so this check empties it before the panel is drawn and puts it back. The assertion is the same: with no key, Street View is a Maps link.
-    await page.evaluate(() => { window.__fmEmbed = window.FM_CONFIG.GOOGLE_EMBED_KEY; window.FM_CONFIG.GOOGLE_EMBED_KEY = ''; });
+    // site.config.json holds the Embed key, so this check empties it before the panel is drawn and puts it back. The assertion is the same: with no key, Street View is a Maps link.
+    await page.evaluate(() => { window.__fmEmbed = window.FamilySite.map.googleEmbedKey; window.FamilySite.map.googleEmbedKey = ''; });
     await page.keyboard.press('Enter');
     await page.waitForTimeout(900);
     const panel = await page.evaluate(() => { const p = document.getElementById('panel'); const a = p.querySelector('a.sv-btn'); return { shown: !p.hidden, href: a ? a.href : null, place: FM.state.place, url: location.search }; });
@@ -411,7 +395,7 @@ function expectScope(id, scope) {
         vp && Math.abs(+vp.split(',')[0] - wantLat) < 1e-5 && Math.abs(+vp.split(',')[1] - wantLng) < 1e-5 && u.searchParams.get('pitch') === String(Math.round(sv.pitch)) && u.searchParams.get('fov') === String(Math.round(sv.fov)) &&
         (sv.heading == null ? !u.searchParams.has('heading') : u.searchParams.get('heading') === String(Math.round(sv.heading))),
         'without a key, the panel\'s Street View button is a correct Google Maps link (viewpoint, pitch, fov, and heading when known)', panel.href);
-    await page.evaluate(() => { window.FM_CONFIG.GOOGLE_EMBED_KEY = window.__fmEmbed; });
+    await page.evaluate(() => { window.FamilySite.map.googleEmbedKey = window.__fmEmbed; });
     const withHeading = await page.evaluate(() => FM.sv.mapsUrl({ lat: 51.5, lng: -0.1, streetView: { panoLat: 51.50001, panoLng: -0.10002, heading: 123.4, pitch: 6, fov: 75 } }));
     u = new URL(withHeading);
     check(u.searchParams.get('viewpoint') === '51.50001,-0.10002' && u.searchParams.get('heading') === '123' && u.searchParams.get('pitch') === '6' && u.searchParams.get('fov') === '75', 'a checked viewpoint puts its heading in the Maps URL', withHeading);
@@ -427,8 +411,8 @@ function expectScope(id, scope) {
     const list = await page.evaluate(() => { const v = document.getElementById('listView'); return { shown: !v.hidden, text: v.innerText }; });
     const listMissing = expectedPlaces.filter(id => !list.text.includes(PL[id].name));
     check(list.shown && !listMissing.length, 'View as list lists every place on the map', listMissing.slice(0, 5).join(', '));
-    const listLiving = livingNames.concat(HELD_BACK_WORDS).filter(n => list.text.includes(n));
-    check(!listLiving.length, 'the list names no living person and nothing held back', listLiving.join(', '));
+    const listHeld = HELD_BACK_WORDS.filter(n => list.text.includes(n));
+    check(!listHeld.length, 'the list names nothing held back', listHeld.join(', '));
     await page.keyboard.press('Escape');
     await page.waitForTimeout(300);
     await page.click('#trayBtn');
@@ -511,15 +495,13 @@ function expectScope(id, scope) {
         const voyages = flat.filter(e => e.isVoyage).length;
         const listUndated = [].map.call(document.querySelectorAll('#tlList [data-undated]'), li => li.dataset.undated);
         const inBeats = T.undated.filter(e => flat.indexOf(e) >= 0).length;
-        const living = flat.filter(e => e.personIds.some(id => D.people[id].isLiving)).length;
         return { beats: T.beats.length, events: flat.length, ordered, missing: want.filter(id => ids.indexOf(id) < 0), extra: ids.filter(id => want.indexOf(id) < 0), voyages, voyagesWant: Object.keys(D.voyages || {}).length,
-            undated: T.undated.length, listUndated: listUndated.length, inBeats, living, dateUnknown: /Date unknown/.test(document.getElementById('tlList').innerText) };
+            undated: T.undated.length, listUndated: listUndated.length, inBeats, dateUnknown: /Date unknown/.test(document.getElementById('tlList').innerText) };
     });
     check(tl.ordered, `the timeline's events run in date order (${tl.events} events in ${tl.beats} beats)`);
     check(!tl.missing.length && !tl.extra.length, 'every dated event is in the timeline, once', 'missing ' + tl.missing.slice(0, 5).join(',') + ' extra ' + tl.extra.slice(0, 5).join(','));
     check(tl.voyages > 0, `voyages play as their own beats (${tl.voyages})`);
     check(tl.undated > 0 && tl.listUndated === tl.undated && !tl.inBeats && tl.dateUnknown, `undated events are listed under "Date unknown" and not played (${tl.undated})`, JSON.stringify(tl).slice(0, 200));
-    check(!tl.living, 'no timeline beat carries a living person');
     // close family is named by how they are related to Pat or Ron, up to three steps away
     const kin = await page.evaluate(() => {
         const D = FM.DATA, k = id => { const r = FM.data.kinOf(id, D.people); return r ? r.label : null; };

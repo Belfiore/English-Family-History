@@ -77,7 +77,10 @@
     },
     {
       "href": "sources.html",
-      "label": "Sources"
+      "label": "Sources",
+      "match": [
+        "research-notes.html"
+      ]
     },
     {
       "href": "ask.html",

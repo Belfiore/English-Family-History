@@ -1383,6 +1383,25 @@
    "repository": "The Royal Kalendar and Court and City Register, Internet Archive identifiers royal-kalendar-1842 to royal-kalendar-1845. Read from the full text (OCR) on 26 November 2026.",
    "url": "https://archive.org/details/royal-kalendar-1842/page/267/mode/1up",
    "note": "The 1842 Ordnance Department section begins at printed page 267. Neighbouring names remain; John Fitzmaurice does not. The same is true of the 1843, 1844 and 1845 lists. Ledger C0732."
+  },
+  {
+"id": "royal-kalendar-1841-ordnance-page",
+   "title": "The Royal Kalendar, 1841, page 212: John Fitzmaurice, Junior Clerk under the Surveyor General of the Board of Ordnance",
+   "type": "printed official list",
+   "repository": "The Royal Kalendar and Court and City Register for the Year 1841, London. Internet Archive, identifier royal-kalendar-1841. Printed page 212, read from the page image on 26 November 2026.",
+   "date": "1841",
+   "url": "https://archive.org/details/royal-kalendar-1841/page/212/mode/1up",
+   "file": "images/records/notebook/1841-royal-kalendar-p212-ordnance-surveyor-general-john-fitzmaurice.jpg",
+   "note": "Civil Branch, Ordnance Department, left column. Under the heading 'Clerks under the Surveyor General', the Junior Clerks include John Fitzmaurice, after Hy. King and before Anty. Harvey. Robt. J. Fitzmaurice, who stood at the end of the same list in 1827, is not on this page. Ledger C0739."
+  },
+  {
+   "id": "freebmd-john-fitzmaurice-deaths-1840-1842",
+   "title": "FreeBMD death index: John Fitzmaurice, 1840 to 1842",
+   "type": "death index",
+   "repository": "FreeBMD transcription of the GRO death index, searched 26 November 2026.",
+   "date": "1840-1842",
+   "url": "https://www.freebmd.org.uk/cgi/search.pl",
+   "note": "No John Fitzmaurice death is indexed in 1841 or 1842 (C0740). In the December quarter of 1840 a John Fitzmaurice death was registered at Bloomsbury, volume 1, page 74, with no age in the index (C0741). The September quarter 1844 St Martin entry, 1 105, is already ruled out as an infant (C0709)."
   }
  ]
 }

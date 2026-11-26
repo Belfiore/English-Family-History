@@ -1,0 +1,54 @@
+{
+ "discoveries": [
+  {
+   "id": "royal-kalendar-1841-john-junior-clerk",
+   "personIds": [
+    "john-fitzmaurice"
+   ],
+   "found": "2026-11-26",
+   "headline": "The 1841 Royal Kalendar, printed page 212, lists John Fitzmaurice as a Junior Clerk under the Surveyor General, between Hy. King and Anty. Harvey.",
+   "findType": "record",
+   "foundBy": "Stuart - Genealogy British Family",
+   "source": {
+    "text": "The Royal Kalendar, 1841, printed page 212, Internet Archive identifier royal-kalendar-1841",
+    "url": "https://archive.org/details/royal-kalendar-1841/page/212/mode/1up"
+   },
+   "confidence": "confirmed",
+   "image": "images/records/notebook/1841-royal-kalendar-p212-john-fitzmaurice-junior-clerk-zoom.jpg",
+   "imageAlt": "1841 Royal Kalendar, printed page 212, Junior Clerks under the Surveyor General, with the name John Fitzmaurice boxed",
+   "changeNote": "The 1841 appearance had been read only from the scanned text. The page image confirms it."
+  },
+  {
+   "id": "freebmd-john-fitzmaurice-deaths-1841-1842-none",
+   "personIds": [
+    "john-fitzmaurice"
+   ],
+   "found": "2026-11-26",
+   "headline": "The GRO death index on FreeBMD has no John Fitzmaurice death registered in 1841 or 1842.",
+   "findType": "record",
+   "foundBy": "Stuart - Genealogy British Family",
+   "source": {
+    "text": "FreeBMD transcription of the GRO death index, searched 26 November 2026",
+    "url": "https://www.freebmd.org.uk/cgi/search.pl"
+   },
+   "confidence": "confirmed",
+   "changeNote": "Those are the years in which he left the Surveyor General clerk list, between the 1841 and 1842 Royal Kalendars."
+  },
+  {
+   "id": "freebmd-john-fitzmaurice-death-bloomsbury-1840",
+   "personIds": [
+    "john-fitzmaurice"
+   ],
+   "found": "2026-11-26",
+   "headline": "A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74. No age is in the index.",
+   "findType": "record",
+   "foundBy": "Stuart - Genealogy British Family",
+   "source": {
+    "text": "FreeBMD, Deaths December quarter 1840, Fitzmaurice, John, Bloomsbury 1 74",
+    "url": "https://www.freebmd.org.uk/cgi/search.pl"
+   },
+   "confidence": "unverified",
+   "changeNote": "This may be John the Ordnance clerk if the 1841 Kalendar was compiled before December 1840. It is not proved."
+  }
+ ]
+}

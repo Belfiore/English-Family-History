@@ -13689,6 +13689,108 @@
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the hospital building was not found, so the circle covers Ealing. The panel offers the Then and Today maps instead.",
    "blurbSourceIds": []
+  },
+  {
+   "id": "william-street-birmingham",
+   "name": "William Street, Birmingham",
+   "historicName": "William Street, parish of St Thomas, Birmingham",
+   "variants": [
+    "4 William Street, Birmingham"
+   ],
+   "kind": "home",
+   "address": "William Street, Birmingham St Thomas",
+   "modernAddress": "William Street, Birmingham B15",
+   "precision": "street",
+   "lat": 52.47376,
+   "lng": -1.9124,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 26 November 2026 for William Street, Birmingham, source osm-nominatim-2026. The street lies off Bath Row, in the old parish of St Thomas. The 1851 house number is not certain, so the circle covers the street.",
+   "uncertaintyMetres": 400,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Left unknown. The place is the street, not one house.",
+   "significance": "William Street, Birmingham is on the site for John Richard FitzMaurice and Robert W. FitzMaurice: lodgers in 1851.",
+   "events": [
+    {
+     "id": "pe--william-street-birmingham--lived--1851-01-01--john-richard-fitzmaurice",
+     "type": "lived",
+     "personIds": [
+      "john-richard-fitzmaurice",
+      "robert-william-fitzmaurice"
+     ],
+     "date": "1851",
+     "dateStart": "1851-01-01",
+     "dateEnd": "1851-12-31",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "john-richard-fitzmaurice.residences[0]",
+     "alsoFactRefs": [
+      "robert-william-fitzmaurice.residences[5]"
+     ],
+     "pages": [
+      "research-notes.html"
+     ],
+     "recordCrops": [
+      "notebook/1851-john-r-and-robert-w-fitzmaurice-lodgers-4-william-street-birmingham.jpg"
+     ],
+     "sourceIds": [
+      "census-1851-birmingham-st-thomas"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "1851 census, William Street, Birmingham St Thomas: John R. and Robert W. Fitzmaurice, brothers, lodgers and surveyors, both born in London."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "coordinateSourceIds": [
+    "osm-nominatim-2026"
+   ],
+   "todayNote": "William Street still runs off Bath Row, but the 1851 houses have gone.",
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": "In 1851 the brothers John Richard and Robert William FitzMaurice lodged here, both young surveyors.",
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the place is known only to within about 400 metres. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": [
+    "census-1851-birmingham-st-thomas"
+   ]
+  },
+  {
+   "id": "edgbaston",
+   "name": "Edgbaston",
+   "historicName": "Edgbaston",
+   "variants": [],
+   "kind": "town",
+   "address": "",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": 52.470994,
+   "lng": -1.922586,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 26 November 2026, source osm-nominatim-2026. Query: Edgbaston, Birmingham",
+   "uncertaintyMetres": 2000,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not applicable: this place is a town, district or wider area.",
+   "significance": "Edgbaston is on the site for John Richard FitzMaurice: lived 1861 and 1871.",
+   "events": [],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "area",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "osm-nominatim-2026"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the place is known only to within about 2000 metres. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
   }
  ]
 }

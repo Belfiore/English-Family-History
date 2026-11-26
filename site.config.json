@@ -4,6 +4,9 @@
   "engine": {
     "channel": "canary"
   },
+  "timeline": {
+    "enabled": true
+  },
   "site": {
     "name": "FitzMaurice & Andrews",
     "familyName": "the FitzMaurice and Andrews families",

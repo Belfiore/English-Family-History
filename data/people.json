@@ -7582,11 +7582,20 @@
    "immigration": null,
    "cardPlace": "Tower of London, then Mile End",
    "summary": "Clerk in the Board of Ordnance at the Tower of London. He married Eliza Taylor at St Martin's, Birmingham, on 3 February 1827. Father of William, John Richard and Robert William. By 1861 he was described as a gentleman. His birth, parents and death have not been found.",
-   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] His own birth, his parents and his death have not been found. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
+   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
    "timeline": [],
    "facts": [],
    "media": [],
-   "openQuestions": [],
+   "openQuestions": [
+    {
+     "question": "Where was he born, and who were his parents?",
+     "record": "A record that names his father: the September quarter 1840 St Martin in the Fields marriage of a John Fitzmaurice, if it is his, or a Carlow family register. See the research notes page."
+    },
+    {
+     "question": "When did he and Eliza die?",
+     "record": "Possible deaths are listed as leads on the research notes page: Eliza, 1839 or 1845; John, Brentford, 1865."
+    }
+   ],
    "relatedPages": [
     {
      "title": "The Falcke and FitzMaurice line",
@@ -7595,6 +7604,10 @@
     {
      "title": "Sources and how the evidence is graded",
      "url": "sources.html"
+    },
+    {
+     "title": "Research notes and leads",
+     "url": "research-notes.html"
     }
    ],
    "parents": [],
@@ -8287,7 +8300,7 @@
   {
    "id": "john-richard-fitzmaurice",
    "displayName": "John Richard FitzMaurice",
-   "disambiguator": "Baptised 1829, Stepney",
+   "disambiguator": "Baptised 1829, Stepney; surveyor in Birmingham",
    "givenNames": "John Richard",
    "surname": "FitzMaurice",
    "sex": "M",
@@ -8307,17 +8320,73 @@
     "placeId": "st-dunstan-stepney"
    },
    "death": null,
-   "residences": [],
-   "occupations": [],
+   "residences": [
+    {
+     "place": "Birmingham St Thomas",
+     "address": "William Street, Birmingham",
+     "years": "1851",
+     "sourceIds": [
+      "census-1851-birmingham-st-thomas"
+     ],
+     "confidence": "probable",
+     "placeId": "william-street-birmingham"
+    },
+    {
+     "place": "Edgbaston",
+     "address": null,
+     "years": "1861",
+     "sourceIds": [
+      "census-1861-edgbaston-jrf"
+     ],
+     "confidence": "probable",
+     "placeId": "edgbaston"
+    },
+    {
+     "place": "Edgbaston",
+     "address": null,
+     "years": "1871",
+     "sourceIds": [
+      "census-1871-edgbaston-jrf"
+     ],
+     "confidence": "probable",
+     "placeId": "edgbaston"
+    }
+   ],
+   "occupations": [
+    {
+     "title": "Surveyor",
+     "employer": null,
+     "place": "Birmingham",
+     "years": "1851",
+     "sourceIds": [
+      "census-1851-birmingham-st-thomas"
+     ],
+     "confidence": "probable"
+    }
+   ],
    "immigration": null,
-   "cardPlace": "Mile End Old Town",
-   "summary": "Baptised 4 November 1829 at St Dunstan's, Stepney, son of John, a clerk in the Ordnance Office, and Eliza. The date is the baptism, not a recorded birth.",
-   "story": "John Richard FitzMaurice was baptised on 4 November 1829 at St Dunstan's, Stepney, son of John and Eliza Fitzmaurice of Mile End Old Town. His father was a clerk in the Ordnance Office.[^parish-stepney-1829] The register gives the baptism, not a birth. His later life has not been followed here.",
+   "cardPlace": "Mile End Old Town, then Birmingham",
+   "summary": "Baptised 4 November 1829 at St Dunstan's, Stepney, son of John, a clerk in the Ordnance Office, and Eliza. In 1851 he was a surveyor lodging in Birmingham with his brother Robert William. By 1861 he was married to Anne and living at Edgbaston, where in 1871 he gave his birthplace as the Tower of London.",
+   "story": "John Richard FitzMaurice was baptised on 4 November 1829 at St Dunstan's, Stepney, son of John and Eliza Fitzmaurice of Mile End Old Town. His father was a clerk in the Ordnance Office.[^parish-stepney-1829] The register gives the baptism, not a birth.\n\nIn 1851 he and his younger brother Robert William were lodging in William Street, in the Birmingham parish of St Thomas, in the house of Sarah Hill, a milliner. John R. was 21 and Robert W. 19, both unmarried, both surveyors, and both born in London. The enumerator wrote the surname as it sounded, and the index reads Fitzmansie.[^census-1851-birmingham-st-thomas] In 1861 John Richard was the head of his own household at Edgbaston, aged 33 and born in London, with his wife Anne.[^census-1861-edgbaston-jrf] In 1871 he was still at Edgbaston, aged 41, with Anne and a niece, Annie, aged 4. That year his birthplace was written as the Tower of London, which fits his father's post as an Ordnance clerk there.[^census-1871-edgbaston-jrf] The 1861 and 1871 entries were read from the index and the image, but no copy was saved, so they are given as probable.",
    "timeline": [],
    "facts": [],
    "media": [],
-   "openQuestions": [],
-   "relatedPages": [],
+   "openQuestions": [
+    {
+     "question": "When and where did he marry Anne, and who was she?",
+     "record": "A marriage between 1851 and 1861; a Lambeth marriage of December quarter 1857 is a possible but unproved candidate."
+    },
+    {
+     "question": "Who was the niece Annie in 1871, and when did John Richard die?",
+     "record": "The 1871 census image and the death index after 1871."
+    }
+   ],
+   "relatedPages": [
+    {
+     "title": "Research notes and leads",
+     "url": "research-notes.html"
+    }
+   ],
    "parents": [
     "john-fitzmaurice",
     "eliza-fitzmaurice"
@@ -8414,6 +8483,16 @@
      ],
      "confidence": "confirmed",
      "placeId": "brompton-london"
+    },
+    {
+     "place": "Birmingham St Thomas",
+     "address": "William Street, Birmingham",
+     "years": "1851",
+     "sourceIds": [
+      "census-1851-birmingham-st-thomas"
+     ],
+     "confidence": "probable",
+     "placeId": "william-street-birmingham"
     }
    ],
    "occupations": [
@@ -8448,12 +8527,22 @@
      ],
      "confidence": "probable",
      "placeId": "aston-manor"
+    },
+    {
+     "title": "Surveyor",
+     "employer": null,
+     "place": "Birmingham",
+     "years": "1851",
+     "sourceIds": [
+      "census-1851-birmingham-st-thomas"
+     ],
+     "confidence": "probable"
     }
    ],
    "immigration": null,
    "cardPlace": "Edgbaston",
    "summary": "Baptised 30 September 1832 at St Dunstan's, Stepney, son of John and Eliza. Surveyor, later a granite merchant and contractor. Married Fanny Mary Falcke in 1861. Died 10 May 1895 at Edgbaston.",
-   "story": "Robert William FitzMaurice was baptised on 30 September 1832 at St Dunstan's, Stepney, son of John, a clerk in the Tower, and Eliza. The date usually given as his birth is this baptism. He was the youngest of three sons. William was born in 1827 and John Richard was baptised in 1829.[^parish-stepney-1832] [^parish-whitechapel-1827] [^parish-stepney-1829] On 14 September 1861, a surveyor, he married Fanny Mary Falcke at St Mary's, Battersea. His father John is called a gentleman on that register.[^parish-battersea-1861]\n\nIn 1871 he was a surveyor and contractor at Little Bromwich, Aston, born in Stepney.[^census-1871-aston] In 1881 he was a granite merchant and contractor at Aston Manor.[^census-1881-aston] He died at Edgbaston on 10 May 1895, aged 64. His estate was 12,921 pounds 4 shillings and 9 pence. The executors were his widow Fanny Mary and their sons John Rupert, a quarry owner, and Walter, a contractor.[^probate-robert-1895] When his son Edward married in 1897, the register names Robert William Fitzmaurice, contractor, as the father, and says he was already dead.[^parish-brixton-1897]",
+   "story": "Robert William FitzMaurice was baptised on 30 September 1832 at St Dunstan's, Stepney, son of John, a clerk in the Tower, and Eliza. The date usually given as his birth is this baptism. He was the youngest of three sons. William was born in 1827 and John Richard was baptised in 1829.[^parish-stepney-1832] [^parish-whitechapel-1827] [^parish-stepney-1829] In 1851, aged 19, he was a surveyor lodging with his brother John Richard in William Street, Birmingham.[^census-1851-birmingham-st-thomas] On 14 September 1861, a surveyor, he married Fanny Mary Falcke at St Mary's, Battersea. His father John is called a gentleman on that register.[^parish-battersea-1861]\n\nIn 1871 he was a surveyor and contractor at Little Bromwich, Aston, born in Stepney.[^census-1871-aston] In 1881 he was a granite merchant and contractor at Aston Manor.[^census-1881-aston] He died at Edgbaston on 10 May 1895, aged 64. His estate was 12,921 pounds 4 shillings and 9 pence. The executors were his widow Fanny Mary and their sons John Rupert, a quarry owner, and Walter, a contractor.[^probate-robert-1895] When his son Edward married in 1897, the register names Robert William Fitzmaurice, contractor, as the father, and says he was already dead.[^parish-brixton-1897]",
    "timeline": [
     {
      "date": "1832-09-30",
@@ -8500,6 +8589,10 @@
     {
      "title": "Sources and how the evidence is graded",
      "url": "sources.html"
+    },
+    {
+     "title": "Research notes and leads",
+     "url": "research-notes.html"
     }
    ],
    "parents": [

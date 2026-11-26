@@ -1402,6 +1402,16 @@
    "date": "1840-1842",
    "url": "https://www.freebmd.org.uk/cgi/search.pl",
    "note": "No John Fitzmaurice death is indexed in 1841 or 1842 (C0740). In the December quarter of 1840 a John Fitzmaurice death was registered at Bloomsbury, volume 1, page 74, with no age in the index (C0741). The September quarter 1844 St Martin entry, 1 105, is already ruled out as an infant (C0709)."
-  }
+  },
+ {
+  "id": "watsons-almanack-1830-dublin-ordnance",
+  "title": "Watson's Gentleman's and Citizen's Almanack, 1830, pages 109 and 110: Dublin Ordnance Civil Branch, Lower Castle Yard",
+  "type": "printed official list",
+  "repository": "Watson's Gentleman's and Citizen's Almanack for the Year 1830, Dublin. Internet Archive, identifier gentlemanscitize00wats_0. Printed pages 109 and 110, read from the page images on 26 November 2026.",
+  "date": "1830",
+  "url": "https://archive.org/details/gentlemanscitize00wats_0/page/109/mode/1up",
+  "file": "images/records/notebook/1830-watsons-almanack-p109-ordnance-civil-branch-dublin.jpg",
+  "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice (C0742). The lists cover clerks under the Store-keeper, the Clerk of Survey, the Clerk of Accounts, the Store Accountant, the Treasurer, the Clerk to the Respective Officers, and the Commanding Royal Engineer."
+ }
  ]
 }

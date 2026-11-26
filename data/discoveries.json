@@ -49,6 +49,21 @@
    },
    "confidence": "unverified",
    "changeNote": "This may be John the Ordnance clerk if the 1841 Kalendar was compiled before December 1840. It is not proved."
+  },
+  {
+   "id": "watsons-almanack-1830-dublin-ordnance-no-fitzmaurice",
+   "found": "2026-11-26",
+   "headline": "The 1830 Dublin Ordnance Civil Branch clerk lists at Lower Castle Yard, printed pages 109 and 110 of Watson's Almanack, name no Fitzmaurice.",
+   "findType": "record",
+   "foundBy": "Stuart - Genealogy British Family",
+   "source": {
+    "text": "Watson's Gentleman's and Citizen's Almanack, 1830, printed pages 109 and 110, Internet Archive identifier gentlemanscitize00wats_0",
+    "url": "https://archive.org/details/gentlemanscitize00wats_0/page/109/mode/1up"
+   },
+   "confidence": "confirmed",
+   "image": "images/records/notebook/1830-watsons-almanack-p109-ordnance-civil-branch-dublin.jpg",
+   "imageAlt": "1830 Watson's Almanack, printed page 109, the heading Ordnance, Civil Branch, Office, Lower Castle Yard, boxed",
+   "changeNote": "Robert Thomas still married in 1833 as of the Ordnance Office, Dublin. He is not in this 1830 clerk list."
   }
  ]
 }

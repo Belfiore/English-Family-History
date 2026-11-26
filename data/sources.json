@@ -1256,6 +1256,103 @@
    "date": "1981-05-07",
    "file": "images/records/1981-edward-robert-fitzmaurice-western-cape-deceased-estate-index.jpg",
    "note": "Born 1901, London. Death registered 27 May 1981, Cape Town. A second entry gives the death as 7 May 1981, Port Elizabeth. Father Edward Dickson. Mother indexed as Adellia and as Edith. Wife Eileen Alice, indexed Tallop. Sons Laurence John and Serel Anthony, probably Derek Anthony."
+  },
+  {
+   "id": "parish-lambeth-1833",
+   "title": "Marriage register, St Mary, Lambeth, 17 October 1833: Robert Thomas Fitzmaurice and Georgiana Elizabeth Evans",
+   "type": "parish register",
+   "repository": "London Metropolitan Archives P85/MRY1/409, page 36, entry 106. Ancestry, London, England, Church of England Marriages and Banns, 1754 to 1938, image 270 of 553.",
+   "date": "1833-10-17",
+   "url": "https://www.ancestry.com/imageviewer/collections/1623/images/31280_195092-00328",
+   "file": "images/records/notebook/1833-marriage-robert-thomas-fitzmaurice-georgiana-elizabeth-evans-lambeth-entry106.jpg",
+   "note": "By licence, by Edward Miller, curate. Robert Thomas Fitzmaurice, of the Ordnance Office, Dublin, bachelor; Georgiana Elizabeth Evans, of this parish, spinster. Witnesses Samuel L Robinson (first name probable) and Sarah Emily Robinson. Read from the register image on 26 November 2026. The register does not name his parents."
+  },
+  {
+   "id": "census-1851-birmingham-st-thomas",
+   "title": "1851 England census, William Street, Birmingham St Thomas: John R. and Robert W. Fitzmaurice",
+   "type": "census",
+   "repository": "The National Archives HO107, piece 2052, folio 239, page 33, enumeration district 9, schedule 144. Ancestry, 1851 England Census, image 35 of 61.",
+   "date": "1851-03-30",
+   "url": "https://www.ancestry.com/imageviewer/collections/8860/images/WARHO107_2052_2052-0014",
+   "file": "images/records/notebook/1851-john-r-and-robert-w-fitzmaurice-lodgers-4-william-street-birmingham.jpg",
+   "note": "Indexed as Fitzmansie. John R., lodger, unmarried, 21, surveyor, and Robert W., 19, surveyor, both born Middlesex, London, in the household of Sarah Hill, milliner. The house number was first read as 4; on the image it may be 44 or 74."
+  },
+  {
+   "id": "census-1861-edgbaston-jrf",
+   "title": "1861 England census, Edgbaston: John Richd. Fitzmaurice",
+   "type": "census",
+   "repository": "The National Archives RG9, piece 2122, folio 133, page 57. Ancestry, 1861 England Census.",
+   "date": "1861-04-07",
+   "url": "https://www.ancestry.com/imageviewer/collections/8767/images/WORRG9_2120_2123-0790",
+   "note": "John Richd. Fitzmaurice, head, 33, born London, with his wife Anne, 34. From the index and a reading of the image on 26 November 2026; no copy of the image was saved."
+  },
+  {
+   "id": "census-1871-edgbaston-jrf",
+   "title": "1871 England census, Edgbaston: John Fitzmaurice, born Tower of London",
+   "type": "census",
+   "repository": "The National Archives RG10, piece 3081, folio 54, page 48. Ancestry, 1871 England Census.",
+   "date": "1871-04-02",
+   "url": "https://www.ancestry.com/imageviewer/collections/7619/images/WARRG10_3081_3083-0119",
+   "note": "John Fitzmaurice, 41, born Tower of London, with his wife Anne, 43, and a niece Annie, 4. From the index and a reading of the image on 26 November 2026; no copy of the image was saved."
+  },
+  {
+   "id": "census-1841-chiswick-lead",
+   "title": "1841 England census, Chiswick: John Fitzmaurice, clerk (a lead)",
+   "type": "census",
+   "repository": "The National Archives HO107, piece 689, book 2, folio 41, page 20, line 7. Ancestry, 1841 England Census, image 11 of 17.",
+   "date": "1841-06-06",
+   "file": "images/records/notebook/1841-john-fitzmaurice-clerk-chiswick-lead.jpg",
+   "note": "John Fitzmaurice, 35, clerk, born in the county; Mary Ann, 45; Eliza Wakeman, 11, servant. Possibly John the Ordnance clerk, but the wife's name and the birthplace do not fit. Low confidence."
+  },
+  {
+   "id": "burial-st-martin-1844",
+   "title": "Burial register, St Martin in the Fields, 1844: John FitzMaurice, an infant",
+   "type": "parish register",
+   "repository": "City of Westminster Archives Centre STM/PR/10/3, page 331. Ancestry, Westminster, London, England, Church of England Deaths and Burials, 1812 to 1910, image 330 of 434.",
+   "date": "1844-08",
+   "file": "images/records/notebook/1844-burial-john-fitzmaurice-infant-st-martin-ruled-out.jpg",
+   "note": "Abode the workhouse; an infant aged some weeks. This is the September quarter 1844 death in the index, and it is not John the Ordnance clerk."
+  },
+  {
+   "id": "freebmd-1840-st-martin-marriage",
+   "title": "GRO marriage index, September quarter 1840, St Martin in the Fields, volume 1, page 152: John Fitzmaurice",
+   "type": "civil registration index",
+   "repository": "FreeBMD transcription of the GRO index, freebmd.org.uk, searched 26 November 2026.",
+   "date": "1840",
+   "url": "https://www.freebmd.org.uk/cgi/search.pl",
+   "file": "images/records/notebook/1840-q3-marriage-index-st-martin-1-152-whole-page-freebmd.jpg",
+   "note": "Women on the same page: Mary Clark, Selina Kempson, Mary Ann Simmons Sparks and Elizabeth Kirk Stubbington. Not yet shown to be John the Ordnance clerk. The register entry would give his father's name."
+  },
+  {
+   "id": "freebmd-fitzmaurice-deaths-1839-1865",
+   "title": "GRO death index: Fitzmaurice deaths that may belong to John and Eliza, 1839 to 1865",
+   "type": "civil registration index",
+   "repository": "FreeBMD transcription of the GRO index, freebmd.org.uk, searched 25 and 26 November 2026.",
+   "url": "https://www.freebmd.org.uk/cgi/search.pl",
+   "note": "Elizabeth Fitzmorris, March quarter 1839, Marylebone 1 173 and 1 178; Eliza Fitzmaurice, December quarter 1845, St Luke 2 208; John Fitzmaurice, December quarter 1865, Brentford 3a 51 and 3a 61. None is yet tied to the family."
+  },
+  {
+   "id": "ancestry-tree-cary-hint",
+   "title": "Ancestry member tree hint: Robert Thomas FitzMaurice, born 2 June 1808, Carlow",
+   "type": "online tree",
+   "repository": "An Ancestry member tree, seen as a hint on 26 November 2026. No record images were seen with it.",
+   "note": "Gives Robert Thomas's parents as John FitzMaurice and Henrietta Frances Cary. A tree is a lead only."
+  },
+  {
+   "id": "nli-fitzmaurice-papers",
+   "title": "FitzMaurice Papers, Kelvin Grove, County Carlow, National Library of Ireland",
+   "type": "archive catalogue",
+   "repository": "National Library of Ireland, MS 23,549 to 23,556 (diaries and cash book of William FitzMaurice of Kelvin Grove, 1849 to 1928) and MS 51,060/178. University of Limerick, ArchivUL P43/1/1/5/1/3/2/26.",
+   "url": "https://catalogue.nli.ie/",
+   "note": "Catalogue entries only. Not yet seen. A family register naming John, born 1803, would most likely be among these papers."
+  },
+  {
+   "id": "freebmd-bennett-ellison-1915-1945",
+   "title": "GRO birth index, Bennett births with mother's maiden name Ellison, England and Wales, 1915 to 1945",
+   "type": "civil registration index",
+   "repository": "FreeBMD transcription of the GRO index, freebmd.org.uk, searched 26 November 2026.",
+   "url": "https://www.freebmd.org.uk/cgi/search.pl",
+   "note": "The only southern entries are the Epsom, Brighton and Eastbourne children already on the research notes page. Other Bennett and Ellison births are in Lancashire, Cheshire, Hampstead and Yorkshire and are not connected."
   }
  ]
 }

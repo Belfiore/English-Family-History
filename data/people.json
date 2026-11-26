@@ -8343,7 +8343,7 @@
     },
     {
      "place": "Edgbaston",
-     "address": null,
+     "address": "367 Pershore Road, Edgbaston",
      "years": "1871",
      "sourceIds": [
       "census-1871-edgbaston-jrf"
@@ -8362,12 +8362,34 @@
       "census-1851-birmingham-st-thomas"
      ],
      "confidence": "probable"
+    },
+    {
+     "title": "Assistant land surveyor",
+     "employer": null,
+     "place": "Edgbaston",
+     "years": "1861",
+     "sourceIds": [
+      "census-1861-edgbaston-jrf"
+     ],
+     "confidence": "probable",
+     "note": "The first word of the occupation is hard to read."
+    },
+    {
+     "title": "Land and road surveyor, not in practice; agent to the Birmingham Gas Company",
+     "employer": "Birmingham Gas Company",
+     "place": "Edgbaston",
+     "years": "1871",
+     "sourceIds": [
+      "census-1871-edgbaston-jrf"
+     ],
+     "confidence": "probable",
+     "note": "The occupation is hard to read."
     }
    ],
    "immigration": null,
    "cardPlace": "Mile End Old Town, then Birmingham",
-   "summary": "Baptised 4 November 1829 at St Dunstan's, Stepney, son of John, a clerk in the Ordnance Office, and Eliza. In 1851 he was a surveyor lodging in Birmingham with his brother Robert William. By 1861 he was married to Anne and living at Edgbaston, where in 1871 he gave his birthplace as the Tower of London.",
-   "story": "John Richard FitzMaurice was baptised on 4 November 1829 at St Dunstan's, Stepney, son of John and Eliza Fitzmaurice of Mile End Old Town. His father was a clerk in the Ordnance Office.[^parish-stepney-1829] The register gives the baptism, not a birth.\n\nIn 1851 he and his younger brother Robert William were lodging in William Street, in the Birmingham parish of St Thomas, in the house of Sarah Hill, a milliner. John R. was 21 and Robert W. 19, both unmarried, both surveyors, and both born in London. The enumerator wrote the surname as it sounded, and the index reads Fitzmansie.[^census-1851-birmingham-st-thomas] In 1861 John Richard was the head of his own household at Edgbaston, aged 33 and born in London, with his wife Anne.[^census-1861-edgbaston-jrf] In 1871 he was still at Edgbaston, aged 41, with Anne and a niece, Annie, aged 4. That year his birthplace was written as the Tower of London, which fits his father's post as an Ordnance clerk there.[^census-1871-edgbaston-jrf] The 1861 and 1871 entries were read from the index and the image, but no copy was saved, so they are given as probable.",
+   "summary": "Baptised 4 November 1829 at St Dunstan's, Stepney, son of John, a clerk in the Ordnance Office, and Eliza. In 1851 he was a surveyor lodging in Birmingham with his brother Robert William. By 1861 he was married to Anne, born in Guernsey, and living at Edgbaston, where in 1871, at Pershore Road, he gave his birthplace as the Tower of London.",
+   "story": "John Richard FitzMaurice was baptised on 4 November 1829 at St Dunstan's, Stepney, son of John and Eliza Fitzmaurice of Mile End Old Town. His father was a clerk in the Ordnance Office.[^parish-stepney-1829] The register gives the baptism, not a birth.\n\nIn 1851 he and his younger brother Robert William were lodging in William Street, in the Birmingham parish of St Thomas, in the house of Sarah Hill, a milliner. John R. was 21 and Robert W. 19, both unmarried, both surveyors, and both born in London. The enumerator wrote the surname as it sounded, and the index reads Fitzmansie.[^census-1851-birmingham-st-thomas] In 1861 John Richard was the head of his own household at Edgbaston, aged 33, married, born in Middlesex, London, and probably an assistant land surveyor (the first word is hard to read). His wife Anne, 34, was born in Guernsey.[^census-1861-edgbaston-jrf] In 1871 they lived at 367 Pershore Road, Edgbaston. John was 41, a land and road surveyor not in practice and an agent to the Birmingham Gas Company, as far as the entry can be read, and his birthplace was written as the Tower of London, which fits his father's post as an Ordnance clerk there. Annie, his wife, was 43 and born in Guernsey. A girl also named Annie, aged 4 and born in London, is entered as his niece, though one reading of the word gives daughter.[^census-1871-edgbaston-jrf]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -8377,8 +8399,8 @@
      "record": "A marriage between 1851 and 1861; a Lambeth marriage of December quarter 1857 is a possible but unproved candidate."
     },
     {
-     "question": "Who was the niece Annie in 1871, and when did John Richard die?",
-     "record": "The 1871 census image and the death index after 1871."
+     "question": "Was Annie, aged 4 in 1871, his niece or his daughter, and when did John Richard die?",
+     "record": "A London birth of an Annie Fitzmaurice about 1866 to 1867, and the death index after 1871."
     }
    ],
    "relatedPages": [
@@ -8446,7 +8468,7 @@
     },
     {
      "place": "Little Bromwich, Aston",
-     "address": null,
+     "address": "Coleshill Road, Little Bromwich",
      "years": "1871",
      "sourceIds": [
       "census-1871-aston"

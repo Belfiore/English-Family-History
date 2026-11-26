@@ -555,8 +555,10 @@
    "id": "census-1871-aston",
    "title": "1871 England census, Little Bromwich, Aston",
    "type": "census",
-   "repository": "The National Archives RG10, piece 3160, folio 30, page 4. Ancestry, 1871 England Census.",
-   "note": "Robert William Fitzmaurice, 39, surveyor and contractor, born Stepney. Fanny M., 34. Children Eliza Ada, Rupert J., Harry, Arthur Percy and Walter. The France birthplace given for Fanny on this page is an error. Later censuses and her baptism give Battersea."
+   "repository": "The National Archives RG10, piece 3160, folio 30, page 4, schedule 8. Ancestry, 1871 England Census, image 4 of 26.",
+   "note": "Robert William Fitzmaurice, 39, surveyor and contractor, born Stepney. Fanny M., 34. Children Eliza Ada, Rupert J., Harry, Arthur Percy and Walter. The France birthplace given for Fanny on this page is an error. Later censuses and her baptism give Battersea. Read again from the image on 26 November 2026: Coleshill Road, schedule 8; the two eldest children were born at Edgbaston, Birmingham.",
+   "url": "https://www.ancestry.com/imageviewer/collections/7619/images/WARRG10_3160_3161-0038",
+   "file": "images/records/notebook/1871-robert-w-fitzmaurice-household-coleshill-road-little-bromwich.jpg"
   },
   {
    "id": "census-1881-aston",
@@ -1281,19 +1283,21 @@
    "id": "census-1861-edgbaston-jrf",
    "title": "1861 England census, Edgbaston: John Richd. Fitzmaurice",
    "type": "census",
-   "repository": "The National Archives RG9, piece 2122, folio 133, page 57. Ancestry, 1861 England Census.",
+   "repository": "The National Archives RG9, piece 2122, folio 133, page 57, schedule 265. Ancestry, 1861 England Census, image 63 of 64.",
    "date": "1861-04-07",
    "url": "https://www.ancestry.com/imageviewer/collections/8767/images/WORRG9_2120_2123-0790",
-   "note": "John Richd. Fitzmaurice, head, 33, born London, with his wife Anne, 34. From the index and a reading of the image on 26 November 2026; no copy of the image was saved."
+   "note": "John Rich'd Fitzmaurice, head, married, 33, occupation read as assistant land surveyor (the first word is uncertain), born Middlesex, London; Anne, wife, 34, born Guernsey. Read from the image on 26 November 2026.",
+   "file": "images/records/notebook/1861-john-richd-fitzmaurice-and-anne-edgbaston-schedule265.jpg"
   },
   {
    "id": "census-1871-edgbaston-jrf",
-   "title": "1871 England census, Edgbaston: John Fitzmaurice, born Tower of London",
+   "title": "1871 England census, 367 Pershore Road, Edgbaston: John R. Fitzmaurice, born Tower of London",
    "type": "census",
-   "repository": "The National Archives RG10, piece 3081, folio 54, page 48. Ancestry, 1871 England Census.",
+   "repository": "The National Archives RG10, piece 3081, folio 54, page 48. Ancestry, 1871 England Census, image 49 of 52.",
    "date": "1871-04-02",
    "url": "https://www.ancestry.com/imageviewer/collections/7619/images/WARRG10_3081_3083-0119",
-   "note": "John Fitzmaurice, 41, born Tower of London, with his wife Anne, 43, and a niece Annie, 4. From the index and a reading of the image on 26 November 2026; no copy of the image was saved."
+   "note": "John R. Fitzmaurice, head, married, 41, land and road surveyor, not in practice, agent to the Birmingham Gas Company (the occupation is hard to read), born Tower of London; Annie, wife, 43, born Guernsey; Annie, 4, born London, entered as niece (one reading gives daughter); Esther Hanson, servant. Read from the image on 26 November 2026.",
+   "file": "images/records/notebook/1871-john-r-fitzmaurice-household-367-pershore-road-edgbaston.jpg"
   },
   {
    "id": "census-1841-chiswick-lead",

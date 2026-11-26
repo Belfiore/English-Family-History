@@ -1346,9 +1346,9 @@
    "id": "nli-fitzmaurice-papers",
    "title": "FitzMaurice Papers, Kelvin Grove, County Carlow, National Library of Ireland",
    "type": "archive catalogue",
-   "repository": "National Library of Ireland, MS 23,549 to 23,556 (diaries and cash book of William FitzMaurice of Kelvin Grove, 1849 to 1928) and MS 51,060/178. University of Limerick, ArchivUL P43/1/1/5/1/3/2/26.",
-   "url": "https://catalogue.nli.ie/",
-   "note": "Catalogue entries only. Not yet seen. A family register naming John, born 1803, would most likely be among these papers."
+   "repository": "National Library of Ireland, FitzMaurice Papers, collection vtls000806808: MS 51,060, MS 42,647, MS 23,256 to 23,263, MS 23,341 to 23,342, MS 23,524 to 23,560, and MS 24,916 to 24,917 (40 boxes and 71 volumes). MS 23,549 is a diary of William FitzMaurice of Kelvin Grove, 1888 to 1913. University of Limerick, ArchivUL P43/1/1/5/1/3/2/26.",
+   "url": "https://catalogue.nli.ie/Collection/vtls000806808",
+   "note": "Catalogue entries only. Not yet seen. MS 23,549 is too late to be a birth register for 1803; earlier family papers may still sit elsewhere in the collection. Ledger C0714, C0735."
   },
   {
    "id": "freebmd-bennett-ellison-1915-1945",
@@ -1385,6 +1385,32 @@
    "url": "https://archive.org/details/New_York_State_Marriage_Index_1922",
    "file": "images/records/notebook/hennessy/1922-marriage-index-kathryn-hennessy-new-rochelle-31341.jpg",
    "note": "No marriage of a Joseph or Henry Hennessy in these years outside New York City. Kathryn Hennessy married at New Rochelle on 19 September 1922, certificate 31341."
+  },
+  {
+   "id": "royal-kalendar-1827-ordnance",
+   "title": "The Royal Kalendar, 1827, page 217: John Fitzmaurice, Junior Clerk under the Surveyor General of the Board of Ordnance",
+   "type": "printed official list",
+   "repository": "The Royal Kalendar and Court and City Register for the Year 1827, London. Internet Archive, identifier royal-kalendar-1827. Printed page 217, read from the page image on 26 November 2026.",
+   "date": "1827",
+   "url": "https://archive.org/details/royal-kalendar-1827/page/217/mode/1up",
+   "file": "images/records/notebook/1827-royal-kalendar-p217-ordnance-junior-clerks-john-and-robert-j-fitzmaurice.jpg",
+   "note": "Civil Branch, Ordnance Department. The heading 'Clerks under the Surveyor General' is in the left column. In the right column the Junior Clerks include John Fitzmaurice, after Hy. King and before Anty. Harvey, and, at the end of the same list, Robt. J. Fitzmaurice (the printed initial is J, not T). Ledger C0729, C0733."
+  },
+  {
+   "id": "royal-kalendar-1828-1841-ordnance",
+   "title": "The Royal Kalendar, 1828 to 1841: John Fitzmaurice still a Junior Clerk under the Surveyor General",
+   "type": "printed official list",
+   "repository": "The Royal Kalendar and Court and City Register, Internet Archive identifiers royal-kalendar-1828 and royal-kalendar-1830 to royal-kalendar-1841. Read from the full text (OCR) on 26 November 2026, except 1827, which was read from the page image.",
+   "url": "https://archive.org/details/royal-kalendar-1841/page/212/mode/1up",
+   "note": "The same post is listed in 1828, 1830 to 1841 (1841 at printed page 212; 1832 at printed page 214). A 1829 English volume was not found, nor were the 1826 or earlier English volumes. Some years have poor OCR, but the neighbouring names match. Ledger C0730."
+  },
+  {
+   "id": "royal-kalendar-1842-1845-ordnance",
+   "title": "The Royal Kalendar, 1842 to 1845: John Fitzmaurice no longer in the Surveyor General junior clerk list",
+   "type": "printed official list",
+   "repository": "The Royal Kalendar and Court and City Register, Internet Archive identifiers royal-kalendar-1842 to royal-kalendar-1845. Read from the full text (OCR) on 26 November 2026.",
+   "url": "https://archive.org/details/royal-kalendar-1842/page/267/mode/1up",
+   "note": "The 1842 Ordnance Department section begins at printed page 267. Neighbouring names remain; John Fitzmaurice does not. The same is true of the 1843, 1844 and 1845 lists. Ledger C0732."
   }
  ]
 }

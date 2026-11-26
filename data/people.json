@@ -7577,12 +7577,26 @@
      ],
      "confidence": "confirmed",
      "placeId": "tower-of-london"
+    },
+    {
+     "title": "Junior Clerk under the Surveyor General",
+     "employer": "Board of Ordnance",
+     "place": "Tower of London",
+     "years": "1827 to 1841",
+     "sourceIds": [
+      "royal-kalendar-1827-ordnance",
+      "royal-kalendar-1828-1841-ordnance",
+      "royal-kalendar-1842-1845-ordnance"
+     ],
+     "confidence": "probable",
+     "placeId": "tower-of-london",
+     "note": "Listed in the Royal Kalendar from 1827 to 1841; gone from the 1842 list. Probably this John (C0731). The 1827 page was read from the image; later years from the full text."
     }
    ],
    "immigration": null,
    "cardPlace": "Tower of London, then Mile End",
-   "summary": "Clerk in the Board of Ordnance at the Tower of London. He married Eliza Taylor at St Martin's, Birmingham, on 3 February 1827. Father of William, John Richard and Robert William. By 1861 he was described as a gentleman. His birth, parents and death have not been found.",
-   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
+   "summary": "Clerk in the Board of Ordnance at the Tower of London, listed as a Junior Clerk under the Surveyor General from 1827 to 1841. He married Eliza Taylor at St Martin's, Birmingham, on 3 February 1827. Father of William, John Richard and Robert William. By 1861 he was described as a gentleman. His birth, parents and death have not been found.",
+   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] The Royal Kalendar for 1827 lists a John Fitzmaurice as a Junior Clerk under the Surveyor General of the Board of Ordnance. The same name stays in that list through the 1841 volume and is gone from 1842.[^royal-kalendar-1827-ordnance] [^royal-kalendar-1828-1841-ordnance] [^royal-kalendar-1842-1845-ordnance] That is probably this John: the parish registers already call him a clerk in the Ordnance Office and in the Tower at the same dates. The lists do not give his age, birthplace or parents. John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -7594,6 +7608,10 @@
     {
      "question": "When did he and Eliza die?",
      "record": "Possible deaths are listed as leads on the research notes page: Eliza, 1839 or 1845; John, Brentford, 1865."
+    },
+    {
+     "question": "When and why did he leave the Ordnance between the 1841 and 1842 Royal Kalendars?",
+     "record": "A death, retirement or transfer in 1841 or early 1842 would fit. Search the death index for those years. The existing Brentford 1865 leads now look late, unless he left the office years before he died. See the research notes page."
     }
    ],
    "relatedPages": [

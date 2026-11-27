@@ -149,6 +149,203 @@
    "image": "images/records/notebook/1840-12-15-burial-john-fitzmaurice-st-giles-in-the-fields-entry1098-full-page.jpg",
    "imageAlt": "Burial register of St Giles in the Fields, page 138, image 358 of 365, entry 1098 John Fitzmaurice, aged one and a half, boxed",
    "changeNote": "St Giles and St George Bloomsbury were in the same registration district, so this infant is almost certainly the December quarter 1840 Bloomsbury entry (C0741). The GRO certificate for that entry is now a weaker suggestion, because the age is already in the burial register."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "kelly-1879-jones-fitzmaurice-stone-merchants-tindal-street",
+   "personIds": [
+    "robert-william-fitzmaurice"
+   ],
+   "placeIds": [
+    "tindal-street-ladywood"
+   ],
+   "headline": "Kelly's 1879 Birmingham directory lists Jones and Fitzmaurice, stone merchants, of Tindal Street, Ladywood, and Robert William Fitzmaurice as a stone merchant of that firm.",
+   "findType": "record",
+   "source": {
+    "text": "Kelly's Post Office Directory of Birmingham, 1879, printed pages 150, 320 and 592 (Internet Archive bub_gb_dO8NAAAAQAAJ, scan leaves n175, n345, n617)",
+    "url": "https://archive.org/details/bub_gb_dO8NAAAAQAAJ/page/n617/mode/1up"
+   },
+   "confidence": "probable",
+   "image": "images/records/notebook/1879-kelly-birmingham-p592-stone-merchants-jones-and-fitzmaurice.jpg",
+   "imageAlt": "Kelly's 1879 Birmingham directory, page 592, Stone merchants, with Jones and Fitzmaurice, Tindal Street, Ladywood boxed",
+   "changeNote": "The entries had been read only from the scanned text (C0745). The page images confirm them; that this Robert William is our ancestor is probable."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "kelly-1879-robert-william-fitzmaurice-norlands-erdington",
+   "personIds": [
+    "robert-william-fitzmaurice"
+   ],
+   "placeIds": [
+    "erdington"
+   ],
+   "headline": "The same 1879 directory lists Robert William Fitzmaurice among the private residents of Erdington, at a house called Norlands.",
+   "findType": "record",
+   "source": {
+    "text": "Kelly's Post Office Directory of Birmingham, 1879, printed page 174, Erdington, private residents (scan leaf n199)",
+    "url": "https://archive.org/details/bub_gb_dO8NAAAAQAAJ/page/n199/mode/1up"
+   },
+   "confidence": "probable",
+   "image": "images/records/notebook/1879-kelly-birmingham-p174-erdington-robert-william-fitzmaurice-norlands.jpg",
+   "imageAlt": "Kelly's 1879 Birmingham directory, page 174, Erdington private residents, with Fitzmaurice Robert William, Norlands boxed",
+   "changeNote": "A new home for Robert William between the 1871 and 1881 censuses. His widow Fanny Mary later died at Erdington, in 1917."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "cliffe-hill-quarry-jones-and-fitzmaurice-1870s",
+   "personIds": [
+    "robert-william-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "Published histories of the Cliffe Hill granite quarry at Markfield, Leicestershire, say it was first worked in the 1870s by Jones and Fitzmaurice of Birmingham, who stopped in 1881.",
+   "findType": "connection",
+   "source": {
+    "text": "MQP, The History of Cliffe Hill (time line); Annette McGrath, The Rock Quarries of Charnwood Forest, Mercian Geologist 16 (4), page 253",
+    "url": "https://www.mqp.co.uk/en/about/history"
+   },
+   "confidence": "probable",
+   "image": "photos/quarry/cliffe-hill-granite-quarry-about-1940s-commons.jpg",
+   "imageAlt": "Cliffe Hill Granite Quarry, about 1940 to 1948 (Wikimedia Commons, public domain)",
+   "changeNote": "The Fitzmaurice partner was probably Robert William, the stone merchant of Jones and Fitzmaurice in 1879."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "cliffe-hill-quarry-john-rupert-1891",
+   "personIds": [
+    "john-rupert-fitzmaurice",
+    "robert-william-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "John Rupert FitzMaurice acquired the Cliffe Hill quarry from his father on 9 May 1891 and reopened it, with Peter Preston as manager.",
+   "findType": "connection",
+   "source": {
+    "text": "Annette McGrath, The Rock Quarries of Charnwood Forest, Mercian Geologist 16 (4), page 253, citing M. H. Billington, Cliffe Hill Mineral Railway (1974); MQP, The History of Cliffe Hill",
+    "url": "https://www.emgs.org.uk/uploads/1/4/9/1/149143154/mg16_4_2007_241_mcgrath_the_rock_quarries_of_charnwood_forest_1.pdf"
+   },
+   "confidence": "probable",
+   "changeNote": "Explains why John Rupert was a quarry owner when he proved his father's will in 1895."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "cliffe-hill-granite-company-1894",
+   "personIds": [
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "The Cliffe Hill Granite Company Ltd, of Cliffe Hill, Markfield, was registered on 1 November 1894.",
+   "findType": "record",
+   "source": {
+    "text": "Grace's Guide, Cliffe Hill Granite Co, citing The Stock Exchange Year Book 1908; McGrath 2007, page 253",
+    "url": "https://www.gracesguide.co.uk/Cliffe_Hill_Granite_Co"
+   },
+   "confidence": "confirmed",
+   "changeNote": "Two independent published sources give the same date."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "cliffe-hill-freehold-1935-and-founder-death-1949",
+   "personIds": [
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "The Cliffe Hill Granite Company bought the freehold of the quarry from its founder, J. R. Fitzmaurice, in 1935, and the company history records his death in 1949.",
+   "findType": "record",
+   "source": {
+    "text": "MQP, The History of Cliffe Hill, time line entries for 1935 and 1949",
+    "url": "https://www.mqp.co.uk/en/about/history"
+   },
+   "confidence": "probable",
+   "changeNote": "The 1949 death agrees with the GRO index and probate calendar already on the site (died 21 September 1949, Leicester)."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "cliffe-hill-quarry-today",
+   "personIds": [
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "Cliffe Hill is still a working quarry: Tarmac bought the company in 1965, and today MQP produces up to 4.5 million tonnes of granite aggregate a year there.",
+   "findType": "place",
+   "source": {
+    "text": "MQP, Cliffe Hill Quarry and Asphalt Plant; MQP, The History of Cliffe Hill; Leicestershire and Rutland HER MLE21759",
+    "url": "https://www.mqp.co.uk/en/locations/cliffe-hill-quarry-and-asphalt-plant"
+   },
+   "confidence": "probable",
+   "changeNote": "Answers what became of the family business."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "cliffe-hill-granite-lorry-photographs-delcampe",
+   "personIds": [
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "Original photographs of Cliffe Hill Granite Co. Ltd lorries and the quarry, by Leicester photographers, were found for sale on Delcampe.",
+   "findType": "photo",
+   "source": {
+    "text": "Delcampe listings 2519731289, 2563308122 and 2563273214, seen 27 November 2026 (nothing bought)",
+    "url": "https://www.delcampe.net/en_GB/collectables/photography/photographs/photographs-originals/places/4-photos-r-jordan-leicester-ansicht-leicester-lastwagen-morris-steinbruch-cliffe-hill-granite-co-ltd-lkw-2519731289.html"
+   },
+   "confidence": "probable",
+   "changeNote": "The company name on the lorries is certain; that it is the family firm is probable. No family member is shown."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "holmes-street-renamed-exmouth-street",
+   "personIds": [
+    "john-fitzmaurice"
+   ],
+   "placeIds": [
+    "holmes-street-commercial-road"
+   ],
+   "headline": "Holmes Street, off Commercial Road, where John FitzMaurice probably insured a house in 1830, was renamed Exmouth Street in 1867 and has since gone.",
+   "findType": "place",
+   "source": {
+    "text": "The Underground Map, Exmouth Street, E1",
+    "url": "http://www.theundergroundmap.com/article.html?id=100780"
+   },
+   "confidence": "probable",
+   "changeNote": "Lets the 1830 address go on the map as an area circle."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "old-mint-opposite-irish-barracks-inside-tower",
+   "personIds": [
+    "john-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-mint-tower-of-london"
+   ],
+   "headline": "The Irish Barracks stood in the old Mint inside the Tower of London, so John FitzMaurice's 1834 house at 27 Old Mint was probably within the Tower walls.",
+   "findType": "place",
+   "source": {
+    "text": "Historic England research record, Irish Barracks, Tower of London (1109413)",
+    "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/0d636742-8028-4a8c-8b7c-e1f9aaf2d338/24e55d64-a222-49e9-b315-610d4fc0c183"
+   },
+   "confidence": "probable",
+   "changeNote": "Puts the clerk's 1834 home a few steps from the Ordnance offices where he worked."
   }
  ]
 }

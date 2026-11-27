@@ -64,7 +64,8 @@
         "reg-sisters.html",
         "bennett.html",
         "andrews-roots.html",
-        "cousins.html"
+        "cousins.html",
+        "quarry.html"
       ]
     },
     {
@@ -312,7 +313,8 @@
         "id": "falcke",
         "label": "Falcke and FitzMaurice",
         "pages": [
-          "falcke.html"
+          "falcke.html",
+          "quarry.html"
         ]
       },
       {
@@ -411,6 +413,7 @@
       "index.html",
       "branches.html",
       "falcke.html",
+      "quarry.html",
       "reg-sisters.html",
       "bennett.html",
       "andrews-roots.html",

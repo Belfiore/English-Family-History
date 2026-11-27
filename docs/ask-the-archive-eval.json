@@ -1,5 +1,5 @@
 {
- "date": "2026-11-25",
+ "date": "2026-11-27",
  "mode": "quick answers",
  "total": 177,
  "passed": 177,
@@ -121,7 +121,7 @@
   }
  },
  "failed": [],
- "citations": 709,
+ "citations": 725,
  "citationErrors": 0,
  "avgMs": 1
 }

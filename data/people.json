@@ -2,7 +2,7 @@
  "meta": {
   "schemaVersion": 1,
   "title": "FitzMaurice & Andrews family",
-  "updated": "2026-11-23",
+  "updated": "2026-11-27",
   "confidenceScale": [
    "confirmed",
    "probable",
@@ -7562,7 +7562,28 @@
    "confidence": "confirmed",
    "birth": null,
    "death": null,
-   "residences": [],
+   "residences": [
+    {
+     "place": "Mile End Old Town",
+     "address": "33 Holmes Street, Charles Street, Commercial Road",
+     "years": "1830",
+     "sourceIds": [
+      "sun-fire-1830-john-fitzmaurice-holmes-street"
+     ],
+     "confidence": "probable",
+     "placeId": "mile-end-old-town"
+    },
+    {
+     "place": "Tower of London",
+     "address": "27 Old Mint, opposite the Irish Barracks, Tower Hill",
+     "years": "1834",
+     "sourceIds": [
+      "sun-fire-1834-john-fitzmaurice-old-mint"
+     ],
+     "confidence": "probable",
+     "placeId": "tower-of-london"
+    }
+   ],
    "occupations": [
     {
      "title": "Clerk in the Board of Ordnance",
@@ -7595,9 +7616,9 @@
     }
    ],
    "immigration": null,
-   "cardPlace": "Tower of London, then Mile End",
-   "summary": "Clerk in the Board of Ordnance at the Tower of London, listed as a Junior Clerk under the Surveyor General from 1827 to 1841. The 1841 page was read from the image. He married Eliza Taylor at St Martin's, Birmingham, on 3 February 1827. Father of William, John Richard and Robert William. By 1861 he was described as a gentleman. His birth, parents and death have not been found.",
-   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] The Royal Kalendar for 1827 lists a John Fitzmaurice as a Junior Clerk under the Surveyor General of the Board of Ordnance. The same name stays in that list through the 1841 volume and is gone from 1842.[^royal-kalendar-1827-ordnance] [^royal-kalendar-1828-1841-ordnance] [^royal-kalendar-1842-1845-ordnance] The 1841 volume, printed page 212, was read from the page image: he stands between Hy. King and Anty. Harvey.[^royal-kalendar-1841-ordnance-page] That is probably this John: the parish registers already call him a clerk in the Ordnance Office and in the Tower at the same dates. The lists do not give his age, birthplace or parents. The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74, with no age in the index.[^freebmd-john-fitzmaurice-deaths-1840-1842] John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
+   "cardPlace": "Tower of London, Mile End, and Tower Hill",
+   "summary": "Clerk in the Board of Ordnance at the Tower of London, listed as a Junior Clerk under the Surveyor General from 1827 to 1841. The 1841 page was read from the image. He married Eliza Taylor at St Martin's, Birmingham, on 3 February 1827. Father of William, John Richard and Robert William. He was probably of Holmes Street, Commercial Road, in 1830, and of Old Mint, Tower Hill, in 1834. By 1861 he was described as a gentleman. His birth, parents and death have not been found.",
+   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] The Royal Kalendar for 1827 lists a John Fitzmaurice as a Junior Clerk under the Surveyor General of the Board of Ordnance. The same name stays in that list through the 1841 volume and is gone from 1842.[^royal-kalendar-1827-ordnance] [^royal-kalendar-1828-1841-ordnance] [^royal-kalendar-1842-1845-ordnance] The 1841 volume, printed page 212, was read from the page image: he stands between Hy. King and Anty. Harvey.[^royal-kalendar-1841-ordnance-page] That is probably this John: the parish registers already call him a clerk in the Ordnance Office and in the Tower at the same dates. The lists do not give his age, birthplace or parents. The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74, with no age in the index.[^freebmd-john-fitzmaurice-deaths-1840-1842] Sun Fire Office catalogue entries name a John Fitzmaurice, gentleman, of 33 Holmes Street, Charles Street, Commercial Road, on 25 November 1830, and of 27 Old Mint, opposite the Irish Barracks, Tower Hill, on 21 January 1834. The original policy books have not been seen. Those addresses fit this John, and the identification is probable rather than proved.[^sun-fire-1830-john-fitzmaurice-holmes-street] [^sun-fire-1834-john-fitzmaurice-old-mint] John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -7616,7 +7637,7 @@
     },
     {
      "question": "Did he die in late 1840, or leave the Ordnance for another reason?",
-     "record": "The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74, with no age in the index. A certificate would give the age."
+     "record": "The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74, with no age in the index. A certificate would give the age. A Sun Fire Office catalogue entry still names a John Fitzmaurice, gentleman, of 27 Old Mint, Tower Hill, on 21 January 1834."
     }
    ],
    "relatedPages": [

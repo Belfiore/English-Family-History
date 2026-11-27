@@ -64,6 +64,53 @@
    "image": "images/records/notebook/1830-watsons-almanack-p109-ordnance-civil-branch-dublin.jpg",
    "imageAlt": "1830 Watson's Almanack, printed page 109, the heading Ordnance, Civil Branch, Office, Lower Castle Yard, boxed",
    "changeNote": "Robert Thomas still married in 1833 as of the Ordnance Office, Dublin. He is not in this 1830 clerk list."
+  },
+  {
+   "id": "watsons-almanack-1832-dublin-ordnance-no-fitzmaurice",
+   "found": "2026-11-27",
+   "headline": "The 1832 Watson's Almanack, printed page 110, lists the Dublin Ordnance Civil Branch clerks at Lower Castle Yard and names no Fitzmaurice.",
+   "findType": "record",
+   "foundBy": "Stuart - Genealogy British Family",
+   "source": {
+    "text": "Watson's Gentleman's and Citizen's Almanack, 1832, printed page 110, Internet Archive identifier gentlemanscitize00wats_1",
+    "url": "https://archive.org/details/gentlemanscitize00wats_1/page/110/mode/1up"
+   },
+   "confidence": "confirmed",
+   "image": "images/records/notebook/1832-watsons-almanack-p110-ordnance-civil-branch-dublin.jpg",
+   "imageAlt": "1832 Watson's Almanack, printed page 110, the heading Ordnance, Civil Branch, Office, Lower Castle Yard, boxed",
+   "changeNote": "This is two years later than the 1830 lists already on the site, and still before Robert Thomas married in October 1833 as of the Ordnance Office, Dublin. F. A. Jennings is still on the list."
+  },
+  {
+   "id": "sun-fire-1830-john-fitzmaurice-holmes-street",
+   "personIds": [
+    "john-fitzmaurice"
+   ],
+   "found": "2026-11-27",
+   "headline": "A Sun Fire Office catalogue entry dated 25 November 1830 names John Fitzmaurice, gentleman, of 33 Holmes Street, Charles Street, Commercial Road.",
+   "findType": "record",
+   "foundBy": "Stuart - Genealogy British Family",
+   "source": {
+    "text": "The London Archives, Sun Fire Office policy register, MS 11936/524/1115343, catalogue entry only, not digitised",
+    "url": "https://discovery.nationalarchives.gov.uk/details/r/c2fe7445-9505-441e-9c4a-41b7b58b7fba"
+   },
+   "confidence": "unverified",
+   "changeNote": "The original policy book has not been seen. The address fits the Mile End and Whitechapel area where John's children were baptised. Identification with the Ordnance clerk is probable, not proved."
+  },
+  {
+   "id": "sun-fire-1834-john-fitzmaurice-old-mint",
+   "personIds": [
+    "john-fitzmaurice"
+   ],
+   "found": "2026-11-27",
+   "headline": "A Sun Fire Office catalogue entry dated 21 January 1834 names John Fitzmaurice, gentleman, of 27 Old Mint, opposite the Irish Barracks, Tower Hill.",
+   "findType": "record",
+   "foundBy": "Stuart - Genealogy British Family",
+   "source": {
+    "text": "The London Archives, Sun Fire Office policy register, MS 11936/536/1168890, catalogue entry only, not digitised",
+    "url": "https://discovery.nationalarchives.gov.uk/details/r/48737f0c-89c0-4f91-9544-1bbe8735a5c4"
+   },
+   "confidence": "unverified",
+   "changeNote": "The original policy book has not been seen. Tower Hill stands next to the Board of Ordnance at the Tower, where John was a clerk. Identification with him is probable, not proved."
   }
  ]
 }

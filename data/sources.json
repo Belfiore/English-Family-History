@@ -1412,6 +1412,34 @@
   "url": "https://archive.org/details/gentlemanscitize00wats_0/page/109/mode/1up",
   "file": "images/records/notebook/1830-watsons-almanack-p109-ordnance-civil-branch-dublin.jpg",
   "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice (C0742). The lists cover clerks under the Store-keeper, the Clerk of Survey, the Clerk of Accounts, the Store Accountant, the Treasurer, the Clerk to the Respective Officers, and the Commanding Royal Engineer."
+ },
+ {
+  "id": "watsons-almanack-1832-dublin-ordnance",
+  "title": "Watson's Gentleman's and Citizen's Almanack, 1832, printed page 110: Dublin Ordnance Civil Branch, Lower Castle Yard",
+  "type": "printed official list",
+  "repository": "Watson's Gentleman's and Citizen's Almanack for the Year 1832, Dublin. Internet Archive, identifier gentlemanscitize00wats_1. Printed page 110, read from the page image on 27 November 2026.",
+  "date": "1832",
+  "url": "https://archive.org/details/gentlemanscitize00wats_1/page/110/mode/1up",
+  "file": "images/records/notebook/1832-watsons-almanack-p110-ordnance-civil-branch-dublin.jpg",
+  "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice, and no Robt. J. or Robert Thomas (C0746). F. A. Jennings appears among the clerks under the Clerk to the Respective Officers. This is two years later than the 1830 lists (C0742), and still before the 17 October 1833 marriage (C0702)."
+ },
+ {
+  "id": "sun-fire-1830-john-fitzmaurice-holmes-street",
+  "title": "Sun Fire Office policy, 25 November 1830: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent",
+  "type": "archive catalogue",
+  "repository": "The London Archives, Sun Fire Office policy registers, series CLC/B/192/F/001, MS 11936/524/1115343. Found through The National Archives Discovery catalogue, record c2fe7445-9505-441e-9c4a-41b7b58b7fba. The volume is not digitised.",
+  "date": "1830-11-25",
+  "url": "https://discovery.nationalarchives.gov.uk/details/r/c2fe7445-9505-441e-9c4a-41b7b58b7fba",
+  "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent. Identification with the Ordnance clerk is probable (C0747)."
+ },
+ {
+  "id": "sun-fire-1834-john-fitzmaurice-old-mint",
+  "title": "Sun Fire Office policy, 21 January 1834: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent",
+  "type": "archive catalogue",
+  "repository": "The London Archives, Sun Fire Office policy registers, series CLC/B/192/F/001, MS 11936/536/1168890. Found through The National Archives Discovery catalogue, record 48737f0c-89c0-4f91-9544-1bbe8735a5c4. The volume is not digitised.",
+  "date": "1834-01-21",
+  "url": "https://discovery.nationalarchives.gov.uk/details/r/48737f0c-89c0-4f91-9544-1bbe8735a5c4",
+  "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent. Identification with the Ordnance clerk is probable (C0748)."
  }
  ]
 }

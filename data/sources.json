@@ -1440,6 +1440,26 @@
   "date": "1834-01-21",
   "url": "https://discovery.nationalarchives.gov.uk/details/r/48737f0c-89c0-4f91-9544-1bbe8735a5c4",
   "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent. Identification with the Ordnance clerk is probable (C0748)."
+ },
+ {
+  "id": "parish-ascension-balham-hill-1904-reg",
+  "title": "Baptism register, the Ascension, Balham Hill, 21 August 1904, entry 604: Baron Reginald Fitzmaurice, son of Edward Dixon and Edith Madeline",
+  "type": "baptism register",
+  "repository": "London Metropolitan Archives, parish of the Ascension, Balham Hill (Malwood Road). Ancestry, London, England, Church of England Births and Baptisms, 1813-1925, collection 1558, image 101 of 270, file 31280_199311-00215. Page 76, entry 604, read from the page image on 27 November 2026.",
+  "date": "1904-08-21",
+  "url": "https://www.ancestry.com/imageviewer/collections/1558/images/31280_199311-00215",
+  "file": "images/records/notebook/1904-08-21-baptism-baron-reginald-fitzmaurice-ascension-balham-hill-entry604-full-page.jpg",
+  "note": "The full register opening, with entry 604 boxed. Baptised 21 August 1904: Baron Reginald, son of Edward Dixon and Edith Madeline Fitzmaurice, of 29 Cathles Road, father a civil engineer. No date of birth is written. The officiant is read as A. W. Hooper. Ledger C0754. With the 1911 census, this raises the father-son link from Edward Dixon to Reg to FACT (C0054)."
+ },
+ {
+  "id": "parish-st-giles-1840-john-fitzmaurice-burial",
+  "title": "Burial register (Bishop's Transcript), St Giles in the Fields, 15 December 1840, entry 1098: John Fitzmaurice, aged 1 and a half",
+  "type": "burial register",
+  "repository": "London Metropolitan Archives, Bishop's Transcript of burials, parish of St Giles in the Fields, Holborn, 1838-1869. Ancestry, London, England, Church of England Deaths and Burials, 1813-2003, collection 1559, image 358 of 365, file 32184_218910-00518, record 13711940. Page 138, entry 1098, read from the page image on 27 November 2026.",
+  "date": "1840-12-15",
+  "url": "https://www.ancestry.com/imageviewer/collections/1559/images/32184_218910-00518",
+  "file": "images/records/notebook/1840-12-15-burial-john-fitzmaurice-st-giles-in-the-fields-entry1098-full-page.jpg",
+  "note": "The full register opening, with entry 1098 boxed. John Fitzmaurice, buried 15 December 1840, aged one and a half, abode abbreviated Wk. Hs (almost certainly Workhouse, the same abbreviation used for several other burials on the page), officiant B. Pratt. This infant is almost certainly the December quarter 1840 Bloomsbury death, volume 1, page 74 (C0741), because St Giles in the Fields and St George Bloomsbury were in the same registration district. It is not the Ordnance clerk (P084). Ledger C0756, C0757, C0758."
  }
  ]
 }

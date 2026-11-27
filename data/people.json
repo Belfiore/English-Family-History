@@ -137,6 +137,15 @@
      ],
      "confidence": "probable",
      "placeId": "westfield-house-brixton"
+    },
+    {
+     "place": "Balham Hill",
+     "address": "29 Cathles Road, Balham Hill",
+     "years": "1904",
+     "sourceIds": [
+      "parish-ascension-balham-hill-1904-reg"
+     ],
+     "confidence": "confirmed"
     }
    ],
    "occupations": [
@@ -220,8 +229,8 @@
    ],
    "immigration": null,
    "cardPlace": "Aston, Cape Town, Whitstable",
-   "summary": "Born 21 October 1872 and baptised at Ward End, Aston, on 19 June 1873, son of William and Fanny Mary Fitzmaurice. An engineer all his working life. He married Edith Madeline Spencer at St Matthew's, Brixton, on 2 August 1897. He lived in Cape Town from 1916 to about 1923. He died on 7 June 1928, probably aged 55, and was buried at Chingford Mount. He was not a son of the Earls of Orkney.",
-   "story": "Edward Dixon FitzMaurice was born on 21 October 1872 and baptised on 19 June 1873 at St Margaret's, Ward End, Aston. The register names his parents as William and Fanny Mary Fitzmaurice, of Ward End, and his father as a surveyor and contractor.[^parish-wardend-1873] His own marriage register names that father as Robert William Fitzmaurice, a contractor.[^parish-brixton-1897] The birth index gives his mother's maiden name as Falcke.[^gro-indexes] In 1881 he is the boy written as Ernest Dixon, aged 8, born at Little Bromwich, in the household of Robert William FitzMaurice and Fanny Mary at Aston Manor.[^census-1881-aston]\n\nIn 1891 he was an apprentice civil engineer, a lodger at 25 Compton Avenue, Brighton, born at Ward End.[^census-1891-brighton] On 2 August 1897, aged 25 and a professional singer, he married Edith Madeline Spencer at St Matthew's, Brixton, by banns.[^parish-brixton-1897] He was probably a civil mechanical engineer in Brixton in 1901.[^census-1901-brixton] In 1911 he was a civil engineer at Whitstable, with Edith and three children.[^census-1911-whitstable]\n\nIn the middle of the First World War, by then a civil engineer of about 43, he sailed from London for South Africa on the Balmoral Castle on 29 March 1916, meaning to settle there.[^passenger-1916-balmoral] Five months later Edith probably followed on the Llanstephan Castle with Bob, Reg and Eileen.[^passenger-1916-llanstephan] He came back to England in October 1923, giving Whitstable as his address, and sailed for Cape Town again that December.[^passenger-1923-armadale] [^passenger-1923-arundel] Edith came home in November 1925.[^passenger-1925-edith]\n\nHe died on 7 June 1928, probably aged 55, and was buried at Chingford Mount Cemetery.[^findagrave-214209661] [^burial-chingford-1928] When Eileen married in 1936, the paper remembered him as formerly of Cape Town.[^news-1936-simmons]\n\nEdward was an engineer all his working life: an apprentice civil engineer in 1891, a civil engineer in 1901 and 1911, and an engineer on every passenger list from 1916 to 1923. The white collar in the beach photo is not a sign that he was a clergyman.[^beach-snapshots]\n\nHe was not a son of the Hon. Henry Warrender FitzMaurice. The London Gazette of 23 April 1890 names the 7th Earl of Orkney's surviving brother and sister, and Edward is not among them.[^gazette-1890]",
+   "summary": "Born 21 October 1872 and baptised at Ward End, Aston, on 19 June 1873, son of William and Fanny Mary Fitzmaurice. An engineer all his working life. He married Edith Madeline Spencer at St Matthew's, Brixton, on 2 August 1897. Their son Baron Reginald was baptised at the Ascension, Balham Hill, on 21 August 1904. He lived in Cape Town from 1916 to about 1923. He died on 7 June 1928, probably aged 55, and was buried at Chingford Mount. He was not a son of the Earls of Orkney.",
+   "story": "Edward Dixon FitzMaurice was born on 21 October 1872 and baptised on 19 June 1873 at St Margaret's, Ward End, Aston. The register names his parents as William and Fanny Mary Fitzmaurice, of Ward End, and his father as a surveyor and contractor.[^parish-wardend-1873] His own marriage register names that father as Robert William Fitzmaurice, a contractor.[^parish-brixton-1897] The birth index gives his mother's maiden name as Falcke.[^gro-indexes] In 1881 he is the boy written as Ernest Dixon, aged 8, born at Little Bromwich, in the household of Robert William FitzMaurice and Fanny Mary at Aston Manor.[^census-1881-aston]\n\nIn 1891 he was an apprentice civil engineer, a lodger at 25 Compton Avenue, Brighton, born at Ward End.[^census-1891-brighton] On 2 August 1897, aged 25 and a professional singer, he married Edith Madeline Spencer at St Matthew's, Brixton, by banns.[^parish-brixton-1897] He was probably a civil mechanical engineer in Brixton in 1901.[^census-1901-brixton] On 21 August 1904, described as a civil engineer of 29 Cathles Road, he and Edith Madeline had their son Baron Reginald baptised at the Ascension, Balham Hill.[^parish-ascension-balham-hill-1904-reg] In 1911 he was a civil engineer at Whitstable, with Edith and three children.[^census-1911-whitstable]\n\nIn the middle of the First World War, by then a civil engineer of about 43, he sailed from London for South Africa on the Balmoral Castle on 29 March 1916, meaning to settle there.[^passenger-1916-balmoral] Five months later Edith probably followed on the Llanstephan Castle with Bob, Reg and Eileen.[^passenger-1916-llanstephan] He came back to England in October 1923, giving Whitstable as his address, and sailed for Cape Town again that December.[^passenger-1923-armadale] [^passenger-1923-arundel] Edith came home in November 1925.[^passenger-1925-edith]\n\nHe died on 7 June 1928, probably aged 55, and was buried at Chingford Mount Cemetery.[^findagrave-214209661] [^burial-chingford-1928] When Eileen married in 1936, the paper remembered him as formerly of Cape Town.[^news-1936-simmons]\n\nEdward was an engineer all his working life: an apprentice civil engineer in 1891, a civil engineer in 1901 and 1911, and an engineer on every passenger list from 1916 to 1923. The white collar in the beach photo is not a sign that he was a clergyman.[^beach-snapshots]\n\nHe was not a son of the Hon. Henry Warrender FitzMaurice. The London Gazette of 23 April 1890 names the 7th Earl of Orkney's surviving brother and sister, and Edward is not among them.[^gazette-1890]",
    "timeline": [
     {
      "date": "1872-10-21",
@@ -596,6 +605,15 @@
      ],
      "confidence": "probable",
      "placeId": "140a-clapham-road"
+    },
+    {
+     "place": "Balham Hill",
+     "address": "29 Cathles Road, Balham Hill",
+     "years": "1904",
+     "sourceIds": [
+      "parish-ascension-balham-hill-1904-reg"
+     ],
+     "confidence": "confirmed"
     }
    ],
    "occupations": [
@@ -935,10 +953,11 @@
     "sourceIds": [
      "gro-indexes",
      "probate-reg-1977",
-     "census-1911-whitstable"
+     "census-1911-whitstable",
+     "parish-ascension-balham-hill-1904-reg"
     ],
     "confidence": "probable",
-    "note": "The death index gives the date of birth. The birth was registered in the September quarter of 1904, Wandsworth, volume 1d, page 670, mother Spenser.",
+    "note": "The death index gives the date of birth. The birth was registered in the September quarter of 1904, Wandsworth, volume 1d, page 670, mother Spenser. He was baptised on 21 August 1904 at the Ascension, Balham Hill; the register does not give a date of birth.",
     "placeId": "wandsworth-registration-district"
    },
    "death": {
@@ -1014,13 +1033,22 @@
      ],
      "confidence": "probable",
      "placeId": "140a-clapham-road"
+    },
+    {
+     "place": "Balham Hill",
+     "address": "29 Cathles Road, Balham Hill",
+     "years": "1904",
+     "sourceIds": [
+      "parish-ascension-balham-hill-1904-reg"
+     ],
+     "confidence": "confirmed"
     }
    ],
    "occupations": [],
    "immigration": null,
    "cardPlace": "Hayes, Middlesex",
-   "summary": "Pat's father. Baron is his forename, not a title. Probably born on 26 May 1904 in the Wandsworth district, son of Edward Dixon and Edith Madeline. He probably married Lilian Maud Mary Bennett in late 1927. He died on 31 March 1977.",
-   "story": "Reg was Baron Reginald FitzMaurice. Baron is a forename, not a title. He was probably born on 26 May 1904 in the Wandsworth district. The birth index names his mother as Spenser, a spelling of Spencer, volume 1d, page 670.[^gro-indexes] [^probate-reg-1977] In 1911 he is Baron Reginald, aged 6, at school, in Edward Dixon and Edith Madeline's household at Whitstable.[^census-1911-whitstable]\n\nHe probably married Lilian Maud Mary Bennett in the December quarter of 1927, in the Hammersmith district, volume 1a, page 661.[^gro-marriage-1927] Electoral registers place him in Wandsworth in 1925 and 1926, Hammersmith from 1931 to 1933, the Spelthorne district from 1934 to 1937, and Hayes from 1938 until about 1972.[^electoral-fitzmaurice] On 11 February 1950 he gave his daughter Patricia away at St Mary's, Wanstead. The album calls him Mr R. Fitzmaurice of Hayes.[^album-1950]\n\nHe died on 31 March 1977. The death was registered at Hillingdon, and the probate calendar places him at Hayes. The estate was 24,427 pounds.[^probate-reg-1977] A cause of death remembered in the family is not on the certificate we have, so it is not stated here. A studio portrait of a young man in a bow tie has no name on it, and it is not identified as Reg.\n\nHe was probably the boy of 12 on the same voyage to Cape Town in August 1916.[^passenger-1916-llanstephan] He came back to London with his mother and Eileen on the Bendigo, landing on 28 December 1923, listed as Baron Fitzmaurice, a student, aged 19.[^passenger-1923-bendigo]",
+   "summary": "Pat's father. Baron is his forename, not a title. He was baptised on 21 August 1904 at the Ascension, Balham Hill, the son of Edward Dixon and Edith Madeline Fitzmaurice. He was probably born on 26 May 1904 in the Wandsworth district. He probably married Lilian Maud Mary Bennett in late 1927. He died on 31 March 1977.",
+   "story": "Reg was Baron Reginald FitzMaurice. Baron is a forename, not a title. He was probably born on 26 May 1904 in the Wandsworth district. The birth index names his mother as Spenser, a spelling of Spencer, volume 1d, page 670.[^gro-indexes] [^probate-reg-1977] He was baptised on 21 August 1904 at the parish of the Ascension, Balham Hill, entry 604, page 76. The register names him Baron Reginald, son of Edward Dixon and Edith Madeline Fitzmaurice, of 29 Cathles Road, and his father as a civil engineer. No date of birth is written in the register.[^parish-ascension-balham-hill-1904-reg] In 1911 he is Baron Reginald, aged 6, at school, in Edward Dixon and Edith Madeline's household at Whitstable.[^census-1911-whitstable]\n\nHe probably married Lilian Maud Mary Bennett in the December quarter of 1927, in the Hammersmith district, volume 1a, page 661.[^gro-marriage-1927] Electoral registers place him in Wandsworth in 1925 and 1926, Hammersmith from 1931 to 1933, the Spelthorne district from 1934 to 1937, and Hayes from 1938 until about 1972.[^electoral-fitzmaurice] On 11 February 1950 he gave his daughter Patricia away at St Mary's, Wanstead. The album calls him Mr R. Fitzmaurice of Hayes.[^album-1950]\n\nHe died on 31 March 1977. The death was registered at Hillingdon, and the probate calendar places him at Hayes. The estate was 24,427 pounds.[^probate-reg-1977] A cause of death remembered in the family is not on the certificate we have, so it is not stated here. A studio portrait of a young man in a bow tie has no name on it, and it is not identified as Reg.\n\nHe was probably the boy of 12 on the same voyage to Cape Town in August 1916.[^passenger-1916-llanstephan] He came back to London with his mother and Eileen on the Bendigo, landing on 28 December 1923, listed as Baron Fitzmaurice, a student, aged 19.[^passenger-1923-bendigo]",
    "timeline": [
     {
      "date": "1904-05-26",
@@ -7618,7 +7646,7 @@
    "immigration": null,
    "cardPlace": "Tower of London, Mile End, and Tower Hill",
    "summary": "Clerk in the Board of Ordnance at the Tower of London, listed as a Junior Clerk under the Surveyor General from 1827 to 1841. The 1841 page was read from the image. He married Eliza Taylor at St Martin's, Birmingham, on 3 February 1827. Father of William, John Richard and Robert William. He was probably of Holmes Street, Commercial Road, in 1830, and of Old Mint, Tower Hill, in 1834. By 1861 he was described as a gentleman. His birth, parents and death have not been found.",
-   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] The Royal Kalendar for 1827 lists a John Fitzmaurice as a Junior Clerk under the Surveyor General of the Board of Ordnance. The same name stays in that list through the 1841 volume and is gone from 1842.[^royal-kalendar-1827-ordnance] [^royal-kalendar-1828-1841-ordnance] [^royal-kalendar-1842-1845-ordnance] The 1841 volume, printed page 212, was read from the page image: he stands between Hy. King and Anty. Harvey.[^royal-kalendar-1841-ordnance-page] That is probably this John: the parish registers already call him a clerk in the Ordnance Office and in the Tower at the same dates. The lists do not give his age, birthplace or parents. The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74, with no age in the index.[^freebmd-john-fitzmaurice-deaths-1840-1842] Sun Fire Office catalogue entries name a John Fitzmaurice, gentleman, of 33 Holmes Street, Charles Street, Commercial Road, on 25 November 1830, and of 27 Old Mint, opposite the Irish Barracks, Tower Hill, on 21 January 1834. The original policy books have not been seen. Those addresses fit this John, and the identification is probable rather than proved.[^sun-fire-1830-john-fitzmaurice-holmes-street] [^sun-fire-1834-john-fitzmaurice-old-mint] John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
+   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] The Royal Kalendar for 1827 lists a John Fitzmaurice as a Junior Clerk under the Surveyor General of the Board of Ordnance. The same name stays in that list through the 1841 volume and is gone from 1842.[^royal-kalendar-1827-ordnance] [^royal-kalendar-1828-1841-ordnance] [^royal-kalendar-1842-1845-ordnance] The 1841 volume, printed page 212, was read from the page image: he stands between Hy. King and Anty. Harvey.[^royal-kalendar-1841-ordnance-page] That is probably this John: the parish registers already call him a clerk in the Ordnance Office and in the Tower at the same dates. The lists do not give his age, birthplace or parents. The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74. That entry is almost certainly an infant: John Fitzmaurice, aged one and a half, was buried at St Giles in the Fields on 15 December 1840. St Giles was in the Bloomsbury registration district. That death is not this John.[^freebmd-john-fitzmaurice-deaths-1840-1842] [^parish-st-giles-1840-john-fitzmaurice-burial] Sun Fire Office catalogue entries name a John Fitzmaurice, gentleman, of 33 Holmes Street, Charles Street, Commercial Road, on 25 November 1830, and of 27 Old Mint, opposite the Irish Barracks, Tower Hill, on 21 January 1834. The original policy books have not been seen. Those addresses fit this John, and the identification is probable rather than proved.[^sun-fire-1830-john-fitzmaurice-holmes-street] [^sun-fire-1834-john-fitzmaurice-old-mint] John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -7633,11 +7661,11 @@
     },
     {
      "question": "When and why did he leave the Ordnance between the 1841 and 1842 Royal Kalendars?",
-     "record": "A death, retirement or transfer in 1841 or early 1842 would fit. The FreeBMD death index has no John Fitzmaurice in 1841 or 1842. The existing Brentford 1865 leads now look late, unless he left the office years before he died. See the research notes page."
+     "record": "A death, retirement or transfer in 1841 or early 1842 would fit. The FreeBMD death index has no John Fitzmaurice in 1841 or 1842, and the December 1840 Bloomsbury death is an infant, not this clerk. The existing Brentford 1865 leads now look late, unless he left the office years before he died. See the research notes page."
     },
     {
      "question": "Did he die in late 1840, or leave the Ordnance for another reason?",
-     "record": "The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74, with no age in the index. A certificate would give the age. A Sun Fire Office catalogue entry still names a John Fitzmaurice, gentleman, of 27 Old Mint, Tower Hill, on 21 January 1834."
+     "record": "The December quarter 1840 Bloomsbury death (volume 1, page 74) is almost certainly the infant John Fitzmaurice, aged one and a half, buried at St Giles in the Fields on 15 December 1840. It is not this clerk. The FreeBMD index has no John Fitzmaurice in 1841 or 1842. Later London deaths remain possible if he left the post alive. A Sun Fire Office catalogue entry still names a John Fitzmaurice, gentleman, of 27 Old Mint, Tower Hill, on 21 January 1834."
     }
    ],
    "relatedPages": [

@@ -2155,16 +2155,16 @@
    ],
    "confidence": "probable",
    "birth": {
-    "date": "1916",
-    "display": "1916, West Ham district",
+    "date": "1916-07-17",
+    "display": "17 July 1916, West Ham district",
     "place": "West Ham",
     "sourceIds": [
      "gro-indexes",
-     "census-cousins"
+     "census-cousins",
+     "fold3-wo363-hg-andrews-p3"
     ],
-    "confidence": "probable",
-    "dateQualifier": "about",
-    "note": "GRO September quarter 1916, West Ham, volume 4a, page 180, mother Cousins. He was 4 in the 1921 census. The 1939 day of birth is not published, because his death has not been found.",
+    "confidence": "confirmed",
+    "note": "Date from his father's army service record (\"Herbert William, 17/7/16, West Ham\", marked verified). GRO September quarter 1916, West Ham, volume 4a, page 180, mother Cousins. He was 4 in the 1921 census.",
     "placeId": "west-ham-registration-district"
    },
    "death": null,
@@ -9025,6 +9025,26 @@
    },
    "residences": [
     {
+     "place": "Westcotes Drive, Leicester",
+     "address": "Westcotes Drive, Leicester",
+     "years": "1901",
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "placeId": "westcotes-drive-leicester"
+    },
+    {
+     "place": "Cliveden, Manor Road, Oadby",
+     "address": "Cliveden, Manor Road, Oadby",
+     "years": "1911",
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "placeId": "cliveden-manor-road-oadby"
+    },
+    {
      "place": "3 Salisbury Road, Leicester",
      "address": "3 Salisbury Road, Leicester",
      "years": "1949",
@@ -9059,12 +9079,34 @@
      "confidence": "probable",
      "placeId": "old-cliffe-hill-quarry-markfield",
      "note": "Acquired the quarry from his father on 9 May 1891 and reopened it; the company was registered on 1 November 1894; it bought the freehold from him in 1935."
+    },
+    {
+     "title": "Manager of the Cliffe Hill Granite Co.",
+     "employer": "Cliffe Hill Granite Company",
+     "place": "Markfield, Leicestershire",
+     "years": "1896",
+     "sourceIds": [
+      "rollr-cliffe-hill-records"
+     ],
+     "confidence": "confirmed",
+     "placeId": "old-cliffe-hill-quarry-markfield"
+    },
+    {
+     "title": "Chairman of Markfield Estates Ltd",
+     "employer": "Markfield Estates Ltd",
+     "place": null,
+     "years": "1937",
+     "sourceIds": [
+      "gazette-1937-markfield-estates"
+     ],
+     "confidence": "probable",
+     "note": "Signed J. R. Fitzmaurice, Chairman, when the company was wound up voluntarily in October 1937. The liquidator, Leslie Charlesworth Simpson, was one of John Rupert's executors in 1949."
     }
    ],
    "immigration": null,
    "cardPlace": null,
-   "summary": "Probably a son of Robert William and Fanny Mary. Called Rupert J. in 1871. He acquired the Cliffe Hill granite quarry at Markfield from his father in 1891, reopened it, and the Cliffe Hill Granite Company was formed in 1894. A quarry owner in 1895, and one of his father's executors. Died at Leicester on 21 September 1949.",
-   "story": "John Rupert's birth was registered in the King's Norton district in the June quarter of 1865, volume 6c, page 447, mother's maiden name Falcke.[^gro-indexes] In 1871 he is the son recorded as Rupert J., aged 6, born in Birmingham.[^census-1871-aston] On 9 May 1891 J. Rupert Fitzmaurice acquired the Cliffe Hill granite quarry, near Markfield in Leicestershire, from his father, and reopened it, with Peter Preston as manager. The Cliffe Hill Granite Company Ltd was formed on 1 November 1894. The company bought the freehold of the quarry and its land from him in 1935.[^mqp-cliffe-hill-history] [^mcgrath-2007-charnwood-quarries] [^graces-guide-cliffe-hill-granite] In 1895 he was a quarry owner and an executor of his father.[^probate-robert-1895] He died on 21 September 1949, aged 84, of 3 Salisbury Road, Leicester. The estate was 56,789 pounds 19 shillings and 2 pence.[^probate-rupert-1949] The quarry history also records the death of its original founder, J.R. Fitzmaurice, in 1949.[^mqp-cliffe-hill-history]",
+   "summary": "Probably a son of Robert William and Fanny Mary. Called Rupert J. in 1871. He acquired the Cliffe Hill granite quarry at Markfield from his father in 1891, reopened it, and the Cliffe Hill Granite Company was formed in 1894. A quarry owner in 1895, and one of his father's executors. Died at Leicester on 21 September 1949. He married Isabel Bennion in 1896 (she died in 1905) and Maria Adelaide Wood in 1907. His only son, John Herbert, was killed in France in 1918.",
+   "story": "John Rupert's birth was registered in the King's Norton district in the June quarter of 1865, volume 6c, page 447, mother's maiden name Falcke.[^gro-indexes] In 1871 he is the son recorded as Rupert J., aged 6, born in Birmingham.[^census-1871-aston] On 9 May 1891 J. Rupert Fitzmaurice acquired the Cliffe Hill granite quarry, near Markfield in Leicestershire, from his father, and reopened it, with Peter Preston as manager. The Cliffe Hill Granite Company Ltd was formed on 1 November 1894. The company bought the freehold of the quarry and its land from him in 1935.[^mqp-cliffe-hill-history] [^mcgrath-2007-charnwood-quarries] [^graces-guide-cliffe-hill-granite] In 1895 he was a quarry owner and an executor of his father.[^probate-robert-1895] He died on 21 September 1949, aged 84, of 3 Salisbury Road, Leicester. The estate was 56,789 pounds 19 shillings and 2 pence.[^probate-rupert-1949] The quarry history also records the death of its original founder, J.R. Fitzmaurice, in 1949.[^mqp-cliffe-hill-history]\n\nHe married Isabel Bennion in 1896, registered in the Lichfield district.[^freebmd-john-rupert-family-s51] In 1896 he signed letters to the Beaumanor estate as manager of the Cliffe Hill Granite Co.[^rollr-cliffe-hill-records] The quarry engine Isabel, delivered in 1897, was named after his wife.[^amerton-isabel] Their son John Herbert was born at Leicester in 1898 and a daughter, Mary Isabel, in 1899. Isabel died in 1905, aged 35, and in 1907 he married Maria Adelaide Wood at Petersham, Surrey. By 1911 the family lived at Cliveden, Manor Road, Oadby.[^oadby-remembers-jhf] John Herbert was killed in France in March 1918.[^cwgc-jhf-1918] In October 1937 J. R. Fitzmaurice, as chairman, signed the resolution to wind up Markfield Estates Ltd; the liquidator, Leslie Charlesworth Simpson, was later one of John Rupert's executors.[^gazette-1937-markfield-estates]",
    "timeline": [
     {
      "date": "1891-05-09",
@@ -9091,6 +9133,72 @@
      "placeId": "old-cliffe-hill-quarry-markfield"
     },
     {
+     "date": "1896",
+     "label": "1896",
+     "event": "Marries Isabel Bennion (Lichfield district). As manager of the Cliffe Hill Granite Co. he writes to the Beaumanor estate about a lease.",
+     "sourceIds": [
+      "freebmd-john-rupert-family-s51",
+      "rollr-cliffe-hill-records"
+     ],
+     "kind": "life",
+     "confidence": "probable"
+    },
+    {
+     "date": "1898",
+     "label": "1898",
+     "event": "His son John Herbert is born at Leicester.",
+     "sourceIds": [
+      "freebmd-john-rupert-family-s51",
+      "oadby-remembers-jhf"
+     ],
+     "kind": "life",
+     "confidence": "probable",
+     "placeId": "leicester"
+    },
+    {
+     "date": "1905-08-01",
+     "label": "1 Aug 1905",
+     "event": "His wife Isabel dies, aged 35.",
+     "sourceIds": [
+      "iwm-memorial-68733"
+     ],
+     "kind": "life",
+     "confidence": "confirmed",
+     "placeId": "gorleston-on-sea"
+    },
+    {
+     "date": "1907-07-04",
+     "label": "4 Jul 1907",
+     "event": "Marries Maria Adelaide Wood at Petersham.",
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "kind": "life",
+     "confidence": "probable"
+    },
+    {
+     "date": "1911",
+     "label": "1911",
+     "event": "Living at Cliveden, Manor Road, Oadby.",
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "kind": "life",
+     "confidence": "probable",
+     "placeId": "cliveden-manor-road-oadby"
+    },
+    {
+     "date": "1918-03-25",
+     "label": "25 Mar 1918",
+     "event": "His son John Herbert is reported missing near St Quentin.",
+     "sourceIds": [
+      "cwgc-jhf-1918"
+     ],
+     "kind": "life",
+     "confidence": "confirmed",
+     "placeId": "st-quentin-front-1918"
+    },
+    {
      "date": "1935",
      "label": "1935",
      "event": "Sells the freehold of the quarry and its land to the Cliffe Hill Granite Company.",
@@ -9100,6 +9208,16 @@
      "kind": "life",
      "confidence": "probable",
      "placeId": "old-cliffe-hill-quarry-markfield"
+    },
+    {
+     "date": "1937-10-28",
+     "label": "28 Oct 1937",
+     "event": "As chairman, signs the resolution to wind up Markfield Estates Ltd.",
+     "sourceIds": [
+      "gazette-1937-markfield-estates"
+     ],
+     "kind": "life",
+     "confidence": "probable"
     }
    ],
    "facts": [],
@@ -9119,8 +9237,38 @@
     "robert-william-fitzmaurice",
     "fanny-mary-falcke"
    ],
-   "children": [],
-   "spouses": [],
+   "children": [
+    "john-herbert-fitzmaurice",
+    "mary-isabel-fitzmaurice"
+   ],
+   "spouses": [
+    {
+     "id": "isabel-bennion",
+     "order": 1,
+     "marriageDate": "1896",
+     "marriageDisplay": "early 1896, Lichfield district",
+     "place": "Lichfield registration district",
+     "sourceIds": [
+      "freebmd-john-rupert-family-s51",
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "note": "Index page shared with one other bride; Oadby Remembers names Isabel Bennion."
+    },
+    {
+     "id": "maria-adelaide-wood",
+     "order": 2,
+     "marriageDate": "1907-07-04",
+     "marriageDisplay": "4 July 1907, Petersham, Surrey",
+     "place": "Petersham, Surrey",
+     "sourceIds": [
+      "oadby-remembers-jhf",
+      "freebmd-john-rupert-family-s51"
+     ],
+     "confidence": "probable",
+     "note": null
+    }
+   ],
    "isDirectLine": false,
    "photo": null,
    "portrait": null,
@@ -13240,6 +13388,412 @@
    "isLiving": true,
    "parentLinkConfidence": "confirmed",
    "order": 3
+  },
+  {
+   "id": "john-herbert-fitzmaurice",
+   "displayName": "John Herbert FitzMaurice",
+   "disambiguator": "Son of John Rupert; killed in 1918",
+   "givenNames": "John Herbert",
+   "surname": "FitzMaurice",
+   "sex": "M",
+   "generation": 16,
+   "nameVariants": [
+    {
+     "name": "J. H. FitzMaurice",
+     "sourceIds": [
+      "gazette-1918-30513-jhf"
+     ],
+     "note": "spelling in the London Gazette, 1918"
+    }
+   ],
+   "confidence": "probable",
+   "birth": {
+    "date": "1898-06-23",
+    "display": "23 June 1898, Leicester",
+    "place": "Leicester",
+    "placeId": "leicester",
+    "sourceIds": [
+     "oadby-remembers-jhf",
+     "freebmd-john-rupert-family-s51"
+    ],
+    "confidence": "probable",
+    "note": "Birth registered in the September quarter of 1898, Leicester, volume 7a, page 277 (FreeBMD). The day is from Oadby Remembers."
+   },
+   "death": {
+    "date": "1918-03-25",
+    "display": "25 March 1918, near St Quentin, France, aged 19",
+    "place": "Near St Quentin, France",
+    "placeId": "st-quentin-front-1918",
+    "sourceIds": [
+     "cwgc-jhf-1918",
+     "iwm-memorial-68733",
+     "oadby-remembers-jhf"
+    ],
+    "confidence": "confirmed",
+    "note": "Reported missing on the fifth day of the German spring offensive. He has no known grave and is named on the Pozieres Memorial, panel 60. The memorial is on the Somme. He was at Shrewsbury School until 1916 and is not shown at the 1916 Battle of the Somme. One copy of the IWM Lives page gives 24 March; the war graves record gives 25 March."
+   },
+   "residences": [
+    {
+     "place": "Westcotes Drive, Leicester",
+     "address": "Westcotes Drive, Leicester",
+     "years": "1901",
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "placeId": "westcotes-drive-leicester"
+    },
+    {
+     "place": "Cliveden, Manor Road, Oadby",
+     "address": "Cliveden, Manor Road, Oadby",
+     "years": "1911",
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "placeId": "cliveden-manor-road-oadby"
+    }
+   ],
+   "occupations": [
+    {
+     "title": "Second Lieutenant, 6th (Service) Battalion, King's Shropshire Light Infantry",
+     "employer": "British Army",
+     "place": "France",
+     "years": "1917 to 1918",
+     "sourceIds": [
+      "gazette-1917-30390-jhf",
+      "gazette-1918-30513-jhf",
+      "cwgc-jhf-1918"
+     ],
+     "confidence": "confirmed"
+    }
+   ],
+   "immigration": null,
+   "cardPlace": null,
+   "summary": "Probably the only son of John Rupert FitzMaurice and his first wife Isabel. Born at Leicester in 1898. He served in France with the 6th King's Shropshire Light Infantry, was reported missing near St Quentin on 25 March 1918, and is named on the Pozieres Memorial on the Somme; he was at Shrewsbury School until 1916 and is not shown at the 1916 Battle of the Somme.",
+   "story": "John Herbert's birth was registered at Leicester in the September quarter of 1898.[^freebmd-john-rupert-family-s51] Oadby Remembers gives his birth date as 23 June 1898, his parents as John Rupert Fitzmaurice and Isabel, nee Bennion, and his baptism at St Mary's, Weeford, Staffordshire, on 9 August 1898. It says the family lived in Westcotes Drive, Leicester, in 1901 and at Cliveden, Manor Road, Oadby, by 1911, and that he was at Shrewsbury School from 1912 to 1916.[^oadby-remembers-jhf] His mother died in 1905, and her gravestone at Sutton Coldfield calls him \"her only son\".[^iwm-memorial-68733]\n\nThe London Gazette of 20 November 1917 lists him among the cadets made temporary second lieutenants on 31 October 1917, in the Shropshire Light Infantry,[^gazette-1917-30390-jhf] and that of 7 February 1918 transfers him to a service battalion from the same date.[^gazette-1918-30513-jhf] He was a second lieutenant in the 6th Battalion when he died on active service on 25 March 1918, during the German spring offensive. He has no known grave and is named on the Pozieres Memorial on the Somme. He was at Shrewsbury School from 1912 to 1916 and was commissioned only in 1917, so the records do not show him at the 1916 Battle of the Somme.[^cwgc-jhf-1918] He is also named on the war memorials at Oadby[^iwm-memorial-37741] and at St Mary Magdalene, Knighton.[^iwm-memorial-37773] His officer's file survives at The National Archives.[^tna-wo339-108430]",
+   "timeline": [
+    {
+     "date": "1898-06-23",
+     "label": "23 Jun 1898",
+     "event": "Born at Leicester.",
+     "sourceIds": [
+      "oadby-remembers-jhf",
+      "freebmd-john-rupert-family-s51"
+     ],
+     "kind": "life",
+     "confidence": "probable",
+     "placeId": "leicester"
+    },
+    {
+     "date": "1898-08-09",
+     "label": "9 Aug 1898",
+     "event": "Baptised at St Mary's, Weeford.",
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "kind": "life",
+     "confidence": "probable",
+     "placeId": "st-marys-weeford"
+    },
+    {
+     "date": "1917-10-31",
+     "label": "31 Oct 1917",
+     "event": "Made a temporary second lieutenant, Shropshire Light Infantry.",
+     "sourceIds": [
+      "gazette-1917-30390-jhf",
+      "gazette-1918-30513-jhf"
+     ],
+     "kind": "life",
+     "confidence": "confirmed"
+    },
+    {
+     "date": "1918-03-25",
+     "label": "25 Mar 1918",
+     "event": "Reported missing near St Quentin, aged 19.",
+     "sourceIds": [
+      "cwgc-jhf-1918",
+      "iwm-memorial-68733"
+     ],
+     "kind": "life",
+     "confidence": "confirmed",
+     "placeId": "st-quentin-front-1918"
+    }
+   ],
+   "facts": [
+    {
+     "label": "Officer's file",
+     "value": "The National Archives, WO 339/108430 (not digitised). Medal card WO 372/7/79866.",
+     "sourceIds": [
+      "tna-wo339-108430"
+     ],
+     "confidence": "confirmed"
+    },
+    {
+     "label": "Photograph",
+     "value": "A portrait is on the IWM Lives of the First World War page (contributed; linked, not copied).",
+     "sourceIds": [
+      "iwm-lives-2475555"
+     ],
+     "confidence": "probable"
+    }
+   ],
+   "media": [],
+   "openQuestions": [
+    {
+     "question": "Who was his mother, by the official index?",
+     "record": "GRO online birth index, September quarter 1898, Leicester 7a 277 (mother's maiden name)."
+    },
+    {
+     "question": "What does his roll of honour entry say?",
+     "record": "De Ruvigny's Roll of Honour, Part 5, page 62."
+    }
+   ],
+   "relatedPages": [
+    {
+     "title": "The Cliffe Hill quarry",
+     "url": "quarry.html"
+    },
+    {
+     "title": "Lives of the First World War (photograph)",
+     "url": "https://livesofthefirstworldwar.iwm.org.uk/lifestory/2475555"
+    }
+   ],
+   "parents": [
+    "john-rupert-fitzmaurice",
+    "isabel-bennion"
+   ],
+   "children": [],
+   "spouses": [],
+   "isDirectLine": false,
+   "photo": null,
+   "portrait": null,
+   "isLiving": false,
+   "order": 1,
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
+  },
+  {
+   "id": "isabel-bennion",
+   "displayName": "Isabel FitzMaurice (Bennion)",
+   "disambiguator": "First wife of John Rupert",
+   "givenNames": "Isabel",
+   "surname": "Bennion",
+   "sex": "F",
+   "generation": 15,
+   "nameVariants": [
+    {
+     "name": "Isabel Fitzmaurice",
+     "sourceIds": [
+      "iwm-memorial-68733"
+     ],
+     "note": "married name on her gravestone"
+    }
+   ],
+   "confidence": "probable",
+   "birth": {
+    "date": "1870",
+    "display": "about 1870",
+    "place": null,
+    "sourceIds": [
+     "iwm-memorial-68733"
+    ],
+    "confidence": "probable",
+    "dateQualifier": "about",
+    "note": "Aged 35 at her death in August 1905. Birthplace not known."
+   },
+   "death": {
+    "date": "1905-08-01",
+    "display": "1 August 1905, aged 35, Gorleston (Yarmouth district)",
+    "place": "Gorleston, Norfolk",
+    "placeId": "gorleston-on-sea",
+    "sourceIds": [
+     "iwm-memorial-68733",
+     "freebmd-john-rupert-family-s51",
+     "oadby-remembers-jhf"
+    ],
+    "confidence": "confirmed",
+    "note": "Gravestone date and age, with the GRO index entry Isabel Fitzmaurice, 35, September quarter 1905, Yarmouth 4b 20. Oadby Remembers names Gorleston."
+   },
+   "residences": [],
+   "occupations": [],
+   "immigration": null,
+   "cardPlace": null,
+   "summary": "First wife of John Rupert FitzMaurice, married in 1896, and mother of John Herbert and Mary Isabel. The quarry engine Isabel, delivered in 1897, was named after her. She died in 1905, aged 35.",
+   "story": "John Rupert Fitzmaurice and Isabel Bennion married in the March quarter of 1896, registered in the Lichfield district.[^freebmd-john-rupert-family-s51] [^oadby-remembers-jhf] The Amerton Railway, which keeps the quarry locomotive Isabel, says it was named after John Rupert's wife.[^amerton-isabel] She died on 1 August 1905, aged 35, at Gorleston, and her gravestone at Sutton Coldfield Cemetery reads \"Come unto me and I will give you rest\". Her son's name was added after 1918.[^iwm-memorial-68733] [^iwm-lives-2475555]",
+   "timeline": [],
+   "facts": [],
+   "media": [],
+   "openQuestions": [],
+   "relatedPages": [
+    {
+     "title": "The Cliffe Hill quarry",
+     "url": "quarry.html"
+    }
+   ],
+   "parents": [],
+   "children": [
+    "john-herbert-fitzmaurice",
+    "mary-isabel-fitzmaurice"
+   ],
+   "spouses": [
+    {
+     "id": "john-rupert-fitzmaurice",
+     "order": 1,
+     "marriageDate": "1896",
+     "marriageDisplay": "early 1896, Lichfield district",
+     "place": "Lichfield registration district",
+     "sourceIds": [
+      "freebmd-john-rupert-family-s51",
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "note": "Index page shared with one other bride; Oadby Remembers names Isabel Bennion."
+    }
+   ],
+   "isDirectLine": false,
+   "photo": null,
+   "portrait": null,
+   "isLiving": false,
+   "order": 2,
+   "parentLinkConfidence": "probable",
+   "burial": {
+    "place": "Sutton Coldfield Cemetery",
+    "placeId": "sutton-coldfield-cemetery",
+    "date": "1905",
+    "display": "Gravestone at Sutton Coldfield Cemetery, Rectory Road",
+    "sourceIds": [
+     "iwm-memorial-68733",
+     "iwm-lives-2475555"
+    ],
+    "confidence": "probable"
+   },
+   "voyages": [],
+   "layoutJoin": "john-rupert-fitzmaurice"
+  },
+  {
+   "id": "mary-isabel-fitzmaurice",
+   "displayName": "Mary Isabel FitzMaurice",
+   "disambiguator": "Daughter of John Rupert, born 1899",
+   "givenNames": "Mary Isabel",
+   "surname": "FitzMaurice",
+   "sex": "F",
+   "generation": 16,
+   "nameVariants": [],
+   "confidence": "probable",
+   "birth": {
+    "date": "1899",
+    "display": "late 1899, Leicester",
+    "place": "Leicester",
+    "placeId": "leicester",
+    "sourceIds": [
+     "freebmd-john-rupert-family-s51",
+     "oadby-remembers-jhf"
+    ],
+    "confidence": "probable",
+    "dateQualifier": "about",
+    "note": "Birth registered in the December quarter of 1899, Leicester, volume 7a, page 281."
+   },
+   "death": null,
+   "residences": [],
+   "occupations": [],
+   "immigration": null,
+   "cardPlace": null,
+   "summary": "Probably the daughter of John Rupert FitzMaurice and Isabel, born at Leicester in 1899. Her later life has not been researched.",
+   "story": "Mary Isabel's birth was registered at Leicester in the December quarter of 1899.[^freebmd-john-rupert-family-s51] Oadby Remembers names her as John Herbert's sister.[^oadby-remembers-jhf]",
+   "timeline": [],
+   "facts": [],
+   "media": [],
+   "openQuestions": [
+    {
+     "question": "Whom did she marry, and when did she die?",
+     "record": "Marriage and death indexes after 1911."
+    }
+   ],
+   "relatedPages": [
+    {
+     "title": "The Cliffe Hill quarry",
+     "url": "quarry.html"
+    }
+   ],
+   "parents": [
+    "john-rupert-fitzmaurice",
+    "isabel-bennion"
+   ],
+   "children": [],
+   "spouses": [],
+   "isDirectLine": false,
+   "photo": null,
+   "portrait": null,
+   "isLiving": false,
+   "order": 2,
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": []
+  },
+  {
+   "id": "maria-adelaide-wood",
+   "displayName": "Maria Adelaide FitzMaurice (Wood)",
+   "disambiguator": "Second wife of John Rupert",
+   "givenNames": "Maria Adelaide",
+   "surname": "Wood",
+   "sex": "F",
+   "generation": 15,
+   "nameVariants": [
+    {
+     "name": "Maria Adelaida Wood",
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "note": "spelling on Oadby Remembers"
+    }
+   ],
+   "confidence": "probable",
+   "birth": null,
+   "death": null,
+   "residences": [],
+   "occupations": [],
+   "immigration": null,
+   "cardPlace": null,
+   "summary": "Second wife of John Rupert FitzMaurice, married on 4 July 1907 at Petersham, Surrey. Her later life has not been researched.",
+   "story": "Oadby Remembers says John Rupert married Maria Adelaida Wood on 4 July 1907 at Petersham, Surrey.[^oadby-remembers-jhf] The marriage index for the September quarter of 1907, Richmond (Surrey) 2a 1057, has John Rupert Fitzmaurice on a page shared with Maria Adelaide Wood and another bride, so the index alone does not choose.[^freebmd-john-rupert-family-s51]",
+   "timeline": [],
+   "facts": [],
+   "media": [],
+   "openQuestions": [],
+   "relatedPages": [
+    {
+     "title": "The Cliffe Hill quarry",
+     "url": "quarry.html"
+    }
+   ],
+   "parents": [],
+   "children": [],
+   "spouses": [
+    {
+     "id": "john-rupert-fitzmaurice",
+     "order": 2,
+     "marriageDate": "1907-07-04",
+     "marriageDisplay": "4 July 1907, Petersham, Surrey",
+     "place": "Petersham, Surrey",
+     "sourceIds": [
+      "oadby-remembers-jhf",
+      "freebmd-john-rupert-family-s51"
+     ],
+     "confidence": "probable",
+     "note": null
+    }
+   ],
+   "isDirectLine": false,
+   "photo": null,
+   "portrait": null,
+   "isLiving": false,
+   "order": 3,
+   "parentLinkConfidence": "probable",
+   "burial": null,
+   "voyages": [],
+   "layoutJoin": "john-rupert-fitzmaurice"
   }
  ]
 }

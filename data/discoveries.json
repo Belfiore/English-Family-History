@@ -346,6 +346,435 @@
    },
    "confidence": "probable",
    "changeNote": "Puts the clerk's 1834 home a few steps from the Ordnance offices where he worked."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-son-of-john-rupert",
+   "personIds": [
+    "john-herbert-fitzmaurice",
+    "john-rupert-fitzmaurice",
+    "isabel-bennion"
+   ],
+   "placeIds": [],
+   "headline": "John Rupert FitzMaurice had a son, John Herbert, born at Leicester in 1898, whose mother was Isabel Bennion.",
+   "findType": "person",
+   "source": {
+    "text": "Oadby Remembers, J.H. Fitzmaurice; Isabel Fitzmaurice gravestone, Sutton Coldfield; FreeBMD indexes",
+    "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
+   },
+   "confidence": "probable",
+   "changeNote": "Adds a new branch: Reg FitzMaurice's first cousin, who died in the First World War."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-birth-1898",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [
+    "leicester"
+   ],
+   "headline": "John Herbert FitzMaurice's birth was registered at Leicester in the summer of 1898.",
+   "findType": "record",
+   "source": {
+    "text": "FreeBMD, births, September quarter 1898, Leicester 7a 277",
+    "url": "https://www.freebmd.org.uk/cgi/search.pl"
+   },
+   "confidence": "confirmed",
+   "changeNote": "The index entry for the birth."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-baptism-weeford",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [
+    "st-marys-weeford"
+   ],
+   "headline": "John Herbert FitzMaurice was probably baptised at St Mary's, Weeford, Staffordshire, on 9 August 1898.",
+   "findType": "record",
+   "source": {
+    "text": "Oadby Remembers, J.H. Fitzmaurice",
+    "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
+   },
+   "confidence": "probable",
+   "changeNote": "A new church for the map; the register has not been seen."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-commissioned-1917",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "The London Gazette of 20 November 1917 names John Herbert Fitzmaurice as a cadet made a temporary second lieutenant in the Shropshire Light Infantry on 31 October 1917.",
+   "findType": "record",
+   "source": {
+    "text": "London Gazette, Supplement 30390, page 11990",
+    "url": "https://www.thegazette.co.uk/London/issue/30390/supplement/11990"
+   },
+   "confidence": "confirmed",
+   "changeNote": "His commission, read from the Gazette page and boxed.",
+   "image": "images/records/notebook/1917-london-gazette-30390-p11990-john-herbert-fitzmaurice.jpg",
+   "imageAlt": "London Gazette, 20 November 1917, with the line Shrops. L.I., John Herbert Fitzmaurice, boxed"
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-service-battalion-1918",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "The London Gazette of 7 February 1918 transfers 2nd Lt J. H. FitzMaurice to a service battalion of the Shropshire Light Infantry from 31 October 1917.",
+   "findType": "record",
+   "source": {
+    "text": "London Gazette, Supplement 30513, page 1794",
+    "url": "https://www.thegazette.co.uk/London/issue/30513/supplement/1794"
+   },
+   "confidence": "confirmed",
+   "changeNote": "Explains why he served with the 6th (Service) Battalion.",
+   "image": "images/records/notebook/1918-london-gazette-30513-p1794-j-h-fitzmaurice.jpg",
+   "imageAlt": "London Gazette, 7 February 1918, with the line J. H. FitzMaurice boxed under Shrops. L.I."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-killed-1918",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [
+    "st-quentin-front-1918"
+   ],
+   "headline": "Second Lieutenant John Herbert FitzMaurice, 6th King's Shropshire Light Infantry, was reported missing near St Quentin on 25 March 1918, aged 19, and is named on the Pozieres Memorial.",
+   "findType": "record",
+   "source": {
+    "text": "Commonwealth War Graves Commission death register (Fold3 copy); IWM War Memorials Register 68733",
+    "url": "https://www.fold3.com/record/746425917/fitzmaurice-john-herbert-uk-wwi-wwii-commonwealth-war-graves-commission-death-registers"
+   },
+   "confidence": "confirmed",
+   "changeNote": "The family's loss in the German spring offensive of 1918."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-death-date-conflict",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "One copy of the IWM Lives page gives 24 March 1918 for John Herbert's death; the war graves record and the other sources give 25 March, which the site uses.",
+   "findType": "correction",
+   "source": {
+    "text": "Fold3 copy of Lives of the First World War; CWGC",
+    "url": "https://livesofthefirstworldwar.iwm.org.uk/lifestory/2475555"
+   },
+   "confidence": "confirmed",
+   "changeNote": "Records which date was chosen and why."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-officer-file",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "John Herbert FitzMaurice's officer file (WO 339/108430) and medal card (WO 372/7/79866) survive at The National Archives.",
+   "findType": "record",
+   "source": {
+    "text": "The National Archives, Discovery catalogue",
+    "url": "https://discovery.nationalarchives.gov.uk/details/r/C1162251"
+   },
+   "confidence": "confirmed",
+   "changeNote": "The file has not been copied; it would give his application and the report of him going missing."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-shrewsbury-school",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "John Herbert FitzMaurice was probably at Shrewsbury School from 1912 to 1916 and is on its roll of honour.",
+   "findType": "record",
+   "source": {
+    "text": "Oadby Remembers, J.H. Fitzmaurice",
+    "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
+   },
+   "confidence": "probable",
+   "changeNote": "His school; the school archive may hold more."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-memorials",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "John Herbert FitzMaurice is named on the Oadby war memorial and on the First World War tablet at St Mary Magdalene, Knighton, Leicester.",
+   "findType": "record",
+   "source": {
+    "text": "IWM War Memorials Register 37741 and 37773",
+    "url": "https://memorials.iwm.org.uk/memorial/37741"
+   },
+   "confidence": "probable",
+   "changeNote": "Two Leicester-area memorials, which fit his father's home at Oadby."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-herbert-fitzmaurice-portrait",
+   "personIds": [
+    "john-herbert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "A portrait photograph of John Herbert FitzMaurice is on the IWM Lives of the First World War website.",
+   "findType": "photo",
+   "source": {
+    "text": "IWM Lives of the First World War, life story 2475555",
+    "url": "https://livesofthefirstworldwar.iwm.org.uk/lifestory/2475555"
+   },
+   "confidence": "probable",
+   "changeNote": "Linked, not copied, because its reuse terms are not stated."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "isabel-bennion-marriage-1896",
+   "personIds": [
+    "isabel-bennion",
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "John Rupert FitzMaurice married Isabel Bennion early in 1896, registered in the Lichfield district.",
+   "findType": "connection",
+   "source": {
+    "text": "FreeBMD, marriages, March quarter 1896, Lichfield 6b 565; Oadby Remembers",
+    "url": "https://www.freebmd.org.uk/cgi/search.pl"
+   },
+   "confidence": "probable",
+   "changeNote": "His first marriage."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "isabel-fitzmaurice-death-1905",
+   "personIds": [
+    "isabel-bennion"
+   ],
+   "placeIds": [
+    "sutton-coldfield-cemetery",
+    "gorleston-on-sea"
+   ],
+   "headline": "Isabel FitzMaurice died on 1 August 1905, aged 35, and her gravestone is in Sutton Coldfield Cemetery.",
+   "findType": "record",
+   "source": {
+    "text": "Gravestone (photograph on IWM Lives 2475555); FreeBMD deaths, September quarter 1905, Yarmouth 4b 20",
+    "url": "https://memorials.iwm.org.uk/memorial/68733"
+   },
+   "confidence": "confirmed",
+   "changeNote": "Two new map pins, and the stone that names her \"only son\"."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "engine-isabel-named-after-wife",
+   "personIds": [
+    "isabel-bennion",
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "The Cliffe Hill quarry engine Isabel, delivered in 1897, was named after John Rupert FitzMaurice's wife Isabel.",
+   "findType": "connection",
+   "source": {
+    "text": "Amerton Railway, Isabel",
+    "url": "https://amertonrailway.co.uk/locomotives/steam/isabel/"
+   },
+   "confidence": "probable",
+   "changeNote": "Connects the family to the locomotive pictured on the quarry page."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "mary-isabel-fitzmaurice-birth-1899",
+   "personIds": [
+    "mary-isabel-fitzmaurice"
+   ],
+   "placeIds": [
+    "leicester"
+   ],
+   "headline": "John Rupert FitzMaurice probably had a daughter, Mary Isabel, born at Leicester in 1899.",
+   "findType": "person",
+   "source": {
+    "text": "FreeBMD, births, December quarter 1899, Leicester 7a 281; Oadby Remembers",
+    "url": "https://www.freebmd.org.uk/cgi/search.pl"
+   },
+   "confidence": "probable",
+   "changeNote": "A new person on the tree."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "maria-adelaide-wood-marriage-1907",
+   "personIds": [
+    "maria-adelaide-wood",
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "John Rupert FitzMaurice married again on 4 July 1907, to Maria Adelaide Wood, at Petersham, Surrey.",
+   "findType": "person",
+   "source": {
+    "text": "Oadby Remembers; FreeBMD, marriages, September quarter 1907, Richmond (Surrey) 2a 1057",
+    "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
+   },
+   "confidence": "probable",
+   "changeNote": "His second wife, a new person on the tree."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-rupert-homes-1901-1911",
+   "personIds": [
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [
+    "westcotes-drive-leicester",
+    "cliveden-manor-road-oadby"
+   ],
+   "headline": "John Rupert FitzMaurice's family lived in Westcotes Drive, Leicester, in 1901 and at Cliveden, Manor Road, Oadby, by 1911.",
+   "findType": "place",
+   "source": {
+    "text": "Oadby Remembers, J.H. Fitzmaurice",
+    "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
+   },
+   "confidence": "probable",
+   "changeNote": "Two new homes on the map."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "john-rupert-manager-1896-lease-letters",
+   "personIds": [
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "Letters of 1896 at the Leicestershire Record Office name J. R. Fitzmaurice as manager of the Cliffe Hill Granite Co.",
+   "findType": "record",
+   "source": {
+    "text": "Record Office for Leicestershire, Leicester and Rutland, DG 9/357",
+    "url": "https://discovery.nationalarchives.gov.uk/details/r/892ad8d0-1363-40ed-9901-75386990e561"
+   },
+   "confidence": "confirmed",
+   "changeNote": "A contemporary record of him running the quarry."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "cliffe-hill-tramway-lease-1897",
+   "personIds": [],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "A lease of 12 February 1897 let land beside Billa Barrow Lane, Markfield, to the Cliffe Hill Granite Co. for its light railway, at 45 pounds a year.",
+   "findType": "record",
+   "source": {
+    "text": "Record Office for Leicestershire, Leicester and Rutland, DG 9/358 to 359",
+    "url": "https://discovery.nationalarchives.gov.uk/details/r/79ffb301-aefd-441e-a026-a87656cda540"
+   },
+   "confidence": "confirmed",
+   "changeNote": "Dates the start of the quarry railway."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "cliffe-hill-company-records-survive",
+   "personIds": [],
+   "placeIds": [
+    "old-cliffe-hill-quarry-markfield"
+   ],
+   "headline": "The Cliffe Hill Granite Company's own minutes, letter books, plans and photograph albums, 1890 to 1979, survive in private hands, with enquiries through the Leicestershire Record Office.",
+   "findType": "record",
+   "source": {
+    "text": "The National Archives, Discovery (N13796580)",
+    "url": "https://discovery.nationalarchives.gov.uk/details/r/N13796580"
+   },
+   "confidence": "confirmed",
+   "changeNote": "The best hope of photographs of John Rupert and the early quarry."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "markfield-estates-1937",
+   "personIds": [
+    "john-rupert-fitzmaurice"
+   ],
+   "placeIds": [],
+   "headline": "In October 1937 J. R. Fitzmaurice, as chairman, signed the resolution to wind up Markfield Estates Ltd.",
+   "findType": "record",
+   "source": {
+    "text": "London Gazette, Issue 34450, page 6848",
+    "url": "https://www.thegazette.co.uk/London/issue/34450/page/6848"
+   },
+   "confidence": "probable",
+   "changeNote": "A second family company; the liquidator was later John Rupert's executor.",
+   "image": "images/records/notebook/1937-london-gazette-34450-p6848-markfield-estates-j-r-fitzmaurice.jpg",
+   "imageAlt": "London Gazette, 2 November 1937, the Markfield Estates Limited notice signed J. R. Fitzmaurice, Chairman, boxed"
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "40-fisher-street-map-pin",
+   "personIds": [
+    "herbert-andrews-sr",
+    "lucy-andrews",
+    "mr-hg-andrews"
+   ],
+   "placeIds": [
+    "40-fisher-street-canning-town"
+   ],
+   "headline": "40 Fisher Street, Canning Town, home of Herbert and Lucy Andrews from 1911 to 1941, is now on the map.",
+   "findType": "place",
+   "source": {
+    "text": "CWGC civilian war dead (Fold3 copy) and the 1911 census",
+    "url": "https://www.fold3.com/record/746927422"
+   },
+   "confidence": "confirmed",
+   "changeNote": "A new map pin for Ron's grandparents' house."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "herbert-william-andrews-birth-date",
+   "personIds": [
+    "herbert-andrews",
+    "mr-hg-andrews"
+   ],
+   "placeIds": [
+    "west-ham-registration-district"
+   ],
+   "headline": "Henry George Andrews's army record gives his son Herbert William's birth as 17 July 1916 at West Ham, and his marriage to Rosina Maud Cousins at St Andrew's, Plaistow, on 18 April 1915.",
+   "findType": "record",
+   "source": {
+    "text": "British Army WW1 service record (TNA WO 363), Henry George Andrews, page 3, Fold3 image 414348639",
+    "url": "https://www.fold3.com/image/414348639/andrews-henry-george-page-3-uk-wwi-british-army-service-records-1914-1920"
+   },
+   "confidence": "confirmed",
+   "changeNote": "Herbert William's exact birth date added; the marriage also agrees with FreeBMD, June quarter 1915, West Ham 4a 305.",
+   "image": "images/records/notebook/1915-henry-george-andrews-wo363-fold3-414348639-p3-marriage-and-child.jpg",
+   "imageAlt": "Henry George Andrews's army record, page 3, the marriage and children lines boxed"
   }
  ]
 }

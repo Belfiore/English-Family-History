@@ -90,7 +90,7 @@
   {"id": "h11", "cat": "geography", "q": "Which people died in Plaistow?", "round": 2, "all": ["Henry George Andrews", "Rosina Maud Andrews", "Sidney George Andrews"], "type": "place", "firstRun": "wrong"},
   {"id": "h12", "cat": "chronology", "q": "What happened in 1941?", "round": 2, "all": ["19 April 1941"], "none": ["Plaistow, aged 52\\[\\d+\\]\\s+\\{?\\{?p?:?Henry"], "firstRun": "right"},
   {"id": "h13", "cat": "geography", "q": "Who lived in South Africa?", "round": 2, "all": ["Edward Robert FitzMaurice", "Edward Scott FitzMaurice", "Edward Dixon FitzMaurice"], "firstRun": "partly"},
-  {"id": "h14", "cat": "false premise", "q": "Did anyone fight at the Somme?", "round": 2, "all": ["do not mention the Somme", "Henry George Andrews"], "none": ["Knight", "no one called"], "firstRun": "wrong"},
+  {"id": "h14", "cat": "false premise", "q": "Did anyone fight at the Somme?", "round": 2, "all": ["John Herbert FitzMaurice", "Pozieres Memorial", "25 March 1918", "not shown at the 1916 Battle of the Somme", "Henry George Andrews"], "none": ["Knight", "no one called"], "firstRun": "wrong"},
   {"id": "h15", "cat": "calculation", "q": "How long were Ron and Pat married?", "round": 2, "all": ["11 February 1950", "between 59 and 60 years"], "firstRun": "wrong"},
   {"id": "h16", "cat": "calculation", "q": "How old was Ron when Pat was born?", "round": 2, "all": ["about 7"], "none": ["when he died"], "firstRun": "wrong"},
   {"id": "h17", "cat": "genealogy", "q": "Who were Ron's brothers and sisters?", "round": 2, "all": ["Herbert William Andrews", "Sidney George Andrews"], "firstRun": "right"},

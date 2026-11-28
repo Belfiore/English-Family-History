@@ -95,6 +95,7 @@ const ok = (m) => console.log('  ok   ' + m);
     // ---------------------------------------------------------------- canvas at three widths
     for (const [w, h] of [[1440, 900], [1024, 768], [390, 844]]) {
         const ctx = await browser.newContext({ viewport: { width: w, height: h }, hasTouch: w < 800, isMobile: w < 800 });
+        await ctx.addInitScript(() => { localStorage.setItem('fs.visitor.v1:/', JSON.stringify({ v: 1, id: null, skipped: true, at: '2026-11-28' })); });
         const page = await ctx.newPage();
         const errs = [];
         page.on('pageerror', e => errs.push(e.message));
@@ -387,6 +388,7 @@ const ok = (m) => console.log('  ok   ' + m);
 
     // ---------------------------------------------------------------- internal links on every page
     const ctx = await browser.newContext();
+    await ctx.addInitScript(() => { localStorage.setItem('fs.visitor.v1:/', JSON.stringify({ v: 1, id: null, skipped: true, at: '2026-11-28' })); });
     const page = await ctx.newPage();
     const pages = fs.readdirSync(DIST).filter(f => f.endsWith('.html'));
     const linkErrs = [];

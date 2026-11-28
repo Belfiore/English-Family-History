@@ -11,7 +11,10 @@
     "name": "FitzMaurice & Andrews",
     "familyName": "the FitzMaurice and Andrews families",
     "lang": "en-GB",
-    "description": "The FitzMaurice and Andrews families: Grandma Pat and Grandpa Ron, and the families they came from."
+    "description": "The FitzMaurice and Andrews families: Grandma Pat and Grandpa Ron, and the families they came from.",
+    "name_de": "FitzMaurice und Andrews",
+    "familyName_de": "die Familien FitzMaurice und Andrews",
+    "description_de": "Die Familien FitzMaurice und Andrews: Großmutter Pat und Großvater Ron, und die Familien, aus denen sie kamen."
   },
   "pages": {
     "home": "index.html",
@@ -21,7 +24,9 @@
       "description": "An interactive family tree of the FitzMaurice and Andrews families. Grandpa Ron’s family is on the left and Grandma Pat’s on the right.",
       "stylesheets": [
         "styles.css"
-      ]
+      ],
+      "title_de": "Stammbaum | FitzMaurice und Andrews",
+      "description_de": "Ein interaktiver Stammbaum der Familien FitzMaurice und Andrews. Die Familie von Großvater Ron steht links, die von Großmutter Pat rechts."
     },
     "map": {
       "file": "map.html",
@@ -29,7 +34,9 @@
       "description": "An interactive map of where the FitzMaurice and Andrews families were born, lived, married, worked, served, sailed, died and were buried, with a timeline you can play.",
       "stylesheets": [
         "styles.css"
-      ]
+      ],
+      "title_de": "Familienkarte | FitzMaurice und Andrews",
+      "description_de": "Eine interaktive Karte der Orte, an denen die Familien FitzMaurice und Andrews geboren wurden, lebten, heirateten, arbeiteten, dienten, zur See fuhren, starben und begraben wurden, mit einer Zeitlinie zum Abspielen."
     },
     "ask": {
       "file": "ask.html",
@@ -37,24 +44,29 @@
       "description": "Stuart, the family archivist, answers questions about the FitzMaurice and Andrews families from the records on this site, with a link to each one.",
       "stylesheets": [
         "branch.css"
-      ]
+      ],
+      "title_de": "Stuart fragen | FitzMaurice und Andrews",
+      "description_de": "Stuart, der Familienarchivar, beantwortet Fragen zu den Familien FitzMaurice und Andrews aus den Quellen auf dieser Site, jeweils mit einem Link."
     }
   },
   "nav": [
     {
       "href": "index.html",
-      "label": "Home"
+      "label": "Home",
+      "label_de": "Startseite"
     },
     {
       "href": "family-tree.html",
       "label": "Family Tree",
       "match": [
         "family-tree-classic.html"
-      ]
+      ],
+      "label_de": "Stammbaum"
     },
     {
       "href": "map.html",
-      "label": "Family Map"
+      "label": "Family Map",
+      "label_de": "Familienkarte"
     },
     {
       "href": "branches.html",
@@ -66,29 +78,34 @@
         "andrews-roots.html",
         "cousins.html",
         "quarry.html"
-      ]
+      ],
+      "label_de": "Zweige"
     },
     {
       "comment": "Family Crest is switched off for now. Restore this link to bring it back: <a href=\"family-crest.html\">Family Crest</a>"
     },
     {
       "href": "ron-egypt.html",
-      "label": "Ron in WWII"
+      "label": "Ron in WWII",
+      "label_de": "Ron im Zweiten Weltkrieg"
     },
     {
       "href": "wedding.html",
-      "label": "Wedding"
+      "label": "Wedding",
+      "label_de": "Hochzeit"
     },
     {
       "href": "sources.html",
       "label": "Sources",
       "match": [
         "research-notes.html"
-      ]
+      ],
+      "label_de": "Quellen"
     },
     {
       "href": "ask.html",
-      "label": "Ask Stuart"
+      "label": "Ask Stuart",
+      "label_de": "Stuart fragen"
     }
   ],
   "head": {
@@ -103,7 +120,9 @@
       "left": "ronald-andrews",
       "right": "patricia-andrews",
       "leftLabel": "Grandpa Ron’s family",
-      "rightLabel": "Grandma Pat’s family"
+      "rightLabel": "Grandma Pat’s family",
+      "leftLabel_de": "Großvater Rons Familie",
+      "rightLabel_de": "Großmutter Pats Familie"
     },
     "hiddenRegions": [
       "orkney"
@@ -122,127 +141,166 @@
         "generation": 0,
         "label": "I",
         "title": "Royal Stewarts",
-        "range": "c. 1430 to 1460"
+        "range": "c. 1430 to 1460",
+        "title_de": "Die königlichen Stewarts",
+        "range_de": "um 1430 bis 1460"
       },
       {
         "generation": 1,
         "label": "II",
         "title": "Mary Stewart",
-        "range": "c. 1453 to 1488"
+        "range": "c. 1453 to 1488",
+        "title_de": "Mary Stewart",
+        "range_de": "um 1453 bis 1488"
       },
       {
         "generation": 2,
         "label": "III",
         "title": "Hamiltons, Earls of Arran",
-        "range": "c. 1475 to 1529"
+        "range": "c. 1475 to 1529",
+        "title_de": "Hamiltons, Earls of Arran",
+        "range_de": "um 1475 bis 1529"
       },
       {
         "generation": 3,
         "label": "IV",
         "title": "Hamiltons",
-        "range": "c. 1516 to 1575"
+        "range": "c. 1516 to 1575",
+        "title_de": "Hamiltons",
+        "range_de": "um 1516 bis 1575"
       },
       {
         "generation": 4,
         "label": "V",
         "title": "Marquesses of Hamilton",
-        "range": "c. 1540 to 1604"
+        "range": "c. 1540 to 1604",
+        "title_de": "Marquesses of Hamilton",
+        "range_de": "um 1540 bis 1604"
       },
       {
         "generation": 5,
         "label": "VI",
         "title": "Marquesses of Hamilton",
-        "range": "1589 to 1625"
+        "range": "1589 to 1625",
+        "title_de": "Marquesses of Hamilton",
+        "range_de": "1589 bis 1625"
       },
       {
         "generation": 6,
         "label": "VII",
         "title": "Dukes of Hamilton",
-        "range": "1606 to 1649"
+        "range": "1606 to 1649",
+        "title_de": "Dukes of Hamilton",
+        "range_de": "1606 bis 1649"
       },
       {
         "generation": 7,
         "label": "VIII",
         "title": "Duchess Anne",
-        "range": "1632 to 1716"
+        "range": "1632 to 1716",
+        "title_de": "Herzogin Anne",
+        "range_de": "1632 bis 1716"
       },
       {
         "generation": 8,
         "label": "IX",
         "title": "First Earl of Orkney",
-        "range": "1666 to 1737"
+        "range": "1666 to 1737",
+        "title_de": "Erster Earl of Orkney",
+        "range_de": "1666 bis 1737"
       },
       {
         "generation": 9,
         "label": "X",
         "title": "Countesses of Orkney",
-        "range": "born 1690s to 1700s"
+        "range": "born 1690s to 1700s",
+        "title_de": "Countesses of Orkney",
+        "range_de": "geboren in den 1690er bis 1700er Jahren"
       },
       {
         "generation": 10,
         "label": "XI",
         "title": "Countesses of Orkney",
-        "range": "born 1700s to 1720s"
+        "range": "born 1700s to 1720s",
+        "title_de": "Countesses of Orkney",
+        "range_de": "geboren in den 1700er bis 1720er Jahren"
       },
       {
         "generation": 11,
         "label": "XII",
         "title": "O'Brien and FitzMaurice",
-        "range": "born 1730s to 1750s"
+        "range": "born 1730s to 1750s",
+        "title_de": "O'Brien und FitzMaurice",
+        "range_de": "geboren in den 1730er bis 1750er Jahren"
       },
       {
         "generation": 12,
         "label": "XIII",
         "title": "Viscount Kirkwall",
-        "range": "1778 to 1820"
+        "range": "1778 to 1820",
+        "title_de": "Viscount Kirkwall",
+        "range_de": "1778 bis 1820"
       },
       {
         "generation": 13,
         "label": "XIV",
         "title": "Early nineteenth century",
-        "range": "about 1790 to 1845"
+        "range": "about 1790 to 1845",
+        "title_de": "Frühes 19. Jahrhundert",
+        "range_de": "etwa 1790 bis 1845"
       },
       {
         "generation": 14,
         "label": "XV",
         "title": "Victorian parents",
-        "range": "about 1830 to 1865"
+        "range": "about 1830 to 1865",
+        "title_de": "Viktorianische Eltern",
+        "range_de": "etwa 1830 bis 1865"
       },
       {
         "generation": 15,
         "label": "XVI",
         "title": "Late Victorians",
-        "range": "about 1860 to 1890"
+        "range": "about 1860 to 1890",
+        "title_de": "Späte Viktorianer",
+        "range_de": "etwa 1860 bis 1890"
       },
       {
         "generation": 16,
         "label": "XVII",
         "title": "Edwardian generation",
-        "range": "about 1880 to 1910"
+        "range": "about 1880 to 1910",
+        "title_de": "Eduardianische Generation",
+        "range_de": "etwa 1880 bis 1910"
       },
       {
         "generation": 17,
         "label": "XVIII",
         "title": "Pat and Ron",
-        "range": "born about 1915 to 1930"
+        "range": "born about 1915 to 1930",
+        "title_de": "Pat und Ron",
+        "range_de": "geboren etwa 1915 bis 1930"
       },
       {
         "generation": 18,
         "label": "XIX",
         "title": "Amanda and Venetia",
-        "range": null
+        "range": null,
+        "title_de": "Amanda und Venetia"
       },
       {
         "generation": 19,
         "label": "XX",
         "title": "Sebastian's generation",
-        "range": null
+        "range": null,
+        "title_de": "Sebastians Generation"
       },
       {
         "generation": 20,
         "label": "XXI",
         "title": "The newest generation",
-        "range": null
+        "range": null,
+        "title_de": "Die jüngste Generation"
       }
     ],
     "rootOrder": [
@@ -265,7 +323,9 @@
       {
         "id": "orkney",
         "label": "The Hamiltons and the Earls of Orkney",
-        "sub": "No proven link to this family"
+        "sub": "No proven link to this family",
+        "label_de": "Die Hamiltons und die Earls of Orkney",
+        "sub_de": "Keine nachgewiesene Verbindung zu dieser Familie"
       }
     ],
     "regionKicker": "Earls of Orkney (link unproven)",
@@ -276,7 +336,12 @@
       ],
       "fromGen": 16,
       "toGen": 19
-    }
+    },
+    "legendNote_de": "Die <a href=\"family-tree-classic.html\">frühere Fassung dieses Stammbaums</a> ist noch da.",
+    "familyLabel_de": "Familie FitzMaurice und Andrews",
+    "directLineLabel_de": "Sebastians direkte Linie",
+    "regionKicker_de": "Earls of Orkney (Verbindung nicht nachgewiesen)",
+    "kinLabel_de": "FitzMaurice-Verwandtschaft: Verbindung nicht nachgewiesen"
   },
   "map": {
     "maptilerKey": "DmGXe7VpArzLD0VzWdx3",
@@ -292,7 +357,8 @@
           1.9,
           55.9
         ]
-      ]
+      ],
+      "name_de": "England"
     },
     "historicMaps": "uk-os",
     "branches": [
@@ -371,7 +437,9 @@
         "option": "Ron's family (Andrews)",
         "roots": [
           "ronald-andrews"
-        ]
+        ],
+        "label_de": "Rons Familie",
+        "option_de": "Rons Familie (Andrews)"
       },
       {
         "id": "pat",
@@ -379,7 +447,9 @@
         "option": "Pat's family (FitzMaurice)",
         "roots": [
           "patricia-andrews"
-        ]
+        ],
+        "label_de": "Pats Familie",
+        "option_de": "Pats Familie (FitzMaurice)"
       },
       {
         "id": "both",
@@ -388,10 +458,13 @@
         "roots": [
           "ronald-andrews",
           "patricia-andrews"
-        ]
+        ],
+        "label_de": "Rons und Pats Familien",
+        "option_de": "Rons und Pats Familien"
       }
     ],
-    "noscript": "The places are also listed on the <a href=\"branches.html\">branch pages</a>."
+    "noscript": "The places are also listed on the <a href=\"branches.html\">branch pages</a>.",
+    "noscript_de": "Die Orte stehen auch auf den <a href=\"branches.html\">Zweigseiten</a>."
   },
   "stuart": {
     "anchors": [
@@ -399,13 +472,15 @@
         "key": "ron",
         "id": "ronald-andrews",
         "title": "Grandpa Ron",
-        "short": "Ron"
+        "short": "Ron",
+        "title_de": "Großvater Ron"
       },
       {
         "key": "pat",
         "id": "patricia-andrews",
         "title": "Grandma Pat",
-        "short": "Pat"
+        "short": "Pat",
+        "title_de": "Großmutter Pat"
       }
     ],
     "homeCountry": "England",
@@ -434,54 +509,63 @@
         "needs": [
           "john-fitzmaurice",
           "patricia-andrews"
-        ]
+        ],
+        "q_de": "Wie war John FitzMaurice mit Großmutter Pat verwandt?"
       },
       {
         "kind": "biography",
         "q": "What happened to Henry George Andrews?",
         "needs": [
           "mr-hg-andrews"
-        ]
+        ],
+        "q_de": "Was geschah mit Henry George Andrews?"
       },
       {
         "kind": "migration",
         "q": "Which family members went to South Africa?",
         "needs": [
           "edward-dixon-fitzmaurice"
-        ]
+        ],
+        "q_de": "Welche Familienmitglieder gingen nach Südafrika?"
       },
       {
         "kind": "calculation",
         "q": "How old was Edward Dixon FitzMaurice when he died?",
         "needs": [
           "edward-dixon-fitzmaurice"
-        ]
+        ],
+        "q_de": "Wie alt war Edward Dixon FitzMaurice, als er starb?"
       },
       {
         "kind": "history",
         "q": "What did Grandpa Ron do in the war?",
         "needs": [
           "ronald-andrews"
-        ]
+        ],
+        "q_de": "Was tat Großvater Ron im Krieg?"
       },
       {
         "kind": "genealogy",
         "q": "Who were Reg FitzMaurice's grandparents?",
         "needs": [
           "reg-fitzmaurice"
-        ]
+        ],
+        "q_de": "Wer waren die Großeltern von Reg FitzMaurice?"
       },
       {
         "kind": "documents",
-        "q": "What records are there for the Bennetts of Bodmin?"
+        "q": "What records are there for the Bennetts of Bodmin?",
+        "q_de": "Welche Quellen gibt es zu den Bennetts aus Bodmin?"
       },
       {
         "kind": "analysis",
-        "q": "What jobs did the family have?"
+        "q": "What jobs did the family have?",
+        "q_de": "Welche Berufe hatte die Familie?"
       },
       {
         "kind": "overview",
-        "q": "Who is the earliest documented member of the family?"
+        "q": "Who is the earliest documented member of the family?",
+        "q_de": "Wer ist das früheste belegte Mitglied der Familie?"
       }
     ],
     "helpExample": "Who were Reg FitzMaurice's grandparents?",
@@ -520,17 +604,21 @@
       "links": [
         {
           "title": "Home: the photographs that started it",
-          "url": "index.html#h-clues"
+          "url": "index.html#h-clues",
+          "title_de": "Startseite: die Fotografien, mit denen alles anfing"
         },
         {
           "title": "The wedding album",
-          "url": "wedding.html"
+          "url": "wedding.html",
+          "title_de": "Das Hochzeitsalbum"
         },
         {
           "title": "Ron in Egypt",
-          "url": "ron-egypt.html"
+          "url": "ron-egypt.html",
+          "title_de": "Ron in Ägypten"
         }
-      ]
+      ],
+      "text_de": "Die Fotografien stehen im Stammbaum, bei den Dokumenten und Fotografien jeder Person, im Abschnitt über die Fotografien auf der Startseite, in Rons Kriegstagebuch und im Hochzeitsalbum."
     },
     "wordlikeNames": [
       "stacey",
@@ -551,7 +639,9 @@
       "newspaper": [
         "evening news"
       ]
-    }
+    },
+    "helpExample_de": "Wer waren die Großeltern von Reg FitzMaurice?",
+    "overviewFallback_de": "Dieses Archiv behandelt die Familien von Großvater Ron Andrews und Großmutter Pat FitzMaurice."
   },
   "widget": {
     "enabled": true
@@ -560,5 +650,24 @@
     "exclude": [
       "README.md"
     ]
+  },
+  "language": {
+    "default": "en",
+    "available": [
+      "en",
+      "de"
+    ]
+  },
+  "visitor": {
+    "enabled": true,
+    "scope": "living",
+    "livingPhotos": false,
+    "welcome": true,
+    "question": "Which one of the family are you?",
+    "question_de": "Wer von der Familie sind Sie?",
+    "lead": "Say who you are, and the tree opens from your own place among the FitzMaurice and Andrews families.",
+    "lead_de": "Sagen Sie, wer Sie sind, und der Stammbaum öffnet sich von Ihrem Platz in den Familien FitzMaurice und Andrews.",
+    "skipLabel": "Just looking",
+    "skipLabel_de": "Ich schaue nur"
   }
 }

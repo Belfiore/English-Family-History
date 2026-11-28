@@ -177,7 +177,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 1500 metres. The panel offers the Then and Today maps instead.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Riles Road lag 1938 in Plaistow, steht aber nicht auf der heutigen Karte; wo sie verlief, ist noch nicht gefunden worden."
   },
   {
    "id": "113-bourne-avenue",
@@ -635,7 +636,8 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026).",
    "blurbSourceIds": [
     "probate-robert-1895"
-   ]
+   ],
+   "blurb_de": "Robert William FitzMaurice starb hier am 10. Mai 1895."
   },
   {
    "id": "2-elm-terrace",
@@ -696,7 +698,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 1200 metres. The panel offers the Then and Today maps instead.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Elm Terrace ist auf einer Karte noch nicht gefunden worden; dies ist daher der Abschnitt der Wandsworth Road, an dem sie lag."
   },
   {
    "id": "23-sutton-court-road",
@@ -863,7 +866,8 @@
     "census-cousins",
     "cwgc-plaistow-1941"
    ],
-   "title": "The Andrews Family Home & Their Deaths in the Blitz"
+   "title": "The Andrews Family Home & Their Deaths in the Blitz",
+   "blurb_de": "Das Haus, in dem Rosina und Henry George wohnten und in dem sie und ihr Sohn Sidney am 19. April 1941 getötet wurden."
   },
   {
    "id": "25-compton-avenue",
@@ -1075,7 +1079,9 @@
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 350 metres. The panel offers the Then and Today maps instead.",
    "blurbSourceIds": [
     "census-cousins"
-   ]
+   ],
+   "blurb_de": "1901 wohnte William Cousins in Nr. 3 und sein Sohn Robert in Nr. 5, nebenan.",
+   "todayNote_de": "Young Street steht nicht auf der heutigen Karte. Sie zweigte nahe der Station Custom House von der Victoria Dock Road ab."
   },
   {
    "id": "33-new-street",
@@ -1138,7 +1144,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 900 metres. The panel offers the Then and Today maps instead.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "New Street ist auf einer Karte noch nicht gefunden worden."
   },
   {
    "id": "34-blythe-road",
@@ -1299,7 +1306,8 @@
    "streetViewReason": null,
    "blurbSourceIds": [
     "census-andrews-stacey"
-   ]
+   ],
+   "blurb_de": "Das Zuhause von Herbert und Lucy Andrews 1911 und 1921; ihr Sohn Henry George war 1911 bei ihnen."
   },
   {
    "id": "42-nestles-avenue",
@@ -1397,7 +1405,8 @@
    "blurbSourceIds": [
     "electoral-fitzmaurice",
     "probate-reg-1977"
-   ]
+   ],
+   "blurb_de": "Regs Zuhause von 1938 bis zu seinem Tod 1977."
   },
   {
    "id": "48-oxford-road-south",
@@ -1682,7 +1691,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 1500 metres. The panel offers the Then and Today maps instead.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Rutland Street ist auf einer Karte noch nicht gefunden worden."
   },
   {
    "id": "6-cathles-road",
@@ -1848,7 +1858,9 @@
     "passenger-1925-montrose-out",
     "passenger-1925-montrose-in",
     "passenger-1925-marburn"
-   ]
+   ],
+   "blurb_de": "Die Adresse, die Reg 1925 angab, auf drei Passagierlisten auf drei Arten geschrieben.",
+   "todayNote_de": "Welche Straße die Listen meinten, ist nicht bekannt."
   },
   {
    "id": "92-harper-road",
@@ -1911,7 +1923,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 2500 metres. The panel offers the Then and Today maps instead.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Harper Road in West Ham ist auf einer Karte noch nicht gefunden worden."
   },
   {
    "id": "94-bury-road",
@@ -3385,7 +3398,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 1500 metres. The panel offers the Then and Today maps instead.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Bolingbroke Gardens ist auf einer Karte noch nicht gefunden worden."
   },
   {
    "id": "braintree-essex",
@@ -4113,7 +4127,9 @@
    "blurbSourceIds": [
     "passenger-1916-balmoral",
     "passenger-1916-llanstephan"
-   ]
+   ],
+   "name_de": "Kapstadt",
+   "blurb_de": "Edward Dixon lebte von 1916 bis etwa 1923 in Südafrika, in Kapstadt; Edith und die Kinder sind wahrscheinlich im August 1916 von London hierher gesegelt."
   },
   {
    "id": "chalfont-buckinghamshire",
@@ -4295,7 +4311,8 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026).",
    "blurbSourceIds": [
     "burial-chingford-1928"
-   ]
+   ],
+   "blurb_de": "Edward Dixon FitzMaurice wurde hier am 13. Juni 1928 begraben, in Abschnitt F12."
   },
   {
    "id": "chiswick",
@@ -4485,7 +4502,9 @@
    "streetViewReason": "Westgate Terrace is now placed to about 200 m, but which house was Clifton Ville is not known. Street View was not opened at this point on 24 November 2026. The panel offers the Then and Today maps instead.",
    "blurbSourceIds": [
     "census-1911-whitstable"
-   ]
+   ],
+   "blurb_de": "Edward Dixon, Edith und die Kinder waren in der Volkszählungsnacht 1911 hier.",
+   "todayNote_de": "Westgate Terrace ist noch eine Straße in Whitstable. Welches Haus Clifton Ville war, ist noch nicht geklärt."
   },
   {
    "id": "colchester",
@@ -4626,7 +4645,8 @@
    "blurbSourceIds": [
     "family-testimony",
     "st-john-crowthorne-churchyard"
-   ]
+   ],
+   "blurb_de": "Pat und Ron sind gemeinsam auf dem Kirchhof begraben (Familie)."
   },
   {
    "id": "crystal-palace",
@@ -4699,7 +4719,8 @@
     "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama shows a car park and parkland, with a radio mast in the distance. Nothing in the picture names the Crystal Palace site."
    },
    "streetViewReason": null,
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Der Crystal Palace brannte 1936 nieder; heute ist hier sein Park."
   },
   {
    "id": "denham",
@@ -5037,7 +5058,9 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of a park is not the hospital site, so it is not used.",
    "blurbSourceIds": [
     "census-1921-may"
-   ]
+   ],
+   "blurb_de": "1921 arbeitete May Cousins hier als Stationsmädchen, und wahrscheinlich ihre Schwester Grace als Hausmädchen.",
+   "todayNote_de": "Das Krankenhaus ist verschwunden; auf dem Gelände stehen Schulen."
   },
   {
    "id": "east-ham-registration-district",
@@ -5828,7 +5851,8 @@
    "blurbSourceIds": [
     "gro-marriage-1927",
     "family-testimony"
-   ]
+   ],
+   "blurb_de": "Reg und Lilian haben wahrscheinlich Ende 1927 im Bezirk Hammersmith geheiratet, und Pats Geburt wurde wahrscheinlich Anfang 1929 hier registriert. Die Familie erinnert sich an Windsor (Familie), und das ist nicht der eingetragene Geburtsort."
   },
   {
    "id": "hampton-hill",
@@ -6326,7 +6350,8 @@
    "streetViewReason": null,
    "blurbSourceIds": [
     "perriman-cdv"
-   ]
+   ],
+   "blurb_de": "Das früheste Foto in der Sammlung wurde hier im Atelier von J. Perriman aufgenommen, nahe dem Pub Mother Red Cap. Keine der beiden abgebildeten Personen ist benannt."
   },
   {
    "id": "kent",
@@ -6773,7 +6798,8 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of a church hall is not a view of the church, so it is not used.",
    "blurbSourceIds": [
     "parish-leavesden-1858"
-   ]
+   ],
+   "blurb_de": "Henry Stacey heiratete Mary Walter hier am 5. Juni 1858."
   },
   {
    "id": "leicester",
@@ -7894,7 +7920,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 300 metres. The panel offers the Then and Today maps instead.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Queen Street heißt heute Flood Street."
   },
   {
    "id": "royal-albert-docks",
@@ -8574,7 +8601,8 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of an interior passage is not a view of the abbey, so it is not used.",
    "blurbSourceIds": [
     "parish-st-albans-1889"
-   ]
+   ],
+   "blurb_de": "Henry George Andrews wurde hier am 9. Juni 1889 getauft."
   },
   {
    "id": "st-albans-hertfordshire",
@@ -8729,7 +8757,9 @@
    "streetViewReason": null,
    "blurbSourceIds": [
     "parish-plaistow-1915"
-   ]
+   ],
+   "blurb_de": "Henry George Andrews heiratete Rosina Maud Cousins hier am 18. April 1915.",
+   "todayNote_de": "Die Kirche steht noch, ist aber keine Pfarrkirche mehr; heute sind hier Büros."
   },
   {
    "id": "st-columb-registration-district",
@@ -8876,7 +8906,8 @@
    "blurbSourceIds": [
     "parish-stepney-1829",
     "parish-stepney-1832"
-   ]
+   ],
+   "blurb_de": "John Richard (1829) und Robert William (1832), Söhne von John und Eliza FitzMaurice, wurden hier getauft."
   },
   {
    "id": "st-john-hackney",
@@ -8941,7 +8972,8 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo in the churchyard is not a street panorama, so it is not used.",
    "blurbSourceIds": [
     "parish-hackney-1850"
-   ]
+   ],
+   "blurb_de": "William Cousins wurde hier wahrscheinlich am 1. Dezember 1850 getauft."
   },
   {
    "id": "st-luke-chelsea",
@@ -9029,7 +9061,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of the riverside garden is not a view of the church, so it is not used.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Die alte Kirche wurde 1941 bombardiert und wieder aufgebaut; vieles von dem, was steht, stammt aus der Nachkriegszeit."
   },
   {
    "id": "st-margaret-ward-end",
@@ -9107,7 +9140,9 @@
    "streetViewReason": null,
    "blurbSourceIds": [
     "parish-wardend-1873"
-   ]
+   ],
+   "blurb_de": "Edward Dixon FitzMaurice wurde hier am 19. Juni 1873 getauft.",
+   "todayNote_de": "Die Kirche steht noch; sie wurde 2005 geschlossen und ist heute ein Gemeindezentrum."
   },
   {
    "id": "st-martins-birmingham",
@@ -9172,7 +9207,9 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo inside the Bullring is not a view of the church, so it is not used.",
    "blurbSourceIds": [
     "parish-birmingham-1827"
-   ]
+   ],
+   "blurb_de": "John FitzMaurice, vom His Majesty's Tower of London, heiratete Eliza Taylor hier mit Lizenz am 3. Februar 1827.",
+   "todayNote_de": "1873 bis 1875 neu errichtet; die Hochzeit von 1827 fand in der Kirche statt, die zuvor hier stand."
   },
   {
    "id": "st-marys-church-wanstead",
@@ -9314,7 +9351,8 @@
    "blurbSourceIds": [
     "album-1950"
    ],
-   "title": "Pat and Ron's Wedding, 11 February 1950"
+   "title": "Pat and Ron's Wedding, 11 February 1950",
+   "blurb_de": "Pat und Ron heirateten hier am 11. Februar 1950."
   },
   {
    "id": "st-marys-battersea",
@@ -9696,7 +9734,8 @@
     "parish-falcke-1817",
     "burial-falcke-1849",
     "parish-battersea-1861"
-   ]
+   ],
+   "blurb_de": "Die Kirche der Familie Falcke: William Gottlob Falcke heiratete hier 1817 und wurde hier 1849 begraben, und Robert William FitzMaurice heiratete Fanny Mary Falcke hier 1861."
   },
   {
    "id": "st-mary-whitechapel",
@@ -9757,7 +9796,9 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of Altab Ali Park is not a street panorama, so it is not used.",
    "blurbSourceIds": [
     "parish-whitechapel-1827"
-   ]
+   ],
+   "blurb_de": "William, Sohn von John und Eliza FitzMaurice, wurde hier am 25. Dezember 1827 getauft.",
+   "todayNote_de": "Die Kirche wurde 1940 zerstört; das Gelände ist heute der Altab Ali Park."
   },
   {
    "id": "st-matthews-brixton",
@@ -9820,7 +9861,8 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). The only picture offered was a private indoor photo, not the church.",
    "blurbSourceIds": [
     "parish-brixton-1897"
-   ]
+   ],
+   "blurb_de": "Edward Dixon FitzMaurice heiratete Edith Madeline Spencer hier am 2. August 1897."
   },
   {
    "id": "st-olave-registration-district",
@@ -10060,7 +10102,9 @@
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of a library interior could not be confirmed as this church, so it is not used.",
    "blurbSourceIds": [
     "parish-stepney-1871"
-   ]
+   ],
+   "blurb_de": "William Cousins heiratete Anne Gall hier am 15. Januar 1871.",
+   "todayNote_de": "1888 bis 1892 neu errichtet; die Hochzeit von 1871 fand in der Kapelle statt, die zuvor hier stand. Die Kirche ist heute eine Bibliothek."
   },
   {
    "id": "staines",
@@ -10573,7 +10617,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 1500 metres. The panel offers the Then and Today maps instead.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Sutton Road in Aston Manor ist auf einer Karte noch nicht gefunden worden."
   },
   {
    "id": "the-nest-erdington",
@@ -10953,7 +10998,8 @@
    "streetViewReason": "No Street View coverage here.",
    "blurbSourceIds": [
     "ron-album"
-   ]
+   ],
+   "blurb_de": "Ron war spätestens 1945 hier bei der No. 111 Maintenance Unit, reparierte Flugzeugmotoren in den Höhlen und war Grafikredakteur der Tura Times."
   },
   {
    "id": "uxbridge-registration-district",
@@ -11748,7 +11794,8 @@
     "method": "Looked at in Google Maps on 24 November 2026. Heading not read: the page did not show a compass bearing. Looked at on 24 November 2026. The panorama is labelled 6 Leda Road. A Georgian building with a white cupola is in the distance, which fits the old dockyard offices, but the view is the side street rather than the yard itself."
    },
    "streetViewReason": null,
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Der größte Teil der alten Werft ist heute Wohnbebauung; welches Gebäude die Registratur enthielt, ist nicht bekannt."
   },
   {
    "id": "orkney-brixham-devon",
@@ -12059,7 +12106,8 @@
    "historicMap": null,
    "streetView": null,
    "streetViewReason": "No Street View coverage near this place (checked 24 November 2026). A user photo of the ruined nave is not a street panorama, so it is not used.",
-   "blurbSourceIds": []
+   "blurbSourceIds": [],
+   "todayNote_de": "Die Abteikirche ist heute eine dachlose Ruine neben dem Palace of Holyroodhouse."
   },
   {
    "id": "orkney-lantern-hatch-itchingfield-near-horsham-sussex",
@@ -13830,7 +13878,9 @@
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 400 metres. The panel offers the Then and Today maps instead.",
    "blurbSourceIds": [
     "census-1851-birmingham-st-thomas"
-   ]
+   ],
+   "blurb_de": "1851 wohnten die Brüder John Richard und Robert William FitzMaurice hier zur Untermiete, beide junge Vermesser.",
+   "todayNote_de": "William Street zweigt noch von Bath Row ab, aber die Häuser von 1851 sind verschwunden."
   },
   {
    "id": "edgbaston",
@@ -14443,7 +14493,8 @@
    "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
    "blurbSourceIds": [
     "iwm-memorial-68733"
-   ]
+   ],
+   "blurb_de": "Der Grabstein von Isabel FitzMaurice (1905), der auch an ihren Sohn John Herbert erinnert, der 1918 getötet wurde."
   },
   {
    "id": "gorleston-on-sea",

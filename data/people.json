@@ -2155,16 +2155,16 @@
    ],
    "confidence": "probable",
    "birth": {
-    "date": "1916",
-    "display": "1916, West Ham district",
+    "date": "1916-07-17",
+    "display": "17 July 1916, West Ham district",
     "place": "West Ham",
     "sourceIds": [
      "gro-indexes",
-     "census-cousins"
+     "census-cousins",
+     "fold3-wo363-hg-andrews-p3"
     ],
-    "confidence": "probable",
-    "dateQualifier": "about",
-    "note": "GRO September quarter 1916, West Ham, volume 4a, page 180, mother Cousins. He was 4 in the 1921 census. The 1939 day of birth is not published, because his death has not been found.",
+    "confidence": "confirmed",
+    "note": "Date from his father's army service record (\"Herbert William, 17/7/16, West Ham\", marked verified). GRO September quarter 1916, West Ham, volume 4a, page 180, mother Cousins. He was 4 in the 1921 census.",
     "placeId": "west-ham-registration-district"
    },
    "death": null,

@@ -753,6 +753,28 @@
    },
    "confidence": "confirmed",
    "changeNote": "A new map pin for Ron's grandparents' house."
+  },
+  {
+   "found": "2026-11-27",
+   "foundBy": "Stuart - Genealogy British Family",
+   "id": "herbert-william-andrews-birth-date",
+   "personIds": [
+    "herbert-andrews",
+    "mr-hg-andrews"
+   ],
+   "placeIds": [
+    "west-ham-registration-district"
+   ],
+   "headline": "Henry George Andrews's army record gives his son Herbert William's birth as 17 July 1916 at West Ham, and his marriage to Rosina Maud Cousins at St Andrew's, Plaistow, on 18 April 1915.",
+   "findType": "record",
+   "source": {
+    "text": "British Army WW1 service record (TNA WO 363), Henry George Andrews, page 3, Fold3 image 414348639",
+    "url": "https://www.fold3.com/image/414348639/andrews-henry-george-page-3-uk-wwi-british-army-service-records-1914-1920"
+   },
+   "confidence": "confirmed",
+   "changeNote": "Herbert William's exact birth date added; the marriage also agrees with FreeBMD, June quarter 1915, West Ham 4a 305.",
+   "image": "images/records/notebook/1915-henry-george-andrews-wo363-fold3-414348639-p3-marriage-and-child.jpg",
+   "imageAlt": "Henry George Andrews's army record, page 3, the marriage and children lines boxed"
   }
  ]
 }

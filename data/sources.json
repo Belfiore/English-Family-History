@@ -1659,6 +1659,15 @@
    "repository": "OpenStreetMap Nominatim; Ordnance Survey grid references from the IWM War Memorials Register converted to latitude and longitude.",
    "url": "https://nominatim.openstreetmap.org/",
    "note": "Westcotes Drive, Leicester; Manor Road, Oadby; Sutton Coldfield Cemetery (IWM grid SP 12592 96515); Gorleston-on-Sea; St Mary, Weeford; Fisher Street, Canning Town; Saint-Quentin."
+  },
+  {
+   "id": "fold3-wo363-hg-andrews-p3",
+   "title": "British Army WW1 service record of Henry George Andrews, 220072, page 3 (TNA WO 363), Fold3 image 414348639",
+   "type": "military record",
+   "repository": "Fold3 (fold3.com), original at The National Archives, WO 363. Read from the page image, 27 November 2026.",
+   "url": "https://www.fold3.com/image/414348639/andrews-henry-george-page-3-uk-wwi-british-army-service-records-1914-1920",
+   "date": "1915-12-07",
+   "note": "Descriptive report on enlistment: particulars as to marriage (Rosina Maud Cousins, St Andrews, Plaistow, 18/4/15) and children (Herbert William, 17/7/16, West Ham), both marked verified. Agrees with the Ancestry copy and FreeBMD (June quarter 1915, West Ham 4a 305). Ledger C0798."
   }
  ]
 }

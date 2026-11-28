@@ -1220,12 +1220,12 @@
    "precision": "address",
    "lat": 51.519016,
    "lng": 0.018426,
-   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Query: 40 Fisher Street, Canning Town, London, UK",
+   "coordinateMethod": "OpenStreetMap Nominatim search on 23 November 2026, source osm-nominatim-2026. Query: 40 Fisher Street, Canning Town, London, UK A second entry for the same house (added 27 November 2026, drawn as a circle) was merged into this one on 28 November 2026. Whether the modern street and numbering match 1911 has not been checked against a historic map.",
    "uncertaintyMetres": 100,
    "inHomeRegion": true,
    "standsToday": "unknown",
    "standsTodaySource": "Left unknown. Street View on 24 November 2026, at number 22, shows later houses and flats. Number 40 was not in view.",
-   "significance": "40 Fisher Street, Canning Town is on the site for Herbert Andrews, Lucy Andrews, Henry George Andrews: lived 1911.",
+   "significance": "Home of Herbert and Lucy Andrews, Henry George's parents, from 1911 to at least 1941.",
    "events": [
     {
      "id": "mr-hg-andrews-residences-2",
@@ -1275,6 +1275,31 @@
      ],
      "confidence": "probable",
      "familyStatement": false
+    },
+    {
+     "id": "pe--40-fisher-street--lived--1911--andrews",
+     "type": "lived",
+     "personIds": [
+      "herbert-andrews-sr",
+      "lucy-andrews",
+      "mr-hg-andrews"
+     ],
+     "date": "1911 to 1941",
+     "dateStart": "1911-04-02",
+     "dateEnd": "1941-04-19",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "",
+     "pages": [
+      "andrews-roots.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "cwgc-plaistow-1941"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "1911 census: Herbert Andrews, journeyman baker, with Lucy and their son Henry George, sawyer's labourer, at 40 Fisher Street, Canning Town. Herbert was still there in 1921, 1939 and April 1941, when the war graves record of his son Henry George names him as \"Herbert Andrews, of 40 Fisher Street, Canning Town\"."
     }
    ],
    "status": "published",
@@ -14675,55 +14700,29 @@
    "blurbSourceIds": []
   },
   {
-   "id": "40-fisher-street-canning-town",
-   "name": "40 Fisher Street, Canning Town",
-   "historicName": "40 Fisher Street, Canning Town",
+   "id": "birmingham",
+   "name": "Birmingham",
+   "historicName": "Birmingham",
    "variants": [],
-   "kind": "home",
-   "address": "40 Fisher Street, Canning Town (Plaistow in 1921), West Ham",
+   "kind": "town",
+   "address": "",
    "modernAddress": "",
-   "precision": "street",
-   "lat": 51.519,
-   "lng": 0.0184,
-   "coordinateMethod": "Approximate. Fisher Street, Custom House, E16, from OpenStreetMap Nominatim, 27 November 2026. Whether the modern street is the same one and the numbering unchanged has not been checked, so the circle is wide.",
-   "uncertaintyMetres": 250,
+   "precision": "town",
+   "lat": 52.4796992,
+   "lng": -1.9026911,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 28 November 2026. Query: Birmingham, England. Result: Birmingham city node, West Midlands. Town-level point only.",
+   "uncertaintyMetres": 3000,
    "inHomeRegion": true,
    "standsToday": "unknown",
-   "standsTodaySource": "Not checked against historic maps (added 27 November 2026).",
-   "significance": "Home of Herbert and Lucy Andrews, Henry George's parents, from 1911 to at least 1941.",
-   "events": [
-    {
-     "id": "pe--40-fisher-street--lived--1911--andrews",
-     "type": "lived",
-     "personIds": [
-      "herbert-andrews-sr",
-      "lucy-andrews",
-      "mr-hg-andrews"
-     ],
-     "date": "1911 to 1941",
-     "dateStart": "1911-04-02",
-     "dateEnd": "1941-04-19",
-     "datePrecision": "year",
-     "approximate": false,
-     "factRef": "",
-     "pages": [
-      "andrews-roots.html"
-     ],
-     "recordCrops": [],
-     "sourceIds": [
-      "cwgc-plaistow-1941"
-     ],
-     "confidence": "confirmed",
-     "familyStatement": false,
-     "summary": "1911 census: Herbert Andrews, journeyman baker, with Lucy and their son Henry George, sawyer's labourer, at 40 Fisher Street, Canning Town. Herbert was still there in 1921, 1939 and April 1941, when the war graves record of his son Henry George names him as \"Herbert Andrews, of 40 Fisher Street, Canning Town\"."
-    }
-   ],
+   "standsTodaySource": "Not applicable: this place is a town, district or wider area.",
+   "significance": "Birmingham is on the site for John Richard FitzMaurice and Robert William FitzMaurice: surveyors in the 1851 census.",
+   "events": [],
    "status": "published",
    "noProvenLink": false,
-   "coordinatePrecision": "street",
+   "coordinatePrecision": "area",
    "todayNote": "",
    "coordinateSourceIds": [
-    "loc-osm-nominatim-2026-11-27"
+    "osm-nominatim-2026"
    ],
    "boundary": null,
    "drawAs": "halo",
@@ -14731,7 +14730,110 @@
    "images": [],
    "historicMap": null,
    "streetView": null,
-   "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
+   "streetViewReason": "Not precise enough for Street View: the place is known only to within about 3000 metres. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "lichfield-registration-district",
+   "name": "Lichfield registration district",
+   "historicName": "Lichfield, Staffordshire",
+   "variants": [],
+   "kind": "registration district",
+   "address": "",
+   "modernAddress": "",
+   "precision": "registration district",
+   "lat": 52.682,
+   "lng": -1.829,
+   "coordinateMethod": "Drawn as an approximate area, a circle of about 10 km round Lichfield (Wikipedia coordinates for Lichfield, read 28 November 2026). The index gives the district only, not the church.",
+   "uncertaintyMetres": 10000,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not applicable: this place is a town, district or wider area.",
+   "significance": "Lichfield registration district is on the site for John Rupert FitzMaurice and Isabel Bennion: married early 1896.",
+   "events": [],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "area",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-ukbmd-districts",
+    "loc-wikipedia-coords-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "area",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the place is known only to within about 10000 metres. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "petersham-surrey",
+   "name": "Petersham, Surrey",
+   "historicName": "Petersham, Surrey",
+   "variants": [],
+   "kind": "town",
+   "address": "",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": 51.4436913,
+   "lng": -0.3052934,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 28 November 2026. Query: Petersham, Richmond, London. Result: Petersham suburb node, London Borough of Richmond upon Thames (historically Surrey). Village-level point only; the church is not named in the record.",
+   "uncertaintyMetres": 1500,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not applicable: this place is a town, district or wider area.",
+   "significance": "Petersham is on the site for John Rupert FitzMaurice and Maria Adelaide Wood: married 4 July 1907.",
+   "events": [],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "area",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "osm-nominatim-2026"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the place is known only to within about 1500 metres. The panel offers the Then and Today maps instead.",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "cape-province",
+   "name": "Cape Province",
+   "historicName": "Cape Province",
+   "variants": [],
+   "kind": "province",
+   "address": "",
+   "modernAddress": "",
+   "precision": "region",
+   "lat": -31.0,
+   "lng": 22.0,
+   "coordinateMethod": "Drawn as an approximate area: Wikipedia coordinates for the former Cape Province, read 28 November 2026. The record gives the province only.",
+   "uncertaintyMetres": 500000,
+   "inHomeRegion": false,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not applicable: this place is a town, district or wider area.",
+   "significance": "Cape Province is on the site for Edward Scott FitzMaurice: born 29 April 1926.",
+   "events": [],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "area",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-wikipedia-coords-2026-11-24"
+   ],
+   "boundary": null,
+   "drawAs": "area",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not precise enough for Street View: the place is known only to within about 500000 metres. The panel offers the Then and Today maps instead.",
    "blurbSourceIds": []
   }
  ]

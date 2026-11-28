@@ -105,6 +105,14 @@ const ok = (m) => console.log('  ok   ' + m);
         await page.waitForTimeout(400);
         if (errs.length) fail(`${w}px: page errors: ${errs.join(' | ')}`); else ok(`${w}px: no page errors`);
 
+        // a first visit asks who you are; the checks below run as "just looking" (the tree's own viewpoint)
+        const hasWho = !!(await page.$('#who'));   // engines before 1.1.0 have no picker
+        if (!hasWho) ok(`${w}px: engine without the "Who are you?" picker`);
+        else if (await page.isVisible('#who')) {
+            await page.click('#whoSkip'); await page.waitForTimeout(200);
+            if (await page.isVisible('#who')) fail(`${w}px: "Just looking" did not close the Who are you? picker`); else ok(`${w}px: first visit asks "Who are you?", and "Just looking" closes it`);
+        } else fail(`${w}px: a first visit should ask "Who are you?"`);
+
         const over = await page.evaluate(() => {
             const out = [];
             document.querySelectorAll('.card').forEach(c => {
@@ -117,9 +125,9 @@ const ok = (m) => console.log('  ok   ' + m);
         });
         if (over.length) over.forEach(o => fail(`${w}px overflow: ${o}`)); else ok(`${w}px: no card overflows (${onTree.length} cards)`);
 
-        const chrome = await page.evaluate(() => ({ rail: document.querySelectorAll('#genrail > *').length, mini: !!document.getElementById('minimap'), vp: document.getElementById('viewpoint').options.length, s: window.__tree.S.s }));
-        if (!chrome.rail || !chrome.mini || chrome.vp < 10) fail(`${w}px: generation rail, minimap or relationships selector missing ${JSON.stringify(chrome)}`);
-        else ok(`${w}px: generation rail, minimap and "Relationships to" selector present; starting zoom ${Math.round(chrome.s * 100)}%`);
+        const chrome = await page.evaluate(() => ({ rail: document.querySelectorAll('#genrail > *').length, mini: !!document.getElementById('minimap'), you: !!(document.getElementById('youBtn') || document.getElementById('viewpoint')), s: window.__tree.S.s }));
+        if (!chrome.rail || !chrome.mini || !chrome.you) fail(`${w}px: generation rail, minimap or "You are" button missing ${JSON.stringify(chrome)}`);
+        else ok(`${w}px: generation rail, minimap and "You are" button present; starting zoom ${Math.round(chrome.s * 100)}%`);
         if (w < 800 && chrome.s < 0.55) fail(`${w}px: starting zoom ${chrome.s} is too small to read`);
 
         if (w === 1440) {

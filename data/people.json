@@ -145,7 +145,8 @@
      "sourceIds": [
       "parish-ascension-balham-hill-1904-reg"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "29-cathles-road"
     }
    ],
    "occupations": [
@@ -613,7 +614,8 @@
      "sourceIds": [
       "parish-ascension-balham-hill-1904-reg"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "29-cathles-road"
     }
    ],
    "occupations": [
@@ -632,7 +634,7 @@
    "immigration": null,
    "cardPlace": "Islington, then Whitstable",
    "summary": "Reg's mother, not his sister. Edith Madeline Spencer married Edward Dixon FitzMaurice on 2 August 1897. She was probably born about 1866 to 1869 in Islington. She probably died in the Bridge district of Kent in early 1929, aged 61. She was probably in South Africa from about 1916 to 1925.",
-   "story": "The medallion portrait inscribed Edith Madeleine Fitzmaurice, about 1899, is Edith Madeline Spencer, Edward Dixon's wife and Reg's mother. Earlier pages that called her Reg's sister were wrong.[^edith-medallion] [^parish-brixton-1897]\n\nShe was probably born about 1866 to 1869 in Islington. In 1891 she was 22, a governess, born in Islington, living with her widowed mother Caroline at 15 Mornington Place, St Pancras. The house number may read 15b.[^census-1891-spencer] Her death in 1929, aged 61, fits that birth. At the wedding she was recorded as 24, and in 1911 as 38 and born at St Anne, Soho. Those later ages are the odd ones out. Her birth registration has not been found. A birth of Edith Maria Spencer at Islington in 1866 belongs to a different family and is not hers.[^census-1891-spencer] [^gro-edith-death] [^census-1911-whitstable]\n\nOn 2 August 1897 she married Edward at St Matthew's, Brixton. Her father, Charles Spencer, a builder and contractor, was already dead. Caroline Spencer was a witness.[^parish-brixton-1897] In 1911, at Whitstable, she and Edward had had four children, of whom three were living. The child who had died was Edith Marjorie.[^census-1911-whitstable] She probably died in the March quarter of 1929 in the Bridge district of Kent, aged 61.[^gro-edith-death]\n\nShe probably went out to Cape Town in August 1916 with Bob, Reg and Eileen. At the end of 1923 she came to London with Reg and Eileen on the Bendigo, landing on 28 December 1923, and gave 140A Clapham Road, London S.W. (the number is hard to read).[^passenger-1923-bendigo] She came back to England from South Africa in November 1925, aged 53 by her own account, giving Birkenhead as her destination.[^passenger-1916-llanstephan] [^passenger-1925-edith]",
+   "story": "The medallion portrait inscribed Edith Madeleine Fitzmaurice, about 1899, is Edith Madeline Spencer, Edward Dixon's wife and Reg's mother. Earlier pages that called her Reg's sister were wrong.[^edith-medallion] [^parish-brixton-1897]\n\nShe was probably born about 1866 to 1869 in Islington. In 1891 she was 22, a governess, born in Islington, living with her widowed mother Caroline at 15 Mornington Place, St Pancras. The house number may read 15b.[^census-1891-spencer] Her death in 1929, aged 61, fits that birth. At the wedding she was recorded as 24, and in 1911 as 38 and born at St Anne, Soho. Those later ages are the odd ones out. Her birth registration has not been found. A birth of Edith Maria Spencer at Islington in 1866 belongs to a different family and is not hers.[^census-1891-spencer] [^gro-edith-death] [^census-1911-whitstable]\n\nOn 2 August 1897 she married Edward at St Matthew's, Brixton. Her father, Charles Spencer, a builder and contractor, was already dead. Caroline Spencer was a witness.[^parish-brixton-1897] In 1911, at Whitstable, she and Edward had had four children, of whom three were living. The child who had died was Edith Marjorie.[^census-1911-whitstable] She probably died in the March quarter of 1929 in the Bridge district of Kent, aged 61.[^gro-edith-death]\n\nShe probably went out to Cape Town in August 1916 with Bob, Reg and Eileen. At the end of 1923 she came to London with Reg and Eileen on the Bendigo, landing on 28 December 1923, and gave 140A Clapham Road, London S.W. (the number is hard to read).[^passenger-1923-bendigo] She came back to England from South Africa in November 1925, aged 53 by her own account, giving Birkenhead as her destination.[^passenger-1916-llanstephan] [^passenger-1925-edith]\n\nIn August 1904 she and Edward were living at 29 Cathles Road, Balham Hill, when their son Baron Reginald was baptised at the Ascension, Balham Hill.[^parish-ascension-balham-hill-1904-reg]",
    "timeline": [
     {
      "date": "1891",
@@ -1041,7 +1043,8 @@
      "sourceIds": [
       "parish-ascension-balham-hill-1904-reg"
      ],
-     "confidence": "confirmed"
+     "confidence": "confirmed",
+     "placeId": "29-cathles-road"
     }
    ],
    "occupations": [],
@@ -1061,6 +1064,17 @@
      "kind": "life",
      "confidence": "probable",
      "placeId": "wandsworth-registration-district"
+    },
+    {
+     "date": "1904-08-21",
+     "label": "21 Aug 1904",
+     "event": "Baptised at the Ascension, Balham Hill, son of Edward Dixon and Edith Madeline Fitzmaurice, of 29 Cathles Road.",
+     "sourceIds": [
+      "parish-ascension-balham-hill-1904-reg"
+     ],
+     "kind": "life",
+     "confidence": "confirmed",
+     "placeId": "ascension-balham-hill"
     },
     {
      "date": "1911",
@@ -7592,24 +7606,28 @@
    "death": null,
    "residences": [
     {
-     "place": "Mile End Old Town",
+     "place": "Holmes Street, Commercial Road, Stepney",
      "address": "33 Holmes Street, Charles Street, Commercial Road",
      "years": "1830",
      "sourceIds": [
-      "sun-fire-1830-john-fitzmaurice-holmes-street"
+      "sun-fire-1830-john-fitzmaurice-holmes-street",
+      "underground-map-exmouth-street"
      ],
      "confidence": "probable",
-     "placeId": "mile-end-old-town"
+     "placeId": "holmes-street-commercial-road",
+     "note": "Holmes Street was renamed Exmouth Street in 1867 (underground-map-exmouth-street)."
     },
     {
-     "place": "Tower of London",
+     "place": "Old Mint, Tower of London",
      "address": "27 Old Mint, opposite the Irish Barracks, Tower Hill",
      "years": "1834",
      "sourceIds": [
-      "sun-fire-1834-john-fitzmaurice-old-mint"
+      "sun-fire-1834-john-fitzmaurice-old-mint",
+      "he-irish-barracks-tower"
      ],
      "confidence": "probable",
-     "placeId": "tower-of-london"
+     "placeId": "old-mint-tower-of-london",
+     "note": "Probably a house in the old Mint area inside the Tower, opposite the Irish Barracks (he-irish-barracks-tower)."
     }
    ],
    "occupations": [
@@ -7646,7 +7664,7 @@
    "immigration": null,
    "cardPlace": "Tower of London, Mile End, and Tower Hill",
    "summary": "Clerk in the Board of Ordnance at the Tower of London, listed as a Junior Clerk under the Surveyor General from 1827 to 1841. The 1841 page was read from the image. He married Eliza Taylor at St Martin's, Birmingham, on 3 February 1827. Father of William, John Richard and Robert William. He was probably of Holmes Street, Commercial Road, in 1830, and of Old Mint, Tower Hill, in 1834. By 1861 he was described as a gentleman. His birth, parents and death have not been found.",
-   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] The Royal Kalendar for 1827 lists a John Fitzmaurice as a Junior Clerk under the Surveyor General of the Board of Ordnance. The same name stays in that list through the 1841 volume and is gone from 1842.[^royal-kalendar-1827-ordnance] [^royal-kalendar-1828-1841-ordnance] [^royal-kalendar-1842-1845-ordnance] The 1841 volume, printed page 212, was read from the page image: he stands between Hy. King and Anty. Harvey.[^royal-kalendar-1841-ordnance-page] That is probably this John: the parish registers already call him a clerk in the Ordnance Office and in the Tower at the same dates. The lists do not give his age, birthplace or parents. The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74. That entry is almost certainly an infant: John Fitzmaurice, aged one and a half, was buried at St Giles in the Fields on 15 December 1840. St Giles was in the Bloomsbury registration district. That death is not this John.[^freebmd-john-fitzmaurice-deaths-1840-1842] [^parish-st-giles-1840-john-fitzmaurice-burial] Sun Fire Office catalogue entries name a John Fitzmaurice, gentleman, of 33 Holmes Street, Charles Street, Commercial Road, on 25 November 1830, and of 27 Old Mint, opposite the Irish Barracks, Tower Hill, on 21 January 1834. The original policy books have not been seen. Those addresses fit this John, and the identification is probable rather than proved.[^sun-fire-1830-john-fitzmaurice-holmes-street] [^sun-fire-1834-john-fitzmaurice-old-mint] John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
+   "story": "John FitzMaurice married Eliza Taylor by licence at St Martin's, Birmingham, on 3 February 1827. The register describes him as of His Majesty's Tower of London, a bachelor, and Eliza as of that parish, a spinster. John Taylor witnessed the marriage.[^parish-birmingham-1827] He was a clerk with the Board of Ordnance: a clerk at their son William's baptism in 1827, a clerk in the Ordnance Office in 1829, and a clerk in the Tower in 1832.[^parish-whitechapel-1827] [^parish-stepney-1829] [^parish-stepney-1832] The family lived in Whitechapel and then in Mile End Old Town. By 1861, when Robert William married, the register calls John a gentleman.[^parish-battersea-1861] In 1871 his son John Richard gave his own birthplace as the Tower of London.[^census-1871-edgbaston-jrf] The Royal Kalendar for 1827 lists a John Fitzmaurice as a Junior Clerk under the Surveyor General of the Board of Ordnance. The same name stays in that list through the 1841 volume and is gone from 1842.[^royal-kalendar-1827-ordnance] [^royal-kalendar-1828-1841-ordnance] [^royal-kalendar-1842-1845-ordnance] The 1841 volume, printed page 212, was read from the page image: he stands between Hy. King and Anty. Harvey.[^royal-kalendar-1841-ordnance-page] That is probably this John: the parish registers already call him a clerk in the Ordnance Office and in the Tower at the same dates. The lists do not give his age, birthplace or parents. The GRO death index on FreeBMD has no John Fitzmaurice in 1841 or 1842. A John Fitzmaurice death was registered in the December quarter of 1840 at Bloomsbury, volume 1, page 74. That entry is almost certainly an infant: John Fitzmaurice, aged one and a half, was buried at St Giles in the Fields on 15 December 1840. St Giles was in the Bloomsbury registration district. That death is not this John.[^freebmd-john-fitzmaurice-deaths-1840-1842] [^parish-st-giles-1840-john-fitzmaurice-burial] Sun Fire Office catalogue entries name a John Fitzmaurice, gentleman, of 33 Holmes Street, Charles Street, Commercial Road, on 25 November 1830, and of 27 Old Mint, opposite the Irish Barracks, Tower Hill, on 21 January 1834. The original policy books have not been seen. Those addresses fit this John, and the identification is probable rather than proved. Holmes Street was renamed Exmouth Street in 1867 and has since gone. The Irish Barracks stood in the old Mint area inside the Tower, so the 1834 house was probably within the Tower walls, a few steps from the Ordnance offices.[^underground-map-exmouth-street] [^he-irish-barracks-tower][^sun-fire-1830-john-fitzmaurice-holmes-street] [^sun-fire-1834-john-fitzmaurice-old-mint] John's own birth, his parents and his death have not been found. He has not been found with Eliza in the 1841 or 1851 census. A published family history places him in a Carlow branch of the FitzMaurices of Kerry. The London entries in that account now agree with these registers. No record found so far states where he was born or who his parents were, so that origin stays likely but not proved.[^fitzmaurice-family-carlow]",
    "timeline": [],
    "facts": [],
    "media": [],
@@ -7661,11 +7679,7 @@
     },
     {
      "question": "When and why did he leave the Ordnance between the 1841 and 1842 Royal Kalendars?",
-     "record": "A death, retirement or transfer in 1841 or early 1842 would fit. The FreeBMD death index has no John Fitzmaurice in 1841 or 1842, and the December 1840 Bloomsbury death is an infant, not this clerk. The existing Brentford 1865 leads now look late, unless he left the office years before he died. See the research notes page."
-    },
-    {
-     "question": "Did he die in late 1840, or leave the Ordnance for another reason?",
-     "record": "The December quarter 1840 Bloomsbury death (volume 1, page 74) is almost certainly the infant John Fitzmaurice, aged one and a half, buried at St Giles in the Fields on 15 December 1840. It is not this clerk. The FreeBMD index has no John Fitzmaurice in 1841 or 1842. Later London deaths remain possible if he left the post alive. A Sun Fire Office catalogue entry still names a John Fitzmaurice, gentleman, of 27 Old Mint, Tower Hill, on 21 January 1834."
+     "record": "A death, retirement or transfer in 1841 or early 1842 would fit. The December 1840 Bloomsbury death is an infant buried at St Giles in the Fields, not this clerk, so his death is open again. The FreeBMD index has no John Fitzmaurice death in 1841 or 1842; later London deaths in 1848 and 1860 are leads. A John Fitzmoriss, 32, born Middlesex, is indexed at St John Wapping in the 1841 census and still has to be read. See the research notes page."
     }
    ],
    "relatedPages": [
@@ -8587,6 +8601,17 @@
      ],
      "confidence": "probable",
      "placeId": "william-street-birmingham"
+    },
+    {
+     "place": "Erdington",
+     "address": "Norlands, Erdington",
+     "years": "1879",
+     "sourceIds": [
+      "kelly-1879-birmingham-jones-fitzmaurice"
+     ],
+     "confidence": "probable",
+     "placeId": "erdington",
+     "note": "Kelly's 1879 directory, Erdington private residents. Probably this Robert William: the same directory lists Robt. Wm. Fitzmaurice, stone merchant, of Jones and Fitzmaurice."
     }
    ],
    "occupations": [
@@ -8631,12 +8656,37 @@
       "census-1851-birmingham-st-thomas"
      ],
      "confidence": "probable"
+    },
+    {
+     "title": "Stone merchant, partner in Jones and Fitzmaurice",
+     "employer": "Jones and Fitzmaurice",
+     "place": "Tindal Street, Ladywood, Birmingham",
+     "years": "1879",
+     "sourceIds": [
+      "kelly-1879-birmingham-jones-fitzmaurice"
+     ],
+     "confidence": "probable",
+     "placeId": "tindal-street-ladywood",
+     "note": "The directory entries were read from the page images (FACT). That this Robt. Wm. is our Robert William is probable: name, trade and town agree with the 1881 census (granite merchant and contractor, Aston Manor)."
+    },
+    {
+     "title": "Quarry partner, Cliffe Hill granite quarry",
+     "employer": "Jones and Fitzmaurice",
+     "place": "Markfield, Leicestershire",
+     "years": "1870s to about 1881",
+     "sourceIds": [
+      "mqp-cliffe-hill-history",
+      "mcgrath-2007-charnwood-quarries"
+     ],
+     "confidence": "probable",
+     "placeId": "old-cliffe-hill-quarry-markfield",
+     "note": "Published histories of the quarry say Jones and Fitzmaurice of Birmingham worked it from the 1870s until 1881, and that J. Rupert Fitzmaurice acquired it from his father in 1891."
     }
    ],
    "immigration": null,
    "cardPlace": "Edgbaston",
-   "summary": "Baptised 30 September 1832 at St Dunstan's, Stepney, son of John and Eliza. Surveyor, later a granite merchant and contractor. Married Fanny Mary Falcke in 1861. Died 10 May 1895 at Edgbaston.",
-   "story": "Robert William FitzMaurice was baptised on 30 September 1832 at St Dunstan's, Stepney, son of John, a clerk in the Tower, and Eliza. The date usually given as his birth is this baptism. He was the youngest of three sons. William was born in 1827 and John Richard was baptised in 1829.[^parish-stepney-1832] [^parish-whitechapel-1827] [^parish-stepney-1829] In 1851, aged 19, he was a surveyor lodging with his brother John Richard in William Street, Birmingham.[^census-1851-birmingham-st-thomas] On 14 September 1861, a surveyor, he married Fanny Mary Falcke at St Mary's, Battersea. His father John is called a gentleman on that register.[^parish-battersea-1861]\n\nIn 1871 he was a surveyor and contractor at Little Bromwich, Aston, born in Stepney.[^census-1871-aston] In 1881 he was a granite merchant and contractor at Aston Manor.[^census-1881-aston] He died at Edgbaston on 10 May 1895, aged 64. His estate was 12,921 pounds 4 shillings and 9 pence. The executors were his widow Fanny Mary and their sons John Rupert, a quarry owner, and Walter, a contractor.[^probate-robert-1895] When his son Edward married in 1897, the register names Robert William Fitzmaurice, contractor, as the father, and says he was already dead.[^parish-brixton-1897]",
+   "summary": "Baptised 30 September 1832 at St Dunstan's, Stepney, son of John and Eliza. Surveyor, later a granite merchant and contractor. In 1879 he was a stone merchant in the Birmingham firm of Jones and Fitzmaurice, who probably opened the Cliffe Hill granite quarry at Markfield, Leicestershire. Married Fanny Mary Falcke in 1861. Died 10 May 1895 at Edgbaston.",
+   "story": "Robert William FitzMaurice was baptised on 30 September 1832 at St Dunstan's, Stepney, son of John, a clerk in the Tower, and Eliza. The date usually given as his birth is this baptism. He was the youngest of three sons. William was born in 1827 and John Richard was baptised in 1829.[^parish-stepney-1832] [^parish-whitechapel-1827] [^parish-stepney-1829] In 1851, aged 19, he was a surveyor lodging with his brother John Richard in William Street, Birmingham.[^census-1851-birmingham-st-thomas] On 14 September 1861, a surveyor, he married Fanny Mary Falcke at St Mary's, Battersea. His father John is called a gentleman on that register.[^parish-battersea-1861]\n\nIn 1871 he was a surveyor and contractor at Little Bromwich, Aston, born in Stepney.[^census-1871-aston] Kelly's Birmingham directory of 1879 lists Jones and Fitzmaurice, stone merchants, of Tindal Street, Ladywood, and Robt. Wm. Fitzmaurice, stone merchant, \"see Jones & Fitzmaurice\". The same directory has a Robert William Fitzmaurice living at Norlands, Erdington.[^kelly-1879-birmingham-jones-fitzmaurice] In 1881 he was a granite merchant and contractor at Aston Manor.[^census-1881-aston] The published histories of the Cliffe Hill granite quarry, near Markfield in Leicestershire, say that quarrying there was begun in the 1870s by Mr Jones and Mr Fitzmaurice of Birmingham, who made setts and kerbs, and that they stopped in 1881. In 1891 J. Rupert Fitzmaurice acquired the quarry from his father and reopened it. That father was almost certainly Robert William, so he was probably the Fitzmaurice of Jones and Fitzmaurice.[^mqp-cliffe-hill-history] [^mcgrath-2007-charnwood-quarries] The story of the quarry is on its own page. He died at Edgbaston on 10 May 1895, aged 64. His estate was 12,921 pounds 4 shillings and 9 pence. The executors were his widow Fanny Mary and their sons John Rupert, a quarry owner, and Walter, a contractor.[^probate-robert-1895] When his son Edward married in 1897, the register names Robert William Fitzmaurice, contractor, as the father, and says he was already dead.[^parish-brixton-1897]",
    "timeline": [
     {
      "date": "1832-09-30",
@@ -8661,6 +8711,17 @@
      "placeId": "st-marys-battersea"
     },
     {
+     "date": "1879",
+     "label": "1879",
+     "event": "Listed as a stone merchant in Jones and Fitzmaurice, Tindal Street, Ladywood, Birmingham.",
+     "sourceIds": [
+      "kelly-1879-birmingham-jones-fitzmaurice"
+     ],
+     "kind": "life",
+     "confidence": "probable",
+     "placeId": "tindal-street-ladywood"
+    },
+    {
      "date": "1895-05-10",
      "label": "10 May 1895",
      "event": "Dies at Edgbaston, aged 64.",
@@ -8676,6 +8737,10 @@
    "media": [],
    "openQuestions": [],
    "relatedPages": [
+    {
+     "title": "The Cliffe Hill quarry",
+     "url": "quarry.html"
+    },
     {
      "title": "The Falcke and FitzMaurice line",
      "url": "falcke.html"
@@ -8980,17 +9045,71 @@
       "probate-robert-1895"
      ],
      "confidence": "probable"
+    },
+    {
+     "title": "Owner of the Cliffe Hill granite quarry, later of the Cliffe Hill Granite Company",
+     "employer": "Cliffe Hill Granite Company Ltd (from 1894)",
+     "place": "Markfield, Leicestershire",
+     "years": "1891 to 1935",
+     "sourceIds": [
+      "mqp-cliffe-hill-history",
+      "mcgrath-2007-charnwood-quarries",
+      "graces-guide-cliffe-hill-granite"
+     ],
+     "confidence": "probable",
+     "placeId": "old-cliffe-hill-quarry-markfield",
+     "note": "Acquired the quarry from his father on 9 May 1891 and reopened it; the company was registered on 1 November 1894; it bought the freehold from him in 1935."
     }
    ],
    "immigration": null,
    "cardPlace": null,
-   "summary": "Probably a son of Robert William and Fanny Mary. Called Rupert J. in 1871. A quarry owner by 1895, and one of his father's executors. Died at Leicester on 21 September 1949.",
-   "story": "John Rupert's birth was registered in the King's Norton district in the June quarter of 1865, volume 6c, page 447, mother's maiden name Falcke.[^gro-indexes] In 1871 he is the son recorded as Rupert J., aged 6, born in Birmingham.[^census-1871-aston] In 1895 he was a quarry owner and an executor of his father.[^probate-robert-1895] He died on 21 September 1949, aged 84, of 3 Salisbury Road, Leicester. The estate was 56,789 pounds 19 shillings and 2 pence.[^probate-rupert-1949]",
-   "timeline": [],
+   "summary": "Probably a son of Robert William and Fanny Mary. Called Rupert J. in 1871. He acquired the Cliffe Hill granite quarry at Markfield from his father in 1891, reopened it, and the Cliffe Hill Granite Company was formed in 1894. A quarry owner in 1895, and one of his father's executors. Died at Leicester on 21 September 1949.",
+   "story": "John Rupert's birth was registered in the King's Norton district in the June quarter of 1865, volume 6c, page 447, mother's maiden name Falcke.[^gro-indexes] In 1871 he is the son recorded as Rupert J., aged 6, born in Birmingham.[^census-1871-aston] On 9 May 1891 J. Rupert Fitzmaurice acquired the Cliffe Hill granite quarry, near Markfield in Leicestershire, from his father, and reopened it, with Peter Preston as manager. The Cliffe Hill Granite Company Ltd was formed on 1 November 1894. The company bought the freehold of the quarry and its land from him in 1935.[^mqp-cliffe-hill-history] [^mcgrath-2007-charnwood-quarries] [^graces-guide-cliffe-hill-granite] In 1895 he was a quarry owner and an executor of his father.[^probate-robert-1895] He died on 21 September 1949, aged 84, of 3 Salisbury Road, Leicester. The estate was 56,789 pounds 19 shillings and 2 pence.[^probate-rupert-1949] The quarry history also records the death of its original founder, J.R. Fitzmaurice, in 1949.[^mqp-cliffe-hill-history]",
+   "timeline": [
+    {
+     "date": "1891-05-09",
+     "label": "9 May 1891",
+     "event": "Acquires the Cliffe Hill granite quarry from his father and reopens it.",
+     "sourceIds": [
+      "mcgrath-2007-charnwood-quarries",
+      "mqp-cliffe-hill-history"
+     ],
+     "kind": "life",
+     "confidence": "probable",
+     "placeId": "old-cliffe-hill-quarry-markfield"
+    },
+    {
+     "date": "1894-11-01",
+     "label": "1 Nov 1894",
+     "event": "The Cliffe Hill Granite Company Ltd is formed.",
+     "sourceIds": [
+      "graces-guide-cliffe-hill-granite",
+      "mcgrath-2007-charnwood-quarries"
+     ],
+     "kind": "context",
+     "confidence": "confirmed",
+     "placeId": "old-cliffe-hill-quarry-markfield"
+    },
+    {
+     "date": "1935",
+     "label": "1935",
+     "event": "Sells the freehold of the quarry and its land to the Cliffe Hill Granite Company.",
+     "sourceIds": [
+      "mqp-cliffe-hill-history"
+     ],
+     "kind": "life",
+     "confidence": "probable",
+     "placeId": "old-cliffe-hill-quarry-markfield"
+    }
+   ],
    "facts": [],
    "media": [],
    "openQuestions": [],
    "relatedPages": [
+    {
+     "title": "The Cliffe Hill quarry",
+     "url": "quarry.html"
+    },
     {
      "title": "The Falcke and FitzMaurice line",
      "url": "falcke.html"

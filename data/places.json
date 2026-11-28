@@ -3,20 +3,20 @@
   "startedFrom": "c8caf1b433acce5be7338533f966281ed12afbee",
   "date": "2026-11-23",
   "counts": {
-   "places": 172,
-   "events": 268,
+   "places": 180,
+   "events": 297,
    "byKind": {
-    "home": 37,
+    "home": 56,
     "military site": 5,
-    "church": 19,
-    "town": 43,
-    "workplace": 7,
+    "church": 21,
+    "town": 45,
+    "workplace": 9,
     "registration district": 18,
     "venue": 3,
     "cemetery": 1,
     "port": 5,
-    "hospital": 1,
-    "parish": 4,
+    "hospital": 3,
+    "parish": 5,
     "country": 2,
     "farm": 2,
     "studio": 3,
@@ -24,16 +24,16 @@
     "district": 1
    },
    "byPrecision": {
-    "address": 32,
-    "street": 10,
-    "town": 51,
-    "building": 33,
+    "address": 34,
+    "street": 24,
+    "town": 57,
+    "building": 38,
     "registration district": 19,
-    "parish": 4,
+    "parish": 5,
     "country": 2,
     "county": 1
    },
-   "published": 152,
+   "published": 180,
    "newNeedsReview": 0
   },
   "phase1": {
@@ -5194,6 +5194,32 @@
      ],
      "confidence": "confirmed",
      "familyStatement": false
+    },
+    {
+     "id": "pe--erdington--lived--1879--robert-william-fitzmaurice",
+     "type": "lived",
+     "personIds": [
+      "robert-william-fitzmaurice"
+     ],
+     "date": "1879",
+     "dateStart": "1879-01-01",
+     "dateEnd": "1879-12-31",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "robert-william-fitzmaurice.residences[6]",
+     "pages": [
+      "quarry.html",
+      "falcke.html"
+     ],
+     "recordCrops": [
+      "images/records/notebook/1879-kelly-birmingham-p174-erdington-robert-william-fitzmaurice-norlands.jpg"
+     ],
+     "sourceIds": [
+      "kelly-1879-birmingham-jones-fitzmaurice"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Kelly's 1879 Birmingham directory, Erdington private residents: Robert William Fitzmaurice, Norlands. The house has not been placed, so Erdington is shown as an area."
     }
    ],
    "status": "published",
@@ -13791,6 +13817,402 @@
    "streetView": null,
    "streetViewReason": "Not precise enough for Street View: the place is known only to within about 2000 metres. The panel offers the Then and Today maps instead.",
    "blurbSourceIds": []
+  },
+  {
+   "variants": [
+    "Old Cliffe Hill Quarry",
+    "Cliffe Hill, Markfield"
+   ],
+   "modernAddress": "",
+   "inHomeRegion": true,
+   "standsToday": "yes",
+   "standsTodaySource": "Still a working quarry, run by MQP (mqp-cliffe-hill-quarry-today).",
+   "events": [
+    {
+     "id": "pe--old-cliffe-hill-quarry-markfield--worked--1870s--robert-william-fitzmaurice",
+     "type": "worked",
+     "personIds": [
+      "robert-william-fitzmaurice"
+     ],
+     "date": "1870s to 1881",
+     "dateStart": "1870-01-01",
+     "dateEnd": "1881-12-31",
+     "datePrecision": "range",
+     "approximate": true,
+     "factRef": "robert-william-fitzmaurice.occupations[5]",
+     "pages": [
+      "quarry.html",
+      "falcke.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "mqp-cliffe-hill-history",
+      "mcgrath-2007-charnwood-quarries"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Jones and Fitzmaurice of Birmingham worked the stone at Cliffe Hill from the 1870s until about 1881. The Fitzmaurice partner was probably Robert William."
+    },
+    {
+     "id": "pe--old-cliffe-hill-quarry-markfield--worked--1891--john-rupert-fitzmaurice",
+     "type": "worked",
+     "personIds": [
+      "john-rupert-fitzmaurice"
+     ],
+     "date": "1891 to 1935",
+     "dateStart": "1891-05-09",
+     "dateEnd": "1935-12-31",
+     "datePrecision": "range",
+     "approximate": false,
+     "factRef": "john-rupert-fitzmaurice.occupations[1]",
+     "pages": [
+      "quarry.html",
+      "falcke.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "mqp-cliffe-hill-history",
+      "mcgrath-2007-charnwood-quarries",
+      "graces-guide-cliffe-hill-granite"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "John Rupert FitzMaurice acquired the quarry from his father on 9 May 1891 and reopened it. The Cliffe Hill Granite Company was formed on 1 November 1894. He sold the freehold to the company in 1935."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "todayNote": "",
+   "boundary": null,
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not checked in this session (27 November 2026).",
+   "blurbSourceIds": [],
+   "id": "old-cliffe-hill-quarry-markfield",
+   "name": "Cliffe Hill granite quarry, Markfield",
+   "historicName": "Cliffe Hill Quarry, Markfield, Leicestershire",
+   "kind": "workplace",
+   "address": "Old Cliffe Hill Quarry, Cliffe Hill Road, Stanton under Bardon, Leicestershire",
+   "precision": "building",
+   "lat": 52.691102,
+   "lng": -1.300504,
+   "coordinateMethod": "Taken from the Leicestershire and Rutland Historic Environment Record MLE21759 (Old Cliffe Hill Quarry), grid reference SK 47376 10609, latitude 52.691102, longitude -1.300504, read on 27 November 2026. OpenStreetMap Nominatim puts the whole working quarry area (Old and New Cliffe Hill) at 52.6938, -1.3246, which takes in the later New Cliffe Hill pit of the late 1980s, so the HER point for the old quarry is used.",
+   "uncertaintyMetres": 400,
+   "significance": "The granite quarry worked by Jones and Fitzmaurice of Birmingham in the 1870s, reopened by John Rupert FitzMaurice in 1891 and run by the Cliffe Hill Granite Company from 1894.",
+   "coordinatePrecision": "point",
+   "coordinateSourceIds": [
+    "her-mle21759-old-cliffe-hill-quarry"
+   ],
+   "drawAs": "pin"
+  },
+  {
+   "variants": [],
+   "modernAddress": "",
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "The 1879 buildings have not been checked.",
+   "events": [
+    {
+     "id": "pe--tindal-street-ladywood--worked--1879--robert-william-fitzmaurice",
+     "type": "worked",
+     "personIds": [
+      "robert-william-fitzmaurice"
+     ],
+     "date": "1879",
+     "dateStart": "1879-01-01",
+     "dateEnd": "1879-12-31",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "robert-william-fitzmaurice.occupations[4]",
+     "pages": [
+      "quarry.html",
+      "falcke.html"
+     ],
+     "recordCrops": [
+      "images/records/notebook/1879-kelly-birmingham-p150-tindal-street-ladywood-jones-and-fitzmaurice.jpg",
+      "images/records/notebook/1879-kelly-birmingham-p592-stone-merchants-jones-and-fitzmaurice.jpg"
+     ],
+     "sourceIds": [
+      "kelly-1879-birmingham-jones-fitzmaurice"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Kelly's 1879 Birmingham directory: Jones and Fitzmaurice, stone merchants, Tindal Street, Ladywood."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "todayNote": "",
+   "boundary": null,
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not checked in this session (27 November 2026).",
+   "blurbSourceIds": [],
+   "id": "tindal-street-ladywood",
+   "name": "Tindal Street, Ladywood, Birmingham",
+   "historicName": "Tindal Street, Ladywood, from Morville Street to St Vincent Street",
+   "kind": "workplace",
+   "address": "Tindal Street, Ladywood, Birmingham",
+   "precision": "street",
+   "lat": 52.478928,
+   "lng": -1.92155,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 27 November 2026 (osm-nominatim-2026), query Tindal Street, Ladywood, Birmingham. The match is Great Tindal Street, Ladywood, which runs beside Morville Street and St Vincent Street, the two streets the 1879 directory names as the ends of Tindal Street. The firm's number is not given, so the circle covers the street. Tindal Street at Balsall Heath, also in the 1879 directory, is a different street.",
+   "uncertaintyMetres": 250,
+   "significance": "Premises of Jones and Fitzmaurice, stone merchants, in 1879.",
+   "coordinatePrecision": "street",
+   "coordinateSourceIds": [
+    "osm-nominatim-2026"
+   ],
+   "drawAs": "halo"
+  },
+  {
+   "variants": [],
+   "modernAddress": "",
+   "inHomeRegion": true,
+   "standsToday": "yes",
+   "standsTodaySource": "The church is a mapped place of worship on OpenStreetMap today; the building itself was not checked on Street View in this session.",
+   "events": [
+    {
+     "id": "pe--ascension-balham-hill--baptised--1904-08-21--reg-fitzmaurice",
+     "type": "baptised",
+     "personIds": [
+      "reg-fitzmaurice"
+     ],
+     "date": "21 August 1904",
+     "dateStart": "1904-08-21",
+     "dateEnd": "1904-08-21",
+     "datePrecision": "day",
+     "approximate": false,
+     "factRef": "reg-fitzmaurice.timeline[1]",
+     "pages": [
+      "reg-sisters.html",
+      "research-notes.html"
+     ],
+     "recordCrops": [
+      "images/records/notebook/1904-08-21-baptism-baron-reginald-fitzmaurice-ascension-balham-hill-entry604.jpg"
+     ],
+     "sourceIds": [
+      "parish-ascension-balham-hill-1904-reg"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "Baptism register, the Ascension, Balham Hill, page 76, entry 604: Baron Reginald, son of Edward Dixon and Edith Madeline Fitzmaurice, of 29 Cathles Road."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "todayNote": "",
+   "boundary": null,
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not checked in this session (27 November 2026).",
+   "blurbSourceIds": [],
+   "id": "ascension-balham-hill",
+   "name": "Church of the Ascension, Balham Hill",
+   "historicName": "The Ascension, Balham Hill",
+   "kind": "church",
+   "address": "Malwood Road, Balham, London SW12",
+   "precision": "building",
+   "lat": 51.45076,
+   "lng": -0.149347,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 27 November 2026 (osm-nominatim-2026), query Ascension within Balham; match: Ascension, Balham Hill, Malwood Road, a place of worship.",
+   "uncertaintyMetres": 50,
+   "significance": "Reg was baptised here on 21 August 1904.",
+   "coordinatePrecision": "point",
+   "coordinateSourceIds": [
+    "osm-nominatim-2026"
+   ],
+   "drawAs": "pin"
+  },
+  {
+   "variants": [],
+   "modernAddress": "",
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked.",
+   "events": [
+    {
+     "id": "pe--29-cathles-road--lived--1904--edward-dixon-fitzmaurice",
+     "type": "lived",
+     "personIds": [
+      "edward-dixon-fitzmaurice",
+      "edith-madeleine-fitzmaurice",
+      "reg-fitzmaurice"
+     ],
+     "date": "1904",
+     "dateStart": "1904-01-01",
+     "dateEnd": "1904-12-31",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "",
+     "pages": [
+      "reg-sisters.html",
+      "falcke.html"
+     ],
+     "recordCrops": [
+      "images/records/notebook/1904-08-21-baptism-baron-reginald-fitzmaurice-ascension-balham-hill-entry604.jpg"
+     ],
+     "sourceIds": [
+      "parish-ascension-balham-hill-1904-reg"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "The 1904 baptism register gives the family's abode as 29 Cathles Road."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "todayNote": "",
+   "boundary": null,
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not checked in this session (27 November 2026).",
+   "blurbSourceIds": [],
+   "id": "29-cathles-road",
+   "name": "29 Cathles Road, Balham Hill",
+   "historicName": "29 Cathles Road, Balham Hill",
+   "kind": "home",
+   "address": "29 Cathles Road, Balham Hill, London",
+   "precision": "street",
+   "lat": 51.4511,
+   "lng": -0.147462,
+   "coordinateMethod": "OpenStreetMap Nominatim search on 27 November 2026 (osm-nominatim-2026). The house number was not matched; the street segment at 51.4511, -0.14746 (postcode SW12 9DR) is used, a little west of the point already used for 6 Cathles Road, so the two pins do not sit on top of each other. Drawn as an area circle because the exact house is not placed.",
+   "uncertaintyMetres": 150,
+   "significance": "Home of Edward Dixon and Edith Madeline FitzMaurice when Reg was baptised in August 1904.",
+   "coordinatePrecision": "street",
+   "coordinateSourceIds": [
+    "osm-nominatim-2026"
+   ],
+   "drawAs": "halo"
+  },
+  {
+   "variants": [
+    "Exmouth Street (from 1867)"
+   ],
+   "modernAddress": "",
+   "inHomeRegion": true,
+   "standsToday": "no",
+   "standsTodaySource": "The street was largely destroyed in the Second World War and replaced by housing blocks (underground-map-exmouth-street).",
+   "events": [
+    {
+     "id": "pe--holmes-street-commercial-road--lived--1830--john-fitzmaurice",
+     "type": "lived",
+     "personIds": [
+      "john-fitzmaurice"
+     ],
+     "date": "1830",
+     "dateStart": "1830-11-25",
+     "dateEnd": "1830-11-25",
+     "datePrecision": "day",
+     "approximate": false,
+     "factRef": "john-fitzmaurice.residences[0]",
+     "pages": [
+      "falcke.html",
+      "research-notes.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "sun-fire-1830-john-fitzmaurice-holmes-street"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Sun Fire Office policy, 25 November 1830 (catalogue only): John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "todayNote": "",
+   "boundary": null,
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not checked in this session (27 November 2026).",
+   "blurbSourceIds": [],
+   "id": "holmes-street-commercial-road",
+   "name": "33 Holmes Street, Commercial Road, Stepney",
+   "historicName": "33 Holmes Street, Charles Street, Commercial Road",
+   "kind": "home",
+   "address": "33 Holmes Street, Charles Street, Commercial Road, Stepney (renamed Exmouth Street in 1867; the street has gone)",
+   "precision": "street",
+   "lat": 51.5153,
+   "lng": -0.0503,
+   "coordinateMethod": "Approximate area. Holmes Street was renamed Exmouth Street in 1867 and was rebuilt as housing estates after the Second World War (underground-map-exmouth-street). The circle is centred between the two OpenStreetMap points that carry that history today, the Exmouth Estate stop on Commercial Road (51.51355, -0.04938) and Clichy House, Stepney Way (51.51718, -0.05135), both looked up with Nominatim on 27 November 2026. The house cannot be placed exactly.",
+   "uncertaintyMetres": 350,
+   "significance": "John FitzMaurice, gent, probably insured a house here on 25 November 1830 (Sun Fire Office catalogue).",
+   "coordinatePrecision": "area",
+   "coordinateSourceIds": [
+    "underground-map-exmouth-street",
+    "osm-nominatim-2026"
+   ],
+   "drawAs": "halo"
+  },
+  {
+   "variants": [],
+   "modernAddress": "",
+   "inHomeRegion": true,
+   "standsToday": "no",
+   "standsTodaySource": "The Irish Barracks were demolished in 1878 (he-irish-barracks-tower). The Old Mint houses have not been traced.",
+   "events": [
+    {
+     "id": "pe--old-mint-tower-of-london--lived--1834--john-fitzmaurice",
+     "type": "lived",
+     "personIds": [
+      "john-fitzmaurice"
+     ],
+     "date": "1834",
+     "dateStart": "1834-01-21",
+     "dateEnd": "1834-01-21",
+     "datePrecision": "day",
+     "approximate": false,
+     "factRef": "john-fitzmaurice.residences[1]",
+     "pages": [
+      "falcke.html",
+      "research-notes.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "sun-fire-1834-john-fitzmaurice-old-mint"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Sun Fire Office policy, 21 January 1834 (catalogue only): John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "todayNote": "",
+   "boundary": null,
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not checked in this session (27 November 2026).",
+   "blurbSourceIds": [],
+   "id": "old-mint-tower-of-london",
+   "name": "27 Old Mint, Tower of London",
+   "historicName": "27 Old Mint, opposite the Irish Barracks, Tower Hill",
+   "kind": "home",
+   "address": "27 Old Mint, opposite the Irish Barracks, Tower Hill (inside the Tower of London)",
+   "precision": "building",
+   "lat": 51.507718,
+   "lng": -0.075145,
+   "coordinateMethod": "Approximate. Placed at the site of the Irish Barracks in the Tower's Mint area, from the Historic England research record (TQ 33682 80510; 51.507718, -0.075145; he-irish-barracks-tower), because the 1834 policy says the house was opposite the Irish Barracks. The house itself has not been located.",
+   "uncertaintyMetres": 80,
+   "significance": "John FitzMaurice, gent, probably insured a house here on 21 January 1834, close to the Board of Ordnance where he was a clerk.",
+   "coordinatePrecision": "area",
+   "coordinateSourceIds": [
+    "he-irish-barracks-tower"
+   ],
+   "drawAs": "halo"
   }
  ]
 }

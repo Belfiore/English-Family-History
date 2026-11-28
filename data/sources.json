@@ -1385,7 +1385,7 @@
    "note": "The 1842 Ordnance Department section begins at printed page 267. Neighbouring names remain; John Fitzmaurice does not. The same is true of the 1843, 1844 and 1845 lists. Ledger C0732."
   },
   {
-"id": "royal-kalendar-1841-ordnance-page",
+   "id": "royal-kalendar-1841-ordnance-page",
    "title": "The Royal Kalendar, 1841, page 212: John Fitzmaurice, Junior Clerk under the Surveyor General of the Board of Ordnance",
    "type": "printed official list",
    "repository": "The Royal Kalendar and Court and City Register for the Year 1841, London. Internet Archive, identifier royal-kalendar-1841. Printed page 212, read from the page image on 26 November 2026.",
@@ -1403,63 +1403,146 @@
    "url": "https://www.freebmd.org.uk/cgi/search.pl",
    "note": "No John Fitzmaurice death is indexed in 1841 or 1842 (C0740). In the December quarter of 1840 a John Fitzmaurice death was registered at Bloomsbury, volume 1, page 74, with no age in the index (C0741). The September quarter 1844 St Martin entry, 1 105, is already ruled out as an infant (C0709)."
   },
- {
-  "id": "watsons-almanack-1830-dublin-ordnance",
-  "title": "Watson's Gentleman's and Citizen's Almanack, 1830, pages 109 and 110: Dublin Ordnance Civil Branch, Lower Castle Yard",
-  "type": "printed official list",
-  "repository": "Watson's Gentleman's and Citizen's Almanack for the Year 1830, Dublin. Internet Archive, identifier gentlemanscitize00wats_0. Printed pages 109 and 110, read from the page images on 26 November 2026.",
-  "date": "1830",
-  "url": "https://archive.org/details/gentlemanscitize00wats_0/page/109/mode/1up",
-  "file": "images/records/notebook/1830-watsons-almanack-p109-ordnance-civil-branch-dublin.jpg",
-  "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice (C0742). The lists cover clerks under the Store-keeper, the Clerk of Survey, the Clerk of Accounts, the Store Accountant, the Treasurer, the Clerk to the Respective Officers, and the Commanding Royal Engineer."
- },
- {
-  "id": "watsons-almanack-1832-dublin-ordnance",
-  "title": "Watson's Gentleman's and Citizen's Almanack, 1832, printed page 110: Dublin Ordnance Civil Branch, Lower Castle Yard",
-  "type": "printed official list",
-  "repository": "Watson's Gentleman's and Citizen's Almanack for the Year 1832, Dublin. Internet Archive, identifier gentlemanscitize00wats_1. Printed page 110, read from the page image on 27 November 2026.",
-  "date": "1832",
-  "url": "https://archive.org/details/gentlemanscitize00wats_1/page/110/mode/1up",
-  "file": "images/records/notebook/1832-watsons-almanack-p110-ordnance-civil-branch-dublin.jpg",
-  "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice, and no Robt. J. or Robert Thomas (C0746). F. A. Jennings appears among the clerks under the Clerk to the Respective Officers. This is two years later than the 1830 lists (C0742), and still before the 17 October 1833 marriage (C0702)."
- },
- {
-  "id": "sun-fire-1830-john-fitzmaurice-holmes-street",
-  "title": "Sun Fire Office policy, 25 November 1830: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent",
-  "type": "archive catalogue",
-  "repository": "The London Archives, Sun Fire Office policy registers, series CLC/B/192/F/001, MS 11936/524/1115343. Found through The National Archives Discovery catalogue, record c2fe7445-9505-441e-9c4a-41b7b58b7fba. The volume is not digitised.",
-  "date": "1830-11-25",
-  "url": "https://discovery.nationalarchives.gov.uk/details/r/c2fe7445-9505-441e-9c4a-41b7b58b7fba",
-  "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent. Identification with the Ordnance clerk is probable (C0747)."
- },
- {
-  "id": "sun-fire-1834-john-fitzmaurice-old-mint",
-  "title": "Sun Fire Office policy, 21 January 1834: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent",
-  "type": "archive catalogue",
-  "repository": "The London Archives, Sun Fire Office policy registers, series CLC/B/192/F/001, MS 11936/536/1168890. Found through The National Archives Discovery catalogue, record 48737f0c-89c0-4f91-9544-1bbe8735a5c4. The volume is not digitised.",
-  "date": "1834-01-21",
-  "url": "https://discovery.nationalarchives.gov.uk/details/r/48737f0c-89c0-4f91-9544-1bbe8735a5c4",
-  "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent. Identification with the Ordnance clerk is probable (C0748)."
- },
- {
-  "id": "parish-ascension-balham-hill-1904-reg",
-  "title": "Baptism register, the Ascension, Balham Hill, 21 August 1904, entry 604: Baron Reginald Fitzmaurice, son of Edward Dixon and Edith Madeline",
-  "type": "baptism register",
-  "repository": "London Metropolitan Archives, parish of the Ascension, Balham Hill (Malwood Road). Ancestry, London, England, Church of England Births and Baptisms, 1813-1925, collection 1558, image 101 of 270, file 31280_199311-00215. Page 76, entry 604, read from the page image on 27 November 2026.",
-  "date": "1904-08-21",
-  "url": "https://www.ancestry.com/imageviewer/collections/1558/images/31280_199311-00215",
-  "file": "images/records/notebook/1904-08-21-baptism-baron-reginald-fitzmaurice-ascension-balham-hill-entry604-full-page.jpg",
-  "note": "The full register opening, with entry 604 boxed. Baptised 21 August 1904: Baron Reginald, son of Edward Dixon and Edith Madeline Fitzmaurice, of 29 Cathles Road, father a civil engineer. No date of birth is written. The officiant is read as A. W. Hooper. Ledger C0754. With the 1911 census, this raises the father-son link from Edward Dixon to Reg to FACT (C0054)."
- },
- {
-  "id": "parish-st-giles-1840-john-fitzmaurice-burial",
-  "title": "Burial register (Bishop's Transcript), St Giles in the Fields, 15 December 1840, entry 1098: John Fitzmaurice, aged 1 and a half",
-  "type": "burial register",
-  "repository": "London Metropolitan Archives, Bishop's Transcript of burials, parish of St Giles in the Fields, Holborn, 1838-1869. Ancestry, London, England, Church of England Deaths and Burials, 1813-2003, collection 1559, image 358 of 365, file 32184_218910-00518, record 13711940. Page 138, entry 1098, read from the page image on 27 November 2026.",
-  "date": "1840-12-15",
-  "url": "https://www.ancestry.com/imageviewer/collections/1559/images/32184_218910-00518",
-  "file": "images/records/notebook/1840-12-15-burial-john-fitzmaurice-st-giles-in-the-fields-entry1098-full-page.jpg",
-  "note": "The full register opening, with entry 1098 boxed. John Fitzmaurice, buried 15 December 1840, aged one and a half, abode abbreviated Wk. Hs (almost certainly Workhouse, the same abbreviation used for several other burials on the page), officiant B. Pratt. This infant is almost certainly the December quarter 1840 Bloomsbury death, volume 1, page 74 (C0741), because St Giles in the Fields and St George Bloomsbury were in the same registration district. It is not the Ordnance clerk (P084). Ledger C0756, C0757, C0758."
- }
+  {
+   "id": "watsons-almanack-1830-dublin-ordnance",
+   "title": "Watson's Gentleman's and Citizen's Almanack, 1830, pages 109 and 110: Dublin Ordnance Civil Branch, Lower Castle Yard",
+   "type": "printed official list",
+   "repository": "Watson's Gentleman's and Citizen's Almanack for the Year 1830, Dublin. Internet Archive, identifier gentlemanscitize00wats_0. Printed pages 109 and 110, read from the page images on 26 November 2026.",
+   "date": "1830",
+   "url": "https://archive.org/details/gentlemanscitize00wats_0/page/109/mode/1up",
+   "file": "images/records/notebook/1830-watsons-almanack-p109-ordnance-civil-branch-dublin.jpg",
+   "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice (C0742). The lists cover clerks under the Store-keeper, the Clerk of Survey, the Clerk of Accounts, the Store Accountant, the Treasurer, the Clerk to the Respective Officers, and the Commanding Royal Engineer."
+  },
+  {
+   "id": "watsons-almanack-1832-dublin-ordnance",
+   "title": "Watson's Gentleman's and Citizen's Almanack, 1832, printed page 110: Dublin Ordnance Civil Branch, Lower Castle Yard",
+   "type": "printed official list",
+   "repository": "Watson's Gentleman's and Citizen's Almanack for the Year 1832, Dublin. Internet Archive, identifier gentlemanscitize00wats_1. Printed page 110, read from the page image on 27 November 2026.",
+   "date": "1832",
+   "url": "https://archive.org/details/gentlemanscitize00wats_1/page/110/mode/1up",
+   "file": "images/records/notebook/1832-watsons-almanack-p110-ordnance-civil-branch-dublin.jpg",
+   "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice, and no Robt. J. or Robert Thomas (C0746). F. A. Jennings appears among the clerks under the Clerk to the Respective Officers. This is two years later than the 1830 lists (C0742), and still before the 17 October 1833 marriage (C0702)."
+  },
+  {
+   "id": "sun-fire-1830-john-fitzmaurice-holmes-street",
+   "title": "Sun Fire Office policy, 25 November 1830: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent",
+   "type": "archive catalogue",
+   "repository": "The London Archives, Sun Fire Office policy registers, series CLC/B/192/F/001, MS 11936/524/1115343. Found through The National Archives Discovery catalogue, record c2fe7445-9505-441e-9c4a-41b7b58b7fba. The volume is not digitised.",
+   "date": "1830-11-25",
+   "url": "https://discovery.nationalarchives.gov.uk/details/r/c2fe7445-9505-441e-9c4a-41b7b58b7fba",
+   "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent. Identification with the Ordnance clerk is probable (C0747)."
+  },
+  {
+   "id": "sun-fire-1834-john-fitzmaurice-old-mint",
+   "title": "Sun Fire Office policy, 21 January 1834: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent",
+   "type": "archive catalogue",
+   "repository": "The London Archives, Sun Fire Office policy registers, series CLC/B/192/F/001, MS 11936/536/1168890. Found through The National Archives Discovery catalogue, record 48737f0c-89c0-4f91-9544-1bbe8735a5c4. The volume is not digitised.",
+   "date": "1834-01-21",
+   "url": "https://discovery.nationalarchives.gov.uk/details/r/48737f0c-89c0-4f91-9544-1bbe8735a5c4",
+   "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent. Identification with the Ordnance clerk is probable (C0748)."
+  },
+  {
+   "id": "parish-ascension-balham-hill-1904-reg",
+   "title": "Baptism register, the Ascension, Balham Hill, 21 August 1904, entry 604: Baron Reginald Fitzmaurice, son of Edward Dixon and Edith Madeline",
+   "type": "baptism register",
+   "repository": "London Metropolitan Archives, parish of the Ascension, Balham Hill (Malwood Road). Ancestry, London, England, Church of England Births and Baptisms, 1813-1925, collection 1558, image 101 of 270, file 31280_199311-00215. Page 76, entry 604, read from the page image on 27 November 2026.",
+   "date": "1904-08-21",
+   "url": "https://www.ancestry.com/imageviewer/collections/1558/images/31280_199311-00215",
+   "file": "images/records/notebook/1904-08-21-baptism-baron-reginald-fitzmaurice-ascension-balham-hill-entry604-full-page.jpg",
+   "note": "The full register opening, with entry 604 boxed. Baptised 21 August 1904: Baron Reginald, son of Edward Dixon and Edith Madeline Fitzmaurice, of 29 Cathles Road, father a civil engineer. No date of birth is written. The officiant is read as A. W. Hooper. Ledger C0754. With the 1911 census, this raises the father-son link from Edward Dixon to Reg to FACT (C0054)."
+  },
+  {
+   "id": "parish-st-giles-1840-john-fitzmaurice-burial",
+   "title": "Burial register (Bishop's Transcript), St Giles in the Fields, 15 December 1840, entry 1098: John Fitzmaurice, aged 1 and a half",
+   "type": "burial register",
+   "repository": "London Metropolitan Archives, Bishop's Transcript of burials, parish of St Giles in the Fields, Holborn, 1838-1869. Ancestry, London, England, Church of England Deaths and Burials, 1813-2003, collection 1559, image 358 of 365, file 32184_218910-00518, record 13711940. Page 138, entry 1098, read from the page image on 27 November 2026.",
+   "date": "1840-12-15",
+   "url": "https://www.ancestry.com/imageviewer/collections/1559/images/32184_218910-00518",
+   "file": "images/records/notebook/1840-12-15-burial-john-fitzmaurice-st-giles-in-the-fields-entry1098-full-page.jpg",
+   "note": "The full register opening, with entry 1098 boxed. John Fitzmaurice, buried 15 December 1840, aged one and a half, abode abbreviated Wk. Hs (almost certainly Workhouse, the same abbreviation used for several other burials on the page), officiant B. Pratt. This infant is almost certainly the December quarter 1840 Bloomsbury death, volume 1, page 74 (C0741), because St Giles in the Fields and St George Bloomsbury were in the same registration district. It is not the Ordnance clerk (P084). Ledger C0756, C0757, C0758."
+  },
+  {
+   "id": "kelly-1879-birmingham-jones-fitzmaurice",
+   "title": "Kelly's Post Office Directory of Birmingham, 1879: Jones and Fitzmaurice, stone merchants, Tindal Street, Ladywood; Robert William Fitzmaurice, stone merchant, of Norlands, Erdington",
+   "type": "directory",
+   "repository": "The Post Office Directory of Birmingham, 1879 (Kelly and Co.). Digitised by Google; Internet Archive identifier bub_gb_dO8NAAAAQAAJ. Printed page 150 (Streets, Tindal Street, Ladywood; scan leaf n175), page 174 (Erdington, private residents; leaf n174 is n199), page 320 (Commercial; leaf n345) and page 592 (Trades, Stone merchants; leaf n617). Read from the page images on 27 November 2026.",
+   "date": "1879",
+   "url": "https://archive.org/details/bub_gb_dO8NAAAAQAAJ/page/n617/mode/1up",
+   "file": "images/records/notebook/1879-kelly-birmingham-p592-stone-merchants-jones-and-fitzmaurice-full-page.jpg",
+   "note": "Four entries, each boxed on the full page. Page 150, Tindal Street, Ladywood, from 7 Morville Street to 5 St Vincent Street: \"Jones & Fitzmaurice, stone mers. &c\". Page 592, Stone merchants: \"Jones & Fitzmaurice, Tindal st. Ladywood\". Page 320, Commercial: \"Fitzmaurice Robt. Wm. stone mer. see Jones & Fitzmaurice\". Page 174, Erdington, private residents: \"Fitzmaurice Robert William, Norlands\". Ledger C0745 (now FACT for the entries), C0760 to C0762."
+  },
+  {
+   "id": "mqp-cliffe-hill-history",
+   "title": "MQP (Midland Quarry Products), The History of Cliffe Hill, company time line",
+   "type": "published history",
+   "repository": "MQP Ltd, company website, About, History. Read on 27 November 2026.",
+   "url": "https://www.mqp.co.uk/en/about/history",
+   "note": "Time line: 1870s, quarrying begins by Mr Jones and Mr Fitzmaurice of Birmingham; 1881, Jones and Fitzmaurice stop working Cliffe; 1891, J.R. Fitzmaurice acquired the quarry from his father and reopens Cliffe Hill, with Mr P. Preston as manager; 1894, the Cliffe Hill Granite Company was formed; 1896, the Cliffe Hill Mineral Railway begun; 1935, the company bought the freehold of the quarry from the original founder J R Fitzmaurice; 1949, the original founder Mr J.R. Fitzmaurice passed away; 1965, acquired by Tarmac Roadstone; 1989, Old Cliffe Hill Quarry closed after 98 years; 1997, part of the Tarmac and Hanson joint venture MQP; 2005, production resumed at Old Cliffe Hill. A company history, not a contemporary record. Ledger C0763 to C0768."
+  },
+  {
+   "id": "mcgrath-2007-charnwood-quarries",
+   "title": "Annette McGrath, The Rock Quarries of Charnwood Forest, Mercian Geologist, volume 16, part 4 (2006, published 2007), pages 241 to 260; Cliffe Hill Quarry at pages 253 to 254",
+   "type": "published history",
+   "repository": "East Midlands Geological Society, Mercian Geologist. PDF read on 27 November 2026. The Cliffe Hill account cites M. H. Billington, Cliffe Hill Mineral Railway, Leicestershire (Turntable Enterprises, Leeds, 1974).",
+   "url": "https://www.emgs.org.uk/uploads/1/4/9/1/149143154/mg16_4_2007_241_mcgrath_the_rock_quarries_of_charnwood_forest_1.pdf",
+   "note": "Page 253: Jones and Fitzmaurice, two businessmen from Birmingham, formed a partnership in the late 1870s to work the stone at Cliffe Hill for the small-scale production of setts and kerbs; the quarry closed after a few years and remained so for a decade, until Mr J. Rupert Fitzmaurice acquired the quarry from his father on 9 May 1891 (Billington, 1974); Peter Preston of the Enderby quarry was taken on as manager at 3 pounds a week; a licence to store and use explosives was obtained on 15 July 1891; the first load of stone was sold to a local farmer at 2s 6d a ton; on 1 November 1894 the Cliffe Hill Granite Company Ltd was formed; in 1896 a narrow gauge railway was built to the Leicester and Coalville line; the Bagnall locomotives were Cliffe, then Isabel and Rocket; the railway was used until 1947 to 1948. Page 254: the Rockside Company was set up in 1912 to sell the brown stone; the Fitzmaurice and Preston families jointly managed the company for 72 years, until Tarmac Quarry Products Ltd acquired it in 1965. Ledger C0763 to C0767."
+  },
+  {
+   "id": "graces-guide-cliffe-hill-granite",
+   "title": "Grace's Guide to British Industrial History: Cliffe Hill Granite Co",
+   "type": "reference work",
+   "repository": "Grace's Guide, citing The Stock Exchange Year Book, 1908. Read on 27 November 2026.",
+   "url": "https://www.gracesguide.co.uk/Cliffe_Hill_Granite_Co",
+   "note": "Of Cliffe Hill, Markfield, Leicestershire. 1894: the company was registered on 1 November. Ledger C0765."
+  },
+  {
+   "id": "her-mle21759-old-cliffe-hill-quarry",
+   "title": "Leicestershire and Rutland Historic Environment Record MLE21759: Old Cliffe Hill Quarry, Cliffe Hill Road, Stanton under Bardon",
+   "type": "heritage record",
+   "repository": "Leicestershire and Rutland HER, through Heritage Gateway (Historic England). National Grid Reference SK 47376 10609; latitude 52.691102, longitude -1.300504; parishes Markfield and Stanton-under-Bardon. Read through the search index on 27 November 2026 (a direct fetch timed out or was refused).",
+   "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/25e5c862-668d-4de6-9373-fa165ada34ac/MLE21759",
+   "note": "Quarrying began here in the 1870s and continued until 1989; a tunnel between the Old and New quarries opened in 2003, and quarrying resumed in 2006. Summarises McGrath 2007, pages 253 to 254. Gives the map position used for the quarry pin. Ledger C0763, C0769."
+  },
+  {
+   "id": "mqp-cliffe-hill-quarry-today",
+   "title": "MQP, Cliffe Hill Quarry and Asphalt Plant (site page)",
+   "type": "published history",
+   "repository": "MQP Ltd, company website, Locations. Read on 27 November 2026.",
+   "url": "https://www.mqp.co.uk/en/locations/cliffe-hill-quarry-and-asphalt-plant",
+   "note": "Cliffe Hill Quarry is the largest quarrying and asphalt operation within MQP, with two asphalt plants and a rail link. Old and New Cliffe Hill are linked by a 714 metre tunnel completed in 2003. The quarry produces up to 4.5 million tonnes of Markfieldite granite aggregate a year. Ledger C0768."
+  },
+  {
+   "id": "delcampe-cliffe-hill-granite-photos-2026",
+   "title": "Delcampe dealer listings, original photographs of Cliffe Hill Granite Co. Ltd lorries and the quarry at Markfield (seen 27 November 2026)",
+   "type": "dealer listing",
+   "repository": "Delcampe, seller cartespostales_de (Bartko and Reher GmbH and Co. KG, Berlin). Listings 2519731289 (four photographs by R. Jordan, Leicester), 2563308122 and 2563273214 (Fisher and Potter Ltd, Leicester). Seen on 27 November 2026; nothing bought.",
+   "url": "https://www.delcampe.net/en_GB/collectables/photography/photographs/photographs-originals/places/4-photos-r-jordan-leicester-ansicht-leicester-lastwagen-morris-steinbruch-cliffe-hill-granite-co-ltd-lkw-2519731289.html",
+   "note": "The lorry lettering, read from the listing photographs, includes CLIFFE HILL GRANITE CO LTD and MARKFIELD LEICESTER. No family member is named or shown. The images belong to the seller and are linked, not copied. Ledger C0770."
+  },
+  {
+   "id": "commons-cliffe-hill-granite-quarry-photo",
+   "title": "Wikimedia Commons, File:Cliffe Hill Granite Quarry.jpg, about 1940 to 1948",
+   "type": "photograph",
+   "repository": "Wikimedia Commons, public domain; unknown photographer; source given as a former eBay.de listing, item 234415379600. Downloaded 27 November 2026.",
+   "url": "https://commons.wikimedia.org/wiki/File:Cliffe_Hill_Granite_Quarry.jpg",
+   "file": "photos/quarry/cliffe-hill-granite-quarry-about-1940s-commons.jpg",
+   "note": "A view of the quarry, dated on Commons to about 1940 to 1948. The Commons file was retouched to remove later lettering. Context photograph; no family member is shown."
+  },
+  {
+   "id": "underground-map-exmouth-street",
+   "title": "The Underground Map: Exmouth Street, E1 (Holmes Street renamed 1867)",
+   "type": "reference work",
+   "repository": "The Underground Map, street history for Stepney. Read through the search index on 27 November 2026.",
+   "url": "http://www.theundergroundmap.com/article.html?id=100780",
+   "note": "Holmes Street and Queen Street were renamed Exmouth Street in 1867. Exmouth Street was largely destroyed in the Second World War and replaced by residential blocks. Supports placing 33 Holmes Street, Commercial Road, in the Stepney streets just north of Commercial Road; the exact house cannot be placed today. The 1856 Mile End Old Town health report also lists Holmes Street. Ledger C0771."
+  },
+  {
+   "id": "he-irish-barracks-tower",
+   "title": "Historic England research record: Irish Barracks, Tower of London (1109413)",
+   "type": "heritage record",
+   "repository": "Historic England research records, through Heritage Gateway, citing Geoffrey Parnell, English Heritage book of the Tower of London. National Grid Reference TQ 33682 80510; latitude 51.507718, longitude -0.075145. Read through the search index on 27 November 2026.",
+   "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/0d636742-8028-4a8c-8b7c-e1f9aaf2d338/24e55d64-a222-49e9-b315-610d4fc0c183",
+   "note": "The Irish Barracks stood in the Mint, inside the Tower of London, against the curtain wall between the Salt and Broad Arrow Towers; rebuilt 1752, extended 1804, demolished 1878. The Mint itself had left the Tower for Tower Hill in 1810 (Historic Royal Palaces). So 27 Old Mint, opposite the Irish Barracks, was probably a house in the old Mint area inside the Tower's outer ward. Ledger C0772."
+  }
  ]
 }

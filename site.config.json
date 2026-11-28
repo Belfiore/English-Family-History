@@ -4,6 +4,7 @@
   "engine": {
     "channel": "canary"
   },
+  "admin": {"enabled": true},
   "timeline": {
     "enabled": true
   },

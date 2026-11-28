@@ -9065,7 +9065,8 @@
       "census-1851-birmingham-st-thomas"
      ],
      "confidence": "probable",
-     "title_de": "Landvermesser"
+     "title_de": "Landvermesser",
+     "placeId": "birmingham"
     },
     {
      "title": "Assistant land surveyor",
@@ -9316,7 +9317,8 @@
       "census-1851-birmingham-st-thomas"
      ],
      "confidence": "probable",
-     "title_de": "Landvermesser"
+     "title_de": "Landvermesser",
+     "placeId": "birmingham"
     },
     {
      "title": "Stone merchant, partner in Jones and Fitzmaurice",
@@ -9954,7 +9956,8 @@
      ],
      "confidence": "probable",
      "note": "Index page shared with one other bride; Oadby Remembers names Isabel Bennion.",
-     "note_de": "Auf der Indexseite steht noch eine weitere Braut; Oadby Remembers nennt Isabel Bennion."
+     "note_de": "Auf der Indexseite steht noch eine weitere Braut; Oadby Remembers nennt Isabel Bennion.",
+     "placeId": "lichfield-registration-district"
     },
     {
      "id": "maria-adelaide-wood",
@@ -9967,7 +9970,8 @@
       "freebmd-john-rupert-family-s51"
      ],
      "confidence": "probable",
-     "note": null
+     "note": null,
+     "placeId": "petersham-surrey"
     }
    ],
    "isDirectLine": false,
@@ -14174,7 +14178,8 @@
     ],
     "confidence": "confirmed",
     "note": "The Woodstock baptism register says he was born on 29 April 1926.",
-    "note_de": "Das Taufregister von Woodstock sagt, er sei am 29. April 1926 geboren."
+    "note_de": "Das Taufregister von Woodstock sagt, er sei am 29. April 1926 geboren.",
+    "placeId": "cape-province"
    },
    "death": {
     "date": "1935-08-09",
@@ -14406,7 +14411,8 @@
       "cwgc-jhf-1918"
      ],
      "confidence": "confirmed",
-     "title_de": "Leutnant, 6th (Service) Battalion, King's Shropshire Light Infantry"
+     "title_de": "Leutnant, 6th (Service) Battalion, King's Shropshire Light Infantry",
+     "placeId": "france-ef"
     }
    ],
    "immigration": null,
@@ -14601,7 +14607,8 @@
      ],
      "confidence": "probable",
      "note": "Index page shared with one other bride; Oadby Remembers names Isabel Bennion.",
-     "note_de": "Indexseite mit einer weiteren Braut geteilt; Oadby Remembers nennt Isabel Bennion."
+     "note_de": "Indexseite mit einer weiteren Braut geteilt; Oadby Remembers nennt Isabel Bennion.",
+     "placeId": "lichfield-registration-district"
     }
    ],
    "isDirectLine": false,
@@ -14741,7 +14748,8 @@
       "freebmd-john-rupert-family-s51"
      ],
      "confidence": "probable",
-     "note": null
+     "note": null,
+     "placeId": "petersham-surrey"
     }
    ],
    "isDirectLine": false,

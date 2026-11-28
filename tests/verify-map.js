@@ -86,6 +86,7 @@ function expectScope(id, scope) {
             viewport: opts.viewport || { width: 1440, height: 900 }, deviceScaleFactor: 1,
             reducedMotion: opts.reducedMotion || 'no-preference', isMobile: !!opts.mobile, hasTouch: !!opts.mobile
         });
+        await context.addInitScript(() => { localStorage.setItem('fs.visitor.v1:/', JSON.stringify({ v: 1, id: null, skipped: true, at: '2026-11-28' })); });
         const page = await context.newPage();
         const errors = [];
         page.on('pageerror', e => errors.push(url + ': ' + e.message));

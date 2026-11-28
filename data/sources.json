@@ -7,7 +7,8 @@
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "date": "1950-02-11",
    "file": "photos/wedding-album-cover-inscription.jpg",
-   "note": "Ten spreads photographed, with handwritten captions. Read for this revision from the photographs of each spread."
+   "note": "Ten spreads photographed, with handwritten captions. Read for this revision from the photographs of each spread.",
+   "note_de": "Zehn Doppelseiten fotografiert, mit handschriftlichen Bildunterschriften. Für diese Fassung von den Fotos jeder Doppelseite gelesen."
   },
   {
    "id": "ruby-invitation",
@@ -16,7 +17,8 @@
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "date": "1990-03-10",
    "file": "photos/ruby-wedding-invitation-and-photos.jpg",
-   "note": "The card gives no year. 10 March fell on a Saturday in 1990, forty years after the wedding, so 1990 is the probable year. Shown with two prints of the 1950 group photograph."
+   "note": "The card gives no year. 10 March fell on a Saturday in 1990, forty years after the wedding, so 1990 is the probable year. Shown with two prints of the 1950 group photograph.",
+   "note_de": "Die Karte nennt kein Jahr. Der 10. März fiel 1990 auf einen Samstag, vierzig Jahre nach der Hochzeit, daher ist 1990 das wahrscheinliche Jahr. Gezeigt mit zwei Abzügen des Gruppenfotos von 1950."
   },
   {
    "id": "photo-labels",
@@ -24,7 +26,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/photo-backs-labeled.jpg",
-   "note": "One reads 'Auntie Babs / South Africa'. The other reads 'Reg, Bob and their Father / Edward Dixon / Fitzmaurice'. Who wrote them, and when, is not known."
+   "note": "One reads 'Auntie Babs / South Africa'. The other reads 'Reg, Bob and their Father / Edward Dixon / Fitzmaurice'. Who wrote them, and when, is not known.",
+   "note_de": "Auf einem steht 'Auntie Babs / South Africa'. Auf dem anderen steht 'Reg, Bob and their Father / Edward Dixon / Fitzmaurice'. Wer sie schrieb und wann, ist nicht bekannt."
   },
   {
    "id": "beach-snapshots",
@@ -32,7 +35,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/babs-and-edward-with-boys.jpg",
-   "note": "The girl's photograph, with the letters Eil scratched on the front, is the one labelled Auntie Babs, South Africa on its back. The beach card is the one labelled Reg, Bob and their father. The beach snapshot was probably taken about 1908 to 1910 on the Kent coast. The white collar is not evidence that Edward was a clergyman."
+   "note": "The girl's photograph, with the letters Eil scratched on the front, is the one labelled Auntie Babs, South Africa on its back. The beach card is the one labelled Reg, Bob and their father. The beach snapshot was probably taken about 1908 to 1910 on the Kent coast. The white collar is not evidence that Edward was a clergyman.",
+   "note_de": "Das Foto des Mädchens, mit den vorn eingeritzten Buchstaben Eil, ist das auf der Rückseite mit Auntie Babs, South Africa beschriftete. Die Strandkarte ist die mit Reg, Bob and their father beschriftete. Die Strandaufnahme entstand wahrscheinlich etwa 1908 bis 1910 an der Küste von Kent. Der weiße Kragen ist kein Beleg dafür, dass Edward Geistlicher war."
   },
   {
    "id": "stuart-card",
@@ -40,7 +44,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/edward-dixon-stuart-studio.jpg",
-   "note": "No name on the card. Probably Edward Dixon, by his likeness to the labelled beach photo. The studio address is the printed imprint, not a family address."
+   "note": "No name on the card. Probably Edward Dixon, by his likeness to the labelled beach photo. The studio address is the printed imprint, not a family address.",
+   "note_de": "Kein Name auf der Karte. Wahrscheinlich Edward Dixon, nach der Ähnlichkeit mit dem beschrifteten Strandfoto. Die Atelieradresse ist der gedruckte Aufdruck, keine Familienadresse."
   },
   {
    "id": "edith-medallion",
@@ -48,7 +53,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/edith-medallion-back.jpg",
-   "note": "The 'c.' suggests the date was added later by someone estimating it."
+   "note": "The 'c.' suggests the date was added later by someone estimating it.",
+   "note_de": "Das 'c.' deutet darauf hin, dass das Datum später von jemandem ergänzt wurde, der es schätzte."
   },
   {
    "id": "lang-sims-card",
@@ -56,7 +62,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/lang-sims-woman.jpg",
-   "note": "Unlabelled."
+   "note": "Unlabelled.",
+   "note_de": "Unbeschriftet."
   },
   {
    "id": "perriman-cdv",
@@ -64,7 +71,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/cdv-perriman-back-flat.jpg",
-   "note": "Unlabelled. The studio stamp gives 3 Greenland Place, 'Side of the Mother Red Cap', Camden Town."
+   "note": "Unlabelled. The studio stamp gives 3 Greenland Place, 'Side of the Mother Red Cap', Camden Town.",
+   "note_de": "Unbeschriftet. Der Atelierstempel nennt 3 Greenland Place, 'Side of the Mother Red Cap', Camden Town."
   },
   {
    "id": "young-man-portrait",
@@ -72,7 +80,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/reg-fitzmaurice-portrait.jpg",
-   "note": "Unlabelled. The same image is saved as reg-fitzmaurice-portrait.jpg, unknown-young-man-bowtie.jpg and IMG_8845.jpeg."
+   "note": "Unlabelled. The same image is saved as reg-fitzmaurice-portrait.jpg, unknown-young-man-bowtie.jpg and IMG_8845.jpeg.",
+   "note_de": "Unbeschriftet. Dasselbe Bild ist gespeichert als reg-fitzmaurice-portrait.jpg, unknown-young-man-bowtie.jpg und IMG_8845.jpeg."
   },
   {
    "id": "sa-snapshots",
@@ -80,7 +89,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/south-africa-house-and-young-man.jpg",
-   "note": "Unlabelled."
+   "note": "Unlabelled.",
+   "note_de": "Unbeschriftet."
   },
   {
    "id": "korea-clipping",
@@ -89,7 +99,8 @@
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "date": "1951",
    "file": "photos/korea-news-clipping.jpg",
-   "note": "Handwritten '1951' on the cutting. Transcribed for this revision."
+   "note": "Handwritten '1951' on the cutting. Transcribed for this revision.",
+   "note_de": "Handschriftlich '1951' auf dem Ausschnitt. Für diese Fassung transkribiert."
   },
   {
    "id": "marries-clipping",
@@ -98,7 +109,8 @@
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "date": "1953-11-27",
    "file": "photos/orkney-marries-clipping.jpg",
-   "note": "The handwritten date reads 'Nov 27'; the year is torn off. The ages in the text (both 34) fit 1953, the year the peerage gives."
+   "note": "The handwritten date reads 'Nov 27'; the year is torn off. The ages in the text (both 34) fit 1953, the year the peerage gives.",
+   "note_de": "Das handschriftliche Datum lautet 'Nov 27'; das Jahr ist abgerissen. Die Altersangaben im Text (beide 34) passen zu 1953, dem Jahr, das die Peerage angibt."
   },
   {
    "id": "andrews-family-photo",
@@ -106,7 +118,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/andrews-family-sepia.jpg",
-   "note": "Undated and unlabelled. A colourised copy is saved as andrews-family-color.jpeg. Who is who comes from the family, via earlier versions of this site."
+   "note": "Undated and unlabelled. A colourised copy is saved as andrews-family-color.jpeg. Who is who comes from the family, via earlier versions of this site.",
+   "note_de": "Undatiert und unbeschriftet. Eine kolorierte Kopie ist gespeichert als andrews-family-color.jpeg. Wer wer ist, kommt von der Familie, über frühere Fassungen dieser Website."
   },
   {
    "id": "ron-workshop",
@@ -114,7 +127,8 @@
    "type": "photograph",
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "file": "photos/ronald-andrews-workshop.jpeg",
-   "note": "A colourised version of a black and white photograph; the original is not in the repository."
+   "note": "A colourised version of a black and white photograph; the original is not in the repository.",
+   "note_de": "Eine kolorierte Fassung eines Schwarz-Weiß-Fotos; das Original ist nicht im Repository."
   },
   {
    "id": "ron-album",
@@ -123,7 +137,8 @@
    "repository": "Family collection, photographed by Sebastian Belfiore after his grandmother's service (2026)",
    "date": "1945",
    "file": "photos/ron-egypt/IMG_2654.JPEG",
-   "note": "Eight pages photographed (IMG_2650 to IMG_2658). Captions transcribed for this revision. The album pages are undated; the latest item is the Tura Times 'First Peace Edition'."
+   "note": "Eight pages photographed (IMG_2650 to IMG_2658). Captions transcribed for this revision. The album pages are undated; the latest item is the Tura Times 'First Peace Edition'.",
+   "note_de": "Acht Seiten fotografiert (IMG_2650 bis IMG_2658). Bildunterschriften für diese Fassung transkribiert. Die Albumseiten sind undatiert; das späteste Stück ist die Tura Times 'First Peace Edition'."
   },
   {
    "id": "devonshire-photo",
@@ -131,7 +146,8 @@
    "type": "photograph",
    "repository": "Saved from a stock photograph site (Alamy watermark visible)",
    "file": "photos/portraits/cecil_devonshire.jpg",
-   "note": "Earlier versions of this site date it 29 September 1951. That date is not on the image."
+   "note": "Earlier versions of this site date it 29 September 1951. That date is not on the image.",
+   "note_de": "Frühere Fassungen dieser Website datieren es auf den 29. September 1951. Dieses Datum steht nicht auf dem Bild."
   },
   {
    "id": "stuart-postcard",
@@ -152,14 +168,16 @@
    "type": "family tradition",
    "repository": "Conversations while building this site, 2026",
    "date": "2026",
-   "note": "Includes: Reg was Amanda's grandfather, Bob his brother, and Babs 'my auntie'; Ronald, Patricia and Herbert have all died; Patricia was born in Windsor, lost her mother young and was evacuated in the war; Reg died of an illness linked to smoking; Ron and Pat met through Sandra's parents."
+   "note": "Includes: Reg was Amanda's grandfather, Bob his brother, and Babs 'my auntie'; Ronald, Patricia and Herbert have all died; Patricia was born in Windsor, lost her mother young and was evacuated in the war; Reg died of an illness linked to smoking; Ron and Pat met through Sandra's parents.",
+   "note_de": "Enthält: Reg war Amandas Großvater, Bob sein Bruder und Babs 'my auntie'; Ronald, Patricia und Herbert sind alle gestorben; Patricia wurde in Windsor geboren, verlor ihre Mutter jung und wurde im Krieg evakuiert; Reg starb an einer mit dem Rauchen zusammenhängenden Krankheit; Ron und Pat lernten sich über Sandras Eltern kennen."
   },
   {
    "id": "site-earlier",
    "title": "Earlier versions of this site (the first family tree page, the home page, the family crest page and Ron's page)",
    "type": "research notes",
    "repository": "This repository: family-tree-classic.html, index.html, family-crest.html, ron-egypt.html",
-   "note": "Claims taken from here have no source recorded and are marked unverified."
+   "note": "Claims taken from here have no source recorded and are marked unverified.",
+   "note_de": "Angaben, die von hier übernommen wurden, haben keine verzeichnete Quelle und sind als ungeprüft gekennzeichnet."
   },
   {
    "id": "genealogy-report",
@@ -168,7 +186,8 @@
    "repository": "fitzmaurice_family_genealogy_report (1).pdf in this repository",
    "date": "2026-03-15",
    "file": "fitzmaurice_family_genealogy_report (1).pdf",
-   "note": "A photo analysis of twelve items, with dating by style."
+   "note": "A photo analysis of twelve items, with dating by style.",
+   "note_de": "Eine Fotoanalyse von zwölf Stücken, mit Datierung nach dem Stil."
   },
   {
    "id": "handoff-brief",
@@ -184,7 +203,8 @@
    "repository": "The Gazette",
    "date": "1890-04-23",
    "url": "https://www.thegazette.co.uk/London/issue/26051/page/2823/data.pdf",
-   "note": "Names Edmond Walter as the eldest surviving son and heir of Henry Warrender Fitzmaurice, and names only Alexander Edmond Fitzmaurice and Isabella Emily Garrett as his brother and sister."
+   "note": "Names Edmond Walter as the eldest surviving son and heir of Henry Warrender Fitzmaurice, and names only Alexander Edmond Fitzmaurice and Isabella Emily Garrett as his brother and sister.",
+   "note_de": "Nennt Edmond Walter als den ältesten überlebenden Sohn und Erben von Henry Warrender Fitzmaurice und nennt nur Alexander Edmond Fitzmaurice und Isabella Emily Garrett als seinen Bruder und seine Schwester."
   },
   {
    "id": "wiki-earl-of-orkney",
@@ -263,7 +283,8 @@
    "type": "web",
    "repository": "The Metropolitan Museum of Art",
    "url": "https://www.metmuseum.org/art/collection/search/12127",
-   "note": "Cited on earlier versions of this site; not re-read for this revision."
+   "note": "Cited on earlier versions of this site; not re-read for this revision.",
+   "note_de": "Auf früheren Fassungen dieser Website zitiert; für diese Fassung nicht erneut gelesen."
   },
   {
    "id": "wiki-james-ii",
@@ -445,7 +466,8 @@
    "title": "GRO and FreeBMD birth, marriage and death indexes",
    "type": "civil registration index",
    "repository": "General Register Office online index (gro.gov.uk) and FreeBMD (freebmd.org.uk), read 22 November 2026",
-   "note": "Volume and page references are given on each person. Mother's maiden name is from the GRO online birth index. Ages at death are from the death index."
+   "note": "Volume and page references are given on each person. Mother's maiden name is from the GRO online birth index. Ages at death are from the death index.",
+   "note_de": "Band- und Seitenangaben stehen bei jeder Person. Der Mädchenname der Mutter stammt aus dem GRO online birth index. Die Sterbealter stammen aus dem death index."
   },
   {
    "id": "parish-brixton-1897",
@@ -453,7 +475,8 @@
    "type": "parish register",
    "repository": "London Metropolitan Archives P85/MTW1/024, entry 376. Ancestry collection 1623, London, England, Church of England Marriages and Banns, 1754 to 1941.",
    "note": "Edward Dixon Fitzmaurice, 25, bachelor, professional singer, and Edith Madeline Spencer, 24, spinster, married by banns. His father Robert William Fitzmaurice, contractor, deceased. Her father Charles Spencer, builder and contractor, deceased. Witnesses included Caroline Spencer and May Spencer. GRO marriage index, September quarter 1897, Lambeth, volume 1d, page 583. A later reading of the same register gives the residence of both as 18 Saltoun Road (ledger claim C0384, probable).",
-   "date": "1897-08-02"
+   "date": "1897-08-02",
+   "note_de": "Edward Dixon Fitzmaurice, 25, Junggeselle, Berufssänger, und Edith Madeline Spencer, 24, ledig, heirateten nach Aufgebot. Sein Vater Robert William Fitzmaurice, Unternehmer, verstorben. Ihr Vater Charles Spencer, Baumeister und Unternehmer, verstorben. Zu den Trauzeugen gehörten Caroline Spencer und May Spencer. GRO marriage index, September quarter 1897, Lambeth, volume 1d, page 583. Eine spätere Lesung desselben Registers gibt den Wohnsitz beider mit 18 Saltoun Road an (ledger claim C0384, probable)."
   },
   {
    "id": "parish-battersea-1861",
@@ -461,7 +484,8 @@
    "type": "parish register",
    "repository": "London Metropolitan Archives P70/MRY2/004, entry 55. Ancestry collection 1623.",
    "note": "Robert William Fitzmaurice, bachelor, surveyor, father John Fitzmaurice, gentleman, married Fanny Mary Falcke, of full age, father William Gottlob Falcke, manufacturer. GRO marriage index, September quarter 1861, Wandsworth, volume 1d, page 647. Robert William's residence is read as Brompton. No street is given (ledger claim C0427, fact).",
-   "date": "1861-09-14"
+   "date": "1861-09-14",
+   "note_de": "Robert William Fitzmaurice, Junggeselle, Vermesser, Vater John Fitzmaurice, Gentleman, heiratete Fanny Mary Falcke, volljährig, Vater William Gottlob Falcke, Fabrikant. GRO marriage index, September quarter 1861, Wandsworth, volume 1d, page 647. Der Wohnsitz von Robert William wird als Brompton gelesen. Eine Straße ist nicht angegeben (ledger claim C0427, fact)."
   },
   {
    "id": "parish-stepney-1832",
@@ -469,7 +493,8 @@
    "type": "parish register",
    "repository": "London Metropolitan Archives P93/DUN/016, entry 1537.",
    "note": "Robert William, son of John and Eliza Fitzmaurice of Mile End Old Town. Father a clerk in the Tower. Entry 1537. The date is the baptism, not a recorded birth.",
-   "date": "1832-09-30"
+   "date": "1832-09-30",
+   "note_de": "Robert William, Sohn von John und Eliza Fitzmaurice aus Mile End Old Town. Der Vater war Schreiber im Tower. Eintrag 1537. Das Datum ist die Taufe, keine eingetragene Geburt."
   },
   {
    "id": "parish-battersea-1837",
@@ -477,7 +502,8 @@
    "type": "parish register",
    "repository": "St Mary, Battersea, entry 650.",
    "note": "Mary Fanny, daughter of William Gottlob Falcke, potter, and Elizabeth, born 3 December 1836.",
-   "date": "1837-01-29"
+   "date": "1837-01-29",
+   "note_de": "Mary Fanny, Tochter von William Gottlob Falcke, Töpfer, und Elizabeth, geboren am 3. Dezember 1836."
   },
   {
    "id": "parish-falcke-1817",
@@ -485,7 +511,8 @@
    "type": "parish register",
    "repository": "St Mary, Battersea.",
    "note": "William Gottlob Falcke married Eliza Macfarlin. Ten children were baptised at Chelsea and Battersea between 1818 and 1837. Daughters married at Battersea: Henrietta (Nichols, 1840), Eliza Caroline (Knight, 1845), Charlotte (Cooper, 1850), Jane (Turner, 1858).",
-   "date": "1817-10-15"
+   "date": "1817-10-15",
+   "note_de": "William Gottlob Falcke heiratete Eliza Macfarlin. Zehn Kinder wurden zwischen 1818 und 1837 in Chelsea und Battersea getauft. Töchter heirateten in Battersea: Henrietta (Nichols, 1840), Eliza Caroline (Knight, 1845), Charlotte (Cooper, 1850), Jane (Turner, 1858)."
   },
   {
    "id": "burial-falcke-1849",
@@ -493,7 +520,8 @@
    "type": "parish register",
    "repository": "St Mary, Battersea burial register.",
    "note": "William Falcke, potter, buried aged 56. GRO death index, September quarter 1849, Wandsworth.",
-   "date": "1849-08-27"
+   "date": "1849-08-27",
+   "note_de": "William Falcke, Töpfer, begraben im Alter von 56 Jahren. GRO death index, September quarter 1849, Wandsworth."
   },
   {
    "id": "burial-chingford-1928",
@@ -501,7 +529,8 @@
    "type": "burial register",
    "repository": "Waltham Forest burial register, Chingford Mount Cemetery, section F12.",
    "note": "Edward Dixon FitzMaurice, buried 13 June 1928. GRO death index: Fitzmaurice, Edward D., aged 56, June quarter 1928, West Ham, volume 4a, page 384. No will or probate found for 1928 to 1930. A Find a Grave day of death is a secondary note only and is not used here.",
-   "date": "1928-06-13"
+   "date": "1928-06-13",
+   "note_de": "Edward Dixon FitzMaurice, begraben am 13. Juni 1928. GRO death index: Fitzmaurice, Edward D., aged 56, June quarter 1928, West Ham, volume 4a, page 384. Für 1928 bis 1930 wurde kein Testament und keine Nachlassverwaltung gefunden. Ein Todestag bei Find a Grave ist nur eine sekundäre Notiz und wird hier nicht verwendet."
   },
   {
    "id": "probate-robert-1895",
@@ -509,7 +538,8 @@
    "type": "probate calendar",
    "repository": "England and Wales National Probate Calendar, 1895, page 100. Principal Probate Registry.",
    "note": "Of Edgbaston. Died 10 May 1895. Probate (limited) Birmingham, 1 August 1895, to his widow Fanny Mary and sons John Rupert, quarry owner, and Walter, contractor. Effects 12,921 pounds 4 shillings and 9 pence. GRO death index, June quarter 1895, King's Norton, volume 6c, page 269, aged 64.",
-   "date": "1895-05-10"
+   "date": "1895-05-10",
+   "note_de": "Aus Edgbaston. Gestorben am 10. Mai 1895. Probate (limited) Birmingham, 1 August 1895, an seine Witwe Fanny Mary und die Söhne John Rupert, Steinbruchbesitzer, und Walter, Unternehmer. Effects 12,921 pounds 4 shillings and 9 pence. GRO death index, June quarter 1895, King's Norton, volume 6c, page 269, aged 64."
   },
   {
    "id": "probate-fanny-1917",
@@ -517,7 +547,8 @@
    "type": "probate calendar",
    "repository": "England and Wales National Probate Calendar.",
    "note": "Fanny Mary FitzMaurice died 25 October 1917 at Erdington. GRO death index, Tamworth, aged 80.",
-   "date": "1917-10-25"
+   "date": "1917-10-25",
+   "note_de": "Fanny Mary FitzMaurice starb am 25. Oktober 1917 in Erdington. GRO death index, Tamworth, aged 80."
   },
   {
    "id": "probate-reg-1977",
@@ -525,7 +556,8 @@
    "type": "probate calendar",
    "repository": "GRO death index, June quarter 1977, Hillingdon, volume 13, page 673. Probate calendar 1977, page 2725.",
    "note": "Died 31 March 1977. The death index gives his date of birth as 26 May 1904. Probate Brighton, 9 June 1977. Estate 24,427 pounds. The calendar places him at Hayes. The house number is not published here.",
-   "date": "1977-03-31"
+   "date": "1977-03-31",
+   "note_de": "Gestorben am 31. März 1977. Der death index gibt sein Geburtsdatum mit dem 26. Mai 1904 an. Probate Brighton, 9 June 1977. Estate 24,427 pounds. Der Kalender setzt ihn in Hayes an. Die Hausnummer wird hier nicht veröffentlicht."
   },
   {
    "id": "probate-rupert-1949",
@@ -533,7 +565,8 @@
    "type": "probate calendar",
    "repository": "GRO death index, September quarter 1949, Leicester, volume 3a, page 537, aged 84. Probate calendar 1949, page 268.",
    "note": "Died 21 September 1949, of 3 Salisbury Road, Leicester. Probate Leicester, 5 December 1949, to Barclays Bank Ltd and Leslie Charlesworth Simpson, chartered accountant. Effects 56,789 pounds 19 shillings and 2 pence (ledger claim C0292, probable).",
-   "date": "1949-09-21"
+   "date": "1949-09-21",
+   "note_de": "Gestorben am 21. September 1949, von 3 Salisbury Road, Leicester. Probate Leicester, 5 December 1949, an Barclays Bank Ltd und Leslie Charlesworth Simpson, Wirtschaftsprüfer. Effects 56,789 pounds 19 shillings and 2 pence (ledger claim C0292, probable)."
   },
   {
    "id": "probate-charles-bennett-1926",
@@ -541,7 +574,8 @@
    "type": "probate calendar",
    "repository": "England and Wales National Probate Calendar, 1926.",
    "note": "Charles Bennett of Bodmin died 5 December 1925. Administration with will, Bodmin, 16 February 1926, to May Bennett, spinster. Effects 296 pounds 1 shilling and 4 pence. GRO death index, December quarter 1925, Bodmin, volume 5c, page 77, aged 77.",
-   "date": "1925-12-05"
+   "date": "1925-12-05",
+   "note_de": "Charles Bennett aus Bodmin starb am 5. Dezember 1925. Administration with will, Bodmin, 16 February 1926, an May Bennett, ledig. Effects 296 pounds 1 shilling and 4 pence. GRO death index, December quarter 1925, Bodmin, volume 5c, page 77, aged 77."
   },
   {
    "id": "probate-may-1971",
@@ -549,7 +583,8 @@
    "type": "probate calendar",
    "repository": "England and Wales National Probate Calendar. GRO death index, September quarter 1971, Surrey North, volume 5g, page 515.",
    "note": "Died 27 September 1971. Probate London, 2 December 1971. Effects 1,541 pounds. The calendar places her at Feltham. The calendar and the 1968 electoral register place her at 205 Highfield, Feltham (ledger claim C0458, fact).",
-   "date": "1971-09-27"
+   "date": "1971-09-27",
+   "note_de": "Gestorben am 27. September 1971. Probate London, 2 December 1971. Effects 1,541 pounds. Der Kalender setzt sie in Feltham an. Der Kalender und das Wahlregister von 1968 setzen sie in 205 Highfield, Feltham an (ledger claim C0458, fact)."
   },
   {
    "id": "census-1871-aston",
@@ -558,56 +593,64 @@
    "repository": "The National Archives RG10, piece 3160, folio 30, page 4, schedule 8. Ancestry, 1871 England Census, image 4 of 26.",
    "note": "Robert William Fitzmaurice, 39, surveyor and contractor, born Stepney. Fanny M., 34. Children Eliza Ada, Rupert J., Harry, Arthur Percy and Walter. The France birthplace given for Fanny on this page is an error. Later censuses and her baptism give Battersea. Read again from the image on 26 November 2026: Coleshill Road, schedule 8; the two eldest children were born at Edgbaston, Birmingham.",
    "url": "https://www.ancestry.com/imageviewer/collections/7619/images/WARRG10_3160_3161-0038",
-   "file": "images/records/notebook/1871-robert-w-fitzmaurice-household-coleshill-road-little-bromwich.jpg"
+   "file": "images/records/notebook/1871-robert-w-fitzmaurice-household-coleshill-road-little-bromwich.jpg",
+   "note_de": "Robert William Fitzmaurice, 39, Vermesser und Unternehmer, geboren in Stepney. Fanny M., 34. Kinder Eliza Ada, Rupert J., Harry, Arthur Percy und Walter. Der für Fanny angegebene Geburtsort Frankreich ist auf dieser Seite ein Fehler. Spätere Volkszählungen und ihre Taufe nennen Battersea. Am 26. November 2026 erneut vom Bild gelesen: Coleshill Road, schedule 8; die beiden ältesten Kinder wurden in Edgbaston, Birmingham, geboren."
   },
   {
    "id": "census-1881-aston",
    "title": "1881 England census, Aston Manor",
    "type": "census",
    "repository": "The National Archives RG11, piece 3046, folio 121, page 24. Ancestry collection 7572.",
-   "note": "Robert William, granite merchant and contractor, born London. Fanny Mary, born Battersea. Children Eliza Ada, Walter, and a son written Ernest Dixon, aged 8, born Little Bromwich, taken as Edward Dixon."
+   "note": "Robert William, granite merchant and contractor, born London. Fanny Mary, born Battersea. Children Eliza Ada, Walter, and a son written Ernest Dixon, aged 8, born Little Bromwich, taken as Edward Dixon.",
+   "note_de": "Robert William, Granithändler und Unternehmer, geboren in London. Fanny Mary, geboren in Battersea. Kinder Eliza Ada, Walter und ein Sohn, geschrieben Ernest Dixon, 8 Jahre alt, geboren in Little Bromwich, gedeutet als Edward Dixon."
   },
   {
    "id": "census-1891-brighton",
    "title": "1891 England census, Brighton",
    "type": "census",
    "repository": "The National Archives RG12, piece 811, folio 23, page 39. Ancestry collection 6598.",
-   "note": "Edward Fitzmaurice, lodger, 18, apprentice civil engineer, born Ward End, in the household of Francis John C. May, civil engineer."
+   "note": "Edward Fitzmaurice, lodger, 18, apprentice civil engineer, born Ward End, in the household of Francis John C. May, civil engineer.",
+   "note_de": "Edward Fitzmaurice, Untermieter, 18, Lehrling im Bauingenieurwesen, geboren in Ward End, im Haushalt von Francis John C. May, Bauingenieur."
   },
   {
    "id": "census-1891-spencer",
    "title": "1891 England census, St Pancras",
    "type": "census",
    "repository": "The National Archives RG12, piece 116, folio 10, page 17. Ancestry collection 6598.",
-   "note": "Edith Spencer, daughter, single, 22, governess, born Islington, with her widowed mother Caroline, lodging house keeper, born Islington."
+   "note": "Edith Spencer, daughter, single, 22, governess, born Islington, with her widowed mother Caroline, lodging house keeper, born Islington.",
+   "note_de": "Edith Spencer, Tochter, ledig, 22, Gouvernante, geboren in Islington, bei ihrer verwitweten Mutter Caroline, Inhaberin eines Logierhauses, geboren in Islington."
   },
   {
    "id": "census-1901-brixton",
    "title": "1901 England census, Brixton",
    "type": "census",
    "repository": "The National Archives RG13, piece 431, folio 14, page 19. Ancestry collection 7814.",
-   "note": "Probably Edward and Edith at Westfield House, Brixton, written as Edward A, born Belfast, and Ethel M, born Islington, with her mother Caroline Spencer. His occupation is civil mechanical engineer. The errors are real, and the link is probable (ledger claim C0398)."
+   "note": "Probably Edward and Edith at Westfield House, Brixton, written as Edward A, born Belfast, and Ethel M, born Islington, with her mother Caroline Spencer. His occupation is civil mechanical engineer. The errors are real, and the link is probable (ledger claim C0398).",
+   "note_de": "Wahrscheinlich Edward und Edith in Westfield House, Brixton, geschrieben als Edward A, geboren in Belfast, und Ethel M, geboren in Islington, mit ihrer Mutter Caroline Spencer. Sein Beruf lautet civil mechanical engineer. Die Fehler stehen wirklich so da, und die Verbindung ist wahrscheinlich (ledger claim C0398)."
   },
   {
    "id": "census-1911-whitstable",
    "title": "1911 England census, Whitstable",
    "type": "census",
    "repository": "The National Archives RG14, piece 4373, Whitstable Urban, enumeration district 5. Ancestry collection 2352.",
-   "note": "Edward Dixon Fitzmaurice, 38, civil engineer, born Birmingham. Wife Edith Madeline, 38, born St Anne, Soho. Married 12 years. Four children born alive, three living. Sons Edward Robert, 9, and Baron Reginald, 6. Daughter Eileen, 3. The house was Clifton Ville, Westgate Terrace, Whitstable."
+   "note": "Edward Dixon Fitzmaurice, 38, civil engineer, born Birmingham. Wife Edith Madeline, 38, born St Anne, Soho. Married 12 years. Four children born alive, three living. Sons Edward Robert, 9, and Baron Reginald, 6. Daughter Eileen, 3. The house was Clifton Ville, Westgate Terrace, Whitstable.",
+   "note_de": "Edward Dixon Fitzmaurice, 38, Bauingenieur, geboren in Birmingham. Ehefrau Edith Madeline, 38, geboren in St Anne, Soho. Seit 12 Jahren verheiratet. Vier Kinder lebend geboren, drei am Leben. Söhne Edward Robert, 9, und Baron Reginald, 6. Tochter Eileen, 3. Das Haus war Clifton Ville, Westgate Terrace, Whitstable."
   },
   {
    "id": "census-1841-falcke",
    "title": "1841 England census, Battersea",
    "type": "census",
    "repository": "The National Archives HO107. Ancestry.",
-   "note": "William Falcke, potter, born in foreign parts, with Elizabeth and children Eliza, Jane, Charlotte, Elizabeth, Frederick, Emily and Fanny, at Battersea."
+   "note": "William Falcke, potter, born in foreign parts, with Elizabeth and children Eliza, Jane, Charlotte, Elizabeth, Frederick, Emily and Fanny, at Battersea.",
+   "note_de": "William Falcke, Töpfer, geboren in foreign parts, mit Elizabeth und den Kindern Eliza, Jane, Charlotte, Elizabeth, Frederick, Emily und Fanny, in Battersea."
   },
   {
    "id": "census-1851-falcke",
    "title": "1851 England census, Battersea",
    "type": "census",
    "repository": "The National Archives HO107, piece 1577, folio 58, page 10.",
-   "note": "Fanny Falcke, 14, born Battersea, daughter of Elizabeth, 54, born Harrow, with Jane, Elizabeth, Frederick and Emily."
+   "note": "Fanny Falcke, 14, born Battersea, daughter of Elizabeth, 54, born Harrow, with Jane, Elizabeth, Frederick and Emily.",
+   "note_de": "Fanny Falcke, 14, geboren in Battersea, Tochter von Elizabeth, 54, geboren in Harrow, mit Jane, Elizabeth, Frederick und Emily."
   },
   {
    "id": "cwgc-plaistow-1941",
@@ -616,7 +659,8 @@
    "repository": "CWGC Civilian War Dead. Henry George Andrews, casualty 3105324. Rosina Maud Andrews, 3105326. Sidney George Andrews, 3105327.",
    "note": "All three died on 19 April 1941 at the family home in Plaistow, West Ham County Borough. Henry George was 52, son of Herbert Andrews. Rosina Maud was 59. Sidney George was 18, son of Henry George and Rosina Maud. GRO death index, June quarter 1941, West Ham: Henry G., volume 4a, page 70. Rosina M. and Sidney G., volume 4a, page 71. The house was 23 Sutton Court Road, Plaistow. The Fold3 copy of the CWGC registers (records 746927422, 746927530, 746927538), read 27 November 2026, agrees: Henry George was of 23 Sutton Court Road, son of Herbert Andrews of 40 Fisher Street, Canning Town.",
    "date": "1941-04-19",
-   "url": "https://www.cwgc.org/find-records/find-war-dead/"
+   "url": "https://www.cwgc.org/find-records/find-war-dead/",
+   "note_de": "Alle drei starben am 19. April 1941 im Familienhaus in Plaistow, West Ham County Borough. Henry George war 52, Sohn von Herbert Andrews. Rosina Maud war 59. Sidney George war 18, Sohn von Henry George und Rosina Maud. GRO death index, June quarter 1941, West Ham: Henry G., volume 4a, page 70. Rosina M. and Sidney G., volume 4a, page 71. Das Haus war 23 Sutton Court Road, Plaistow. Die Fold3-Kopie der CWGC-Register (records 746927422, 746927530, 746927538), gelesen am 27. November 2026, stimmt überein: Henry George war von 23 Sutton Court Road, Sohn von Herbert Andrews von 40 Fisher Street, Canning Town."
   },
   {
    "id": "parish-plaistow-1915",
@@ -624,7 +668,8 @@
    "type": "parish register",
    "repository": "Essex Archives Online, D/P 527/1/25. GRO marriage index, June quarter 1915, West Ham, volume 4a, page 305.",
    "note": "Henry George Andrews, 25, son of Herbert Andrews, married Rosina Maud Cousins, daughter of William Cousins.",
-   "date": "1915-04-18"
+   "date": "1915-04-18",
+   "note_de": "Henry George Andrews, 25, Sohn von Herbert Andrews, heiratete Rosina Maud Cousins, Tochter von William Cousins."
   },
   {
    "id": "parish-bushey-1888",
@@ -632,7 +677,8 @@
    "type": "parish register",
    "repository": "Bushey parish register. GRO marriage index, June quarter 1888, Watford, volume 3a, page 644.",
    "note": "Herbert Andrews, 22, father George Andrews, married Lucy Stacey, daughter of Henry Stacey.",
-   "date": "1888-05-17"
+   "date": "1888-05-17",
+   "note_de": "Herbert Andrews, 22, Vater George Andrews, heiratete Lucy Stacey, Tochter von Henry Stacey."
   },
   {
    "id": "parish-st-albans-1889",
@@ -640,7 +686,8 @@
    "type": "parish register",
    "repository": "St Albans Abbey baptism register.",
    "note": "Henry George, son of Herbert and Lucy Andrews. GRO birth index, June quarter 1889, St Albans, volume 3a, page 559, mother's maiden name Stacey.",
-   "date": "1889-06-09"
+   "date": "1889-06-09",
+   "note_de": "Henry George, Sohn von Herbert und Lucy Andrews. GRO birth index, June quarter 1889, St Albans, volume 3a, page 559, mother's maiden name Stacey."
   },
   {
    "id": "parish-stepney-1871",
@@ -648,7 +695,8 @@
    "type": "parish register",
    "repository": "St Philip, Stepney, marriage after banns.",
    "note": "William Cousins, 21, clerk, father William Cousins, clerk, married Anne Gall, 24, father John Gall, brewer, deceased. William Cousins was of 57 Rutland Street. Anne Gall's residence on the same entry is 44 New Street. Her father was John Gall, a brewer, deceased (ledger claim C0487, fact).",
-   "date": "1871-01-15"
+   "date": "1871-01-15",
+   "note_de": "William Cousins, 21, Schreiber, Vater William Cousins, Schreiber, heiratete Anne Gall, 24, Vater John Gall, Brauer, verstorben. William Cousins wohnte in 57 Rutland Street. Der Wohnsitz von Anne Gall im selben Eintrag ist 44 New Street. Ihr Vater war John Gall, ein Brauer, verstorben (ledger claim C0487, fact)."
   },
   {
    "id": "parish-leavesden-1858",
@@ -656,7 +704,8 @@
    "type": "parish register",
    "repository": "Leavesden parish register. GRO marriage index, June quarter 1858, Watford, volume 3a, page 379.",
    "note": "Henry Stacey married Mary Walter. Her father was Robert Walter. GRO birth index for their daughter Lucy: June quarter 1865, Watford Union, volume 3a, page 333, mother's maiden name Walter.",
-   "date": "1858-06-05"
+   "date": "1858-06-05",
+   "note_de": "Henry Stacey heiratete Mary Walter. Ihr Vater war Robert Walter. GRO birth index for their daughter Lucy: June quarter 1865, Watford Union, volume 3a, page 333, mother's maiden name Walter."
   },
   {
    "id": "parish-denham-1834",
@@ -664,7 +713,8 @@
    "type": "parish register",
    "repository": "Denham parish register.",
    "note": "Henry Stacey, son of Henry and Ann Stacey.",
-   "date": "1834-03-16"
+   "date": "1834-03-16",
+   "note_de": "Henry Stacey, Sohn von Henry und Ann Stacey."
   },
   {
    "id": "parish-aldenham-1838",
@@ -672,56 +722,64 @@
    "type": "parish register",
    "repository": "Aldenham parish register.",
    "note": "Mary, daughter of Robert and Mary Walter.",
-   "date": "1838-11-04"
+   "date": "1838-11-04",
+   "note_de": "Mary, Tochter von Robert und Mary Walter."
   },
   {
    "id": "census-andrews-stacey",
    "title": "Censuses for the Andrews and Stacey families, 1841 to 1921",
    "type": "census",
    "repository": "The National Archives. Ancestry: 1881 England Census, collection 7572; 1891, collection 6598; 1901, collection 7814; 1911, collection 2352; 1921, collection 63150. The 1841 and 1871 images were read on Ancestry. The collection numbers for those two censuses were not recorded.",
-   "note": "1871 Totternhoe, RG10/1566, folio 43, page 7: George and Alice Andrews with Herbert and Albert, and Elizabeth Field. 1881 Aldenham, RG11/1434, folio 5, page 4: George, agricultural labourer, Alice, Albert, Isabell, Rose and Mary, and Elizabeth Field. 1881 Herbert, 15, page, born Bedfordshire, at Wimbledon, probable. 1901 Hemel Hempstead, RG13/1325, folio 41, page 6: Herbert, Lucy and Henry George. 1911 Canning Town, RG14/9508, enumeration district 38: Herbert, journeyman baker, Lucy, and Henry, their only child. 1921 Plaistow, RG15/8364, enumeration district 43, schedule 228: Herbert, night baker, and Lucy, born Leavesden. 1841 Denham: Henry and Ann Stacey with their children, including Henry aged 7. 1841 Letchmore Heath: Robert and Mary Walter with their children, including Mary aged 2. 1861 Abbots Langley: Henry and Mary Stacey visiting, with baby Emily. 1871 Aldenham, RG10/1380, folio 13, page 18: Henry, Mary and Lucy. 1881 and 1891 Bushey: Henry, agricultural labourer, and Mary. 1881 Watford: Lucy, 16, general servant. House numbers and street names are not published here."
+   "note": "1871 Totternhoe, RG10/1566, folio 43, page 7: George and Alice Andrews with Herbert and Albert, and Elizabeth Field. 1881 Aldenham, RG11/1434, folio 5, page 4: George, agricultural labourer, Alice, Albert, Isabell, Rose and Mary, and Elizabeth Field. 1881 Herbert, 15, page, born Bedfordshire, at Wimbledon, probable. 1901 Hemel Hempstead, RG13/1325, folio 41, page 6: Herbert, Lucy and Henry George. 1911 Canning Town, RG14/9508, enumeration district 38: Herbert, journeyman baker, Lucy, and Henry, their only child. 1921 Plaistow, RG15/8364, enumeration district 43, schedule 228: Herbert, night baker, and Lucy, born Leavesden. 1841 Denham: Henry and Ann Stacey with their children, including Henry aged 7. 1841 Letchmore Heath: Robert and Mary Walter with their children, including Mary aged 2. 1861 Abbots Langley: Henry and Mary Stacey visiting, with baby Emily. 1871 Aldenham, RG10/1380, folio 13, page 18: Henry, Mary and Lucy. 1881 and 1891 Bushey: Henry, agricultural labourer, and Mary. 1881 Watford: Lucy, 16, general servant. House numbers and street names are not published here.",
+   "note_de": "1871 Totternhoe, RG10/1566, folio 43, page 7: George und Alice Andrews mit Herbert und Albert sowie Elizabeth Field. 1881 Aldenham, RG11/1434, folio 5, page 4: George, Landarbeiter, Alice, Albert, Isabell, Rose und Mary sowie Elizabeth Field. 1881 Herbert, 15, Page, geboren in Bedfordshire, in Wimbledon, wahrscheinlich. 1901 Hemel Hempstead, RG13/1325, folio 41, page 6: Herbert, Lucy und Henry George. 1911 Canning Town, RG14/9508, enumeration district 38: Herbert, Bäckergeselle, Lucy und Henry, ihr einziges Kind. 1921 Plaistow, RG15/8364, enumeration district 43, schedule 228: Herbert, Nachtbäcker, und Lucy, geboren in Leavesden. 1841 Denham: Henry und Ann Stacey mit ihren Kindern, darunter Henry im Alter von 7 Jahren. 1841 Letchmore Heath: Robert und Mary Walter mit ihren Kindern, darunter Mary im Alter von 2 Jahren. 1861 Abbots Langley: Henry und Mary Stacey zu Besuch, mit dem Säugling Emily. 1871 Aldenham, RG10/1380, folio 13, page 18: Henry, Mary und Lucy. 1881 und 1891 Bushey: Henry, Landarbeiter, und Mary. 1881 Watford: Lucy, 16, allgemeine Dienstmagd. Hausnummern und Straßennamen werden hier nicht veröffentlicht."
   },
   {
    "id": "census-cousins",
    "title": "Censuses for the Cousins family, 1881 to 1921",
    "type": "census",
    "repository": "The National Archives. Ancestry.",
-   "note": "1881 Bermondsey, William Cousens, wharf foreman, with Annie, born Thetford, and the older children. 1891 West Ham, RG12/1318, folio 90, page 17: William, born Hackney, Annie, born Thetford, and eight children including Rosina M., born Bermondsey. 1901 Canning Town, RG13/1580, folio 69, page 33: William, widowed in effect (no wife), with Amelia and Herbert. 1911 piece 9446: William at Plaistow. 1921 RG15/8364: William, retired dock labourer, in the household of Rosina and Henry George. Street addresses of people who have died are published on the branch pages."
+   "note": "1881 Bermondsey, William Cousens, wharf foreman, with Annie, born Thetford, and the older children. 1891 West Ham, RG12/1318, folio 90, page 17: William, born Hackney, Annie, born Thetford, and eight children including Rosina M., born Bermondsey. 1901 Canning Town, RG13/1580, folio 69, page 33: William, widowed in effect (no wife), with Amelia and Herbert. 1911 piece 9446: William at Plaistow. 1921 RG15/8364: William, retired dock labourer, in the household of Rosina and Henry George. Street addresses of people who have died are published on the branch pages.",
+   "note_de": "1881 Bermondsey: William Cousens, Vorarbeiter am Kai, mit Annie, geboren in Thetford, und den älteren Kindern. 1891 West Ham, RG12/1318, folio 90, page 17: William, geboren in Hackney, Annie, geboren in Thetford, und acht Kinder, darunter Rosina M., geboren in Bermondsey. 1901 Canning Town, RG13/1580, folio 69, page 33: William, der Sache nach verwitwet (keine Ehefrau), mit Amelia und Herbert. 1911 piece 9446: William in Plaistow. 1921 RG15/8364: William, Hafenarbeiter im Ruhestand, im Haushalt von Rosina und Henry George. Straßenadressen verstorbener Personen werden auf den Zweigseiten veröffentlicht."
   },
   {
    "id": "census-bennett",
    "title": "Censuses for the Bennett family of Bodmin, 1891 to 1911",
    "type": "census",
    "repository": "The National Archives. Ancestry collections 6598, 7814 and 2352.",
-   "note": "1891 Bodmin, RG12/1816, folio 67, page 10, enumeration district 6, schedule 68: Charles Bennett, tailor, born Egloshayle, and Annie, born St Columb. 1901 Bodmin, RG13/2201, folio 22, page 15: Charles, general labourer, Annie, and the children including Lilian, aged 1. 1911 Bodmin, RG14/13691: Annie, draper, calling herself a widow, with Minnie, Gilbert and Floyd, 11 children born, 8 living, 3 dead. 1911 RG14/13689: Charles, 62, tailor and outfitter, born Slades, Egloshayle, alive, with son Frank. Street names of people who have died are published on the Bennett page. The 1891 household is Fore Street, Bodmin, schedule 68 (ledger claim C0359, probable)."
+   "note": "1891 Bodmin, RG12/1816, folio 67, page 10, enumeration district 6, schedule 68: Charles Bennett, tailor, born Egloshayle, and Annie, born St Columb. 1901 Bodmin, RG13/2201, folio 22, page 15: Charles, general labourer, Annie, and the children including Lilian, aged 1. 1911 Bodmin, RG14/13691: Annie, draper, calling herself a widow, with Minnie, Gilbert and Floyd, 11 children born, 8 living, 3 dead. 1911 RG14/13689: Charles, 62, tailor and outfitter, born Slades, Egloshayle, alive, with son Frank. Street names of people who have died are published on the Bennett page. The 1891 household is Fore Street, Bodmin, schedule 68 (ledger claim C0359, probable).",
+   "note_de": "1891 Bodmin, RG12/1816, folio 67, page 10, enumeration district 6, schedule 68: Charles Bennett, Schneider, geboren in Egloshayle, und Annie, geboren in St Columb. 1901 Bodmin, RG13/2201, folio 22, page 15: Charles, allgemeiner Arbeiter, Annie und die Kinder, darunter Lilian, 1 Jahr alt. 1911 Bodmin, RG14/13691: Annie, Tuchhändlerin, die sich Witwe nennt, mit Minnie, Gilbert und Floyd, 11 Kinder geboren, 8 am Leben, 3 tot. 1911 RG14/13689: Charles, 62, Schneider und Ausstatter, geboren in Slades, Egloshayle, am Leben, mit dem Sohn Frank. Straßennamen verstorbener Personen werden auf der Bennett-Seite veröffentlicht. Der Haushalt von 1891 ist Fore Street, Bodmin, schedule 68 (ledger claim C0359, probable)."
   },
   {
    "id": "census-1921-lilian",
    "title": "1921 England census, Hampton Hill",
    "type": "census",
    "repository": "The National Archives RG15, piece 3700, enumeration district 6, schedule 72. Ancestry collection 63150.",
-   "note": "Lilian Maud Mary Bennett, single, boarder, aged 21 years and 3 months, born Bodmin, clerk at the Claims Record Office, at Hampton Hill. The census index gives the house as Thombrake, Queens Road, Hampton Hill. That house name is not on the photographed side of the schedule (ledger claim C0338, probable)."
+   "note": "Lilian Maud Mary Bennett, single, boarder, aged 21 years and 3 months, born Bodmin, clerk at the Claims Record Office, at Hampton Hill. The census index gives the house as Thombrake, Queens Road, Hampton Hill. That house name is not on the photographed side of the schedule (ledger claim C0338, probable).",
+   "note_de": "Lilian Maud Mary Bennett, ledig, Kostgängerin, 21 Jahre und 3 Monate alt, geboren in Bodmin, Schreiberin im Claims Record Office, in Hampton Hill. Der Volkszählungsindex gibt das Haus als Thombrake, Queens Road, Hampton Hill an. Dieser Hausname steht nicht auf der fotografierten Seite des Bogens (ledger claim C0338, probable)."
   },
   {
    "id": "register-1939",
    "title": "1939 Register, West Ham, Colchester and related households",
    "type": "1939 register",
    "repository": "The National Archives RG101. Ancestry 1939 Register.",
-   "note": "Henry George Andrews, explosive worker at the Royal filling factory, Woolwich, with Rosina on unpaid domestic duties, Herbert William, explosive worker, and Sidney George, junior clerk at a hardwood merchant. Herbert Andrews the elder, born 12 November 1865, widower, baker retired. May Florence Cousins, single, dining hall maid, at Colchester. The exact birth date of Herbert William, and the house numbers, are not published here."
+   "note": "Henry George Andrews, explosive worker at the Royal filling factory, Woolwich, with Rosina on unpaid domestic duties, Herbert William, explosive worker, and Sidney George, junior clerk at a hardwood merchant. Herbert Andrews the elder, born 12 November 1865, widower, baker retired. May Florence Cousins, single, dining hall maid, at Colchester. The exact birth date of Herbert William, and the house numbers, are not published here.",
+   "note_de": "Henry George Andrews, Sprengstoffarbeiter in der Royal filling factory, Woolwich, mit Rosina in unbezahlter Hausarbeit, Herbert William, Sprengstoffarbeiter, und Sidney George, jüngerer Schreiber bei einem Hartholzhändler. Herbert Andrews der Ältere, geboren am 12. November 1865, Witwer, Bäcker im Ruhestand. May Florence Cousins, ledig, Speisesaalmädchen, in Colchester. Das genaue Geburtsdatum von Herbert William und die Hausnummern werden hier nicht veröffentlicht."
   },
   {
    "id": "electoral-fitzmaurice",
    "title": "Electoral registers, Wandsworth, Hammersmith, Spelthorne and Hayes",
    "type": "electoral register",
    "repository": "London, England, Electoral Registers, 1832 to 1965. Ancestry collection 1795.",
-   "note": "Baron or Reginald Fitzmaurice: Wandsworth in 1925 and 1926, Hammersmith in 1931 to 1933, the Spelthorne district in 1934 to 1937, and Hayes from 1938 until about 1972. Lilian is with him at Hayes to 1939. Addresses now published on the branch pages include 26 Turret Grove, 34 Blythe Road, 113 Bourne Avenue and 42 Nestles Avenue."
+   "note": "Baron or Reginald Fitzmaurice: Wandsworth in 1925 and 1926, Hammersmith in 1931 to 1933, the Spelthorne district in 1934 to 1937, and Hayes from 1938 until about 1972. Lilian is with him at Hayes to 1939. Addresses now published on the branch pages include 26 Turret Grove, 34 Blythe Road, 113 Bourne Avenue and 42 Nestles Avenue.",
+   "note_de": "Baron oder Reginald Fitzmaurice: Wandsworth 1925 und 1926, Hammersmith 1931 bis 1933, der Bezirk Spelthorne 1934 bis 1937 und Hayes von 1938 bis etwa 1972. Lilian ist bis 1939 mit ihm in Hayes. Zu den Adressen, die jetzt auf den Zweigseiten stehen, gehören 26 Turret Grove, 34 Blythe Road, 113 Bourne Avenue und 42 Nestles Avenue."
   },
   {
    "id": "electoral-may",
    "title": "Electoral registers for May Florence Cousins, 1948 to 1971",
    "type": "electoral register",
    "repository": "Electoral registers, Brentford and Chiswick, then Feltham.",
-   "note": "May Florence Cousins at Chiswick and Gunnersbury from 1948 to 1967, then Feltham from 1968 to 1971. Street addresses of people who have died are published on the branch pages."
+   "note": "May Florence Cousins at Chiswick and Gunnersbury from 1948 to 1967, then Feltham from 1968 to 1971. Street addresses of people who have died are published on the branch pages.",
+   "note_de": "May Florence Cousins in Chiswick und Gunnersbury von 1948 bis 1967, danach in Feltham von 1968 bis 1971. Straßenadressen verstorbener Personen werden auf den Zweigseiten veröffentlicht."
   },
   {
    "id": "gro-lilian-death",
@@ -729,14 +787,16 @@
    "type": "civil registration index",
    "repository": "GRO online death index, December quarter 1947, Uxbridge, volume 5f, page 103.",
    "note": "Lilian Maud Mary Fitzmaurice, aged 47. The Uxbridge district covered Hayes. No will or administration found for 1947 to 1949, and no burial has been found. Birth index: Lilian Maud Mary Bennett, mother's maiden name Grigg, June quarter 1900, Bodmin, volume 5c, page 64.",
-   "date": "1947"
+   "date": "1947",
+   "note_de": "Lilian Maud Mary Fitzmaurice, 47 Jahre alt. Der Bezirk Uxbridge umfasste Hayes. Für 1947 bis 1949 wurde kein Testament und keine Nachlassverwaltung gefunden, und eine Beerdigung ist nicht gefunden worden. Birth index: Lilian Maud Mary Bennett, mother's maiden name Grigg, June quarter 1900, Bodmin, volume 5c, page 64."
   },
   {
    "id": "gro-marriage-1927",
    "title": "GRO marriage index, Fitzmaurice and Bennett, 1927",
    "type": "civil registration index",
    "repository": "GRO and FreeBMD, December quarter 1927, Hammersmith, volume 1a, page 661. Ancestry, England and Wales Marriage Index, 1916 to 2005, collection 8753.",
-   "note": "Baron R. Fitzmaurice and Lilian M. M. Bennett are on the same page. The parish register itself has not been seen, so the match is probable."
+   "note": "Baron R. Fitzmaurice and Lilian M. M. Bennett are on the same page. The parish register itself has not been seen, so the match is probable.",
+   "note_de": "Baron R. Fitzmaurice und Lilian M. M. Bennett stehen auf derselben Seite. Das Kirchenregister selbst ist nicht eingesehen worden, daher ist die Zuordnung wahrscheinlich."
   },
   {
    "id": "gro-edith-death",
@@ -744,28 +804,32 @@
    "type": "civil registration index",
    "repository": "GRO online death index, March quarter 1929, Bridge, volume 2a, page 1999.",
    "note": "Edith Madeline Fitzmaurice, aged 61. The age fits a birth about 1867 to 1868. No matching birth under Edith Madeline Spencer has been found.",
-   "date": "1929"
+   "date": "1929",
+   "note_de": "Edith Madeline Fitzmaurice, 61 Jahre alt. Das Alter passt zu einer Geburt etwa 1867 bis 1868. Unter Edith Madeline Spencer ist keine passende Geburt gefunden worden."
   },
   {
    "id": "gro-bennett-grigg",
    "title": "GRO index, Bennett births at Bodmin, mother Grigg, and Annie Grigg",
    "type": "civil registration index",
    "repository": "GRO online birth and death indexes.",
-   "note": "Matilda Ann Nicholls Grigg, mother's maiden name Stephens, March quarter 1864, St Columb, volume 5c, page 131. Death: Matilda Ann Nicholls Bennett, aged 48, June quarter 1912, Bodmin, volume 5c, page 89. Marriage index, probable: Charles Bennett and Annie Grigg, September quarter 1882, Stoke Damerel, volume 5b, page 573. The eleven Bodmin births with mother Grigg, 1883 to 1902, and the three infant deaths, are listed on the Bennett page."
+   "note": "Matilda Ann Nicholls Grigg, mother's maiden name Stephens, March quarter 1864, St Columb, volume 5c, page 131. Death: Matilda Ann Nicholls Bennett, aged 48, June quarter 1912, Bodmin, volume 5c, page 89. Marriage index, probable: Charles Bennett and Annie Grigg, September quarter 1882, Stoke Damerel, volume 5b, page 573. The eleven Bodmin births with mother Grigg, 1883 to 1902, and the three infant deaths, are listed on the Bennett page.",
+   "note_de": "Matilda Ann Nicholls Grigg, mother's maiden name Stephens, March quarter 1864, St Columb, volume 5c, page 131. Death: Matilda Ann Nicholls Bennett, aged 48, June quarter 1912, Bodmin, volume 5c, page 89. Marriage index, probable: Charles Bennett and Annie Grigg, September quarter 1882, Stoke Damerel, volume 5b, page 573. Die elf Geburten in Bodmin mit der Mutter Grigg, 1883 bis 1902, und die drei Todesfälle von Säuglingen sind auf der Bennett-Seite aufgeführt."
   },
   {
    "id": "gro-cousins-gall",
    "title": "GRO birth index, Cousins children, mother Gall",
    "type": "civil registration index",
    "repository": "GRO online birth index, and FreeBMD.",
-   "note": "Mother's maiden name Gall (Galle for Amelia Annie in 1877) for all eight children, 1871 to 1886. Rosina Maud, December quarter 1881, St Olave Southwark, volume 1d, page 292. Annie Cousins, probable death, September quarter 1900, West Ham, volume 4a, page 76, aged 53. William Cousins, probable death, December quarter 1922, West Ham, volume 4a, page 53, aged 71."
+   "note": "Mother's maiden name Gall (Galle for Amelia Annie in 1877) for all eight children, 1871 to 1886. Rosina Maud, December quarter 1881, St Olave Southwark, volume 1d, page 292. Annie Cousins, probable death, September quarter 1900, West Ham, volume 4a, page 76, aged 53. William Cousins, probable death, December quarter 1922, West Ham, volume 4a, page 53, aged 71.",
+   "note_de": "Mädchenname der Mutter Gall (Galle bei Amelia Annie 1877) für alle acht Kinder, 1871 bis 1886. Rosina Maud, December quarter 1881, St Olave Southwark, volume 1d, page 292. Annie Cousins, wahrscheinlicher Tod, September quarter 1900, West Ham, volume 4a, page 76, aged 53. William Cousins, wahrscheinlicher Tod, December quarter 1922, West Ham, volume 4a, page 53, aged 71."
   },
   {
    "id": "census-1921-may",
    "title": "1921 census and 1939 Register, May Florence Cousins",
    "type": "census",
    "repository": "1921 census, Ancestry collection 63150. 1939 Register.",
-   "note": "In 1921, single, aged 35 years and 1 month, born West Ham, ward maid at East Ham Isolation Hospital. Later at Ealing. In 1939, single, dining hall maid, at Colchester. Birth index: May Florence Cousins, mother's maiden name Gall, June quarter 1886, West Ham, volume 4a, page 167."
+   "note": "In 1921, single, aged 35 years and 1 month, born West Ham, ward maid at East Ham Isolation Hospital. Later at Ealing. In 1939, single, dining hall maid, at Colchester. Birth index: May Florence Cousins, mother's maiden name Gall, June quarter 1886, West Ham, volume 4a, page 167.",
+   "note_de": "1921 ledig, 35 Jahre und 1 Monat alt, geboren in West Ham, Stationsmädchen im East Ham Isolation Hospital. Später in Ealing. 1939 ledig, Speisesaalmädchen, in Colchester. Birth index: May Florence Cousins, mother's maiden name Gall, June quarter 1886, West Ham, volume 4a, page 167."
   },
   {
    "id": "parish-hackney-1850",
@@ -773,14 +837,16 @@
    "type": "parish register",
    "repository": "London, England, Church of England Births and Baptisms, Ancestry, record 2494246",
    "date": "1850-12-01",
-   "note": "Probably Rosina's father William. Baptised at St John, Hackney, son of William Cousins, a porter, and Elizabeth."
+   "note": "Probably Rosina's father William. Baptised at St John, Hackney, son of William Cousins, a porter, and Elizabeth.",
+   "note_de": "Wahrscheinlich Rosinas Vater William. Getauft in St John, Hackney, Sohn von William Cousins, einem Träger, und Elizabeth."
   },
   {
    "id": "census-1861-cousins",
    "title": "1861 England census, Mile End Old Town",
    "type": "census",
    "repository": "The National Archives RG9, piece 293, folio 180, page 18. Ancestry record 5902323.",
-   "note": "Probably the same family: William Cousins, a messenger, his wife Elizabeth, their son William, and his brothers and sisters, including Amelia, at Mile End Old Town."
+   "note": "Probably the same family: William Cousins, a messenger, his wife Elizabeth, their son William, and his brothers and sisters, including Amelia, at Mile End Old Town.",
+   "note_de": "Wahrscheinlich dieselbe Familie: William Cousins, ein Bote, seine Frau Elizabeth, ihr Sohn William und seine Geschwister, darunter Amelia, in Mile End Old Town."
   },
   {
    "id": "parish-birmingham-1827",
@@ -788,7 +854,8 @@
    "type": "parish register",
    "repository": "Library of Birmingham, Dro 34/43, entry 53. Image: Ancestry.com, from the original register.",
    "note": "John Fitzmaurice, of His Majesty's Tower of London, bachelor, and Eliza Taylor of this parish, spinster, married by licence on the third day of February 1827. Witnesses include John Taylor.",
-   "date": "1827-02-03"
+   "date": "1827-02-03",
+   "note_de": "John Fitzmaurice, vom His Majesty's Tower of London, Junggeselle, und Eliza Taylor aus dieser Pfarrei, ledig, heirateten mit Lizenz am dritten Tag des Februar 1827. Zu den Trauzeugen gehört John Taylor."
   },
   {
    "id": "parish-whitechapel-1827",
@@ -796,7 +863,8 @@
    "type": "parish register",
    "repository": "London Metropolitan Archives P93/MRY1/016. Image: Ancestry.com, from the original register.",
    "note": "William, son of John and Eliza Fitzmaurice, born 23 December 1827, baptised 25 December 1827. Father a clerk. Abode Mansell Street.",
-   "date": "1827-12-25"
+   "date": "1827-12-25",
+   "note_de": "William, Sohn von John und Eliza Fitzmaurice, geboren am 23. Dezember 1827, getauft am 25. Dezember 1827. Der Vater war Schreiber. Wohnsitz Mansell Street."
   },
   {
    "id": "parish-stepney-1829",
@@ -804,7 +872,8 @@
    "type": "parish register",
    "repository": "London Metropolitan Archives P93/DUN/015, page 226, entry 1006. Image: Ancestry.com, from the original register.",
    "note": "John Richard, son of John and Eliza Fitzmaurice of Mile End Old Town. Father a clerk in the Ordnance Office. The date is the baptism.",
-   "date": "1829-11-04"
+   "date": "1829-11-04",
+   "note_de": "John Richard, Sohn von John und Eliza Fitzmaurice aus Mile End Old Town. Der Vater war Schreiber im Ordnance Office. Das Datum ist die Taufe."
   },
   {
    "id": "parish-clapham-1859",
@@ -812,7 +881,8 @@
    "type": "parish register",
    "repository": "London Metropolitan Archives P95/JNE1/057, page 165, entry 330. Image: Ancestry.com, from the original register.",
    "note": "Emma Frances, daughter of Robert Thomas Fitz Maurice, gentleman, married Samuel Dixon, merchant. Robert Thomas had been a clerk in the Ordnance Office. This does not prove the parents of John FitzMaurice.",
-   "date": "1859-10-13"
+   "date": "1859-10-13",
+   "note_de": "Emma Frances, Tochter von Robert Thomas Fitz Maurice, Gentleman, heiratete Samuel Dixon, Kaufmann. Robert Thomas war Schreiber im Ordnance Office gewesen. Damit sind die Eltern von John FitzMaurice nicht bewiesen."
   },
   {
    "id": "parish-wardend-1873",
@@ -820,7 +890,8 @@
    "type": "parish register",
    "repository": "Library of Birmingham, Ep 87/2/2/1, entry 339. Image: Ancestry.com, from the original register.",
    "note": "Edward Dixon, son of William and Fanny Mary Fitzmaurice of Ward End. Born 21 October 1872. Father a surveyor and contractor.",
-   "date": "1873-06-19"
+   "date": "1873-06-19",
+   "note_de": "Edward Dixon, Sohn von William und Fanny Mary Fitzmaurice aus Ward End. Geboren am 21. Oktober 1872. Der Vater war Vermesser und Unternehmer."
   },
   {
    "id": "fitzmaurice-family-carlow",
@@ -828,7 +899,8 @@
    "type": "secondary account",
    "repository": "fitzmaurice-family.com, read November 2026.",
    "note": "A published family history. It says John was born on 6 July 1803, son of John FitzMaurice of Kelvin Grove, Killeshin, County Carlow, and Henrietta Frances Cary. The London details in that account, Eliza Taylor, the three sons, and William's birth date, now agree with the parish registers. No record found so far states John's birthplace or his parents. Treated as likely but not proved. Not drawn as a parent on the tree.",
-   "date": "2026-11-23"
+   "date": "2026-11-23",
+   "note_de": "Eine veröffentlichte Familiengeschichte. Sie sagt, John sei am 6. Juli 1803 geboren, als Sohn von John FitzMaurice von Kelvin Grove, Killeshin, County Carlow, und Henrietta Frances Cary. Die Londoner Angaben in diesem Bericht, Eliza Taylor, die drei Söhne und Williams Geburtsdatum, stimmen nun mit den Kirchenregistern überein. Bisher ist kein Beleg gefunden worden, der Johns Geburtsort oder seine Eltern nennt. Als wahrscheinlich behandelt, aber nicht bewiesen. Im Stammbaum nicht als Elternteil eingezeichnet."
   },
   {
    "id": "family-testimony",
@@ -836,7 +908,8 @@
    "type": "family testimony",
    "repository": "Family papers, 2026.",
    "note": "Patricia Mary FitzMaurice was probably born in the Hammersmith district in early 1929. The family remembers Windsor, which is not the registered birthplace. Pat died in 2020 (family). Ronald Andrews was probably born in the summer of 1921 in the West Ham district and he died in 2010 (family). Pat and Ron are buried together in the churchyard of St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire (family). The family confirms Auntie Babs was Eileen Sybil FitzMaurice. No addresses.",
-   "date": "2026-11-23"
+   "date": "2026-11-23",
+   "note_de": "Patricia Mary FitzMaurice wurde wahrscheinlich Anfang 1929 im Bezirk Hammersmith geboren. Die Familie erinnert sich an Windsor, und das ist nicht der eingetragene Geburtsort. Pat starb 2020 (Familie). Ronald Andrews wurde wahrscheinlich im Sommer 1921 im Bezirk West Ham geboren, und er starb 2010 (Familie). Pat und Ron sind gemeinsam auf dem Kirchhof der St John the Baptist Parish Church, Waterloo Road, Crowthorne, Berkshire, begraben (Familie). Die Familie bestätigt, dass Auntie Babs Eileen Sybil FitzMaurice war. Keine Adressen."
   },
   {
    "id": "news-1936-simmons",
@@ -844,7 +917,8 @@
    "type": "newspaper",
    "repository": "Buckinghamshire Advertiser, 4 September 1936, via a clipping shared on Ancestry.com. The blue boxes on the clipping are search highlights, not part of the paper.",
    "date": "1936-09-04",
-   "note": "Leslie Hugh Simmons, secretary of the Corinth Hockey Club, married Miss Eileen Sybil Fitzmaurice at Staines. She is called the daughter of the late Mr Edward Dixon Fitzmaurice, formerly of Cape Town."
+   "note": "Leslie Hugh Simmons, secretary of the Corinth Hockey Club, married Miss Eileen Sybil Fitzmaurice at Staines. She is called the daughter of the late Mr Edward Dixon Fitzmaurice, formerly of Cape Town.",
+   "note_de": "Leslie Hugh Simmons, Sekretär des Corinth Hockey Club, heiratete Miss Eileen Sybil Fitzmaurice in Staines. Sie wird die Tochter des verstorbenen Mr Edward Dixon Fitzmaurice genannt, früher aus Kapstadt."
   },
   {
    "id": "passenger-1916-balmoral",
@@ -852,7 +926,8 @@
    "type": "passenger list",
    "repository": "The National Archives BT27/876. Image: Ancestry.com, UK and Ireland Outward Passenger Lists.",
    "date": "1916-03-29",
-   "note": "Mr E.D. Fitzmaurice, engineer, 43, London to South Africa, intending to live there."
+   "note": "Mr E.D. Fitzmaurice, engineer, 43, London to South Africa, intending to live there.",
+   "note_de": "Mr E.D. Fitzmaurice, Ingenieur, 43, von London nach Südafrika, mit der Absicht, dort zu leben."
   },
   {
    "id": "passenger-1916-llanstephan",
@@ -860,7 +935,8 @@
    "type": "passenger list",
    "repository": "The National Archives BT27. Image: Ancestry.com, UK and Ireland Outward Passenger Lists.",
    "date": "1916-08-16",
-   "note": "A FitzMaurice party with no first names: Mrs, 43; two boys of 15 and 12; a girl of 8. London to Cape Town. The ages fit Edith, Bob, Reg and Eileen."
+   "note": "A FitzMaurice party with no first names: Mrs, 43; two boys of 15 and 12; a girl of 8. London to Cape Town. The ages fit Edith, Bob, Reg and Eileen.",
+   "note_de": "Eine FitzMaurice-Reisegruppe ohne Vornamen: Mrs, 43; zwei Jungen von 15 und 12; ein Mädchen von 8. Von London nach Kapstadt. Die Altersangaben passen zu Edith, Bob, Reg und Eileen."
   },
   {
    "id": "passenger-1923-armadale",
@@ -868,7 +944,8 @@
    "type": "passenger list",
    "repository": "The National Archives BT26/752. Image: Ancestry.com, UK Incoming Passenger Lists.",
    "date": "1923-10-15",
-   "note": "Edward Fitzmaurice, 50, civil engineer, lands at Southampton from South Africa, bound for Whitstable. Proposed address 14 Waterloo Road, Whitstable."
+   "note": "Edward Fitzmaurice, 50, civil engineer, lands at Southampton from South Africa, bound for Whitstable. Proposed address 14 Waterloo Road, Whitstable.",
+   "note_de": "Edward Fitzmaurice, 50, Bauingenieur, geht in Southampton von Südafrika an Land, mit Ziel Whitstable. Vorgeschlagene Adresse 14 Waterloo Road, Whitstable."
   },
   {
    "id": "passenger-1923-arundel",
@@ -876,7 +953,8 @@
    "type": "passenger list",
    "repository": "The National Archives BT27. Image: Ancestry.com, UK and Ireland Outward Passenger Lists.",
    "date": "1923-12-21",
-   "note": "Mr E.D. Fitzmaurice, engineer, sails from Southampton for Cape Town."
+   "note": "Mr E.D. Fitzmaurice, engineer, sails from Southampton for Cape Town.",
+   "note_de": "Mr E.D. Fitzmaurice, Ingenieur, fährt von Southampton nach Kapstadt."
   },
   {
    "id": "passenger-1925-edith",
@@ -884,7 +962,8 @@
    "type": "passenger list",
    "repository": "The National Archives BT26. Image: Ancestry.com, UK Incoming Passenger Lists.",
    "date": "1925-11-24",
-   "note": "Edith came home from South Africa in November 1925 on the Saxon, from Durban to Southampton, aged 53 by her own account. Proposed address as the site reads it: 55 Seymour Street, Higher Tranmere, Birkenhead. Update, November 2026: the old note said no street was published; the Reg's brother and sisters page now publishes this address."
+   "note": "Edith came home from South Africa in November 1925 on the Saxon, from Durban to Southampton, aged 53 by her own account. Proposed address as the site reads it: 55 Seymour Street, Higher Tranmere, Birkenhead. Update, November 2026: the old note said no street was published; the Reg's brother and sisters page now publishes this address.",
+   "note_de": "Edith kam im November 1925 auf der Saxon aus Südafrika nach Hause, von Durban nach Southampton, 53 Jahre alt nach ihrer eigenen Angabe. Vorgeschlagene Adresse, wie die Website sie liest: 55 Seymour Street, Higher Tranmere, Birkenhead. Aktualisierung, November 2026: die alte Notiz sagte, es sei keine Straße veröffentlicht; die Seite zu Regs Bruder und Schwestern veröffentlicht diese Adresse jetzt."
   },
   {
    "id": "findagrave-214209661",
@@ -892,7 +971,8 @@
    "type": "gravestone transcription",
    "repository": "https://www.findagrave.com/memorial/214209661",
    "date": "1928-06-07",
-   "note": "Gives born 21 October 1872 and died 7 June 1928, Chingford Mount Cemetery. A member photograph of the stone is not republished. The death date is probable."
+   "note": "Gives born 21 October 1872 and died 7 June 1928, Chingford Mount Cemetery. A member photograph of the stone is not republished. The death date is probable.",
+   "note_de": "Gibt als Geburt den 21. Oktober 1872 und als Tod den 7. Juni 1928 an, Chingford Mount Cemetery. Ein Mitgliederfoto des Steins wird nicht erneut veröffentlicht. Das Todesdatum ist wahrscheinlich."
   },
   {
    "id": "ww1-andrews-file",
@@ -900,7 +980,8 @@
    "type": "military record",
    "repository": "The National Archives WO 363. Image: Ancestry.com, British Army WW1 service records.",
    "date": "1915-12-07",
-   "note": "18 pages. Attested 7 December 1915, mobilised 6 November 1916, K Company Army Service Corps, France 9 January 1917 to 6 November 1919, Crystal Palace 5 November 1919, Class Z reserve 3 December 1919. Ministry of Pensions request August 1920. No wound and no pension on the surviving pages. Next of kin Rosina at 23 Sutton Court Road, Plaistow."
+   "note": "18 pages. Attested 7 December 1915, mobilised 6 November 1916, K Company Army Service Corps, France 9 January 1917 to 6 November 1919, Crystal Palace 5 November 1919, Class Z reserve 3 December 1919. Ministry of Pensions request August 1920. No wound and no pension on the surviving pages. Next of kin Rosina at 23 Sutton Court Road, Plaistow.",
+   "note_de": "18 Seiten. Verpflichtet am 7. Dezember 1915, einberufen am 6. November 1916, K Company Army Service Corps, Frankreich vom 9. Januar 1917 bis 6. November 1919, Crystal Palace am 5. November 1919, Reserve der Klasse Z am 3. Dezember 1919. Anfrage des Ministry of Pensions im August 1920. Auf den erhaltenen Seiten keine Verwundung und keine Pension. Nächste Angehörige: Rosina in 23 Sutton Court Road, Plaistow."
   },
   {
    "id": "marriage-index-1863-andrews-field",
@@ -908,7 +989,8 @@
    "type": "civil registration",
    "repository": "GRO marriage index, October to December 1863, Luton, volume 3b, page 1000. Image: Ancestry.com.",
    "date": "1863",
-   "note": "The only two names on that page of the register."
+   "note": "The only two names on that page of the register.",
+   "note_de": "Die einzigen beiden Namen auf dieser Seite des Registers."
   },
   {
    "id": "census-1901-ham-farm",
@@ -916,7 +998,8 @@
    "type": "census",
    "repository": "TNA RG13 piece 1314 folio 26 page 16, schedule 103. Image: Ancestry.com.",
    "date": "1901",
-   "note": "Henry and Mary Stacey at Ham Farm, with sons Henry A, Arthur J and Herbert M, daughter Louisa and Arthur E Robinson, and George Hitch."
+   "note": "Henry and Mary Stacey at Ham Farm, with sons Henry A, Arthur J and Herbert M, daughter Louisa and Arthur E Robinson, and George Hitch.",
+   "note_de": "Henry und Mary Stacey in Ham Farm, mit den Söhnen Henry A, Arthur J und Herbert M, der Tochter Louisa und Arthur E Robinson sowie George Hitch."
   },
   {
    "id": "census-1891-high-cross",
@@ -924,7 +1007,8 @@
    "type": "census",
    "repository": "TNA RG12 piece 1117 folio 6 page 6, schedule 37. Image: Ancestry.com.",
    "date": "1891",
-   "note": "George and Alice Andrews with Albert, Rose and Lilie. Kemprow is the next house."
+   "note": "George and Alice Andrews with Albert, Rose and Lilie. Kemprow is the next house.",
+   "note_de": "George und Alice Andrews mit Albert, Rose und Lilie. Kemprow ist das nächste Haus."
   },
   {
    "id": "census-1901-fanny-boldmere",
@@ -932,7 +1016,8 @@
    "type": "census",
    "repository": "TNA RG13 piece 2891 folio 53 page 23, schedule 155. Image: Ancestry.com.",
    "date": "1901",
-   "note": "Widow, living on her own means, with son Arthur P, granddaughter Mary K Hendrick, and two servants. Died later at The Nest, Chester Road, Erdington."
+   "note": "Widow, living on her own means, with son Arthur P, granddaughter Mary K Hendrick, and two servants. Died later at The Nest, Chester Road, Erdington.",
+   "note_de": "Witwe, von eigenen Mitteln lebend, mit dem Sohn Arthur P, der Enkelin Mary K Hendrick und zwei Dienstboten. Starb später in The Nest, Chester Road, Erdington."
   },
   {
    "id": "census-1911-caroline-spencer",
@@ -940,7 +1025,8 @@
    "type": "census",
    "repository": "TNA RG14 piece 2305, Wandsworth, Streatham, ED 20. Image: Ancestry.com.",
    "date": "1911",
-   "note": "Probably Edith's mother: widow, 67, born Islington, lodging house keeper, with niece May Cobon. The page does not name Edith."
+   "note": "Probably Edith's mother: widow, 67, born Islington, lodging house keeper, with niece May Cobon. The page does not name Edith.",
+   "note_de": "Wahrscheinlich Ediths Mutter: Witwe, 67, geboren in Islington, Inhaberin eines Logierhauses, mit der Nichte May Cobon. Die Seite nennt Edith nicht."
   },
   {
    "id": "passenger-1925-montrose-out",
@@ -948,7 +1034,8 @@
    "type": "passenger list",
    "repository": "The National Archives BT27. Image: Ancestry.com, UK and Ireland Outward Passenger Lists; image 224 of 482.",
    "date": "1925-02-07",
-   "note": "Baron Fitzmaurice, clerk, of 7 North Lane, Clapham Common, Liverpool to Saint John, New Brunswick. Age written 30, probably a slip for 20."
+   "note": "Baron Fitzmaurice, clerk, of 7 North Lane, Clapham Common, Liverpool to Saint John, New Brunswick. Age written 30, probably a slip for 20.",
+   "note_de": "Baron Fitzmaurice, Schreiber, von 7 North Lane, Clapham Common, von Liverpool nach Saint John, New Brunswick. Das Alter ist als 30 geschrieben, wahrscheinlich ein Versehen statt 20."
   },
   {
    "id": "passenger-1925-montrose-in",
@@ -956,7 +1043,8 @@
    "type": "passenger list",
    "repository": "Library and Archives Canada RG 76, roll T-14846. Image: Ancestry.com, Canada Incoming Passenger Lists 1865 to 1935; image 49 of 71.",
    "date": "1925-02-15",
-   "note": "Line 8: Baron Reg Fitzmaurice, 20, single, born London, clerk, intending to farm, going to the Y.M.C.A., St John. Nearest relative E. Fitzmaurice, 7 North Side, Clapham. E. Fitzmaurice is not identified."
+   "note": "Line 8: Baron Reg Fitzmaurice, 20, single, born London, clerk, intending to farm, going to the Y.M.C.A., St John. Nearest relative E. Fitzmaurice, 7 North Side, Clapham. E. Fitzmaurice is not identified.",
+   "note_de": "Zeile 8: Baron Reg Fitzmaurice, 20, ledig, geboren in London, Schreiber, mit der Absicht, Landwirtschaft zu betreiben, unterwegs zur Y.M.C.A., St John. Nächster Angehöriger E. Fitzmaurice, 7 North Side, Clapham. E. Fitzmaurice ist nicht identifiziert."
   },
   {
    "id": "passenger-1925-marburn",
@@ -964,7 +1052,8 @@
    "type": "passenger list",
    "repository": "The National Archives BT26. Image: Ancestry.com, UK and Ireland Incoming Passenger Lists; image 138 of 190.",
    "date": "1925-03-14",
-   "note": "Banon Reg. Fitzmaurice, 20, salesman, 7 North St., Clapham Common. Left Saint John on 6 March. Country of last residence written as ditto, meaning Canada, after about three weeks."
+   "note": "Banon Reg. Fitzmaurice, 20, salesman, 7 North St., Clapham Common. Left Saint John on 6 March. Country of last residence written as ditto, meaning Canada, after about three weeks.",
+   "note_de": "Banon Reg. Fitzmaurice, 20, Verkäufer, 7 North St., Clapham Common. Verließ Saint John am 6. März. Das Land des letzten Wohnsitzes ist als dito geschrieben, also Kanada, nach etwa drei Wochen."
   },
   {
    "id": "family-bob-south-africa",
@@ -972,7 +1061,8 @@
    "type": "family testimony",
    "repository": "Family papers, 2026.",
    "date": "2026-11-23",
-   "note": "The family believes Bob stayed in South Africa. The marriage in 1925, the 1926 baptism and the 1981 estate index now show that he did. Two undated Cape Supreme Court civil cases that he brought against a Raymond William Wilson are probably his too."
+   "note": "The family believes Bob stayed in South Africa. The marriage in 1925, the 1926 baptism and the 1981 estate index now show that he did. Two undated Cape Supreme Court civil cases that he brought against a Raymond William Wilson are probably his too.",
+   "note_de": "Die Familie glaubt, dass Bob in Südafrika blieb. Die Heirat 1925, die Taufe 1926 und der Nachlassindex 1981 zeigen nun, dass er blieb. Zwei undatierte Zivilverfahren des Cape Supreme Court, die er gegen einen Raymond William Wilson anstrengte, sind wahrscheinlich ebenfalls von ihm."
   },
   {
    "id": "family-arthur-cousins-1912",
@@ -980,7 +1070,8 @@
    "type": "family testimony",
    "repository": "Family papers, 2026.",
    "date": "2026-11-23",
-   "note": "The family has it written down that Arthur Edward Cousins died in 1912, drowned in the Victoria Docks. No inquest report has been found yet."
+   "note": "The family has it written down that Arthur Edward Cousins died in 1912, drowned in the Victoria Docks. No inquest report has been found yet.",
+   "note_de": "Die Familie hat festgehalten, dass Arthur Edward Cousins 1912 starb, ertrunken in den Victoria Docks. Ein Bericht über die gerichtliche Untersuchung ist bisher nicht gefunden worden."
   },
   {
    "id": "freebmd-arthur-cousins-1912",
@@ -989,7 +1080,8 @@
    "repository": "FreeBMD, www.freebmd.org.uk. Search Deaths, Cousins, Arthur.",
    "date": "1912",
    "file": "images/records/1912-q1-arthur-e-cousins-death-index-west-ham-4a-136-freebmd.jpg",
-   "note": "Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March quarter 1912. The age fits Arthur Edward, baptised in 1872. Probably him."
+   "note": "Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March quarter 1912. The age fits Arthur Edward, baptised in 1872. Probably him.",
+   "note_de": "Arthur E Cousins, aged 40, West Ham, volume 4a, page 136, January to March quarter 1912. Das Alter passt zu Arthur Edward, getauft 1872. Wahrscheinlich er."
   },
   {
    "id": "census-1861-elm-terrace",
@@ -998,7 +1090,8 @@
    "repository": "The National Archives RG9 piece 371 folio 2, ED 04, schedule 36. Image: Ancestry.com, 1861 England Census.",
    "date": "1861-04-07",
    "file": "images/records/1861-turner-falcke-household-battersea-elm-terrace.jpg",
-   "note": "The Turner and Falcke household at 2 Elm Terrace, Wandsworth Road. Published on the Falcke page. Added here so the address directory can cite the census rather than the 1861 marriage."
+   "note": "The Turner and Falcke household at 2 Elm Terrace, Wandsworth Road. Published on the Falcke page. Added here so the address directory can cite the census rather than the 1861 marriage.",
+   "note_de": "Der Haushalt Turner und Falcke in 2 Elm Terrace, Wandsworth Road. Veröffentlicht auf der Falcke-Seite. Hier ergänzt, damit das Adressverzeichnis die Volkszählung zitieren kann und nicht die Heirat von 1861."
   },
   {
    "id": "osm-nominatim-2026",
@@ -1006,7 +1099,8 @@
    "type": "map",
    "repository": "OpenStreetMap, nominatim.openstreetmap.org",
    "date": "2026-11-23",
-   "note": "Used only to place a historic address or a named building on the modern map. Not a source for any family fact."
+   "note": "Used only to place a historic address or a named building on the modern map. Not a source for any family fact.",
+   "note_de": "Nur verwendet, um eine historische Adresse oder ein benanntes Gebäude auf die heutige Karte zu setzen. Keine Quelle für eine Familienangabe."
   },
   {
    "id": "parish-chelsea-falcke-baptisms",
@@ -1014,7 +1108,8 @@
    "type": "parish register",
    "repository": "London Church of England Births and Baptisms, St Luke Chelsea. Image: Ancestry.com.",
    "date": "1818-11-01",
-   "note": "Eliza Caroline (1818) and Henrietta and Jane (1822), children of Wilhelm Gottlob and Elizabeth Falcke of Queen Street, potter. Published on the Falcke page."
+   "note": "Eliza Caroline (1818) and Henrietta and Jane (1822), children of Wilhelm Gottlob and Elizabeth Falcke of Queen Street, potter. Published on the Falcke page.",
+   "note_de": "Eliza Caroline (1818) sowie Henrietta und Jane (1822), Kinder von Wilhelm Gottlob und Elizabeth Falcke aus Queen Street, Töpfer. Veröffentlicht auf der Falcke-Seite."
   },
   {
    "id": "st-john-crowthorne-churchyard",
@@ -1022,7 +1117,8 @@
    "type": "church",
    "repository": "St John the Baptist Parish Church, Crowthorne. https://stjohnscrowthorne.co.uk/the-churchyard/",
    "date": "2026-11-23",
-   "note": "The parish churchyard is at Waterloo Road, Crowthorne, Berkshire. The family states that Ronald and Patricia Andrews are buried there together. The burial itself is family testimony."
+   "note": "The parish churchyard is at Waterloo Road, Crowthorne, Berkshire. The family states that Ronald and Patricia Andrews are buried there together. The burial itself is family testimony.",
+   "note_de": "Der Kirchhof der Pfarrkirche liegt in Waterloo Road, Crowthorne, Berkshire. Die Familie gibt an, dass Ronald und Patricia Andrews dort gemeinsam begraben sind. Die Beerdigung selbst ist eine Familienaussage."
   },
   {
    "id": "loc-nhle",
@@ -1030,7 +1126,8 @@
    "type": "map",
    "repository": "Historic England, historicengland.org.uk/listing/the-list",
    "date": "2026-11-23",
-   "note": "Used only to locate churches and to say whether a listed building still stands: St Andrew, Plaistow (1080967); St Margaret, Ward End (1220802); All Saints, Leavesden (1175616); St Augustine with St Philip, Stepney Way (1065066); Chelsea Old Church (1189649, grid TQ 27100 77596); St Peter, Wapping Lane (1065844, grid TQ 34865 80368); St Martin in the Bull Ring (1075690, grid SP 07352 86566). Not a source for any family fact."
+   "note": "Used only to locate churches and to say whether a listed building still stands: St Andrew, Plaistow (1080967); St Margaret, Ward End (1220802); All Saints, Leavesden (1175616); St Augustine with St Philip, Stepney Way (1065066); Chelsea Old Church (1189649, grid TQ 27100 77596); St Peter, Wapping Lane (1065844, grid TQ 34865 80368); St Martin in the Bull Ring (1075690, grid SP 07352 86566). Not a source for any family fact.",
+   "note_de": "Nur verwendet, um Kirchen zu verorten und zu sagen, ob ein eingetragenes Gebäude noch steht: St Andrew, Plaistow (1080967); St Margaret, Ward End (1220802); All Saints, Leavesden (1175616); St Augustine with St Philip, Stepney Way (1065066); Chelsea Old Church (1189649, grid TQ 27100 77596); St Peter, Wapping Lane (1065844, grid TQ 34865 80368); St Martin in the Bull Ring (1075690, grid SP 07352 86566). Keine Quelle für eine Familienangabe."
   },
   {
    "id": "loc-survey-of-london-st-philip",
@@ -1039,7 +1136,8 @@
    "repository": "Survey of London (UCL)",
    "url": "https://surveyoflondon.org/map/feature/1063/detail/",
    "date": "2026-11-23",
-   "note": "The present church was built in 1888 to 1892 by Arthur Cawston on the site of the chapel of 1818 to 1821, and is now the Whitechapel Library. Used for the map's 'what stands today' note only."
+   "note": "The present church was built in 1888 to 1892 by Arthur Cawston on the site of the chapel of 1818 to 1821, and is now the Whitechapel Library. Used for the map's 'what stands today' note only.",
+   "note_de": "Die heutige Kirche wurde 1888 bis 1892 von Arthur Cawston auf dem Gelände der Kapelle von 1818 bis 1821 gebaut und ist heute die Whitechapel Library. Nur für die Kartennotiz 'was heute steht' verwendet."
   },
   {
    "id": "loc-wiki-st-andrew-plaistow",
@@ -1048,7 +1146,8 @@
    "repository": "Wikipedia",
    "url": "https://en.wikipedia.org/wiki/St_Andrew%27s_Church,_Plaistow",
    "date": "2026-11-23",
-   "note": "James Brooks's church of 1868 to 1870, damaged in the Blitz and repaired; no longer an Anglican church and now offices. Used for the map's 'what stands today' note only."
+   "note": "James Brooks's church of 1868 to 1870, damaged in the Blitz and repaired; no longer an Anglican church and now offices. Used for the map's 'what stands today' note only.",
+   "note_de": "Die Kirche von James Brooks aus den Jahren 1868 bis 1870, im Blitz beschädigt und repariert; keine anglikanische Kirche mehr und heute Büros. Nur für die Kartennotiz 'was heute steht' verwendet."
   },
   {
    "id": "loc-wiki-st-margaret-ward-end",
@@ -1057,7 +1156,8 @@
    "repository": "Wikipedia",
    "url": "https://en.wikipedia.org/wiki/St_Margaret%27s_Church,_Ward_End",
    "date": "2026-11-23",
-   "note": "The church of 1834 on a medieval site, closed in 2005 and restored as a community centre. Used for the map only."
+   "note": "The church of 1834 on a medieval site, closed in 2005 and restored as a community centre. Used for the map only.",
+   "note_de": "Die Kirche von 1834 auf einem mittelalterlichen Standort, 2005 geschlossen und als Gemeindezentrum hergerichtet. Nur für die Karte verwendet."
   },
   {
    "id": "loc-lost-hospitals-east-ham",
@@ -1066,7 +1166,8 @@
    "repository": "Lost Hospitals of London",
    "url": "https://ezitis.myzen.co.uk/easthamisolation.html",
    "date": "2026-11-23",
-   "note": "From 1902 at the end of Roman Road, south of The Greenway; permanent buildings 1907 to 1909; the site is now a primary and a secondary school. Used for the map only."
+   "note": "From 1902 at the end of Roman Road, south of The Greenway; permanent buildings 1907 to 1909; the site is now a primary and a secondary school. Used for the map only.",
+   "note_de": "Ab 1902 am Ende der Roman Road, südlich von The Greenway; feste Gebäude 1907 bis 1909; das Gelände ist heute eine Grundschule und eine weiterführende Schule. Nur für die Karte verwendet."
   },
   {
    "id": "loc-ukbmd-districts",
@@ -1075,7 +1176,8 @@
    "repository": "UKBMD, ukbmd.org.uk/reg",
    "url": "https://www.ukbmd.org.uk/reg/districts/essex%20south%20western.html",
    "date": "2026-11-23",
-   "note": "Which places each registration district covered, used to draw districts as approximate areas. Essex South Western (1935 to 1965) covered Cann Hall, Leyton, Walthamstow, Wanstead and Woodford."
+   "note": "Which places each registration district covered, used to draw districts as approximate areas. Essex South Western (1935 to 1965) covered Cann Hall, Leyton, Walthamstow, Wanstead and Woodford.",
+   "note_de": "Welche Orte jeder Registrierungsbezirk umfasste; verwendet, um Bezirke als ungefähre Flächen zu zeichnen. Essex South Western (1935 bis 1965) umfasste Cann Hall, Leyton, Walthamstow, Wanstead und Woodford."
   },
   {
    "id": "loc-canning-town-directories",
@@ -1084,7 +1186,8 @@
    "repository": "pubwiki.co.uk, Post Office and Kelly's directories for Canning Town",
    "url": "https://pubwiki.co.uk/CanningTown/CanningTown1902/CanningTown-VictoriaDockRoad.shtml",
    "date": "2026-11-23",
-   "note": "Both directories place Young Street off Victoria Dock Road between Nos. 242 and 243, just before Custom House station. Used to place Young Street on the map."
+   "note": "Both directories place Young Street off Victoria Dock Road between Nos. 242 and 243, just before Custom House station. Used to place Young Street on the map.",
+   "note_de": "Beide Verzeichnisse setzen Young Street von der Victoria Dock Road abgehend zwischen Nr. 242 und 243 an, kurz vor der Station Custom House. Verwendet, um Young Street auf die Karte zu setzen."
   },
   {
    "id": "loc-london-streets-1938",
@@ -1093,7 +1196,8 @@
    "repository": "maps.thehunthouse.com",
    "url": "https://www.maps.thehunthouse.com/Streets/1938R.htm",
    "date": "2026-11-23",
-   "note": "Lists Riles Road E13. Used only to confirm the street existed; where it ran has not been found."
+   "note": "Lists Riles Road E13. Used only to confirm the street existed; where it ran has not been found.",
+   "note_de": "Führt Riles Road E13 auf. Nur verwendet, um zu bestätigen, dass die Straße bestand; wo sie verlief, ist nicht gefunden worden."
   },
   {
    "id": "loc-hilfield-estate-1906",
@@ -1102,7 +1206,8 @@
    "repository": "Historic England Archive, SC00489",
    "url": "https://historicengland.org.uk/images-books/photos/volume/SC00489",
    "date": "2026-11-23",
-   "note": "Lists Ham Farm, Aldenham, among the estate's farms between Aldenham and Watford. Used to place Ham Farm approximately."
+   "note": "Lists Ham Farm, Aldenham, among the estate's farms between Aldenham and Watford. Used to place Ham Farm approximately.",
+   "note_de": "Führt Ham Farm, Aldenham, unter den Bauernhöfen des Guts zwischen Aldenham und Watford auf. Verwendet, um Ham Farm ungefähr zu setzen."
   },
   {
    "id": "loc-wiki-churches",
@@ -1110,7 +1215,8 @@
    "type": "web",
    "repository": "Wikipedia",
    "date": "2026-11-23",
-   "note": "Used for the map's 'what stands today' notes only: Chelsea Old Church (the old parish church of St Luke, bombed in 1941 and rebuilt), St Martin in the Bull Ring (rebuilt 1873 to 1875), St Mary Matfelon, Whitechapel (destroyed in 1940, now Altab Ali Park), The Crystal Palace (destroyed by fire in 1936), St Albans Cathedral, St Mary's Battersea, St John-at-Hackney, St Dunstan's Stepney, St Mary's Wanstead, St Matthew's Brixton, St Peter's London Docks and the Tower of London, all still standing."
+   "note": "Used for the map's 'what stands today' notes only: Chelsea Old Church (the old parish church of St Luke, bombed in 1941 and rebuilt), St Martin in the Bull Ring (rebuilt 1873 to 1875), St Mary Matfelon, Whitechapel (destroyed in 1940, now Altab Ali Park), The Crystal Palace (destroyed by fire in 1936), St Albans Cathedral, St Mary's Battersea, St John-at-Hackney, St Dunstan's Stepney, St Mary's Wanstead, St Matthew's Brixton, St Peter's London Docks and the Tower of London, all still standing.",
+   "note_de": "Nur für die Kartennotizen 'was heute steht' verwendet: Chelsea Old Church (die alte Pfarrkirche von St Luke, 1941 bombardiert und wieder aufgebaut), St Martin in the Bull Ring (1873 bis 1875 neu errichtet), St Mary Matfelon, Whitechapel (1940 zerstört, heute Altab Ali Park), The Crystal Palace (1936 durch Feuer zerstört), St Albans Cathedral, St Mary's Battersea, St John-at-Hackney, St Dunstan's Stepney, St Mary's Wanstead, St Matthew's Brixton, St Peter's London Docks und der Tower of London, alle noch stehend."
   },
   {
    "id": "parish-battersea-falcke-baptisms",
@@ -1118,7 +1224,8 @@
    "type": "parish register",
    "repository": "St Mary, Battersea. Image: Ancestry.com, London Church of England Births and Baptisms.",
    "date": "1820-08-08",
-   "note": "Henrietta (8 August 1820, entry 765), William Gottlob (17 September 1824, entry 1255), Emma (22 October 1826, entry 1517), Charlotte (28 September 1828, entry 1798), Elizabeth (4 July 1830, entry 2059), Frederick Henry (9 September 1832, entry 2380), Emily Catherine (9 November 1834, entry 318) and Mary Fanny (29 January 1837). Published with their images on the Falcke page; gathered here as one source for the map."
+   "note": "Henrietta (8 August 1820, entry 765), William Gottlob (17 September 1824, entry 1255), Emma (22 October 1826, entry 1517), Charlotte (28 September 1828, entry 1798), Elizabeth (4 July 1830, entry 2059), Frederick Henry (9 September 1832, entry 2380), Emily Catherine (9 November 1834, entry 318) and Mary Fanny (29 January 1837). Published with their images on the Falcke page; gathered here as one source for the map.",
+   "note_de": "Henrietta (8. August 1820, Eintrag 765), William Gottlob (17. September 1824, Eintrag 1255), Emma (22. Oktober 1826, Eintrag 1517), Charlotte (28. September 1828, Eintrag 1798), Elizabeth (4. Juli 1830, Eintrag 2059), Frederick Henry (9. September 1832, Eintrag 2380), Emily Catherine (9. November 1834, Eintrag 318) und Mary Fanny (29. Januar 1837). Mit ihren Bildern auf der Falcke-Seite veröffentlicht; hier als eine Quelle für die Karte zusammengefasst."
   },
   {
    "id": "parish-battersea-falcke-marriages",
@@ -1126,7 +1233,8 @@
    "type": "parish register",
    "repository": "St Mary, Battersea. Image: Ancestry.com, London Church of England Marriages and Banns 1754 to 1941.",
    "date": "1840-08-26",
-   "note": "Henrietta and Whitford Henry Nichols (26 August 1840, entry 137); Eliza Caroline and Samuel Knight (4 September 1845, entry 394); Charlotte and James Cooper (19 October 1850, entry 192); Jane and John Peacock Turner (2 October 1858), with R. W. Fitzmaurice and Fanny Mary Falcke among the witnesses. Published with their images on the Falcke page; gathered here as one source for the map."
+   "note": "Henrietta and Whitford Henry Nichols (26 August 1840, entry 137); Eliza Caroline and Samuel Knight (4 September 1845, entry 394); Charlotte and James Cooper (19 October 1850, entry 192); Jane and John Peacock Turner (2 October 1858), with R. W. Fitzmaurice and Fanny Mary Falcke among the witnesses. Published with their images on the Falcke page; gathered here as one source for the map.",
+   "note_de": "Henrietta und Whitford Henry Nichols (26. August 1840, Eintrag 137); Eliza Caroline und Samuel Knight (4. September 1845, Eintrag 394); Charlotte und James Cooper (19. Oktober 1850, Eintrag 192); Jane und John Peacock Turner (2. Oktober 1858), mit R. W. Fitzmaurice und Fanny Mary Falcke unter den Trauzeugen. Mit ihren Bildern auf der Falcke-Seite veröffentlicht; hier als eine Quelle für die Karte zusammengefasst."
   },
   {
    "id": "census-1861-marylebone-rwf",
@@ -1134,7 +1242,8 @@
    "type": "census",
    "repository": "The National Archives RG9. Image: Ancestry.com, 1861 England Census.",
    "date": "1861-04-07",
-   "note": "Robert W. Fitzmaurice, visitor, unmarried, 29, engineer and contractor, in a lodging house. Birthplace written as Norfolk. Published on the Falcke page."
+   "note": "Robert W. Fitzmaurice, visitor, unmarried, 29, engineer and contractor, in a lodging house. Birthplace written as Norfolk. Published on the Falcke page.",
+   "note_de": "Robert W. Fitzmaurice, Besucher, unverheiratet, 29, Ingenieur und Unternehmer, in einem Logierhaus. Der Geburtsort ist als Norfolk geschrieben. Veröffentlicht auf der Falcke-Seite."
   },
   {
    "id": "census-walter-aldenham",
@@ -1142,7 +1251,8 @@
    "type": "census",
    "repository": "The National Archives HO107 and RG9. Image: Ancestry.com.",
    "date": "1841-06-06",
-   "note": "1841, Letchmore Heath: Robert Walters, 32, agricultural labourer, and Mary with their children. 1851, High Cross: Robert Walter, 42, with Mary and the children. 1861, Letchmore Heath (schedule 67, indexed as Waller): Robert Walter, 52, carrier, with Mary, 53, and children. Published on the Andrews, Stacey and Walter page."
+   "note": "1841, Letchmore Heath: Robert Walters, 32, agricultural labourer, and Mary with their children. 1851, High Cross: Robert Walter, 42, with Mary and the children. 1861, Letchmore Heath (schedule 67, indexed as Waller): Robert Walter, 52, carrier, with Mary, 53, and children. Published on the Andrews, Stacey and Walter page.",
+   "note_de": "1841, Letchmore Heath: Robert Walters, 32, Landarbeiter, und Mary mit ihren Kindern. 1851, High Cross: Robert Walter, 42, mit Mary und den Kindern. 1861, Letchmore Heath (schedule 67, indexed as Waller): Robert Walter, 52, Fuhrmann, mit Mary, 53, und den Kindern. Veröffentlicht auf der Seite Andrews, Stacey und Walter."
   },
   {
    "id": "loc-map-build-2026",
@@ -1150,7 +1260,8 @@
    "type": "map",
    "repository": "This site, docs/map-audit.md",
    "date": "2026-11-23",
-   "note": "Where the directory had no point for a place, or a point on the wrong place, the map build placed it by hand at the named building, street or area from the place's published description, or drew a circle round the place the record names. Used only to put a place on the map, and not a source for any family fact. Each of these points is listed in docs/map-audit.md. Checked again on 24 November 2026: see Hand-placed points: checked."
+   "note": "Where the directory had no point for a place, or a point on the wrong place, the map build placed it by hand at the named building, street or area from the place's published description, or drew a circle round the place the record names. Used only to put a place on the map, and not a source for any family fact. Each of these points is listed in docs/map-audit.md. Checked again on 24 November 2026: see Hand-placed points: checked.",
+   "note_de": "Wo das Verzeichnis keinen Punkt für einen Ort hatte oder einen Punkt am falschen Ort, hat der Kartenaufbau ihn von Hand an das genannte Gebäude, an die Straße oder in das Gebiet aus der veröffentlichten Beschreibung des Ortes gesetzt oder einen Kreis um den Ort gezogen, den der Beleg nennt. Nur verwendet, um einen Ort auf die Karte zu setzen, und keine Quelle für eine Familienangabe. Jeder dieser Punkte ist in docs/map-audit.md aufgeführt. Am 24. November 2026 erneut geprüft: siehe Hand-placed points: checked."
   },
   {
    "id": "loc-osm-nominatim-2026-11-24",
@@ -1158,7 +1269,8 @@
    "type": "map",
    "repository": "OpenStreetMap, nominatim.openstreetmap.org",
    "date": "2026-11-24",
-   "note": "Used only to check, and where needed to move, the points the map build had placed by hand. Not a source for any family fact."
+   "note": "Used only to check, and where needed to move, the points the map build had placed by hand. Not a source for any family fact.",
+   "note_de": "Nur verwendet, um die Punkte zu prüfen und wo nötig zu verschieben, die der Kartenaufbau von Hand gesetzt hatte. Keine Quelle für eine Familienangabe."
   },
   {
    "id": "loc-wikipedia-coords-2026-11-24",
@@ -1166,7 +1278,8 @@
    "type": "map",
    "repository": "Wikipedia, en.wikipedia.org",
    "date": "2026-11-24",
-   "note": "Coordinates taken from the Wikipedia page summary for Pier Head, Liverpool, and for the Western Cape Division of the High Court (the Cape Supreme Court building on Keerom Street). Used only to check a point on the map. Not a source for any family fact."
+   "note": "Coordinates taken from the Wikipedia page summary for Pier Head, Liverpool, and for the Western Cape Division of the High Court (the Cape Supreme Court building on Keerom Street). Used only to check a point on the map. Not a source for any family fact.",
+   "note_de": "Koordinaten aus der Wikipedia-Seitenzusammenfassung für Pier Head, Liverpool, und für die Western Cape Division of the High Court (das Gebäude des Cape Supreme Court in der Keerom Street). Nur verwendet, um einen Punkt auf der Karte zu prüfen. Keine Quelle für eine Familienangabe."
   },
   {
    "id": "fs-marriage-1925-cape-town",
@@ -1174,7 +1287,8 @@
    "type": "parish register",
    "repository": "FamilySearch, South Africa, Civil Marriage Records, 1801 to 1974. Film 007732056, image 286 of 320.",
    "date": "1925-10-30",
-   "note": "Entry 89 of 1925, as read. Edward Robert Fitzmaurice, 24, born England, bachelor, tramway engineer, of Auleta, Three Anchor Bay, married Eileen Alice Yallop, 23, born South Africa, of 7 Bertram Road, Sea Point. Ledger claim C0650, status fact."
+   "note": "Entry 89 of 1925, as read. Edward Robert Fitzmaurice, 24, born England, bachelor, tramway engineer, of Auleta, Three Anchor Bay, married Eileen Alice Yallop, 23, born South Africa, of 7 Bertram Road, Sea Point. Ledger claim C0650, status fact.",
+   "note_de": "Eintrag 89 von 1925, wie gelesen. Edward Robert Fitzmaurice, 24, geboren in England, Junggeselle, Straßenbahningenieur, von Auleta, Three Anchor Bay, heiratete Eileen Alice Yallop, 23, geboren in Südafrika, von 7 Bertram Road, Sea Point. Ledger claim C0650, status fact."
   },
   {
    "id": "fs-death-1981-edward-robert",
@@ -1182,7 +1296,8 @@
    "type": "death index",
    "repository": "FamilySearch, South Africa, Western Cape, Deceased Estate Files, 1951 to 2011. Image restricted.",
    "date": "1981-05-07",
-   "note": "Edward Robert Fitzmaurice, born 1901 in London, died 7 May 1981 at Port Elizabeth. Father indexed as Edward Dickson Fitzmaurice and mother as Edith. Spouse Eileen Alice Yallop. Ledger claim C0651, status probable."
+   "note": "Edward Robert Fitzmaurice, born 1901 in London, died 7 May 1981 at Port Elizabeth. Father indexed as Edward Dickson Fitzmaurice and mother as Edith. Spouse Eileen Alice Yallop. Ledger claim C0651, status probable.",
+   "note_de": "Edward Robert Fitzmaurice, 1901 in London geboren, starb am 7. Mai 1981 in Port Elizabeth. Der Vater ist im Index als Edward Dickson Fitzmaurice geführt und die Mutter als Edith. Ehefrau Eileen Alice Yallop. Ledger claim C0651, status probable."
   },
   {
    "id": "fs-baptism-1926-edward-scott",
@@ -1190,7 +1305,8 @@
    "type": "parish register",
    "repository": "FamilySearch, South Africa, Church of the Province of South Africa, Parish Registers, 1801 to 2004. Film 005029474, image 390 of 400.",
    "date": "1926-07-25",
-   "note": "Entry 1565. Edward Scott, son of Edward Robert and Eileen Alice Fitzmaurice, baptised 25 July 1926. The register says he was born on 29 April 1926. Abode 17 Berkley Street, Gardens. The house number may be 14. Ledger claim C0652, status fact."
+   "note": "Entry 1565. Edward Scott, son of Edward Robert and Eileen Alice Fitzmaurice, baptised 25 July 1926. The register says he was born on 29 April 1926. Abode 17 Berkley Street, Gardens. The house number may be 14. Ledger claim C0652, status fact.",
+   "note_de": "Eintrag 1565. Edward Scott, Sohn von Edward Robert und Eileen Alice Fitzmaurice, getauft am 25. Juli 1926. Das Register sagt, er sei am 29. April 1926 geboren. Wohnsitz 17 Berkley Street, Gardens. Die Hausnummer könnte 14 sein. Ledger claim C0652, status fact."
   },
   {
    "id": "fs-death-1935-edward-scott",
@@ -1198,7 +1314,8 @@
    "type": "civil death register",
    "repository": "FamilySearch, South Africa, Cape Province, Civil Records, 1840 to 1972.",
    "date": "1935-08-09",
-   "note": "Edward Scott Fitzmaurice, aged 9, schoolboy, residence 1st Avenue, Bellville, died 9 August 1935 at Somerset Hospital, Cape Town. Parent Edward Robert Fitzmaurice. Ledger claim C0675, status fact."
+   "note": "Edward Scott Fitzmaurice, aged 9, schoolboy, residence 1st Avenue, Bellville, died 9 August 1935 at Somerset Hospital, Cape Town. Parent Edward Robert Fitzmaurice. Ledger claim C0675, status fact.",
+   "note_de": "Edward Scott Fitzmaurice, 9 Jahre alt, Schüler, Wohnsitz 1st Avenue, Bellville, starb am 9. August 1935 im Somerset Hospital, Kapstadt. Elternteil: Edward Robert Fitzmaurice. Ledger claim C0675, status fact."
   },
   {
    "id": "passenger-1923-bendigo",
@@ -1206,7 +1323,8 @@
    "type": "passenger list",
    "repository": "The National Archives BT26/745, item 80. Ancestry collection 1518, image 43 of 272.",
    "date": "1923-12-28",
-   "note": "Edith, 51, Baron, student, 19, and Eileen, 16, third class. Proposed address 140A Clapham Road, London S.W. The image reads Eileen. Ledger claim C0655, status probable."
+   "note": "Edith, 51, Baron, student, 19, and Eileen, 16, third class. Proposed address 140A Clapham Road, London S.W. The image reads Eileen. Ledger claim C0655, status probable.",
+   "note_de": "Edith, 51, Baron, Student, 19, und Eileen, 16, dritte Klasse. Vorgeschlagene Adresse 140A Clapham Road, London S.W. Auf dem Bild steht Eileen. Ledger claim C0655, status probable."
   },
   {
    "id": "probate-francis-bennett-1981",
@@ -1214,7 +1332,8 @@
    "type": "probate calendar",
    "repository": "England and Wales National Probate Calendar, 1858 to 1995. Ancestry collection 1904.",
    "date": "1981-10-01",
-   "note": "Francis William Bennett of 9A St Marks Avenue, Easton, Bristol, died 1 October 1981. Probate Winchester 26 October 1981. Effects 10,213 pounds. The death index gives William Francis Bennett, born 23 August 1895, which fits Lilian's brother Francis. Ledger claim C0665, status probable."
+   "note": "Francis William Bennett of 9A St Marks Avenue, Easton, Bristol, died 1 October 1981. Probate Winchester 26 October 1981. Effects 10,213 pounds. The death index gives William Francis Bennett, born 23 August 1895, which fits Lilian's brother Francis. Ledger claim C0665, status probable.",
+   "note_de": "Francis William Bennett von 9A St Marks Avenue, Easton, Bristol, starb am 1. Oktober 1981. Probate Winchester 26 October 1981. Effects 10,213 pounds. Der death index nennt William Francis Bennett, geboren am 23. August 1895, was zu Lilians Bruder Francis passt. Ledger claim C0665, status probable."
   },
   {
    "id": "probate-cecil-bennett-1971",
@@ -1222,7 +1341,8 @@
    "type": "probate calendar",
    "repository": "England and Wales National Probate Calendar, 1858 to 1995. Ancestry collection 1904.",
    "date": "1970-08-21",
-   "note": "Cecil Floyd Chester Bennett of 1 Leat Walk, Peverell, Plymouth (the calendar reads Leat Wk), died 21 August 1970. Probate Bristol 15 February 1971. Effects 1,891 pounds. Ledger claim C0669, status fact."
+   "note": "Cecil Floyd Chester Bennett of 1 Leat Walk, Peverell, Plymouth (the calendar reads Leat Wk), died 21 August 1970. Probate Bristol 15 February 1971. Effects 1,891 pounds. Ledger claim C0669, status fact.",
+   "note_de": "Cecil Floyd Chester Bennett von 1 Leat Walk, Peverell, Plymouth (der Kalender liest Leat Wk), starb am 21. August 1970. Probate Bristol 15 February 1971. Effects 1,891 pounds. Ledger claim C0669, status fact."
   },
   {
    "id": "electoral-may-ealing",
@@ -1230,7 +1350,8 @@
    "type": "electoral register",
    "repository": "Electoral registers, read for the claim ledger, claim C0457.",
    "date": "1933-01-01",
-   "note": "May Florence Cousins is listed at the Isolation Hospital, Ealing, from 1933 to 1939. The hospital building was not found as a named point on OpenStreetMap. Ledger claim C0457, status probable."
+   "note": "May Florence Cousins is listed at the Isolation Hospital, Ealing, from 1933 to 1939. The hospital building was not found as a named point on OpenStreetMap. Ledger claim C0457, status probable.",
+   "note_de": "May Florence Cousins ist von 1933 bis 1939 am Isolation Hospital, Ealing, aufgeführt. Das Krankenhausgebäude wurde auf OpenStreetMap nicht als benannter Punkt gefunden. Ledger claim C0457, status probable."
   },
   {
    "id": "marriage-1925-bob-yallop",
@@ -1239,7 +1360,8 @@
    "repository": "FamilySearch, South Africa, Civil Marriage Records, 1801 to 1974, film 007732056, image 286 of 320.",
    "date": "1925-10-30",
    "file": "images/records/1925-10-30-marriage-edward-robert-fitzmaurice-eileen-alice-yallop-st-georges-cathedral-cape-town.jpg",
-   "note": "Edward Robert Fitzmaurice, 24, tramway engineer, of Auleta, Three Anchor Bay, and Eileen Alice Yallop, 23, of 7 Bertram Road, Sea Point. By licence. Witness J. A. Cartwright."
+   "note": "Edward Robert Fitzmaurice, 24, tramway engineer, of Auleta, Three Anchor Bay, and Eileen Alice Yallop, 23, of 7 Bertram Road, Sea Point. By licence. Witness J. A. Cartwright.",
+   "note_de": "Edward Robert Fitzmaurice, 24, Straßenbahningenieur, von Auleta, Three Anchor Bay, und Eileen Alice Yallop, 23, von 7 Bertram Road, Sea Point. Mit Lizenz. Trauzeuge J. A. Cartwright."
   },
   {
    "id": "baptism-1926-edward-scott",
@@ -1248,7 +1370,8 @@
    "repository": "FamilySearch, South Africa, Church of the Province of South Africa, Parish Registers, film 005029474, image 390 of 400.",
    "date": "1926-07-25",
    "file": "images/records/1926-07-25-baptism-edward-scott-fitzmaurice-woodstock-entry-1565-row.jpg",
-   "note": "Entry 1565. Born 29 April 1926. Parents Edward Robert and Eileen Alice Fitzmaurice, of 17 Berkley Street, Gardens, Cape Town. The house number may be 14. Father a tramway engineer."
+   "note": "Entry 1565. Born 29 April 1926. Parents Edward Robert and Eileen Alice Fitzmaurice, of 17 Berkley Street, Gardens, Cape Town. The house number may be 14. Father a tramway engineer.",
+   "note_de": "Eintrag 1565. Geboren am 29. April 1926. Eltern Edward Robert und Eileen Alice Fitzmaurice, von 17 Berkley Street, Gardens, Kapstadt. Die Hausnummer könnte 14 sein. Der Vater war Straßenbahningenieur."
   },
   {
    "id": "estate-1981-bob",
@@ -1257,7 +1380,8 @@
    "repository": "FamilySearch, South Africa, Western Cape, Deceased Estate Files, 1951 to 2011. The image, DGS 100814366, image 83, is not open to view.",
    "date": "1981-05-07",
    "file": "images/records/1981-edward-robert-fitzmaurice-western-cape-deceased-estate-index.jpg",
-   "note": "Born 1901, London. Death registered 27 May 1981, Cape Town. A second entry gives the death as 7 May 1981, Port Elizabeth. Father Edward Dickson. Mother indexed as Adellia and as Edith. Wife Eileen Alice, indexed Tallop. Sons Laurence John and Serel Anthony, probably Derek Anthony."
+   "note": "Born 1901, London. Death registered 27 May 1981, Cape Town. A second entry gives the death as 7 May 1981, Port Elizabeth. Father Edward Dickson. Mother indexed as Adellia and as Edith. Wife Eileen Alice, indexed Tallop. Sons Laurence John and Serel Anthony, probably Derek Anthony.",
+   "note_de": "Geboren 1901, London. Der Tod wurde am 27. Mai 1981 in Kapstadt registriert. Ein zweiter Eintrag gibt den Tod mit dem 7. Mai 1981 in Port Elizabeth an. Vater Edward Dickson. Die Mutter ist im Index als Adellia und als Edith geführt. Ehefrau Eileen Alice, im Index Tallop. Söhne Laurence John und Serel Anthony, wahrscheinlich Derek Anthony."
   },
   {
    "id": "parish-lambeth-1833",
@@ -1267,7 +1391,8 @@
    "date": "1833-10-17",
    "url": "https://www.ancestry.com/imageviewer/collections/1623/images/31280_195092-00328",
    "file": "images/records/notebook/1833-marriage-robert-thomas-fitzmaurice-georgiana-elizabeth-evans-lambeth-entry106.jpg",
-   "note": "By licence, by Edward Miller, curate. Robert Thomas Fitzmaurice, of the Ordnance Office, Dublin, bachelor; Georgiana Elizabeth Evans, of this parish, spinster. Witnesses Samuel L Robinson (first name probable) and Sarah Emily Robinson. Read from the register image on 26 November 2026. The register does not name his parents."
+   "note": "By licence, by Edward Miller, curate. Robert Thomas Fitzmaurice, of the Ordnance Office, Dublin, bachelor; Georgiana Elizabeth Evans, of this parish, spinster. Witnesses Samuel L Robinson (first name probable) and Sarah Emily Robinson. Read from the register image on 26 November 2026. The register does not name his parents.",
+   "note_de": "Mit Lizenz, durch Edward Miller, Kurat. Robert Thomas Fitzmaurice, vom Ordnance Office, Dublin, Junggeselle; Georgiana Elizabeth Evans, aus dieser Pfarrei, ledig. Trauzeugen Samuel L Robinson (Vorname wahrscheinlich) und Sarah Emily Robinson. Am 26. November 2026 vom Registerbild gelesen. Das Register nennt seine Eltern nicht."
   },
   {
    "id": "census-1851-birmingham-st-thomas",
@@ -1277,7 +1402,8 @@
    "date": "1851-03-30",
    "url": "https://www.ancestry.com/imageviewer/collections/8860/images/WARHO107_2052_2052-0014",
    "file": "images/records/notebook/1851-john-r-and-robert-w-fitzmaurice-lodgers-4-william-street-birmingham.jpg",
-   "note": "Indexed as Fitzmansie. John R., lodger, unmarried, 21, surveyor, and Robert W., 19, surveyor, both born Middlesex, London, in the household of Sarah Hill, milliner. The house number was first read as 4; on the image it may be 44 or 74."
+   "note": "Indexed as Fitzmansie. John R., lodger, unmarried, 21, surveyor, and Robert W., 19, surveyor, both born Middlesex, London, in the household of Sarah Hill, milliner. The house number was first read as 4; on the image it may be 44 or 74.",
+   "note_de": "Im Index als Fitzmansie. John R., Untermieter, unverheiratet, 21, Vermesser, und Robert W., 19, Vermesser, beide geboren in Middlesex, London, im Haushalt von Sarah Hill, Putzmacherin. Die Hausnummer wurde zuerst als 4 gelesen; auf dem Bild könnte sie 44 oder 74 sein."
   },
   {
    "id": "census-1861-edgbaston-jrf",
@@ -1287,7 +1413,8 @@
    "date": "1861-04-07",
    "url": "https://www.ancestry.com/imageviewer/collections/8767/images/WORRG9_2120_2123-0790",
    "note": "John Rich'd Fitzmaurice, head, married, 33, occupation read as assistant land surveyor (the first word is uncertain), born Middlesex, London; Anne, wife, 34, born Guernsey. Read from the image on 26 November 2026.",
-   "file": "images/records/notebook/1861-john-richd-fitzmaurice-and-anne-edgbaston-schedule265.jpg"
+   "file": "images/records/notebook/1861-john-richd-fitzmaurice-and-anne-edgbaston-schedule265.jpg",
+   "note_de": "John Rich'd Fitzmaurice, Haushaltsvorstand, verheiratet, 33, der Beruf wird als assistant land surveyor gelesen (das erste Wort ist unsicher), geboren in Middlesex, London; Anne, Ehefrau, 34, geboren in Guernsey. Am 26. November 2026 vom Bild gelesen."
   },
   {
    "id": "census-1871-edgbaston-jrf",
@@ -1297,7 +1424,8 @@
    "date": "1871-04-02",
    "url": "https://www.ancestry.com/imageviewer/collections/7619/images/WARRG10_3081_3083-0119",
    "note": "John R. Fitzmaurice, head, married, 41, land and road surveyor, not in practice, agent to the Birmingham Gas Company (the occupation is hard to read), born Tower of London; Annie, wife, 43, born Guernsey; Annie, 4, born London, entered as niece (one reading gives daughter); Esther Hanson, servant. Read from the image on 26 November 2026.",
-   "file": "images/records/notebook/1871-john-r-fitzmaurice-household-367-pershore-road-edgbaston.jpg"
+   "file": "images/records/notebook/1871-john-r-fitzmaurice-household-367-pershore-road-edgbaston.jpg",
+   "note_de": "John R. Fitzmaurice, Haushaltsvorstand, verheiratet, 41, Beruf land and road surveyor, not in practice, agent to the Birmingham Gas Company (der Beruf ist schwer zu lesen), geboren im Tower of London; Annie, Ehefrau, 43, geboren in Guernsey; Annie, 4, geboren in London, eingetragen als Nichte (eine Lesung ergibt Tochter); Esther Hanson, Dienstbotin. Am 26. November 2026 vom Bild gelesen."
   },
   {
    "id": "census-1841-chiswick-lead",
@@ -1306,7 +1434,8 @@
    "repository": "The National Archives HO107, piece 689, book 2, folio 41, page 20, line 7. Ancestry, 1841 England Census, image 11 of 17.",
    "date": "1841-06-06",
    "file": "images/records/notebook/1841-john-fitzmaurice-clerk-chiswick-lead.jpg",
-   "note": "John Fitzmaurice, 35, clerk, born in the county; Mary Ann, 45; Eliza Wakeman, 11, servant. Possibly John the Ordnance clerk, but the wife's name and the birthplace do not fit. Low confidence."
+   "note": "John Fitzmaurice, 35, clerk, born in the county; Mary Ann, 45; Eliza Wakeman, 11, servant. Possibly John the Ordnance clerk, but the wife's name and the birthplace do not fit. Low confidence.",
+   "note_de": "John Fitzmaurice, 35, Schreiber, in der Grafschaft geboren; Mary Ann, 45; Eliza Wakeman, 11, Dienstbotin. Möglicherweise John, der Schreiber des Ordnance, aber der Name der Ehefrau und der Geburtsort passen nicht. Geringe Sicherheit."
   },
   {
    "id": "burial-st-martin-1844",
@@ -1315,7 +1444,8 @@
    "repository": "City of Westminster Archives Centre STM/PR/10/3, page 331. Ancestry, Westminster, London, England, Church of England Deaths and Burials, 1812 to 1910, image 330 of 434.",
    "date": "1844-08",
    "file": "images/records/notebook/1844-burial-john-fitzmaurice-infant-st-martin-ruled-out.jpg",
-   "note": "Abode the workhouse; an infant aged some weeks. This is the September quarter 1844 death in the index, and it is not John the Ordnance clerk."
+   "note": "Abode the workhouse; an infant aged some weeks. This is the September quarter 1844 death in the index, and it is not John the Ordnance clerk.",
+   "note_de": "Wohnsitz das Armenhaus; ein Säugling im Alter von einigen Wochen. Dies ist der Tod aus dem Septemberquartal 1844 im Index, und es ist nicht John, der Schreiber des Ordnance."
   },
   {
    "id": "freebmd-1840-st-martin-marriage",
@@ -1325,7 +1455,8 @@
    "date": "1840",
    "url": "https://www.freebmd.org.uk/cgi/search.pl",
    "file": "images/records/notebook/1840-q3-marriage-index-st-martin-1-152-whole-page-freebmd.jpg",
-   "note": "Women on the same page: Mary Clark, Selina Kempson, Mary Ann Simmons Sparks and Elizabeth Kirk Stubbington. Not yet shown to be John the Ordnance clerk. The register entry would give his father's name."
+   "note": "Women on the same page: Mary Clark, Selina Kempson, Mary Ann Simmons Sparks and Elizabeth Kirk Stubbington. Not yet shown to be John the Ordnance clerk. The register entry would give his father's name.",
+   "note_de": "Frauen auf derselben Seite: Mary Clark, Selina Kempson, Mary Ann Simmons Sparks und Elizabeth Kirk Stubbington. Noch nicht als John, der Schreiber des Ordnance, nachgewiesen. Der Registereintrag würde den Namen seines Vaters nennen."
   },
   {
    "id": "freebmd-fitzmaurice-deaths-1839-1865",
@@ -1333,14 +1464,16 @@
    "type": "civil registration index",
    "repository": "FreeBMD transcription of the GRO index, freebmd.org.uk, searched 25 and 26 November 2026.",
    "url": "https://www.freebmd.org.uk/cgi/search.pl",
-   "note": "Elizabeth Fitzmorris, March quarter 1839, Marylebone 1 173 and 1 178; Eliza Fitzmaurice, December quarter 1845, St Luke 2 208; John Fitzmaurice, December quarter 1865, Brentford 3a 51 and 3a 61. None is yet tied to the family."
+   "note": "Elizabeth Fitzmorris, March quarter 1839, Marylebone 1 173 and 1 178; Eliza Fitzmaurice, December quarter 1845, St Luke 2 208; John Fitzmaurice, December quarter 1865, Brentford 3a 51 and 3a 61. None is yet tied to the family.",
+   "note_de": "Elizabeth Fitzmorris, March quarter 1839, Marylebone 1 173 and 1 178; Eliza Fitzmaurice, December quarter 1845, St Luke 2 208; John Fitzmaurice, December quarter 1865, Brentford 3a 51 and 3a 61. Keiner ist bisher mit der Familie verbunden."
   },
   {
    "id": "ancestry-tree-cary-hint",
    "title": "Ancestry member tree hint: Robert Thomas FitzMaurice, born 2 June 1808, Carlow",
    "type": "online tree",
    "repository": "An Ancestry member tree, seen as a hint on 26 November 2026. No record images were seen with it.",
-   "note": "Gives Robert Thomas's parents as John FitzMaurice and Henrietta Frances Cary. A tree is a lead only."
+   "note": "Gives Robert Thomas's parents as John FitzMaurice and Henrietta Frances Cary. A tree is a lead only.",
+   "note_de": "Nennt John FitzMaurice und Henrietta Frances Cary als Eltern von Robert Thomas. Ein Stammbaum ist nur eine Spur."
   },
   {
    "id": "nli-fitzmaurice-papers",
@@ -1348,7 +1481,8 @@
    "type": "archive catalogue",
    "repository": "National Library of Ireland, FitzMaurice Papers, collection vtls000806808: MS 51,060, MS 42,647, MS 23,256 to 23,263, MS 23,341 to 23,342, MS 23,524 to 23,560, and MS 24,916 to 24,917 (40 boxes and 71 volumes). MS 23,549 is a diary of William FitzMaurice of Kelvin Grove, 1888 to 1913. University of Limerick, ArchivUL P43/1/1/5/1/3/2/26.",
    "url": "https://catalogue.nli.ie/Collection/vtls000806808",
-   "note": "Catalogue entries only. Not yet seen. MS 23,549 is too late to be a birth register for 1803; earlier family papers may still sit elsewhere in the collection. Ledger C0714, C0735."
+   "note": "Catalogue entries only. Not yet seen. MS 23,549 is too late to be a birth register for 1803; earlier family papers may still sit elsewhere in the collection. Ledger C0714, C0735.",
+   "note_de": "Nur Katalogeinträge. Noch nicht eingesehen. MS 23,549 ist zu spät, um ein Geburtsregister für 1803 zu sein; frühere Familienpapiere können noch an anderer Stelle in der Sammlung liegen. Ledger C0714, C0735."
   },
   {
    "id": "freebmd-bennett-ellison-1915-1945",
@@ -1356,7 +1490,8 @@
    "type": "civil registration index",
    "repository": "FreeBMD transcription of the GRO index, freebmd.org.uk, searched 26 November 2026.",
    "url": "https://www.freebmd.org.uk/cgi/search.pl",
-   "note": "The only southern entries are the Epsom, Brighton and Eastbourne children already on the research notes page. Other Bennett and Ellison births are in Lancashire, Cheshire, Hampstead and Yorkshire and are not connected."
+   "note": "The only southern entries are the Epsom, Brighton and Eastbourne children already on the research notes page. Other Bennett and Ellison births are in Lancashire, Cheshire, Hampstead and Yorkshire and are not connected.",
+   "note_de": "Die einzigen südlichen Einträge sind die Kinder aus Epsom, Brighton und Eastbourne, die schon auf der Seite mit den Forschungsnotizen stehen. Andere Geburten von Bennett und Ellison liegen in Lancashire, Cheshire, Hampstead und Yorkshire und haben keinen Zusammenhang."
   },
   {
    "id": "royal-kalendar-1827-ordnance",
@@ -1366,7 +1501,8 @@
    "date": "1827",
    "url": "https://archive.org/details/royal-kalendar-1827/page/217/mode/1up",
    "file": "images/records/notebook/1827-royal-kalendar-p217-ordnance-junior-clerks-john-and-robert-j-fitzmaurice.jpg",
-   "note": "Civil Branch, Ordnance Department. The heading 'Clerks under the Surveyor General' is in the left column. In the right column the Junior Clerks include John Fitzmaurice, after Hy. King and before Anty. Harvey, and, at the end of the same list, Robt. J. Fitzmaurice (the printed initial is J, not T). Ledger C0729, C0733."
+   "note": "Civil Branch, Ordnance Department. The heading 'Clerks under the Surveyor General' is in the left column. In the right column the Junior Clerks include John Fitzmaurice, after Hy. King and before Anty. Harvey, and, at the end of the same list, Robt. J. Fitzmaurice (the printed initial is J, not T). Ledger C0729, C0733.",
+   "note_de": "Civil Branch, Ordnance Department. Die Überschrift 'Clerks under the Surveyor General' steht in der linken Spalte. In der rechten Spalte stehen unter den Junior Clerks John Fitzmaurice, nach Hy. King und vor Anty. Harvey, und am Ende derselben Liste Robt. J. Fitzmaurice (die gedruckte Initiale ist J, nicht T). Ledger C0729, C0733."
   },
   {
    "id": "royal-kalendar-1828-1841-ordnance",
@@ -1374,7 +1510,8 @@
    "type": "printed official list",
    "repository": "The Royal Kalendar and Court and City Register, Internet Archive identifiers royal-kalendar-1828 and royal-kalendar-1830 to royal-kalendar-1841. Read from the full text (OCR) on 26 November 2026, except 1827, which was read from the page image.",
    "url": "https://archive.org/details/royal-kalendar-1841/page/212/mode/1up",
-   "note": "The same post is listed in 1828, 1830 to 1841 (1841 at printed page 212; 1832 at printed page 214). A 1829 English volume was not found, nor were the 1826 or earlier English volumes. Some years have poor OCR, but the neighbouring names match. Ledger C0730."
+   "note": "The same post is listed in 1828, 1830 to 1841 (1841 at printed page 212; 1832 at printed page 214). A 1829 English volume was not found, nor were the 1826 or earlier English volumes. Some years have poor OCR, but the neighbouring names match. Ledger C0730.",
+   "note_de": "Derselbe Posten ist 1828 und von 1830 bis 1841 aufgeführt (1841 auf der gedruckten Seite 212; 1832 auf der gedruckten Seite 214). Ein englischer Band von 1829 wurde nicht gefunden, auch nicht die englischen Bände von 1826 oder früher. Einige Jahre haben eine schlechte OCR, aber die benachbarten Namen stimmen überein. Ledger C0730."
   },
   {
    "id": "royal-kalendar-1842-1845-ordnance",
@@ -1382,7 +1519,8 @@
    "type": "printed official list",
    "repository": "The Royal Kalendar and Court and City Register, Internet Archive identifiers royal-kalendar-1842 to royal-kalendar-1845. Read from the full text (OCR) on 26 November 2026.",
    "url": "https://archive.org/details/royal-kalendar-1842/page/267/mode/1up",
-   "note": "The 1842 Ordnance Department section begins at printed page 267. Neighbouring names remain; John Fitzmaurice does not. The same is true of the 1843, 1844 and 1845 lists. Ledger C0732."
+   "note": "The 1842 Ordnance Department section begins at printed page 267. Neighbouring names remain; John Fitzmaurice does not. The same is true of the 1843, 1844 and 1845 lists. Ledger C0732.",
+   "note_de": "Der Abschnitt zum Ordnance Department von 1842 beginnt auf der gedruckten Seite 267. Die benachbarten Namen bleiben; John Fitzmaurice steht nicht mehr dabei. Dasselbe gilt für die Listen von 1843, 1844 und 1845. Ledger C0732."
   },
   {
    "id": "royal-kalendar-1841-ordnance-page",
@@ -1392,7 +1530,8 @@
    "date": "1841",
    "url": "https://archive.org/details/royal-kalendar-1841/page/212/mode/1up",
    "file": "images/records/notebook/1841-royal-kalendar-p212-ordnance-surveyor-general-john-fitzmaurice.jpg",
-   "note": "Civil Branch, Ordnance Department, left column. Under the heading 'Clerks under the Surveyor General', the Junior Clerks include John Fitzmaurice, after Hy. King and before Anty. Harvey. Robt. J. Fitzmaurice, who stood at the end of the same list in 1827, is not on this page. Ledger C0739."
+   "note": "Civil Branch, Ordnance Department, left column. Under the heading 'Clerks under the Surveyor General', the Junior Clerks include John Fitzmaurice, after Hy. King and before Anty. Harvey. Robt. J. Fitzmaurice, who stood at the end of the same list in 1827, is not on this page. Ledger C0739.",
+   "note_de": "Civil Branch, Ordnance Department, linke Spalte. Unter der Überschrift 'Clerks under the Surveyor General' steht unter den Junior Clerks John Fitzmaurice, nach Hy. King und vor Anty. Harvey. Robt. J. Fitzmaurice, der 1827 am Ende derselben Liste stand, steht auf dieser Seite nicht. Ledger C0739."
   },
   {
    "id": "freebmd-john-fitzmaurice-deaths-1840-1842",
@@ -1401,7 +1540,8 @@
    "repository": "FreeBMD transcription of the GRO death index, searched 26 November 2026.",
    "date": "1840-1842",
    "url": "https://www.freebmd.org.uk/cgi/search.pl",
-   "note": "No John Fitzmaurice death is indexed in 1841 or 1842 (C0740). In the December quarter of 1840 a John Fitzmaurice death was registered at Bloomsbury, volume 1, page 74, with no age in the index (C0741). The September quarter 1844 St Martin entry, 1 105, is already ruled out as an infant (C0709)."
+   "note": "No John Fitzmaurice death is indexed in 1841 or 1842 (C0740). In the December quarter of 1840 a John Fitzmaurice death was registered at Bloomsbury, volume 1, page 74, with no age in the index (C0741). The September quarter 1844 St Martin entry, 1 105, is already ruled out as an infant (C0709).",
+   "note_de": "Kein Tod eines John Fitzmaurice ist für 1841 oder 1842 indexiert (C0740). Im Dezemberquartal 1840 wurde ein Tod von John Fitzmaurice in Bloomsbury registriert, volume 1, page 74, ohne Alter im Index (C0741). Der Eintrag St Martin aus dem Septemberquartal 1844, 1 105, ist bereits als Säugling ausgeschlossen (C0709)."
   },
   {
    "id": "watsons-almanack-1830-dublin-ordnance",
@@ -1411,7 +1551,8 @@
    "date": "1830",
    "url": "https://archive.org/details/gentlemanscitize00wats_0/page/109/mode/1up",
    "file": "images/records/notebook/1830-watsons-almanack-p109-ordnance-civil-branch-dublin.jpg",
-   "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice (C0742). The lists cover clerks under the Store-keeper, the Clerk of Survey, the Clerk of Accounts, the Store Accountant, the Treasurer, the Clerk to the Respective Officers, and the Commanding Royal Engineer."
+   "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice (C0742). The lists cover clerks under the Store-keeper, the Clerk of Survey, the Clerk of Accounts, the Store Accountant, the Treasurer, the Clerk to the Respective Officers, and the Commanding Royal Engineer.",
+   "note_de": "Die Schreiberlisten der Civil Branch des Ordnance Office in Lower Castle Yard, Dublin, nennen keinen Fitzmaurice (C0742). Die Listen umfassen Schreiber unter dem Store-keeper, dem Clerk of Survey, dem Clerk of Accounts, dem Store Accountant, dem Treasurer, dem Clerk to the Respective Officers und dem Commanding Royal Engineer."
   },
   {
    "id": "watsons-almanack-1832-dublin-ordnance",
@@ -1421,7 +1562,8 @@
    "date": "1832",
    "url": "https://archive.org/details/gentlemanscitize00wats_1/page/110/mode/1up",
    "file": "images/records/notebook/1832-watsons-almanack-p110-ordnance-civil-branch-dublin.jpg",
-   "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice, and no Robt. J. or Robert Thomas (C0746). F. A. Jennings appears among the clerks under the Clerk to the Respective Officers. This is two years later than the 1830 lists (C0742), and still before the 17 October 1833 marriage (C0702)."
+   "note": "The Civil Branch clerk lists of the Ordnance Office at Lower Castle Yard, Dublin, name no Fitzmaurice, and no Robt. J. or Robert Thomas (C0746). F. A. Jennings appears among the clerks under the Clerk to the Respective Officers. This is two years later than the 1830 lists (C0742), and still before the 17 October 1833 marriage (C0702).",
+   "note_de": "Die Schreiberlisten der Civil Branch des Ordnance Office in Lower Castle Yard, Dublin, nennen keinen Fitzmaurice und keinen Robt. J. oder Robert Thomas (C0746). F. A. Jennings erscheint unter den Schreibern beim Clerk to the Respective Officers. Das ist zwei Jahre später als die Listen von 1830 (C0742) und noch vor der Heirat vom 17. Oktober 1833 (C0702)."
   },
   {
    "id": "sun-fire-1830-john-fitzmaurice-holmes-street",
@@ -1430,7 +1572,8 @@
    "repository": "The London Archives, Sun Fire Office policy registers, series CLC/B/192/F/001, MS 11936/524/1115343. Found through The National Archives Discovery catalogue, record c2fe7445-9505-441e-9c4a-41b7b58b7fba. The volume is not digitised.",
    "date": "1830-11-25",
    "url": "https://discovery.nationalarchives.gov.uk/details/r/c2fe7445-9505-441e-9c4a-41b7b58b7fba",
-   "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent. Identification with the Ordnance clerk is probable (C0747)."
+   "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent. Identification with the Ordnance clerk is probable (C0747).",
+   "note_de": "Nur Katalogtext. Die ursprüngliche Police ist nicht eingesehen worden. Versichert: John Fitzmaurice, 33 Holmes Street, Charles Street, Commercial Road, gent. Die Gleichsetzung mit dem Schreiber des Ordnance ist wahrscheinlich (C0747)."
   },
   {
    "id": "sun-fire-1834-john-fitzmaurice-old-mint",
@@ -1439,7 +1582,8 @@
    "repository": "The London Archives, Sun Fire Office policy registers, series CLC/B/192/F/001, MS 11936/536/1168890. Found through The National Archives Discovery catalogue, record 48737f0c-89c0-4f91-9544-1bbe8735a5c4. The volume is not digitised.",
    "date": "1834-01-21",
    "url": "https://discovery.nationalarchives.gov.uk/details/r/48737f0c-89c0-4f91-9544-1bbe8735a5c4",
-   "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent. Identification with the Ordnance clerk is probable (C0748)."
+   "note": "Catalogue text only. The original policy has not been seen. Insured: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent. Identification with the Ordnance clerk is probable (C0748).",
+   "note_de": "Nur Katalogtext. Die ursprüngliche Police ist nicht eingesehen worden. Versichert: John Fitzmaurice, 27 Old Mint, opposite the Irish Barracks, Tower Hill, gent. Die Gleichsetzung mit dem Schreiber des Ordnance ist wahrscheinlich (C0748)."
   },
   {
    "id": "parish-ascension-balham-hill-1904-reg",
@@ -1449,7 +1593,8 @@
    "date": "1904-08-21",
    "url": "https://www.ancestry.com/imageviewer/collections/1558/images/31280_199311-00215",
    "file": "images/records/notebook/1904-08-21-baptism-baron-reginald-fitzmaurice-ascension-balham-hill-entry604-full-page.jpg",
-   "note": "The full register opening, with entry 604 boxed. Baptised 21 August 1904: Baron Reginald, son of Edward Dixon and Edith Madeline Fitzmaurice, of 29 Cathles Road, father a civil engineer. No date of birth is written. The officiant is read as A. W. Hooper. Ledger C0754. With the 1911 census, this raises the father-son link from Edward Dixon to Reg to FACT (C0054)."
+   "note": "The full register opening, with entry 604 boxed. Baptised 21 August 1904: Baron Reginald, son of Edward Dixon and Edith Madeline Fitzmaurice, of 29 Cathles Road, father a civil engineer. No date of birth is written. The officiant is read as A. W. Hooper. Ledger C0754. With the 1911 census, this raises the father-son link from Edward Dixon to Reg to FACT (C0054).",
+   "note_de": "Die volle Registerseite, mit Eintrag 604 eingerahmt. Getauft am 21. August 1904: Baron Reginald, Sohn von Edward Dixon und Edith Madeline Fitzmaurice, von 29 Cathles Road, der Vater Bauingenieur. Ein Geburtsdatum ist nicht eingetragen. Der Amtierende wird als A. W. Hooper gelesen. Ledger C0754. Zusammen mit der Volkszählung von 1911 stuft dies die Vater-Sohn-Verbindung von Edward Dixon zu Reg auf FACT herauf (C0054)."
   },
   {
    "id": "parish-st-giles-1840-john-fitzmaurice-burial",
@@ -1459,7 +1604,8 @@
    "date": "1840-12-15",
    "url": "https://www.ancestry.com/imageviewer/collections/1559/images/32184_218910-00518",
    "file": "images/records/notebook/1840-12-15-burial-john-fitzmaurice-st-giles-in-the-fields-entry1098-full-page.jpg",
-   "note": "The full register opening, with entry 1098 boxed. John Fitzmaurice, buried 15 December 1840, aged one and a half, abode abbreviated Wk. Hs (almost certainly Workhouse, the same abbreviation used for several other burials on the page), officiant B. Pratt. This infant is almost certainly the December quarter 1840 Bloomsbury death, volume 1, page 74 (C0741), because St Giles in the Fields and St George Bloomsbury were in the same registration district. It is not the Ordnance clerk (P084). Ledger C0756, C0757, C0758."
+   "note": "The full register opening, with entry 1098 boxed. John Fitzmaurice, buried 15 December 1840, aged one and a half, abode abbreviated Wk. Hs (almost certainly Workhouse, the same abbreviation used for several other burials on the page), officiant B. Pratt. This infant is almost certainly the December quarter 1840 Bloomsbury death, volume 1, page 74 (C0741), because St Giles in the Fields and St George Bloomsbury were in the same registration district. It is not the Ordnance clerk (P084). Ledger C0756, C0757, C0758.",
+   "note_de": "Die volle Registerseite, mit Eintrag 1098 eingerahmt. John Fitzmaurice, begraben am 15. Dezember 1840, eineinhalb Jahre alt, Wohnsitz abgekürzt Wk. Hs (fast sicher Workhouse, dieselbe Abkürzung wie bei mehreren anderen Beerdigungen auf der Seite), Amtierender B. Pratt. Dieser Säugling ist fast sicher der Tod aus dem Dezemberquartal 1840 in Bloomsbury, volume 1, page 74 (C0741), weil St Giles in the Fields und St George Bloomsbury im selben Registrierungsbezirk lagen. Es ist nicht der Schreiber des Ordnance (P084). Ledger C0756, C0757, C0758."
   },
   {
    "id": "kelly-1879-birmingham-jones-fitzmaurice",
@@ -1469,7 +1615,8 @@
    "date": "1879",
    "url": "https://archive.org/details/bub_gb_dO8NAAAAQAAJ/page/n617/mode/1up",
    "file": "images/records/notebook/1879-kelly-birmingham-p592-stone-merchants-jones-and-fitzmaurice-full-page.jpg",
-   "note": "Four entries, each boxed on the full page. Page 150, Tindal Street, Ladywood, from 7 Morville Street to 5 St Vincent Street: \"Jones & Fitzmaurice, stone mers. &c\". Page 592, Stone merchants: \"Jones & Fitzmaurice, Tindal st. Ladywood\". Page 320, Commercial: \"Fitzmaurice Robt. Wm. stone mer. see Jones & Fitzmaurice\". Page 174, Erdington, private residents: \"Fitzmaurice Robert William, Norlands\". Ledger C0745 (now FACT for the entries), C0760 to C0762."
+   "note": "Four entries, each boxed on the full page. Page 150, Tindal Street, Ladywood, from 7 Morville Street to 5 St Vincent Street: \"Jones & Fitzmaurice, stone mers. &c\". Page 592, Stone merchants: \"Jones & Fitzmaurice, Tindal st. Ladywood\". Page 320, Commercial: \"Fitzmaurice Robt. Wm. stone mer. see Jones & Fitzmaurice\". Page 174, Erdington, private residents: \"Fitzmaurice Robert William, Norlands\". Ledger C0745 (now FACT for the entries), C0760 to C0762.",
+   "note_de": "Vier Einträge, jeder auf der ganzen Seite eingerahmt. Seite 150, Tindal Street, Ladywood, von 7 Morville Street bis 5 St Vincent Street: \"Jones & Fitzmaurice, stone mers. &c\". Seite 592, Stone merchants: \"Jones & Fitzmaurice, Tindal st. Ladywood\". Seite 320, Commercial: \"Fitzmaurice Robt. Wm. stone mer. see Jones & Fitzmaurice\". Seite 174, Erdington, private residents: \"Fitzmaurice Robert William, Norlands\". Ledger C0745 (jetzt FACT für die Einträge), C0760 bis C0762."
   },
   {
    "id": "mqp-cliffe-hill-history",
@@ -1477,7 +1624,8 @@
    "type": "published history",
    "repository": "MQP Ltd, company website, About, History. Read on 27 November 2026.",
    "url": "https://www.mqp.co.uk/en/about/history",
-   "note": "Time line: 1870s, quarrying begins by Mr Jones and Mr Fitzmaurice of Birmingham; 1881, Jones and Fitzmaurice stop working Cliffe; 1891, J.R. Fitzmaurice acquired the quarry from his father and reopens Cliffe Hill, with Mr P. Preston as manager; 1894, the Cliffe Hill Granite Company was formed; 1896, the Cliffe Hill Mineral Railway begun; 1935, the company bought the freehold of the quarry from the original founder J R Fitzmaurice; 1949, the original founder Mr J.R. Fitzmaurice passed away; 1965, acquired by Tarmac Roadstone; 1989, Old Cliffe Hill Quarry closed after 98 years; 1997, part of the Tarmac and Hanson joint venture MQP; 2005, production resumed at Old Cliffe Hill. A company history, not a contemporary record. Ledger C0763 to C0768."
+   "note": "Time line: 1870s, quarrying begins by Mr Jones and Mr Fitzmaurice of Birmingham; 1881, Jones and Fitzmaurice stop working Cliffe; 1891, J.R. Fitzmaurice acquired the quarry from his father and reopens Cliffe Hill, with Mr P. Preston as manager; 1894, the Cliffe Hill Granite Company was formed; 1896, the Cliffe Hill Mineral Railway begun; 1935, the company bought the freehold of the quarry from the original founder J R Fitzmaurice; 1949, the original founder Mr J.R. Fitzmaurice passed away; 1965, acquired by Tarmac Roadstone; 1989, Old Cliffe Hill Quarry closed after 98 years; 1997, part of the Tarmac and Hanson joint venture MQP; 2005, production resumed at Old Cliffe Hill. A company history, not a contemporary record. Ledger C0763 to C0768.",
+   "note_de": "Zeitlinie: 1870er Jahre, der Abbau beginnt durch Mr Jones und Mr Fitzmaurice aus Birmingham; 1881 stellen Jones und Fitzmaurice die Arbeit in Cliffe ein; 1891 erwarb J.R. Fitzmaurice den Steinbruch von seinem Vater und eröffnete Cliffe Hill wieder, mit Mr P. Preston als Betriebsleiter; 1894 wurde die Cliffe Hill Granite Company gegründet; 1896 wurde die Cliffe Hill Mineral Railway begonnen; 1935 kaufte das Unternehmen das Grundeigentum des Steinbruchs vom ursprünglichen Gründer J R Fitzmaurice; 1949 verstarb der ursprüngliche Gründer Mr J.R. Fitzmaurice; 1965 übernommen von Tarmac Roadstone; 1989 wurde Old Cliffe Hill Quarry nach 98 Jahren geschlossen; 1997 Teil des Gemeinschaftsunternehmens MQP von Tarmac und Hanson; 2005 wurde die Förderung in Old Cliffe Hill wieder aufgenommen. Eine Firmengeschichte, keine zeitgenössische Quelle. Ledger C0763 bis C0768."
   },
   {
    "id": "mcgrath-2007-charnwood-quarries",
@@ -1485,7 +1633,8 @@
    "type": "published history",
    "repository": "East Midlands Geological Society, Mercian Geologist. PDF read on 27 November 2026. The Cliffe Hill account cites M. H. Billington, Cliffe Hill Mineral Railway, Leicestershire (Turntable Enterprises, Leeds, 1974).",
    "url": "https://www.emgs.org.uk/uploads/1/4/9/1/149143154/mg16_4_2007_241_mcgrath_the_rock_quarries_of_charnwood_forest_1.pdf",
-   "note": "Page 253: Jones and Fitzmaurice, two businessmen from Birmingham, formed a partnership in the late 1870s to work the stone at Cliffe Hill for the small-scale production of setts and kerbs; the quarry closed after a few years and remained so for a decade, until Mr J. Rupert Fitzmaurice acquired the quarry from his father on 9 May 1891 (Billington, 1974); Peter Preston of the Enderby quarry was taken on as manager at 3 pounds a week; a licence to store and use explosives was obtained on 15 July 1891; the first load of stone was sold to a local farmer at 2s 6d a ton; on 1 November 1894 the Cliffe Hill Granite Company Ltd was formed; in 1896 a narrow gauge railway was built to the Leicester and Coalville line; the Bagnall locomotives were Cliffe, then Isabel and Rocket; the railway was used until 1947 to 1948. Page 254: the Rockside Company was set up in 1912 to sell the brown stone; the Fitzmaurice and Preston families jointly managed the company for 72 years, until Tarmac Quarry Products Ltd acquired it in 1965. Ledger C0763 to C0767."
+   "note": "Page 253: Jones and Fitzmaurice, two businessmen from Birmingham, formed a partnership in the late 1870s to work the stone at Cliffe Hill for the small-scale production of setts and kerbs; the quarry closed after a few years and remained so for a decade, until Mr J. Rupert Fitzmaurice acquired the quarry from his father on 9 May 1891 (Billington, 1974); Peter Preston of the Enderby quarry was taken on as manager at 3 pounds a week; a licence to store and use explosives was obtained on 15 July 1891; the first load of stone was sold to a local farmer at 2s 6d a ton; on 1 November 1894 the Cliffe Hill Granite Company Ltd was formed; in 1896 a narrow gauge railway was built to the Leicester and Coalville line; the Bagnall locomotives were Cliffe, then Isabel and Rocket; the railway was used until 1947 to 1948. Page 254: the Rockside Company was set up in 1912 to sell the brown stone; the Fitzmaurice and Preston families jointly managed the company for 72 years, until Tarmac Quarry Products Ltd acquired it in 1965. Ledger C0763 to C0767.",
+   "note_de": "Seite 253: Jones und Fitzmaurice, zwei Geschäftsleute aus Birmingham, gingen Ende der 1870er Jahre eine Partnerschaft ein, um den Stein in Cliffe Hill für die Herstellung von Pflastersteinen und Bordsteinen in kleinem Maßstab abzubauen; der Steinbruch schloss nach wenigen Jahren und blieb ein Jahrzehnt lang geschlossen, bis Mr J. Rupert Fitzmaurice den Steinbruch am 9. Mai 1891 von seinem Vater erwarb (Billington, 1974); Peter Preston vom Steinbruch in Enderby wurde für 3 pounds a week als Betriebsleiter eingestellt; am 15. Juli 1891 wurde eine Erlaubnis zur Lagerung und zum Gebrauch von Sprengstoff erlangt; die erste Ladung Stein wurde für 2s 6d a ton an einen örtlichen Bauern verkauft; am 1. November 1894 wurde die Cliffe Hill Granite Company Ltd gegründet; 1896 wurde eine Schmalspurbahn zur Strecke Leicester and Coalville gebaut; die Bagnall-Lokomotiven waren Cliffe, dann Isabel und Rocket; die Bahn war bis 1947-1948 in Gebrauch. Seite 254: die Rockside Company wurde 1912 gegründet, um den braunen Stein zu verkaufen; die Familien Fitzmaurice und Preston leiteten das Unternehmen 72 Jahre lang gemeinsam, bis Tarmac Quarry Products Ltd es 1965 übernahm. Ledger C0763 bis C0767."
   },
   {
    "id": "graces-guide-cliffe-hill-granite",
@@ -1493,7 +1642,8 @@
    "type": "reference work",
    "repository": "Grace's Guide, citing The Stock Exchange Year Book, 1908. Read on 27 November 2026.",
    "url": "https://www.gracesguide.co.uk/Cliffe_Hill_Granite_Co",
-   "note": "Of Cliffe Hill, Markfield, Leicestershire. 1894: the company was registered on 1 November. Ledger C0765."
+   "note": "Of Cliffe Hill, Markfield, Leicestershire. 1894: the company was registered on 1 November. Ledger C0765.",
+   "note_de": "Von Cliffe Hill, Markfield, Leicestershire. 1894: das Unternehmen wurde am 1. November eingetragen. Ledger C0765."
   },
   {
    "id": "her-mle21759-old-cliffe-hill-quarry",
@@ -1501,7 +1651,8 @@
    "type": "heritage record",
    "repository": "Leicestershire and Rutland HER, through Heritage Gateway (Historic England). National Grid Reference SK 47376 10609; latitude 52.691102, longitude -1.300504; parishes Markfield and Stanton-under-Bardon. Read through the search index on 27 November 2026 (a direct fetch timed out or was refused).",
    "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/25e5c862-668d-4de6-9373-fa165ada34ac/MLE21759",
-   "note": "Quarrying began here in the 1870s and continued until 1989; a tunnel between the Old and New quarries opened in 2003, and quarrying resumed in 2006. Summarises McGrath 2007, pages 253 to 254. Gives the map position used for the quarry pin. Ledger C0763, C0769."
+   "note": "Quarrying began here in the 1870s and continued until 1989; a tunnel between the Old and New quarries opened in 2003, and quarrying resumed in 2006. Summarises McGrath 2007, pages 253 to 254. Gives the map position used for the quarry pin. Ledger C0763, C0769.",
+   "note_de": "Der Abbau begann hier in den 1870er Jahren und dauerte bis 1989; ein Tunnel zwischen den Steinbrüchen Old und New wurde 2003 eröffnet, und der Abbau wurde 2006 wieder aufgenommen. Fasst McGrath 2007, Seiten 253 bis 254, zusammen. Gibt die Kartenposition an, die für die Steinbruchnadel verwendet wird. Ledger C0763, C0769."
   },
   {
    "id": "mqp-cliffe-hill-quarry-today",
@@ -1509,7 +1660,8 @@
    "type": "published history",
    "repository": "MQP Ltd, company website, Locations. Read on 27 November 2026.",
    "url": "https://www.mqp.co.uk/en/locations/cliffe-hill-quarry-and-asphalt-plant",
-   "note": "Cliffe Hill Quarry is the largest quarrying and asphalt operation within MQP, with two asphalt plants and a rail link. Old and New Cliffe Hill are linked by a 714 metre tunnel completed in 2003. The quarry produces up to 4.5 million tonnes of Markfieldite granite aggregate a year. Ledger C0768."
+   "note": "Cliffe Hill Quarry is the largest quarrying and asphalt operation within MQP, with two asphalt plants and a rail link. Old and New Cliffe Hill are linked by a 714 metre tunnel completed in 2003. The quarry produces up to 4.5 million tonnes of Markfieldite granite aggregate a year. Ledger C0768.",
+   "note_de": "Cliffe Hill Quarry ist der größte Steinbruch- und Asphaltbetrieb innerhalb von MQP, mit zwei Asphaltwerken und einem Bahnanschluss. Old und New Cliffe Hill sind durch einen 714 Meter langen Tunnel verbunden, der 2003 fertiggestellt wurde. Der Steinbruch fördert bis zu 4,5 Millionen Tonnen Markfieldite-Granit-Zuschlagstoff im Jahr. Ledger C0768."
   },
   {
    "id": "delcampe-cliffe-hill-granite-photos-2026",
@@ -1517,7 +1669,8 @@
    "type": "dealer listing",
    "repository": "Delcampe, seller cartespostales_de (Bartko and Reher GmbH and Co. KG, Berlin). Listings 2519731289 (four photographs by R. Jordan, Leicester), 2563308122 and 2563273214 (Fisher and Potter Ltd, Leicester). Seen on 27 November 2026; nothing bought.",
    "url": "https://www.delcampe.net/en_GB/collectables/photography/photographs/photographs-originals/places/4-photos-r-jordan-leicester-ansicht-leicester-lastwagen-morris-steinbruch-cliffe-hill-granite-co-ltd-lkw-2519731289.html",
-   "note": "The lorry lettering, read from the listing photographs, includes CLIFFE HILL GRANITE CO LTD and MARKFIELD LEICESTER. No family member is named or shown. The images belong to the seller and are linked, not copied. Ledger C0770."
+   "note": "The lorry lettering, read from the listing photographs, includes CLIFFE HILL GRANITE CO LTD and MARKFIELD LEICESTER. No family member is named or shown. The images belong to the seller and are linked, not copied. Ledger C0770.",
+   "note_de": "Die Beschriftung der Lastwagen, von den Angebotsfotos gelesen, enthält CLIFFE HILL GRANITE CO LTD und MARKFIELD LEICESTER. Kein Familienmitglied wird genannt oder gezeigt. Die Bilder gehören dem Verkäufer und sind verlinkt, nicht kopiert. Ledger C0770."
   },
   {
    "id": "commons-cliffe-hill-granite-quarry-photo",
@@ -1526,7 +1679,8 @@
    "repository": "Wikimedia Commons, public domain; unknown photographer; source given as a former eBay.de listing, item 234415379600. Downloaded 27 November 2026.",
    "url": "https://commons.wikimedia.org/wiki/File:Cliffe_Hill_Granite_Quarry.jpg",
    "file": "photos/quarry/cliffe-hill-granite-quarry-about-1940s-commons.jpg",
-   "note": "A view of the quarry, dated on Commons to about 1940 to 1948. The Commons file was retouched to remove later lettering. Context photograph; no family member is shown."
+   "note": "A view of the quarry, dated on Commons to about 1940 to 1948. The Commons file was retouched to remove later lettering. Context photograph; no family member is shown.",
+   "note_de": "Eine Ansicht des Steinbruchs, auf Commons auf etwa 1940 bis 1948 datiert. Die Commons-Datei wurde retuschiert, um spätere Beschriftung zu entfernen. Kontextfoto; kein Familienmitglied ist abgebildet."
   },
   {
    "id": "underground-map-exmouth-street",
@@ -1534,7 +1688,8 @@
    "type": "reference work",
    "repository": "The Underground Map, street history for Stepney. Read through the search index on 27 November 2026.",
    "url": "http://www.theundergroundmap.com/article.html?id=100780",
-   "note": "Holmes Street and Queen Street were renamed Exmouth Street in 1867. Exmouth Street was largely destroyed in the Second World War and replaced by residential blocks. Supports placing 33 Holmes Street, Commercial Road, in the Stepney streets just north of Commercial Road; the exact house cannot be placed today. The 1856 Mile End Old Town health report also lists Holmes Street. Ledger C0771."
+   "note": "Holmes Street and Queen Street were renamed Exmouth Street in 1867. Exmouth Street was largely destroyed in the Second World War and replaced by residential blocks. Supports placing 33 Holmes Street, Commercial Road, in the Stepney streets just north of Commercial Road; the exact house cannot be placed today. The 1856 Mile End Old Town health report also lists Holmes Street. Ledger C0771.",
+   "note_de": "Holmes Street und Queen Street wurden 1867 in Exmouth Street umbenannt. Exmouth Street wurde im Zweiten Weltkrieg weitgehend zerstört und durch Wohnblocks ersetzt. Das stützt die Einordnung von 33 Holmes Street, Commercial Road, in die Straßen von Stepney unmittelbar nördlich der Commercial Road; das genaue Haus lässt sich heute nicht verorten. Der Gesundheitsbericht von Mile End Old Town von 1856 führt Holmes Street ebenfalls auf. Ledger C0771."
   },
   {
    "id": "he-irish-barracks-tower",
@@ -1542,7 +1697,8 @@
    "type": "heritage record",
    "repository": "Historic England research records, through Heritage Gateway, citing Geoffrey Parnell, English Heritage book of the Tower of London. National Grid Reference TQ 33682 80510; latitude 51.507718, longitude -0.075145. Read through the search index on 27 November 2026.",
    "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/0d636742-8028-4a8c-8b7c-e1f9aaf2d338/24e55d64-a222-49e9-b315-610d4fc0c183",
-   "note": "The Irish Barracks stood in the Mint, inside the Tower of London, against the curtain wall between the Salt and Broad Arrow Towers; rebuilt 1752, extended 1804, demolished 1878. The Mint itself had left the Tower for Tower Hill in 1810 (Historic Royal Palaces). So 27 Old Mint, opposite the Irish Barracks, was probably a house in the old Mint area inside the Tower's outer ward. Ledger C0772."
+   "note": "The Irish Barracks stood in the Mint, inside the Tower of London, against the curtain wall between the Salt and Broad Arrow Towers; rebuilt 1752, extended 1804, demolished 1878. The Mint itself had left the Tower for Tower Hill in 1810 (Historic Royal Palaces). So 27 Old Mint, opposite the Irish Barracks, was probably a house in the old Mint area inside the Tower's outer ward. Ledger C0772.",
+   "note_de": "Die Irish Barracks standen in der Mint, innerhalb des Tower of London, an der Kurtinenmauer zwischen dem Salt Tower und dem Broad Arrow Tower; 1752 neu gebaut, 1804 erweitert, 1878 abgerissen. Die Mint selbst hatte den Tower 1810 nach Tower Hill verlassen (Historic Royal Palaces). 27 Old Mint, gegenüber den Irish Barracks, war daher wahrscheinlich ein Haus im Bereich der alten Mint innerhalb des äußeren Burghofs des Tower. Ledger C0772."
   },
   {
    "id": "gazette-1917-30390-jhf",
@@ -1551,7 +1707,8 @@
    "repository": "The Gazette (thegazette.co.uk). Heading on page 11989: \"The undermentioned cadets to be temp. 2nd Lts. 31 Oct. 1917\". Read from the page image, 27 November 2026.",
    "url": "https://www.thegazette.co.uk/London/issue/30390/supplement/11990",
    "date": "1917-11-20",
-   "note": "Infantry, \"Shrops. L.I.: John Herbert Fitzmaurice.\" Ledger C0784."
+   "note": "Infantry, \"Shrops. L.I.: John Herbert Fitzmaurice.\" Ledger C0784.",
+   "note_de": "Infanterie, \"Shrops. L.I.: John Herbert Fitzmaurice.\" Ledger C0784."
   },
   {
    "id": "gazette-1918-30513-jhf",
@@ -1560,7 +1717,8 @@
    "repository": "The Gazette (thegazette.co.uk). Heading on page 1792: \"The undermentioned temp. 2nd Lts. (attd.), unless otherwise stated, are transferred to Serv. Bns., with effect from date shown\". Read from the page image, 27 November 2026.",
    "url": "https://www.thegazette.co.uk/London/issue/30513/supplement/1794",
    "date": "1918-02-07",
-   "note": "\"Shrops. L.I. ... 31st Oct. 1917 ... J. H. FitzMaurice.\" Ledger C0785."
+   "note": "\"Shrops. L.I. ... 31st Oct. 1917 ... J. H. FitzMaurice.\" Ledger C0785.",
+   "note_de": "\"Shrops. L.I. ... 31st Oct. 1917 ... J. H. FitzMaurice.\" Ledger C0785."
   },
   {
    "id": "gazette-1937-markfield-estates",
@@ -1569,7 +1727,8 @@
    "repository": "The Gazette (thegazette.co.uk). Read from the page image, 27 November 2026.",
    "url": "https://www.thegazette.co.uk/London/issue/34450/page/6848",
    "date": "1937-11-02",
-   "note": "Members' voluntary winding up resolved 28 October 1937; liquidator Leslie Charlesworth Simpson, 3 St Martin's East, Leicester, chartered accountant; signed J. R. Fitzmaurice, Chairman. Ledger C0791."
+   "note": "Members' voluntary winding up resolved 28 October 1937; liquidator Leslie Charlesworth Simpson, 3 St Martin's East, Leicester, chartered accountant; signed J. R. Fitzmaurice, Chairman. Ledger C0791.",
+   "note_de": "Members' voluntary winding up, beschlossen am 28. Oktober 1937; Liquidator Leslie Charlesworth Simpson, 3 St Martin's East, Leicester, chartered accountant; unterzeichnet J. R. Fitzmaurice, Chairman. Ledger C0791."
   },
   {
    "id": "cwgc-jhf-1918",
@@ -1578,7 +1737,8 @@
    "repository": "CWGC death registers, copy on Fold3 (record 746425917, read through the family's Ancestry access, 27 November 2026); casualty number and panel from A Street Near You, which reproduces the CWGC entry. The CWGC website refused a direct fetch.",
    "url": "https://www.fold3.com/record/746425917/fitzmaurice-john-herbert-uk-wwi-wwii-commonwealth-war-graves-commission-death-registers",
    "date": "1918-03-25",
-   "note": "Second Lieutenant, 6th Battalion, King's Shropshire Light Infantry; died on active service 25 March 1918; Pozieres Memorial, panel 60; Victory and British War Medals and the memorial plaque. Ledger C0786."
+   "note": "Second Lieutenant, 6th Battalion, King's Shropshire Light Infantry; died on active service 25 March 1918; Pozieres Memorial, panel 60; Victory and British War Medals and the memorial plaque. Ledger C0786.",
+   "note_de": "Second Lieutenant, 6th Battalion, King's Shropshire Light Infantry; starb im aktiven Dienst am 25. März 1918; Pozieres Memorial, panel 60; Victory Medal, British War Medal und die Memorial Plaque. Ledger C0786."
   },
   {
    "id": "iwm-memorial-68733",
@@ -1586,7 +1746,8 @@
    "type": "memorial register",
    "repository": "Imperial War Museums, War Memorials Register, read 27 November 2026.",
    "url": "https://memorials.iwm.org.uk/memorial/68733",
-   "note": "Inscription: \"Also in loving memory of her only son 2nd Lieutenant John Herbert Fitzmaurice K.S.L.I., who was killed in the Great War near St Quentin, March 1918, aged 19 years.\" The stone is that of Isabel Fitzmaurice, died 1 August 1905, aged 35 (photograph on IWM Lives 2475555). Ledger C0778, C0789."
+   "note": "Inscription: \"Also in loving memory of her only son 2nd Lieutenant John Herbert Fitzmaurice K.S.L.I., who was killed in the Great War near St Quentin, March 1918, aged 19 years.\" The stone is that of Isabel Fitzmaurice, died 1 August 1905, aged 35 (photograph on IWM Lives 2475555). Ledger C0778, C0789.",
+   "note_de": "Inschrift: \"Also in loving memory of her only son 2nd Lieutenant John Herbert Fitzmaurice K.S.L.I., who was killed in the Great War near St Quentin, March 1918, aged 19 years.\" Der Stein ist der von Isabel Fitzmaurice, gestorben am 1. August 1905 im Alter von 35 Jahren (Foto auf IWM Lives 2475555). Ledger C0778, C0789."
   },
   {
    "id": "iwm-memorial-37741",
@@ -1594,7 +1755,8 @@
    "type": "memorial register",
    "repository": "Imperial War Museums, War Memorials Register, read 27 November 2026; names list via A Street Near You.",
    "url": "https://memorials.iwm.org.uk/memorial/37741",
-   "note": "Unveiled 7 May 1921; Second Lieutenant J H Fitzmaurice is among the First World War names. Ledger C0789."
+   "note": "Unveiled 7 May 1921; Second Lieutenant J H Fitzmaurice is among the First World War names. Ledger C0789.",
+   "note_de": "Enthüllt am 7. Mai 1921; Second Lieutenant J H Fitzmaurice steht unter den Namen des Ersten Weltkriegs. Ledger C0789."
   },
   {
    "id": "iwm-memorial-37773",
@@ -1602,7 +1764,8 @@
    "type": "memorial register",
    "repository": "Imperial War Museums, War Memorials Register (page read 27 November 2026); the name John Herbert Fitzmaurice (name ID 704913) from the Fold3 copy, record 756161411.",
    "url": "https://memorials.iwm.org.uk/memorial/37773",
-   "note": "A marble tablet to the men of Knighton and neighbourhood, 70 names. Ledger C0799."
+   "note": "A marble tablet to the men of Knighton and neighbourhood, 70 names. Ledger C0799.",
+   "note_de": "Eine Marmortafel für die Männer von Knighton und der Umgebung, 70 Namen. Ledger C0799."
   },
   {
    "id": "iwm-lives-2475555",
@@ -1610,7 +1773,8 @@
    "type": "memorial website",
    "repository": "Imperial War Museums, read 27 November 2026. Contributed photographs (portrait, family memorial) by Steve120914; reuse terms not stated, so they are linked, not copied.",
    "url": "https://livesofthefirstworldwar.iwm.org.uk/lifestory/2475555",
-   "note": "Second Lieutenant and Lieutenant, KSLI; died 25 March 1918; Pozieres Memorial. Fold3's copy of this page gives 24 March. Ledger C0787, C0790."
+   "note": "Second Lieutenant and Lieutenant, KSLI; died 25 March 1918; Pozieres Memorial. Fold3's copy of this page gives 24 March. Ledger C0787, C0790.",
+   "note_de": "Second Lieutenant und Lieutenant, KSLI; gestorben am 25. März 1918; Pozieres Memorial. Die Fold3-Kopie dieser Seite nennt den 24. März. Ledger C0787, C0790."
   },
   {
    "id": "oadby-remembers-jhf",
@@ -1618,7 +1782,8 @@
    "type": "local history website",
    "repository": "Oadby Remembers (oadbyremembers.org.uk), roll of honour. The page returned an error to a direct fetch on 27 November 2026; its text was read through a search index. Written with help from the Shrewsbury School archivist.",
    "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/",
-   "note": "Born Leicester 23 June 1898 to John Rupert Fitzmaurice and Isabel (nee Bennion); baptised St Mary, Weeford, 9 August 1898; sister Mary Isabel born 1899; 1901 Westcotes Drive, Leicester; mother died summer 1905 at Gorleston; father married Maria Adelaida Wood, 4 July 1907, Petersham; 1911 Cliveden, Manor Road, Oadby; Shrewsbury School 1912 to 1916; 2nd Lt KSLI, France 27 December 1917; missing 25 March 1918. A secondary source. Ledger C0776 to C0783."
+   "note": "Born Leicester 23 June 1898 to John Rupert Fitzmaurice and Isabel (nee Bennion); baptised St Mary, Weeford, 9 August 1898; sister Mary Isabel born 1899; 1901 Westcotes Drive, Leicester; mother died summer 1905 at Gorleston; father married Maria Adelaida Wood, 4 July 1907, Petersham; 1911 Cliveden, Manor Road, Oadby; Shrewsbury School 1912 to 1916; 2nd Lt KSLI, France 27 December 1917; missing 25 March 1918. A secondary source. Ledger C0776 to C0783.",
+   "note_de": "Geboren in Leicester am 23. Juni 1898 als Sohn von John Rupert Fitzmaurice und Isabel (nee Bennion); getauft in St Mary, Weeford, am 9. August 1898; Schwester Mary Isabel, geboren 1899; 1901 Westcotes Drive, Leicester; die Mutter starb im Sommer 1905 in Gorleston; der Vater heiratete Maria Adelaida Wood am 4. Juli 1907 in Petersham; 1911 Cliveden, Manor Road, Oadby; Shrewsbury School 1912 bis 1916; 2nd Lt KSLI, Frankreich am 27. Dezember 1917; vermisst am 25. März 1918. Eine sekundäre Quelle. Ledger C0776 bis C0783."
   },
   {
    "id": "freebmd-john-rupert-family-s51",
@@ -1626,7 +1791,8 @@
    "type": "civil registration index",
    "repository": "FreeBMD transcription of the GRO indexes, https://www.freebmd.org.uk/cgi/search.pl",
    "url": "https://www.freebmd.org.uk/cgi/search.pl",
-   "note": "Marriage John Rupert Fitzmaurice and Isabel Bennion, Mar quarter 1896, Lichfield 6b 565 (Wade also on the page); birth John Herbert Fitzmaurice, Sep quarter 1898, Leicester 7a 277; birth Mary Isabel Fitzmaurice, Dec quarter 1899, Leicester 7a 281; death Isabel Fitzmaurice, 35, Sep quarter 1905, Yarmouth 4b 20; marriage John Rupert Fitzmaurice, Sep quarter 1907, Richmond (Surrey) 2a 1057 (Brand and Wood on the page). Ledger C0775, C0777, C0778, C0780, C0781."
+   "note": "Marriage John Rupert Fitzmaurice and Isabel Bennion, Mar quarter 1896, Lichfield 6b 565 (Wade also on the page); birth John Herbert Fitzmaurice, Sep quarter 1898, Leicester 7a 277; birth Mary Isabel Fitzmaurice, Dec quarter 1899, Leicester 7a 281; death Isabel Fitzmaurice, 35, Sep quarter 1905, Yarmouth 4b 20; marriage John Rupert Fitzmaurice, Sep quarter 1907, Richmond (Surrey) 2a 1057 (Brand and Wood on the page). Ledger C0775, C0777, C0778, C0780, C0781.",
+   "note_de": "Marriage John Rupert Fitzmaurice and Isabel Bennion, Mar quarter 1896, Lichfield 6b 565 (Wade ebenfalls auf der Seite); birth John Herbert Fitzmaurice, Sep quarter 1898, Leicester 7a 277; birth Mary Isabel Fitzmaurice, Dec quarter 1899, Leicester 7a 281; death Isabel Fitzmaurice, 35, Sep quarter 1905, Yarmouth 4b 20; marriage John Rupert Fitzmaurice, Sep quarter 1907, Richmond (Surrey) 2a 1057 (Brand und Wood auf der Seite). Ledger C0775, C0777, C0778, C0780, C0781."
   },
   {
    "id": "tna-wo339-108430",
@@ -1634,7 +1800,8 @@
    "type": "archive catalogue",
    "repository": "The National Archives, Kew, Discovery catalogue, read 27 November 2026. The officer file is open but not digitised; the medal card is digitised.",
    "url": "https://discovery.nationalarchives.gov.uk/details/r/C1162251",
-   "note": "WO 339/108430, \"2/Lieutenant John Herbert FITZMAURICE The King's (Shropshire Light Infantry)\", 1914 to 1922. Medal card WO 372/7/79866 (https://discovery.nationalarchives.gov.uk/details/r/D3489541). Ledger C0788."
+   "note": "WO 339/108430, \"2/Lieutenant John Herbert FITZMAURICE The King's (Shropshire Light Infantry)\", 1914 to 1922. Medal card WO 372/7/79866 (https://discovery.nationalarchives.gov.uk/details/r/D3489541). Ledger C0788.",
+   "note_de": "WO 339/108430, \"2/Lieutenant John Herbert FITZMAURICE The King's (Shropshire Light Infantry)\", 1914 bis 1922. Medal card WO 372/7/79866 (https://discovery.nationalarchives.gov.uk/details/r/D3489541). Ledger C0788."
   },
   {
    "id": "rollr-cliffe-hill-records",
@@ -1642,7 +1809,8 @@
    "type": "archive catalogue",
    "repository": "Found through The National Archives Discovery catalogue, 27 November 2026.",
    "url": "https://discovery.nationalarchives.gov.uk/details/r/892ad8d0-1363-40ed-9901-75386990e561",
-   "note": "DG 9/357 (1896), letters between H. Humphreys of Woodhouse, agent to the Beaumanor estates, and J. R. Fitzmaurice, manager of Cliffe Hill Granite Co., about a proposed lease; DG 9/358 to 359, lease of 12 February 1897 from Sophia Perry Herrick for a light tramway on the north east side of Billa Barrow Lane, Markfield, 21 years at 45 pounds a year; DG 9/362, lease of 19 June 1911; DE4939/727/2 (1896), Ellistown Collieries and the light railway; company minutes, registers, letter books, plans and photograph albums 1890 to 1979, held privately (enquiries to the Record Office, N13796580). Ledger C0792."
+   "note": "DG 9/357 (1896), letters between H. Humphreys of Woodhouse, agent to the Beaumanor estates, and J. R. Fitzmaurice, manager of Cliffe Hill Granite Co., about a proposed lease; DG 9/358 to 359, lease of 12 February 1897 from Sophia Perry Herrick for a light tramway on the north east side of Billa Barrow Lane, Markfield, 21 years at 45 pounds a year; DG 9/362, lease of 19 June 1911; DE4939/727/2 (1896), Ellistown Collieries and the light railway; company minutes, registers, letter books, plans and photograph albums 1890 to 1979, held privately (enquiries to the Record Office, N13796580). Ledger C0792.",
+   "note_de": "DG 9/357 (1896), Briefe zwischen H. Humphreys aus Woodhouse, Agent der Güter von Beaumanor, und J. R. Fitzmaurice, Betriebsleiter der Cliffe Hill Granite Co., über einen vorgeschlagenen Pachtvertrag; DG 9/358 bis 359, Pacht vom 12. Februar 1897 von Sophia Perry Herrick für eine leichte Bahn auf der Nordostseite der Billa Barrow Lane, Markfield, 21 Jahre zu 45 pounds a year; DG 9/362, Pacht vom 19. Juni 1911; DE4939/727/2 (1896), Ellistown Collieries und die leichte Bahn; Unternehmensprotokolle, Register, Briefbücher, Pläne und Fotoalben 1890 bis 1979, in Privatbesitz (Anfragen an das Record Office, N13796580). Ledger C0792."
   },
   {
    "id": "amerton-isabel",
@@ -1650,7 +1818,8 @@
    "type": "heritage railway website",
    "repository": "Amerton Railway, read through a search index, 27 November 2026.",
    "url": "https://amertonrailway.co.uk/locomotives/steam/isabel/",
-   "note": "Delivered new on 9 February 1897 to the Cliffe Hill Granite Company; named after John Rupert Fitzmaurice's wife, Isabel. A secondary source."
+   "note": "Delivered new on 9 February 1897 to the Cliffe Hill Granite Company; named after John Rupert Fitzmaurice's wife, Isabel. A secondary source.",
+   "note_de": "Am 9. Februar 1897 neu an die Cliffe Hill Granite Company geliefert; benannt nach Isabel, der Ehefrau von John Rupert Fitzmaurice. Eine sekundäre Quelle."
   },
   {
    "id": "loc-osm-nominatim-2026-11-27",
@@ -1658,7 +1827,8 @@
    "type": "geocoding",
    "repository": "OpenStreetMap Nominatim; Ordnance Survey grid references from the IWM War Memorials Register converted to latitude and longitude.",
    "url": "https://nominatim.openstreetmap.org/",
-   "note": "Westcotes Drive, Leicester; Manor Road, Oadby; Sutton Coldfield Cemetery (IWM grid SP 12592 96515); Gorleston-on-Sea; St Mary, Weeford; Fisher Street, Canning Town; Saint-Quentin."
+   "note": "Westcotes Drive, Leicester; Manor Road, Oadby; Sutton Coldfield Cemetery (IWM grid SP 12592 96515); Gorleston-on-Sea; St Mary, Weeford; Fisher Street, Canning Town; Saint-Quentin.",
+   "note_de": "Westcotes Drive, Leicester; Manor Road, Oadby; Sutton Coldfield Cemetery (IWM grid SP 12592 96515); Gorleston-on-Sea; St Mary, Weeford; Fisher Street, Canning Town; Saint-Quentin."
   },
   {
    "id": "fold3-wo363-hg-andrews-p3",
@@ -1667,7 +1837,8 @@
    "repository": "Fold3 (fold3.com), original at The National Archives, WO 363. Read from the page image, 27 November 2026.",
    "url": "https://www.fold3.com/image/414348639/andrews-henry-george-page-3-uk-wwi-british-army-service-records-1914-1920",
    "date": "1915-12-07",
-   "note": "Descriptive report on enlistment: particulars as to marriage (Rosina Maud Cousins, St Andrews, Plaistow, 18/4/15) and children (Herbert William, 17/7/16, West Ham), both marked verified. Agrees with the Ancestry copy and FreeBMD (June quarter 1915, West Ham 4a 305). Ledger C0798."
+   "note": "Descriptive report on enlistment: particulars as to marriage (Rosina Maud Cousins, St Andrews, Plaistow, 18/4/15) and children (Herbert William, 17/7/16, West Ham), both marked verified. Agrees with the Ancestry copy and FreeBMD (June quarter 1915, West Ham 4a 305). Ledger C0798.",
+   "note_de": "Beschreibender Bericht bei der Einstellung: Angaben zur Ehe (Rosina Maud Cousins, St Andrews, Plaistow, 18/4/15) und zu den Kindern (Herbert William, 17/7/16, West Ham), beide als verified gekennzeichnet. Stimmt mit der Ancestry-Kopie und mit FreeBMD überein (June quarter 1915, West Ham 4a 305). Ledger C0798."
   }
  ]
 }

@@ -16,7 +16,11 @@
    "confidence": "confirmed",
    "image": "images/records/notebook/1841-royal-kalendar-p212-john-fitzmaurice-junior-clerk-zoom.jpg",
    "imageAlt": "1841 Royal Kalendar, printed page 212, Junior Clerks under the Surveyor General, with the name John Fitzmaurice boxed",
-   "changeNote": "The 1841 appearance had been read only from the scanned text. The page image confirms it."
+   "changeNote": "The 1841 appearance had been read only from the scanned text. The page image confirms it.",
+   "headline_de": "Der Royal Kalendar von 1841, gedruckte Seite 212, führt John Fitzmaurice als Junior Clerk unter dem Surveyor General auf, zwischen Hy. King und Anty. Harvey.",
+   "changeNote_de": "Die Nennung von 1841 war nur aus dem gescannten Text gelesen worden. Das Seitenbild bestätigt sie.",
+   "imageAlt_de": "Royal Kalendar von 1841, gedruckte Seite 212, Junior Clerks unter dem Surveyor General, mit dem Namen John Fitzmaurice eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "id": "freebmd-john-fitzmaurice-deaths-1841-1842-none",
@@ -32,7 +36,10 @@
     "url": "https://www.freebmd.org.uk/cgi/search.pl"
    },
    "confidence": "confirmed",
-   "changeNote": "Those are the years in which he left the Surveyor General clerk list, between the 1841 and 1842 Royal Kalendars."
+   "changeNote": "Those are the years in which he left the Surveyor General clerk list, between the 1841 and 1842 Royal Kalendars.",
+   "headline_de": "Der GRO-Sterbeindex auf FreeBMD verzeichnet keinen Tod eines John Fitzmaurice in den Jahren 1841 oder 1842.",
+   "changeNote_de": "Das sind die Jahre, in denen er von der Schreiberliste des Surveyor General verschwand, zwischen den Royal Kalendars von 1841 und 1842.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "id": "freebmd-john-fitzmaurice-death-bloomsbury-1840",
@@ -48,7 +55,10 @@
     "url": "https://www.freebmd.org.uk/cgi/search.pl"
    },
    "confidence": "unverified",
-   "changeNote": "This may be John the Ordnance clerk if the 1841 Kalendar was compiled before December 1840. It is not proved."
+   "changeNote": "This may be John the Ordnance clerk if the 1841 Kalendar was compiled before December 1840. It is not proved.",
+   "headline_de": "Ein Tod von John Fitzmaurice wurde im Dezemberquartal 1840 in Bloomsbury registriert, volume 1, page 74. Im Index steht kein Alter.",
+   "changeNote_de": "Das könnte John, der Schreiber des Ordnance, sein, wenn der Kalendar von 1841 vor Dezember 1840 zusammengestellt wurde. Bewiesen ist es nicht.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "id": "watsons-almanack-1830-dublin-ordnance-no-fitzmaurice",
@@ -63,7 +73,11 @@
    "confidence": "confirmed",
    "image": "images/records/notebook/1830-watsons-almanack-p109-ordnance-civil-branch-dublin.jpg",
    "imageAlt": "1830 Watson's Almanack, printed page 109, the heading Ordnance, Civil Branch, Office, Lower Castle Yard, boxed",
-   "changeNote": "Robert Thomas still married in 1833 as of the Ordnance Office, Dublin. He is not in this 1830 clerk list."
+   "changeNote": "Robert Thomas still married in 1833 as of the Ordnance Office, Dublin. He is not in this 1830 clerk list.",
+   "headline_de": "Die Schreiberlisten der Civil Branch des Dubliner Ordnance in Lower Castle Yard, gedruckte Seiten 109 und 110 von Watson's Almanack von 1830, nennen keinen Fitzmaurice.",
+   "changeNote_de": "Robert Thomas heiratete 1833 noch als vom Ordnance Office, Dublin. In dieser Schreiberliste von 1830 steht er nicht.",
+   "imageAlt_de": "Watson's Almanack von 1830, gedruckte Seite 109, die Überschrift Ordnance, Civil Branch, Office, Lower Castle Yard, eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "id": "watsons-almanack-1832-dublin-ordnance-no-fitzmaurice",
@@ -78,7 +92,11 @@
    "confidence": "confirmed",
    "image": "images/records/notebook/1832-watsons-almanack-p110-ordnance-civil-branch-dublin.jpg",
    "imageAlt": "1832 Watson's Almanack, printed page 110, the heading Ordnance, Civil Branch, Office, Lower Castle Yard, boxed",
-   "changeNote": "This is two years later than the 1830 lists already on the site, and still before Robert Thomas married in October 1833 as of the Ordnance Office, Dublin. F. A. Jennings is still on the list."
+   "changeNote": "This is two years later than the 1830 lists already on the site, and still before Robert Thomas married in October 1833 as of the Ordnance Office, Dublin. F. A. Jennings is still on the list.",
+   "headline_de": "Watson's Almanack von 1832, gedruckte Seite 110, führt die Schreiber der Civil Branch des Dubliner Ordnance in Lower Castle Yard auf und nennt keinen Fitzmaurice.",
+   "changeNote_de": "Das ist zwei Jahre später als die Listen von 1830, die schon auf der Website stehen, und noch vor der Heirat von Robert Thomas im Oktober 1833 als vom Ordnance Office, Dublin. F. A. Jennings steht noch auf der Liste.",
+   "imageAlt_de": "Watson's Almanack von 1832, gedruckte Seite 110, die Überschrift Ordnance, Civil Branch, Office, Lower Castle Yard, eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "id": "sun-fire-1830-john-fitzmaurice-holmes-street",
@@ -94,7 +112,10 @@
     "url": "https://discovery.nationalarchives.gov.uk/details/r/c2fe7445-9505-441e-9c4a-41b7b58b7fba"
    },
    "confidence": "unverified",
-   "changeNote": "The original policy book has not been seen. The address fits the Mile End and Whitechapel area where John's children were baptised. Identification with the Ordnance clerk is probable, not proved."
+   "changeNote": "The original policy book has not been seen. The address fits the Mile End and Whitechapel area where John's children were baptised. Identification with the Ordnance clerk is probable, not proved.",
+   "headline_de": "Ein Katalogeintrag der Sun Fire Office vom 25. November 1830 nennt John Fitzmaurice, Gentleman, von 33 Holmes Street, Charles Street, Commercial Road.",
+   "changeNote_de": "Das ursprüngliche Policenbuch ist nicht eingesehen worden. Die Adresse passt zum Gebiet von Mile End und Whitechapel, wo Johns Kinder getauft wurden. Die Gleichsetzung mit dem Schreiber des Ordnance ist wahrscheinlich, nicht bewiesen.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "id": "sun-fire-1834-john-fitzmaurice-old-mint",
@@ -110,7 +131,10 @@
     "url": "https://discovery.nationalarchives.gov.uk/details/r/48737f0c-89c0-4f91-9544-1bbe8735a5c4"
    },
    "confidence": "unverified",
-   "changeNote": "The original policy book has not been seen. Tower Hill stands next to the Board of Ordnance at the Tower, where John was a clerk. Identification with him is probable, not proved."
+   "changeNote": "The original policy book has not been seen. Tower Hill stands next to the Board of Ordnance at the Tower, where John was a clerk. Identification with him is probable, not proved.",
+   "headline_de": "Ein Katalogeintrag der Sun Fire Office vom 21. Januar 1834 nennt John Fitzmaurice, Gentleman, von 27 Old Mint, gegenüber den Irish Barracks, Tower Hill.",
+   "changeNote_de": "Das ursprüngliche Policenbuch ist nicht eingesehen worden. Tower Hill liegt neben dem Board of Ordnance am Tower, wo John Schreiber war. Die Gleichsetzung mit ihm ist wahrscheinlich, nicht bewiesen.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "id": "baptism-1904-baron-reginald-ascension-balham-hill",
@@ -130,7 +154,11 @@
    "confidence": "confirmed",
    "image": "images/records/notebook/1904-08-21-baptism-baron-reginald-fitzmaurice-ascension-balham-hill-entry604-full-page.jpg",
    "imageAlt": "Baptism register of the Ascension, Balham Hill, page 76, image 101 of 270, entry 604 Baron Reginald Fitzmaurice boxed",
-   "changeNote": "The father is described as a civil engineer. No date of birth is written. With the 1911 census, this raises the link from Edward Dixon to Reg from probable to fact."
+   "changeNote": "The father is described as a civil engineer. No date of birth is written. With the 1911 census, this raises the link from Edward Dixon to Reg from probable to fact.",
+   "headline_de": "Das Taufregister der Ascension, Balham Hill, von 1904 nennt Baron Reginald als Sohn von Edward Dixon und Edith Madeline Fitzmaurice, von 29 Cathles Road.",
+   "changeNote_de": "Der Vater wird als Bauingenieur bezeichnet. Ein Geburtsdatum ist nicht eingetragen. Zusammen mit der Volkszählung von 1911 stuft dies die Verbindung von Edward Dixon zu Reg von wahrscheinlich auf Tatsache herauf.",
+   "imageAlt_de": "Taufregister der Ascension, Balham Hill, Seite 76, Bild 101 von 270, Eintrag 604 Baron Reginald Fitzmaurice eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "id": "burial-1840-john-fitzmaurice-st-giles-infant",
@@ -148,7 +176,11 @@
    "confidence": "confirmed",
    "image": "images/records/notebook/1840-12-15-burial-john-fitzmaurice-st-giles-in-the-fields-entry1098-full-page.jpg",
    "imageAlt": "Burial register of St Giles in the Fields, page 138, image 358 of 365, entry 1098 John Fitzmaurice, aged one and a half, boxed",
-   "changeNote": "St Giles and St George Bloomsbury were in the same registration district, so this infant is almost certainly the December quarter 1840 Bloomsbury entry (C0741). The GRO certificate for that entry is now a weaker suggestion, because the age is already in the burial register."
+   "changeNote": "St Giles and St George Bloomsbury were in the same registration district, so this infant is almost certainly the December quarter 1840 Bloomsbury entry (C0741). The GRO certificate for that entry is now a weaker suggestion, because the age is already in the burial register.",
+   "headline_de": "Ein John Fitzmaurice, eineinhalb Jahre alt, wurde am 15. Dezember 1840 in St Giles in the Fields begraben; der Bloomsbury-Tod vom Dezember 1840 ist daher nicht der Schreiber des Ordnance.",
+   "changeNote_de": "St Giles und St George Bloomsbury lagen im selben Registrierungsbezirk, daher ist dieser Säugling fast sicher der Eintrag Bloomsbury aus dem Dezemberquartal 1840 (C0741). Die GRO-Urkunde zu diesem Eintrag ist nun ein schwächerer Vorschlag, weil das Alter schon im Beerdigungsregister steht.",
+   "imageAlt_de": "Beerdigungsregister von St Giles in the Fields, Seite 138, Bild 358 von 365, Eintrag 1098 John Fitzmaurice, eineinhalb Jahre alt, eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -169,7 +201,11 @@
    "confidence": "probable",
    "image": "images/records/notebook/1879-kelly-birmingham-p592-stone-merchants-jones-and-fitzmaurice.jpg",
    "imageAlt": "Kelly's 1879 Birmingham directory, page 592, Stone merchants, with Jones and Fitzmaurice, Tindal Street, Ladywood boxed",
-   "changeNote": "The entries had been read only from the scanned text (C0745). The page images confirm them; that this Robert William is our ancestor is probable."
+   "changeNote": "The entries had been read only from the scanned text (C0745). The page images confirm them; that this Robert William is our ancestor is probable.",
+   "headline_de": "Kellys Verzeichnis von Birmingham von 1879 führt Jones and Fitzmaurice, Steinhändler, von Tindal Street, Ladywood, auf, und Robert William Fitzmaurice als Steinhändler dieser Firma.",
+   "changeNote_de": "Die Einträge waren nur aus dem gescannten Text gelesen worden (C0745). Die Seitenbilder bestätigen sie; dass dieser Robert William unser Vorfahr ist, ist wahrscheinlich.",
+   "imageAlt_de": "Kellys Verzeichnis von Birmingham von 1879, Seite 592, Stone merchants, mit Jones and Fitzmaurice, Tindal Street, Ladywood, eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -190,7 +226,11 @@
    "confidence": "probable",
    "image": "images/records/notebook/1879-kelly-birmingham-p174-erdington-robert-william-fitzmaurice-norlands.jpg",
    "imageAlt": "Kelly's 1879 Birmingham directory, page 174, Erdington private residents, with Fitzmaurice Robert William, Norlands boxed",
-   "changeNote": "A new home for Robert William between the 1871 and 1881 censuses. His widow Fanny Mary later died at Erdington, in 1917."
+   "changeNote": "A new home for Robert William between the 1871 and 1881 censuses. His widow Fanny Mary later died at Erdington, in 1917.",
+   "headline_de": "Dasselbe Verzeichnis von 1879 führt Robert William Fitzmaurice unter den privaten Einwohnern von Erdington auf, in einem Haus namens Norlands.",
+   "changeNote_de": "Ein neues Zuhause für Robert William zwischen den Volkszählungen von 1871 und 1881. Seine Witwe Fanny Mary starb später, 1917, in Erdington.",
+   "imageAlt_de": "Kellys Verzeichnis von Birmingham von 1879, Seite 174, Erdington private residents, mit Fitzmaurice Robert William, Norlands, eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -211,7 +251,11 @@
    "confidence": "probable",
    "image": "photos/quarry/cliffe-hill-granite-quarry-about-1940s-commons.jpg",
    "imageAlt": "Cliffe Hill Granite Quarry, about 1940 to 1948 (Wikimedia Commons, public domain)",
-   "changeNote": "The Fitzmaurice partner was probably Robert William, the stone merchant of Jones and Fitzmaurice in 1879."
+   "changeNote": "The Fitzmaurice partner was probably Robert William, the stone merchant of Jones and Fitzmaurice in 1879.",
+   "headline_de": "Veröffentlichte Geschichten des Granitsteinbruchs Cliffe Hill in Markfield, Leicestershire, sagen, er sei in den 1870er Jahren zuerst von Jones and Fitzmaurice aus Birmingham betrieben worden, die 1881 aufhörten.",
+   "changeNote_de": "Der Teilhaber Fitzmaurice war wahrscheinlich Robert William, der Steinhändler der Firma Jones and Fitzmaurice im Jahr 1879.",
+   "imageAlt_de": "Cliffe Hill Granite Quarry, etwa 1940 bis 1948 (Wikimedia Commons, gemeinfrei)",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -231,7 +275,10 @@
     "url": "https://www.emgs.org.uk/uploads/1/4/9/1/149143154/mg16_4_2007_241_mcgrath_the_rock_quarries_of_charnwood_forest_1.pdf"
    },
    "confidence": "probable",
-   "changeNote": "Explains why John Rupert was a quarry owner when he proved his father's will in 1895."
+   "changeNote": "Explains why John Rupert was a quarry owner when he proved his father's will in 1895.",
+   "headline_de": "John Rupert FitzMaurice erwarb den Steinbruch Cliffe Hill am 9. Mai 1891 von seinem Vater und eröffnete ihn wieder, mit Peter Preston als Betriebsleiter.",
+   "changeNote_de": "Erklärt, warum John Rupert Steinbruchbesitzer war, als er 1895 das Testament seines Vaters bestätigte.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -250,7 +297,10 @@
     "url": "https://www.gracesguide.co.uk/Cliffe_Hill_Granite_Co"
    },
    "confidence": "confirmed",
-   "changeNote": "Two independent published sources give the same date."
+   "changeNote": "Two independent published sources give the same date.",
+   "headline_de": "Die Cliffe Hill Granite Company Ltd von Cliffe Hill, Markfield, wurde am 1. November 1894 eingetragen.",
+   "changeNote_de": "Zwei voneinander unabhängige veröffentlichte Quellen nennen dasselbe Datum.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -269,7 +319,10 @@
     "url": "https://www.mqp.co.uk/en/about/history"
    },
    "confidence": "probable",
-   "changeNote": "The 1949 death agrees with the GRO index and probate calendar already on the site (died 21 September 1949, Leicester)."
+   "changeNote": "The 1949 death agrees with the GRO index and probate calendar already on the site (died 21 September 1949, Leicester).",
+   "headline_de": "Die Cliffe Hill Granite Company kaufte 1935 das Grundeigentum des Steinbruchs von ihrem Gründer J. R. Fitzmaurice, und die Firmengeschichte verzeichnet seinen Tod 1949.",
+   "changeNote_de": "Der Tod 1949 stimmt mit dem GRO-Index und dem Nachlasskalender überein, die schon auf der Website stehen (gestorben am 21. September 1949, Leicester).",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -288,7 +341,10 @@
     "url": "https://www.mqp.co.uk/en/locations/cliffe-hill-quarry-and-asphalt-plant"
    },
    "confidence": "probable",
-   "changeNote": "Answers what became of the family business."
+   "changeNote": "Answers what became of the family business.",
+   "headline_de": "Cliffe Hill ist noch ein arbeitender Steinbruch: Tarmac kaufte das Unternehmen 1965, und MQP fördert dort heute bis zu 4,5 Millionen Tonnen Granit-Zuschlagstoff im Jahr.",
+   "changeNote_de": "Beantwortet, was aus dem Familienunternehmen wurde.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -307,7 +363,10 @@
     "url": "https://www.delcampe.net/en_GB/collectables/photography/photographs/photographs-originals/places/4-photos-r-jordan-leicester-ansicht-leicester-lastwagen-morris-steinbruch-cliffe-hill-granite-co-ltd-lkw-2519731289.html"
    },
    "confidence": "probable",
-   "changeNote": "The company name on the lorries is certain; that it is the family firm is probable. No family member is shown."
+   "changeNote": "The company name on the lorries is certain; that it is the family firm is probable. No family member is shown.",
+   "headline_de": "Originalfotos von Lastwagen der Cliffe Hill Granite Co. Ltd und vom Steinbruch, von Fotografen aus Leicester, wurden bei Delcampe zum Verkauf gefunden.",
+   "changeNote_de": "Der Firmenname auf den Lastwagen ist sicher; dass es die Familienfirma ist, ist wahrscheinlich. Kein Familienmitglied ist abgebildet.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -326,7 +385,10 @@
     "url": "http://www.theundergroundmap.com/article.html?id=100780"
    },
    "confidence": "probable",
-   "changeNote": "Lets the 1830 address go on the map as an area circle."
+   "changeNote": "Lets the 1830 address go on the map as an area circle.",
+   "headline_de": "Holmes Street, eine Seitenstraße der Commercial Road, wo John FitzMaurice 1830 wahrscheinlich ein Haus versicherte, wurde 1867 in Exmouth Street umbenannt und ist seither verschwunden.",
+   "changeNote_de": "So lässt sich die Adresse von 1830 als Gebietskreis auf die Karte setzen.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -345,7 +407,10 @@
     "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/0d636742-8028-4a8c-8b7c-e1f9aaf2d338/24e55d64-a222-49e9-b315-610d4fc0c183"
    },
    "confidence": "probable",
-   "changeNote": "Puts the clerk's 1834 home a few steps from the Ordnance offices where he worked."
+   "changeNote": "Puts the clerk's 1834 home a few steps from the Ordnance offices where he worked.",
+   "headline_de": "Die Irish Barracks standen in der alten Mint innerhalb des Tower of London, daher lag das Haus von John FitzMaurice von 1834, 27 Old Mint, wahrscheinlich innerhalb der Mauern des Tower.",
+   "changeNote_de": "Setzt das Zuhause des Schreibers von 1834 wenige Schritte von den Ordnance-Büros entfernt, in denen er arbeitete.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -364,7 +429,10 @@
     "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
    },
    "confidence": "probable",
-   "changeNote": "Adds a new branch: Reg FitzMaurice's first cousin, who died in the First World War."
+   "changeNote": "Adds a new branch: Reg FitzMaurice's first cousin, who died in the First World War.",
+   "headline_de": "John Rupert FitzMaurice hatte einen Sohn, John Herbert, 1898 in Leicester geboren, dessen Mutter Isabel Bennion war.",
+   "changeNote_de": "Ergänzt einen neuen Zweig: den Cousin ersten Grades von Reg FitzMaurice, der im Ersten Weltkrieg starb.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -383,7 +451,10 @@
     "url": "https://www.freebmd.org.uk/cgi/search.pl"
    },
    "confidence": "confirmed",
-   "changeNote": "The index entry for the birth."
+   "changeNote": "The index entry for the birth.",
+   "headline_de": "Die Geburt von John Herbert FitzMaurice wurde im Sommer 1898 in Leicester registriert.",
+   "changeNote_de": "Der Indexeintrag zur Geburt.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -402,7 +473,10 @@
     "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
    },
    "confidence": "probable",
-   "changeNote": "A new church for the map; the register has not been seen."
+   "changeNote": "A new church for the map; the register has not been seen.",
+   "headline_de": "John Herbert FitzMaurice wurde wahrscheinlich am 9. August 1898 in St Mary's, Weeford, Staffordshire, getauft.",
+   "changeNote_de": "Eine neue Kirche für die Karte; das Register ist nicht eingesehen worden.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -421,7 +495,11 @@
    "confidence": "confirmed",
    "changeNote": "His commission, read from the Gazette page and boxed.",
    "image": "images/records/notebook/1917-london-gazette-30390-p11990-john-herbert-fitzmaurice.jpg",
-   "imageAlt": "London Gazette, 20 November 1917, with the line Shrops. L.I., John Herbert Fitzmaurice, boxed"
+   "imageAlt": "London Gazette, 20 November 1917, with the line Shrops. L.I., John Herbert Fitzmaurice, boxed",
+   "headline_de": "Die London Gazette vom 20. November 1917 nennt John Herbert Fitzmaurice als Kadetten, der am 31. Oktober 1917 zum temporary Second Lieutenant in der Shropshire Light Infantry ernannt wurde.",
+   "changeNote_de": "Seine Ernennung, von der Gazette-Seite gelesen und eingerahmt.",
+   "imageAlt_de": "London Gazette, 20. November 1917, mit der Zeile Shrops. L.I., John Herbert Fitzmaurice, eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -440,7 +518,11 @@
    "confidence": "confirmed",
    "changeNote": "Explains why he served with the 6th (Service) Battalion.",
    "image": "images/records/notebook/1918-london-gazette-30513-p1794-j-h-fitzmaurice.jpg",
-   "imageAlt": "London Gazette, 7 February 1918, with the line J. H. FitzMaurice boxed under Shrops. L.I."
+   "imageAlt": "London Gazette, 7 February 1918, with the line J. H. FitzMaurice boxed under Shrops. L.I.",
+   "headline_de": "Die London Gazette vom 7. Februar 1918 versetzt 2nd Lt J. H. FitzMaurice ab dem 31. Oktober 1917 zu einem Service Battalion der Shropshire Light Infantry.",
+   "changeNote_de": "Erklärt, warum er beim 6th (Service) Battalion diente.",
+   "imageAlt_de": "London Gazette, 7. Februar 1918, mit der Zeile J. H. FitzMaurice eingerahmt unter Shrops. L.I.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -459,7 +541,10 @@
     "url": "https://www.fold3.com/record/746425917/fitzmaurice-john-herbert-uk-wwi-wwii-commonwealth-war-graves-commission-death-registers"
    },
    "confidence": "confirmed",
-   "changeNote": "The family's loss in the German spring offensive of 1918."
+   "changeNote": "The family's loss in the German spring offensive of 1918.",
+   "headline_de": "Second Lieutenant John Herbert FitzMaurice, 6th King's Shropshire Light Infantry, wurde am 25. März 1918 im Alter von 19 Jahren nahe St Quentin als vermisst gemeldet und ist auf dem Pozieres Memorial genannt.",
+   "changeNote_de": "Der Verlust der Familie in der deutschen Frühjahrsoffensive von 1918.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -476,7 +561,10 @@
     "url": "https://livesofthefirstworldwar.iwm.org.uk/lifestory/2475555"
    },
    "confidence": "confirmed",
-   "changeNote": "Records which date was chosen and why."
+   "changeNote": "Records which date was chosen and why.",
+   "headline_de": "Eine Kopie der Seite IWM Lives nennt für den Tod von John Herbert den 24. März 1918; die Kriegsgräberangabe und die anderen Quellen nennen den 25. März, und dieses Datum verwendet die Website.",
+   "changeNote_de": "Hält fest, welches Datum gewählt wurde und warum.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -493,7 +581,10 @@
     "url": "https://discovery.nationalarchives.gov.uk/details/r/C1162251"
    },
    "confidence": "confirmed",
-   "changeNote": "The file has not been copied; it would give his application and the report of him going missing."
+   "changeNote": "The file has not been copied; it would give his application and the report of him going missing.",
+   "headline_de": "Die Offiziersakte von John Herbert FitzMaurice (WO 339/108430) und die Medal Card (WO 372/7/79866) sind in The National Archives erhalten.",
+   "changeNote_de": "Die Akte ist nicht kopiert worden; sie würde seinen Antrag und den Bericht darüber enthalten, dass er vermisst wurde.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -510,7 +601,10 @@
     "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
    },
    "confidence": "probable",
-   "changeNote": "His school; the school archive may hold more."
+   "changeNote": "His school; the school archive may hold more.",
+   "headline_de": "John Herbert FitzMaurice war wahrscheinlich von 1912 bis 1916 an der Shrewsbury School und steht auf ihrer Ehrenrolle.",
+   "changeNote_de": "Seine Schule; das Schularchiv könnte mehr enthalten.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -527,7 +621,10 @@
     "url": "https://memorials.iwm.org.uk/memorial/37741"
    },
    "confidence": "probable",
-   "changeNote": "Two Leicester-area memorials, which fit his father's home at Oadby."
+   "changeNote": "Two Leicester-area memorials, which fit his father's home at Oadby.",
+   "headline_de": "John Herbert FitzMaurice ist auf dem Kriegerdenkmal von Oadby und auf der Tafel zum Ersten Weltkrieg in St Mary Magdalene, Knighton, Leicester, genannt.",
+   "changeNote_de": "Zwei Denkmäler im Raum Leicester, die zum Wohnsitz seines Vaters in Oadby passen.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -544,7 +641,10 @@
     "url": "https://livesofthefirstworldwar.iwm.org.uk/lifestory/2475555"
    },
    "confidence": "probable",
-   "changeNote": "Linked, not copied, because its reuse terms are not stated."
+   "changeNote": "Linked, not copied, because its reuse terms are not stated.",
+   "headline_de": "Ein Porträtfoto von John Herbert FitzMaurice steht auf der Website IWM Lives of the First World War.",
+   "changeNote_de": "Verlinkt, nicht kopiert, weil die Bedingungen für die Weiterverwendung nicht angegeben sind.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -562,7 +662,10 @@
     "url": "https://www.freebmd.org.uk/cgi/search.pl"
    },
    "confidence": "probable",
-   "changeNote": "His first marriage."
+   "changeNote": "His first marriage.",
+   "headline_de": "John Rupert FitzMaurice heiratete Isabel Bennion Anfang 1896; die Heirat wurde im Bezirk Lichfield registriert.",
+   "changeNote_de": "Seine erste Ehe.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -582,7 +685,10 @@
     "url": "https://memorials.iwm.org.uk/memorial/68733"
    },
    "confidence": "confirmed",
-   "changeNote": "Two new map pins, and the stone that names her \"only son\"."
+   "changeNote": "Two new map pins, and the stone that names her \"only son\".",
+   "headline_de": "Isabel FitzMaurice starb am 1. August 1905 im Alter von 35 Jahren, und ihr Grabstein steht auf dem Sutton Coldfield Cemetery.",
+   "changeNote_de": "Zwei neue Kartennadeln, und der Stein, der ihren \"only son\" nennt.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -602,7 +708,10 @@
     "url": "https://amertonrailway.co.uk/locomotives/steam/isabel/"
    },
    "confidence": "probable",
-   "changeNote": "Connects the family to the locomotive pictured on the quarry page."
+   "changeNote": "Connects the family to the locomotive pictured on the quarry page.",
+   "headline_de": "Die Lokomotive Isabel des Steinbruchs Cliffe Hill, geliefert 1897, wurde nach Isabel benannt, der Ehefrau von John Rupert FitzMaurice.",
+   "changeNote_de": "Verbindet die Familie mit der Lokomotive, die auf der Steinbruchseite abgebildet ist.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -621,7 +730,10 @@
     "url": "https://www.freebmd.org.uk/cgi/search.pl"
    },
    "confidence": "probable",
-   "changeNote": "A new person on the tree."
+   "changeNote": "A new person on the tree.",
+   "headline_de": "John Rupert FitzMaurice hatte wahrscheinlich eine Tochter, Mary Isabel, 1899 in Leicester geboren.",
+   "changeNote_de": "Eine neue Person im Stammbaum.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -639,7 +751,10 @@
     "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
    },
    "confidence": "probable",
-   "changeNote": "His second wife, a new person on the tree."
+   "changeNote": "His second wife, a new person on the tree.",
+   "headline_de": "John Rupert FitzMaurice heiratete am 4. Juli 1907 erneut, und zwar Maria Adelaide Wood, in Petersham, Surrey.",
+   "changeNote_de": "Seine zweite Ehefrau, eine neue Person im Stammbaum.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -659,7 +774,10 @@
     "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/"
    },
    "confidence": "probable",
-   "changeNote": "Two new homes on the map."
+   "changeNote": "Two new homes on the map.",
+   "headline_de": "Die Familie von John Rupert FitzMaurice wohnte 1901 in Westcotes Drive, Leicester, und spätestens 1911 in Cliveden, Manor Road, Oadby.",
+   "changeNote_de": "Zwei neue Wohnsitze auf der Karte.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -678,7 +796,10 @@
     "url": "https://discovery.nationalarchives.gov.uk/details/r/892ad8d0-1363-40ed-9901-75386990e561"
    },
    "confidence": "confirmed",
-   "changeNote": "A contemporary record of him running the quarry."
+   "changeNote": "A contemporary record of him running the quarry.",
+   "headline_de": "Briefe von 1896 im Leicestershire Record Office nennen J. R. Fitzmaurice als Betriebsleiter der Cliffe Hill Granite Co.",
+   "changeNote_de": "Ein zeitgenössischer Beleg dafür, dass er den Steinbruch führte.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -695,7 +816,10 @@
     "url": "https://discovery.nationalarchives.gov.uk/details/r/79ffb301-aefd-441e-a026-a87656cda540"
    },
    "confidence": "confirmed",
-   "changeNote": "Dates the start of the quarry railway."
+   "changeNote": "Dates the start of the quarry railway.",
+   "headline_de": "Ein Pachtvertrag vom 12. Februar 1897 überließ der Cliffe Hill Granite Co. Land neben der Billa Barrow Lane in Markfield für ihre leichte Bahn, zu 45 pounds a year.",
+   "changeNote_de": "Datiert den Beginn der Steinbruchbahn.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -712,7 +836,10 @@
     "url": "https://discovery.nationalarchives.gov.uk/details/r/N13796580"
    },
    "confidence": "confirmed",
-   "changeNote": "The best hope of photographs of John Rupert and the early quarry."
+   "changeNote": "The best hope of photographs of John Rupert and the early quarry.",
+   "headline_de": "Die eigenen Protokolle, Briefbücher, Pläne und Fotoalben der Cliffe Hill Granite Company, 1890 bis 1979, sind in Privatbesitz erhalten; Anfragen laufen über das Leicestershire Record Office.",
+   "changeNote_de": "Die beste Hoffnung auf Fotos von John Rupert und vom frühen Steinbruch.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -731,7 +858,11 @@
    "confidence": "probable",
    "changeNote": "A second family company; the liquidator was later John Rupert's executor.",
    "image": "images/records/notebook/1937-london-gazette-34450-p6848-markfield-estates-j-r-fitzmaurice.jpg",
-   "imageAlt": "London Gazette, 2 November 1937, the Markfield Estates Limited notice signed J. R. Fitzmaurice, Chairman, boxed"
+   "imageAlt": "London Gazette, 2 November 1937, the Markfield Estates Limited notice signed J. R. Fitzmaurice, Chairman, boxed",
+   "headline_de": "Im Oktober 1937 unterzeichnete J. R. Fitzmaurice als Vorsitzender den Beschluss, Markfield Estates Ltd abzuwickeln.",
+   "changeNote_de": "Eine zweite Familienfirma; der Liquidator wurde später der Testamentsvollstrecker von John Rupert.",
+   "imageAlt_de": "London Gazette, 2. November 1937, die Mitteilung zu Markfield Estates Limited, unterzeichnet J. R. Fitzmaurice, Chairman, eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -752,7 +883,10 @@
     "url": "https://www.fold3.com/record/746927422"
    },
    "confidence": "confirmed",
-   "changeNote": "A new map pin for Ron's grandparents' house."
+   "changeNote": "A new map pin for Ron's grandparents' house.",
+   "headline_de": "40 Fisher Street, Canning Town, das Zuhause von Herbert und Lucy Andrews von 1911 bis 1941, steht jetzt auf der Karte.",
+   "changeNote_de": "Eine neue Kartennadel für das Haus von Rons Großeltern.",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   },
   {
    "found": "2026-11-27",
@@ -774,7 +908,11 @@
    "confidence": "confirmed",
    "changeNote": "Herbert William's exact birth date added; the marriage also agrees with FreeBMD, June quarter 1915, West Ham 4a 305.",
    "image": "images/records/notebook/1915-henry-george-andrews-wo363-fold3-414348639-p3-marriage-and-child.jpg",
-   "imageAlt": "Henry George Andrews's army record, page 3, the marriage and children lines boxed"
+   "imageAlt": "Henry George Andrews's army record, page 3, the marriage and children lines boxed",
+   "headline_de": "Die Heeresakte von Henry George Andrews gibt die Geburt seines Sohnes Herbert William mit dem 17. Juli 1916 in West Ham an und seine Heirat mit Rosina Maud Cousins in St Andrew's, Plaistow, am 18. April 1915.",
+   "changeNote_de": "Das genaue Geburtsdatum von Herbert William ist ergänzt; die Heirat stimmt außerdem mit FreeBMD überein, June quarter 1915, West Ham 4a 305.",
+   "imageAlt_de": "Heeresakte von Henry George Andrews, Seite 3, die Zeilen zur Ehe und zu den Kindern eingerahmt",
+   "foundBy_de": "Stuart, Genealogie der britischen Familie"
   }
  ]
 }

@@ -203,6 +203,7 @@ async function browserChecks() {
 
     async function open(url, opts = {}) {
         const ctx = await browser.newContext({ viewport: opts.viewport || { width: 1280, height: 900 }, reducedMotion: opts.motion ? 'no-preference' : 'reduce' });
+        await ctx.addInitScript(() => { localStorage.setItem('fs.visitor.v1:/', JSON.stringify({ v: 1, id: null, skipped: true, at: '2026-11-28' })); });
         const page = await ctx.newPage();
         const errs = [], external = [];
         page.on('pageerror', e => errs.push(e.message));
@@ -384,6 +385,7 @@ async function browserChecks() {
     await shot(page, 'mobile-widget');
     await s.ctx.close();
     const ctx = await browser.newContext({ viewport: { width: 1280, height: 900 } });
+    await ctx.addInitScript(() => { localStorage.setItem('fs.visitor.v1:/', JSON.stringify({ v: 1, id: null, skipped: true, at: '2026-11-28' })); });
     const hp = await ctx.newPage();
     await hp.route(/fonts\.googleapis|fonts\.gstatic/, r => r.abort());
     await hp.addInitScript(() => { localStorage.setItem('stuart.me', JSON.stringify('visitor')); });
@@ -410,7 +412,9 @@ async function browserChecks() {
     const navAt = async (w, h) => {
         const out = {};
         for (const f of PAGES) {
-            const c = await browser.newContext({ viewport: { width: w, height: h }, reducedMotion: 'reduce' }); const pg = await c.newPage();
+            const c = await browser.newContext({ viewport: { width: w, height: h }, reducedMotion: 'reduce' });
+            await c.addInitScript(() => { localStorage.setItem('fs.visitor.v1:/', JSON.stringify({ v: 1, id: null, skipped: true, at: '2026-11-28' })); });
+            const pg = await c.newPage();
             await pg.route(/fonts\.g|tile|openstreetmap|carto|arcgis|stadia/, r => r.abort());
             await pg.addInitScript(() => { localStorage.setItem('stuart.seen', 'true'); });
             await pg.goto(base + f); await pg.waitForTimeout(f === 'map.html' || f === 'family-tree.html' ? 1500 : 500);
@@ -430,7 +434,7 @@ async function browserChecks() {
         const r = await navAt(w, h), kinds = [...new Set(Object.values(r).map(x => x.nav))];
         check(kinds.length === 1, `at ${w} pixels wide the navigation bar is in the same place on all ${PAGES.length} pages` + (w <= 1100 ? ', behind the menu button' : ''), kinds.length > 1 ? PAGES.map(f => f + ' ' + r[f].nav).join('; ') : '');
         if (w === 1440) {
-            check(PAGES.every(f => /(^|\/)nav\.css$/.test(r[f].last)), 'every page loads nav.css last, so nothing overrides it', PAGES.filter(f => !/(^|\/)nav\.css$/.test(r[f].last)).join(', '));
+            check(PAGES.every(f => /(^|\/)(?:nav|visitor)\.css$/.test(r[f].last)), 'every page loads nav.css last, or visitor.css straight after it, so a page style does not override the bar', PAGES.filter(f => !/(^|\/)(?:nav|visitor)\.css$/.test(r[f].last)).join(', '));
             check(PAGES.every(f => r[f].stuart), 'Stuart is on every page', PAGES.filter(f => !r[f].stuart).join(', '));
         }
         const hit = PAGES.filter(f => r[f].hits.length);

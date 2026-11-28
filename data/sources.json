@@ -614,7 +614,7 @@
    "title": "Commonwealth War Graves Commission, civilian deaths at Plaistow, 19 April 1941",
    "type": "war dead roll",
    "repository": "CWGC Civilian War Dead. Henry George Andrews, casualty 3105324. Rosina Maud Andrews, 3105326. Sidney George Andrews, 3105327.",
-   "note": "All three died on 19 April 1941 at the family home in Plaistow, West Ham County Borough. Henry George was 52, son of Herbert Andrews. Rosina Maud was 59. Sidney George was 18, son of Henry George and Rosina Maud. GRO death index, June quarter 1941, West Ham: Henry G., volume 4a, page 70. Rosina M. and Sidney G., volume 4a, page 71. The house was 23 Sutton Court Road, Plaistow.",
+   "note": "All three died on 19 April 1941 at the family home in Plaistow, West Ham County Borough. Henry George was 52, son of Herbert Andrews. Rosina Maud was 59. Sidney George was 18, son of Henry George and Rosina Maud. GRO death index, June quarter 1941, West Ham: Henry G., volume 4a, page 70. Rosina M. and Sidney G., volume 4a, page 71. The house was 23 Sutton Court Road, Plaistow. The Fold3 copy of the CWGC registers (records 746927422, 746927530, 746927538), read 27 November 2026, agrees: Henry George was of 23 Sutton Court Road, son of Herbert Andrews of 40 Fisher Street, Canning Town.",
    "date": "1941-04-19",
    "url": "https://www.cwgc.org/find-records/find-war-dead/"
   },
@@ -1543,6 +1543,122 @@
    "repository": "Historic England research records, through Heritage Gateway, citing Geoffrey Parnell, English Heritage book of the Tower of London. National Grid Reference TQ 33682 80510; latitude 51.507718, longitude -0.075145. Read through the search index on 27 November 2026.",
    "url": "https://historicengland.org.uk/listing/heritage-gateway/results/record/0d636742-8028-4a8c-8b7c-e1f9aaf2d338/24e55d64-a222-49e9-b315-610d4fc0c183",
    "note": "The Irish Barracks stood in the Mint, inside the Tower of London, against the curtain wall between the Salt and Broad Arrow Towers; rebuilt 1752, extended 1804, demolished 1878. The Mint itself had left the Tower for Tower Hill in 1810 (Historic Royal Palaces). So 27 Old Mint, opposite the Irish Barracks, was probably a house in the old Mint area inside the Tower's outer ward. Ledger C0772."
+  },
+  {
+   "id": "gazette-1917-30390-jhf",
+   "title": "London Gazette, Supplement 30390, 20 November 1917, page 11990",
+   "type": "official gazette",
+   "repository": "The Gazette (thegazette.co.uk). Heading on page 11989: \"The undermentioned cadets to be temp. 2nd Lts. 31 Oct. 1917\". Read from the page image, 27 November 2026.",
+   "url": "https://www.thegazette.co.uk/London/issue/30390/supplement/11990",
+   "date": "1917-11-20",
+   "note": "Infantry, \"Shrops. L.I.: John Herbert Fitzmaurice.\" Ledger C0784."
+  },
+  {
+   "id": "gazette-1918-30513-jhf",
+   "title": "London Gazette, Supplement 30513, 7 February 1918, page 1794",
+   "type": "official gazette",
+   "repository": "The Gazette (thegazette.co.uk). Heading on page 1792: \"The undermentioned temp. 2nd Lts. (attd.), unless otherwise stated, are transferred to Serv. Bns., with effect from date shown\". Read from the page image, 27 November 2026.",
+   "url": "https://www.thegazette.co.uk/London/issue/30513/supplement/1794",
+   "date": "1918-02-07",
+   "note": "\"Shrops. L.I. ... 31st Oct. 1917 ... J. H. FitzMaurice.\" Ledger C0785."
+  },
+  {
+   "id": "gazette-1937-markfield-estates",
+   "title": "London Gazette, Issue 34450, 2 November 1937, page 6848: Markfield Estates Limited",
+   "type": "official gazette",
+   "repository": "The Gazette (thegazette.co.uk). Read from the page image, 27 November 2026.",
+   "url": "https://www.thegazette.co.uk/London/issue/34450/page/6848",
+   "date": "1937-11-02",
+   "note": "Members' voluntary winding up resolved 28 October 1937; liquidator Leslie Charlesworth Simpson, 3 St Martin's East, Leicester, chartered accountant; signed J. R. Fitzmaurice, Chairman. Ledger C0791."
+  },
+  {
+   "id": "cwgc-jhf-1918",
+   "title": "Commonwealth War Graves Commission, Second Lieutenant John Herbert Fitzmaurice, casualty 1580887",
+   "type": "war dead roll",
+   "repository": "CWGC death registers, copy on Fold3 (record 746425917, read through the family's Ancestry access, 27 November 2026); casualty number and panel from A Street Near You, which reproduces the CWGC entry. The CWGC website refused a direct fetch.",
+   "url": "https://www.fold3.com/record/746425917/fitzmaurice-john-herbert-uk-wwi-wwii-commonwealth-war-graves-commission-death-registers",
+   "date": "1918-03-25",
+   "note": "Second Lieutenant, 6th Battalion, King's Shropshire Light Infantry; died on active service 25 March 1918; Pozieres Memorial, panel 60; Victory and British War Medals and the memorial plaque. Ledger C0786."
+  },
+  {
+   "id": "iwm-memorial-68733",
+   "title": "IWM War Memorials Register 68733: Second Lieutenant J H Fitzmaurice, addition to gravestone, Sutton Coldfield Cemetery",
+   "type": "memorial register",
+   "repository": "Imperial War Museums, War Memorials Register, read 27 November 2026.",
+   "url": "https://memorials.iwm.org.uk/memorial/68733",
+   "note": "Inscription: \"Also in loving memory of her only son 2nd Lieutenant John Herbert Fitzmaurice K.S.L.I., who was killed in the Great War near St Quentin, March 1918, aged 19 years.\" The stone is that of Isabel Fitzmaurice, died 1 August 1905, aged 35 (photograph on IWM Lives 2475555). Ledger C0778, C0789."
+  },
+  {
+   "id": "iwm-memorial-37741",
+   "title": "IWM War Memorials Register 37741: Oadby war memorial, Old London Road, Oadby",
+   "type": "memorial register",
+   "repository": "Imperial War Museums, War Memorials Register, read 27 November 2026; names list via A Street Near You.",
+   "url": "https://memorials.iwm.org.uk/memorial/37741",
+   "note": "Unveiled 7 May 1921; Second Lieutenant J H Fitzmaurice is among the First World War names. Ledger C0789."
+  },
+  {
+   "id": "iwm-memorial-37773",
+   "title": "IWM War Memorials Register 37773: St Mary Magdalene Church, Knighton, Leicester, First World War tablet",
+   "type": "memorial register",
+   "repository": "Imperial War Museums, War Memorials Register (page read 27 November 2026); the name John Herbert Fitzmaurice (name ID 704913) from the Fold3 copy, record 756161411.",
+   "url": "https://memorials.iwm.org.uk/memorial/37773",
+   "note": "A marble tablet to the men of Knighton and neighbourhood, 70 names. Ledger C0799."
+  },
+  {
+   "id": "iwm-lives-2475555",
+   "title": "Lives of the First World War, life story 2475555: John Herbert Fitzmaurice",
+   "type": "memorial website",
+   "repository": "Imperial War Museums, read 27 November 2026. Contributed photographs (portrait, family memorial) by Steve120914; reuse terms not stated, so they are linked, not copied.",
+   "url": "https://livesofthefirstworldwar.iwm.org.uk/lifestory/2475555",
+   "note": "Second Lieutenant and Lieutenant, KSLI; died 25 March 1918; Pozieres Memorial. Fold3's copy of this page gives 24 March. Ledger C0787, C0790."
+  },
+  {
+   "id": "oadby-remembers-jhf",
+   "title": "Oadby Remembers: J.H. Fitzmaurice",
+   "type": "local history website",
+   "repository": "Oadby Remembers (oadbyremembers.org.uk), roll of honour. The page returned an error to a direct fetch on 27 November 2026; its text was read through a search index. Written with help from the Shrewsbury School archivist.",
+   "url": "https://www.oadbyremembers.org.uk/roll-of-honour/j-h-fitzmaurice/",
+   "note": "Born Leicester 23 June 1898 to John Rupert Fitzmaurice and Isabel (nee Bennion); baptised St Mary, Weeford, 9 August 1898; sister Mary Isabel born 1899; 1901 Westcotes Drive, Leicester; mother died summer 1905 at Gorleston; father married Maria Adelaida Wood, 4 July 1907, Petersham; 1911 Cliveden, Manor Road, Oadby; Shrewsbury School 1912 to 1916; 2nd Lt KSLI, France 27 December 1917; missing 25 March 1918. A secondary source. Ledger C0776 to C0783."
+  },
+  {
+   "id": "freebmd-john-rupert-family-s51",
+   "title": "FreeBMD searches for John Rupert FitzMaurice's family, 27 November 2026",
+   "type": "civil registration index",
+   "repository": "FreeBMD transcription of the GRO indexes, https://www.freebmd.org.uk/cgi/search.pl",
+   "url": "https://www.freebmd.org.uk/cgi/search.pl",
+   "note": "Marriage John Rupert Fitzmaurice and Isabel Bennion, Mar quarter 1896, Lichfield 6b 565 (Wade also on the page); birth John Herbert Fitzmaurice, Sep quarter 1898, Leicester 7a 277; birth Mary Isabel Fitzmaurice, Dec quarter 1899, Leicester 7a 281; death Isabel Fitzmaurice, 35, Sep quarter 1905, Yarmouth 4b 20; marriage John Rupert Fitzmaurice, Sep quarter 1907, Richmond (Surrey) 2a 1057 (Brand and Wood on the page). Ledger C0775, C0777, C0778, C0780, C0781."
+  },
+  {
+   "id": "tna-wo339-108430",
+   "title": "The National Archives, WO 339/108430 and WO 372/7/79866: John Herbert Fitzmaurice",
+   "type": "archive catalogue",
+   "repository": "The National Archives, Kew, Discovery catalogue, read 27 November 2026. The officer file is open but not digitised; the medal card is digitised.",
+   "url": "https://discovery.nationalarchives.gov.uk/details/r/C1162251",
+   "note": "WO 339/108430, \"2/Lieutenant John Herbert FITZMAURICE The King's (Shropshire Light Infantry)\", 1914 to 1922. Medal card WO 372/7/79866 (https://discovery.nationalarchives.gov.uk/details/r/D3489541). Ledger C0788."
+  },
+  {
+   "id": "rollr-cliffe-hill-records",
+   "title": "Record Office for Leicestershire, Leicester and Rutland: Cliffe Hill Granite Company papers (catalogue entries)",
+   "type": "archive catalogue",
+   "repository": "Found through The National Archives Discovery catalogue, 27 November 2026.",
+   "url": "https://discovery.nationalarchives.gov.uk/details/r/892ad8d0-1363-40ed-9901-75386990e561",
+   "note": "DG 9/357 (1896), letters between H. Humphreys of Woodhouse, agent to the Beaumanor estates, and J. R. Fitzmaurice, manager of Cliffe Hill Granite Co., about a proposed lease; DG 9/358 to 359, lease of 12 February 1897 from Sophia Perry Herrick for a light tramway on the north east side of Billa Barrow Lane, Markfield, 21 years at 45 pounds a year; DG 9/362, lease of 19 June 1911; DE4939/727/2 (1896), Ellistown Collieries and the light railway; company minutes, registers, letter books, plans and photograph albums 1890 to 1979, held privately (enquiries to the Record Office, N13796580). Ledger C0792."
+  },
+  {
+   "id": "amerton-isabel",
+   "title": "Amerton Railway: Isabel, W. G. Bagnall No. 1491",
+   "type": "heritage railway website",
+   "repository": "Amerton Railway, read through a search index, 27 November 2026.",
+   "url": "https://amertonrailway.co.uk/locomotives/steam/isabel/",
+   "note": "Delivered new on 9 February 1897 to the Cliffe Hill Granite Company; named after John Rupert Fitzmaurice's wife, Isabel. A secondary source."
+  },
+  {
+   "id": "loc-osm-nominatim-2026-11-27",
+   "title": "OpenStreetMap Nominatim searches and OS grid conversions, 27 November 2026",
+   "type": "geocoding",
+   "repository": "OpenStreetMap Nominatim; Ordnance Survey grid references from the IWM War Memorials Register converted to latitude and longitude.",
+   "url": "https://nominatim.openstreetmap.org/",
+   "note": "Westcotes Drive, Leicester; Manor Road, Oadby; Sutton Coldfield Cemetery (IWM grid SP 12592 96515); Gorleston-on-Sea; St Mary, Weeford; Fisher Street, Canning Town; Saint-Quentin."
   }
  ]
 }

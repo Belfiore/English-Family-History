@@ -14213,6 +14213,427 @@
     "he-irish-barracks-tower"
    ],
    "drawAs": "halo"
+  },
+  {
+   "id": "westcotes-drive-leicester",
+   "name": "Westcotes Drive, Leicester",
+   "historicName": "Westcotes Drive, Leicester",
+   "variants": [],
+   "kind": "home",
+   "address": "Westcotes Drive, Leicester",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 52.6305,
+   "lng": -1.155,
+   "coordinateMethod": "Approximate. Middle of Westcotes Drive from OpenStreetMap Nominatim, 27 November 2026; the house is not known.",
+   "uncertaintyMetres": 400,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked (added 27 November 2026).",
+   "significance": "John Rupert FitzMaurice's family home in 1901 (Oadby Remembers).",
+   "events": [
+    {
+     "id": "pe--westcotes-drive--lived--1901--fitzmaurice",
+     "type": "lived",
+     "personIds": [
+      "john-rupert-fitzmaurice",
+      "isabel-bennion",
+      "john-herbert-fitzmaurice",
+      "mary-isabel-fitzmaurice"
+     ],
+     "date": "1901",
+     "dateStart": "1901-03-31",
+     "dateEnd": "1901-03-31",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "john-rupert-fitzmaurice.residences[0]",
+     "pages": [
+      "quarry.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "In 1901 the family lived in Westcotes Drive, Leicester, with a domestic servant and a children's nurse (Oadby Remembers, from the census; census page not yet seen)."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-27"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "cliveden-manor-road-oadby",
+   "name": "Cliveden, Manor Road, Oadby",
+   "historicName": "Cliveden, Manor Road, Oadby",
+   "variants": [],
+   "kind": "home",
+   "address": "Cliveden, Manor Road, Oadby, Leicestershire",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 52.609144,
+   "lng": -1.081307,
+   "coordinateMethod": "Approximate. Manor Road, Oadby, from OpenStreetMap Nominatim, 27 November 2026. The house Cliveden is not placed exactly; Oadby Remembers says it is now owned by the University of Leicester.",
+   "uncertaintyMetres": 300,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked (added 27 November 2026).",
+   "significance": "John Rupert FitzMaurice's home by 1911 (Oadby Remembers).",
+   "events": [
+    {
+     "id": "pe--cliveden-oadby--lived--1911--fitzmaurice",
+     "type": "lived",
+     "personIds": [
+      "john-rupert-fitzmaurice",
+      "maria-adelaide-wood",
+      "john-herbert-fitzmaurice",
+      "mary-isabel-fitzmaurice"
+     ],
+     "date": "1911",
+     "dateStart": "1911-04-02",
+     "dateEnd": "1911-04-02",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "john-rupert-fitzmaurice.residences[1]",
+     "pages": [
+      "quarry.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "By 1911 the family lived at Cliveden, Manor Road, Oadby, with a cook, a housemaid and a lady's maid (Oadby Remembers; census page not yet seen). John Herbert is named on the Oadby war memorial."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-27"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "sutton-coldfield-cemetery",
+   "name": "Sutton Coldfield Cemetery",
+   "historicName": "Sutton Coldfield Cemetery",
+   "variants": [],
+   "kind": "cemetery",
+   "address": "Rectory Road, Sutton Coldfield, B75 7RP",
+   "modernAddress": "",
+   "precision": "building",
+   "lat": 52.566312,
+   "lng": -1.815662,
+   "coordinateMethod": "From the Ordnance Survey grid reference of the gravestone in the IWM War Memorials Register (SP 12592 96515), converted to latitude and longitude, 27 November 2026.",
+   "uncertaintyMetres": 30,
+   "inHomeRegion": true,
+   "standsToday": "yes",
+   "standsTodaySource": "The gravestone was recorded in good condition by the IWM War Memorials Register (68733).",
+   "significance": "Isabel FitzMaurice's gravestone, with the name of her son John Herbert added after 1918.",
+   "events": [
+    {
+     "id": "pe--sutton-coldfield-cemetery--buried--1905--isabel-bennion",
+     "type": "buried",
+     "personIds": [
+      "isabel-bennion"
+     ],
+     "date": "1905",
+     "dateStart": "1905-08-01",
+     "dateEnd": "1905-08-31",
+     "datePrecision": "month",
+     "approximate": false,
+     "factRef": "isabel-bennion.burial",
+     "pages": [
+      "quarry.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "iwm-memorial-68733",
+      "iwm-lives-2475555"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Gravestone: \"In loving memory of Isabel Fitzmaurice who fell asleep 1st August 1905 aged 35 years.\" Added later: \"her only son 2nd Lieutenant John Herbert Fitzmaurice K.S.L.I., who was killed in the Great War near St Quentin, March 1918, aged 19 years.\" The burial register has not been seen."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "point",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-27"
+   ],
+   "boundary": null,
+   "drawAs": "pin",
+   "blurb": "Isabel FitzMaurice's gravestone (1905), which also remembers her son John Herbert, killed in 1918.",
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
+   "blurbSourceIds": [
+    "iwm-memorial-68733"
+   ]
+  },
+  {
+   "id": "gorleston-on-sea",
+   "name": "Gorleston, Norfolk",
+   "historicName": "Gorleston, Norfolk",
+   "variants": [],
+   "kind": "town",
+   "address": "Gorleston-on-Sea, Great Yarmouth, Norfolk",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": 52.577856,
+   "lng": 1.727335,
+   "coordinateMethod": "OpenStreetMap Nominatim, 27 November 2026 (town centre).",
+   "uncertaintyMetres": 2000,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not applicable: this place is a town.",
+   "significance": "Where Isabel FitzMaurice died in 1905 (Oadby Remembers; registered in the Yarmouth district).",
+   "events": [
+    {
+     "id": "pe--gorleston--died--1905--isabel-bennion",
+     "type": "died",
+     "personIds": [
+      "isabel-bennion"
+     ],
+     "date": "1 August 1905",
+     "dateStart": "1905-08-01",
+     "dateEnd": "1905-08-01",
+     "datePrecision": "day",
+     "approximate": false,
+     "factRef": "isabel-bennion.death",
+     "pages": [
+      "quarry.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "iwm-memorial-68733",
+      "freebmd-john-rupert-family-s51",
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "Isabel FitzMaurice died on 1 August 1905, aged 35. GRO index: September quarter 1905, Yarmouth 4b 20."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "area",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-27"
+   ],
+   "boundary": null,
+   "drawAs": "area",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "st-quentin-front-1918",
+   "name": "Near St Quentin, France",
+   "historicName": "Near St Quentin, France",
+   "variants": [],
+   "kind": "military site",
+   "address": "Saint-Quentin, Aisne, France",
+   "modernAddress": "",
+   "precision": "town",
+   "lat": 49.8465,
+   "lng": 3.2876,
+   "coordinateMethod": "Approximate. Saint-Quentin town centre from OpenStreetMap; the records say only \"near St Quentin\", so the circle is wide. He is named on the Pozieres Memorial, about 45 km to the west, because he has no known grave.",
+   "uncertaintyMetres": 15000,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not applicable: this place is a wide area.",
+   "significance": "Where Second Lieutenant John Herbert FitzMaurice was reported missing on 25 March 1918.",
+   "events": [
+    {
+     "id": "pe--st-quentin--died--1918--john-herbert-fitzmaurice",
+     "type": "died",
+     "personIds": [
+      "john-herbert-fitzmaurice"
+     ],
+     "date": "25 March 1918",
+     "dateStart": "1918-03-25",
+     "dateEnd": "1918-03-25",
+     "datePrecision": "day",
+     "approximate": false,
+     "factRef": "john-herbert-fitzmaurice.death",
+     "pages": [
+      "quarry.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "cwgc-jhf-1918",
+      "iwm-memorial-68733",
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "Second Lieutenant, 6th Battalion, King's Shropshire Light Infantry. Reported missing on 25 March 1918, after five days of fighting in the German spring offensive. No known grave; named on the Pozieres Memorial, panel 60."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "area",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-27"
+   ],
+   "boundary": null,
+   "drawAs": "area",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "st-marys-weeford",
+   "name": "St Mary's Church, Weeford",
+   "historicName": "St Mary's Church, Weeford",
+   "variants": [],
+   "kind": "church",
+   "address": "Church Hill, Weeford, Lichfield, Staffordshire",
+   "modernAddress": "",
+   "precision": "building",
+   "lat": 52.632539,
+   "lng": -1.792383,
+   "coordinateMethod": "OpenStreetMap Nominatim, 27 November 2026.",
+   "uncertaintyMetres": 60,
+   "inHomeRegion": true,
+   "standsToday": "yes",
+   "standsTodaySource": "The church is mapped by OpenStreetMap as a place of worship (27 November 2026).",
+   "significance": "Where John Herbert FitzMaurice was baptised on 9 August 1898 (Oadby Remembers).",
+   "events": [
+    {
+     "id": "pe--weeford--baptised--1898--john-herbert-fitzmaurice",
+     "type": "baptised",
+     "personIds": [
+      "john-herbert-fitzmaurice"
+     ],
+     "date": "9 August 1898",
+     "dateStart": "1898-08-09",
+     "dateEnd": "1898-08-09",
+     "datePrecision": "day",
+     "approximate": false,
+     "factRef": "",
+     "pages": [
+      "quarry.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Baptised on 9 August 1898, according to Oadby Remembers, which shows a notice of the baptism. The register has not been seen."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "point",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-27"
+   ],
+   "boundary": null,
+   "drawAs": "pin",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
+   "blurbSourceIds": []
+  },
+  {
+   "id": "40-fisher-street-canning-town",
+   "name": "40 Fisher Street, Canning Town",
+   "historicName": "40 Fisher Street, Canning Town",
+   "variants": [],
+   "kind": "home",
+   "address": "40 Fisher Street, Canning Town (Plaistow in 1921), West Ham",
+   "modernAddress": "",
+   "precision": "street",
+   "lat": 51.519,
+   "lng": 0.0184,
+   "coordinateMethod": "Approximate. Fisher Street, Custom House, E16, from OpenStreetMap Nominatim, 27 November 2026. Whether the modern street is the same one and the numbering unchanged has not been checked, so the circle is wide.",
+   "uncertaintyMetres": 250,
+   "inHomeRegion": true,
+   "standsToday": "unknown",
+   "standsTodaySource": "Not checked against historic maps (added 27 November 2026).",
+   "significance": "Home of Herbert and Lucy Andrews, Henry George's parents, from 1911 to at least 1941.",
+   "events": [
+    {
+     "id": "pe--40-fisher-street--lived--1911--andrews",
+     "type": "lived",
+     "personIds": [
+      "herbert-andrews-sr",
+      "lucy-andrews",
+      "mr-hg-andrews"
+     ],
+     "date": "1911 to 1941",
+     "dateStart": "1911-04-02",
+     "dateEnd": "1941-04-19",
+     "datePrecision": "year",
+     "approximate": false,
+     "factRef": "",
+     "pages": [
+      "andrews-roots.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "cwgc-plaistow-1941"
+     ],
+     "confidence": "confirmed",
+     "familyStatement": false,
+     "summary": "1911 census: Herbert Andrews, journeyman baker, with Lucy and their son Henry George, sawyer's labourer, at 40 Fisher Street, Canning Town. Herbert was still there in 1921, 1939 and April 1941, when the war graves record of his son Henry George names him as \"Herbert Andrews, of 40 Fisher Street, Canning Town\"."
+    }
+   ],
+   "status": "published",
+   "noProvenLink": false,
+   "coordinatePrecision": "street",
+   "todayNote": "",
+   "coordinateSourceIds": [
+    "loc-osm-nominatim-2026-11-27"
+   ],
+   "boundary": null,
+   "drawAs": "halo",
+   "blurb": null,
+   "images": [],
+   "historicMap": null,
+   "streetView": null,
+   "streetViewReason": "Not looked at in Street View (added 27 November 2026).",
+   "blurbSourceIds": []
   }
  ]
 }

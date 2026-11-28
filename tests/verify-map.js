@@ -189,7 +189,7 @@ function expectScope(id, scope) {
         };
     });
     check(!info.tooPrecise.length, `no date on the map is more precise than the site's own record (${info.events} placed events, ${info.unplaced} not yet placed)`, info.tooPrecise.slice(0, 5).join('; '));
-    check(info.herbert && info.herbert[0] === 'year' && /^1916|about 1916/.test(info.herbert[2]), 'Herbert William stays at 1916', JSON.stringify(info.herbert));
+    check(info.herbert && info.herbert[0] === 'day' && info.herbert[1] === '1916-07-17' && /17 July 1916/.test(info.herbert[2]), 'Herbert William was born on 17 July 1916', JSON.stringify(info.herbert));
     const textHits = HELD_BACK_WORDS.filter(n => info.text.includes(n));
     check(!textHits.length, 'no event sentence names anything held back', textHits.join(', '));
 

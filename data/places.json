@@ -6791,7 +6791,7 @@
    "inHomeRegion": true,
    "standsToday": "unknown",
    "standsTodaySource": "Not applicable: this place is a town, district or wider area.",
-   "significance": "Leicester is on the site for John Rupert FitzMaurice: died 1949-09-21.",
+   "significance": "John Herbert FitzMaurice was born at Leicester in 1898, and his sister Mary Isabel in 1899. Their father, John Rupert, later died in the town, at 3 Salisbury Road, on 21 September 1949.",
    "events": [
     {
      "id": "john-rupert-fitzmaurice-death",
@@ -6814,6 +6814,54 @@
      ],
      "confidence": "confirmed",
      "familyStatement": false
+    },
+    {
+     "id": "john-herbert-fitzmaurice-birth",
+     "type": "born",
+     "personIds": [
+      "john-herbert-fitzmaurice"
+     ],
+     "date": "23 June 1898, Leicester",
+     "dateStart": "1898-06-23",
+     "dateEnd": "1898-06-23",
+     "datePrecision": "day",
+     "approximate": false,
+     "factRef": "john-herbert-fitzmaurice.birth",
+     "pages": [
+      "quarry.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "oadby-remembers-jhf",
+      "freebmd-john-rupert-family-s51"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Born at Leicester. Registered in the September quarter of 1898, Leicester, volume 7a, page 277. The day is from Oadby Remembers."
+    },
+    {
+     "id": "mary-isabel-fitzmaurice-birth",
+     "type": "born",
+     "personIds": [
+      "mary-isabel-fitzmaurice"
+     ],
+     "date": "late 1899, Leicester",
+     "dateStart": "1899-01-01",
+     "dateEnd": "1899-12-31",
+     "datePrecision": "year",
+     "approximate": true,
+     "factRef": "mary-isabel-fitzmaurice.birth",
+     "pages": [
+      "quarry.html"
+     ],
+     "recordCrops": [],
+     "sourceIds": [
+      "freebmd-john-rupert-family-s51",
+      "oadby-remembers-jhf"
+     ],
+     "confidence": "probable",
+     "familyStatement": false,
+     "summary": "Born at Leicester. Registered in the December quarter of 1899, Leicester, volume 7a, page 281."
     }
    ],
    "status": "published",
@@ -13279,7 +13327,7 @@
      "approximate": false,
      "factRef": "john-rupert-fitzmaurice.death",
      "alsoFactRefs": [
-      "john-rupert-fitzmaurice.residences[0]"
+      "john-rupert-fitzmaurice.residences[2]"
      ],
      "pages": [],
      "recordCrops": [],
@@ -14470,7 +14518,7 @@
    "lng": 3.2876,
    "coordinateMethod": "Approximate. Saint-Quentin town centre from OpenStreetMap; the records say only \"near St Quentin\", so the circle is wide. He is named on the Pozieres Memorial, about 45 km to the west, because he has no known grave.",
    "uncertaintyMetres": 15000,
-   "inHomeRegion": true,
+   "inHomeRegion": false,
    "standsToday": "unknown",
    "standsTodaySource": "Not applicable: this place is a wide area.",
    "significance": "Where Second Lieutenant John Herbert FitzMaurice was reported missing on 25 March 1918.",
